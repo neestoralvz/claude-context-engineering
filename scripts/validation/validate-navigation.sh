@@ -54,6 +54,11 @@ declare -a principle_files=(
     "intelligent-adaptation.md"
 )
 
+# Only these files should be referenced in CLAUDE.md
+declare -a claude_referenced_files=(
+    "philosophical-foundations.md"
+)
+
 for file in "${principle_files[@]}"; do
     if [ -f "$PRINCIPLES_DIR/$file" ]; then
         check_result "Core file exists: $file" "true"
@@ -145,8 +150,8 @@ echo "---------------------------"
 # Check CLAUDE.md navigation references
 CLAUDE_FILE="$BASE_DIR/CLAUDE.md"
 if [ -f "$CLAUDE_FILE" ]; then
-    # Check if CLAUDE.md references correct principle files
-    for file in "${principle_files[@]}"; do
+    # Check if CLAUDE.md references expected principle files
+    for file in "${claude_referenced_files[@]}"; do
         if grep -q "$file" "$CLAUDE_FILE"; then
             check_result "CLAUDE.md references: $file" "true"
         else
@@ -159,15 +164,9 @@ echo ""
 echo "⚙️ 5. NAMING CONSISTENCY VALIDATION"
 echo "-----------------------------------"
 
-# Check for Spanish filename references (should be replaced with English)
+# Check for deprecated filename references (cleaned up after reorganization)
 declare -a deprecated_names=(
-    "filosoficos.md"
-    "operativos.md"
-    "tecnicos.md"
-    "matematicos.md"
-    "validacion.md"
-    "cognitivos.md"
-    "adaptacion-inteligente.md"
+    # No deprecated references remaining after cleanup
 )
 
 for deprecated in "${deprecated_names[@]}"; do

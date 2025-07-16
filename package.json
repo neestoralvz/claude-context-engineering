@@ -1,52 +1,24 @@
 {
-  "name": "context-engineering",
-  "version": "0.1.0",
+  "name": "claude-context-engineering",
+  "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "prebuild": "node scripts/copy-command-registry.js",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export",
-    "deploy": "vercel --prod",
-    "preview": "vercel",
-    "lint": "next lint",
-    "type-check": "tsc --noEmit",
-    "analyze": "ANALYZE=true npm run build",
-    "lighthouse": "lighthouse http://localhost:3000 --view",
-    "clean": "rm -rf .next out node_modules/.cache",
+    "dev:dashboard": "npm run dev --workspace=projects/context-engineering-dashboard",
+    "dev:hlde": "npm run dev --workspace=projects/hlde-medical",
+    "build:dashboard": "npm run build --workspace=projects/context-engineering-dashboard",
+    "build:hlde": "npm run build --workspace=projects/hlde-medical",
+    "build:all": "npm run build --workspaces",
+    "deploy:dashboard": "npm run build --workspace=projects/context-engineering-dashboard && vercel --prod --cwd projects/context-engineering-dashboard",
+    "deploy:hlde": "npm run deploy --workspace=projects/hlde-medical",
+    "install:all": "npm install --workspaces",
+    "clean": "rm -rf projects/*/node_modules projects/*/.next projects/*/out projects/*/dist",
     "health-check": "curl -f http://localhost:3000/health || exit 1"
   },
-  "dependencies": {
-    "@radix-ui/react-accordion": "^1.2.0",
-    "@radix-ui/react-collapsible": "^1.1.0",
-    "@radix-ui/react-navigation-menu": "^1.2.0",
-    "@radix-ui/react-progress": "^1.1.0",
-    "@radix-ui/react-tabs": "^1.1.0",
-    "@radix-ui/react-tooltip": "^1.1.1",
-    "@types/react-katex": "^3.0.4",
-    "clsx": "^2.1.1",
-    "framer-motion": "^11.2.0",
-    "katex": "^0.16.10",
-    "lucide-react": "^0.394.0",
-    "next": "^14.2.0",
-    "next-themes": "^0.3.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "react-katex": "^3.0.1",
-    "tailwind-merge": "^2.3.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.13",
-    "@types/katex": "^0.16.7",
-    "@types/node": "^20.12.0",
-    "@types/react": "^18.3.0",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.0",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.0",
-    "postcss": "^8.4.0",
-    "tailwindcss": "^3.4.0",
-    "typescript": "^5.4.0"
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }

@@ -1,0 +1,1 @@
+config/medical-record.config.js

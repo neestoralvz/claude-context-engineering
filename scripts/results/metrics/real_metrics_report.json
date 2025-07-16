@@ -1,6 +1,6 @@
 {
   "metrics_calculation_report": {
-    "timestamp": "2025-07-15T20:07:51-06:00",
+    "timestamp": "2025-07-16T00:55:30-06:00",
     "operation": "REAL_METRICS_REPLACEMENT",
     "commands_processed": {
       "total_commands": 68,
@@ -16,9 +16,9 @@
     "new_statistics": {
       "overall_success_rate": 0.8768656716417909,
       "average_confidence_score": 9.335820895522394,
-      "total_usage_count": 210
+      "total_usage_count": 204
     },
-    "backup_location": "/Users/nalve/claude-context-engineering/scripts/backups/command-registry-backup-20250715-200749.json",
+    "backup_location": "/Users/nalve/claude-context-engineering/scripts/backups/command-registry-backup-20250716-005528.json",
     "validation_status": "PASSED"
   },
   "formula_applications": {

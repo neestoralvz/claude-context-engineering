@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👤 Información del Paciente - HLDE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .patient-banner {
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(116, 185, 255, 0.3);
+        }
+
+        .patient-banner h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .patient-banner .expediente {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        .info-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section h2 {
+            color: #74b9ff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #74b9ff;
+            padding-bottom: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid #74b9ff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            color: #2d3436;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .info-card ul {
+            list-style: none;
+        }
+
+        .info-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+
+        .info-card .label {
+            font-weight: 600;
+            color: #636e72;
+        }
+
+        .info-card .value {
+            color: #2d3436;
+            font-weight: 500;
+        }
+
+        .diagnosis-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .diagnosis-card {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #e17055;
+        }
+
+        .diagnosis-card.primary {
+            background: linear-gradient(135deg, #ffcccb 0%, #ff7675 100%);
+            border-left-color: #d63031;
+        }
+
+        .diagnosis-card h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+
+        .diagnosis-card p {
+            margin-bottom: 10px;
+        }
+
+        .treatment-timeline {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item {
+            border-left: 3px solid #74b9ff;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: #74b9ff;
+            border-radius: 50%;
+        }
+
+        .timeline-item.critical::before {
+            background: #e74c3c;
+        }
+
+        .timeline-item.warning::before {
+            background: #f39c12;
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: #74b9ff;
+            font-size: 0.9em;
+        }
+
+        .timeline-content {
+            margin-top: 5px;
+        }
+
+        .status-badges {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .status-badge {
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .status-critical {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .status-warning {
+            background: #f39c12;
+            color: white;
+        }
+
+        .status-normal {
+            background: #27ae60;
+            color: white;
+        }
+
+        .status-info {
+            background: #74b9ff;
+            color: white;
+        }
+
+        .allergies-section {
+            background: rgba(255, 69, 58, 0.1);
+            border: 2px solid #e74c3c;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .allergies-section h2 {
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .allergy-item {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .quick-actions {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            display: block;
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(116, 185, 255, 0.3);
+        }
+
+        .action-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(116, 185, 255, 0.4);
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn-emergency {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+        }
+
+        .btn-emergency:hover {
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .btn-home {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+        }
+
+        .btn-home:hover {
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👤 Información del Paciente</h1>
+            <h2>Expediente Médico Completo - HLDE</h2>
+        </div>
+
+        <div class="patient-banner">
+            <h1>DYLAN MARTINEZ LABASTIDA</h1>
+            <div class="expediente">Expediente N° 345370 | UCI Pediátrica</div>
+        </div>
+
+        <div class="info-section">
+            <h2>📋 Datos Personales</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>👤 Información General</h3>
+                    <ul>
+                        <li><span class="label">Nombre Completo:</span> <span class="value">DYLAN MARTINEZ LABASTIDA</span></li>
+                        <li><span class="label">Edad:</span> <span class="value">8 años</span></li>
+                        <li><span class="label">Sexo:</span> <span class="value">Masculino</span></li>
+                        <li><span class="label">Fecha de Nacimiento:</span> <span class="value">15/07/2016</span></li>
+                        <li><span class="label">Expediente:</span> <span class="value">345370</span></li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🏥 Información Hospitalaria</h3>
+                    <ul>
+                        <li><span class="label">Ubicación Actual:</span> <span class="value">UCI Pediátrica</span></li>
+                        <li><span class="label">Fecha de Ingreso:</span> <span class="value">12/07/2025</span></li>
+                        <li><span class="label">Días de Estancia:</span> <span class="value">4 días</span></li>
+                        <li><span class="label">Médico Tratante:</span> <span class="value">Dr. García Pediatría</span></li>
+                        <li><span class="label">Servicio:</span> <span class="value">Cirugía Pediátrica</span></li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📊 Datos Físicos</h3>
+                    <ul>
+                        <li><span class="label">Peso:</span> <span class="value">35 kg</span></li>
+                        <li><span class="label">Talla:</span> <span class="value">130 cm</span></li>
+                        <li><span class="label">IMC:</span> <span class="value">21.6 kg/m²</span></li>
+                        <li><span class="label">Estado Nutricional:</span> <span class="value">Sobrepeso</span></li>
+                        <li><span class="label">Superficie Corporal:</span> <span class="value">1.1 m²</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="allergies-section">
+            <h2>⚠️ ALERGIAS Y CONTRAINDICACIONES</h2>
+            <div class="allergy-item">
+                <strong>🚫 PENICILINA</strong> - Reacción cutánea severa
+            </div>
+            <div class="allergy-item">
+                <strong>🚫 ASPIRINA</strong> - Síndrome de Reye (contraindicado en pediatría)
+            </div>
+        </div>
+
+        <div class="diagnosis-section">
+            <h2>🏥 Diagnósticos</h2>
+            <div class="diagnosis-card primary">
+                <h3>📋 Diagnóstico Principal</h3>
+                <p><strong>Apendicitis aguda complicada con perforación</strong></p>
+                <p>Peritonitis secundaria localizada</p>
+                <p>Código CIE-10: K35.9</p>
+            </div>
+            <div class="diagnosis-card">
+                <h3>📋 Diagnósticos Secundarios</h3>
+                <p><strong>Síndrome de respuesta inflamatoria sistémica (SRIS)</strong></p>
+                <p><strong>Sobrepeso nutricional</strong> - IMC 21.6</p>
+                <p><strong>Estado postoperatorio</strong> - Abdomen abierto</p>
+            </div>
+        </div>
+
+        <div class="treatment-timeline">
+            <h2>⏰ Cronología del Tratamiento</h2>
+            <div class="timeline-item critical">
+                <div class="timeline-date">12/07/2025 - 14:30</div>
+                <div class="timeline-content">
+                    <strong>Ingreso de emergencia</strong><br>
+                    Dolor abdominal agudo, fiebre, vómitos. Diagnóstico inicial de apendicitis aguda.
+                </div>
+            </div>
+            <div class="timeline-item critical">
+                <div class="timeline-date">12/07/2025 - 18:00</div>
+                <div class="timeline-content">
+                    <strong>Cirugía de emergencia</strong><br>
+                    Laparotomía exploradora. Hallazgo: apendicitis perforada con peritonitis localizada.
+                </div>
+            </div>
+            <div class="timeline-item warning">
+                <div class="timeline-date">13/07/2025 - 08:00</div>
+                <div class="timeline-content">
+                    <strong>Traslado a UCI</strong><br>
+                    Deterioro hemodinámico. Inicio de soporte vasopresor. Abdomen abierto.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">14/07/2025 - 10:00</div>
+                <div class="timeline-content">
+                    <strong>Estabilización</strong><br>
+                    Mejoría gradual con soporte hemodinámico. Continúa en UCI para monitoreo.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">16/07/2025 - Actual</div>
+                <div class="timeline-content">
+                    <strong>Estado actual</strong><br>
+                    Paciente estable en UCI. Soporte hemodinámico disminuyendo. Abdomen abierto en proceso de cicatrización.
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>🏥 Estado Actual</h2>
+            <div class="status-badges">
+                <div class="status-badge status-critical">UCI PEDIÁTRICA</div>
+                <div class="status-badge status-warning">SOPORTE HEMODINÁMICO</div>
+                <div class="status-badge status-info">ABDOMEN ABIERTO</div>
+                <div class="status-badge status-normal">ESTABLE</div>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💊 Tratamiento Actual</h3>
+                    <ul>
+                        <li><span class="label">Antibióticos:</span> <span class="value">Ceftriaxona + Metronidazol</span></li>
+                        <li><span class="label">Soporte hemodinámico:</span> <span class="value">Norepinefrina + Dopamina</span></li>
+                        <li><span class="label">Analgesia:</span> <span class="value">Morfina + Midazolam</span></li>
+                        <li><span class="label">Nutrición:</span> <span class="value">Parenteral total</span></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📊 Monitoreo</h3>
+                    <ul>
+                        <li><span class="label">Signos vitales:</span> <span class="value">Cada 15 minutos</span></li>
+                        <li><span class="label">Laboratorios:</span> <span class="value">Cada 8 horas</span></li>
+                        <li><span class="label">Balance hídrico:</span> <span class="value">Cada 6 horas</span></li>
+                        <li><span class="label">Herida quirúrgica:</span> <span class="value">Cada 12 horas</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <h2>⚡ Acciones Rápidas</h2>
+            <div class="action-grid">
+                <a href="emergency.html" class="action-btn">
+                    🚨 Dashboard Crítico<br>
+                    <small>Estado de emergencia</small>
+                </a>
+                <a href="timeline.html" class="action-btn">
+                    📋 Cronología Completa<br>
+                    <small>Evolución clínica</small>
+                </a>
+                <a href="treatment.html" class="action-btn">
+                    💉 Tratamientos<br>
+                    <small>Protocolos médicos</small>
+                </a>
+                <a href="diagnostics.html" class="action-btn">
+                    🔍 Diagnósticos<br>
+                    <small>Estudios y resultados</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="btn btn-home">🏠 Inicio</a>
+            <a href="emergency.html" class="btn btn-emergency">🚨 Emergencia</a>
+            <a href="navigate.html" class="btn">🗺️ Navegación</a>
+        </div>
+    </div>
+</body>
+</html>

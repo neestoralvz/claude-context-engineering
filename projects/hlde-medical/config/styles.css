@@ -1,0 +1,261 @@
+/* Estilos CSS para el Reporte de Referencias Cruzadas - HLDE */
+
+/* Configuración general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Título principal */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+/* Subtítulos */
+h2 {
+    color: #34495e;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+h4 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Tabla de contenidos */
+nav#TOC {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #bdc3c7;
+}
+
+nav#TOC ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav#TOC li {
+    margin-bottom: 5px;
+}
+
+nav#TOC a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav#TOC a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Bloques de código */
+pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #ecf0f1;
+    color: #e74c3c;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Separadores */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #bdc3c7;
+    margin: 40px 0;
+}
+
+/* Indicadores de estado */
+.status-ok {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-warning {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.status-error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Cajas de información */
+.info-box {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.warning-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.error-box {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Emojis y símbolos */
+.emoji {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+/* Enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Metadatos del documento */
+.document-meta {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    table {
+        font-size: 0.8em;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Impresión */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-size: 10pt;
+    }
+    
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    table {
+        page-break-inside: avoid;
+    }
+    
+    .no-print {
+        display: none;
+    }
+}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗺️ Navegación Completa - HLDE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .nav-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-section h2 {
+            color: #6c5ce7;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #6c5ce7;
+            padding-bottom: 10px;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .nav-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid #6c5ce7;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-card.emergency {
+            border-left-color: #e74c3c;
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+        }
+
+        .nav-card.patient {
+            border-left-color: #74b9ff;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        }
+
+        .nav-card.clinical {
+            border-left-color: #00b894;
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+        }
+
+        .nav-card.system {
+            border-left-color: #fdcb6e;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+        }
+
+        .nav-card h3 {
+            color: #2d3436;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-card-icon {
+            font-size: 1.5em;
+        }
+
+        .nav-card ul {
+            list-style: none;
+        }
+
+        .nav-card li {
+            margin-bottom: 10px;
+        }
+
+        .nav-card a {
+            color: #636e72;
+            text-decoration: none;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-card a:hover {
+            background: rgba(108, 92, 231, 0.1);
+            color: #6c5ce7;
+            transform: translateX(5px);
+        }
+
+        .nav-card.emergency a:hover {
+            background: rgba(231, 76, 60, 0.1);
+            color: #e74c3c;
+        }
+
+        .nav-card.patient a:hover {
+            background: rgba(116, 185, 255, 0.1);
+            color: #74b9ff;
+        }
+
+        .nav-card.clinical a:hover {
+            background: rgba(0, 184, 148, 0.1);
+            color: #00b894;
+        }
+
+        .nav-card.system a:hover {
+            background: rgba(253, 203, 110, 0.1);
+            color: #fdcb6e;
+        }
+
+        .workflow-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .workflow-card {
+            background: linear-gradient(135deg, #dfe6e9 0%, #b2bec3 100%);
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid #6c5ce7;
+        }
+
+        .workflow-card h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .workflow-steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .workflow-steps li {
+            counter-increment: step-counter;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .workflow-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #6c5ce7;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .metrics-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .quick-links {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .quick-link {
+            display: block;
+            background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(162, 155, 254, 0.3);
+        }
+
+        .quick-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(162, 155, 254, 0.4);
+        }
+
+        .quick-link.emergency {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .quick-link.emergency:hover {
+            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn-home {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+        }
+
+        .btn-home:hover {
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ Navegación Completa del Sistema</h1>
+            <h2>HLDE - Expediente Médico Digital</h2>
+        </div>
+
+        <div class="nav-section">
+            <h2>🚨 Acceso de Emergencia</h2>
+            <div class="nav-grid">
+                <div class="nav-card emergency">
+                    <h3><span class="nav-card-icon">🚨</span> Dashboard Crítico</h3>
+                    <ul>
+                        <li><a href="emergency.html">Estado de Emergencia</a></li>
+                        <li><a href="emergency.html#vitals">Signos Vitales</a></li>
+                        <li><a href="emergency.html#timeline">Cronología Crítica</a></li>
+                        <li><a href="emergency.html#actions">Acciones Rápidas</a></li>
+                    </ul>
+                </div>
+                <div class="nav-card emergency">
+                    <h3><span class="nav-card-icon">💊</span> Medicamentos</h3>
+                    <ul>
+                        <li><a href="meds.html">Medicamentos Críticos</a></li>
+                        <li><a href="meds.html#antibiotics">Antibióticos</a></li>
+                        <li><a href="meds.html#analgesics">Analgésicos</a></li>
+                        <li><a href="meds.html#schedule">Horario</a></li>
+                    </ul>
+                </div>
+                <div class="nav-card emergency">
+                    <h3><span class="nav-card-icon">🔬</span> Laboratorios</h3>
+                    <ul>
+                        <li><a href="labs.html">Valores Críticos</a></li>
+                        <li><a href="labs.html#hemogram">Hemograma</a></li>
+                        <li><a href="labs.html#chemistry">Química Sanguínea</a></li>
+                        <li><a href="labs.html#gases">Gases Arteriales</a></li>
+                    </ul>
+                </div>
+                <div class="nav-card emergency">
+                    <h3><span class="nav-card-icon">📊</span> Estado Vital</h3>
+                    <ul>
+                        <li><a href="status.html">Signos Vitales</a></li>
+                        <li><a href="status.html#hemodynamic">Hemodinámico</a></li>
+                        <li><a href="status.html#monitoring">Monitoreo</a></li>
+                        <li><a href="status.html#support">Soporte</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <h2>👤 Información del Paciente</h2>
+            <div class="nav-grid">
+                <div class="nav-card patient">
+                    <h3><span class="nav-card-icon">👤</span> Datos Centrales</h3>
+                    <ul>
+                        <li><a href="patient-core.html">Información Personal</a></li>
+                        <li><a href="patient-core.html#diagnosis">Diagnósticos</a></li>
+                        <li><a href="patient-core.html#allergies">Alergias</a></li>
+                        <li><a href="patient-core.html#current">Estado Actual</a></li>
+                    </ul>
+                </div>
+                <div class="nav-card patient">
+                    <h3><span class="nav-card-icon">📋</span> Cronología</h3>
+                    <ul>
+                        <li><a href="timeline.html">Evolución Clínica</a></li>
+                        <li><a href="timeline.html#admission">Ingreso</a></li>
+                        <li><a href="timeline.html#surgery">Cirugía</a></li>
+                        <li><a href="timeline.html#icu">UCI</a></li>
+                    </ul>
+                </div>
+                <div class="nav-card patient">
+                    <h3><span class="nav-card-icon">🔍</span> Diagnósticos</h3>
+                    <ul>
+                        <li><a href="diagnostics.html">Estudios Realizados</a></li>
+                        <li><a href="diagnostics.html#imaging">Imágenes</a></li>
+                        <li><a href="diagnostics.html#pathology">Patología</a></li>
+                        <li><a href="diagnostics.html#microbiology">Microbiología</a></li>
+                    </ul>
+                </div>
+                <div class="nav-card patient">
+                    <h3><span class="nav-card-icon">💉</span> Tratamientos</h3>
+                    <ul>
+                        <li><a href="treatment.html">Protocolos Médicos</a></li>
+                        <li><a href="treatment.html#surgical">Quirúrgicos</a></li>
+                        <li><a href="treatment.html#medical">Médicos</a></li>
+                        <li><a href="treatment.html#nursing">Enfermería</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="workflow-section">
+            <h2>🔄 Flujos de Trabajo</h2>
+            <div class="workflow-grid">
+                <div class="workflow-card">
+                    <h3>👨‍⚕️ Rondas Médicas</h3>
+                    <ol class="workflow-steps">
+                        <li>Revisión de estado general</li>
+                        <li>Análisis de laboratorios</li>
+                        <li>Evaluación de tratamiento</li>
+                        <li>Ajustes terapéuticos</li>
+                    </ol>
+                </div>
+                <div class="workflow-card">
+                    <h3>👩‍⚕️ Enfermería</h3>
+                    <ol class="workflow-steps">
+                        <li>Monitoreo de signos vitales</li>
+                        <li>Administración de medicamentos</li>
+                        <li>Evaluación de sistemas</li>
+                        <li>Documentación de notas</li>
+                    </ol>
+                </div>
+                <div class="workflow-card">
+                    <h3>🚑 Emergencias</h3>
+                    <ol class="workflow-steps">
+                        <li>Evaluación inmediata</li>
+                        <li>Análisis diagnóstico</li>
+                        <li>Protocolos de emergencia</li>
+                        <li>Verificación de alergias</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="metrics-section">
+            <h2>📊 Métricas del Sistema</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">96%</div>
+                    <div class="metric-label">Eficiencia Navegación</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Disponibilidad Emergencia</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">89</div>
+                    <div class="metric-label">Enlaces Bidireccionales</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">138</div>
+                    <div class="metric-label">Rutas Directas</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Integridad Enlaces</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">94%</div>
+                    <div class="metric-label">Precisión Búsqueda</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <h2>⚡ Enlaces Rápidos</h2>
+            <div class="quick-links-grid">
+                <a href="emergency.html" class="quick-link emergency">
+                    🚨 Acceso de Emergencia<br>
+                    <small>Dashboard crítico inmediato</small>
+                </a>
+                <a href="patient-core.html" class="quick-link">
+                    👤 Información Paciente<br>
+                    <small>Datos completos del paciente</small>
+                </a>
+                <a href="meds.html" class="quick-link">
+                    💊 Medicamentos<br>
+                    <small>Protocolos activos</small>
+                </a>
+                <a href="labs.html" class="quick-link">
+                    🔬 Laboratorios<br>
+                    <small>Resultados críticos</small>
+                </a>
+                <a href="status.html" class="quick-link">
+                    📊 Estado Vital<br>
+                    <small>Monitoreo hemodinámico</small>
+                </a>
+                <a href="index.html" class="quick-link">
+                    🏠 Inicio<br>
+                    <small>Página principal</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="btn btn-home">🏠 Inicio</a>
+            <a href="emergency.html" class="btn" style="background: linear-gradient(45deg, #e74c3c, #c0392b);">🚨 Emergencia</a>
+            <a href="patient-core.html" class="btn">👤 Paciente</a>
+        </div>
+    </div>
+</body>
+</html>

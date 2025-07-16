@@ -1,0 +1,19 @@
+{
+  "name": "hlde-medical-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de Expediente Médico Digital usando Context Engineering",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "deploy": "vitepress build docs && gh-pages -d docs/.vitepress/dist",
+    "serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "vitepress": "^1.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}

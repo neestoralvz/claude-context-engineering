@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente Médico Digital - HLDE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .patient-info {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a6f);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .emergency-section {
+            background: rgba(255, 69, 58, 0.9);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(255, 69, 58, 0.3);
+        }
+
+        .emergency-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .emergency-card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .emergency-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .emergency-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .section-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-card h3 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .section-card ul {
+            list-style: none;
+        }
+
+        .section-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .section-card li:last-child {
+            border-bottom: none;
+        }
+
+        .stats {
+            background: rgba(46, 204, 113, 0.9);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+        }
+
+        .stats h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            display: block;
+        }
+
+        .footer {
+            background: rgba(44, 62, 80, 0.9);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn-emergency {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+        }
+
+        .btn-emergency:hover {
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .emergency-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏥 Expediente Médico Digital</h1>
+            <h2>Sistema HLDE - Hospital Digital</h2>
+            <div class="patient-info">
+                👤 Paciente: DYLAN MARTINEZ LABASTIDA (8 años) - Expediente 345370
+            </div>
+        </div>
+
+        <!-- Emergency Section -->
+        <div class="emergency-section">
+            <h2>🚨 Acceso de Emergencia (≤1 clic)</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card" onclick="window.location.href='emergency.html'">
+                    <h3>🚨 Dashboard Crítico</h3>
+                    <p>Información vital inmediata</p>
+                </div>
+                <div class="emergency-card" onclick="window.location.href='meds.html'">
+                    <h3>💊 Medicamentos</h3>
+                    <p>Protocolos activos</p>
+                </div>
+                <div class="emergency-card" onclick="window.location.href='labs.html'">
+                    <h3>🔬 Laboratorios</h3>
+                    <p>Valores críticos</p>
+                </div>
+                <div class="emergency-card" onclick="window.location.href='status.html'">
+                    <h3>📊 Estado Vital</h3>
+                    <p>Monitoreo 24/7</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>📋 Información del Paciente</h2>
+            
+            <div class="section-grid">
+                <div class="section-card">
+                    <h3>👤 Datos Centrales</h3>
+                    <ul>
+                        <li><strong>Nombre:</strong> DYLAN MARTINEZ LABASTIDA</li>
+                        <li><strong>Edad:</strong> 8 años</li>
+                        <li><strong>Expediente:</strong> 345370</li>
+                        <li><strong>Ubicación:</strong> UCI Pediátrica</li>
+                        <li><strong>Estado:</strong> Crítico</li>
+                    </ul>
+                </div>
+
+                <div class="section-card">
+                    <h3>🏥 Diagnóstico</h3>
+                    <ul>
+                        <li><strong>Diagnóstico Principal:</strong> Apendicitis complicada</li>
+                        <li><strong>Complicación:</strong> Perforación</li>
+                        <li><strong>Procedimiento:</strong> Abdomen abierto</li>
+                        <li><strong>Soporte:</strong> Hemodinámico activo</li>
+                        <li><strong>Nutricional:</strong> Sobrepeso (IMC 21.6)</li>
+                    </ul>
+                </div>
+
+                <div class="section-card">
+                    <h3>📋 Navegación Principal</h3>
+                    <ul>
+                        <li><a href="patient-core.html" class="btn">👤 Información Completa</a></li>
+                        <li><a href="timeline.html" class="btn">📋 Cronología Clínica</a></li>
+                        <li><a href="diagnostics.html" class="btn">🔍 Diagnósticos</a></li>
+                        <li><a href="treatment.html" class="btn">💉 Tratamientos</a></li>
+                        <li><a href="assessment.html" class="btn">📝 Evaluaciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-card">
+                    <h3>🔄 Flujos de Trabajo</h3>
+                    <ul>
+                        <li><strong>👨‍⚕️ Rondas:</strong> Estado → Labs → Tratamiento</li>
+                        <li><strong>👩‍⚕️ Enfermería:</strong> Vitales → Meds → Sistemas</li>
+                        <li><strong>🚑 Emergencia:</strong> Paciente → Diagnósticos → Meds</li>
+                        <li><a href="navigate.html" class="btn">🗺️ Navegación Completa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <h2>📊 Métricas del Sistema</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">96%</span>
+                    <span>Eficiencia Navegación</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span>Disponibilidad Emergencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">89</span>
+                    <span>Enlaces Bidireccionales</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">94%</span>
+                    <span>Precisión Búsqueda</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <h3>🏥 Sistema HLDE</h3>
+            <p>✅ Operacional | 📊 Monitoreo Activo | 🚨 Emergencia Disponible 24/7</p>
+            <p><strong>Última actualización:</strong> 2025-07-16 | <strong>Versión:</strong> 1.0.0</p>
+            
+            <div>
+                <a href="emergency.html" class="btn btn-emergency">🚨 Acceso de Emergencia</a>
+                <a href="patient-core.html" class="btn">👤 Información Paciente</a>
+                <a href="navigate.html" class="btn">🗺️ Navegación Completa</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
