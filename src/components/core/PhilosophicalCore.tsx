@@ -11,8 +11,8 @@ export function PhilosophicalCore() {
       <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <Badge variant="outline" className="text-xs">
-              🧠 PERMANENT CORE
+            <Badge variant="primary" className="text-xs">
+              PERMANENT CORE
             </Badge>
             <span className="text-sm font-medium text-slate-600 dark:text-slate-300">
               Context Engineering Hub
@@ -44,7 +44,7 @@ export function PhilosophicalFoundationsCard() {
     <Card className="principle-card">
       <CardHeader className="principle-card-header">
         <CardTitle className="flex items-center space-x-2">
-          <span>🌟 Philosophical Foundations</span>
+          <span>Philosophical Foundations</span>
           <Badge variant="secondary" className="text-xs">Principle #1-#6</Badge>
         </CardTitle>
       </CardHeader>

@@ -31,7 +31,7 @@ export function ContentShowcase() {
       {/* Section Header */}
       <div className="text-center">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          🎯 Content Integration Showcase
+          Content Integration Showcase
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Explore the complete Context Engineering system with 56 principles, 63 commands, 
@@ -43,8 +43,8 @@ export function ContentShowcase() {
       <div className="flex justify-center">
         <div className="flex bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
           {[
-            { id: 'principles', label: '🌟 Principles', count: PRINCIPLES_DATA.length },
-            { id: 'commands', label: '⚙️ Commands', count: 63 },
+            { id: 'principles', label: 'Principles', count: PRINCIPLES_DATA.length },
+            { id: 'commands', label: 'Commands', count: 63 },
             { id: 'formulas', label: '🧮 Calculators', count: MATH_CALCULATORS.length },
             { id: 'network', label: '🕸️ Network', count: 'Interactive' }
           ].map((tab) => (
@@ -141,7 +141,7 @@ export function ContentShowcase() {
                           </Badge>
                         )}
                         {principle.formula && (
-                          <Badge variant="secondary" className="text-xs bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">
+                          <Badge variant="mathematical" className="text-xs">
                             Formula
                           </Badge>
                         )}
@@ -349,13 +349,13 @@ export function ContentShowcase() {
               href="/principles"
               className="px-6 py-3 bg-slate-700 text-white rounded-lg hover:bg-slate-800 transition-colors"
             >
-              🌟 Browse Principles
+              Browse Principles
             </Link>
             <Link 
               href="/commands"
               className="px-6 py-3 bg-slate-700 text-white rounded-lg hover:bg-slate-800 transition-colors"
             >
-              ⚙️ View Commands
+              View Commands
             </Link>
           </div>
         </div>

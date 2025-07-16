@@ -88,7 +88,7 @@ export function Hero() {
             type="EFFICIENCY"
             description="Donde R = Relevancia, Q = Calidad, C = Carga Cognitiva, T = Tiempo"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-mathematical-100/20 via-transparent to-mathematical-100/20 dark:from-mathematical-900/20 dark:via-transparent dark:to-mathematical-900/20 rounded-xl blur-sm"></div>
+          <div className="absolute inset-0 bg-mathematical-50/30 dark:bg-mathematical-900/10 rounded-xl blur-sm"></div>
         </div>
       </div>
 

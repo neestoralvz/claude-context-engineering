@@ -48,7 +48,7 @@ All mathematical operations MUST use script tool calls for P55/P56 compliance:
 
 ```bash
 # MANDATORY: Load formula library via tool call
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Execute mathematical calculations via tool calls
 confidence_score=$(calculate_confidence $domain_familiarity $requirement_clarity $resource_availability)
@@ -107,7 +107,7 @@ Core recursive execution with mathematical guarantees via tool call integration:
 
 #!/bin/bash
 # Load mathematical foundation
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 verification_loop() {
     local max_iterations=${1:-100}
@@ -191,7 +191,7 @@ Mathematical exit criteria ensure completion:
 # MANDATORY P55 COMPLIANCE: Load formula library via Read tool call
 # Execute all calculations via Bash tool calls
 
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Calculate performance metrics
 performance_score=$(calculate_functional_score $performance_completeness $performance_correctness $performance_edge_cases)
@@ -257,7 +257,7 @@ function detectDeviation(current_metrics, expected_metrics) {
 ### **Script-Based Convergence Requirements (Tool Call Validation)**
 ```bash
 # MANDATORY: All convergence validation via tool call execution
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Validate mathematical confidence (>=95%)
 confidence_compliance=$(calculate_threshold_compliance $confidence_score "9.5" "gte")
@@ -411,7 +411,7 @@ This command enforces **MANDATORY** tool call execution for all mathematical ope
 ✅ VERIFICATION LOOP TOOL CALL CHECKLIST:
 
 1. **Formula Library Integration**: MUST load via Read tool call
-   - Path: /scripts/formulas/context_engineering_formulas.sh
+   - Path: ../../../scripts/formulas/context_engineering_formulas.sh
    - Status: [LOADED/FAILED]
 
 2. **Loop Execution**: MUST execute via Bash tool calls
@@ -433,7 +433,7 @@ This command enforces **MANDATORY** tool call execution for all mathematical ope
 ### **Verification Loop Compliance**
 ```bash
 # MANDATORY: Execute loop compliance validation
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Validate mathematical precision
 precision_compliance=$(calculate_threshold_compliance $decimal_places "4" "gte")

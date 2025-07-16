@@ -188,14 +188,14 @@ Decision: [PROCEED/IMPROVE/ESCALATE]
 🔄 SCRIPT FOUNDATION INTEGRATION (TOOL CALL MANDATORY)
 
 🌉 Formula Library Bridge (Tool Call Required):
-- formula_library_path: /scripts/formulas/context_engineering_formulas.sh
+- formula_library_path: ../../../scripts/formulas/context_engineering_formulas.sh
 - calculate_confidence(): [EXECUTED/FAILED] (via bash tool call)
 - calculate_threshold_compliance(): [EXECUTED/FAILED] (via bash tool call)
 - Script Integration: [COMPLETE/PARTIAL/FAILED]
 
 Mathematical Foundation Validation (Script-Enhanced via Tool Calls):
 - Formula Library: LOADED via Read tool call
-- Confidence Calculation: execute "source /scripts/formulas/context_engineering_formulas.sh && calculate_confidence $domain_familiarity $requirement_clarity $resource_availability"
+- Confidence Calculation: execute "source ../../../scripts/formulas/context_engineering_formulas.sh && calculate_confidence $domain_familiarity $requirement_clarity $resource_availability"
 - Threshold Validation: execute "calculate_threshold_compliance $confidence_score $adaptive_threshold gte"
 - Formula Precision: [4_decimal_places_maintained/DEGRADED]
 - P55 Compliance: [VERIFIED/FAILED] via real script execution
@@ -228,7 +228,7 @@ Automation Level: [FULLY_AUTOMATED/SEMI_AUTOMATED/MANUAL_REQUIRED]
 ```bash
 # MANDATORY: Load formula library via Read tool call
 # Then execute via Bash tool call
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Execute functional score calculation
 functional_score=$(calculate_functional_score $completeness $correctness $edge_cases)
@@ -289,7 +289,7 @@ function calculateBehavioralScore(behavioral_results) {
 ### **Script-Based Adaptive Threshold Calculation (Tool Call Mandatory)**
 ```bash
 # MANDATORY: Load formula library via tool call
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Execute adaptive threshold calculation
 adaptive_threshold=$(calculate_adaptive_threshold $task_criticality)
@@ -313,7 +313,7 @@ echo "TOOL_CALL_EXECUTED: calculate_threshold_compliance($confidence_score, $ada
 ```javascript
 // This logic is now handled by calculate_adaptive_threshold() in formula library
 function getAdaptiveThreshold(task_context) {
-  // Implementation moved to /scripts/formulas/context_engineering_formulas.sh
+  // Implementation moved to ../../../scripts/formulas/context_engineering_formulas.sh
   // for P55/P56 compliance via tool call execution
 }
 ```
@@ -642,7 +642,7 @@ This command is **MANDATORY** for tool call execution compliance:
 ✅ TOOL CALL EXECUTION CHECKLIST:
 
 1. **Formula Library Loading**: MUST load via Read tool call
-   - Path: /scripts/formulas/context_engineering_formulas.sh
+   - Path: ../../../scripts/formulas/context_engineering_formulas.sh
    - Status: [LOADED/FAILED]
 
 2. **Mathematical Calculations**: MUST execute via Bash tool calls
@@ -664,7 +664,7 @@ This command is **MANDATORY** for tool call execution compliance:
 ### **Compliance Validation**
 ```bash
 # MANDATORY: Execute this validation via tool call
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Validate P55 compliance
 p55_compliance=$(calculate_threshold_compliance $tool_calls_executed $required_tool_calls "eq")

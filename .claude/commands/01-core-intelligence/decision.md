@@ -344,14 +344,14 @@ When this command is invoked, the LLM **MUST** execute the following tool calls 
 ### **Phase 1: Script System Validation**
 ```bash
 # MANDATORY: Validate script system availability
-ls -la /Users/nalve/claude-context-engineering/scripts/formulas/
-ls -la /Users/nalve/claude-context-engineering/scripts/core/calculate-real-metrics.sh
+ls -la ../../../scripts/formulas/
+ls -la ../../../scripts/core/calculate-real-metrics.sh
 ```
 
 ### **Phase 2: Execute Mathematical Calculations**
 ```bash
 # MANDATORY: Load and execute mathematical formula library
-cd /Users/nalve/claude-context-engineering/scripts/formulas/
+cd ../../../scripts/formulas/
 source ./context_engineering_formulas.sh
 
 # Execute confidence calculation (domain_familiarity requirement_clarity resource_availability)
@@ -364,20 +364,20 @@ calculate_complexity 3 2.1 1.5
 ### **Phase 3: Execute Real Metrics Calculation**
 ```bash
 # MANDATORY: Execute comprehensive metrics calculation script
-cd /Users/nalve/claude-context-engineering/
+cd ../../../
 ./scripts/core/calculate-real-metrics.sh
 ```
 
 ### **Phase 4: Validate Mathematical Formulas**
 ```bash
 # MANDATORY: Execute mathematical validation to ensure accuracy
-./scripts/compliance/verify-mathematical-formulas.sh
+../../../scripts/compliance/verify-mathematical-formulas.sh
 ```
 
 ### **Phase 5: Execute Trigger System Validation**
 ```bash
 # MANDATORY: Execute trigger system for decision routing
-./scripts/core/test-trigger-system.sh
+../../../scripts/core/test-trigger-system.sh
 ```
 
 ### **LLM BEHAVIOR REQUIREMENTS**

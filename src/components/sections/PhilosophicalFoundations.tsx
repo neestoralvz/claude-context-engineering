@@ -10,7 +10,7 @@ export function PhilosophicalFoundations() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <span>🌟 Meta-Principle</span>
+            <span>Meta-Principle</span>
             <Badge variant="secondary">Always Loaded</Badge>
           </CardTitle>
         </CardHeader>
@@ -25,7 +25,7 @@ export function PhilosophicalFoundations() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>🧠 Core Cognitive Framework</CardTitle>
+            <CardTitle>Core Cognitive Framework</CardTitle>
           </CardHeader>
           <CardContent className="p-6">
             <div className="space-y-4">
@@ -76,7 +76,7 @@ export function PhilosophicalFoundations() {
 
         <Card>
           <CardHeader>
-            <CardTitle>🔄 Evolution Formula</CardTitle>
+            <CardTitle>Evolution Formula</CardTitle>
           </CardHeader>
           <CardContent className="p-6">
             <div className="space-y-4">
@@ -124,7 +124,7 @@ export function PhilosophicalFoundations() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <span>🎯 Progressive Thinking Integration</span>
+            <span>Progressive Thinking Integration</span>
             <Badge variant="secondary">Auto-Activates</Badge>
           </CardTitle>
         </CardHeader>

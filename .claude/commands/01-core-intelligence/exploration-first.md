@@ -25,7 +25,7 @@ This command MANDATES real tool execution. No simulation allowed.
 
 ```bash
 # Load Context Engineering Mathematical Formulas
-source /Users/nalve/claude-context-engineering/scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Calculate exploration confidence
 exploration_confidence=$(calculate_confidence 0.8 0.9 0.7)
@@ -38,12 +38,12 @@ echo "  Complexity Score: $exploration_complexity"
 
 ### Script Integration Points
 
-1. **Trigger Validation**: Executes `./scripts/validation/validate-system-integrity.sh`
-2. **Progressive Analysis**: Calls `./scripts/core/calculate-real-metrics.sh`
-3. **Formula Integration**: Sources `./scripts/formulas/context_engineering_formulas.sh`
-4. **Quality Assessment**: Runs `./scripts/validation/analyze-content-quality.sh`
-5. **Compliance Verification**: Executes `./scripts/compliance/generate-p55-compliance-report.sh`
-6. **Workflow Optimization**: Calls `./scripts/automation/workflow-triggers.js`
+1. **Trigger Validation**: Executes `../../../scripts/validation/validate-system-integrity.sh`
+2. **Progressive Analysis**: Calls `../../../scripts/core/calculate-real-metrics.sh`
+3. **Formula Integration**: Sources `../../../scripts/formulas/context_engineering_formulas.sh`
+4. **Quality Assessment**: Runs `../../../scripts/validation/analyze-content-quality.sh`
+5. **Compliance Verification**: Executes `../../../scripts/compliance/generate-p55-compliance-report.sh`
+6. **Workflow Optimization**: Calls `../../../scripts/automation/workflow-triggers.js`
 
 ## Core Exploration Protocol
 

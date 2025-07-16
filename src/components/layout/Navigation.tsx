@@ -13,19 +13,19 @@ const navigationItems = [
     label: 'Centro de Contexto',
     href: '/',
     description: 'Mapa Inteligente de Contexto',
-    icon: '🏠'
+label: 'Home'
   },
   {
     label: 'Interactivo',
     href: '/interactive',
     description: 'Funciones y Demos Interactivos',
-    icon: '⚡'
+label: 'Core'
   },
   {
     label: 'Principios',
     href: '/principles',
     description: 'Sistema de 56 Principios',
-    icon: '📋'
+label: 'Commands'
   },
   {
     label: 'Comandos',
@@ -37,13 +37,13 @@ const navigationItems = [
     label: 'Herramientas',
     href: '/tools',
     description: 'Integración MCP',
-    icon: '🔧'
+label: 'Tools'
   },
   {
     label: 'Métricas',
     href: '/metrics',
     description: 'Panel de Rendimiento',
-    icon: '📊'
+label: 'Metrics'
   }
 ]
 

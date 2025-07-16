@@ -122,9 +122,9 @@ function executeExecutionWorkflow(execution_plan, parallelization_level, verific
 **Script Execution Protocol**:
 ```bash
 # MANDATORY: Execute parallelization analysis
-node /scripts/automation/parallelization-analyzer.js
-source /scripts/formulas/context_engineering_formulas.sh
-./scripts/core/calculate-real-metrics.sh
+node ../../../scripts/automation/parallelization-analyzer.js
+source ../../../scripts/formulas/context_engineering_formulas.sh
+../../../scripts/core/calculate-real-metrics.sh
 ```
 
 **Verification**: ≥75% parallelization achieved (script-validated), net benefit ≥0.3, all parallel tracks executing with mathematical precision
@@ -140,10 +140,10 @@ source /scripts/formulas/context_engineering_formulas.sh
 **Script Execution Protocol**:
 ```bash
 # MANDATORY: Calculate confidence and adaptive thresholds
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 confidence_score=$(calculate_confidence 0.8 0.9 0.7)
 adaptive_threshold=$(calculate_adaptive_threshold "medium")
-./scripts/core/test-trigger-system.sh
+../../../scripts/core/test-trigger-system.sh
 ```
 
 **Verification**: ≥90% autonomy level maintained (script-calculated), confidence score ≥7.0, minimal intervention required with mathematical precision
@@ -159,10 +159,10 @@ adaptive_threshold=$(calculate_adaptive_threshold "medium")
 **Script Execution Protocol**:
 ```bash
 # MANDATORY: Execute comprehensive verification validation
-source /scripts/formulas/context_engineering_formulas.sh
-./scripts/core/test-trigger-system.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
+../../../scripts/core/test-trigger-system.sh
 functional_score=$(calculate_functional_score $completeness $correctness $edge_cases)
-./scripts/compliance/verify-mathematical-formulas.sh
+../../../scripts/compliance/verify-mathematical-formulas.sh
 ```
 
 **Verification**: ≥85% verification success rate (script-validated), automatic correction functional with mathematical precision, threshold compliance ≥95%
@@ -178,9 +178,9 @@ functional_score=$(calculate_functional_score $completeness $correctness $edge_c
 **Script Execution Protocol**:
 ```bash
 # MANDATORY: Generate comprehensive execution metrics for documentation
-./scripts/core/calculate-real-metrics.sh
-./scripts/compliance/generate-p55-compliance-report.sh
-source /scripts/formulas/context_engineering_formulas.sh
+../../../scripts/core/calculate-real-metrics.sh
+../../../scripts/compliance/generate-p55-compliance-report.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 # Include script validation results in commit message
 ```
 
@@ -197,9 +197,9 @@ source /scripts/formulas/context_engineering_formulas.sh
 **Script Execution Protocol**:
 ```bash
 # MANDATORY: Generate pattern analysis with mathematical validation
-./scripts/core/calculate-real-metrics.sh
-source /scripts/formulas/context_engineering_formulas.sh
-./scripts/validation/analyze-content-quality.sh
+../../../scripts/core/calculate-real-metrics.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
+../../../scripts/validation/analyze-content-quality.sh
 # Pattern crystallization threshold validation
 crystallization_score=$(calculate_threshold_compliance $pattern_success 0.85 "gte")
 ```

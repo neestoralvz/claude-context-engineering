@@ -171,7 +171,7 @@ export function UserOnboardingFlow() {
   }, [isActive, autoProgress, selectedTrack, currentStep, nextStep])
 
   const getStepPosition = (step: TourStep) => {
-    const baseClasses = "fixed z-50 max-w-sm p-6 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-slate-200 dark:border-slate-700"
+    const baseClasses = "fixed z-50 max-w-sm p-6 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700"
     
     switch (step.position) {
       case 'top':
@@ -195,7 +195,7 @@ export function UserOnboardingFlow() {
       {/* Header */}
       <div className="text-center space-y-4">
         <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
-          🚀 Interactive Onboarding Experience
+          Interactive Onboarding Experience
         </h3>
         <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
           Get started with Context Engineering through guided tours, interactive demonstrations, 

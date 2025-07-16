@@ -109,16 +109,16 @@ When this command is invoked, the LLM **MUST** execute the following tool calls 
 ### **Phase 1: Data Collection**
 ```bash
 # MANDATORY: Analyze recent command execution patterns
-grep -r "tool_calls\|Bash\|Read\|Write\|Edit" /Users/nalve/claude-context-engineering/scripts/results/ | head -50
+grep -r "tool_calls\|Bash\|Read\|Write\|Edit" ../../../scripts/results/ | head -50
 
 # MANDATORY: Check for simulation language patterns
-grep -r "would execute\|recommend running\|you should" /Users/nalve/claude-context-engineering/scripts/results/ | wc -l
+grep -r "would execute\|recommend running\|you should" ../../../scripts/results/ | wc -l
 ```
 
 ### **Phase 2: Statistical Analysis**
 ```bash
 # MANDATORY: Execute mathematical validation script
-cd /Users/nalve/claude-context-engineering/scripts/formulas/
+cd ../../../scripts/formulas/
 source ./context_engineering_formulas.sh
 
 # Calculate validation metrics with real data
@@ -128,10 +128,10 @@ calculate_tool_call_compliance_ratio [real_executions] [total_actions]
 ### **Phase 3: Compliance Verification**
 ```bash
 # MANDATORY: Generate compliance report
-./scripts/compliance/generate-p55-compliance-report.sh
+../../../scripts/compliance/generate-p55-compliance-report.sh
 
 # MANDATORY: Validate against thresholds
-./scripts/validation/validate-execution-thresholds.sh
+../../../scripts/validation/validate-execution-thresholds.sh
 ```
 
 ---

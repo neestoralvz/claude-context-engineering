@@ -682,9 +682,8 @@ The synthesis integrates surface-level analysis with deep pattern recognition, c
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="p-6 bg-gradient-to-r from-purple-50 to-blue-50 
-                                 dark:from-purple-900/20 dark:to-blue-900/20 
-                                 rounded-lg border border-purple-200 dark:border-purple-800"
+                        className="p-6 bg-primary-50 dark:bg-primary-900/20 
+                                 rounded-lg border border-primary-200 dark:border-primary-800"
                       >
                         <div className="space-y-4">
                           <div className="flex items-center gap-2">

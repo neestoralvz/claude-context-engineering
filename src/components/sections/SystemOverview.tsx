@@ -167,7 +167,7 @@ export function SystemOverview() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <span>🚀 Top Command Chain</span>
+            <span>Top Command Chain</span>
             <Badge variant="secondary">96% Success</Badge>
           </CardTitle>
         </CardHeader>

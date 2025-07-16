@@ -363,7 +363,7 @@ export function MathCalculator({ calculator, className = '' }: MathCalculatorPro
         </div>
 
         {/* Result Display */}
-        <div className="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg">
+        <div className="p-4 bg-mathematical-50 dark:bg-mathematical-900/20 rounded-lg">
           <div className="flex items-center justify-between mb-2">
             <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300">
               Result:

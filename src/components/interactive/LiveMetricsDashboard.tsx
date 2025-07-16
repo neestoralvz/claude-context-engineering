@@ -448,38 +448,38 @@ export function LiveMetricsDashboard() {
 
   const getStatusColor = (status: MetricValue['status']): string => {
     const colors = {
-      excellent: 'text-green-600 dark:text-green-400',
-      good: 'text-blue-600 dark:text-blue-400',
-      warning: 'text-orange-600 dark:text-orange-400',
-      critical: 'text-red-600 dark:text-red-400'
+      excellent: 'text-primary-900 dark:text-primary-100',
+      good: 'text-secondary-700 dark:text-secondary-300',
+      warning: 'text-accent-600 dark:text-accent-400',
+      critical: 'text-mathematical-600 dark:text-mathematical-400'
     }
     return colors[status]
   }
 
   const getStatusBadgeColor = (status: MetricValue['status']): string => {
     const colors = {
-      excellent: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
-      good: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
-      warning: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200',
-      critical: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
+      excellent: 'bg-primary-100 text-primary-900 dark:bg-primary-900 dark:text-primary-100',
+      good: 'bg-secondary-100 text-secondary-800 dark:bg-secondary-900 dark:text-secondary-200',
+      warning: 'bg-accent-100 text-accent-800 dark:bg-accent-900 dark:text-accent-200',
+      critical: 'bg-mathematical-100 text-mathematical-800 dark:bg-mathematical-900 dark:text-mathematical-200'
     }
     return colors[status]
   }
 
   const getTrendIcon = (trend: 'up' | 'down' | 'stable') => {
     switch (trend) {
-      case 'up': return <TrendingUp className="w-4 h-4 text-green-500" />
-      case 'down': return <TrendingDown className="w-4 h-4 text-red-500" />
+      case 'up': return <TrendingUp className="w-4 h-4 text-primary-900 dark:text-primary-400" />
+      case 'down': return <TrendingDown className="w-4 h-4 text-mathematical-600 dark:text-mathematical-400" />
       default: return <Activity className="w-4 h-4 text-slate-500" />
     }
   }
 
   const getAlertIcon = (type: AlertItem['type']) => {
     switch (type) {
-      case 'success': return <CheckCircle className="w-4 h-4 text-green-500" />
-      case 'warning': return <AlertCircle className="w-4 h-4 text-orange-500" />
-      case 'error': return <AlertCircle className="w-4 h-4 text-red-500" />
-      default: return <Activity className="w-4 h-4 text-blue-500" />
+      case 'success': return <CheckCircle className="w-4 h-4 text-primary-900 dark:text-primary-400" />
+      case 'warning': return <AlertCircle className="w-4 h-4 text-accent-600 dark:text-accent-400" />
+      case 'error': return <AlertCircle className="w-4 h-4 text-mathematical-600 dark:text-mathematical-400" />
+      default: return <Activity className="w-4 h-4 text-secondary-700 dark:text-secondary-400" />
     }
   }
 
@@ -658,8 +658,8 @@ export function LiveMetricsDashboard() {
                           <div className="flex items-center gap-1">
                             {getTrendIcon(metric.value.trend)}
                             <span className={`text-sm font-medium 
-                              ${metric.value.trend === 'up' ? 'text-green-600 dark:text-green-400' : 
-                                metric.value.trend === 'down' ? 'text-red-600 dark:text-red-400' : 
+                              ${metric.value.trend === 'up' ? 'text-primary-900 dark:text-primary-400' : 
+                                metric.value.trend === 'down' ? 'text-mathematical-600 dark:text-mathematical-400' : 
                                 'text-slate-500'}`}
                             >
                               {metric.value.trend === 'up' ? '+' : metric.value.trend === 'down' ? '' : ''}
@@ -679,7 +679,7 @@ export function LiveMetricsDashboard() {
                             </div>
                             <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-1">
                               <motion.div
-                                className="bg-blue-500 h-1 rounded-full"
+                                className="bg-primary-900 dark:bg-primary-400 h-1 rounded-full"
                                 initial={{ width: 0 }}
                                 animate={{ 
                                   width: `${Math.min((metric.value.current / metric.value.target) * 100, 100)}%` 
@@ -707,7 +707,7 @@ export function LiveMetricsDashboard() {
                             return (
                               <motion.div
                                 key={index}
-                                className="flex-1 bg-blue-500 rounded-sm opacity-60"
+                                className="flex-1 bg-secondary-700 dark:bg-secondary-400 rounded-sm opacity-70"
                                 initial={{ height: 0 }}
                                 animate={{ height: `${height}%` }}
                                 transition={{ duration: 0.3, delay: index * 0.05 }}

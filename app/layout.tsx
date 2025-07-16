@@ -59,10 +59,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ProgressiveLoadingProvider>
-            <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 relative overflow-hidden">
-              {/* Background Effects */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-100/20 via-transparent to-mathematical-100/20 dark:from-primary-900/10 dark:to-mathematical-900/10 pointer-events-none"></div>
-              <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-transparent via-blue-50/30 to-transparent dark:from-transparent dark:via-blue-900/10 dark:to-transparent pointer-events-none"></div>
+            <div className="min-h-screen bg-slate-50 dark:bg-slate-900 relative">
+              {/* Subtle Background Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-50/30 via-transparent to-mathematical-50/20 dark:from-primary-950/20 dark:to-mathematical-950/10 pointer-events-none"></div>
               {/* Permanent Philosophical Core - Always Loaded */}
               <PhilosophicalCore />
               

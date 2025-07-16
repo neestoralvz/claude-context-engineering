@@ -232,19 +232,19 @@ enhanced_phase_0_protocol:
     visual_announcement: "Display P56-compliant Bash tool execution announcement before each script"
     bash_executions_required:
       script_1:
-        command: "cd /Users/nalve/claude-context-engineering && ls -la ./scripts/formulas/"
+        command: "cd ../../../ && ls -la ./scripts/formulas/"
         purpose: "Validate script system availability"
         evidence_required: "User must see actual script directory listing"
       script_2:
-        command: "cd /Users/nalve/claude-context-engineering/scripts/formulas && source ./context_engineering_formulas.sh"
+        command: "cd ../../../scripts/formulas && source ./context_engineering_formulas.sh"
         purpose: "Load mathematical formula library"
         evidence_required: "User must see formula library loading confirmation"
       script_3:
-        command: "cd /Users/nalve/claude-context-engineering && ./scripts/core/calculate-real-metrics.sh"
+        command: "cd ../../../ && ./scripts/core/calculate-real-metrics.sh"
         purpose: "Execute comprehensive metrics calculation"
         evidence_required: "User must see actual numerical results from script execution"
       script_4:
-        command: "cd /Users/nalve/claude-context-engineering && ./scripts/core/test-trigger-system.sh"
+        command: "cd ../../../ && ./scripts/core/test-trigger-system.sh"
         purpose: "Execute trigger system validation"
         evidence_required: "User must see trigger validation results and routing analysis"
     no_simulation: "NEVER simulate script execution - ALWAYS execute Bash tool calls"

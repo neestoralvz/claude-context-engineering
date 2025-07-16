@@ -99,7 +99,7 @@ This command MANDATES real tool execution. No simulation allowed.
 
 ```bash
 # Load Context Engineering Mathematical Formulas
-source /Users/nalve/claude-context-engineering/scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Calculate thinking progression metrics
 contextual_depth=$(calculate_confidence 0.9 0.85 0.8)
@@ -116,10 +116,10 @@ echo "  Breakthrough Insights: $breakthrough_insights"
 
 ### Script Integration Points
 
-1. **Mathematical Validation**: Sources `./scripts/formulas/context_engineering_formulas.sh`
-2. **Quality Assessment**: Executes `./scripts/validation/analyze-content-quality.sh`
-3. **Progressive Metrics**: Calls `./scripts/core/calculate-real-metrics.sh`
-4. **Compliance Check**: Runs `./scripts/compliance/generate-p55-compliance-report.sh`
+1. **Mathematical Validation**: Sources `../../../scripts/formulas/context_engineering_formulas.sh`
+2. **Quality Assessment**: Executes `../../../scripts/validation/analyze-content-quality.sh`
+3. **Progressive Metrics**: Calls `../../../scripts/core/calculate-real-metrics.sh`
+4. **Compliance Check**: Runs `../../../scripts/compliance/generate-p55-compliance-report.sh`
 
 ## 🔍 **MATHEMATICAL VALIDATION**
 

@@ -35,7 +35,7 @@ Execute mathematical complexity measurement and automatic enforcement protocol t
 1. **Calculate Complexity Score**: Execute calculate_complexity() via Bash tool call
 ```bash
 # MANDATORY: Load formula library
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 # Execute complexity calculation
 complexity_score=$(calculate_complexity $objective_count $dependency_factor $integration_complexity)
 ```
@@ -56,7 +56,7 @@ complexity_score=$(calculate_complexity $objective_count $dependency_factor $int
 **Formula Library Integration** (Tool Call Required):
 ```bash
 # MANDATORY: Use formula library via tool call execution
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Execute complexity calculation with script precision
 complexity_score=$(calculate_complexity $objective_count $dependency_factor $integration_complexity)
@@ -129,7 +129,7 @@ function calculateComplexity(target) {
 ### **Script-Based Automatic Blocking Conditions (Tool Call Execution)**
 ```bash
 # MANDATORY P55 COMPLIANCE: All blocking decisions via tool call execution
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Execute complexity calculation
 complexity_score=$(calculate_complexity $objective_count $dependency_factor $integration_complexity)
@@ -229,7 +229,7 @@ function generateSimplificationSuggestions(target, complexity_score) {
 ### **Script-Based Success Metrics (Tool Call Validation)**
 ```bash
 # MANDATORY: All success metrics validated via script tool calls
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Calculate compliance rate
 compliance_rate=$(calculate_threshold_compliance $commands_passed $total_commands "gte")
@@ -381,7 +381,7 @@ function monitorComplexityEvolution(target) {
 ### **Script-Based Learning Metrics (Tool Call Execution)**
 ```bash
 # MANDATORY: All evolution tracking via continuous script monitoring
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Track complexity prediction accuracy
 prediction_accuracy=$(calculate_functional_score $predicted_complexity $actual_complexity $edge_case_coverage)
@@ -444,7 +444,7 @@ This command enforces **MANDATORY** tool call execution for complexity enforceme
 ✅ COMPLEXITY ENFORCEMENT TOOL CALL CHECKLIST:
 
 1. **Formula Library Loading**: MUST load via Read tool call
-   - Path: /scripts/formulas/context_engineering_formulas.sh
+   - Path: ../../../scripts/formulas/context_engineering_formulas.sh
    - Status: [LOADED/FAILED]
 
 2. **Complexity Calculations**: MUST execute via Bash tool calls
@@ -466,7 +466,7 @@ This command enforces **MANDATORY** tool call execution for complexity enforceme
 ### **Enforcement Compliance Validation**
 ```bash
 # MANDATORY: Execute enforcement compliance validation
-source /scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Validate complexity measurement accuracy
 measurement_compliance=$(calculate_threshold_compliance $measurement_variance "0.05" "lte")

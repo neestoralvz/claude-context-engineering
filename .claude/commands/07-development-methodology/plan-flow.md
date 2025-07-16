@@ -39,7 +39,7 @@ This orchestrator MANDATES real tool execution. No simulation allowed.
 
 ```bash
 # Load Context Engineering Mathematical Formulas
-source /Users/nalve/claude-context-engineering/scripts/formulas/context_engineering_formulas.sh
+source ../../../scripts/formulas/context_engineering_formulas.sh
 
 # Calculate planning workflow metrics
 planning_complexity=$(calculate_complexity 5 1.4 1.3)
@@ -56,11 +56,11 @@ echo "  Workflow Quality: $workflow_quality"
 
 ### Script Integration Points
 
-1. **Planning Validation**: Executes `./scripts/validation/validate-system-integrity.sh`
-2. **Mathematical Foundation**: Sources `./scripts/formulas/context_engineering_formulas.sh`
-3. **Quality Assessment**: Calls `./scripts/validation/analyze-content-quality.sh`
-4. **Compliance Check**: Runs `./scripts/compliance/generate-p55-compliance-report.sh`
-5. **Workflow Optimization**: Executes `./scripts/automation/workflow-triggers.js`
+1. **Planning Validation**: Executes `../../../scripts/validation/validate-system-integrity.sh`
+2. **Mathematical Foundation**: Sources `../../../scripts/formulas/context_engineering_formulas.sh`
+3. **Quality Assessment**: Calls `../../../scripts/validation/analyze-content-quality.sh`
+4. **Compliance Check**: Runs `../../../scripts/compliance/generate-p55-compliance-report.sh`
+5. **Workflow Optimization**: Executes `../../../scripts/automation/workflow-triggers.js`
 
 ## ⚡ **ORCHESTRATION PROTOCOL**
 

@@ -63,9 +63,9 @@ const { execSync } = require('child_process');
 async function executeEnhancedParallelizationAnalysis(todos) {
   // Phase 1: Initialize script integration
   const scriptIntegration = {
-    formulas: '/scripts/formulas/context_engineering_formulas.sh',
-    metrics: '/scripts/core/calculate-real-metrics.sh',
-    triggers: '/scripts/core/test-trigger-system.sh'
+    formulas: '../../../scripts/formulas/context_engineering_formulas.sh',
+    metrics: '../../../scripts/core/calculate-real-metrics.sh',
+    triggers: '../../../scripts/core/test-trigger-system.sh'
   };
   
   // Phase 2: Advanced parallelization analysis with script coordination
