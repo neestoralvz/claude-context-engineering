@@ -1,0 +1,20 @@
+{
+  "name": "medical-docs",
+  "version": "1.0.0",
+  "description": "Sistema de Expediente Médico Digital - HLDE",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "deploy": "npm run docs:build && gh-pages -d .vitepress/dist"
+  },
+  "keywords": ["medical", "electronic-health-record", "pediatric", "HLDE"],
+  "author": "Hospital Sistema Médico Digital",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "gh-pages": "^6.0.0"
+  }
+}
