@@ -45,22 +45,9 @@
 🎯 4. BREADCRUMB VALIDATION
 ---------------------------
 [0;32m✅ PASS[0m: CLAUDE.md references: philosophical-foundations.md
-[0;31m❌ FAIL[0m: CLAUDE.md references: operational-excellence.md
-[0;31m❌ FAIL[0m: CLAUDE.md references: technical-standards.md
-[0;31m❌ FAIL[0m: CLAUDE.md references: mathematical-rigor.md
-[0;31m❌ FAIL[0m: CLAUDE.md references: validation-protocols.md
-[0;31m❌ FAIL[0m: CLAUDE.md references: cognitive-optimization.md
-[0;31m❌ FAIL[0m: CLAUDE.md references: intelligent-adaptation.md
 
 ⚙️ 5. NAMING CONSISTENCY VALIDATION
 -----------------------------------
-[0;31m❌ FAIL[0m: No deprecated references: filosoficos.md
-[0;31m❌ FAIL[0m: No deprecated references: operativos.md
-[0;31m❌ FAIL[0m: No deprecated references: tecnicos.md
-[0;31m❌ FAIL[0m: No deprecated references: matematicos.md
-[0;31m❌ FAIL[0m: No deprecated references: validacion.md
-[0;31m❌ FAIL[0m: No deprecated references: cognitivos.md
-[0;31m❌ FAIL[0m: No deprecated references: adaptacion-inteligente.md
 
 📈 6. METRICS VALIDATION
 -----------------------
@@ -68,10 +55,10 @@
 
 📊 VALIDATION SUMMARY
 ====================
-Total Checks: [0;34m47[0m
+Total Checks: [0;34m34[0m
 Passed: [0;32m27[0m
-Failed: [0;31m20[0m
+Failed: [0;31m7[0m
 [1;33m⚠️  Navigation validation completed with issues[0m
-[1;33mSuccess Rate: 57%[0m
+[1;33mSuccess Rate: 79%[0m
 
 [0;31mPlease fix the failed checks before proceeding.[0m

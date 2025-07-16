@@ -76,7 +76,7 @@
 ### **Rutas Principales** (Acceso Instantáneo)
 ```bash
 📁 Núcleo Filosófico: ./docs/principles/philosophical-foundations.md  [PERMANENTE]
-⚙️ Motor de Comandos: ./.claude/commands/ → 67 comandos (5 categorías funcionales) [BAJO DEMANDA]
+⚙️ Motor de Comandos: ./.claude/commands/ → 67 comandos (8 categorías especializadas) [BAJO DEMANDA]
 🎯 Motor de Decisión: /decision → ./.claude/commands/01-core-intelligence/ [AUTO-DISPARADOR]
 🧠 Pensamiento Progresivo: Se auto-activa para análisis complejo            [INTELIGENTE]
 ```

@@ -1,155 +1,197 @@
-# Context Engineering Commands - Nueva Taxonomía
+# Context Engineering Commands - Functional Organization
 
-## Descripción
-Sistema de comandos reorganizado según naturaleza funcional y nivel de abstracción. Cada categoría representa un nivel diferente de operación en el ecosistema Context Engineering.
+## 📋 Overview
 
-## Estructura Taxonomica
+This directory contains all Context Engineering commands organized by **functional categories** rather than traditional hierarchical structure. This organization makes it easier to find and understand related commands while maintaining all existing functionality.
 
-### 📁 **[operacionales/](operacionales/)** (47 comandos)
-**Comandos atómicos con responsabilidad única**
-- **Función**: Acciones específicas (Qué)
-- **Características**: Single responsibility, alta reutilización, building blocks
-- **Complejidad**: 0.6-0.9 (mayoría)
-- **Ejemplos**: `meta-core`, `explore`, `tdd`, `strategic-git`, `confidence`
+## 🎯 Functional Categories
 
-### 📁 **[orquestadores/](orquestadores/)** (10 comandos)
-**Coordinan múltiples operaciones en workflows estructurados**
-- **Función**: Workflows coordinados (Cómo)
-- **Características**: Chain múltiples comandos, workflows estructurados, coordinación de procesos
-- **Complejidad**: 1.1-1.5
-- **Ejemplos**: `discover`, `plan-flow`, `execute`, `verify-flow`, `doc-flow`
+### **🔄 Core Routing** (`core-routing/`)
+Commands that handle decision-making and routing logic:
+- `decision.md` - Mathematical routing brain
+- `explicit-decision-trees.md` - Binary decision mapping with visualization
 
-### 📁 **[comportamiento/](comportamiento/)** (11 comandos)
-**Modifican comportamiento del sistema con inteligencia adaptativa**
-- **Función**: Inteligencia adaptativa (Cuándo/Por qué)
-- **Características**: Modificación de comportamiento, decisiones automáticas, triggers inteligentes
-- **Complejidad**: 0.8-1.2
-- **Ejemplos**: `decision`, `intelligent-fallback`, `dynamic-dependency-analysis`, `sync-docs`
+### **🎭 Orchestration** (`orchestration/`)
+Commands that coordinate complex workflows:
+- `orchestrate.md` - Dynamic command coordination
+- `discover.md` - Discovery workflow orchestration
+- `execute.md` - Execution workflow coordination
+- `plan-flow.md` - Planning workflow orchestration
+- `verify-flow.md` - Verification workflow orchestration
 
-### 📁 **[meta/](meta/)** (1 comando)
-**Activación universal del ecosistema completo**
-- **Función**: Orquestación universal (Todo)
-- **Características**: Activación del ecosistema, orquestación universal, coordinación completa
-- **Complejidad**: 2.0
-- **Ejemplo**: `context-eng`
+### **⚡ Selection** (`selection/`)
+Commands that handle selection of models and agents:
+- `model-selection.md` - AI model routing (Opus/Sonnet)
+- `multi-agent-orchestration.md` - Agent deployment decisions
 
-## Patrón de Composición
+### **🗺️ Mapping** (`mapping/`)
+Commands that map system relationships and dependencies:
+- `command-relationships.md` - Command dependency mapping
 
-```
-OPERACIONAL → ORQUESTADOR → COMPORTAMIENTO → META
-   (Qué)   →    (Cómo)    →  (Cuándo/Por qué) → (Todo)
-```
+### **⚙️ Optimization** (`optimization/`)
+Commands that optimize context, performance, and resources:
+- `context-economy.md` - Context optimization
+- `context-over-commands.md` - Context prioritization
+- `optimize-cognitive-organization.md` - Cognitive organization
+- `optimize-complexity.md` - Complexity optimization
+- `optimize-context.md` - Context optimization
+- `optimize-intelligent-writing.md` - Writing optimization
+- `single-source-truth.md` - Information consolidation
 
-### Flujo de Activación
-1. **META** → Activa todo el ecosistema
-2. **COMPORTAMIENTO** → Determina qué hacer basado en condiciones
-3. **ORQUESTADORES** → Coordinan workflows específicos
-4. **OPERACIONALES** → Ejecutan acciones atómicas
+### **✅ Verification** (`verification/`)
+Commands that handle validation and verification:
+- `confidence.md` - Confidence scoring
+- `math-loops.md` - Mathematical verification loops
+- `math-verify.md` - Mathematical verification
+- `thresholds.md` - Threshold management
+- `validate-command-content.md` - Command content validation
+- `validate-tool-call-execution.md` - Tool call validation
+- `verify-loops.md` - Verification loops
+- `verify-scope.md` - Scope verification
 
-## Niveles de Abstracción
+### **📚 Documentation** (`documentation/`)
+Commands that handle documentation and pattern management:
+- `living-documentation.md` - Living documentation
+- `planning-documentation.md` - Planning documentation
+- `technical-nomenclature.md` - Technical nomenclature
+- `update-living-docs.md` - Documentation updates
+- `crystallize.md` - Pattern crystallization
+- `patterns.md` - Pattern management
 
-### Nivel 1: Operacional
-- **47 comandos** - Acciones específicas
-- Building blocks fundamentales
-- Funcionalidad atómica y reutilizable
+### **🚀 Execution** (`execution/`)
+Commands that handle execution and parallelization:
+- `conversation-lifecycle.md` - Conversation lifecycle management
+- `git-worktrees-parallel.md` - Git worktrees parallel execution
+- `parallel-tool-execution.md` - Parallel tool execution
+- `parallel.md` - Parallel execution
+- `strategic-git.md` - Strategic git operations
 
-### Nivel 2: Orquestación
-- **10 comandos** - Workflows coordinados
-- Estructuran múltiples operaciones
-- Procesos organizados y predecibles
+### **🧠 Intelligence** (`intelligence/`)
+Commands that handle cognitive intelligence and autonomous behavior:
+- `autonomous.md` - Autonomous behavior
+- `complexity.md` - Complexity management
+- `decompose.md` - Objective decomposition
+- `evolution-ready-architecture.md` - Evolution-ready architecture
+- `evolve-intelligence.md` - Intelligence evolution
+- `explore.md` - Exploration intelligence
+- `invisible-excellence.md` - Invisible excellence
+- `knowledge-hierarchy.md` - Knowledge hierarchy
+- `meta-core.md` - Meta-core intelligence
+- `modular-composition.md` - Modular composition
+- `orchestrate-intelligence.md` - Intelligence orchestration
+- `organizational-architecture.md` - Organizational architecture
+- `progress.md` - Progress tracking
+- `reorganize-system.md` - System reorganization
+- `simplicity.md` - Simplicity principles
+- `systematic-quality-improvement.md` - Quality improvement
+- `tdd.md` - Test-driven development
+- `thinking.md` - Thinking processes
 
-### Nivel 3: Comportamiento
-- **11 comandos** - Inteligencia adaptativa
-- Modifican comportamiento del sistema
-- Decisiones automáticas basadas en contexto
+### **🔍 Exploration** (`exploration/`)
+Commands that handle exploration and discovery:
+- `discover.md` - Discovery processes
+- `explore.md` - Exploration processes
+- `quick-explore.md` - Quick exploration
+- `quick-explore-orquestador.md` - Quick exploration orchestrator
 
-### Nivel 4: Meta
-- **1 comando** - Activación universal
-- Orquesta todo el ecosistema
-- Coordinación completa de 5 fases
+### **🎛️ Behavior** (`behavior/`)
+Commands that handle system behavior and monitoring:
+- `dynamic-dependency-analysis.md` - Dynamic dependency analysis
+- `intelligent-fallback.md` - Intelligent fallback
+- `monitor.md` - System monitoring
+- `registry-metrics-update.md` - Registry metrics update
+- `script-automation-bridge.md` - Script automation bridge
+- `sync-docs.md` - Documentation synchronization
+- `think-process.md` - Think process
+- `validate-sys.md` - System validation
+- `system-health.md` - System health monitoring
 
-## Ventajas de la Nueva Taxonomía
+### **🌟 Meta** (`meta/`)
+Universal and meta-level commands:
+- `context-eng.md` - Universal context engineering activation
 
-### 🎯 **Claridad Conceptual**
-- Cada categoría tiene un propósito claro
-- Separación de responsabilidades
-- Fácil navegación y comprensión
+## 🔗 Integration Patterns
 
-### ⚡ **Eficiencia de Desarrollo**
-- Comandos organizados por función
-- Reutilización optimizada
-- Composición inteligente
+### **Command Flow**
+1. **Routing** → **Selection** → **Orchestration** → **Execution** → **Verification** → **Documentation**
+2. **Intelligence** and **Exploration** support all phases
+3. **Behavior** monitors and adapts throughout
+4. **Optimization** continuously improves performance
 
-### 🔧 **Mantenibilidad**
-- Estructura escalable
-- Modificaciones localizadas
-- Evolución controlada
+### **Natural Connections**
+- Core routing feeds into selection and orchestration
+- Intelligence drives exploration and autonomous behavior
+- Verification ensures quality at every step
+- Documentation captures patterns for future reuse
 
-### 🧠 **Comprensión Cognitiva**
-- Mapa mental natural
-- Jerarquía intuitiva
-- Aprendizaje progresivo
+## 🎯 Benefits of Functional Organization
 
-## Navegación Rápida
+### **Intuitive Navigation**
+- Find related commands easily
+- Understand command relationships
+- Discover relevant functionality faster
 
-| Categoría | Comandos | Función Principal |
-|-----------|----------|------------------|
-| **[operacionales](operacionales/)** | 47 | Acciones específicas |
-| **[orquestadores](orquestadores/)** | 10 | Workflows coordinados |
-| **[comportamiento](comportamiento/)** | 11 | Inteligencia adaptativa |
-| **[meta](meta/)** | 1 | Orquestación universal |
+### **Clear Boundaries**
+- Each category has distinct responsibility
+- Reduced confusion about command purpose
+- Easier to maintain and extend
 
-## Migración desde Estructura Anterior
+### **Functional Cohesion**
+- Commands grouped by what they do
+- Related functionality in same location
+- Natural workflow patterns emerge
 
-### Estructura Anterior (Temática)
-- `01-core-intelligence/` → Distribuido según función
-- `02-mathematical-verification/` → Principalmente operacionales
-- `03-discovery-exploration/` → Mezclado operacionales/orquestadores
-- `04-orchestration-flow/` → Distribuido según complejidad
-- `05-context-optimization/` → Principalmente operacionales
-- `06-system-architecture/` → Distribuido según función
-- `07-development-methodology/` → Distribuido según función
-- `08-automation-tools/` → Principalmente comportamiento
+## 🚀 Usage Guidelines
 
-### Estructura Nueva (Funcional)
-- Organización por naturaleza funcional
-- Separación clara de responsabilidades
-- Jerarquía de abstracción natural
+### **Finding Commands**
+1. Identify what you want to accomplish
+2. Go to the relevant functional category
+3. Browse available commands in that category
 
-## Archivo de Registro
-La nueva taxonomía se refleja en el archivo de configuración:
-- **Archivo**: `.claude/config/command-registry.json`
-- **Versión**: 2.1.0
-- **Categorías**: `operacionales`, `orquestadores`, `comportamiento`, `meta`
+### **Understanding Relationships**
+- Check `mapping/command-relationships.md` for detailed connections
+- Each category README explains internal relationships
+- Natural workflow patterns documented
+
+### **Contributing New Commands**
+1. Determine primary function of new command
+2. Place in appropriate functional category
+3. Update category README with new command
+4. Document relationships in mapping category
+
+## 📊 Migration from Previous Structure
+
+### **Previous Structure (Taxonomic)**
+- `operacionales/` → Distributed across functional categories
+- `orquestadores/` → Mainly to `orchestration/`
+- `comportamiento/` → Mainly to `behavior/`
+- `meta/` → Preserved as `meta/`
+- `decision/` → Distributed across `core-routing/`, `orchestration/`, `selection/`, `mapping/`
+
+### **New Structure (Functional)**
+- Organization by what commands do
+- Clear separation of concerns
+- Natural workflow patterns
+- Intuitive navigation
+
+## 🔄 Command Count by Category
+
+| Category | Commands | Primary Function |
+|----------|----------|------------------|
+| **Core Routing** | 2 | Decision-making and routing |
+| **Orchestration** | 5 | Workflow coordination |
+| **Selection** | 2 | Model and agent selection |
+| **Mapping** | 1 | System relationship mapping |
+| **Optimization** | 7 | Performance and resource optimization |
+| **Verification** | 8 | Validation and verification |
+| **Documentation** | 6 | Documentation and pattern management |
+| **Execution** | 5 | Execution and parallelization |
+| **Intelligence** | 18 | Cognitive intelligence and autonomy |
+| **Exploration** | 4 | Exploration and discovery |
+| **Behavior** | 9 | System behavior and monitoring |
+| **Meta** | 1 | Universal activation |
+| **TOTAL** | **68** | **Complete functional coverage** |
 
 ---
 
-## 📂 Estructura Anterior (Referencia)
-
-### **01-core-intelligence/** (7 comandos)
-**Distribuidos**: operacionales (6) + meta (1)
-
-### **02-mathematical-verification/** (13 comandos)
-**Distribuidos**: operacionales (12) + orquestadores (1)
-
-### **03-discovery-exploration/** (6 comandos)
-**Distribuidos**: operacionales (4) + orquestadores (2)
-
-### **04-orchestration-flow/** (10 comandos)
-**Distribuidos**: operacionales (6) + orquestadores (2) + comportamiento (2)
-
-### **05-context-optimization/** (5 comandos)
-**Distribuidos**: operacionales (5)
-
-### **06-system-architecture/** (12 comandos)
-**Distribuidos**: operacionales (8) + orquestadores (2) + comportamiento (2)
-
-### **07-development-methodology/** (7 comandos)
-**Distribuidos**: operacionales (5) + orquestadores (2)
-
-### **08-automation-tools/** (8 comandos)
-**Distribuidos**: operacionales (2) + comportamiento (6)
-
----
-
-**Nota**: Esta reorganización mejora la comprensión conceptual y facilita el desarrollo, mantenimiento y evolución del sistema Context Engineering mediante una estructura basada en naturaleza funcional en lugar de agrupación temática.
+**Note**: This functional organization maintains all existing command functionality while providing a more intuitive and maintainable structure for the Context Engineering ecosystem. All commands have been preserved exactly as they were, only relocated to more logical functional categories.

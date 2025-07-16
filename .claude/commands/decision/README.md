@@ -14,18 +14,20 @@ This category contains commands that handle **decision-making**, **routing**, **
 
 ## 🔧 Commands in This Category
 
-### **Core Decision Engine**
+### **Core Routing (`core-routing/`)**
 - **`decision.md`** - Mathematical routing brain that determines execution strategy
 - **`explicit-decision-trees.md`** - Binary decision mapping with mathematical triggers
 
-### **Orchestration Commands**  
+### **Orchestration (`orchestration/`)**  
 - **`orchestrate.md`** - Dynamic command coordination and intelligent routing
 - **`discover.md`** - Discovery workflow orchestration (moved from orquestadores)
-- **`command-relationships.md`** - Command dependency mapping and coordination
 
-### **Selection Commands**
+### **Selection (`selection/`)**
 - **`model-selection.md`** - AI model routing decisions (Opus/Sonnet selection)
 - **`multi-agent-orchestration.md`** - Agent deployment decisions and coordination
+
+### **Mapping (`mapping/`)**
+- **`command-relationships.md`** - Command dependency mapping and coordination
 
 ## 🎭 Functional Characteristics
 
@@ -78,7 +80,7 @@ This category contains commands that handle **decision-making**, **routing**, **
 
 ## 🎯 Usage Patterns
 
-### **Direct Decision Making**
+### **Core Routing**
 ```bash
 /decision "complex task analysis"
 /explicit-decision-trees "binary routing decision"
