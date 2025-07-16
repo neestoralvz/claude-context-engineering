@@ -1,0 +1,21 @@
+{
+  "content_quality_analysis": {
+    "timestamp": "2025-07-15T19:28:56-06:00",
+    "file_analyzed": "/tmp/test_command.md",
+    "metrics": {
+      "information_density": .7000,
+      "clarity_score": 1.0,
+      "technical_accuracy": .5000,
+      "readability_score": 1.0,
+      "total_words":       39,
+      "total_lines":       10,
+      "meaningful_lines":        7
+    },
+    "quality_assessment": {
+      "information_density_status": "NEEDS_IMPROVEMENT",
+      "clarity_status": "PASSED",
+      "technical_status": "NEEDS_IMPROVEMENT",
+      "readability_status": "PASSED"
+    }
+  }
+}

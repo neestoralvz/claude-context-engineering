@@ -1,0 +1,25 @@
+{
+  "comprehensive_quality_metrics": {
+    "timestamp": "2025-07-15T18:50:49-06:00",
+    "file_analyzed": ".claude/commands/01-core-intelligence/smart-workflow.md",
+    "quality_scores": {
+      "information_density": 0.5009,
+      "clarity_score": 1.0,
+      "technical_accuracy": 1.0000,
+      "nomenclature_compliance": 0.9000,
+      "tool_call_compliance": 0.8500,
+      "comprehensive_quality": 0.8003,
+      "weighted_quality": 0.8451
+    },
+    "quality_assessment": {
+      "overall_grade": "ACCEPTABLE",
+      "mathematical_foundation": "context_engineering_formulas",
+      "validation_method": "script_based_quantitative_analysis"
+    },
+    "improvement_recommendations": [
+      "Improve information density to ≥95%",
+      "Improve nomenclature compliance to ≥95%",
+      "Enhance tool call compliance to ≥98%"
+    ]
+  }
+}

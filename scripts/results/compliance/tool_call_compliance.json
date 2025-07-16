@@ -1,0 +1,23 @@
+{
+  "tool_call_compliance": {
+    "timestamp": "2025-07-15T19:28:56-06:00",
+    "file_analyzed": "/tmp/test_command.md",
+    "compliance_metrics": {
+      "p55_compliance": .6666,
+      "p56_compliance": ,
+      "overall_compliance": ,
+      "tool_call_mentions": 1,
+      "execution_requirements": 2,
+      "simulation_prevention": 1,
+      "visual_announcements": 0
+0,
+      "transparency_elements": 0
+0
+    },
+    "compliance_status": {
+      "p55_status": "NON_COMPLIANT",
+      "p56_status": "NON_COMPLIANT",
+      "overall_status": "NEEDS_IMPROVEMENT"
+    }
+  }
+}
