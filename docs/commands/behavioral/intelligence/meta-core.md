@@ -18,7 +18,19 @@ Activate the foundational philosophy of Context Engineering - enabling AI autono
 
 ---
 
-## ⚡ **AUTO-ACTIVATION TRIGGERS**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Autonomy Opportunity Threshold**: ≥0.8000 (80% enablement over control benefit)
+**Meta-Principle Time Threshold**: Immediate (foundational paradigm activation)
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable autonomy benefit with ≥80% enablement efficiency over control
+- **Threshold Enforcement**: REQUIRED activation when foundational paradigm establishment needed
+- **P56 Announcement**: 🧠 TRANSPARENCY: Meta-Core auto-activated for [task] autonomous enablement
+- **Evidence Collection**: Measurable autonomy metrics and enablement success documentation
 
 ### **Trigger Purpose**
 This command activates automatically when the system detects the need to establish AI autonomy and shift from control to enablement paradigm. Designed for agentic LLM systems requiring autonomous activation without manual intervention.

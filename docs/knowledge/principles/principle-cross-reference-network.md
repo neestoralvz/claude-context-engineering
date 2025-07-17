@@ -1,6 +1,6 @@
 # 🕸️ Principle Cross-Reference Network
 
-**CRITICAL Principle Interconnection System**: Red sistemática de cross-references bidireccionales entre los 67 principios Context Engineering que permite navegación inteligente, descubrimiento de conexiones, y comprensión holística del sistema de principios.
+**CRITICAL Principle Interconnection System**: Red sistemática de cross-references bidireccionales entre los 87 principios Context Engineering que permite navegación inteligente, descubrimiento de conexiones, y comprensión holística del sistema de principios.
 
 ---
 
@@ -8,7 +8,7 @@
 
 ← [Principles Hub](./README.md) | [Core Principles](../core-principles.md) | [Technical Standards →](./technical-standards.md) | [Cross-Reference Intelligence Hub →](../cross-reference-intelligence-hub.md)
 
-**📊 Shared Elements**: [Navigation](../_shared/navigation.md) | [Metrics](../_shared/metrics.md) | [Workflow](../_shared/workflow.md)
+**📊 Shared Elements**: [Navigation](./_shared/navigation.md) | [Metrics](./_shared/metrics.md) | [Workflow](./_shared/workflow.md)
 
 ---
 
@@ -28,6 +28,7 @@ principle_cross_reference_network:
     foundational_dependencies: "Principles that depend on foundational principles"
     implementation_relationships: "Principles that implement other principles"
     complementary_synergies: "Principles that work synergistically together"
+    communication_enhancement: "Principles that enhance communication effectiveness"
     hierarchical_specializations: "Principles that specialize parent principles"
     
   navigation_optimization:
@@ -99,7 +100,7 @@ operational_network:
     center: "#13 Living Documentation"
     primary_connections:
       - "#34 Living Planning Documentation" (Specialization)
-      - "#66 Documentation as Living Context" (Advanced)
+      - "#83 Documentation as Living Context" (Advanced)
       - "#15 Pattern Crystallization" (Process)
       - "#58 Recursive Modularization Architecture" (Structure)
       - "#82 Research Knowledge Crystallization" (Research Integration)
@@ -198,7 +199,7 @@ adaptation_network:
     center: "#65 Intelligent Handoff and Context Control"
     primary_connections:
       - "#33 Conversation Lifecycle Management" (Lifecycle)
-      - "#66 Documentation as Living Context" (Context)
+      - "#83 Documentation as Living Context" (Context)
       - "#47 Universal Strategic Orchestration" (Orchestration)
       - "#61 Graceful Degradation Cascades" (Resilience)
     
@@ -236,6 +237,18 @@ connection_types:
     examples:
       - "#66 Intelligent Command Orchestration → #1 Meta-Principle"
       - "#27 Decision Engine Layer 0 → #5 Mathematical Auto-Activation"
+      - "#82 Compact Communication Standards → #49 User Experience Design"
+      - "#83 Token-Saving Intelligence → #24 Context Optimization"
+      - "#83 Token-Saving Intelligence → #82 Compact Communication Standards"
+      
+  communication_enhancement:
+    definition: "Principles that enhance communication effectiveness and clarity"
+    examples:
+      - "#82 Compact Communication Standards → Core Communication Foundation"
+      - "#83 Token-Saving Intelligence → Mathematical AI Efficiency Foundation"
+      - "#49 User Experience Design → Enhanced Interaction Patterns"
+      - "#55 Tool Call Execution Bridging → Transparent Communication"
+      - "#56 P56 Universal Command Transparency → Communication Transparency"
       - "#38 Mathematical Verification → #11 Verification as Liberation"
     
     validation_criteria:
@@ -298,7 +311,7 @@ network_patterns:
     
   specialized_clusters:
     mathematical_cluster: "Principles #5, #27, #29, #30, #38, #39, #40, #41"
-    documentation_cluster: "Principles #13, #34, #56, #57, #63, #66"
+    documentation_cluster: "Principles #13, #34, #56, #57, #63, #83"
     orchestration_cluster: "Principles #17, #18, #23, #47, #66, #67"
     adaptation_cluster: "Principles #44, #47, #48, #49, #50, #51, #52, #53, #54"
     
@@ -375,7 +388,7 @@ validation_system:
 - **Clustering Coefficient**: 0.738 ± 0.014 (≥0.70 target: ACHIEVED)
 - **Network Diameter**: 5 principles (≤6 target: ACHIEVED)
 - **Centrality Distribution**: Well-distributed with clear hubs
-- **Total Principles**: 81 (including 4 new exploration and research principles)
+- **Total Principles**: 87 (including Token Optimization Intelligence: #83, Mandatory Commit Operations: #84)
 
 ### **Cross-Reference Quality Metrics**
 - **Bidirectional Completeness**: 100% (All links bidirectional)
@@ -482,4 +495,4 @@ interface NetworkAnalyzer {
 
 ---
 
-*This principle cross-reference network creates a comprehensive, intelligent system for navigating and understanding the relationships between all 67 Context Engineering principles, enabling optimized learning, discovery, and system comprehension.*
+*This principle cross-reference network creates a comprehensive, intelligent system for navigating and understanding the relationships between all 84 Context Engineering principles, enabling optimized learning, discovery, and system comprehension.*

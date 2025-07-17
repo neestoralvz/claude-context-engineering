@@ -223,7 +223,7 @@ graceful_degradation_cascades:
 ### 65. Intelligent Handoff and Context Control
 **Definition**: Sistema inteligente de gestión de handoffs que detecta hitos naturales, controla el tamaño del contexto, y coordina cambios de modelo para mantener capacidades óptimas del LLM a través de múltiples conversaciones.
 
-**See Also**: [Conversation Lifecycle Management](./operational-excellence.md#33-conversation-lifecycle-management) | [Context Economy](./cognitive-optimization.md#41-context-economy) | [Graceful Degradation Cascades](#61-graceful-degradation-cascades) | [Documentation as Living Context](./operational-excellence.md#66-documentation-as-living-context) | [Strategic Git Versioning](./operational-excellence.md#16-strategic-git-versioning)
+**See Also**: [Conversation Lifecycle Management](./operational-excellence.md#33-conversation-lifecycle-management) | [Context Economy](./cognitive-optimization.md#41-context-economy) | [Graceful Degradation Cascades](#61-graceful-degradation-cascades) | [Documentation as Living Context](./operational-excellence.md#83-documentation-as-living-context) | [Strategic Git Versioning](./operational-excellence.md#16-strategic-git-versioning)
 
 **Core Handoff Intelligence Principles**:
 1. **Milestone Detection**: AUTOMATED detection de natural conversation boundaries con ≥90% precision
@@ -285,7 +285,7 @@ intelligent_handoff_control:
       continuation_strategy: "Recommended next steps with execution roadmap"
       
     documentation_integration:
-      living_context_sync: "Synchronize with Documentation as Living Context (#66)"
+      living_context_sync: "Synchronize with Documentation as Living Context (#83)"
       analysis_persistence: "Store analysis results in outputs/ with systematic organization"
       git_integration: "Integrate with Strategic Git Versioning (#16) 5-phase protocol"
       context_threading: "Maintain contextual thread across multiple handoff sessions"
@@ -311,7 +311,7 @@ intelligent_handoff_control:
 - **Conversation Lifecycle Coordination**: Enhance `/conversation-lifecycle` command with intelligent triggers
 - **Context Economy Synergy**: Integrate with `/context-economy` for progressive optimization
 - **Model Selection Intelligence**: Coordinate with `/model-selection` for handoff-optimized switching
-- **Documentation as Living Context Integration**: Synchronize with Principle #66 for persistent context management
+- **Documentation as Living Context Integration**: Synchronize with Principle #83 for persistent context management
 - **Strategic Git Integration**: Coordinate with enhanced Principle #16 for 5-phase commit protocol during handoffs
 
 **Automated Handoff Triggers**:

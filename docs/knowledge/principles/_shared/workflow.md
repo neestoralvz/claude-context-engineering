@@ -130,7 +130,7 @@ Verification as Liberation → Verification Loops → Adaptive Verification → 
 ```text
 Living Documentation → Pattern Recognition → Pattern Crystallization → Strategic Git → Documentation as Living Context
 ```
-**Principios Involucrados**: #13, #14, #15, #16, #66
+**Principios Involucrados**: #13, #14, #15, #16, #83
 **Resultado**: Documentación viva con patrones cristalizados y contexto persistente
 
 ### Flujo de Decisión

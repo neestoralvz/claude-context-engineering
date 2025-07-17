@@ -52,7 +52,7 @@
 ### 16. Strategic Git Versioning
 **Definition**: MANDATORY comprehensive git strategy integrating analysis documentation, incremental progress tracking, and intelligent handoff management through systematic 5-phase commit protocol.
 
-**See Also**: [Documentation as Living Context](#66-documentation-as-living-context) | [Git Strategy Intelligence Framework](./intelligent-adaptation.md#45-git-strategy-intelligence-framework) | [Conversation Lifecycle Management](#33-conversation-lifecycle-management)
+**See Also**: [Documentation as Living Context](#83-documentation-as-living-context) | [Git Strategy Intelligence Framework](./intelligent-adaptation.md#45-git-strategy-intelligence-framework) | [Conversation Lifecycle Management](#33-conversation-lifecycle-management)
 
 **CRITICAL 5-Phase Protocol**: INITIAL analysis commit → INTERMEDIATE progress commits → CHECKPOINT milestone commits → FINAL implementation commit → DOCUMENTATION learning commit
 
@@ -90,7 +90,7 @@ strategic_git_versioning:
     context_archival: "Archive context for future similar work"
 ```
 
-**Integration with Documentation as Living Context (#66)**:
+**Integration with Documentation as Living Context (#83)**:
 - **Analysis Commits**: Store initial analysis with git history for context preservation
 - **Progress Commits**: Update living documentation with each significant action
 - **Handoff Commits**: Prepare comprehensive context for seamless transitions
@@ -123,7 +123,7 @@ strategic_git_versioning:
 ### 56. Command Execution Transparency
 **Definition**: Every Claude Code slash command execution must be visibly announced by the main agent with bidirectional communication between Task agents and Principal agent to maintain complete user awareness and system transparency.
 
-**See Also**: [Tool Call Execution Bridging](./philosophical-foundations.md#55-tool-call-execution-bridging) | [Task Agent Communication Protocol](../.claude/protocols/task-agent-communication-protocol.md) | [Trigger Monitor](../.claude/commands/08-automation-tools/trigger-monitor.md) | [Verification as Liberation](./validation-protocols.md#11-verification-as-liberation)
+**See Also**: [Tool Call Execution Bridging](./philosophical-foundations.md#55-tool-call-execution-bridging) | [Task Agent Communication Protocol](../technical/protocols/task-agent-communication-protocol.md) | **Trigger Monitor** (integrated into command system) | [Verification as Liberation](./validation-protocols.md#11-verification-as-liberation)
 
 ### 57. Command Optimization Before Creation
 **Definition**: Optimize and enhance existing commands before creating new ones, unless addressing a genuinely specific and unique requirement that cannot be satisfied through improvement of existing functionality.
@@ -143,7 +143,7 @@ strategic_git_versioning:
 - **Performance Critical**: Specialized optimization needs that cannot be integrated
 - **Isolation Required**: Security or stability considerations requiring separation
 
-**See Also**: [Pattern Recognition](operational-excellence.md#14-pattern-recognition) | [Pattern Crystallization](operational-excellence.md#15-pattern-crystallization) | [Single Source of Truth](./technical-standards.md#26-single-source-of-truth)
+**See Also**: [Pattern Recognition](#14-pattern-recognition) | [Pattern Crystallization](#15-pattern-crystallization) | [Single Source of Truth](./technical-standards.md#26-single-source-of-truth)
 
 **Implementation Protocol**:
 1. **Detection**: Monitor `/command` execution
@@ -215,7 +215,7 @@ strategic_git_versioning:
 
 **See Also**: [Command Execution Transparency](#56-command-execution-transparency) | [Verification as Liberation](./validation-protocols.md#11-verification-as-liberation) | [Real-Time Adaptation Intelligence](./intelligent-adaptation.md#49-real-time-adaptation-intelligence)
 
-### 66. Documentation as Living Context
+### 83. Documentation as Living Context
 **Definition**: MANDATORY systematic storage of analysis and documentation as living context that automatically updates with actions taken, ensuring contextual continuity across work sessions and enabling seamless handoff management.
 
 **See Also**: [Intelligent Handoff and Context Control](./intelligent-adaptation.md#65-intelligent-handoff-and-context-control) | [Living Documentation](#13-living-documentation) | [Conversation Lifecycle Management](#33-conversation-lifecycle-management) | [Strategic Git Versioning](#16-strategic-git-versioning)
@@ -515,7 +515,7 @@ transparent_system_observability:
 
 ### → Security & Privacy
 - **#56 Command Execution Transparency** requires **[#71 Security by Design](./security-privacy.md#71-security-by-design)** for execution protection
-- **#66 Documentation as Living Context** integrates **[#72 Privacy-First Architecture](./security-privacy.md#72-privacy-first-architecture)** for data protection
+- **#83 Documentation as Living Context** integrates **[#72 Privacy-First Architecture](./security-privacy.md#72-privacy-first-architecture)** for data protection
 
 ### → Advanced Automation
 - **#79 Reinforced Local-First Exploration** empowers **[#73 Intelligent Process Automation](./advanced-automation.md#73-intelligent-process-automation)**

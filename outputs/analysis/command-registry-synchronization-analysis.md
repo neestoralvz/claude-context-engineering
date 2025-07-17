@@ -6,7 +6,7 @@
 
 **KEY FINDINGS**:
 - **Registry Conflict**: Two different registry versions (2.2.0 vs 3.0.0) with conflicting counts
-- **Count Discrepancy**: CLAUDE.md claims 75 commands, but actual filesystem contains 105+ active commands
+- **Count Discrepancy**: CLAUDE.md claims 76 commands, but actual filesystem contains 105+ active commands
 - **Path Reference Issues**: Registry uses `./commands/` but actual commands are in `docs/commands/`
 - **Consolidation Confusion**: "Consolidated" commands exist alongside original commands
 

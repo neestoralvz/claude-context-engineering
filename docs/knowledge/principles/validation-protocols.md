@@ -236,7 +236,7 @@ principle_compliance_supervision:
 
 **Valor diferencial**: Va más allá de verificación reactiva para supervisión proactiva de cumplimiento de principios, garantizando que la metodología Context Engineering se mantenga íntegra durante todas las actividades del sistema.
 
-### 67. Evolutionary System Maintenance
+### 84. Evolutionary System Maintenance
 **Definition**: Sistema automático de auto-mantenimiento y auto-evolución que garantiza la integridad continua del sistema Context Engineering através de mecanismos evolutivos inteligentes, propagación automática de estándares, y capacidades de auto-reparación.
 
 **See Also**: [Principle Compliance Supervision](#64-principle-compliance-supervision) | [System Integrity Assurance](#37-system-integrity-assurance) | [Self-Improving Intelligence](./intelligent-adaptation.md#52-self-improving-intelligence--learning)
@@ -381,7 +381,7 @@ detect_system_patterns → analyze_evolutionary_needs → apply_improvements →
 
 ### → Automatización Avanzada
 - **#64 Principle Compliance Supervision** habilita **[#73 Intelligent Process Automation](./advanced-automation.md#73-intelligent-process-automation)** con supervisión automática
-- **#67 Evolutionary System Maintenance** impulsa **[#74 Self-Orchestrating Workflows](./advanced-automation.md#74-self-orchestrating-workflows)** con auto-mantenimiento
+- **#84 Evolutionary System Maintenance** impulsa **[#74 Self-Orchestrating Workflows](./advanced-automation.md#74-self-orchestrating-workflows)** con auto-mantenimiento
 
 ### → Inteligencia de Rendimiento
 - **#63 Transparent System Observability** alimenta **[#75 Adaptive Performance Intelligence](./performance-intelligence.md#75-adaptive-performance-intelligence)** con métricas en tiempo real
@@ -389,7 +389,7 @@ detect_system_patterns → analyze_evolutionary_needs → apply_improvements →
 
 ### → Ecosistema de Integración
 - **#48 Adaptive Verification Framework** se coordina con **[#77 Universal Integration Protocols](./integration-ecosystem.md#77-universal-integration-protocols)** para verificación cross-system
-- **#67 Evolutionary System Maintenance** se integra con **[#78 Cross-System Orchestration](./integration-ecosystem.md#78-cross-system-orchestration)** para mantenimiento distribuido
+- **#84 Evolutionary System Maintenance** se integra con **[#78 Cross-System Orchestration](./integration-ecosystem.md#78-cross-system-orchestration)** para mantenimiento distribuido
 
 ---
 

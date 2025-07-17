@@ -36,6 +36,7 @@
 - **[Claude Code 2025 Features](./reference/claude-code-2025-features.md)** - Comprehensive 2025 feature reference
 - **[Claude Code Native Commands](./reference/claude-code-native-commands.md)** - Complete CLI and slash command reference
 - **[Claude Code Help/Status Reference](./reference/claude-code-help-status-reference.md)** - Specialized `/help` and `/status` command guide
+- **[Claude Code Conversation Storage](./reference/claude-code-conversation-storage.md)** - Local JSONL storage, data retention policies, and privacy considerations
 
 ### **🎨 Patterns & Templates**
 - **[Pattern Library](./patterns/)** - Crystallized workflows, proven methodologies, and deployment patterns
@@ -120,8 +121,8 @@
 ## ⚡ Priority Access Navigation (Optimized)
 
 ### **🚨 Emergency Access** (Single Click - ≤1 Cognitive Step)
-- **[P55/P56 Compliance](./technical/enhanced-command-execution.md#tool-call-execution-bridge-principles-55--56)** - Tool execution protocols
-- **[MANDATORY Terminology](./writing-standards.md#essential-standards-quick-reference)** - Required compliance language
+- **[P55/P56 Compliance](./technical/enhanced-command-execution.md#p55p56-protocol-integration)** - Tool execution protocols
+- **[MANDATORY Terminology](./writing-standards.md)** - Required compliance language
 - **[Claude Code `/help` & `/status`](./reference/claude-code-help-status-reference.md)** - Essential command discovery and system verification
 - **[GitHub Integration Setup](./reference/claude-github-integration.md#quick-start-guide)** - @claude tagging immediate setup
 - **[Mathematical Validation](./protocols/universal-mathematical-validation-framework.md)** - Precision requirements authority
@@ -250,7 +251,7 @@
 - **Boundary Respect**: Documentation and cross-references respect project independence
 - **Self-Management**: Each project evolves according to its own requirements and patterns
 
-**Autonomy Principle**: [Project Autonomy #5](../../CLAUDE.md#core-philosophy) - MANDATORY respect for independent project architectural decisions
+**Autonomy Principle**: [Project Autonomy #5](../../CLAUDE.md#-core-philosophy-always-active) - MANDATORY respect for independent project architectural decisions
 
 ---
 

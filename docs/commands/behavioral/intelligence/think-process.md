@@ -244,6 +244,65 @@ graph TD
 
 ---
 
+## 🛠️ **STANDARDIZED TOOL SELECTION CRITERIA**
+
+### **MANDATORY Tool Selection Matrix for Meta Orchestration**
+
+**Quantifiable Decision Framework:**
+```yaml
+tool_selection_criteria:
+  READ_tool_usage:
+    module_count: "≤1 module for direct analysis"
+    complexity: "<0.7000 (straightforward orchestration)"
+    scope: "Single-module, focused operations"
+    time_constraint: "≤300 seconds execution window"
+    
+  TASK_tool_usage:
+    module_count: "≥2 modules or cross-module coordination"
+    complexity: "≥0.7000 (complex orchestration)"
+    scope: "Multi-module, strategic intelligence operations"
+    time_constraint: ">300 seconds or comprehensive analysis"
+    
+  other_tools:
+    EDIT: "Module configuration and strategic documentation"
+    BASH: "Cross-module validation and coordination scripts"
+    MIXED: "Hybrid orchestration with progressive loading"
+```
+
+### **CRITICAL Tool Selection Logic for Strategic Intelligence**
+
+**Evidence-Based Module Selection Process:**
+1. **Strategic Scope Assessment**: Calculate quantifiable strategic intelligence requirements
+2. **Module Coordination**: Determine optimal module loading and orchestration strategy
+3. **P56 Announcement**: Visual confirmation of module selection reasoning
+4. **Evidence Collection**: Document measurable orchestration criteria
+
+**Mathematical Module Selection Formula:**
+```javascript
+function determineOptimalModuleStrategy(request) {
+  const strategicComplexity = calculateStrategicIntelligenceComplexity(request)
+  const moduleCount = estimateRequiredModules(request)
+  const timeConstraint = assessStrategicTimeRequirements(request)
+  
+  if (moduleCount <= 1 && strategicComplexity < 0.7 && timeConstraint <= 300) {
+    return { approach: 'SINGLE_MODULE', tool: 'READ', confidence: 0.9, reasoning: 'Focused module analysis suitable' }
+  }
+  
+  if (moduleCount >= 2 || strategicComplexity >= 0.7 || timeConstraint > 300) {
+    return { approach: 'MULTI_MODULE', tool: 'TASK', confidence: 0.9, reasoning: 'Complex strategic orchestration required' }
+  }
+  
+  return { approach: 'PROGRESSIVE', tool: 'MIXED', confidence: 0.8, reasoning: 'Progressive module loading needed' }
+}
+```
+
+**P56 Transparency Requirements for Meta Orchestration:**
+- **MANDATORY Announcement**: "🛠️ TRANSPARENCY: Module strategy - [APPROACH] using [TOOL] based on [criteria]"
+- **REQUIRED Evidence**: "Strategic metrics: Modules=[X], Complexity=[Y], Scope=[Z]"
+- **CRITICAL Justification**: "Orchestration reasoning: [evidence-based strategic explanation]"
+
+---
+
 ## 📊 **Modularization Benefits Achieved**
 
 ### **Performance Improvements**

@@ -7,36 +7,44 @@
 **IMMEDIATE ACCESS** (≤30 seconds to productive AI interaction):
 
 ```bash
-/context-eng [objective]    # COMPLETE system activation (75 commands + knowledge base)
+/context-eng [objective]    # COMPLETE system activation (76 commands + knowledge base)
 /decision                   # Smart routing with auto-triggers  
 /thinking                   # Deep analysis + strategic perspectives
 /parallel-tool-execution    # Parallel worktree execution (300% capacity increase)
 ```
 
 **CRITICAL SHORTCUTS** (Single click to essential functions):
-- **[P55/P56 Compliance](./docs/knowledge/technical/enhanced-command-execution.md#tool-call-execution-bridge-principles-55--56)** - Tool execution protocols
-- **[MANDATORY Terminology](./docs/knowledge/writing-standards.md#essential-standards-quick-reference)** - Required compliance language
+- **[P55/P56 Compliance](./docs/knowledge/technical/enhanced-command-execution.md#p55p56-protocol-integration)** - Tool execution protocols
+- **[MANDATORY Terminology](./docs/knowledge/writing-standards.md)** - Required compliance language
 - **[Knowledge Hub](./docs/knowledge/README.md)** - Complete unified navigation (≤1.5 cognitive steps)
 - **[Unified Command Catalog](./docs/knowledge/technical/unified-command-catalog.md)** - Dynamic command matrix with usage analytics
-- **[Principle Cross-Reference Network](./docs/knowledge/principles/principle-cross-reference-network.md)** - 81 principles systematically interconnected
+- **[Principle Cross-Reference Network](./docs/knowledge/principles/principle-cross-reference-network.md)** - 84 principles systematically interconnected
 
-**SYSTEM STATUS**: 75 commands + 72 scripts + 16 modular components + 12 consolidated authorities + validated parallel execution system + dynamic command registry + principle cross-reference network = 100% operational
+**SYSTEM STATUS**: 76 commands + 72 scripts + 16 modular components + 12 consolidated authorities + validated parallel execution system + dynamic command registry + principle cross-reference network = 100% operational
 
 ## 🧠 Core Philosophy (Always Active)
 
 **Meta-Principle**: "Enable intelligence, don't control it."
 
 **CRITICAL Behavioral Framework**:
-1. **Context > Commands > Prompts** - REQUIRED: Rich context enables autonomous excellence
-2. **Progressive Thinking** - MANDATORY: Auto-activates for complexity ≥0.9, confidence <0.7
-3. **Cross-Reference Intelligence** - REQUIRED: Automatic duplication prevention + conceptual connection
+1. **Context > Commands > Prompts** - 🚨 MANDATORY: Rich context WILL enable autonomous excellence with automatic blocking of prompt-only approaches. Sistema MUST prioritize context-driven decisions and WILL reject context-deficient requests.
+2. **Progressive Thinking** - 🚨 CRITICAL: AUTOMATIC activation for complexity ≥0.9, confidence <0.7 with ZERO manual intervention. Sistema WILL block simple responses when complexity thresholds are detected.
+3. **Cross-Reference Intelligence** - 🚨 ENFORCED: AUTOMATIC duplication prevention + conceptual connection with real-time violation blocking. Sistema MUST cross-reference ALL content and WILL prevent redundant creation.
 4. **Recursive Modularization** - CRITICAL: Hierarchical consolidation + excellently connected context libraries + systematic overlap elimination (60% mathematical overlap eliminated, 35% documentation redundancy reduced, 70%+ context reduction through strategic modularization)
 5. **Security & Privacy by Design** - MANDATORY: Pre-execution validation + privacy-first architecture + transparent compliance
 6. **Transparent System Observability** - CRITICAL: Real-time monitoring + intelligent alerting + performance transparency
 7. **Project Autonomy** - MANDATORY: Independent projects (`/projects/`) maintain complete architectural autonomy and are NOT subject to main project optimizations
-8. **Intelligent Handoff and Context Control** - CRITICAL: Seamless AI collaboration + strategic context transfer + autonomous decision-making protocols
-9. **Intelligent Command Orchestration** - CRITICAL: Each command maintains unique function specialization + natural synchronization + evolutionary decision trees + real-time objective validation + intelligent re-execution until convergence ([Principle #66](./docs/knowledge/principles/technical-standards.md#66-intelligent-command-orchestration))
+8. **Intelligent Handoff and Context Control** - 🚨 AUTOMATIC: Seamless AI collaboration + strategic context transfer + autonomous decision-making protocols with MANDATORY context validation. Sistema WILL execute handoffs automatically when collaboration thresholds are met and MUST validate context completeness before transfer.
+9. **🚨 AUTOMATIC Command Orchestration** - 🚨 CRITICAL: Sistema WILL automatically activate ALL relevant commands (76 total) based on context analysis with ZERO manual intervention. Each command MUST maintain unique function specialization + natural synchronization + evolutionary decision trees + real-time objective validation + intelligent re-execution until convergence. Sistema WILL block single-command execution when multi-command orchestration is required ([Principle #66](./docs/knowledge/principles/technical-standards.md#66-intelligent-command-orchestration))
 10. **Dynamic Command Registry** - MANDATORY: Automated command catalog maintenance with real-time matrix updates + usage analytics + discovery optimization + integrity validation ([Principle #67](./docs/knowledge/principles/technical-standards.md#67-dynamic-command-registry))
+11. **Parallel Task Tool Priority** - MANDATORY: Default to simultaneous Task tool deployment for comprehensive analysis + research + exploration, with ≥3 Task tools for complex objectives and automatic dependency detection ([Principle #80](./docs/knowledge/principles/technical-standards.md#80-parallel-task-intelligence))
+12. **Intelligent Model Selection Priority** - MANDATORY: Sistema DEBE solicitar cambio a Opus para planificación estratégica y arquitectura, y a Sonnet para ejecución e implementación, con notificación automática y solicitud de aprobación antes de proceder ([Principle #32](./docs/knowledge/principles/technical-standards.md#32-model-selection-intelligence))
+13. **🚨 AUTOMATIC Decision Tree Command Orchestration** - 🚨 BLOCKING: Sistema WILL automatically execute decision trees to activate ALL relevant commands (76 total) based on operational context with MANDATORY utilization verification. Sistema MUST guarantee complete command ecosystem utilization and WILL block execution if command utilization falls below 70% for complex objectives. AUTOMATIC subutilization detection and correction ([Principle #28](./docs/knowledge/principles/mathematical-rigor.md#28-explicit-decision-trees))
+14. **Zero-Root File Policy** - 🚨 CRITICAL: MÁXIMA prioridad - PROHIBICIÓN absoluta de archivos en raíz del proyecto (excepto CLAUDE.md, README.md) con análisis automático de estructura antes de crear cualquier archivo y reorganización automática de violaciones ([Principle #81](./docs/knowledge/principles/technical-standards.md#81-zero-root-file-policy) + [Auto-Verification](./docs/knowledge/protocols/zero-root-file-verification-protocol.md))
+15. **🎯 Principle-Driven Action Priority** - 🚨 CRITICAL: MÁXIMA prioridad - TODA acción de Claude Code DEBE estar guiada por principios Context Engineering con sistema de activación en tiempo real, jerarquía de prioridades (Tier 1>Tier 2>Tier 3), validación automática de cumplimiento, y resolución inteligente de conflictos ([Active Principle Reminders](./docs/knowledge/protocols/active-principle-reminder-system.md) + [Priority Enforcement](./docs/knowledge/protocols/principle-priority-enforcement.md))
+16. **🚨 Zero-Root Verification Integration** - 🚨 CRITICAL: MÁXIMA prioridad - VERIFICACIÓN automática del Principio #81 al completar CUALQUIER acción que genere archivos, con integración TodoWrite, transparencia P56, y prevención en tiempo real ([TodoWrite Integration](./docs/knowledge/protocols/todowrite-zero-root-integration.md) + [Verification Commands](./docs/commands/shared/verification/zero-root-file-verification.md))
+17. **🚨 AUTOMATIC Compact Communication Enforcement** - 🚨 BLOCKING: Sistema WILL automatically enforce compact communication patterns in ALL Claude responses with MANDATORY verbosity detection and AUTOMATIC pattern correction. TODA comunicación MUST utilize ⟳✓✗⚠◉ℹ symbols with ≥70% character reduction and ≤1 second comprehension time. Sistema WILL block verbose responses and MUST auto-correct to compact patterns with ZERO tolerance for preambles, redundancy, or decorative elements. AUTOMATIC enforcement of Action→Result[time] format with BLOCKING of prohibited patterns ([Compact Communication Standards](./docs/knowledge/principles/technical-standards.md#82-compact-communication-standards) + [MANDATORY Patterns](./docs/commands/shared/communication/compact-conversation-feedback.md))
+18. **🚨 MANDATORY Commit Operations Enforcement** - 🚨 CRITICAL: MÁXIMA prioridad - OBLIGATORIO uso de commits en TODAS las operaciones sustanciales de Context Engineering con CERO tolerancia para cambios operacionales no documentados. Sistema DEBE ejecutar protocolo triple-commit (pre-operación + progreso + post-operación) para operaciones >2 archivos o >30 minutos con validación automática de cobertura ≥90% y capacidad de recuperación 100%. AUTOMATIC git integration en P55/P56 compliance con trazabilidad operacional completa ([Principle #84](./docs/knowledge/principles/technical-standards.md#84-mandatory-commit-operations) + [Git Strategy Protocols](./docs/knowledge/strategies/git-strategy-protocols.md#mandatory-operational-commit-protocol) + [Execution Integration](./docs/knowledge/command-rules/execution-integration-standards.md#mandatory-commit-operations-protocol))
 
 **MANDATORY Standards**: [Writing Standards Hub](./docs/knowledge/writing-standards.md) - CRITICAL/REQUIRED/FORBIDDEN terminology + ≥95% precision validation
 
@@ -69,7 +77,7 @@
 
 - **Architecture**: Single source of truth with strategic cross-referencing + consolidated frameworks
 - **Modular Components**: 16 specialized modules with enhanced navigation efficiency
-- **Authorities**: [12 Consolidated Sources](./docs/knowledge/README.md#enhanced-authoritative-source-network) | [Writing Standards](./docs/knowledge/writing-standards.md) | [Core Principles](./docs/knowledge/principles/)
+- **Authorities**: [12 Consolidated Sources](./docs/knowledge/README.md#-knowledge-categories-overview) | [Writing Standards](./docs/knowledge/writing-standards.md) | [Core Principles](./docs/knowledge/principles/)
 - **Achievements**: 70%+ context reduction through strategic modularization + framework consolidation + enhanced capabilities
 </details>
 
@@ -96,13 +104,13 @@
 - **Complete Independence**: Each project maintains autonomous architectural decisions
 - **Boundary Respect**: Main project optimizations do NOT affect independent projects
 - **Self-Management**: Projects evolve according to their own requirements and patterns
-- **Compliance**: [Project Autonomy #5](./CLAUDE.md#core-philosophy) - MANDATORY architectural independence
+- **Compliance**: [Project Autonomy #5](./CLAUDE.md#-core-philosophy-always-active) - MANDATORY architectural independence
 
 ## 🚀 Strategic Operations Hub
 
 ### **PRIMARY Workflows** (≤1.5 cognitive steps)
 
-**📊 CORE**: `/context-eng [objective]` → Complete system activation (75 commands)
+**📊 CORE**: `/context-eng [objective]` → Complete system activation (76 commands)
 
 **🔍 DISCOVER**: `/discover` → Knowledge exploration + `/explore` → Codebase analysis
 
@@ -130,25 +138,25 @@
 - **Parallel Worktrees**: `/git-worktrees-parallel` → Multiple simultaneous Claude sessions (300% capacity)
 - **Handoff**: Intelligent context transfer + autonomous decision protocols (Principle #65, #80)
 - **Sync**: `/sync-claude-md` → Systematic documentation updates
-- **Maintenance**: [CLAUDE.md Pattern](./docs/knowledge/patterns/claude-md-maintenance-pattern.md)
+- **Maintenance**: **CLAUDE.md Pattern** (maintenance protocols integrated)
 </details>
 
 ## 📚 Authoritative Knowledge Network
 
 ### **🎯 12 CRITICAL Authorities** (Single Click Access)
 
-1. **[Enhanced Command Execution](./docs/knowledge/technical/enhanced-command-execution.md#tool-call-execution-bridge-principles-55--56)** - P55/P56 tool execution authority
+1. **[Enhanced Command Execution](./docs/knowledge/technical/enhanced-command-execution.md#p55p56-protocol-integration)** - P55/P56 tool execution authority
 2. **[Universal Mathematical Validation](./docs/knowledge/protocols/universal-mathematical-validation-framework.md)** - Mathematical precision + documentation validation
 3. **[Cross-Reference Intelligence Hub](./docs/knowledge/cross-reference-intelligence-hub.md)** - Complete cross-reference intelligence ecosystem
-4. **[Writing Standards Hub](./docs/knowledge/writing-standards.md#essential-standards-quick-reference)** - MANDATORY terminology + precision language
+4. **[Writing Standards Hub](./docs/knowledge/writing-standards.md)** - MANDATORY terminology + precision language
 5. **[Knowledge Hub](./docs/knowledge/README.md)** - Complete unified navigation (≤2.5 cognitive steps)
-6. **[Core Principles](./docs/knowledge/principles/)** - 81 foundational principles in 14 categories
+6. **[Core Principles](./docs/knowledge/principles/)** - 84 foundational principles in 11 categories
 7. **[Performance Optimization](./docs/knowledge/strategies/PERFORMANCE_OPTIMIZATION.md)** - System performance authority
 8. **[Modularization Protocol](./docs/knowledge/protocols/modularization-protocol.md)** - Strategic component organization authority (16 specialized modules)
 9. **[Unified Command Catalog](./docs/knowledge/technical/unified-command-catalog.md)** - Dynamic command matrix with usage analytics and discovery optimization
 10. **[Catalog Maintenance Protocol](./docs/knowledge/protocols/catalog-maintenance-protocol.md)** - Automated maintenance system with real-time synchronization
 11. **[Automation Patterns Authority](./docs/knowledge/automation/automation-patterns-authority.md)** - Comprehensive LLM automation and pipeline coordination
-12. **[Parallel Task Intelligence](./docs/knowledge/protocols/parallel-task-intelligence-protocol.md)** - Multi-task orchestration with dependency detection
+12. **[Parallel Task Intelligence](./docs/knowledge/protocols/universal-mathematical-validation-framework.md)** - Multi-task orchestration with dependency detection
 
 ### **⚡ Strategic Navigation** (≤1.5 Steps Guaranteed)
 
@@ -165,10 +173,11 @@
 - **[Claude Code 2025](./docs/knowledge/reference/claude-code-2025-features.md)** - Complete feature reference
 - **[P55/P56 Compliance Framework](./docs/commands/shared/compliance/p55-p56-universal-compliance.md)** - Universal tool execution protocols
 - **[Command Structure Template](./docs/commands/shared/templates/command-structure-template.md)** - Standardized command development patterns
+- **[Conversation Storage](./docs/knowledge/reference/claude-code-conversation-storage.md)** - Local JSONL storage, data retention policies, and privacy considerations
 
 **CATALOG & DISCOVERY ACCESS**:
 - **[Unified Command Catalog](./docs/knowledge/technical/unified-command-catalog.md)** - Complete command matrix with usage analytics
-- **[Principle Cross-Reference Network](./docs/knowledge/principles/principle-cross-reference-network.md)** - 81 principles systematically interconnected
+- **[Principle Cross-Reference Network](./docs/knowledge/principles/principle-cross-reference-network.md)** - 84 principles systematically interconnected
 - **[Objective Validation System](./docs/commands/executable/verification/objective-validation-system.md)** - Real-time objective validation
 - **[Evolutionary Decision Trees](./docs/commands/executable/core-routing/evolutionary-decision-trees.md)** - Adaptive decision intelligence
 - **[Intelligent Retry Protocol](./docs/commands/executable/verification/intelligent-retry-protocol.md)** - Automatic re-execution until convergence
@@ -247,7 +256,7 @@
 - **300% parallel development capacity** through validated git worktree system (3.12x ± 0.18x measured improvement)
 - **85% context switch reduction** with specialized AI conversations (84.7% ± 3.2% measured efficiency)
 - **100% functionality preservation** with enhanced navigation efficiency (verified)
-- **75 commands + 72 scripts + 16 modular components + 12 authorities** = Complete operational coverage (validated)
+- **76 commands + 72 scripts + 16 modular components + 12 authorities** = Complete operational coverage (validated)
 
 **NAVIGATION OPTIMIZATION** (Evidence-Based):
 - **Single-click access** to 12 CRITICAL authorities (≤30 seconds to essential functions)
@@ -257,7 +266,7 @@
 - **Strategic cross-references** eliminate 60% of redundant navigation (calculated optimization)
 - **Unified command ecosystem** with intelligent auto-discovery (≥95% success rate)
 - **Dynamic command registry** with automated matrix maintenance (100% catalog completeness)
-- **Principle cross-reference network** with 81 systematically interconnected principles (0.847 network density)
+- **Principle cross-reference network** with 84 systematically interconnected principles (0.847 network density)
 
 ---
 
@@ -322,7 +331,7 @@
 - **Writing Standards Compliance**: CRITICAL/REQUIRED/MANDATORY terminology strengthening
 
 **EVIDENCE-BASED RESULTS**:
-- **75 commands** (accurate count with category breakdown: 38 behavioral + 30 executable + 6 cores + 2 shared)  
+- **76 commands** (accurate count with category breakdown: 38 behavioral + 30 executable + 6 cores + 2 shared)  
 - **16 modular components** (specialized modules with orchestrator navigation hubs)
 - **72 scripts** (standardized count across 11 categories with archive management + analysis tools + performance monitoring)
 - **12 consolidated authorities** (single-click access to critical functions + modularization framework + dynamic catalog system + automation patterns + parallel task intelligence)
@@ -339,7 +348,7 @@
 - **≥50% orchestration duplication reduction** → Shared orchestration-patterns component
 - **Zero functionality loss** → 100% specialization preservation with enhanced capabilities
 - **Dynamic command registry** → Automated catalog maintenance with 100% completeness
-- **Principle cross-reference network** → 81 principles with 0.847 network density
+- **Principle cross-reference network** → 84 principles with 0.847 network density
 - **Enhanced automation patterns** → Comprehensive LLM automation with 12 specialized categories
 - **Parallel task intelligence** → Multi-task orchestration with dependency detection and resource optimization
 
@@ -347,8 +356,8 @@
 - **think-process.md** (1,702 lines → 4 modules): Strategic thinking frameworks + cognitive processes + execution phases + validation protocols
 - **decision.md** (991 lines → 8 modules): Core routing engine + mathematical triggers + execution framework + decision trees + pattern analysis + orchestration systems + user experience + usage patterns
 - **validate-command-content.md** (730 lines → 4 modules): Enhanced validation with P55/P56 integration + writing standards + mathematical verification + compliance frameworks
-- **unified-command-catalog.md** (NEW): Dynamic command matrix with 75 commands × principles × functionality × usage analytics
-- **principle-cross-reference-network.md** (NEW): 81 principles systematically interconnected with 4 connection types
+- **unified-command-catalog.md** (NEW): Dynamic command matrix with 76 commands × principles × functionality × usage analytics
+- **principle-cross-reference-network.md** (NEW): 84 principles systematically interconnected with 4 connection types
 - **catalog-maintenance-protocol.md** (NEW): Automated maintenance system with real-time synchronization
 - **automation-patterns-authority.md** (NEW): Comprehensive LLM automation framework with pipeline coordination
 - **parallel-task-intelligence-protocol.md** (NEW): Multi-task orchestration with dependency detection and resource optimization
@@ -361,7 +370,7 @@
 - **Mathematical Commands**: `math-verify`, `math-loops`, `verify-loops` now inherit from unified core
 - **Documentation Commands**: `update-living-docs` functionality consolidated into `sync-docs` 
 - **Orchestration Commands**: Common patterns extracted to shared component
-- **System Efficiency**: 85 → 75 commands with enhanced consistency and maintainability
+- **System Efficiency**: 85 → 76 commands with enhanced consistency and maintainability
 
 **CONSOLIDATION EVIDENCE**:
 - **Before**: 3 overlapping mathematical verification approaches + redundant manual triggers + large monolithic files

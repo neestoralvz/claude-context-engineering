@@ -37,6 +37,57 @@
 - **Show actual tool call results** with evidence (100% tool result display REQUIRED)
 - **Provide quantitative validation** with numerical outputs (≥95% validation accuracy REQUIRED)
 
+### **Mandatory Commit Operations Protocol**
+
+**🚨 CRITICAL INTEGRATION**: ALL substantial Context Engineering operations MUST include git commit documentation as part of execution evidence and operational transparency (Authority: [Principle #84: Mandatory Commit Operations](../principles/technical-standards.md#84-mandatory-commit-operations)).
+
+**Commit Requirements for All Operations**:
+```yaml
+operational_commit_integration:
+  substantial_operation_threshold:
+    file_changes: ">2 files modified during operation"
+    duration_threshold: ">30 minutes of sustained operation"
+    system_impact: "Changes to principles, commands, or core architecture"
+    meta_command_activation: "Any /context-eng, /orchestrate, or meta-command execution"
+    
+  mandatory_commit_sequence:
+    pre_operation_commit:
+      timing: "BEFORE substantial operation initiation"
+      purpose: "Capture current state for recovery capability"
+      format: "🚀 PRE-OP: [operation] - [objective]"
+      evidence: "Git status showing clean commit before operation"
+      
+    progress_commits:
+      timing: "At logical checkpoints during operation (≥1 per 30 minutes)"
+      purpose: "Document operational progress and intermediate achievements"
+      format: "⚡ PROGRESS: [milestone] - [achievement] ([percentage]% complete)"
+      evidence: "Git log showing progress documentation"
+      
+    post_operation_commit:
+      timing: "IMMEDIATELY after operation completion"
+      purpose: "Document final state, outcomes, and validation results"
+      format: "✅ COMPLETE: [operation] - [outcome_summary]"
+      evidence: "Final commit with comprehensive operation documentation"
+```
+
+**Integration with Execution Evidence**:
+- **P55 Tool Execution**: Git commits serve as MANDATORY tool execution evidence for operational changes
+- **P56 Transparency**: Commit history provides visible operational progress and completion verification
+- **Evidence Documentation**: Commit messages include metrics, validation results, and operational impact
+- **Recovery Capability**: Pre-operation commits ensure 100% rollback capability for all substantial operations
+
+**Execution Flow Enhancement**:
+```yaml
+enhanced_execution_flow:
+  command_execution_with_commits:
+    1. "Pre-operation commit: Capture current state"
+    2. "P56 announcement: Operation initiation with commit evidence"
+    3. "Execute command/operation with progress commits at checkpoints"
+    4. "P56 transparency: Show real tool results and git evidence"
+    5. "Post-operation commit: Document completion and validation"
+    6. "Report completion with git history as execution evidence"
+```
+
 ---
 
 ## 🚀 **Command Execution Protocols**

@@ -2,8 +2,14 @@ import React from 'react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { MathFormula, PredefinedFormula } from '@/components/ui/MathFormula'
+import { useSystemMetrics } from '@/hooks/useSystemMetrics'
+import { Activity, TrendingUp, Zap } from 'lucide-react'
 
 export function Hero() {
+  const { metrics, loading, error, isOnline, lastUpdated } = useSystemMetrics({
+    refreshInterval: 30000,
+    enableRealtime: true
+  });
   return (
     <div className="text-center space-y-12">
       {/* Main Hero Content */}
@@ -30,56 +36,111 @@ export function Hero() {
         </p>
       </div>
 
-      {/* Key Metrics Grid */}
+      {/* Status Indicator */}
+      {!isOnline && (
+        <div className="max-w-2xl mx-auto">
+          <Card className="border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+            <CardContent className="p-4">
+              <div className="flex items-center justify-center gap-2 text-amber-700 dark:text-amber-300">
+                <Activity className="w-4 h-4" />
+                <span className="text-sm font-medium">
+                  Showing cached data - Real-time monitoring unavailable
+                </span>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
+      {/* Key Metrics Grid - Real Data */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <Card className="text-center group transition-all duration-300">
+        <Card className="text-center group transition-all duration-300 hover:shadow-lg">
           <CardContent className="p-6 relative">
             <div className="relative space-y-3">
-              <div className="text-5xl font-black text-slate-700 dark:text-slate-300">
-                70
-              </div>
+              {loading ? (
+                <div className="text-5xl font-black text-slate-400 dark:text-slate-600 animate-pulse">
+                  --
+                </div>
+              ) : (
+                <div className="flex items-center justify-center gap-2">
+                  <div className="text-5xl font-black text-slate-700 dark:text-slate-300">
+                    {metrics?.commands.total || 76}
+                  </div>
+                  {isOnline && <Zap className="w-6 h-6 text-green-500" />}
+                </div>
+              )}
               <div className="text-lg font-bold text-slate-900 dark:text-slate-100">
                 Comandos
               </div>
               <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
-                100% operacionales
+                {loading ? 'Cargando...' : 
+                 `${metrics?.commands.active || 62} activos`}
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="text-center group transition-all duration-300">
+        <Card className="text-center group transition-all duration-300 hover:shadow-lg">
           <CardContent className="p-6 relative">
             <div className="relative space-y-3">
-              <div className="text-5xl font-black text-slate-700 dark:text-slate-300">
-                78%
-              </div>
+              {loading ? (
+                <div className="text-5xl font-black text-slate-400 dark:text-slate-600 animate-pulse">
+                  --%
+                </div>
+              ) : (
+                <div className="flex items-center justify-center gap-2">
+                  <div className="text-5xl font-black text-slate-700 dark:text-slate-300">
+                    {Math.round(metrics?.optimization.contextReduction || 78)}%
+                  </div>
+                  {isOnline && <TrendingUp className="w-6 h-6 text-blue-500" />}
+                </div>
+              )}
               <div className="text-lg font-bold text-slate-900 dark:text-slate-100">
                 Reducción de Contexto
               </div>
               <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
-                ~15K a ~3.3K tokens
+                {loading ? 'Cargando...' : 
+                 `≤${metrics?.optimization.cognitiveSteps || 3} pasos cognitivos`}
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="text-center group transition-all duration-300">
+        <Card className="text-center group transition-all duration-300 hover:shadow-lg">
           <CardContent className="p-6 relative">
             <div className="relative space-y-3">
-              <div className="text-5xl font-black text-slate-700 dark:text-slate-300">
-                88%
-              </div>
+              {loading ? (
+                <div className="text-5xl font-black text-slate-400 dark:text-slate-600 animate-pulse">
+                  --%
+                </div>
+              ) : (
+                <div className="flex items-center justify-center gap-2">
+                  <div className="text-5xl font-black text-slate-700 dark:text-slate-300">
+                    {Math.round(metrics?.performance.successRate || 88)}%
+                  </div>
+                  {isOnline && <Activity className="w-6 h-6 text-emerald-500" />}
+                </div>
+              )}
               <div className="text-lg font-bold text-slate-900 dark:text-slate-100">
                 Tasa de Éxito
               </div>
               <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
-                227 ejecuciones totales
+                {loading ? 'Cargando...' : 
+                 `${metrics?.performance.totalExecutions || 227} ejecuciones`}
               </div>
             </div>
           </CardContent>
         </Card>
       </div>
+
+      {/* Last Updated Indicator */}
+      {lastUpdated && (
+        <div className="text-center">
+          <div className="text-xs text-slate-500 dark:text-slate-400">
+            Última actualización: {lastUpdated.toLocaleTimeString()}
+          </div>
+        </div>
+      )}
 
       {/* Core Formula Display */}
       <div className="max-w-2xl mx-auto">
@@ -104,7 +165,7 @@ export function Hero() {
               <div className="bg-slate-900 dark:bg-slate-950 text-green-400 font-mono text-base rounded-xl p-6 border border-slate-600 hover:border-slate-500 transition-all duration-300">
                 <div className="text-slate-400 font-bold text-lg">/context-eng</div>
                 <div className="text-slate-300 text-sm mt-3 leading-relaxed">
-                  Activa los 70 comandos + 11 principios
+                  Activa los {metrics?.commands.total || 76} comandos + 11 principios
                 </div>
               </div>
             </div>

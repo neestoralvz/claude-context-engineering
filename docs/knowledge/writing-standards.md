@@ -115,12 +115,23 @@
 - **Cross-Reference Integrity**: 100% valid references with bidirectional linking verification
 - **Behavioral Control Effectiveness**: ≥95% neural pathway reinforcement with permanent cognitive modification
 - **Implementation Success Rate**: ≥98% successful execution with real-time performance tracking
+- **Communication Clarity**: ≤1 second comprehension time with compact patterns ([Compact Communication](../principles/technical-standards.md#82-compact-communication-standards))
+- **Response Density**: ≥70% character reduction from verbose patterns while preserving 100% essential information
 
 ### **Professional Standards** (Compliance Requirements)
 - **Code Blocks**: Triple backticks with language specification
 - **No Emoticons**: Text-based emphasis only in technical documentation
 - **English Only**: 100% English language compliance
 - **Hierarchical Structure**: ≤3 nesting levels with logical organization
+
+### **Compact Communication Standards** (MANDATORY Claude-User Interaction)
+- **Universal Symbols**: ⟳✓✗⚠◉ℹ for instant state recognition with consistent meaning
+- **Dense Patterns**: Action → Result [time] format for maximum information density
+- **Prohibited Verbosity**: No preambles ("I'll help you..."), redundant explanations, or decorative elements
+- **Required Clarity**: Direct statements, quantifiable outcomes, immediate next steps
+- **Visual Progress**: Progress bars ████████░░ and percentages for multi-phase operations
+- **Agent Coordination**: ◉ N agents → Component1 + Component2 [status] for Task tool deployment
+- **Validation Format**: ✓pass ⚠warn ✗fail [time] efficiency% → action_required
 
 ---
 

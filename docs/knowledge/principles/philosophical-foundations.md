@@ -85,7 +85,7 @@
 
 LLMs deben ejecutar acciones concretas usando tool calls en lugar de simular, describir o documentar teóricamente el trabajo. Este principio transforma asistentes conversacionales en agentes ejecutores reales, con Task agents como método principal para garantizar ejecución completa.
 
-**Ver también**: [Command Execution Transparency](./operational-excellence.md#56-command-execution-transparency) | [Script Automation Bridge](../.claude/commands/08-automation-tools/script-automation-bridge.md) | [Decision Engine](../.claude/commands/01-core-intelligence/execute-decision-engine.md) | [Verification as Liberation](./validation-protocols.md#11-verification-as-liberation)
+**Ver también**: [Command Execution Transparency](./operational-excellence.md#56-command-execution-transparency) | [Script Automation Bridge](../../commands/executable/automation/script-automation-bridge.md) | [Decision Engine](../../commands/executable/core-routing/decision.md) | [Verification as Liberation](./validation-protocols.md#11-verification-as-liberation)
 
 **CRITICAL Implementation Requirements**:
 1. **MANDATORY Tool Call Execution**: EXECUTE Bash, Read, Write, etc. for ALL concrete actions

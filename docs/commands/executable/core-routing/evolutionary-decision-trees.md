@@ -1,6 +1,6 @@
 # 🌳 Evolutionary Decision Trees
 
-**CRITICAL Evolutionary Decision Intelligence**: Árboles de decisión inteligentes que aprenden y evolucionan basado en patrones de éxito, proporcionando transiciones fluidas entre comandos con optimización continua y adaptación automática.
+**🚨 CRITICAL Evolutionary Decision Intelligence**: Árboles de decisión inteligentes que aprenden y evolucionan basado en patrones de éxito, proporcionando transiciones fluidas entre comandos con optimización continua y adaptación automática. **🚨 BLOCKING**: Sistema WILL automatically enforce utilización sistemática de TODOS los 76 comandos disponibles según contexto operacional con MANDATORY verification. Sistema MUST block execution if command utilization falls below 70% threshold and WILL activate automatic subutilization detection and correction protocols.
 
 ---
 
@@ -23,6 +23,10 @@ evolutionary_decision_trees:
     learning_integration: "Continuous learning from execution outcomes and user feedback"
     threshold_adaptation: "Dynamic adaptation of decision thresholds based on success patterns"
     predictive_routing: "Predictive command routing based on historical success probability"
+    complete_ecosystem_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 76 commands with MANDATORY comprehensive utilization verification"
+    principle_guided_intelligence: "🚨 CRITICAL: Sistema MUST integrate Context Engineering principles into all decision-making processes with AUTOMATIC principle compliance detection"
+    utilization_threshold_enforcement: "🚨 MANDATORY: Sistema WILL block execution if command utilization falls below 70% for complex objectives with AUTOMATIC detection and correction"
+    subutilization_prevention: "🚨 AUTOMATIC: Real-time subutilization detection with MANDATORY correction protocols and ecosystem activation"
     
   decision_evolution:
     success_pattern_analysis: "Analysis of successful decision patterns across executions"
@@ -41,6 +45,28 @@ evolutionary_decision_trees:
     accuracy_improvement: "Continuous improvement of decision accuracy through learning"
     efficiency_enhancement: "Enhancement of decision efficiency through pattern optimization"
     user_satisfaction_optimization: "Optimization of decision outcomes for user satisfaction"
+    ecosystem_utilization_monitoring: "🚨 MANDATORY: Sistema WILL monitor and optimize utilization of all 76 commands with AUTOMATIC blocking for subutilization and real-time correction protocols"
+    
+  command_ecosystem_integration:
+    behavioral_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 38 behavioral commands with MANDATORY utilization verification"
+    executable_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 30 executable commands with MANDATORY utilization verification"
+    core_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 6 core commands with MANDATORY utilization verification"
+    shared_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 2 shared commands with MANDATORY utilization verification"
+    situational_command_mapping: "🚨 AUTOMATIC: Sistema WILL map operational contexts to optimal command combinations with BLOCKING for single-command execution when orchestration is required"
+    
+  principle_evaluation_system:
+    real_time_principle_assessment: "MANDATORY: Evaluate applicable principles for every decision point"
+    principle_priority_integration: "CRITICAL: Integrate principle priority hierarchy into decision logic"
+    principle_compliance_validation: "REQUIRED: Validate all decisions against principle requirements"
+    principle_conflict_resolution: "AUTOMATIC: Resolve principle conflicts using intelligent algorithms"
+    principle_guided_optimization: "CONTINUOUS: Optimize decisions based on principle adherence"
+    
+  enforcement_validation_system:
+    utilization_threshold_monitoring: "🚨 REAL-TIME: Monitor command utilization with ≥70% threshold enforcement for complex objectives"
+    blocking_mechanism_activation: "🚨 AUTOMATIC: Activate blocking mechanisms when single-command execution detected for multi-command scenarios"
+    subutilization_detection_alerts: "🚨 IMMEDIATE: Generate immediate alerts when ecosystem subutilization patterns detected"
+    correction_protocol_execution: "🚨 MANDATORY: Execute automatic correction protocols to achieve required command utilization"
+    compliance_verification_loops: "🚨 CONTINUOUS: Verify ongoing compliance with all enforcement mechanisms until convergence achieved"
 ```
 
 ### **Decision Evolution Components**
@@ -67,7 +93,35 @@ pattern_recognition:
     generalizability_evaluation: "Evaluation of pattern generalizability across use cases"
 ```
 
-#### **2. Adaptive Threshold Management**
+#### **2. Principle-Guided Decision Engine**
+```yaml
+principle_guided_decisions:
+  principle_activation_system:
+    context_principle_mapping: "MANDATORY: Map operational context to relevant principles"
+    priority_based_activation: "Activate principles based on Tier 1 > Tier 2 > Tier 3 hierarchy"
+    real_time_principle_scoring: "Score principle relevance in real-time (0.0-1.0)"
+    dynamic_principle_weighting: "Weight principles based on contextual importance"
+    
+  decision_validation_framework:
+    tier_1_compliance_check: "CRITICAL: Ensure 100% compliance with Tier 1 principles"
+    tier_2_optimization: "REQUIRED: Optimize decisions for ≥95% Tier 2 compliance"
+    tier_3_enhancement: "RECOMMENDED: Enhance decisions with ≥85% Tier 3 alignment"
+    principle_conflict_detection: "Detect conflicts between applicable principles"
+    
+  intelligent_resolution_system:
+    automated_conflict_resolution: "Resolve principle conflicts using established algorithms"
+    synthesis_optimization: "Create synthesis solutions that honor multiple principles"
+    temporal_sequencing: "Sequence principle application to avoid conflicts"
+    context_adaptation: "Adapt principle application based on specific context"
+    
+  principle_learning_integration:
+    success_pattern_correlation: "Correlate decision success with principle adherence"
+    principle_effectiveness_tracking: "Track effectiveness of different principles in context"
+    adaptive_principle_weighting: "Adapt principle weights based on success outcomes"
+    continuous_principle_optimization: "Continuously optimize principle application patterns"
+```
+
+#### **3. Adaptive Threshold Management**
 ```yaml
 adaptive_thresholds:
   dynamic_threshold_adjustment:
@@ -75,18 +129,21 @@ adaptive_thresholds:
     performance_based_adaptation: "Adaptation based on recent performance metrics"
     user_feedback_integration: "Integration of user feedback into threshold adjustment"
     success_rate_optimization: "Optimization of thresholds for maximum success rate"
+    principle_informed_thresholds: "CRITICAL: Adjust thresholds based on principle requirements"
     
   threshold_learning:
     historical_analysis: "Analysis of historical threshold performance"
     optimal_threshold_discovery: "Discovery of optimal thresholds through experimentation"
     threshold_sensitivity_analysis: "Analysis of threshold sensitivity to context changes"
     convergence_optimization: "Optimization of thresholds for faster convergence"
+    principle_compliance_thresholds: "MANDATORY: Set thresholds that ensure principle compliance"
     
   threshold_validation:
     effectiveness_validation: "Validation of threshold effectiveness through testing"
     robustness_testing: "Testing of threshold robustness across various scenarios"
     stability_analysis: "Analysis of threshold stability over time"
     performance_impact_assessment: "Assessment of threshold impact on overall performance"
+    principle_adherence_validation: "CRITICAL: Validate that thresholds maintain principle adherence"
 ```
 
 #### **3. Predictive Routing Intelligence**

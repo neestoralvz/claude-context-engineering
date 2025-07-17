@@ -30,7 +30,7 @@ REGISTRY_FILE="$BASE_DIR/.claude/config/command-registry.json"
 mkdir -p "$RESULTS_DIR/system-integrity"
 
 # Validation phases
-PHASE_COUNT=7
+PHASE_COUNT=8
 current_phase=0
 
 # Global validation results
@@ -476,7 +476,11 @@ main() {
     show_phase_header "REGISTRY METRICS VALIDATION"
     validate_registry_metrics
     
-    # Phase 6: Command Execution & System Coherence
+    # Phase 6: Command Synchronization
+    show_phase_header "COMMAND SYNCHRONIZATION VALIDATION"
+    validate_command_synchronization
+    
+    # Phase 7: Command Execution & System Coherence
     show_phase_header "SYSTEM COHERENCE VALIDATION"
     validate_command_execution
     validate_system_coherence

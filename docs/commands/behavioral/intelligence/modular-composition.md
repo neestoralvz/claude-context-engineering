@@ -16,7 +16,21 @@ Enforce modular composition architecture where orchestrators USE modules, module
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Composition Quality Threshold**: <0.8000 (80% modular composition compliance required)
+**Architecture Analysis Time Threshold**: ≥240.0000 seconds for comprehensive composition analysis
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable composition quality with ≥80% modular compliance
+- **Threshold Enforcement**: REQUIRED activation when architecture lacks proper modular composition
+- **P56 Announcement**: 🧩 TRANSPARENCY: Modular Composition auto-activated for [target] architecture optimization
+- **Evidence Collection**: Measurable composition metrics and dependency validation documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Input Format**
 ```markdown
@@ -123,6 +137,30 @@ graph TD
     style CC fill:#ff8b94
     style UU fill:#95e1d3
 ```
+
+## 🛠️ **TOOL SELECTION CRITERIA**
+
+### **MANDATORY Tool Selection Matrix**
+**READ Tool Usage**:
+- **File Count**: ≤3 files for direct analysis
+- **Complexity**: <0.7000 (straightforward operations)
+- **Scope**: Well-defined, single-purpose operations
+
+**TASK Tool Usage**:
+- **File Count**: ≥4 files or unknown scope
+- **Complexity**: ≥0.7000 (complex operations)
+- **Scope**: Multi-step, exploratory, or research operations
+
+**Other Tools**:
+- **Grep**: Pattern search across multiple files
+- **Glob**: File pattern matching and discovery
+- **Bash**: System operations and automation
+
+### **CRITICAL Tool Selection Logic**
+- **Complexity Assessment**: Quantifiable complexity evaluation
+- **Scope Validation**: File count and operation scope measurement
+- **P56 Announcement**: Visual confirmation of tool selection reasoning
+- **Evidence Collection**: Measurable tool selection criteria documentation
 
 ### **MANDATORY P56 Transparency Announcements**
 

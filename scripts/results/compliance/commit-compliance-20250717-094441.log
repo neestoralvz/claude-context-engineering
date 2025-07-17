@@ -1,0 +1,14 @@
+2025-07-17 09:44:41 - Starting commit compliance enforcement check
+2025-07-17 09:44:41 - Time period: 3 days ago
+2025-07-17 09:44:41 - SUCCESS: Git repository validated
+2025-07-17 09:44:41 - INFO: Analyzing        9 recent commits...
+2025-07-17 09:44:41 - ERROR: Commit format compliance below threshold: 0% (target: ≥80%)
+2025-07-17 09:44:41 - SUCCESS: Balanced pre-operation and completion commits
+2025-07-17 09:44:41 - SUCCESS: Adequate progress documentation:        0 commits
+2025-07-17 09:44:41 - ERROR: Commit coverage below threshold: 0 (target: ≥0.90)
+2025-07-17 09:44:41 - ERROR: Traceability below threshold: 0 (target: ≥2.5)
+2025-07-17 09:44:41 - ERROR: POOR compliance (0/100) - immediate action required
+2025-07-17 09:44:41 - WARNING: Uncommitted changes detected. Consider committing current work progress.
+2025-07-17 09:44:41 - SUCCESS: Commit compliance validation completed
+2025-07-17 09:44:41 - INFO: Detailed log saved to: scripts/results/compliance/commit-compliance-20250717-094441.log
+2025-07-17 09:44:41 - Commit compliance check completed successfully

@@ -44,7 +44,7 @@
 - [#16 Strategic Git Versioning](../operational-excellence.md#16-strategic-git-versioning)
 - [#33 Conversation Lifecycle Management](../operational-excellence.md#33-conversation-lifecycle-management)
 - [#34 Living Planning Documentation](../operational-excellence.md#34-living-planning-documentation)
-- [#66 Documentation as Living Context](../operational-excellence.md#66-documentation-as-living-context)
+- [#83 Documentation as Living Context](../operational-excellence.md#83-documentation-as-living-context)
 
 ### 🔧 Principios Técnicos
 - [#17 Parallel > Sequential](../technical-standards.md#17-parallel--sequential)
@@ -193,9 +193,9 @@ Integración ← Rendimiento ← Automatización ← Seguridad ← Adaptación �
 - **Integración Central**: [#77 Universal Integration Protocols](../integration-ecosystem.md#77-universal-integration-protocols)
 
 ### Documentación de Contexto
-- **[Archivo Original](../core-principles.md)** - Documento original completo
+- ****Core Principles** (integrated into category files)** - Documento original completo
 - **[Índice Modular](../README.md)** - Índice principal de la estructura modular
-- **[CLAUDE.md](../CLAUDE.md)** - Mapa del contexto inteligente
+- **[CLAUDE.md](../../../../CLAUDE.md)** - Mapa del contexto inteligente
 
 ---
 

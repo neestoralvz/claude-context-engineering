@@ -49,23 +49,67 @@
 **Authority**: Can block any execution
 
 ### 28. Explicit Decision Trees
-**Definition**: Clear, documented decision flows for all routing with automatic mathematical triggers.
+**CRITICAL Definition**: MANDATORY systematic command orchestration protocol that REQUIRES intelligent decision trees to evaluate and activate ALL available commands (76 total) based on operational context, ensuring complete ecosystem utilization and preventing command subutilization through automatic situational mapping.
 
-**MANDATORY Components**:
-- **AUTOMATED Mathematical Triggers**: Immediate evaluation of complexity, confidence, parallelization with <100ms response
-- **BINARY Decision Points**: CLEAR yes/no decisions based on calculated thresholds with zero ambiguity
-- **DOCUMENTED Thresholds**: ALL trigger values mathematically defined and ENFORCED with 100% compliance
-- **AUTOMATED Fallback Strategies**: Immediate recovery paths when triggers fail with zero manual intervention
-- **VISUAL Representation**: Clear flowcharts SHOWING decision paths with mathematical precision
+**See Also**: [Confidence-Based Routing](#29-confidence-based-routing) | [Threshold Enforcement](#40-threshold-enforcement) | [Evolutionary Decision Trees](../../commands/executable/core-routing/evolutionary-decision-trees.md) | [Intelligent Command Orchestration](../technical-standards.md#66-intelligent-command-orchestration)
 
-**Auto-Trigger Implementation**:
-1. **Task Intake**: Every new task automatically evaluated against all mathematical triggers
-2. **Threshold Evaluation**: System calculates complexity, confidence, parallel benefit, objectives count
-3. **Capability Activation**: Advanced features activated automatically when thresholds met
-4. **Execution Routing**: Task routed to appropriate execution path based on trigger results
-5. **Continuous Monitoring**: Triggers re-evaluated throughout execution as conditions change
+**MANDATORY Command Ecosystem Activation Protocol**:
+- **COMPLETE COMMAND EVALUATION**: System MUST evaluate ALL 76 commands for relevance to current operational context
+- **SITUATIONAL COMMAND MAPPING**: Automatic mapping of operational situations to appropriate command combinations  
+- **MANDATORY UTILIZATION PREVENTION**: Zero tolerance for command subutilization - system must consider full ecosystem
+- **INTELLIGENT ACTIVATION TRIGGERS**: Mathematical triggers activate optimal command combinations automatically
+- **SYSTEMATIC COVERAGE VALIDATION**: Continuous verification that no relevant commands are overlooked
 
-**Mathematical Integration**: Decision trees now execute the [Mathematical Auto-Activation](#5-mathematical-auto-activation) principle automatically, eliminating need for manual capability invocation.
+**Command Orchestration Framework**:
+```yaml
+explicit_decision_trees:
+  comprehensive_command_evaluation:
+    behavioral_commands: "MANDATORY: Evaluate all 38 behavioral commands for cognitive framework needs"
+    executable_commands: "MANDATORY: Evaluate all 30 executable commands for implementation requirements"
+    core_commands: "MANDATORY: Evaluate all 6 core commands for infrastructure needs"
+    shared_commands: "MANDATORY: Evaluate all 2 shared commands for integration requirements"
+    
+  situational_command_mapping:
+    planning_situations: "Map planning contexts to strategic command combinations (exploration, decomposition, tdd)"
+    execution_situations: "Map execution contexts to operational command combinations (parallel, orchestration, verification)"
+    analysis_situations: "Map analysis contexts to intelligence command combinations (thinking, complexity, mathematical)"
+    maintenance_situations: "Map maintenance contexts to system command combinations (validation, monitoring, optimization)"
+    
+  automatic_activation_triggers:
+    complexity_threshold: "≥0.8: Activate advanced cognitive and mathematical command sets"
+    parallelization_threshold: "≥3 tasks: Activate parallel execution and orchestration command sets"  
+    planning_threshold: "Strategic objectives: Activate planning and decomposition command sets"
+    quality_threshold: "Verification needs: Activate validation and testing command sets"
+    
+  utilization_optimization:
+    command_coverage_analysis: "Analyze command utilization patterns to prevent ecosystem gaps"
+    intelligent_suggestion_engine: "Suggest underutilized commands relevant to current context"
+    systematic_activation_protocol: "Ensure comprehensive command ecosystem activation"
+    continuous_optimization: "Learn from command usage patterns for improved future activation"
+```
+
+**CRITICAL Implementation Requirements**:
+- **Ecosystem Awareness**: System maintains awareness of ALL 76 available commands and their capabilities
+- **Situational Intelligence**: Automatic recognition of operational contexts requiring specific command combinations
+- **Mandatory Evaluation**: System MUST evaluate complete command ecosystem for every significant operation
+- **Utilization Optimization**: Continuous monitoring and improvement of command utilization patterns
+- **Zero Command Waste**: Mathematical validation that no relevant commands are overlooked or underutilized
+
+**Auto-Trigger Implementation** (Enhanced Comprehensive Protocol):
+1. **Task Intake**: Every task automatically evaluated against ALL 76 commands for potential relevance
+2. **Comprehensive Analysis**: System calculates optimal command combinations from full ecosystem  
+3. **Intelligent Activation**: Relevant commands activated automatically based on situational triggers
+4. **Utilization Monitoring**: Continuous tracking of command usage to prevent ecosystem gaps
+5. **Optimization Learning**: System learns from patterns to improve future command activation decisions
+
+**Command Utilization Triggers** (Automatic Full-Ecosystem Activation):
+1. **Planning Phase**: Automatically evaluate planning, exploration, decomposition, and strategic command sets
+2. **Execution Phase**: Automatically evaluate parallel, orchestration, implementation, and monitoring command sets
+3. **Analysis Phase**: Automatically evaluate thinking, mathematical, complexity, and intelligence command sets  
+4. **Validation Phase**: Automatically evaluate verification, testing, quality, and compliance command sets
+5. **Optimization Phase**: Automatically evaluate performance, monitoring, improvement, and learning command sets
+
+**Mathematical Integration**: Decision trees execute [Mathematical Auto-Activation](#5-mathematical-auto-activation) while ensuring comprehensive evaluation of the complete 76-command ecosystem, eliminating manual capability selection and preventing command subutilization through systematic orchestration intelligence.
 
 **See also**: [Confidence-Based Routing](#29-confidence-based-routing) | [Threshold Enforcement](#40-threshold-enforcement)
 

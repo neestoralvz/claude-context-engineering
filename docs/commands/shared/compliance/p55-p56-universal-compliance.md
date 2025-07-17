@@ -2,7 +2,7 @@
 
 **Meta-Principle**: "Standardize tool call execution bridging and command transparency across all Context Engineering operations"
 
-**Purpose**: CRITICAL universal compliance framework that provides standardized P55/P56 protocols, visual announcement templates, and tool execution patterns for consistent implementation across all Context Engineering commands.
+**🚨 BLOCKING Purpose**: CRITICAL universal compliance framework with MANDATORY enforcement that provides standardized P55/P56 protocols, visual announcement templates, and tool execution patterns for consistent implementation across all Context Engineering commands with AUTOMATIC violation detection and real-time compliance monitoring.
 
 **Authority**: Single source of truth for Principle #55 (Tool Call Execution Bridging) and Principle #56 (Command Execution Transparency) compliance standards.
 
@@ -10,11 +10,11 @@
 
 ## 🎯 **FRAMEWORK OVERVIEW**
 
-### **Core Compliance Standards**
-- **Principle #55**: Tool Call Execution Bridging - MANDATORY real tool execution with zero simulation tolerance
-- **Principle #56**: Command Execution Transparency - REQUIRED visual announcements and progress tracking
-- **Universal Application**: ALL Context Engineering commands must implement these patterns
-- **Zero Tolerance**: 100% compliance required, 0% simulation acceptance
+### **🚨 BLOCKING Compliance Standards**
+- **Principle #55**: Tool Call Execution Bridging - 🚨 MANDATORY real tool execution with AUTOMATIC blocking of simulation attempts
+- **Principle #56**: Command Execution Transparency - 🚨 REQUIRED visual announcements and progress tracking with violation detection
+- **Universal Application**: 🚨 ALL Context Engineering commands MUST implement these patterns with enforcement monitoring
+- **Zero Tolerance**: 🚨 BLOCKING: 100% compliance required with AUTOMATIC correction protocols and violation prevention
 
 ### **Framework Integration**
 - **Inherits from**: [Universal Tool Execution](../core/universal-tool-execution.md)
@@ -27,26 +27,49 @@
 ## 📋 **PRINCIPLE #55: TOOL CALL EXECUTION BRIDGING**
 
 ### **Core Requirements (MANDATORY)**
-**CRITICAL**: ALL mathematical operations, file operations, and system interactions MUST use visible tool calls with 100% execution transparency, NEVER simulation or description.
+**🚨 BLOCKING**: ALL mathematical operations, file operations, and system interactions MUST use visible tool calls with 100% execution transparency, NEVER simulation or description. Sistema WILL automatically block any simulation attempts and MUST enforce real tool execution.
 
 **P55 Compliance Requirements**:
 
-**MANDATORY Tool Call Execution**:
-- **Mathematical Operations**: ALL calculations MUST use tool calls with visible execution evidence
-- **File Operations**: ALL file read/write/edit operations MUST use tool calls with access verification
-- **System Interactions**: ALL bash commands and scripts MUST execute through tool calls with output evidence
-- **Evidence Collection**: ALL data gathering MUST use tool calls with collection verification
-- **Web Operations**: ALL search and fetch operations MUST use tool calls with retrieval evidence
+**🚨 BLOCKING Tool Call Execution**:
+- **Mathematical Operations**: 🚨 ALL calculations MUST use tool calls with visible execution evidence and AUTOMATIC blocking of simulation
+- **File Operations**: 🚨 ALL file read/write/edit operations MUST use tool calls with access verification and real-time validation
+- **System Interactions**: 🚨 ALL bash commands and scripts MUST execute through tool calls with output evidence and execution monitoring
+- **Evidence Collection**: 🚨 ALL data gathering MUST use tool calls with collection verification and transparency validation
+- **Web Operations**: 🚨 ALL search and fetch operations MUST use tool calls with retrieval evidence and execution confirmation
 
-**FORBIDDEN Actions with Zero Tolerance**:
-- **Simulation**: NEVER simulate tool calls or describe what would happen
-- **Assumption**: NEVER assume tool call results without actual execution
-- **Description**: NEVER describe tool call outcomes without real execution
-- **Placeholders**: NEVER use placeholder values instead of real calculations
-- **Theoretical**: NEVER engage in theoretical discussion without concrete execution
+**🚨 BLOCKING Actions with Zero Tolerance**:
+- **Simulation**: 🚨 NEVER simulate tool calls or describe what would happen - AUTOMATIC blocking enforced
+- **Assumption**: 🚨 NEVER assume tool call results without actual execution - MANDATORY verification required
+- **Description**: 🚨 NEVER describe tool call outcomes without real execution - BLOCKING of non-execution patterns
+- **Placeholders**: 🚨 NEVER use placeholder values instead of real calculations - AUTOMATIC detection and correction
+- **Theoretical**: 🚨 NEVER engage in theoretical discussion without concrete execution - MANDATORY tool execution enforcement
+
+### **🚨 BLOCKING Enforcement Validation**
+
+```yaml
+enforcement_validation_system:
+  real_time_monitoring:
+    simulation_detection: "🚨 AUTOMATIC: Real-time detection of simulation attempts with immediate blocking"
+    tool_call_verification: "🚨 MANDATORY: Verification that all operations use actual tool calls with execution evidence"
+    transparency_validation: "🚨 CONTINUOUS: Validation of P56 transparency requirements with visual confirmation"
+    compliance_scanning: "🚨 REAL-TIME: Continuous scanning for compliance violations with instant correction"
+    
+  automatic_blocking_mechanisms:
+    simulation_prevention: "🚨 IMMEDIATE: Block any attempt to simulate tool calls or describe theoretical outcomes"
+    placeholder_detection: "🚨 AUTOMATIC: Detect and prevent use of placeholder values instead of real calculations"
+    description_blocking: "🚨 MANDATORY: Block description of tool outcomes without actual execution"
+    assumption_prevention: "🚨 BLOCKING: Prevent assumption of tool results without verification"
+    
+  correction_protocols:
+    execution_enforcement: "🚨 AUTOMATIC: Enforce real tool execution when simulation detected"
+    evidence_validation: "🚨 REQUIRED: Validate execution evidence and tool call transparency"
+    compliance_restoration: "🚨 MANDATORY: Restore compliance through guided correction protocols"
+    verification_loops: "🚨 CONTINUOUS: Verify compliance maintenance until convergence achieved"
+```
 
 ### **Tool Selection Standards**
-**Tool Selection Standards**:
+**🚨 MANDATORY Tool Selection Standards**:
 
 **Mathematical Operations**:
 - **Simple Calculations**: Use Bash tool with formula library integration for basic mathematical operations

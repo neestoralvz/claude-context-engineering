@@ -101,26 +101,25 @@
 
 **Integration Reference**: [Transparent System Observability Principle](../principles/operational-excellence.md#63-transparent-system-observability)
 
-```yaml
-observability_visual_framework:
-  real_time_monitoring_announcements:
-    requirement: "MANDATORY visual announcements for all monitoring operations"
-    scope: "System health, performance metrics, resource utilization, error detection"
-    format: "Real-time visual dashboards with comprehensive status indicators"
-    frequency: "≤30 second update intervals for critical monitoring"
-    
-  performance_metrics_display:
-    requirement: "Visual display of all performance metrics with transparency"
-    metrics: "Response time, throughput, error rate, resource utilization"
-    presentation: "Real-time charts, graphs, and numerical displays"
-    accuracy: "≥95% metric accuracy with 4-decimal precision where applicable"
-    
-  alert_visualization:
-    requirement: "Visual alert system with intelligent prioritization"
-    severity: "Critical, Warning, Info alerts with color-coded visual indicators"
-    escalation: "Visual escalation paths with clear action requirements"
-    resolution: "Visual confirmation of alert resolution and system recovery"
-```
+**Observability Visual Framework**:
+
+**Real-Time Monitoring Announcements**:
+- **MANDATORY Requirement**: Visual announcements for all monitoring operations
+- **Monitoring Scope**: System health, performance metrics, resource utilization, error detection
+- **Display Format**: Real-time visual dashboards with comprehensive status indicators
+- **Update Frequency**: ≤30 second update intervals for critical monitoring
+
+**Performance Metrics Display Standards**:
+- **Display Requirement**: Visual display of all performance metrics with transparency
+- **Metrics Coverage**: Response time, throughput, error rate, resource utilization
+- **Presentation Format**: Real-time charts, graphs, and numerical displays
+- **Accuracy Standard**: ≥95% metric accuracy with 4-decimal precision where applicable
+
+**Alert Visualization Framework**:
+- **Alert System**: Visual alert system with intelligent prioritization
+- **Severity Levels**: Critical, Warning, Info alerts with color-coded visual indicators
+- **Escalation Protocol**: Visual escalation paths with clear action requirements
+- **Resolution Confirmation**: Visual confirmation of alert resolution and system recovery
 
 ### **Resource Management Visual Transparency**
 
@@ -128,26 +127,25 @@ observability_visual_framework:
 
 **Integration Reference**: [Resource-Aware Orchestration Principle](../principles/technical-standards.md#62-resource-aware-orchestration)
 
-```yaml
-resource_management_visual_standards:
-  resource_allocation_display:
-    requirement: "Visual display of resource allocation across agents and operations"
-    scope: "CPU, memory, network, storage allocation and utilization"
-    format: "Real-time resource utilization charts with allocation breakdown"
-    alerts: "Visual alerts when resource thresholds approached or exceeded"
-    
-  multi_agent_coordination_visibility:
-    requirement: "Complete visual transparency for multi-agent resource coordination"
-    display: "Agent resource budgets, shared resource usage, conflict resolution"
-    monitoring: "Real-time visual monitoring of agent performance and coordination"
-    optimization: "Visual display of resource optimization recommendations"
-    
-  performance_optimization_announcements:
-    requirement: "Visual announcements for all performance optimization actions"
-    scope: "Resource reallocation, scaling operations, optimization implementations"
-    evidence: "Before/after performance metrics with improvement evidence"
-    validation: "Visual validation of optimization effectiveness"
-```
+**Resource Management Visual Standards**:
+
+**Resource Allocation Display Framework**:
+- **Display Requirement**: Visual display of resource allocation across agents and operations
+- **Resource Scope**: CPU, memory, network, storage allocation and utilization
+- **Display Format**: Real-time resource utilization charts with allocation breakdown
+- **Alert System**: Visual alerts when resource thresholds approached or exceeded
+
+**Multi-Agent Coordination Visibility**:
+- **Transparency Requirement**: Complete visual transparency for multi-agent resource coordination
+- **Display Components**: Agent resource budgets, shared resource usage, conflict resolution
+- **Monitoring Protocol**: Real-time visual monitoring of agent performance and coordination
+- **Optimization Display**: Visual display of resource optimization recommendations
+
+**Performance Optimization Announcements**:
+- **Announcement Requirement**: Visual announcements for all performance optimization actions
+- **Optimization Scope**: Resource reallocation, scaling operations, optimization implementations
+- **Evidence Display**: Before/after performance metrics with improvement evidence
+- **Validation Protocol**: Visual validation of optimization effectiveness
 
 ### **Security & Privacy Monitoring Visual Protocols**
 
@@ -155,26 +153,25 @@ resource_management_visual_standards:
 
 **Integration Reference**: [Security by Design Principle](../principles/validation-protocols.md#59-security-by-design)
 
-```yaml
-security_privacy_visual_framework:
-  security_monitoring_display:
-    requirement: "Visual security monitoring with privacy-aware transparency"
-    scope: "Security threats, access attempts, compliance status, audit events"
-    protection: "Sensitive information masking while maintaining operational visibility"
-    alerts: "Real-time visual security alerts with severity indicators"
-    
-  compliance_status_visibility:
-    requirement: "Visual compliance status monitoring and reporting"
-    standards: "GDPR, CCPA, security compliance status with visual indicators"
-    reporting: "Real-time compliance dashboard with actionable insights"
-    validation: "Visual validation of compliance requirement fulfillment"
-    
-  privacy_protection_announcements:
-    requirement: "Visual announcements for privacy protection actions"
-    scope: "Data anonymization, consent management, access control enforcement"
-    transparency: "Privacy-preserving transparency showing protection actions taken"
-    validation: "Visual confirmation of privacy requirement compliance"
-```
+**Security & Privacy Visual Framework**:
+
+**Security Monitoring Display Standards**:
+- **Monitoring Requirement**: Visual security monitoring with privacy-aware transparency
+- **Security Scope**: Security threats, access attempts, compliance status, audit events
+- **Information Protection**: Sensitive information masking while maintaining operational visibility
+- **Alert System**: Real-time visual security alerts with severity indicators
+
+**Compliance Status Visibility**:
+- **Visibility Requirement**: Visual compliance status monitoring and reporting
+- **Compliance Standards**: GDPR, CCPA, security compliance status with visual indicators
+- **Dashboard Reporting**: Real-time compliance dashboard with actionable insights
+- **Validation Protocol**: Visual validation of compliance requirement fulfillment
+
+**Privacy Protection Announcements**:
+- **Announcement Requirement**: Visual announcements for privacy protection actions
+- **Protection Scope**: Data anonymization, consent management, access control enforcement
+- **Privacy Transparency**: Privacy-preserving transparency showing protection actions taken
+- **Compliance Validation**: Visual confirmation of privacy requirement compliance
 
 ---
 

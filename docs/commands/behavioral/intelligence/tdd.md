@@ -181,6 +181,30 @@ graph TD
     style FFFF fill:#95e1d3
 ```
 
+## 🛠️ **TOOL SELECTION CRITERIA**
+
+### **MANDATORY Tool Selection Matrix**
+**READ Tool Usage**:
+- **File Count**: ≤3 files for direct analysis
+- **Complexity**: <0.7000 (straightforward operations)
+- **Scope**: Well-defined, single-purpose operations
+
+**TASK Tool Usage**:
+- **File Count**: ≥4 files or unknown scope
+- **Complexity**: ≥0.7000 (complex operations)
+- **Scope**: Multi-step, exploratory, or research operations
+
+**Other Tools**:
+- **Grep**: Pattern search across multiple files
+- **Glob**: File pattern matching and discovery
+- **Bash**: System operations and automation
+
+### **CRITICAL Tool Selection Logic**
+- **Complexity Assessment**: Quantifiable complexity evaluation
+- **Scope Validation**: File count and operation scope measurement
+- **P56 Announcement**: Visual confirmation of tool selection reasoning
+- **Evidence Collection**: Measurable tool selection criteria documentation
+
 ### **MANDATORY P56 Transparency Announcements**
 
 ```yaml

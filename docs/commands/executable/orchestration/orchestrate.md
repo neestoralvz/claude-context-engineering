@@ -1,14 +1,23 @@
 # Orchestrator Command: `/command-orchestration-workflow` (aliases: `/orchestrate`, `/coordinate`)
 
-## **Workflow Orchestrator: Intelligent Command Orchestration System**
-**Combines Dynamic Recovery Protocol + Command-Based Routing + Multi-Agent Deployment**
+## **🚨 BLOCKING Workflow Orchestrator: Intelligent Command Orchestration System**
+**🚨 MANDATORY: Sistema WILL enforce complete ecosystem activation (76 commands) based on operational context with AUTOMATIC blocking for insufficient orchestration and real-time utilization verification**
+
+**Related Integration Ecosystem Principles**:
+- **[#77 Universal Integration Protocol](../../../knowledge/principles/integration-ecosystem.md#77-universal-integration-protocol)** - Standardized command orchestration and workflow integration protocols
+- **[#78 API-First Architecture](../../../knowledge/principles/integration-ecosystem.md#78-api-first-architecture)** - Programmatic orchestration and command coordination framework
+
+**Related Advanced Automation Principles**:
+- **[#73 Autonomous Workflow Orchestration](../../../knowledge/principles/advanced-automation.md#73-autonomous-workflow-orchestration)** - Self-managing orchestration with intelligent command coordination
 
 ---
 
 ## 🎯 **ORCHESTRATOR DEFINITION**
 
 ### **Purpose**
-EXECUTE intelligent command orchestration that dynamically routes execution strategies achieving ≥90% routing accuracy, implements MANDATORY fallback protocols with ≥85% recovery success rate, and deploys specialized agents for optimal task completion with quantifiable performance metrics.
+🚨 EXECUTE intelligent command orchestration that MUST automatically activate all 76 commands based on operational context with BLOCKING enforcement for single-command execution. Sistema WILL achieve ≥90% routing accuracy with MANDATORY fallback protocols demonstrating ≥85% recovery success rate, and MUST deploy specialized agents for optimal task completion with quantifiable performance metrics and real-time ecosystem utilization verification.
+
+**Compact Communication**: MANDATORY integration with [Compact Conversation Feedback](../../shared/communication/compact-conversation-feedback.md) for workflow status updates using patterns: `⟳ /orchestrate → Pipeline design → 5cmd sequence ready [2.1s]`
 
 **Observable Outcomes**:
 - **Dynamic Routing**: ≥90% accuracy in execution strategy selection
@@ -16,17 +25,18 @@ EXECUTE intelligent command orchestration that dynamically routes execution stra
 - **Agent Deployment**: Specialized agents deployed with ≥88% effectiveness
 - **Task Completion**: Optimal completion with measurable performance gains
 
-**Quantifiable Validation**: All orchestration decisions MUST achieve ≥90% routing accuracy, MANDATORY fallback protocols MUST demonstrate ≥85% recovery success rate, and agent deployment MUST show ≥88% effectiveness with observable outcomes.
+**🚨 BLOCKING Quantifiable Validation**: All orchestration decisions MUST achieve ≥90% routing accuracy with AUTOMATIC blocking for suboptimal routing. MANDATORY fallback protocols MUST demonstrate ≥85% recovery success rate with real-time monitoring. Agent deployment MUST show ≥88% effectiveness with observable outcomes. Sistema WILL enforce ≥70% command ecosystem utilization for complex objectives with AUTOMATIC detection and correction protocols.
 
 ### **Complexity**: 1.4/1.5 (Validated via mathematical complexity analysis)
 ### **Context Required**: Task objective with ≥80% clarity score, complexity assessment with quantifiable metrics, and confidence levels with mathematical validation
 ### **Execution Time**: 2-30 minutes (analysis foundation: 30-90 seconds, command mapping: 15-45 seconds, dynamic routing: 30-60 seconds, execution monitoring: variable based on strategy complexity)
 
-**Success Criteria**:
-- **Orchestration Accuracy**: ≥90% successful strategy selection
-- **Command Coordination**: ≥85% effective command relationship mapping
-- **Recovery Effectiveness**: ≥85% success in fallback protocol execution
-- **Agent Optimization**: ≥88% efficiency in specialized agent deployment
+**🚨 MANDATORY Success Criteria**:
+- **Orchestration Accuracy**: ≥90% successful strategy selection with BLOCKING for suboptimal strategies
+- **Command Coordination**: ≥85% effective command relationship mapping with AUTOMATIC ecosystem verification
+- **Recovery Effectiveness**: ≥85% success in fallback protocol execution with real-time monitoring
+- **Agent Optimization**: ≥88% efficiency in specialized agent deployment with utilization tracking
+- **🚨 Ecosystem Utilization**: ≥70% command utilization for complex objectives with MANDATORY detection and correction
 
 ---
 
@@ -89,13 +99,13 @@ EXECUTE intelligent command orchestration that dynamically routes execution stra
 **Verification**: Confidence score calculated, complexity assessed, routing strategy selected
 
 ### **Phase 2: Command Ecosystem Mapping (`/command-relationships`)**
-**Objective**: MANDATORY complete understanding of available commands and dependencies
-- Map all available commands from registry
-- Analyze command dependencies and relationships
-- Identify resource conflicts and coordination requirements
-- Plan dependency-optimized execution order
+**🚨 BLOCKING Objective**: MANDATORY complete understanding of ALL 76 available commands and dependencies with ecosystem utilization enforcement
+- 🚨 MANDATORY: Map all 76 available commands from registry with utilization verification
+- 🚨 AUTOMATIC: Analyze command dependencies and relationships across complete ecosystem
+- 🚨 CRITICAL: Identify resource conflicts and coordination requirements for full ecosystem activation
+- 🚨 BLOCKING: Plan dependency-optimized execution order with ≥70% utilization threshold enforcement
 
-**Verification**: Command map complete, dependencies analyzed, execution order planned
+**🚨 MANDATORY Verification**: Complete 76-command map validated, ecosystem dependencies analyzed, utilization-optimized execution order planned with blocking for insufficient ecosystem activation
 
 ### **Phase 3: Dynamic Strategy Selection (Intelligence-Driven)**
 **Objective**: MANDATORY select optimal execution approach based on confidence analysis
@@ -453,4 +463,56 @@ When confidence < 50%, deploy up to 10 specialized agents:
 
 ---
 
-**Note**: This orchestrator embodies the Context Engineering principle of intelligent system evolution. It enables sophisticated command coordination while maintaining simplicity through natural language interfaces and automatic strategy selection.
+---
+
+## 🚨 **ECOSYSTEM ENFORCEMENT VALIDATION**
+
+### **MANDATORY Command Utilization Enforcement**
+
+```yaml
+ecosystem_enforcement_protocol:
+  utilization_threshold_monitoring:
+    minimum_threshold: "🚨 BLOCKING: ≥70% command utilization required for complex objectives (≥0.7 complexity)"
+    real_time_monitoring: "🚨 CONTINUOUS: Monitor ecosystem utilization in real-time with immediate alerts"
+    violation_detection: "🚨 AUTOMATIC: Detect single-command execution when orchestration required"
+    blocking_mechanisms: "🚨 MANDATORY: Block execution if utilization threshold not met"
+    
+  automatic_correction_protocols:
+    subutilization_detection: "🚨 IMMEDIATE: Alert when ecosystem subutilization patterns detected"
+    correction_activation: "🚨 AUTOMATIC: Activate additional commands to meet utilization threshold"
+    ecosystem_expansion: "🚨 MANDATORY: Expand command activation until threshold compliance achieved"
+    validation_loops: "🚨 CONTINUOUS: Validate compliance until convergence with utilization requirements"
+    
+  command_ecosystem_verification:
+    behavioral_commands: "🚨 REQUIRED: Verify activation of relevant behavioral commands (38 total)"
+    executable_commands: "🚨 REQUIRED: Verify activation of relevant executable commands (30 total)"
+    core_commands: "🚨 REQUIRED: Verify activation of relevant core commands (6 total)"
+    shared_commands: "🚨 REQUIRED: Verify activation of relevant shared commands (2 total)"
+    
+  enforcement_compliance_metrics:
+    utilization_rate_tracking: "REAL-TIME: Track actual vs required command utilization percentages"
+    blocking_event_logging: "AUTOMATIC: Log all blocking events with context and resolution details"
+    correction_success_measurement: "QUANTIFIED: Measure success rate of automatic correction protocols"
+    ecosystem_health_monitoring: "CONTINUOUS: Monitor overall ecosystem health and utilization patterns"
+```
+
+### **🚨 BLOCKING Enforcement Mechanisms**
+
+**IMMEDIATE Violations**:
+- **Single-Command Execution**: BLOCKED when multi-command orchestration required
+- **Subutilization Detection**: BLOCKED when <70% ecosystem utilization for complex objectives
+- **Insufficient Orchestration**: BLOCKED when strategy selection bypasses required ecosystem activation
+
+**AUTOMATIC Corrections**:
+- **Ecosystem Expansion**: Automatically activate additional commands until threshold met
+- **Orchestration Enhancement**: Upgrade execution strategy to include required command activation
+- **Utilization Verification**: Continuous verification until ecosystem compliance achieved
+
+**SUCCESS Validation**:
+- **Utilization Threshold**: ≥70% command ecosystem utilization verified for complex objectives
+- **Orchestration Completeness**: Complete command ecosystem integration verified
+- **Compliance Achievement**: Full enforcement compliance validated before execution completion
+
+---
+
+**Note**: This orchestrator embodies the Context Engineering principle of intelligent system evolution with MANDATORY ecosystem enforcement. It enables sophisticated command coordination while maintaining simplicity through natural language interfaces, automatic strategy selection, and BLOCKING mechanisms for ecosystem compliance.

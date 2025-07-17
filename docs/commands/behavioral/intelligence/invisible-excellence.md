@@ -233,6 +233,65 @@ invisible_excellence_transparency:
 
 ---
 
+## 🛠️ **STANDARDIZED TOOL SELECTION CRITERIA**
+
+### **MANDATORY Tool Selection Matrix**
+
+**Quantifiable Decision Framework:**
+```yaml
+tool_selection_criteria:
+  READ_tool_usage:
+    file_count: "≤3 files for direct analysis"
+    complexity: "<0.7000 (straightforward operations)"
+    scope: "Well-defined, single-purpose operations"
+    time_constraint: "≤300 seconds execution window"
+    
+  TASK_tool_usage:
+    file_count: "≥4 files or unknown scope"
+    complexity: "≥0.7000 (complex operations)"
+    scope: "Multi-step, exploratory, or research operations"
+    time_constraint: ">300 seconds or open-ended analysis"
+    
+  other_tools:
+    GREP: "Pattern search across multiple files"
+    GLOB: "File pattern matching and discovery"
+    BASH: "System operations and automation"
+```
+
+### **CRITICAL Tool Selection Logic**
+
+**Evidence-Based Selection Process:**
+1. **Complexity Assessment**: Calculate quantifiable complexity using invisible excellence balance metrics
+2. **Scope Validation**: Measure file count and operation scope boundaries
+3. **P56 Announcement**: Visual confirmation of tool selection reasoning
+4. **Evidence Collection**: Document measurable tool selection criteria
+
+**Mathematical Tool Selection Formula:**
+```javascript
+function determineOptimalTool(request) {
+  const complexity = calculateInvisibleExcellenceComplexity(request)
+  const fileCount = estimateFileScope(request)
+  const timeConstraint = assessTimeRequirements(request)
+  
+  if (fileCount <= 3 && complexity < 0.7 && timeConstraint <= 300) {
+    return { tool: 'READ', confidence: 0.9, reasoning: 'Direct excellence analysis suitable' }
+  }
+  
+  if (fileCount >= 4 || complexity >= 0.7 || timeConstraint > 300) {
+    return { tool: 'TASK', confidence: 0.9, reasoning: 'Complex excellence balance required' }
+  }
+  
+  return { tool: 'MIXED', confidence: 0.7, reasoning: 'Hybrid excellence approach needed' }
+}
+```
+
+**P56 Transparency Requirements:**
+- **MANDATORY Announcement**: "🛠️ TRANSPARENCY: Tool selection - [TOOL] for [operation] based on [criteria]"
+- **REQUIRED Evidence**: "Quantifiable metrics: Files=[X], Complexity=[Y], Scope=[Z]"
+- **CRITICAL Justification**: "Selection reasoning: [evidence-based explanation]"
+
+---
+
 ## 🔍 **VERIFICATION CRITERIA**
 
 ### **Success Metrics**
