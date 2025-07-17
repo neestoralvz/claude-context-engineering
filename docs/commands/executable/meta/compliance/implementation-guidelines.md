@@ -24,22 +24,20 @@
 ### **🚀 Implementation Methodology**
 
 **Systematic Application Framework**:
-```yaml
-implementation_protocols:
-  preparation_phase:
-    requirement_analysis: "COMPREHENSIVE - Implementation requirement identification with scope definition"
-    resource_assessment: "SYSTEMATIC - Resource availability with capability verification"
-    planning_development: "STRATEGIC - Implementation plan with milestone definition"
-  
-  execution_phase:
-    step_by_step_implementation: "GUIDED - Systematic implementation with checkpoint validation"
-    quality_monitoring: "CONTINUOUS - Implementation quality with real-time assessment"
-    issue_resolution: "PROACTIVE - Problem identification with immediate resolution"
-  
-  validation_phase:
-    implementation_verification: "COMPREHENSIVE - Implementation completeness with evidence validation"
-    performance_assessment: "QUANTIFIABLE - Implementation effectiveness with metric evaluation"
-    improvement_identification: "SYSTEMATIC - Optimization opportunity with enhancement protocols"
-```
+
+#### **CRITICAL Preparation Phase Requirements**
+- **Requirement Analysis**: COMPREHENSIVE - Implementation requirement identification with scope definition
+- **Resource Assessment**: SYSTEMATIC - Resource availability with capability verification
+- **Planning Development**: STRATEGIC - Implementation plan with milestone definition
+
+#### **MANDATORY Execution Phase Standards**
+- **Step-by-Step Implementation**: GUIDED - Systematic implementation with checkpoint validation
+- **Quality Monitoring**: CONTINUOUS - Implementation quality with real-time assessment
+- **Issue Resolution**: PROACTIVE - Problem identification with immediate resolution
+
+#### **REQUIRED Validation Phase Protocols**
+- **Implementation Verification**: COMPREHENSIVE - Implementation completeness with evidence validation
+- **Performance Assessment**: QUANTIFIABLE - Implementation effectiveness with metric evaluation
+- **Improvement Identification**: SYSTEMATIC - Optimization opportunity with enhancement protocols
 
 **Navigation Hub**: [Meta-Command Orchestration](../context-eng-compliant.md) | **Implementation Authority**: [Enhanced Command Execution](../../../../knowledge/technical/enhanced-command-execution.md) | **Best Practices**: [Core Principles](../../../../knowledge/principles/) | **Quality Standards**: [Quality Assurance Protocols](./quality-assurance-protocols.md)

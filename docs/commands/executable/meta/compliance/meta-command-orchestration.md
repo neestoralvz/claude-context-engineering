@@ -24,26 +24,24 @@
 ### **📊 Adaptive Phase Selection Framework**
 
 **Complexity-Responsive Orchestration**:
-```yaml
-orchestration_protocols:
-  simple_tasks_2_phase:
-    complexity_range: "≤1.0 - Simple operations with direct execution"
-    phase_0: "Compliant routing with script validation and decision analysis"
-    phase_3: "Direct execution with Task agent deployment and evidence generation"
-    success_target: "≥98.4% completion with ≤30 second response time"
-  
-  medium_tasks_3_phase:
-    complexity_range: "1.0-1.5 - Medium operations with coordination"
-    phase_0: "Enhanced routing with comprehensive analysis"
-    phase_2: "Strategic planning with specialist coordination"
-    phase_3: "Coordinated execution with multi-agent deployment"
-    efficiency_target: "85.7% efficiency with complexity reduction protocols"
-  
-  complex_tasks_5_phase:
-    complexity_range: "≥1.5 - Complex operations with full orchestration"
-    phases: "0-5 with maximum specialist coordination (up to 10 agents)"
-    validation: "Multi-dimensional verification with mathematical precision"
-    quality_target: "≥95% comprehensive compliance across all dimensions"
-```
+
+#### **CRITICAL Simple Tasks 2-Phase Protocol Standards**
+- **Complexity Range**: ≤1.0 - Simple operations with direct execution and systematic validation
+- **Phase 0**: Compliant routing with script validation and decision analysis
+- **Phase 3**: Direct execution with Task agent deployment and evidence generation
+- **Success Target**: ≥98.4% completion with ≤30 second response time
+
+#### **MANDATORY Medium Tasks 3-Phase Protocol Standards**
+- **Complexity Range**: 1.0-1.5 - Medium operations with coordination and systematic orchestration
+- **Phase 0**: Enhanced routing with comprehensive analysis and validation protocols
+- **Phase 2**: Strategic planning with specialist coordination and evidence integration
+- **Phase 3**: Coordinated execution with multi-agent deployment and quality assurance
+- **Efficiency Target**: 85.7% efficiency with complexity reduction protocols
+
+#### **REQUIRED Complex Tasks 5-Phase Protocol Standards**
+- **Complexity Range**: ≥1.5 - Complex operations with full orchestration and systematic validation
+- **Phases**: 0-5 with maximum specialist coordination (up to 10 agents) and evidence integration
+- **Validation**: Multi-dimensional verification with mathematical precision and quality assurance
+- **Quality Target**: ≥95% comprehensive compliance across all dimensions with systematic monitoring
 
 **Navigation Hub**: [Meta-Command Orchestration](../context-eng-compliant.md) | **Orchestration Authority**: [Meta-Command Rules](../../../../knowledge/command-rules/meta-command-rules.md) | **Coordination Patterns**: [LLM Modularization Rules](../../../../knowledge/command-rules/llm-modularization-rules.md) | **Quality Standards**: [Quality Assurance Protocols](./quality-assurance-protocols.md)
