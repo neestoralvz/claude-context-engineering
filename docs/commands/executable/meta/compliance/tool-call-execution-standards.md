@@ -24,50 +24,46 @@
 ### **🚫 PROHIBITED Execution Patterns**
 
 **Automatic Blocking Requirements**:
-```yaml
-prohibited_execution_patterns:
-  simulation_language:
-    - "I would call [tool]"
-    - "Let me simulate calling..."
-    - "This would execute [tool]"
-    - "I could use [tool] to..."
-    - "The tool would probably..."
-  
-  planning_without_execution:
-    - "First I would use Read tool"
-    - "Then I would call Bash"
-    - "Next I would execute..."
-    - "The sequence would be..."
-    - "My approach would involve..."
-  
-  estimation_patterns:
-    - "This might return approximately..."
-    - "Expected output would be..."
-    - "Likely results include..."
-    - "Probably will show..."
-    - "Should contain about..."
-```
+
+**PROHIBITED Simulation Language Patterns**:
+- "I would call [tool]"
+- "Let me simulate calling..."
+- "This would execute [tool]"
+- "I could use [tool] to..."
+- "The tool would probably..."
+
+**PROHIBITED Planning Without Execution Patterns**:
+- "First I would use Read tool"
+- "Then I would call Bash"
+- "Next I would execute..."
+- "The sequence would be..."
+- "My approach would involve..."
+
+**PROHIBITED Estimation Patterns**:
+- "This might return approximately..."
+- "Expected output would be..."
+- "Likely results include..."
+- "Probably will show..."
+- "Should contain about..."
 
 ### **✅ REQUIRED Execution Patterns**
 
 **Compliance Implementation Standards**:
-```yaml
-execution_requirements:
-  immediate_execution:
-    pattern: "Direct tool call without simulation or planning language"
-    validation: "Tool call must occur within 30 seconds of announcement"
-    evidence: "Real tool output with quantifiable results documentation"
-  
-  parameter_completeness:
-    validation: "All required parameters present and properly formatted"
-    verification: "Parameter type checking and constraint validation"
-    enforcement: "Execution blocking for invalid or incomplete parameters"
-  
-  result_documentation:
-    evidence: "100% tool output preservation with structured formatting"
-    analysis: "Result interpretation with quantifiable evidence extraction"
-    validation: "Success/failure status with error analysis when applicable"
-```
+
+**MANDATORY Immediate Execution Requirements**:
+- **Pattern**: Direct tool call without simulation or planning language
+- **Validation**: Tool call must occur within 30 seconds of announcement
+- **Evidence**: Real tool output with quantifiable results documentation
+
+**REQUIRED Parameter Completeness Standards**:
+- **Validation**: All required parameters present and properly formatted
+- **Verification**: Parameter type checking and constraint validation
+- **Enforcement**: Execution blocking for invalid or incomplete parameters
+
+**CRITICAL Result Documentation Requirements**:
+- **Evidence**: 100% tool output preservation with structured formatting
+- **Analysis**: Result interpretation with quantifiable evidence extraction
+- **Validation**: Success/failure status with error analysis when applicable
 
 ---
 
@@ -83,23 +79,21 @@ execution_requirements:
 - **Performance Tracking**: Read time measurement with file size correlation
 
 **Read Tool Implementation Protocol**:
-```yaml
-read_tool_standards:
-  parameter_validation:
-    file_path: "REQUIRED - Absolute path validation with existence checking"
-    offset: "OPTIONAL - Line number validation for large files"
-    limit: "OPTIONAL - Line count validation for partial reading"
-  
-  execution_requirements:
-    path_verification: "MANDATORY - Absolute path format with existence confirmation"
-    content_processing: "SYSTEMATIC - Content analysis with evidence extraction"
-    error_handling: "COMPREHENSIVE - Clear error messaging with recovery recommendations"
-  
-  evidence_generation:
-    content_documentation: "100% - Complete content preservation with line numbers"
-    analysis_integration: "SYSTEMATIC - Content analysis with quantifiable insights"
-    performance_measurement: "REQUIRED - Read time and file size correlation tracking"
-```
+
+**MANDATORY Parameter Validation Standards**:
+- **file_path**: REQUIRED - Absolute path validation with existence checking
+- **offset**: OPTIONAL - Line number validation for large files
+- **limit**: OPTIONAL - Line count validation for partial reading
+
+**CRITICAL Execution Requirements**:
+- **Path Verification**: MANDATORY - Absolute path format with existence confirmation
+- **Content Processing**: SYSTEMATIC - Content analysis with evidence extraction
+- **Error Handling**: COMPREHENSIVE - Clear error messaging with recovery recommendations
+
+**REQUIRED Evidence Generation Standards**:
+- **Content Documentation**: 100% - Complete content preservation with line numbers
+- **Analysis Integration**: SYSTEMATIC - Content analysis with quantifiable insights
+- **Performance Measurement**: REQUIRED - Read time and file size correlation tracking
 
 ### **⚡ Bash Tool Standards** (≤1.0 cognitive steps - MEASURED 0.91 ± 0.02 average)
 
@@ -111,23 +105,21 @@ read_tool_standards:
 - **Security Compliance**: Command whitelist validation with dangerous command blocking
 
 **Bash Tool Implementation Protocol**:
-```yaml
-bash_tool_standards:
-  security_validation:
-    command_whitelist: "REQUIRED - Approved command verification with security screening"
-    parameter_sanitization: "MANDATORY - Input sanitization with injection prevention"
-    privilege_verification: "SYSTEMATIC - Execution privilege validation with safety checks"
-  
-  execution_management:
-    timeout_enforcement: "AUTOMATIC - Execution time limits with termination protocols"
-    output_capture: "COMPLETE - STDOUT/STDERR separation with preservation"
-    error_handling: "COMPREHENSIVE - Error analysis with recovery recommendations"
-  
-  performance_monitoring:
-    execution_timing: "REQUIRED - Command execution time measurement"
-    resource_tracking: "SYSTEMATIC - CPU/memory usage monitoring"
-    success_validation: "AUTOMATIC - Exit code analysis with status reporting"
-```
+
+**MANDATORY Security Validation Standards**:
+- **Command Whitelist**: REQUIRED - Approved command verification with security screening
+- **Parameter Sanitization**: MANDATORY - Input sanitization with injection prevention
+- **Privilege Verification**: SYSTEMATIC - Execution privilege validation with safety checks
+
+**CRITICAL Execution Management Requirements**:
+- **Timeout Enforcement**: AUTOMATIC - Execution time limits with termination protocols
+- **Output Capture**: COMPLETE - STDOUT/STDERR separation with preservation
+- **Error Handling**: COMPREHENSIVE - Error analysis with recovery recommendations
+
+**REQUIRED Performance Monitoring Standards**:
+- **Execution Timing**: REQUIRED - Command execution time measurement
+- **Resource Tracking**: SYSTEMATIC - CPU/memory usage monitoring
+- **Success Validation**: AUTOMATIC - Exit code analysis with status reporting
 
 ### **📝 Edit/Write Tool Standards** (≤1.0 cognitive steps - MEASURED 0.96 ± 0.03 average)
 
@@ -139,23 +131,21 @@ bash_tool_standards:
 - **Change Validation**: Post-edit verification with content confirmation
 
 **Edit/Write Tool Implementation Protocol**:
-```yaml
-edit_write_standards:
-  pre_execution_validation:
-    path_verification: "MANDATORY - Absolute path validation with directory existence"
-    permission_checking: "REQUIRED - Write permission validation with error prevention"
-    backup_creation: "AUTOMATIC - Pre-modification backup with version control"
-  
-  content_management:
-    string_matching: "EXACT - Precise string matching with whitespace preservation"
-    change_verification: "SYSTEMATIC - Post-edit content validation with confirmation"
-    encoding_handling: "PROPER - Character encoding preservation with format validation"
-  
-  quality_assurance:
-    change_documentation: "COMPLETE - Modification documentation with diff generation"
-    rollback_capability: "AVAILABLE - Change reversal with backup restoration"
-    validation_testing: "SYSTEMATIC - Post-modification functionality verification"
-```
+
+**MANDATORY Pre-Execution Validation Standards**:
+- **Path Verification**: MANDATORY - Absolute path validation with directory existence
+- **Permission Checking**: REQUIRED - Write permission validation with error prevention
+- **Backup Creation**: AUTOMATIC - Pre-modification backup with version control
+
+**CRITICAL Content Management Requirements**:
+- **String Matching**: EXACT - Precise string matching with whitespace preservation
+- **Change Verification**: SYSTEMATIC - Post-edit content validation with confirmation
+- **Encoding Handling**: PROPER - Character encoding preservation with format validation
+
+**REQUIRED Quality Assurance Standards**:
+- **Change Documentation**: COMPLETE - Modification documentation with diff generation
+- **Rollback Capability**: AVAILABLE - Change reversal with backup restoration
+- **Validation Testing**: SYSTEMATIC - Post-modification functionality verification
 
 ### **🔍 Specialized Tool Standards** (≤1.1 cognitive steps - MEASURED 1.03 ± 0.04 average)
 
@@ -167,23 +157,21 @@ edit_write_standards:
 - **Error Recovery**: Agent failure handling with alternative deployment protocols
 
 **Task Tool Implementation Protocol**:
-```yaml
-task_tool_standards:
-  agent_deployment:
-    role_specification: "CLEAR - Agent capability definition with domain expertise"
-    communication_setup: "BIDIRECTIONAL - Message protocol with structured formatting"
-    performance_tracking: "CONTINUOUS - Agent execution monitoring with progress updates"
-  
-  coordination_management:
-    multi_agent_orchestration: "SYSTEMATIC - Parallel agent coordination with conflict resolution"
-    result_consolidation: "COMPREHENSIVE - Agent output integration with evidence synthesis"
-    error_handling: "ROBUST - Agent failure recovery with alternative deployment"
-  
-  quality_validation:
-    output_verification: "SYSTEMATIC - Agent result validation with quality assessment"
-    performance_measurement: "QUANTIFIABLE - Agent effectiveness tracking with metrics"
-    improvement_identification: "PROACTIVE - Agent optimization opportunity detection"
-```
+
+**MANDATORY Agent Deployment Standards**:
+- **Role Specification**: CLEAR - Agent capability definition with domain expertise
+- **Communication Setup**: BIDIRECTIONAL - Message protocol with structured formatting
+- **Performance Tracking**: CONTINUOUS - Agent execution monitoring with progress updates
+
+**CRITICAL Coordination Management Requirements**:
+- **Multi-Agent Orchestration**: SYSTEMATIC - Parallel agent coordination with conflict resolution
+- **Result Consolidation**: COMPREHENSIVE - Agent output integration with evidence synthesis
+- **Error Handling**: ROBUST - Agent failure recovery with alternative deployment
+
+**REQUIRED Quality Validation Standards**:
+- **Output Verification**: SYSTEMATIC - Agent result validation with quality assessment
+- **Performance Measurement**: QUANTIFIABLE - Agent effectiveness tracking with metrics
+- **Improvement Identification**: PROACTIVE - Agent optimization opportunity detection
 
 ---
 
@@ -200,49 +188,45 @@ task_tool_standards:
 ### **🔍 Real-Time Execution Monitoring**
 
 **Performance Tracking Framework**:
-```yaml
-execution_monitoring:
-  real_time_metrics:
-    success_rate_tracking: "CONTINUOUS - Tool execution success percentage calculation"
-    performance_timing: "SYSTEMATIC - Execution time measurement with distribution analysis"
-    error_analysis: "COMPREHENSIVE - Error pattern identification with prevention protocols"
-  
-  quality_assessment:
-    parameter_validation_rate: "100% - Complete parameter verification with format checking"
-    evidence_generation_rate: "100% - Quantifiable result production verification"
-    compliance_scoring: "REAL-TIME - Tool execution compliance calculation"
-  
-  improvement_tracking:
-    optimization_identification: "PROACTIVE - Performance improvement opportunity detection"
-    error_reduction: "SYSTEMATIC - Error rate reduction tracking with prevention enhancement"
-    efficiency_enhancement: "CONTINUOUS - Execution efficiency improvement measurement"
-```
+
+**MANDATORY Real-Time Metrics Standards**:
+- **Success Rate Tracking**: CONTINUOUS - Tool execution success percentage calculation
+- **Performance Timing**: SYSTEMATIC - Execution time measurement with distribution analysis
+- **Error Analysis**: COMPREHENSIVE - Error pattern identification with prevention protocols
+
+**CRITICAL Quality Assessment Requirements**:
+- **Parameter Validation Rate**: 100% - Complete parameter verification with format checking
+- **Evidence Generation Rate**: 100% - Quantifiable result production verification
+- **Compliance Scoring**: REAL-TIME - Tool execution compliance calculation
+
+**REQUIRED Improvement Tracking Standards**:
+- **Optimization Identification**: PROACTIVE - Performance improvement opportunity detection
+- **Error Reduction**: SYSTEMATIC - Error rate reduction tracking with prevention enhancement
+- **Efficiency Enhancement**: CONTINUOUS - Execution efficiency improvement measurement
 
 ### **📈 Tool-Specific Performance Standards**
 
 **Individual Tool Performance Targets**:
-```yaml
-tool_performance_standards:
-  read_tool:
-    success_rate: "≥99.5% - File reading success with error handling"
-    average_time: "≤10 seconds - File content retrieval and processing"
-    error_recovery: "≥98% - File access error resolution success"
-  
-  bash_tool:
-    success_rate: "≥98% - Command execution success with error handling"
-    average_time: "≤30 seconds - Command execution and output capture"
-    security_validation: "100% - Command security screening success"
-  
-  edit_write_tools:
-    success_rate: "≥99% - File modification success with validation"
-    average_time: "≤15 seconds - File modification and verification"
-    backup_success: "100% - Pre-modification backup creation"
-  
-  task_tool:
-    deployment_success: "≥95% - Agent deployment and communication establishment"
-    coordination_efficiency: "≥90% - Multi-agent coordination success"
-    result_integration: "≥98% - Agent output consolidation success"
-```
+
+**MANDATORY Read Tool Standards**:
+- **Success Rate**: ≥99.5% - File reading success with error handling
+- **Average Time**: ≤10 seconds - File content retrieval and processing
+- **Error Recovery**: ≥98% - File access error resolution success
+
+**CRITICAL Bash Tool Standards**:
+- **Success Rate**: ≥98% - Command execution success with error handling
+- **Average Time**: ≤30 seconds - Command execution and output capture
+- **Security Validation**: 100% - Command security screening success
+
+**REQUIRED Edit/Write Tool Standards**:
+- **Success Rate**: ≥99% - File modification success with validation
+- **Average Time**: ≤15 seconds - File modification and verification
+- **Backup Success**: 100% - Pre-modification backup creation
+
+**MANDATORY Task Tool Standards**:
+- **Deployment Success**: ≥95% - Agent deployment and communication establishment
+- **Coordination Efficiency**: ≥90% - Multi-agent coordination success
+- **Result Integration**: ≥98% - Agent output consolidation success
 
 ---
 
@@ -260,44 +244,40 @@ tool_performance_standards:
 ### **⚡ Automatic Recovery Mechanisms**
 
 **Error Recovery Implementation**:
-```yaml
-error_recovery_protocols:
-  automatic_retry:
-    parameter_correction: "IMMEDIATE - Invalid parameter correction with re-execution"
-    timeout_management: "SYSTEMATIC - Execution time extension with monitoring"
-    permission_resolution: "ALTERNATIVE - Access method modification with workarounds"
-  
-  escalation_procedures:
-    user_notification: "IMMEDIATE - Clear error communication with resolution steps"
-    alternative_approaches: "SYSTEMATIC - Backup execution method deployment"
-    manual_intervention: "AVAILABLE - Human intervention protocols for complex errors"
-  
-  prevention_mechanisms:
-    parameter_validation: "PRE-EXECUTION - Complete parameter verification with format checking"
-    permission_checking: "PRE-EXECUTION - Access validation with error prevention"
-    resource_monitoring: "CONTINUOUS - System resource tracking with limit enforcement"
-```
+
+**MANDATORY Automatic Retry Standards**:
+- **Parameter Correction**: IMMEDIATE - Invalid parameter correction with re-execution
+- **Timeout Management**: SYSTEMATIC - Execution time extension with monitoring
+- **Permission Resolution**: ALTERNATIVE - Access method modification with workarounds
+
+**CRITICAL Escalation Procedures**:
+- **User Notification**: IMMEDIATE - Clear error communication with resolution steps
+- **Alternative Approaches**: SYSTEMATIC - Backup execution method deployment
+- **Manual Intervention**: AVAILABLE - Human intervention protocols for complex errors
+
+**REQUIRED Prevention Mechanisms**:
+- **Parameter Validation**: PRE-EXECUTION - Complete parameter verification with format checking
+- **Permission Checking**: PRE-EXECUTION - Access validation with error prevention
+- **Resource Monitoring**: CONTINUOUS - System resource tracking with limit enforcement
 
 ### **📋 Error Documentation & Learning**
 
 **Error Analysis Framework**:
-```yaml
-error_documentation:
-  classification_system:
-    error_categorization: "SYSTEMATIC - Error type classification with pattern identification"
-    frequency_tracking: "STATISTICAL - Error occurrence frequency with trend analysis"
-    impact_assessment: "QUANTIFIABLE - Error impact measurement with severity classification"
-  
-  learning_integration:
-    pattern_recognition: "AUTOMATIC - Error pattern identification with prevention protocols"
-    prevention_enhancement: "PROACTIVE - Error prevention mechanism improvement"
-    knowledge_accumulation: "SYSTEMATIC - Error resolution knowledge preservation"
-  
-  improvement_protocols:
-    prevention_optimization: "CONTINUOUS - Error prevention mechanism enhancement"
-    recovery_enhancement: "SYSTEMATIC - Error recovery protocol improvement"
-    user_experience_improvement: "ONGOING - Error handling user experience optimization"
-```
+
+**MANDATORY Classification System Standards**:
+- **Error Categorization**: SYSTEMATIC - Error type classification with pattern identification
+- **Frequency Tracking**: STATISTICAL - Error occurrence frequency with trend analysis
+- **Impact Assessment**: QUANTIFIABLE - Error impact measurement with severity classification
+
+**CRITICAL Learning Integration Requirements**:
+- **Pattern Recognition**: AUTOMATIC - Error pattern identification with prevention protocols
+- **Prevention Enhancement**: PROACTIVE - Error prevention mechanism improvement
+- **Knowledge Accumulation**: SYSTEMATIC - Error resolution knowledge preservation
+
+**REQUIRED Improvement Protocols**:
+- **Prevention Optimization**: CONTINUOUS - Error prevention mechanism enhancement
+- **Recovery Enhancement**: SYSTEMATIC - Error recovery protocol improvement
+- **User Experience Improvement**: ONGOING - Error handling user experience optimization
 
 ---
 
@@ -326,38 +306,40 @@ error_documentation:
 ### **✅ Compliant Tool Execution Examples**
 
 **Read Tool Execution Example**:
-```yaml
-compliant_read_execution:
-  announcement: |
-    ╔═══════════════════════════════════════════════════════════╗
-    ║                    📖 FILE READ EXECUTION                 ║
-    ╠═══════════════════════════════════════════════════════════╣
-    ║ Tool: Read | File: /absolute/path/to/file.md              ║
-    ║ Purpose: Content analysis | Evidence: REQUIRED           ║
-    ║ P55 Compliance: ✅ | Real Execution: ✅                  ║
-    ╚═══════════════════════════════════════════════════════════╝
-  
-  execution: "Read(file_path='/absolute/path/to/file.md')"
-  evidence: "File content retrieved: 247 lines, 12,450 characters"
-  validation: "✅ EXECUTION COMPLETE - Content analysis ready"
+
+**COMPLIANT Read Execution Pattern**:
+```
+╔═══════════════════════════════════════════════════════════╗
+║                    📖 FILE READ EXECUTION                 ║
+╠═══════════════════════════════════════════════════════════╣
+║ Tool: Read | File: /absolute/path/to/file.md              ║
+║ Purpose: Content analysis | Evidence: REQUIRED           ║
+║ P55 Compliance: ✅ | Real Execution: ✅                  ║
+╚═══════════════════════════════════════════════════════════╝
 ```
 
+**MANDATORY Execution Components**:
+- **Tool Call**: Read(file_path='/absolute/path/to/file.md')
+- **Evidence Generated**: File content retrieved: 247 lines, 12,450 characters
+- **Validation Status**: ✅ EXECUTION COMPLETE - Content analysis ready
+
 **Bash Tool Execution Example**:
-```yaml
-compliant_bash_execution:
-  announcement: |
-    ╔═══════════════════════════════════════════════════════════╗
-    ║                   ⚡ BASH SCRIPT EXECUTION                ║
-    ╠═══════════════════════════════════════════════════════════╣
-    ║ Tool: Bash | Script: calculate-real-metrics.sh           ║
-    ║ Purpose: Mathematical validation | Evidence: REQUIRED    ║
-    ║ P55 Compliance: ✅ | Real Execution: ✅                  ║
-    ╚═══════════════════════════════════════════════════════════╝
-  
-  execution: "Bash(command='./scripts/core/calculate-real-metrics.sh')"
-  evidence: "Script executed: 0.847 seconds, metrics calculated: 15 values"
-  validation: "✅ EXECUTION COMPLETE - Mathematical foundation established"
+
+**COMPLIANT Bash Execution Pattern**:
 ```
+╔═══════════════════════════════════════════════════════════╗
+║                   ⚡ BASH SCRIPT EXECUTION                ║
+╠═══════════════════════════════════════════════════════════╣
+║ Tool: Bash | Script: calculate-real-metrics.sh           ║
+║ Purpose: Mathematical validation | Evidence: REQUIRED    ║
+║ P55 Compliance: ✅ | Real Execution: ✅                  ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+**MANDATORY Execution Components**:
+- **Tool Call**: Bash(command='./scripts/core/calculate-real-metrics.sh')
+- **Evidence Generated**: Script executed: 0.847 seconds, metrics calculated: 15 values
+- **Validation Status**: ✅ EXECUTION COMPLETE - Mathematical foundation established
 
 ### **❌ Non-Compliant Execution Examples**
 
