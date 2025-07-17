@@ -17,6 +17,7 @@
 4. **Real-Time Progress Monitoring**: Continuous execution monitoring with status updates
 5. **Performance Metrics Collection**: Systematic collection of execution metrics and KPIs
 6. **Evidence Documentation**: Complete audit trail of progress and achievements
+7. **Token Optimization Monitoring**: Real-time token efficiency tracking and learning integration ([Token Optimization Intelligence](../../knowledge/technical/token-optimization-intelligence.md))
 
 ### **Usage Statistics**
 - **Commands Using This Module**: 29+ commands with progress tracking needs
@@ -108,6 +109,8 @@ progress_update_templates:
       🎯 Current Action: {current_action}
       ⚡ Active Tools: {active_tools}
       📊 Quality Score: {quality_score}/10.0
+      🪙 Token Efficiency: {token_efficiency}% (Target: ≥40%)
+      🧠 Learning Pattern: {learning_pattern_applied}
       ⏱️  Elapsed: {elapsed_time} | Remaining: {remaining_time}
 ```
 
@@ -261,6 +264,15 @@ performance_metrics:
     resource_efficiency: "Value delivered per resource unit consumed (mathematical calculation)"
     automation_rate: "Percentage of operations completed automatically (≥85% target)"
     manual_intervention_rate: "Percentage of operations requiring manual intervention (≤5% maximum)"
+    
+  token_optimization_metrics:
+    token_efficiency_rate: "Token reduction percentage achieved (≥40% target)"
+    quality_preservation_rate: "Information quality preservation during compression (≥95% target)"
+    budget_utilization_rate: "Token budget utilization efficiency (≤80% maximum)"
+    compression_strategy_success: "Success rate of applied compression strategies (≥85% target)"
+    learning_adaptation_rate: "Rate of strategy improvement through learning (≥10% per 100 interactions)"
+    context_selection_accuracy: "Accuracy of optimal context selection (≥80% target)"
+    multi_agent_coordination_efficiency: "Token efficiency in multi-agent coordination (≥60% reduction)"
 ```
 
 ### **Metrics Calculation and Analysis**
@@ -281,6 +293,27 @@ metrics_calculation:
     formula: "performance_rating = (efficiency * 0.3) + (quality_score * 0.5) + (user_satisfaction * 0.2)"
     rating_scale: "0.0-10.0"
     target_threshold: ">= 8.0000"
+    
+  token_optimization_calculations:
+    token_efficiency_calculation:
+      function_signature: "calculate_token_efficiency(original_tokens, compressed_tokens)"
+      formula: "token_efficiency = ((original_tokens - compressed_tokens) / original_tokens) * 100"
+      target_threshold: ">= 40.0000"
+      
+    quality_coefficient_calculation:
+      function_signature: "calculate_quality_coefficient(original_info_value, compressed_info_value)"
+      formula: "quality_coefficient = compressed_info_value / original_info_value"
+      target_threshold: ">= 0.9500"
+      
+    combined_efficiency_calculation:
+      function_signature: "calculate_combined_efficiency(visual_efficiency, token_efficiency)"
+      formula: "combined_efficiency = (visual_efficiency + token_efficiency) / 2"
+      target_threshold: ">= 55.0000"
+      
+    learning_effectiveness_calculation:
+      function_signature: "calculate_learning_effectiveness(patterns_recognized, strategies_improved, predictions_accurate)"
+      formula: "learning_effectiveness = (patterns_recognized * 0.4) + (strategies_improved * 0.3) + (predictions_accurate * 0.3)"
+      target_threshold: ">= 0.8000"
 ```
 
 ---
@@ -303,6 +336,15 @@ evidence_collection:
     resource_usage: "Documentation of resource consumption and optimization"
     error_logs: "Complete error logs with resolution information"
     success_metrics: "Quantified success metrics and achievement rates"
+    
+  token_optimization_evidence:
+    efficiency_measurements: "Before/after token counts with compression ratios"
+    quality_preservation_metrics: "Information value preservation calculations"
+    budget_utilization_records: "Token budget allocation and usage tracking"
+    learning_pattern_documentation: "Successful patterns and strategy evolution records"
+    strategy_effectiveness_logs: "Performance of different optimization strategies"
+    context_selection_analysis: "Accuracy and effectiveness of context selection decisions"
+    cross_context_learning_records: "Evidence of pattern transfer between contexts"
     
   compliance_evidence:
     p55_verification: "Evidence of mandatory tool call execution (100%)"

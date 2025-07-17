@@ -1,6 +1,6 @@
 # Compact Conversation Feedback System
 
-**Sistema de feedback conversacional denso** para comunicación Claude-usuario optimizada.
+**Compact conversational feedback system** for optimized Claude-user communication.
 
 ## 🎯 Command Integration
 

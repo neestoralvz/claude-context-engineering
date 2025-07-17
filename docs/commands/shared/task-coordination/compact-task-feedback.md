@@ -1,6 +1,6 @@
 # Compact Task Coordination Feedback
 
-**Sistema compacto para coordinación de Task tools** con feedback denso y alta transparencia.
+**Compact system for Task tool coordination** with dense feedback and high transparency.
 
 ## 🎯 Task Tool Communication Patterns
 
