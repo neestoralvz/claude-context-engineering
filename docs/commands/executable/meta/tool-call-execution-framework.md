@@ -15,41 +15,38 @@
 ### **Phase Execution with Mandatory Tool Calls**
 
 **Phase 1 Discovery - Tool Call Requirements**:
-```yaml
-WHEN: Phase 1 discovery execution begins
-TOOL CALL REQUIRED: Task tool execution with these parameters:
-  description: "Discovery specialist deployment" 
-  prompt: "Deploy knowledge hierarchy specialist with bidirectional communication bridge for [user objective]. Analyze codebase structure, identify patterns, and optimize context. Report progress every 30 seconds and provide comprehensive discovery results."
 
-LLM MUST EXECUTE: Task tool call (not simulation)
-RESULT REQUIRED: Actual Task agent deployment and communication bridge establishment
-PROGRESS TRACKING: Real-time updates from deployed Task agent
-```
+**MANDATORY Tool Call Execution**:
+- **When**: Phase 1 discovery execution begins
+- **Tool Call Required**: Task tool execution with these parameters:
+  - **Description**: "Discovery specialist deployment" 
+  - **Prompt**: "Deploy knowledge hierarchy specialist with bidirectional communication bridge for [user objective]. Analyze codebase structure, identify patterns, and optimize context. Report progress every 30 seconds and provide comprehensive discovery results."
+- **LLM Must Execute**: Task tool call (not simulation)
+- **Result Required**: Actual Task agent deployment and communication bridge establishment
+- **Progress Tracking**: Real-time updates from deployed Task agent
 
 **Phase 2 Planning - Tool Call Requirements**:
-```yaml
-WHEN: Strategic planning execution needed
-TOOL CALL REQUIRED: Task tool execution with these parameters:
-  description: "Strategic planning specialist deployment"
-  prompt: "Deploy strategic planning specialist for [user objective]. Analyze complexity, select optimal model (Opus/Sonnet), decompose objectives using TDD approach. Establish git strategy and planning milestones."
 
-LLM MUST EXECUTE: Task tool call (not simulation)
-RESULT REQUIRED: Planning strategy, model selection, and git coordination
-PROGRESS TRACKING: Planning milestone progress via Task agent communication
-```
+**MANDATORY Tool Call Execution**:
+- **When**: Strategic planning execution needed
+- **Tool Call Required**: Task tool execution with these parameters:
+  - **Description**: "Strategic planning specialist deployment"
+  - **Prompt**: "Deploy strategic planning specialist for [user objective]. Analyze complexity, select optimal model (Opus/Sonnet), decompose objectives using TDD approach. Establish git strategy and planning milestones."
+- **LLM Must Execute**: Task tool call (not simulation)
+- **Result Required**: Planning strategy, model selection, and git coordination
+- **Progress Tracking**: Planning milestone progress via Task agent communication
 
 **Phase 3 Execution - Tool Call Requirements**:
-```yaml
-WHEN: Multi-agent orchestration needed
-TOOL CALL REQUIRED: Multiple Task tool executions for each specialist:
-  - Parallel coordinator deployment via Task tool
-  - Git strategist deployment via Task tool  
-  - Dependency analyzer deployment via Task tool
 
-LLM MUST EXECUTE: Multiple Task tool calls in sequence or parallel
-RESULT REQUIRED: Real specialist agent deployment with progress reporting
-COORDINATION: Up to 10 Task agents with bidirectional communication mesh
-```
+**MANDATORY Tool Call Execution**:
+- **When**: Multi-agent orchestration needed
+- **Tool Call Required**: Multiple Task tool executions for each specialist:
+  - **Parallel coordinator deployment** via Task tool
+  - **Git strategist deployment** via Task tool  
+  - **Dependency analyzer deployment** via Task tool
+- **LLM Must Execute**: Multiple Task tool calls in sequence or parallel
+- **Result Required**: Real specialist agent deployment with progress reporting
+- **Coordination**: Up to 10 Task agents with bidirectional communication mesh
 
 ### **Tool Call Verification Protocol**
 
@@ -70,33 +67,33 @@ COORDINATION: Up to 10 Task agents with bidirectional communication mesh
 ### **Common Tool Call Scenarios**
 
 **Scenario 1: High Confidence Discovery (≥90%)**
-```yaml
-ACTION: Deploy specialist Task agents in parallel
-TOOL CALLS REQUIRED: 3 simultaneous Task tool executions
-  - Knowledge specialist via Task tool
-  - Pattern specialist via Task tool  
-  - Context specialist via Task tool
-COMMUNICATION: Bidirectional bridge with all 3 agents
-PROGRESS: Parallel progress aggregation from specialists
-```
+
+**MANDATORY Tool Call Execution**:
+- **Action**: Deploy specialist Task agents in parallel
+- **Tool Calls Required**: 3 simultaneous Task tool executions
+  - **Knowledge specialist** via Task tool
+  - **Pattern specialist** via Task tool  
+  - **Context specialist** via Task tool
+- **Communication**: Bidirectional bridge with all 3 agents
+- **Progress**: Parallel progress aggregation from specialists
 
 **Scenario 2: Complex Multi-Agent Orchestration**
-```yaml
-ACTION: Deploy up to 10 specialist Task agents
-TOOL CALLS REQUIRED: Sequential or parallel Task tool executions
-COMMUNICATION MESH: Full bidirectional communication between all agents
-COORDINATION: Principal agent aggregates progress from all specialists
-HANDOFF: Proper control transfer when agents complete tasks
-```
+
+**MANDATORY Tool Call Execution**:
+- **Action**: Deploy up to 10 specialist Task agents
+- **Tool Calls Required**: Sequential or parallel Task tool executions
+- **Communication Mesh**: Full bidirectional communication between all agents
+- **Coordination**: Principal agent aggregates progress from all specialists
+- **Handoff**: Proper control transfer when agents complete tasks
 
 **Scenario 3: Git Strategy Implementation**
-```yaml
-ACTION: Strategic git commits and recovery points
-TOOL CALLS REQUIRED: Git tool executions via Task agents
-GIT OPERATIONS: Real commits, branch creation, worktree management
-RECOVERY: Automated recovery points at key milestones
-TRACKING: Git milestone progress via Task agent communication
-```
+
+**MANDATORY Tool Call Execution**:
+- **Action**: Strategic git commits and recovery points
+- **Tool Calls Required**: Git tool executions via Task agents
+- **Git Operations**: Real commits, branch creation, worktree management
+- **Recovery**: Automated recovery points at key milestones
+- **Tracking**: Git milestone progress via Task agent communication
 
 ---
 
@@ -494,52 +491,49 @@ When deploying Task agents, the LLM MUST:
 
 ### **Enhanced P55/P56 Compliance Framework**
 
-```yaml
-enhanced_p55_p56_compliance:
-  principle_55_integration:
-    tool_call_execution_bridging:
-      - "MANDATORY TOOL CALL EXECUTION: All meta-command operations MUST use enhanced Task tool with communication bridge"
-      - "EXPLICIT REQUIREMENT: Real tool call execution vs simulation enforcement across all TOTAL_REGISTRY_COMMANDS commands"  
-      - "TOOL CALL DEPLOYMENT: Task agent deployment MANDATORY via Task tool for complex workflow orchestration"
-      - "TOOL CALL EXECUTION: Autonomous error handling and retry logic via REAL tool calls with communication reporting"
-      - "TOOL CALL TRACKING: Performance tracking for all Task agent executions via actual tool calls with metrics"
-      
-    implementation_requirements:
-      - "LLM MUST EXECUTE: Deploy Task agents via Task tool with bidirectional communication for all phases"
-      - "LLM MUST EXECUTE: Report real tool execution results via tool calls, never simulate or describe"
-      - "LLM MUST EXECUTE: Capture and communicate actual tool outputs via tool call execution with progress reporting"
-      - "LLM MUST EXECUTE: Demonstrate functionality through real tool call execution with Task agent validation"
-      - "EXPLICIT TOOL CALL REQUIREMENT: Every 'action:' in phase protocols REQUIRES actual tool call execution"
-      - "MANDATORY TOOL EXECUTION: When protocols mention 'Deploy', 'Execute', or 'Activate', LLM MUST use tool calls"
-      
-  principle_56_integration:
-    command_execution_transparency:
-      - "Enhanced visual announcement for meta-command with 5-phase overview"
-      - "Real-time progress reporting from all deployed Task agents"
-      - "Phase-by-phase milestone tracking with user visibility"
-      - "Completion handoff notification with comprehensive results"
-      - "Error communication and recovery action transparency"
-      
-    communication_standards:
-      - "Bidirectional communication established for all Task agent deployments"
-      - "Status updates minimum every 30 seconds during active execution"
-      - "Principal agent displays aggregated progress from all Task agents"
-      - "Handoff protocol compliance for all phase transitions"
-      - "Communication continuity maintained throughout entire meta-command"
-      
-  compliance_validation:
-    real_time_monitoring:
-      - "P55/P56 Compliance Validator integration throughout execution"
-      - "Automatic compliance scoring for all Task agent interactions"
-      - "Communication protocol validation at each phase transition"
-      - "Tool call execution verification with actual vs simulated checks"
-      
-    enforcement_mechanisms:
-      - "Automatic blocking of non-compliant execution patterns"
-      - "Communication bridge failure detection and recovery"
-      - "Task agent timeout handling with manual takeover protocols"
-      - "Compliance reporting integration with meta-command results"
-```
+**MANDATORY Principle 55 Integration**:
+- **Tool Call Execution Bridging Requirements**:
+  - **MANDATORY TOOL CALL EXECUTION**: All meta-command operations MUST use enhanced Task tool with communication bridge
+  - **EXPLICIT REQUIREMENT**: Real tool call execution vs simulation enforcement across all TOTAL_REGISTRY_COMMANDS commands
+  - **TOOL CALL DEPLOYMENT**: Task agent deployment MANDATORY via Task tool for complex workflow orchestration
+  - **TOOL CALL EXECUTION**: Autonomous error handling and retry logic via REAL tool calls with communication reporting
+  - **TOOL CALL TRACKING**: Performance tracking for all Task agent executions via actual tool calls with metrics
+
+- **Implementation Requirements**:
+  - **LLM MUST EXECUTE**: Deploy Task agents via Task tool with bidirectional communication for all phases
+  - **LLM MUST EXECUTE**: Report real tool execution results via tool calls, never simulate or describe
+  - **LLM MUST EXECUTE**: Capture and communicate actual tool outputs via tool call execution with progress reporting
+  - **LLM MUST EXECUTE**: Demonstrate functionality through real tool call execution with Task agent validation
+  - **EXPLICIT TOOL CALL REQUIREMENT**: Every 'action:' in phase protocols REQUIRES actual tool call execution
+  - **MANDATORY TOOL EXECUTION**: When protocols mention 'Deploy', 'Execute', or 'Activate', LLM MUST use tool calls
+
+**REQUIRED Principle 56 Integration**:
+- **Command Execution Transparency Standards**:
+  - **Enhanced visual announcement** for meta-command with 5-phase overview
+  - **Real-time progress reporting** from all deployed Task agents
+  - **Phase-by-phase milestone tracking** with user visibility
+  - **Completion handoff notification** with comprehensive results
+  - **Error communication and recovery action transparency**
+
+- **Communication Standards**:
+  - **Bidirectional communication established** for all Task agent deployments
+  - **Status updates minimum every 30 seconds** during active execution
+  - **Principal agent displays aggregated progress** from all Task agents
+  - **Handoff protocol compliance** for all phase transitions
+  - **Communication continuity maintained** throughout entire meta-command
+
+**CRITICAL Compliance Validation**:
+- **Real-Time Monitoring Requirements**:
+  - **P55/P56 Compliance Validator integration** throughout execution
+  - **Automatic compliance scoring** for all Task agent interactions
+  - **Communication protocol validation** at each phase transition
+  - **Tool call execution verification** with actual vs simulated checks
+
+- **Enforcement Mechanisms**:
+  - **Automatic blocking** of non-compliant execution patterns
+  - **Communication bridge failure detection** and recovery
+  - **Task agent timeout handling** with manual takeover protocols
+  - **Compliance reporting integration** with meta-command results
 
 ### **Real-Time Compliance Monitoring**
 
