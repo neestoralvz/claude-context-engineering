@@ -19,7 +19,7 @@ Implement staged intelligence development that progressively deepens understandi
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /progressive-intelligence [domain] [target_depth?] [progression_stages?]
 ```
 
@@ -35,6 +35,175 @@ Implement staged intelligence development that progressively deepens understandi
 - **Cumulative Learning**: Each stage builds on previous intelligence
 - **Depth Measurement**: Quantifiable intelligence depth assessment
 - **Systematic Analysis**: Structured approach to intelligence development
+
+---
+
+## 🧠 **PROGRESSIVE INTELLIGENCE DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Progressive Intelligence**
+
+```mermaid
+graph TD
+    A[Progressive Intelligence Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Progressive Processing]
+    B -->|No| D[Standard Progressive Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Progressive Execution]
+    
+    D --> H{Intelligence Depth Assessment}
+    H -->|Comprehensive| I[4-Stage Full Progression]
+    H -->|Deep| J[3-Stage Deep Progression]
+    H -->|Strategic| K[2-Stage Strategic Focus]
+    
+    F --> L[Task Tool: Complex Progressive Intelligence]
+    L --> M[P56: Advanced Progressive Coordination]
+    
+    G --> N{Current Intelligence Level}
+    N -->|High| O[Enhancement Progression]
+    N -->|Medium| P[Standard Progression]
+    N -->|Low| Q[CRITICAL: Foundation Building]
+    
+    I --> R[Stage 1: Contextual Understanding]
+    R --> S[Read Tool: Load Domain Context]
+    S --> T[Edit Tool: Document Understanding]
+    
+    J --> U[Stage 1: Contextual Analysis]
+    U --> V[Read Tool: Load Context Patterns]
+    V --> W[Edit Tool: Document Analysis]
+    
+    K --> X[Stage 1: Strategic Context]
+    X --> Y[Read Tool: Load Strategic Patterns]
+    Y --> Z[Edit Tool: Document Strategy]
+    
+    O --> AA[Read Tool: Load Enhancement Patterns]
+    AA --> BB[Edit Tool: Document Enhancement]
+    
+    P --> CC[Read Tool: Load Standard Patterns]
+    CC --> DD[Edit Tool: Document Standard]
+    
+    Q --> EE[Read Tool: Load Foundation Patterns]
+    EE --> FF[Edit Tool: Build Foundation]
+    
+    T --> GG{Stage 1 Quality}
+    GG -->|≥0.9| HH[Stage 2: Strategic Implications]
+    GG -->|<0.9| II[REQUIRED: Stage 1 Enhancement]
+    
+    W --> JJ{Stage 1 Quality}
+    JJ -->|≥0.9| KK[Stage 2: Implementation Focus]
+    JJ -->|<0.9| II
+    
+    Z --> LL{Stage 1 Quality}
+    LL -->|≥0.9| MM[Stage 2: Strategic Execution]
+    LL -->|<0.9| II
+    
+    HH --> NN[Read Tool: Load Strategic Patterns]
+    NN --> OO[Edit Tool: Document Implications]
+    
+    KK --> PP[Read Tool: Load Implementation Patterns]
+    PP --> QQ[Edit Tool: Document Implementation]
+    
+    MM --> RR[Read Tool: Load Execution Patterns]
+    RR --> SS[Edit Tool: Document Execution]
+    
+    II --> TT[Read Tool: Load Enhancement Patterns]
+    TT --> UU[Edit Tool: Enhance Stage 1]
+    UU --> GG
+    
+    OO --> VV{Stage 2 Quality}
+    VV -->|≥0.9| WW[Stage 3: Implementation Planning]
+    VV -->|<0.9| XX[REQUIRED: Stage 2 Enhancement]
+    
+    QQ --> YY{Implementation Quality}
+    YY -->|≥0.9| ZZ[Stage 3: Verification Strategy]
+    YY -->|<0.9| XX
+    
+    SS --> AAA{Execution Quality}
+    AAA -->|≥0.9| BBB[Final Strategic Output]
+    AAA -->|<0.9| XX
+    
+    WW --> CCC[Read Tool: Load Implementation Plans]
+    CCC --> DDD[Edit Tool: Document Implementation]
+    
+    ZZ --> EEE[Read Tool: Load Verification Patterns]
+    EEE --> FFF[Edit Tool: Document Verification]
+    
+    DDD --> GGG{Stage 3 Quality}
+    GGG -->|≥0.9| HHH[Stage 4: Verification Strategy]
+    GGG -->|<0.9| III[REQUIRED: Stage 3 Enhancement]
+    
+    HHH --> JJJ[Read Tool: Load Verification Strategies]
+    JJJ --> KKK[Edit Tool: Document Final Strategy]
+    
+    KKK --> LLL[Bash Tool: Intelligence Validation]
+    LLL --> MMM[P56: 4-Stage Intelligence Success]
+    
+    FFF --> NNN[Bash Tool: 3-Stage Validation]
+    NNN --> OOO[P56: 3-Stage Intelligence Success]
+    
+    BBB --> PPP[Bash Tool: Strategic Validation]
+    PPP --> QQQ[P56: Strategic Intelligence Success]
+    
+    BB --> RRR[Bash Tool: Enhancement Validation]
+    RRR --> SSS[P56: Enhancement Success]
+    
+    DD --> TTT[Bash Tool: Standard Validation]
+    TTT --> UUU[P56: Standard Success]
+    
+    FF --> VVV[Bash Tool: Foundation Validation]
+    VVV --> WWW[P56: Foundation Success]
+    
+    XX --> XXX[Read Tool: Load Stage Enhancement]
+    XXX --> YYY[Edit Tool: Enhance Stage]
+    YYY --> VV
+    
+    III --> ZZZ[Read Tool: Load Implementation Enhancement]
+    ZZZ --> AAAA[Edit Tool: Enhance Implementation]
+    AAAA --> GGG
+    
+    M --> BBBB[Agent Progressive Results]
+    BBBB --> CCCC[P56: Expert Progressive Complete]
+    
+    MMM --> DDDD[Progressive Intelligence Metrics]
+    OOO --> DDDD
+    QQQ --> DDDD
+    SSS --> DDDD
+    UUU --> DDDD
+    WWW --> DDDD
+    CCCC --> DDDD
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style Q fill:#ffe66d
+    style II fill:#ff8b94
+    style DDDD fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+progressive_intelligence_transparency:
+  depth_assessment:
+    announcement: "🔍 TRANSPARENCY: Intelligence depth [COMPREHENSIVE/DEEP/STRATEGIC] - [X] stages planned"
+    evidence: "Intelligence depth analysis with progression strategy"
+    
+  stage_progression:
+    announcement: "📈 TRANSPARENCY: Stage [X] progress - [CONTEXTUAL/STRATEGIC/IMPLEMENTATION/VERIFICATION] focus"
+    evidence: "Stage completion status with quality metrics"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [progressive_operation]"
+    evidence: "Tool selection matrix with progressive-specific reasoning"
+    
+  quality_validation:
+    announcement: "✅ TRANSPARENCY: Stage quality [X]/1.0 - [PASSED/ENHANCEMENT_REQUIRED]"
+    evidence: "Stage quality assessment with enhancement requirements"
+    
+  intelligence_evolution:
+    announcement: "🧠 TRANSPARENCY: Intelligence evolution [X]% improvement - [insights_generated]"
+    evidence: "Quantified intelligence growth with insight quality metrics"
+```
 
 ---
 
@@ -175,19 +344,19 @@ function monitorProgressiveIntelligence(progression) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **System Analysis Intelligence**
-```
+```text
 /progressive-intelligence "system-architecture" target_depth=comprehensive progression_stages=4
 ```
 **Result**: Develop comprehensive intelligence about system architecture through 4 stages
 
 ### **Problem-Solving Intelligence**
-```
+```text
 /progressive-intelligence "performance-optimization" target_depth=deep progression_stages=3
 ```
 **Result**: Build deep intelligence about performance optimization through 3 stages
 
 ### **Strategic Planning Intelligence**
-```
+```text
 /progressive-intelligence "product-strategy" target_depth=strategic progression_stages=4
 ```
 **Result**: Develop strategic intelligence about product strategy through full 4-stage progression

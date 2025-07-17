@@ -19,7 +19,7 @@ Coordinate the complete knowledge discovery process that forms the foundation of
 ## ⚡ **ORCHESTRATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /discovery-workflow [objective] [exploration_depth?] [domain_context?]
 ```
 
@@ -172,25 +172,25 @@ function optimizeDiscoveryExecution(objective, context) {
 ## 🎯 **USAGE PATTERNS**
 
 ### **New Feature Development**
-```
+```text
 /discovery-workflow "Implement real-time chat system with WebSocket support"
 ```
 **Result**: Complete understanding of existing WebSocket patterns, real-time libraries, chat UI components, testing approaches
 
 ### **Architecture Refactoring**
-```
+```text
 /discovery-workflow "Migrate from REST to GraphQL architecture"
 ```  
 **Result**: Analysis of current REST patterns, GraphQL integration options, migration strategies, existing schema patterns
 
 ### **Performance Optimization**
-```
+```text
 /discovery-workflow "Optimize application performance for mobile devices"
 ```
 **Result**: Discovery of existing performance patterns, mobile-specific optimizations, profiling tools, testing methodologies
 
 ### **Technology Integration**
-```
+```text
 /discovery-workflow "Add AI/ML capabilities to recommendation engine"
 ```
 **Result**: Analysis of current recommendation logic, AI/ML library options, data pipeline patterns, model integration approaches
@@ -286,7 +286,7 @@ function optimizeDiscoveryExecution(objective, context) {
 
 **CRITICAL INSTRUCTION**: When this discovery-workflow orchestrator executes ANY Tool Call (Task, Bash, Read, Write, etc.), the LLM MUST display the enhanced visual announcement from Principle #56 BEFORE executing the tool:
 
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║                🎯 COMMAND EXECUTION                       ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -312,7 +312,7 @@ function optimizeDiscoveryExecution(objective, context) {
 When executing each discovery phase, the LLM MUST display phase-specific announcements:
 
 **Phase 1 - Autonomous Foundation**:
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║        🚀 PHASE 1: AUTONOMOUS FOUNDATION                 ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -323,7 +323,7 @@ When executing each discovery phase, the LLM MUST display phase-specific announc
 ```
 
 **Phase 2 - Internal Knowledge Discovery**:
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║        📚 PHASE 2: INTERNAL KNOWLEDGE DISCOVERY         ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -334,7 +334,7 @@ When executing each discovery phase, the LLM MUST display phase-specific announc
 ```
 
 **Phase 3 - Deep Exploration**:
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║        🔍 PHASE 3: DEEP EXPLORATION                      ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -345,7 +345,7 @@ When executing each discovery phase, the LLM MUST display phase-specific announc
 ```
 
 **Phase 4 - Pattern Recognition**:
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║        🧩 PHASE 4: PATTERN RECOGNITION                   ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -356,7 +356,7 @@ When executing each discovery phase, the LLM MUST display phase-specific announc
 ```
 
 **Phase 5 - Knowledge Integration**:
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║        📝 PHASE 5: KNOWLEDGE INTEGRATION                 ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -370,7 +370,7 @@ When executing each discovery phase, the LLM MUST display phase-specific announc
 
 When discovery requires Task agent deployment for complex analysis, display:
 
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║        🤖 DISCOVERY TASK AGENT DEPLOYMENT               ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -421,7 +421,7 @@ When deploying Task agents for discovery, the LLM MUST:
 
 During discovery workflow execution, display comprehensive metrics:
 
-```
+```text
 📊 DISCOVERY WORKFLOW QUALITY METRICS
 ╔═══════════════════════════════════════════════════════════╗
 ║ Phase 1 Quality: [score]/10 | Phase 2 Quality: [score]/10║
@@ -445,6 +445,29 @@ During discovery workflow execution, display comprehensive metrics:
 - **ALWAYS handle discovery handoffs**: Proper handoff from discovery specialists to principal agent
 
 **P55/P56 Compliance**: This orchestrator integrates Tool Call Execution Bridging (P55) through mandatory Task agent deployment for complex discovery operations and Command Execution Transparency (P56) through comprehensive visual announcements of all discovery workflow phases and knowledge search activities.
+
+---
+
+## 🛡️ **P55/P56 COMPLIANCE INTEGRATION**
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9, discovery workflow complexity automatically triggers specialized knowledge discovery agents
+- **Success Rate Target**: ≥98% completion guarantee for all 5 discovery phases including autonomous foundation, knowledge discovery, exploration, pattern recognition, and documentation
+- **Execution Evidence**: Actual tool results with quantitative validation showing discovery completeness ≥90%, pattern yield metrics, and knowledge integration effectiveness
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Discovery Workflow execution initiated with comprehensive 5-phase indicators and specialized agent deployment
+- **Tool Evidence**: Observable outcomes with specific metrics including knowledge coverage percentages, pattern discovery counts, and exploration depth assessments
+- **Completion Verification**: Quantifiable success criteria with documented discovery quality scores ≥85%, pattern recognition effectiveness, and foundation readiness for planning workflow
+
+### **Discovery Workflow Compliance Requirements**
+**MANDATORY Implementation Standards**:
+- **Real Discovery Execution**: 100% actual discovery operations via Task agents for knowledge search, pattern analysis, exploration, and documentation
+- **Discovery Monitoring**: Continuous tracking with phase completion rates, discovery quality scores ≥85%, and pattern yield optimization
+- **Workflow Transparency**: Complete visibility into discovery progress, knowledge accumulation, and pattern identification with real-time progress reporting
+- **Mathematical Validation**: Quantifiable metrics for discovery effectiveness, knowledge coverage, and workflow foundation quality with statistical precision
 
 ---
 

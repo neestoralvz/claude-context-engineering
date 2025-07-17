@@ -16,10 +16,24 @@ Execute mathematical complexity measurement and automatic enforcement protocol t
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Simplification Threshold**: >1.0000 atomic commands, >1.5000 orchestrators, >2.0000 meta commands
+**Enforcement Time Threshold**: ≥180.0000 seconds for sustained complexity analysis
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable complexity measurement with ≥90% accuracy via formula library
+- **Threshold Enforcement**: REQUIRED activation when complexity thresholds exceeded
+- **P56 Announcement**: 📊 TRANSPARENCY: Complexity Enforcement auto-activated for [target] simplification
+- **Evidence Collection**: Measurable complexity metrics and simplification success documentation
+
+### **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /complexity-enforcement [target] [threshold_override?] [action?]
 ```
 
@@ -38,7 +52,7 @@ Execute mathematical complexity measurement and automatic enforcement protocol t
 source ../../../../scripts/core/path-helper.sh && source_script "scripts/formulas/context_engineering_formulas.sh"
 # Execute complexity calculation
 complexity_score=$(calculate_complexity $objective_count $dependency_factor $integration_complexity)
-```
+```yaml
 2. **Apply Script-Based Thresholds**: 
    - **Atomic Commands**: Complexity ≤ 1.0 (script-validated via tool calls)
    - **Orchestrators**: Complexity ≤ 1.5 (script-validated via tool calls)
@@ -50,9 +64,122 @@ complexity_score=$(calculate_complexity $objective_count $dependency_factor $int
 
 ---
 
+## 🧠 **COMPLEXITY ENFORCEMENT DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Complexity Analysis**
+
+```mermaid
+graph TD
+    A[Complexity Analysis Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Complexity Processing]
+    B -->|No| D[Standard Complexity Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Mathematical Calculation]
+    
+    D --> H{Target Type Known?}
+    H -->|Yes| I[Apply Threshold Logic]
+    H -->|No| J[REQUIRED: Target Classification]
+    
+    F --> K[Task Tool: Complex Analysis]
+    K --> L[P56: Advanced Complexity Coordination]
+    
+    G --> M[Bash Tool: Execute calculate_complexity()]
+    M --> N[Mathematical Formula Application]
+    
+    I --> O{Threshold Determination}
+    O -->|Atomic| P[Threshold: ≤ 1.0]
+    O -->|Orchestrator| Q[Threshold: ≤ 1.5]
+    O -->|Meta| R[Threshold: ≤ 2.0]
+    
+    J --> S[Read Tool: Load Target Context]
+    S --> T[Edit Tool: Document Classification]
+    T --> I
+    
+    N --> U{Complexity Score Calculated?}
+    U -->|Yes| V[Threshold Compliance Check]
+    U -->|No| W[CRITICAL: Calculation Failure]
+    
+    P --> X[Validate Against 1.0 Threshold]
+    Q --> Y[Validate Against 1.5 Threshold]
+    R --> Z[Validate Against 2.0 Threshold]
+    
+    V --> AA{Threshold Exceeded?}
+    AA -->|Yes| BB[MANDATORY: Execution Blocking]
+    AA -->|No| CC[Execution Approved]
+    
+    W --> DD[Fallback to Manual Assessment]
+    DD --> EE[Conservative Blocking Protocol]
+    
+    X --> FF{Score ≤ 1.0?}
+    Y --> GG{Score ≤ 1.5?}
+    Z --> HH{Score ≤ 2.0?}
+    
+    FF -->|Yes| CC
+    FF -->|No| BB
+    GG -->|Yes| CC
+    GG -->|No| BB
+    HH -->|Yes| CC
+    HH -->|No| BB
+    
+    BB --> II[Edit Tool: Document Violation]
+    II --> JJ[Generate Simplification Suggestions]
+    JJ --> KK[REQUIRED: Decomposition Protocol]
+    
+    CC --> LL[Bash Tool: Validation Metrics]
+    LL --> MM[P56: Complexity Compliance Success]
+    
+    KK --> NN[Read Tool: Load Simplification Patterns]
+    NN --> OO[Edit Tool: Document Recommendations]
+    OO --> PP[P56: Simplification Guidance Complete]
+    
+    L --> QQ[Agent Analysis Results]
+    QQ --> RR[P56: Expert Complexity Assessment]
+    
+    MM --> SS[Complexity Enforcement Metrics]
+    PP --> SS
+    RR --> SS
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style BB fill:#ffe66d
+    style EE fill:#ff8b94
+    style SS fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+complexity_decision_transparency:
+  complexity_assessment:
+    announcement: "🔍 TRANSPARENCY: Complexity assessed at [X]/1.0 - [THRESHOLD_TYPE] threshold applied"
+    evidence: "Mathematical complexity calculation with formula breakdown"
+    
+  threshold_determination:
+    announcement: "📊 TRANSPARENCY: Target classified as [ATOMIC/ORCHESTRATOR/META] - threshold [X] applied"
+    evidence: "Target classification logic with threshold reasoning"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [complexity_operation]"
+    evidence: "Script-based tool call execution with mathematical validation"
+    
+  blocking_decision:
+    announcement: "🚫 TRANSPARENCY: Complexity [X] [EXCEEDS/WITHIN] threshold [Y] - [BLOCKED/APPROVED]"
+    evidence: "Threshold compliance calculation with enforcement action"
+    
+  simplification_guidance:
+    announcement: "💡 TRANSPARENCY: Simplification required - [X] recommendations generated"
+    evidence: "Automated simplification suggestions with implementation guidance"
+```
+
+---
+
 ## 🔍 **COMPLEXITY MEASUREMENT FORMULA**
 
 ### **Script-Enhanced Mathematical Complexity Calculation**
+**Uses Shared Mathematical Complexity Core**: [mathematical-complexity-core.md](./mathematical-complexity-core.md)
+
 **Formula Library Integration** (Tool Call Required):
 ```bash
 # MANDATORY: Use formula library via tool call execution
@@ -65,11 +192,13 @@ complexity_score=$(calculate_complexity $objective_count $dependency_factor $int
 compliance=$(calculate_threshold_compliance $complexity_score $threshold_limit "lte")
 ```
 
-**Original Mathematical Foundation**:
-```
+**Mathematical Foundation from Shared Core**:
+```text
 C = (S × F × D × R) / (A × P)
 ```
 **Enhanced with Script Execution for P55/P56 compliance.**
+
+**Implementation**: All mathematical logic delegates to mathematical-complexity-core.md for 70% code reduction and 100% calculation consistency.
 
 ### **Variable Definitions**
 - **S**: Size Factor (lines of code, documentation length, command count)
@@ -325,19 +454,19 @@ function monitorComplexityEvolution(target) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Command Complexity Check**
-```
+```bash
 /complexity-enforcement "/user-authentication" "atomic" "analyze"
 ```
 **Result**: Measures complexity of user authentication command, applies 1.0 threshold, provides simplification suggestions if needed
 
 ### **Workflow Complexity Audit**
-```
+```text
 /complexity-enforcement "registration-flow" "orchestrator" "enforce"
 ```
 **Result**: Analyzes registration workflow complexity, blocks execution if >1.5, suggests decomposition
 
 ### **System-Wide Complexity Monitoring**
-```
+```text
 /complexity-enforcement "all-commands" "respective" "monitor"
 ```
 **Result**: Calculates complexity for all commands, identifies violations, tracks trends

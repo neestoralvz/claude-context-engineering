@@ -1,8 +1,8 @@
 # Writing Standards Rules - Context Engineering
 
-**Meta-Principle**: "Enable models through structured context, not control"
+**Meta-Principle**: "ENABLE models through MANDATORY structured context, not restrictive control"
 
-**Authority Redirect**: Complete writing standards rules, terminology strategies, and LLM optimization protocols are consolidated in [Core Writing & Structure Standards](./core-writing-structure-standards.md) for unified writing standards across all Context Engineering commands.
+**Authority Redirect**: COMPLETE writing standards rules, MANDATORY terminology strategies, and REQUIRED LLM optimization protocols are consolidated in [Core Writing & Structure Standards](./core-writing-structure-standards.md) for UNIFIED writing standards across ALL Context Engineering commands.
 
 **Purpose**: MANDATORY cross-reference hub for writing standards rules, terminology optimization, and behavioral reinforcement strategies.
 
@@ -13,10 +13,10 @@
 **Primary Authority**: [Core Writing & Structure Standards](./core-writing-structure-standards.md) - Complete writing standards and structural protocols
 
 **Key Writing Areas Available in Authority Source**:
-- **Terminology Strategy** - LLM vs Human optimization protocols
-- **Strong Terminology for LLMs** - Behavioral reinforcement standards
-- **Natural Language for Humans** - Cognitive load optimization
-- **Quality Assurance Standards** - Precision language and validation
+- **Terminology Strategy** - REQUIRED LLM vs Human optimization protocols
+- **Strong Terminology for LLMs** - MANDATORY behavioral reinforcement standards
+- **Natural Language for Humans** - REQUIRED cognitive load optimization
+- **Quality Assurance Standards** - CRITICAL precision language and validation
 
 ---
 
@@ -24,24 +24,24 @@
 
 ### **Terminology Strategy: LLM vs Human Optimization**
 **Location**: [Core Writing & Structure Standards - Terminology Strategy](./core-writing-structure-standards.md#-terminology-strategy-llm-vs-human-optimization)
-- Strong Terminology for LLMs (PRESERVE ALWAYS)
-- Strategic Keywords with behavioral reinforcement (≥80% usage)
-- Natural Language for Humans (SIMPLIFY ALWAYS)
-- Context-based application protocols
+- MANDATORY Strong Terminology for LLMs (PRESERVE ALWAYS)
+- REQUIRED Strategic Keywords with behavioral reinforcement (≥80% usage)
+- REQUIRED Natural Language for Humans (SIMPLIFY ALWAYS)
+- MANDATORY Context-based application protocols
 
 ### **Strong Terminology Standards**
 **Location**: [Core Writing & Structure Standards - Strong Terminology](./core-writing-structure-standards.md#strong-terminology-for-llms-preserve-always)
 - MANDATORY, CRITICAL, MUST, REQUIRED terminology
 - FORBIDDEN, NEVER, PROHIBITED prohibitions
-- English-only natural language requirement (100% compliance)
-- Strategic rationale and effectiveness metrics
+- REQUIRED English-only natural language requirement (100% compliance)
+- MANDATORY Strategic rationale and effectiveness metrics
 
 ### **Quality Assurance Standards**
 **Location**: [Core Writing & Structure Standards - Quality Assurance](./core-writing-structure-standards.md#-quality-assurance-standards)
-- Precision Language Protocol (≥95% precision REQUIRED)
-- Evidence-Based Writing (100% evidence specification)
-- Professional Standards (100% compliance requirements)
-- Content Validation Framework
+- MANDATORY Precision Language Protocol (≥95% precision REQUIRED)
+- REQUIRED Evidence-Based Writing (100% evidence specification)
+- MANDATORY Professional Standards (100% compliance requirements)
+- CRITICAL Content Validation Framework
 
 ---
 
@@ -49,15 +49,15 @@
 
 ### **Writing Standards Implementation**
 **Authority Reference**: [Core Writing & Structure Standards - Writing Protocols](./core-writing-structure-standards.md#precision-language-protocol)
-- Mathematical precision with quantifiable thresholds
-- Evidence-based writing with observable outcomes
-- Ambiguity elimination with precise meaning
-- Terminology consistency standards
+- REQUIRED Mathematical precision with quantifiable thresholds
+- MANDATORY Evidence-based writing with observable outcomes
+- CRITICAL Ambiguity elimination with precise meaning
+- REQUIRED Terminology consistency standards
 
 ### **Cross-Reference Integration**
 **Navigation Pattern**: [Knowledge Hub](../README.md) → [Command Rules](../README.md#standards--compliance) → [Core Writing & Structure Standards](./core-writing-structure-standards.md)
 
-**Writing Efficiency**: ≤2 cognitive steps to complete writing standards specifications from any Context Engineering command writing context.
+**Writing Efficiency**: REQUIRED ≤2 cognitive steps to complete writing standards specifications from any Context Engineering command writing context.
 
 ---
 

@@ -11,14 +11,14 @@
 ## 🔄 Communication Flow
 
 ### **Current Problem Flow**
-```
+```markdown
 Principal Agent → Deploy Task Agent → [COMMUNICATION LOST] → Task Agent Completes → No Handoff
                                    ↓
                               User Left Hanging
 ```
 
 ### **Target Solution Flow**
-```
+```text
 Principal Agent → Deploy Task Agent → Status Updates → Progress Reports → Completion Handoff → Control Returns
                                     ↑                ↑                  ↑
                                     └─── Task Agent Reports Back ──────┘
@@ -30,7 +30,7 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 
 ### **Message Types**
 
-#### 1. **INITIALIZATION** (Task Agent → Principal)
+### 1. **INITIALIZATION** (Task Agent → Principal)
 ```json
 {
   "type": "INITIALIZATION",
@@ -44,7 +44,7 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 }
 ```
 
-#### 2. **PROGRESS_UPDATE** (Task Agent → Principal)
+### 2. **PROGRESS_UPDATE** (Task Agent → Principal)
 ```json
 {
   "type": "PROGRESS_UPDATE", 
@@ -59,7 +59,7 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 }
 ```
 
-#### 3. **MILESTONE_COMPLETED** (Task Agent → Principal)
+### 3. **MILESTONE_COMPLETED** (Task Agent → Principal)
 ```json
 {
   "type": "MILESTONE_COMPLETED",
@@ -73,7 +73,7 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 }
 ```
 
-#### 4. **ERROR_REPORT** (Task Agent → Principal)
+### 4. **ERROR_REPORT** (Task Agent → Principal)
 ```json
 {
   "type": "ERROR_REPORT",
@@ -87,7 +87,7 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 }
 ```
 
-#### 5. **COMPLETION** (Task Agent → Principal)
+### 5. **COMPLETION** (Task Agent → Principal)
 ```json
 {
   "type": "COMPLETION",
@@ -112,7 +112,7 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 }
 ```
 
-#### 6. **HANDOFF_REQUEST** (Task Agent → Principal)
+### 6. **HANDOFF_REQUEST** (Task Agent → Principal)
 ```json
 {
   "type": "HANDOFF_REQUEST",
@@ -159,8 +159,8 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 
 ### **Visual Progress Protocol**
 
-#### **Initialization Display**
-```
+### **Initialization Display**
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║                🎯 CLAUDE CODE COMMAND EXECUTION           ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -175,8 +175,8 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 🚀 INITIALIZING TASK AGENT FOR COMMAND EXECUTION...
 ```
 
-#### **Progress Updates Display**
-```
+### **Progress Updates Display**
+```yaml
 📊 COMMAND PROGRESS: /sync-claude-md
 ├─ ✅ Registry analysis (45% complete)
 ├─ ✅ Pattern identification 
@@ -189,8 +189,8 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 ⏱️  Elapsed: 1m 30s | Estimated: 3-4m remaining
 ```
 
-#### **Completion Display**
-```
+### **Completion Display**
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║              ✅ COMMAND EXECUTION COMPLETED               ║
 ╠═══════════════════════════════════════════════════════════╣

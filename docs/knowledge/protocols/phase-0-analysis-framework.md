@@ -1,10 +1,10 @@
 # Phase 0 Analysis Framework - Context Engineering
 
-**Meta-Principle**: "Analyze first, then act - prevention over correction"
+**Meta-Principle**: "MANDATORY analysis before action - prevention over correction"
 
 **Authority**: AUTHORITATIVE framework for systematic pre-analysis protocols, comprehensive tool usage, and evidence-based modularization decision making.
 
-**Purpose**: MANDATORY Phase 0 systematic analysis required BEFORE any modularization work begins to prevent content duplication, identify cross-reference opportunities, and optimize navigation efficiency (≥95% analysis completeness REQUIRED).
+**Purpose**: CRITICAL Phase 0 systematic analysis ENFORCED BEFORE any modularization work begins to prevent content duplication, identify cross-reference opportunities, and optimize navigation efficiency (≥95% analysis completeness REQUIRED).
 
 **Integration**: (Reference: [Modularization Protocol Hub](./modularization-protocol.md) - Central navigation and protocol overview)
 
@@ -12,24 +12,24 @@
 
 ## 🎯 **MANDATORY Pre-Modularization Analysis Framework**
 
-**EVIDENCE REQUIRED**: Users MUST observe complete pre-analysis execution with documented findings before ANY content modification begins (100% analysis-before-action compliance MANDATORY).
+**CRITICAL EVIDENCE REQUIRED**: Users MUST observe complete pre-analysis execution with documented findings before ANY content modification begins (100% analysis-before-action compliance MANDATORY with ZERO tolerance for violations).
 
 ### **Step 1 - Complete Target File Analysis + Documentation Linking Audit**
 
-**MANDATORY Initial Assessment Requirements**:
+**CRITICAL Initial Assessment Requirements**:
 
 **Complete Content Reading**:
-- **EXECUTE Full File Reading**: MANDATORY complete reading of target file from beginning to end before any modification (100% file coverage REQUIRED)
-- **IDENTIFY Key Concepts**: REQUIRED systematic extraction of main concepts, technical terminology, and specialized vocabulary (≥95% concept identification accuracy REQUIRED)
-- **MAP Content Structure**: MANDATORY documentation of current hierarchical organization, section dependencies, and content relationships (100% structure mapping REQUIRED)
-- **EXTRACT Keywords and Patterns**: REQUIRED identification of technical terms, command names, function names, and repeatable patterns for codebase search (≥90% keyword extraction completeness REQUIRED)
+- **ENFORCE Complete File Reading**: MANDATORY complete reading of target file from beginning to end before any modification (100% file coverage REQUIRED)
+- **EXECUTE Concept Identification**: MANDATORY systematic extraction of main concepts, technical terminology, and specialized vocabulary (≥95% concept identification accuracy REQUIRED)
+- **IMPLEMENT Content Structure Mapping**: CRITICAL documentation of current hierarchical organization, section dependencies, and content relationships (100% structure mapping REQUIRED)
+- **ENFORCE Keyword and Pattern Extraction**: MANDATORY identification of technical terms, command names, function names, and repeatable patterns for codebase search (≥90% keyword extraction completeness REQUIRED)
 
-**MANDATORY Documentation Linking Audit**:
-- **AUDIT Current Cross-References**: CRITICAL systematic inventory of ALL existing cross-references in target file (100% reference documentation REQUIRED)
-- **MEASURE Reference Density**: REQUIRED calculation of current cross-reference density per document type using mathematical formulas (≥95% accuracy REQUIRED)
-- **ASSESS Link Quality**: MANDATORY evaluation of existing reference descriptive quality and relationship clarity (≥90% assessment completeness REQUIRED)
-- **IDENTIFY Navigation Pathways**: REQUIRED mapping of cognitive navigation paths to/from target file (≤3 steps validation REQUIRED)
-- **EVALUATE Hub Connectivity**: CRITICAL assessment of CLAUDE.md hub connections and bidirectional linking patterns (100% hub analysis REQUIRED)
+**CRITICAL Documentation Linking Audit**:
+- **ENFORCE Cross-Reference Audit**: MANDATORY systematic inventory of ALL existing cross-references in target file (100% reference documentation REQUIRED)
+- **EXECUTE Reference Density Measurement**: CRITICAL calculation of current cross-reference density per document type using mathematical formulas (≥95% accuracy REQUIRED)
+- **IMPLEMENT Link Quality Assessment**: MANDATORY evaluation of existing reference descriptive quality and relationship clarity (≥90% assessment completeness REQUIRED)
+- **ENFORCE Navigation Pathway Identification**: CRITICAL mapping of cognitive navigation paths to/from target file (≤3 steps validation REQUIRED)
+- **IMPLEMENT Hub Connectivity Evaluation**: MANDATORY assessment of CLAUDE.md hub connections and bidirectional linking patterns (100% hub analysis REQUIRED)
 
 **Content Analysis Matrix**:
 - **Section Classification**: MANDATORY categorization of each section (core principles, implementation details, examples, cross-references) (100% classification accuracy REQUIRED)
@@ -39,16 +39,16 @@
 
 ### **Step 2 - Systematic Codebase Discovery + Cross-Reference Network Analysis**
 
-**MANDATORY Codebase Pattern Search**:
+**CRITICAL Codebase Pattern Search**:
 
 **Keyword-Based Codebase Analysis**:
-- **EXECUTE Systematic Keyword Search**: MANDATORY search for ALL identified keywords across entire project using Grep tool (100% keyword coverage REQUIRED)
-- **IDENTIFY Content Duplications**: REQUIRED detection of similar content in other files using ≥70% similarity threshold (≥95% duplication detection accuracy REQUIRED)
+- **ENFORCE Systematic Keyword Search**: CRITICAL search for ALL identified keywords across entire project using Grep tool (100% keyword coverage REQUIRED)
+- **EXECUTE Content Duplication Detection**: MANDATORY detection of similar content in other files using ≥70% similarity threshold (≥95% duplication detection accuracy REQUIRED)
 - **MAP Existing Cross-References**: MANDATORY documentation of ALL current cross-references TO and FROM target file (100% reference mapping REQUIRED)
 - **DISCOVER Related Content**: REQUIRED identification of conceptually related content in other project locations (≥90% related content discovery REQUIRED)
 
-**MANDATORY Cross-Reference Network Discovery**:
-- **SCAN Reference Patterns**: CRITICAL search for established cross-reference patterns across project using standard formats (100% pattern discovery REQUIRED)
+**CRITICAL Cross-Reference Network Discovery**:
+- **ENFORCE Reference Pattern Scanning**: MANDATORY search for established cross-reference patterns across project using standard formats (100% pattern discovery REQUIRED)
 - **IDENTIFY Linking Gaps**: REQUIRED detection of documents with insufficient cross-reference density per document type standards (≥95% gap identification REQUIRED)
 - **MAP Network Topology**: MANDATORY analysis of current hub-and-spoke vs. mesh connectivity patterns (100% topology mapping REQUIRED)
 - **ASSESS Navigation Efficiency**: CRITICAL measurement of cognitive step requirements across existing documentation network (≤3 steps validation REQUIRED)

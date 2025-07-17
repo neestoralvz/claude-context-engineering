@@ -19,7 +19,7 @@ Coordinate deployment of domain-specific intelligence specialists to tackle comp
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /orchestrate-intelligence [challenge] [specialist_domains?] [coordination_strategy?]
 ```
 
@@ -43,13 +43,140 @@ Coordinate deployment of domain-specific intelligence specialists to tackle comp
 
 ---
 
+## 🧠 **ORCHESTRATE INTELLIGENCE DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Intelligence Orchestration**
+
+```mermaid
+graph TD
+    A[Intelligence Orchestration Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Orchestration Processing]
+    B -->|No| D[Standard Orchestration Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Orchestration Execution]
+    
+    D --> H{Challenge Domain Analysis}
+    H -->|Multi-domain| I[Multi-Specialist Deployment]
+    H -->|Single domain| J[Focused Specialist Deployment]
+    
+    F --> K[Task Tool: Complex Orchestration]
+    K --> L[P56: Advanced Orchestration Coordination]
+    
+    G --> M{Specialist Count Required}
+    M -->|≥5| N[CRITICAL: Massive Coordination]
+    M -->|3-4| O[Standard Multi-Agent]
+    M -->|1-2| P[Simple Coordination]
+    
+    I --> Q[Read Tool: Load Domain Requirements]
+    Q --> R[Task Tool: Multi-Agent Deployment]
+    
+    J --> S[Read Tool: Load Specialist Context]
+    S --> T[Task Tool: Focused Deployment]
+    
+    N --> U[Task Tool: Complex Multi-Agent]
+    U --> V[P56: Massive Coordination Management]
+    
+    O --> W[Task Tool: Standard Coordination]
+    W --> X[Edit Tool: Context Handoff Documentation]
+    
+    P --> Y[Task Tool: Simple Deployment]
+    Y --> Z[Edit Tool: Basic Handoff]
+    
+    R --> AA{Handoff Strategy}
+    AA -->|Sequential| BB[Sequential Handoff Protocol]
+    AA -->|Parallel| CC[Parallel Synthesis Protocol]
+    AA -->|Iterative| DD[Iterative Refinement]
+    
+    T --> EE[Edit Tool: Specialist Briefing]
+    EE --> FF[Bash Tool: Context Validation]
+    
+    BB --> GG[Edit Tool: Context Bridge Creation]
+    GG --> HH[Bash Tool: Handoff Validation]
+    
+    CC --> II[Task Tool: Parallel Coordination]
+    II --> JJ[Bash Tool: Conflict Resolution]
+    
+    DD --> KK[Task Tool: Iterative Management]
+    KK --> LL[Edit Tool: Refinement Documentation]
+    
+    X --> MM{Context Preservation}
+    MM -->|≥90%| NN[Context Integrity Maintained]
+    MM -->|<90%| OO[REQUIRED: Context Enhancement]
+    
+    FF --> PP[P56: Specialist Deployment Success]
+    
+    HH --> QQ{Synthesis Quality}
+    QQ -->|≥85%| RR[Synthesis Success]
+    QQ -->|<85%| SS[REQUIRED: Synthesis Improvement]
+    
+    JJ --> TT[P56: Parallel Coordination Success]
+    LL --> UU[P56: Iterative Refinement Success]
+    
+    OO --> VV[Read Tool: Load Context Patterns]
+    VV --> WW[Edit Tool: Enhance Context]
+    WW --> MM
+    
+    SS --> XX[Read Tool: Load Synthesis Patterns]
+    XX --> YY[Edit Tool: Improve Synthesis]
+    YY --> QQ
+    
+    L --> ZZ[Agent Orchestration Results]
+    ZZ --> AAA[P56: Expert Orchestration Complete]
+    
+    V --> BBB[Massive Coordination Results]
+    BBB --> CCC[P56: Complex Orchestration Complete]
+    
+    NN --> DDD[Intelligence Orchestration Metrics]
+    PP --> DDD
+    RR --> DDD
+    TT --> DDD
+    UU --> DDD
+    AAA --> DDD
+    CCC --> DDD
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style N fill:#ffe66d
+    style OO fill:#ff8b94
+    style DDD fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+orchestration_intelligence_transparency:
+  domain_analysis:
+    announcement: "🔍 TRANSPARENCY: Challenge domains [X] identified - [MULTI/SINGLE] specialist approach"
+    evidence: "Complete domain analysis with specialist requirements"
+    
+  specialist_deployment:
+    announcement: "🚀 TRANSPARENCY: Specialists [X] deployed - [SEQUENTIAL/PARALLEL/ITERATIVE] coordination"
+    evidence: "Specialist deployment status with coordination strategy"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [orchestration_operation]"
+    evidence: "Tool selection matrix with orchestration-specific reasoning"
+    
+  context_preservation:
+    announcement: "🔄 TRANSPARENCY: Context preservation [X]% - [MAINTAINED/ENHANCEMENT_REQUIRED]"
+    evidence: "Context integrity metrics with preservation validation"
+    
+  synthesis_quality:
+    announcement: "🎯 TRANSPARENCY: Synthesis quality [X]% - [SUCCESS/IMPROVEMENT_REQUIRED]"
+    evidence: "Synthesis effectiveness with specialist output integration"
+```
+
+---
+
 ## 🎯 **UNIVERSAL TOOL CALL EXECUTION PROTOCOL**
 
 ### **P55/P56 Compliance Implementation**
 **Revolutionary Enhancement**: Complete multi-agent orchestration transparency with P55 tool call bridging and P56 visual announcements for specialist coordination.
 
 ### **P56 Visual Announcement System**
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║           🤖 INTELLIGENCE ORCHESTRATION EXECUTION         ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -249,19 +376,19 @@ intelligence_orchestration_score = (
 ## 📋 **USAGE EXAMPLES**
 
 ### **Complex System Migration**
-```
+```text
 /orchestrate-intelligence "Legacy system modernization" "architecture,security,data,performance,testing" "sequential_handoff"
 ```
 **Result**: Deploys architecture specialist for system design, security specialist for compliance, data specialist for migration, performance specialist for optimization, testing specialist for validation
 
 ### **Multi-Domain Product Launch**
-```
+```text
 /orchestrate-intelligence "AI product launch" "ai_ml,backend,frontend,devops,compliance" "parallel_synthesis"
 ```
 **Result**: Coordinates AI/ML specialist for model integration, backend specialist for API design, frontend specialist for UI, DevOps specialist for deployment, compliance specialist for regulatory requirements
 
 ### **Enterprise Integration Project**
-```
+```text
 /orchestrate-intelligence "Enterprise API integration" "integration,security,monitoring,documentation" "iterative_refinement"
 ```
 **Result**: Orchestrates integration specialist for API design, security specialist for auth protocols, monitoring specialist for observability, documentation specialist for API docs

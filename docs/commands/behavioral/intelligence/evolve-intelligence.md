@@ -16,10 +16,24 @@ Activate evolutionary intelligence methodology where AI learns and improves thro
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Evolution Opportunity Threshold**: ≥0.7000 (70% improvement potential through variation)
+**Intelligence Evolution Time Threshold**: ≥300.0000 seconds for comprehensive evolution cycles
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable evolution potential with ≥70% improvement through variation
+- **Threshold Enforcement**: REQUIRED activation when intelligence evolution benefits exceed direct approach
+- **P56 Announcement**: 🧠 TRANSPARENCY: Intelligence Evolution auto-activated for [objective] adaptive improvement
+- **Evidence Collection**: Measurable evolution cycle metrics and intelligence enhancement documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /evolve-intelligence [objective] [variation_count?] [selection_criteria?]
 ```
 
@@ -47,7 +61,7 @@ Activate evolutionary intelligence methodology where AI learns and improves thro
 **Revolutionary Enhancement**: Complete tool call execution transparency with P55 tool call bridging and P56 visual announcements.
 
 ### **P56 Visual Announcement System**
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║                🧬 EVOLUTION INTELLIGENCE EXECUTION        ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -165,6 +179,129 @@ p56_visual_transparency:
 
 ---
 
+## 🧠 **EVOLUTION INTELLIGENCE DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Intelligence Evolution**
+
+```mermaid
+graph TD
+    A[Evolution Intelligence Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Evolution Processing]
+    B -->|No| D[Standard Evolution Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Evolution Execution]
+    
+    D --> H{Variation Count Assessment}
+    H -->|3-5| I[Standard Variation Generation]
+    H -->|>5| J[CRITICAL: Complex Variation Management]
+    H -->|<3| K[REQUIRED: Minimum Variation Enforcement]
+    
+    F --> L[Task Tool: Complex Evolution]
+    L --> M[P56: Advanced Evolution Coordination]
+    
+    G --> N{Selection Criteria Clear?}
+    N -->|Yes| O[Proceed with Evolution]
+    N -->|No| P[REQUIRED: Criteria Definition]
+    
+    I --> Q[Read Tool: Load Variation Patterns]
+    Q --> R[Edit Tool: Document Variations]
+    
+    J --> S[Task Tool: Multi-Variation Coordination]
+    S --> T[P56: Complex Variation Management]
+    
+    K --> U[Edit Tool: Expand Variation Count]
+    U --> V[Bash Tool: Validate Minimum]
+    V --> I
+    
+    O --> W{Evolution Cycle Count}
+    W -->|1| X[Single Cycle Evolution]
+    W -->|2-3| Y[Multi-Cycle Evolution]
+    W -->|>3| Z[CRITICAL: Extended Evolution]
+    
+    P --> AA[Read Tool: Load Success Criteria]
+    AA --> BB[Edit Tool: Document Criteria]
+    BB --> O
+    
+    R --> CC[Bash Tool: Variation Testing]
+    CC --> DD[Mathematical Selection Analysis]
+    
+    X --> EE[Direct Selection Process]
+    EE --> FF[Edit Tool: Document Best Approach]
+    
+    Y --> GG[Iterative Selection Process]
+    GG --> HH[Bash Tool: Cycle Validation]
+    
+    Z --> II[Task Tool: Extended Evolution]
+    II --> JJ[P56: Extended Evolution Management]
+    
+    DD --> KK{Selection Quality Score}
+    KK -->|≥0.9| LL[High Quality Selection]
+    KK -->|<0.9| MM[REQUIRED: Selection Refinement]
+    
+    LL --> NN[Edit Tool: Document Evolution]
+    NN --> OO[Bash Tool: Improvement Calculation]
+    OO --> PP[P56: Evolution Success]
+    
+    MM --> QQ[Read Tool: Load Refinement Patterns]
+    QQ --> RR[Edit Tool: Refine Selection]
+    RR --> SS[Bash Tool: Re-test Selection]
+    SS --> KK
+    
+    FF --> TT[P56: Single Cycle Complete]
+    HH --> UU[P56: Multi-Cycle Complete]
+    
+    M --> VV[Agent Evolution Results]
+    VV --> WW[P56: Expert Evolution Complete]
+    
+    T --> XX[Multi-Variation Results]
+    XX --> YY[P56: Complex Variation Complete]
+    
+    JJ --> ZZ[Extended Evolution Results]
+    ZZ --> AAA[P56: Extended Evolution Complete]
+    
+    PP --> BBB[Evolution Intelligence Metrics]
+    TT --> BBB
+    UU --> BBB
+    WW --> BBB
+    YY --> BBB
+    AAA --> BBB
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style J fill:#ffe66d
+    style MM fill:#ff8b94
+    style BBB fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+evolution_intelligence_transparency:
+  variation_assessment:
+    announcement: "🔍 TRANSPARENCY: Variation count [X] assessed - [STANDARD/COMPLEX/MINIMUM_ENFORCEMENT] processing"
+    evidence: "Variation count validation with generation strategy"
+    
+  selection_criteria:
+    announcement: "📊 TRANSPARENCY: Selection criteria [DEFINED/REQUIRED] - [X] success metrics established"
+    evidence: "Selection criteria definition with measurement framework"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [evolution_operation]"
+    evidence: "Tool selection matrix with evolution-specific reasoning"
+    
+  evolution_cycles:
+    announcement: "🔄 TRANSPARENCY: Evolution cycles [X] - [SINGLE/MULTI/EXTENDED] evolution approach"
+    evidence: "Cycle count analysis with evolution strategy rationale"
+    
+  intelligence_growth:
+    announcement: "🧠 TRANSPARENCY: Intelligence evolution [X]% improvement - [patterns_discovered]"
+    evidence: "Quantified intelligence growth with pattern recognition metrics"
+```
+
+---
+
 ## 🔍 **VERIFICATION CRITERIA**
 
 ### **Success Metrics**
@@ -208,19 +345,19 @@ evolution_effectiveness = (
 ## 📋 **USAGE EXAMPLES**
 
 ### **Algorithm Optimization**
-```
+```text
 /evolve-intelligence "Optimize database query performance" 5 "response_time < 50ms"
 ```
 **Result**: AI generates 5 different optimization approaches, tests each, evolves best combination
 
 ### **Architecture Design**
-```
+```text
 /evolve-intelligence "Design scalable microservices architecture"
 ```
 **Result**: AI creates multiple architectural variations, evaluates trade-offs, evolves optimal design
 
 ### **Problem Solving**
-```
+```text
 /evolve-intelligence "Reduce memory usage in image processing pipeline" 4
 ```
 **Result**: AI explores 4 different memory optimization strategies, evolves hybrid solution

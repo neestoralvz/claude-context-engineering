@@ -118,7 +118,7 @@ Este comando se activa automáticamente cuando el sistema detecta las condicione
 - **Success Rate**: ≥90% resolución exitosa post-activación
 
 ### **Trigger Monitoring Dashboard**
-```
+```yaml
 [COMMAND_NAME] Trigger Status:
 - Primary Triggers: [ACTIVE/INACTIVE]
 - Secondary Triggers: [ACTIVE/INACTIVE]
@@ -162,7 +162,7 @@ Este comando se activa automáticamente cuando el sistema detecta las condicione
 4. **Aprendizaje**: Ajustar umbrales basado en efectividad histórica
 
 ### **Ejemplo de Activación**:
-```
+```yaml
 TRIGGER DETECTED: Complexity ≥ 1.0
 ACTIVATING: [COMMAND_NAME]
 CONTEXT: [contexto específico]
@@ -171,7 +171,7 @@ VERIFICATION: [criterio de éxito]
 ```
 
 ### **Ejemplo de Respuesta del Sistema**:
-```
+```yaml
 TRIGGER ACKNOWLEDGED: [COMMAND_NAME] activado automáticamente
 REASON: [razón específica del trigger]
 ACTION TAKEN: [acción específica ejecutada]

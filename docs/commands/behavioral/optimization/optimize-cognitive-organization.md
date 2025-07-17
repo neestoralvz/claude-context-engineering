@@ -16,10 +16,75 @@ Implement optimal cognitive organization that structures information to maximize
 
 ---
 
+## MANDATORY Cognitive Organization Decision Framework
+
+**CRITICAL**: Cognitive organization optimization requires systematic decision-making with quantifiable metrics and auto-activation triggers.
+
+```mermaid
+graph TD
+    A[Cognitive Organization Request] --> B{Current Cognitive Friction?}
+    B -->|>50%| C[CRITICAL: Emergency Cognitive Optimization]
+    B -->|30-50%| D[MANDATORY: Targeted Cognitive Enhancement]
+    B -->|<30%| E[REQUIRED: Cognitive Refinement]
+    
+    C --> F{Complexity ≥ 0.9?}
+    F -->|Yes| G[MANDATORY: Task Tool Deployment]
+    F -->|No| H[Direct Cognitive Restructuring]
+    
+    D --> I{Organization Scope?}
+    I -->|Full Structure| J[Complete Cognitive Audit]
+    I -->|Targeted Areas| K[Focused Friction Reduction]
+    I -->|Incremental| L[Progressive Optimization]
+    
+    E --> M[Cognitive Efficiency Monitoring]
+    
+    G --> N[Cognitive Organization Implementation]
+    H --> N
+    J --> N
+    K --> N
+    L --> N
+    M --> N
+    
+    N --> O{Comprehension Efficiency ≥85%?}
+    O -->|Yes| P[P56: Cognitive Organization SUCCESS]
+    O -->|No| Q[MANDATORY: Escalate Optimization]
+    
+    P --> R[Cognitive Monitoring]
+    Q --> C
+```
+
+**Auto-Activation Triggers** (MANDATORY):
+- Cognitive friction >50% → CRITICAL cognitive optimization
+- Comprehension efficiency <85% → MANDATORY cognitive enhancement
+- Information accessibility <100% → REQUIRED structure improvement
+- Cognitive load >optimal → CRITICAL intervention
+
+**P56 Transparency Announcements** (REQUIRED):
+- Cognitive friction reduction percentage achieved
+- Comprehension efficiency improvement metrics
+- Information accessibility verification
+- Cognitive load optimization results
+
+---
+
+## 🛡️ P55/P56 Compliance Integration
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Optimize Cognitive Organization execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /optimize-cognitive-organization [information_scope] [organization_level?] [cognitive_complexity?]
 ```
 
@@ -318,19 +383,19 @@ function monitorCognitiveEffectiveness(organized_content, usage_patterns) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Documentation Cognitive Optimization**
-```
+```text
 /optimize-cognitive-organization "project documentation" "comprehensive" "high_complexity"
 ```
 **Result**: Documentation organized with logical flow, thematic grouping, clear navigation, and minimized cognitive friction
 
 ### **Command System Cognitive Optimization**
-```
+```bash
 /optimize-cognitive-organization "command structure" "balanced" "medium_complexity"
 ```
 **Result**: Command system structured for optimal cognitive accessibility and flow
 
 ### **Learning Material Cognitive Optimization**
-```
+```text
 /optimize-cognitive-organization "training content" "progressive" "variable_complexity"
 ```
 **Result**: Learning materials organized to minimize cognitive load and maximize comprehension
@@ -402,7 +467,7 @@ function validateCognitiveSafety(optimized_organization, original_content) {
 ## 💡 **COGNITIVE ORGANIZATION COMMUNICATION**
 
 ### **Cognitive Optimization Report**
-```
+```yaml
 🧠 **Cognitive Organization Results**
 
 **Friction Reduction**: 75% cognitive friction reduction achieved

@@ -16,10 +16,24 @@ Systematically decompose complex objectives into smaller, independently verifiab
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Objective Size Threshold**: ≥720.0000 seconds (12 minutes estimated completion)
+**Decomposition Opportunity Threshold**: ≥3.0000 identifiable sub-objectives
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable decomposition benefit with ≥70% parallelization opportunity
+- **Threshold Enforcement**: REQUIRED activation when objective complexity exceeds manageable units
+- **P56 Announcement**: 🔧 TRANSPARENCY: Objective Decomposition auto-activated for [objective] breakdown
+- **Evidence Collection**: Measurable decomposition metrics and sub-objective verification documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /objective-decomposition [main_objective] [decomposition_depth?] [parallelization_target?]
 ```
 
@@ -37,6 +51,123 @@ Systematically decompose complex objectives into smaller, independently verifiab
 4. Define independent verification criteria for each sub-objective
 5. Identify parallelization opportunities
 6. Create execution roadmap with verification checkpoints
+
+---
+
+## 🧠 **DECOMPOSITION DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Objective Decomposition**
+
+```mermaid
+graph TD
+    A[Decomposition Request Input] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Decomposition Processing]
+    B -->|No| D[Standard Decomposition Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Decomposition Execution]
+    
+    D --> H{Objective Clarity Score}
+    H -->|≥0.8| I[Proceed with Decomposition]
+    H -->|<0.8| J[REQUIRED: Objective Clarification]
+    
+    F --> K[Task Tool: Complex Decomposition]
+    K --> L[P56: Advanced Decomposition Coordination]
+    
+    G --> M{Decomposition Depth?}
+    M -->|≤2| N[Shallow Decomposition]
+    M -->|3-4| O[Standard Decomposition]
+    M -->|≥5| P[CRITICAL: Deep Decomposition]
+    
+    I --> Q{Natural Break Points?}
+    Q -->|Yes| R[Functional Decomposition]
+    Q -->|No| S[Analytical Decomposition]
+    
+    J --> T[Read Tool: Load Objective Context]
+    T --> U[Edit Tool: Document Clarification]
+    U --> I
+    
+    N --> V[Read Tool: Load Simple Patterns]
+    V --> W[Edit Tool: Document Sub-objectives]
+    
+    O --> X[Read Tool: Load Complex Patterns]
+    X --> Y[Edit Tool: Document Hierarchy]
+    
+    P --> Z[Task Tool: Multi-level Coordination]
+    Z --> AA[P56: Deep Decomposition Management]
+    
+    R --> BB{Parallelization Potential?}
+    BB -->|≥0.7| CC[Parallel Track Design]
+    BB -->|<0.7| DD[Sequential Design]
+    
+    S --> EE[Bash Tool: Complexity Analysis]
+    EE --> FF[Mathematical Decomposition]
+    
+    CC --> GG[Edit Tool: Parallel Documentation]
+    GG --> HH[Bash Tool: Dependency Mapping]
+    
+    DD --> II[Edit Tool: Sequential Documentation]
+    II --> JJ[Bash Tool: Critical Path Analysis]
+    
+    FF --> KK{Decomposition Complete?}
+    KK -->|Yes| LL[Verification Criteria Definition]
+    KK -->|No| MM[REQUIRED: Iterative Refinement]
+    
+    HH --> NN[P56: Parallel Decomposition Success]
+    JJ --> OO[P56: Sequential Decomposition Success]
+    
+    LL --> PP[Read Tool: Load Verification Patterns]
+    PP --> QQ[Edit Tool: Document Success Criteria]
+    QQ --> RR[P56: Verification Framework Complete]
+    
+    MM --> SS[Read Tool: Load Refinement Patterns]
+    SS --> TT[Edit Tool: Document Iterations]
+    TT --> KK
+    
+    L --> UU[Agent Decomposition Results]
+    UU --> VV[P56: Expert Decomposition Complete]
+    
+    AA --> WW[Multi-level Coordination Results]
+    WW --> XX[P56: Deep Decomposition Complete]
+    
+    NN --> YY[Decomposition Metrics]
+    OO --> YY
+    RR --> YY
+    VV --> YY
+    XX --> YY
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style P fill:#ffe66d
+    style MM fill:#ff8b94
+    style YY fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+decomposition_decision_transparency:
+  complexity_assessment:
+    announcement: "🔍 TRANSPARENCY: Objective complexity assessed at [X]/1.0 - [STANDARD/ADVANCED] decomposition required"
+    evidence: "Mathematical complexity analysis with decomposition requirements"
+    
+  decomposition_strategy:
+    announcement: "📊 TRANSPARENCY: Decomposition strategy - [FUNCTIONAL/ANALYTICAL] with [X] levels depth"
+    evidence: "Strategy selection logic with depth justification"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [decomposition_operation]"
+    evidence: "Tool selection matrix with decomposition-specific reasoning"
+    
+  parallelization_assessment:
+    announcement: "⚡ TRANSPARENCY: Parallelization potential [X]/1.0 - [PARALLEL/SEQUENTIAL] execution recommended"
+    evidence: "Dependency analysis with parallelization calculation"
+    
+  verification_framework:
+    announcement: "✅ TRANSPARENCY: Verification criteria defined - [X] success metrics established"
+    evidence: "Complete verification framework with measurable criteria"
+```
 
 ---
 
@@ -85,19 +216,19 @@ decomposition_effectiveness = (
 ## 📋 **USAGE EXAMPLES**
 
 ### **Feature Development**
-```
+```text
 /objective-decomposition "Build e-commerce checkout system" 3 0.75
 ```
 **Result**: Decomposed into payment processing, inventory validation, user interface, order management sub-objectives
 
 ### **System Migration**
-```
+```text
 /objective-decomposition "Migrate from MongoDB to PostgreSQL" 2
 ```
 **Result**: Broken into schema design, data migration, application updates, testing, deployment sub-objectives
 
 ### **Performance Optimization**
-```
+```text
 /objective-decomposition "Improve application performance by 50%" 4 0.80
 ```
 **Result**: Decomposed into database optimization, frontend caching, API efficiency, infrastructure scaling

@@ -4,7 +4,7 @@
 
 **Purpose**: CRITICAL comprehensive technical specification for 5-phase mathematical script integration that MUST be EXECUTED across all 66 Context Engineering commands with ≥95% precision validation.
 
-**Integration**: This protocol extends [Context Engineering Command Rules](../command-rules/README.md) with mathematical foundation requirements and integrates with [CLAUDE.md](../../CLAUDE.md#universal-script-integration-protocol) navigation hub.
+**Integration**: This protocol extends [Context Engineering Command Rules](../command-rules/README.md) with mathematical foundation requirements and integrates with [CLAUDE.md](../CLAUDE.md#universal-script-integration-protocol) navigation hub.
 
 ---
 
@@ -149,4 +149,4 @@ universal_script_integration:
 
 **Status**: Comprehensive universal script integration protocol established with MANDATORY mathematical rigor, transparency compliance, and quality validation requirements (≥95% protocol completeness REQUIRED).
 
-**Cross-Reference**: This protocol integrates with [CLAUDE.md Universal Script Integration](../../CLAUDE.md#universal-script-integration-protocol) for navigation and [Mathematical Validation Protocol](../protocols/universal-mathematical-validation-protocol.md) for validation standards.
+**Cross-Reference**: This protocol integrates with [CLAUDE.md Universal Script Integration](../CLAUDE.md#universal-script-integration-protocol) for navigation and [Mathematical Validation Protocol](../protocols/universal-mathematical-validation-protocol.md) for validation standards.

@@ -16,10 +16,24 @@ Create systems that provide magical user experiences through sophisticated archi
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**User Experience Quality Threshold**: <0.8000 (80% magical experience quality required)
+**Excellence Implementation Time Threshold**: ≥480.0000 seconds for architectural excellence
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable user experience quality with ≥80% magical interaction seamlessness
+- **Threshold Enforcement**: REQUIRED activation when system lacks invisible excellence architecture
+- **P56 Announcement**: ✨ TRANSPARENCY: Invisible Excellence auto-activated for [component] magical experience
+- **Evidence Collection**: Measurable user experience metrics and debuggability validation documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /invisible-excellence [system_component] [experience_goal?] [debug_requirements?]
 ```
 
@@ -73,6 +87,124 @@ function assessDebuggability(system) {
     developer_experience: calculateDeveloperExperience(system)
   }
 }
+```
+
+---
+
+## 🧠 **INVISIBLE EXCELLENCE DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Invisible Excellence Balance**
+
+```mermaid
+graph TD
+    A[Invisible Excellence Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Excellence Processing]
+    B -->|No| D[Standard Excellence Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Excellence Implementation]
+    
+    D --> H{Experience Goal Clarity}
+    H -->|Clear| I[Proceed with Balance Design]
+    H -->|Unclear| J[REQUIRED: Goal Clarification]
+    
+    F --> K[Task Tool: Complex Excellence]
+    K --> L[P56: Advanced Excellence Coordination]
+    
+    G --> M{Magic Score Assessment}
+    M -->|≥8.5| N[Magic Experience Achieved]
+    M -->|<8.5| O[CRITICAL: Magic Enhancement]
+    
+    I --> P{Debug Requirements}
+    P -->|≥9.0| Q[Debug Excellence Achieved]
+    P -->|<9.0| R[REQUIRED: Debug Enhancement]
+    
+    J --> S[Read Tool: Load Experience Patterns]
+    S --> T[Edit Tool: Document Goals]
+    T --> I
+    
+    N --> U{Debug Score Check}
+    U -->|≥9.0| V[Perfect Balance Achieved]
+    U -->|<9.0| W[Balance Optimization Required]
+    
+    O --> X[Read Tool: Load Magic Patterns]
+    X --> Y[Edit Tool: Enhance Experience]
+    Y --> Z[Bash Tool: Magic Validation]
+    Z --> M
+    
+    Q --> AA{Magic Score Check}
+    AA -->|≥8.5| V
+    AA -->|<8.5| BB[Balance Optimization Required]
+    
+    R --> CC[Read Tool: Load Debug Patterns]
+    CC --> DD[Edit Tool: Enhance Debug]
+    DD --> EE[Bash Tool: Debug Validation]
+    EE --> P
+    
+    V --> FF[Bash Tool: Pattern Consistency]
+    FF --> GG{Consistency ≥95%?}
+    GG -->|Yes| HH[Excellence Framework Complete]
+    GG -->|No| II[REQUIRED: Pattern Refinement]
+    
+    W --> JJ[Read Tool: Load Balance Patterns]
+    JJ --> KK[Edit Tool: Optimize Balance]
+    KK --> LL[Bash Tool: Balance Testing]
+    
+    BB --> JJ
+    
+    LL --> MM{Balance Improved?}
+    MM -->|Yes| V
+    MM -->|No| NN[CRITICAL: Architecture Redesign]
+    
+    HH --> OO[Task Tool: Verification Integration]
+    OO --> PP[P56: Excellence Success]
+    
+    II --> QQ[Read Tool: Load Refinement Patterns]
+    QQ --> RR[Edit Tool: Refine Patterns]
+    RR --> SS[Bash Tool: Pattern Validation]
+    SS --> GG
+    
+    NN --> TT[Task Tool: Architecture Redesign]
+    TT --> UU[P56: Redesign Complete]
+    
+    L --> VV[Agent Excellence Results]
+    VV --> WW[P56: Expert Excellence Complete]
+    
+    PP --> XX[Invisible Excellence Metrics]
+    UU --> XX
+    WW --> XX
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style O fill:#ffe66d
+    style NN fill:#ff8b94
+    style XX fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+invisible_excellence_transparency:
+  balance_assessment:
+    announcement: "🔍 TRANSPARENCY: Excellence balance - Magic [X]/10, Debug [Y]/10 - [BALANCED/OPTIMIZATION_REQUIRED]"
+    evidence: "Mathematical balance calculation with component scores"
+    
+  experience_optimization:
+    announcement: "✨ TRANSPARENCY: Magic experience [ENHANCED/ACHIEVED] - [X] user delight metrics"
+    evidence: "User experience enhancement with seamlessness measurements"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [excellence_operation]"
+    evidence: "Tool selection matrix with excellence-specific reasoning"
+    
+  debug_enhancement:
+    announcement: "🔍 TRANSPARENCY: Debug capability [ENHANCED/ACHIEVED] - [X] transparency metrics"
+    evidence: "Debugging enhancement with traceability improvements"
+    
+  pattern_consistency:
+    announcement: "📊 TRANSPARENCY: Pattern consistency [X]% - [ACHIEVED/REFINEMENT_REQUIRED]"
+    evidence: "Pattern consistency analysis with architectural quality metrics"
 ```
 
 ---
@@ -180,19 +312,19 @@ function monitorInvisibleExcellence(system) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **UI Component Architecture**
-```
+```text
 /invisible-excellence "user interface components" experience_goal="seamless interaction" debug_requirements="complete state visibility"
 ```
 **Result**: UI components that feel magical to use while providing complete debugging capabilities
 
 ### **API Design**
-```
+```text
 /invisible-excellence "REST API endpoints" experience_goal="intelligent defaults" debug_requirements="request tracing"
 ```
 **Result**: APIs that provide smart defaults and seamless integration with full request traceability
 
 ### **System Integration**
-```
+```text
 /invisible-excellence "microservices architecture" experience_goal="transparent complexity" debug_requirements="distributed tracing"
 ```
 **Result**: Microservices that hide complexity from users while providing comprehensive debugging

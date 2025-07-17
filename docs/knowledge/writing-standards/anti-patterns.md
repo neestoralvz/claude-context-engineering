@@ -166,7 +166,7 @@
 - **Professional Authority Validation**: Assessment of language choices for maximum cognitive authority
 - **Behavioral Control Effectiveness**: Measurement of English language impact on deterministic response patterns
 
-**Cross-Reference Integration**: Language standards integrate with [Context Engineering Command Rules](../../templates/context-eng-command-rules.md) for complete documentation consistency.
+**Cross-Reference Integration**: Language standards integrate with [Context Engineering Command Rules](../templates/context-eng-command-rules.md) for complete documentation consistency.
 
 ---
 

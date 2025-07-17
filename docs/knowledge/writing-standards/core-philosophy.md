@@ -18,7 +18,7 @@
 
 **CRITICAL Behavioral Control Framework**: Strong terminology creates deterministic cognitive pathways that MUST override weak language patterns with neurologically reinforced behavioral control (≥98% neural pathway reinforcement REQUIRED).
 
-**MANDATORY Terminology Hierarchy** (Reference: [Context Engineering Command Rules](../../templates/context-eng-command-rules.md) - Behavioral Reinforcement):
+**MANDATORY Terminology Hierarchy** (Reference: [Context Engineering Command Rules](../templates/context-eng-command-rules.md) - Behavioral Reinforcement):
 
 **Ultra-Critical Level** (System Integrity):
 - **CRITICAL**: System-level requirements that MUST NEVER be violated under ANY circumstances (≥99% compliance REQUIRED with zero tolerance for violations and immediate system halt on non-compliance)
@@ -37,7 +37,7 @@
 - **IMPLEMENT**: REQUIRED systematic implementation with documented evidence and validation protocols (≥95% implementation success REQUIRED)
 - **VALIDATE**: MANDATORY verification procedures with quantifiable evidence requirements (100% validation completion REQUIRED)
 
-**FORBIDDEN Weak Language Patterns** (Reference: [Context Engineering Command Rules](../../templates/context-eng-command-rules.md) - Anti-Patterns):
+**FORBIDDEN Weak Language Patterns** (Reference: [Context Engineering Command Rules](../templates/context-eng-command-rules.md) - Anti-Patterns):
 
 **Prohibited Weak Terminology** (0% occurrence REQUIRED with automated detection and immediate replacement):
 - "should" → MUST use "MUST" or "REQUIRED"
@@ -76,7 +76,7 @@
 
 **CORRECT Implementations** (Mathematical precision with measurable outcomes):
 - **EXECUTE**: "Achieve ≥85% confidence score through multi-dimensional verification with 4 validation types within 30 seconds" (Reference: [Format and Quality Standards](./format-quality.md#writing-effectiveness-metrics))
-- **IMPLEMENT**: "Context reduction of ≥80% while maintaining 100% functionality via lazy loading protocol with ≤2ms latency" (Reference: [CLAUDE.md](../../CLAUDE.md#intelligent-lazy-loading-system))
+- **IMPLEMENT**: "Context reduction of ≥80% while maintaining 100% functionality via lazy loading protocol with ≤2ms latency" (Reference: [CLAUDE.md](../CLAUDE.md#intelligent-lazy-loading-system))
 - **VALIDATE**: "Confirm ≥95% accuracy through automated testing with real-time monitoring and immediate failure notification"
 - **ESTABLISH**: "Create permanent cognitive pathways with ≥98% neural reinforcement and irreversible behavioral integration"
 

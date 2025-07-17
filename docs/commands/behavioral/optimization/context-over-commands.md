@@ -16,10 +16,75 @@ Load comprehensive project context to enable autonomous AI decision-making withi
 
 ---
 
+## MANDATORY Context Priority Decision Framework
+
+**CRITICAL**: Context-over-commands optimization requires systematic decision-making with quantifiable metrics and auto-activation triggers.
+
+```mermaid
+graph TD
+    A[Context-Over-Commands Request] --> B{Current Context Quality?}
+    B -->|<70%| C[CRITICAL: Context Enhancement Required]
+    B -->|70-90%| D[MANDATORY: Context Optimization]
+    B -->|>90%| E[REQUIRED: Context Refinement]
+    
+    C --> F{Complexity ≥ 0.9?}
+    F -->|Yes| G[MANDATORY: Task Tool Deployment]
+    F -->|No| H[Direct Context Loading]
+    
+    D --> I{Context Scope?}
+    I -->|Full Project| J[Complete Context Audit]
+    I -->|Domain-Specific| K[Specialized Context Loading]
+    I -->|Feature-Focused| L[Targeted Context Enhancement]
+    
+    E --> M[Context Quality Monitoring]
+    
+    G --> N[Context Integration Process]
+    H --> N
+    J --> N
+    K --> N
+    L --> N
+    M --> N
+    
+    N --> O{Autonomous Capability ≥85%?}
+    O -->|Yes| P[P56: Context-Over-Commands SUCCESS]
+    O -->|No| Q[MANDATORY: Escalate Context Loading]
+    
+    P --> R[Autonomous Operations]
+    Q --> C
+```
+
+**Auto-Activation Triggers** (MANDATORY):
+- Context quality <70% → CRITICAL context enhancement
+- Pattern recognition <90% → MANDATORY context optimization
+- Autonomous capability <85% → REQUIRED context loading
+- Context utilization <80% → CRITICAL intervention
+
+**P56 Transparency Announcements** (REQUIRED):
+- Context completeness percentage achieved
+- Pattern recognition accuracy metrics
+- Autonomous capability improvement
+- Context utilization effectiveness
+
+---
+
+## 🛡️ P55/P56 Compliance Integration
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Context Over Commands execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /context-over-commands [domain] [depth_level?] [focus_areas?]
 ```
 
@@ -82,19 +147,19 @@ context_effectiveness = (
 ## 📋 **USAGE EXAMPLES**
 
 ### **New Feature Development**
-```
+```text
 /context-over-commands "frontend" deep "component_patterns,state_management,routing"
 ```
 **Result**: AI loads complete frontend context, understands patterns, enables autonomous component development
 
 ### **API Integration**
-```
+```text
 /context-over-commands "backend" standard "api_patterns,error_handling,authentication"
 ```
 **Result**: AI understands existing API patterns, can autonomously implement consistent integrations
 
 ### **Performance Optimization**
-```
+```text
 /context-over-commands "performance" deep "caching,database,monitoring"
 ```
 **Result**: AI loads performance context, understands optimization patterns, autonomous improvement decisions

@@ -19,7 +19,7 @@ Implement comprehensive test-driven development methodology where verification c
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /tdd [objective] [verification_types?] [success_threshold?]
 ```
 
@@ -37,6 +37,174 @@ Implement comprehensive test-driven development methodology where verification c
 4. Run all verification tests
 5. Refactor while maintaining test success
 6. Document patterns learned through TDD process
+
+---
+
+## 🧠 **TDD DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Test-Driven Development**
+
+```mermaid
+graph TD
+    A[TDD Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced TDD Processing]
+    B -->|No| D[Standard TDD Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct TDD Execution]
+    
+    D --> H{Objective Clarity}
+    H -->|Clear| I[Standard TDD Process]
+    H -->|Unclear| J[REQUIRED: Objective Clarification]
+    
+    F --> K[Task Tool: Complex TDD Coordination]
+    K --> L[P56: Advanced TDD Coordination]
+    
+    G --> M[Phase 1: Criteria Definition]
+    M --> N[Read Tool: Load Requirements]
+    N --> O[Edit Tool: Document Success Criteria]
+    
+    I --> P[Phase 1: Standard Criteria]
+    P --> Q[Read Tool: Load Standard Patterns]
+    Q --> R[Edit Tool: Define Verification]
+    
+    J --> S[Read Tool: Load Clarification Patterns]
+    S --> T[Edit Tool: Clarify Objectives]
+    T --> U[Bash Tool: Validate Clarity]
+    U --> H
+    
+    O --> V{Criteria Completeness}
+    V -->|100%| W[Phase 2: Test Creation]
+    V -->|<100%| X[REQUIRED: Complete Criteria]
+    
+    R --> Y{Standard Criteria}
+    Y -->|Complete| Z[Phase 2: Test Framework]
+    Y -->|Incomplete| X
+    
+    W --> AA[Read Tool: Load Test Patterns]
+    AA --> BB[Edit Tool: Create Test Suite]
+    
+    Z --> CC[Read Tool: Load Framework Patterns]
+    CC --> DD[Edit Tool: Build Test Framework]
+    
+    X --> EE[Read Tool: Load Completion Patterns]
+    EE --> FF[Edit Tool: Complete Criteria]
+    FF --> GG[Bash Tool: Validate Completeness]
+    GG --> V
+    
+    BB --> HH{Test Coverage}
+    HH -->|≥95%| II[Phase 3: Minimal Implementation]
+    HH -->|<95%| JJ[REQUIRED: Enhance Coverage]
+    
+    DD --> KK{Framework Coverage}
+    KK -->|≥95%| LL[Phase 3: Implementation]
+    KK -->|<95%| JJ
+    
+    II --> MM[Read Tool: Load Implementation Patterns]
+    MM --> NN[Edit Tool: Minimal Solution]
+    
+    LL --> OO[Read Tool: Load Solution Patterns]
+    OO --> PP[Edit Tool: Implementation Plan]
+    
+    JJ --> QQ[Read Tool: Load Coverage Patterns]
+    QQ --> RR[Edit Tool: Enhance Tests]
+    RR --> SS[Bash Tool: Coverage Validation]
+    SS --> HH
+    
+    NN --> TT[Bash Tool: Test Execution]
+    TT --> UU{All Tests Pass?}
+    UU -->|Yes| VV[Phase 4: Verification Validation]
+    UU -->|No| WW[REQUIRED: Implementation Fix]
+    
+    PP --> XX[Bash Tool: Framework Testing]
+    XX --> YY{Framework Tests Pass?}
+    YY -->|Yes| ZZ[Phase 4: Validation]
+    YY -->|No| WW
+    
+    VV --> AAA[Read Tool: Load Validation Patterns]
+    AAA --> BBB[Bash Tool: Verification Accuracy]
+    
+    ZZ --> CCC[Read Tool: Load Accuracy Patterns]
+    CCC --> DDD[Bash Tool: Correlation Analysis]
+    
+    WW --> EEE[Read Tool: Load Fix Patterns]
+    EEE --> FFF[Edit Tool: Fix Implementation]
+    FFF --> GGG[Bash Tool: Re-test]
+    GGG --> UU
+    
+    BBB --> HHH{Verification Accuracy}
+    HHH -->|≥90%| III[Phase 5: Refactor]
+    HHH -->|<90%| JJJ[REQUIRED: Accuracy Enhancement]
+    
+    DDD --> KKK{Correlation Analysis}
+    KKK -->|≥90%| LLL[Phase 5: Quality Improvement]
+    KKK -->|<90%| JJJ
+    
+    III --> MMM[Read Tool: Load Refactor Patterns]
+    MMM --> NNN[Edit Tool: Refactor Implementation]
+    
+    LLL --> OOO[Read Tool: Load Quality Patterns]
+    OOO --> PPP[Edit Tool: Quality Improvements]
+    
+    JJJ --> QQQ[Read Tool: Load Enhancement Patterns]
+    QQQ --> RRR[Edit Tool: Enhance Verification]
+    RRR --> SSS[Bash Tool: Accuracy Testing]
+    SSS --> HHH
+    
+    NNN --> TTT[Bash Tool: Refactor Validation]
+    TTT --> UUU{Tests Still Pass?}
+    UUU -->|Yes| VVV[P56: TDD Success]
+    UUU -->|No| WWW[CRITICAL: Refactor Issue]
+    
+    PPP --> XXX[Bash Tool: Quality Validation]
+    XXX --> YYY{Quality Maintained?}
+    YYY -->|Yes| ZZZ[P56: TDD Quality Success]
+    YYY -->|No| WWW
+    
+    WWW --> AAAA[Read Tool: Load Recovery Patterns]
+    AAAA --> BBBB[Edit Tool: Recovery Strategy]
+    BBBB --> CCCC[Bash Tool: Recovery Execution]
+    CCCC --> UUU
+    
+    L --> DDDD[Agent TDD Results]
+    DDDD --> EEEE[P56: Expert TDD Complete]
+    
+    VVV --> FFFF[TDD Effectiveness Metrics]
+    ZZZ --> FFFF
+    EEEE --> FFFF
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style X fill:#ffe66d
+    style WWW fill:#ff8b94
+    style FFFF fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+tdd_transparency:
+  criteria_definition:
+    announcement: "🔍 TRANSPARENCY: Success criteria [X]% complete - [STANDARD/ENHANCED] TDD approach"
+    evidence: "Complete criteria definition with verification requirements"
+    
+  test_creation:
+    announcement: "🧪 TRANSPARENCY: Test coverage [X]% - [UNIT/INTEGRATION/PERFORMANCE] tests created"
+    evidence: "Test suite creation with coverage metrics"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [tdd_operation]"
+    evidence: "Tool selection matrix with TDD-specific reasoning"
+    
+  implementation_validation:
+    announcement: "⚙️ TRANSPARENCY: Implementation [SUCCESS/FAILURE] - [X]% tests passing"
+    evidence: "Implementation validation with test results"
+    
+  verification_accuracy:
+    announcement: "✅ TRANSPARENCY: Verification accuracy [X]% - [CORRELATION/ENHANCEMENT] required"
+    evidence: "Verification accuracy assessment with correlation analysis"
+```
 
 ---
 
@@ -85,19 +253,19 @@ tdd_effectiveness = (
 ## 📋 **USAGE EXAMPLES**
 
 ### **Feature Development**
-```
+```text
 /tdd "User authentication system" "functional,security,performance" 0.95
 ```
 **Result**: Complete verification criteria for auth system, automated tests, minimal implementation, iterative refinement
 
 ### **API Development**
-```
+```text
 /tdd "REST API for user management" "integration,validation,documentation"
 ```
 **Result**: API test suite, endpoint verification, minimal working API, documented behavior
 
 ### **Performance Optimization**
-```
+```text
 /tdd "Reduce page load time to under 2 seconds" "performance,user_experience" 0.90
 ```
 **Result**: Performance tests, optimization criteria, minimal changes, verified improvements

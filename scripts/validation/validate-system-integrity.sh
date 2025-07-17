@@ -30,7 +30,7 @@ REGISTRY_FILE="$BASE_DIR/.claude/config/command-registry.json"
 mkdir -p "$RESULTS_DIR/system-integrity"
 
 # Validation phases
-PHASE_COUNT=6
+PHASE_COUNT=7
 current_phase=0
 
 # Global validation results
@@ -280,6 +280,35 @@ validate_command_execution() {
     return 0
 }
 
+# Validate command synchronization
+validate_command_synchronization() {
+    echo -e "${CYAN}🔄 Running command synchronization validation...${NC}"
+    
+    if [ ! -x "$SCRIPTS_DIR/validation/automated-command-counter-v2.sh" ]; then
+        add_validation_result "COMMAND_SYNC" "FAILED" "Automated command counter not executable" "CRITICAL"
+        return 1
+    fi
+    
+    # Run command counter in quiet mode
+    if "$SCRIPTS_DIR/validation/automated-command-counter-v2.sh" --quiet > "$RESULTS_DIR/system-integrity/command-sync-validation.log" 2>&1; then
+        add_validation_result "COMMAND_SYNC" "PASSED" "Command directories synchronized" "SUCCESS"
+        return 0
+    else
+        # Parse the latest command count report for details
+        local latest_report=$(find "$RESULTS_DIR/command-counts" -name "command-count-report-*.json" -type f | sort -r | head -1)
+        if [ -f "$latest_report" ]; then
+            local discrepancies=$(jq -r '.command_count_report.discrepancies.total_found' "$latest_report")
+            local docs_total=$(jq -r '.command_count_report.counts.docs_commands.total' "$latest_report")
+            local claude_total=$(jq -r '.command_count_report.counts.claude_commands.total' "$latest_report")
+            
+            add_validation_result "COMMAND_SYNC" "FAILED" "$discrepancies discrepancies found - docs:$docs_total vs claude:$claude_total" "ERROR"
+        else
+            add_validation_result "COMMAND_SYNC" "FAILED" "Command synchronization validation failed" "ERROR"
+        fi
+        return 1
+    fi
+}
+
 # Validate system coherence
 validate_system_coherence() {
     echo -e "${CYAN}🔗 Analyzing system coherence...${NC}"
@@ -302,7 +331,7 @@ validate_system_coherence() {
     fi
     
     # Check principle files existence
-    local principles_dir="$BASE_DIR/docs/principles"
+    local principles_dir="$BASE_DIR/docs/knowledge/principles"
     if [ -d "$principles_dir" ]; then
         local principle_files=$(find "$principles_dir" -name "*.md" -type f | wc -l)
         if [ "$principle_files" -gt 5 ]; then

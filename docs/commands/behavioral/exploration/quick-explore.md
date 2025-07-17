@@ -16,10 +16,38 @@ Orquestrador optimizado para exploración rápida y eficiente sin el overhead de
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## 🛡️ P55/P56 Compliance Integration
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Quick Explore execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
+
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Time Constraint Threshold**: ≤300.0000 seconds (5 minutes maximum)
+**Quick Analysis Threshold**: ≥80.0000% accuracy requirement for rapid exploration
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable rapid exploration with ≥80% accuracy in constrained time
+- **Threshold Enforcement**: REQUIRED activation when quick analysis needed under time pressure
+- **P56 Announcement**: ⚡ TRANSPARENCY: Quick Explore auto-activated for [objetivo] rapid analysis
+- **Evidence Collection**: Measurable time efficiency and exploration coverage documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Usage Format**
-```
+```markdown
 /quick-explore [objetivo_específico]
 /qe [objetivo_específico]          # shortcut
 ```
@@ -29,6 +57,36 @@ Orquestrador optimizado para exploración rápida y eficiente sin el overhead de
 - **⚡ Paralelización automática**: Benefit ≥ 0.4 detectado automáticamente  
 - **🎯 Enfoque específico**: Solo comandos necesarios para exploración
 - **📊 Context economy**: 70% reducción de contexto vs meta-comando
+
+### CRITICAL Quick Exploration Decision Tree
+
+```mermaid
+graph TD
+    A[Quick Explore Request] --> B{Objective Specificity ≥ 0.7?}
+    B -->|Yes| C[MANDATORY: Direct Exploration]
+    B -->|No| D[REQUIRED: Escalate to /context-eng]
+    C --> E{Parallel Benefit ≥ 0.4?}
+    E -->|Yes| F[CRITICAL: Parallel Execution]
+    E -->|No| G[MANDATORY: Sequential Execution]
+    F --> H[Agent 1: Knowledge Hierarchy]
+    F --> I[Agent 2: Explore Command]
+    G --> J[Sequential: Knowledge → Explore]
+    H --> K[Parallel Coordination]
+    I --> K
+    J --> L[Sequential Results]
+    K --> M{Results Quality ≥ 90%?}
+    L --> M
+    M -->|Yes| N[CRITICAL: Pattern Synthesis]
+    M -->|No| O[MANDATORY: Enhanced Discovery]
+    O --> P{Retry Attempts < 2?}
+    P -->|Yes| Q[REQUIRED: Retry with Context]
+    P -->|No| R[CRITICAL: Escalate to Meta-Command]
+    Q --> C
+    R --> S[Meta-Command Activation]
+    N --> T[MANDATORY: P56 Transparency]
+    S --> T
+    T --> U[Quick Explore Complete]
+```
 
 ---
 
@@ -85,6 +143,42 @@ function calculateQuickExploreEfficiency() {
     recommended_for: "objetivos_específicos_exploración"
   }
 }
+```
+
+### MANDATORY Tool Selection Decision Tree
+
+```mermaid
+graph TD
+    A[Tool Selection Phase] --> B{Exploration Type}
+    B -->|Codebase Analysis| C[CRITICAL: Knowledge Hierarchy + Explore]
+    B -->|Problem Investigation| D[REQUIRED: Explore + Patterns]
+    B -->|Architecture Review| E[MANDATORY: Full Chain Execution]
+    C --> F{File Scope}
+    F -->|≤10 files| G[REQUIRED: Direct Read Tools]
+    F -->|11-50 files| H[MANDATORY: Glob + Read combination]
+    F -->|>50 files| I[CRITICAL: Task Tool Deployment]
+    D --> J{Problem Domain}
+    J -->|Code Issues| K[REQUIRED: Grep Tool Chain]
+    J -->|Performance| L[MANDATORY: Structured Analysis]
+    J -->|Dependencies| M[CRITICAL: Systematic Discovery]
+    E --> N{Complexity Level}
+    N -->|High ≥1.5| O[REQUIRED: Parallel Chain]
+    N -->|Medium 1.0-1.5| P[MANDATORY: Sequential Chain]
+    N -->|Low <1.0| Q[CRITICAL: Optimized Chain]
+    G --> R[Direct Analysis]
+    H --> R
+    I --> R
+    K --> S[Pattern Discovery]
+    L --> S
+    M --> S
+    O --> T[Parallel Coordination]
+    P --> T
+    Q --> T
+    R --> U[Results Synthesis]
+    S --> U
+    T --> U
+    U --> V[MANDATORY: P56 Transparency]
+    V --> W[Tool Selection Complete]
 ```
 
 ### **Success Thresholds**
@@ -154,6 +248,43 @@ coordination:
   early_termination: "si uno encuentra solución completa"
 ```
 
+### CRITICAL Parallel Execution Decision Tree
+
+```mermaid
+graph TD
+    A[Parallel Execution Assessment] --> B{Parallel Benefit ≥ 0.4?}
+    B -->|Yes| C[MANDATORY: Parallel Launch]
+    B -->|No| D[REQUIRED: Sequential Processing]
+    C --> E[Agent 1: Knowledge Hierarchy]
+    C --> F[Agent 2: Explore]
+    D --> G[Sequential: Knowledge → Explore]
+    E --> H{Progress Monitoring}
+    F --> H
+    G --> I[Sequential Results]
+    H --> J{Early Termination Trigger?}
+    J -->|Yes| K[CRITICAL: Terminate Non-Essential]
+    J -->|No| L[MANDATORY: Continue Both]
+    K --> M[Results Collection]
+    L --> N{Both Completed?}
+    N -->|Yes| M
+    N -->|No| O[REQUIRED: Wait for Completion]
+    O --> M
+    I --> P[Results Validation]
+    M --> P
+    P --> Q{Quality Threshold ≥ 90%?}
+    Q -->|Yes| R[CRITICAL: Proceed to Synthesis]
+    Q -->|No| S[MANDATORY: Enhanced Processing]
+    S --> T{Retry Count < 2?}
+    T -->|Yes| U[REQUIRED: Retry with Context]
+    T -->|No| V[CRITICAL: Escalation Protocol]
+    U --> C
+    V --> W[Meta-Command Activation]
+    R --> X[Pattern Synthesis Phase]
+    W --> X
+    X --> Y[MANDATORY: P56 Transparency]
+    Y --> Z[Parallel Execution Complete]
+```
+
 ### **Phase 2: Pattern Synthesis (1-2 min)**
 ```yaml
 pattern_synthesis:
@@ -196,6 +327,48 @@ natural_follow_ups:
   if_more_depth_needed:
     suggest: "/context-eng [specific_area]"
     confidence: 0.7
+```
+
+### MANDATORY Auto-Chain Decision Tree
+
+```mermaid
+graph TD
+    A[Chain Decision Analysis] --> B{Exploration Results}
+    B -->|Patterns Found ≥3| C[CRITICAL: Crystallize Patterns]
+    B -->|Implementation Scope| D[REQUIRED: Rapid Prototype]
+    B -->|Verification Needed| E[MANDATORY: Verify Flow]
+    B -->|Insufficient Depth| F[REQUIRED: Context Engineering]
+    C --> G{Pattern Quality ≥ 0.8?}
+    G -->|Yes| H[MANDATORY: Auto-Chain to Crystallize]
+    G -->|No| I[CRITICAL: Pattern Enhancement]
+    D --> J{Implementation Complexity}
+    J -->|High ≥1.5| K[REQUIRED: Planning First]
+    J -->|Medium 1.0-1.5| L[MANDATORY: Direct Prototype]
+    J -->|Low <1.0| M[CRITICAL: Rapid Implementation]
+    E --> N{Verification Type}
+    N -->|Mathematical| O[REQUIRED: Math Verify]
+    N -->|System| P[MANDATORY: System Verify]
+    N -->|Flow| Q[CRITICAL: Flow Verify]
+    F --> R{Depth Required}
+    R -->|Full Context| S[REQUIRED: Full Context-Eng]
+    R -->|Specific Area| T[MANDATORY: Targeted Context-Eng]
+    R -->|Domain Expert| U[CRITICAL: Expert Consultation]
+    H --> V[Chain Execution]
+    I --> V
+    K --> W[Planning Chain]
+    L --> W
+    M --> W
+    O --> X[Verification Chain]
+    P --> X
+    Q --> X
+    S --> Y[Context Chain]
+    T --> Y
+    U --> Y
+    V --> Z[MANDATORY: P56 Transparency]
+    W --> Z
+    X --> Z
+    Y --> Z
+    Z --> AA[Chain Complete]
 ```
 
 ### **Escalation Protocol**

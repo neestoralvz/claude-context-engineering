@@ -1,15 +1,15 @@
 # Comando Meta
 
-## Descripción
+## REQUIRED Descripción
 Activación universal del ecosistema completo de Context Engineering. El meta-comando coordina todos los niveles del sistema para orquestación universal.
 
-## Características
+## MANDATORY Características
 - **Activación del Ecosistema**: Activa todos los 68 comandos
 - **Orquestación Universal**: Coordinación completa del sistema
 - **Coordinación de Sistema Completo**: Gestión de 5 fases
 - **Complejidad**: 2.0 (máxima)
 
-## Función
+## CRITICAL Función
 **Orquestación universal (Todo)** - Activa y coordina el ecosistema completo
 
 ## Comando Único
@@ -24,16 +24,16 @@ Activación universal del ecosistema completo de Context Engineering. El meta-co
 - `/smart-workflow`
 - `/sw`
 
-**Capacidades**:
+**REQUIRED Capacidades**:
 - Activación automática de todos los 68 comandos
 - Selección dinámica basada en registro
 - Orquestación inteligente de 5 fases
 - Adaptación basada en complejidad y confianza
 - Optimización de rendimiento en tiempo real
 
-## Fases de Ejecución
+## MANDATORY Fases de Ejecución
 
-### Fase 0: Enrutamiento Inteligente
+### CRITICAL Fase 0: Enrutamiento Inteligente
 - Análisis de complejidad y confianza
 - Validación del sistema de scripts
 - Establecimiento de estrategia maestra
@@ -63,7 +63,7 @@ Activación universal del ecosistema completo de Context Engineering. El meta-co
 - Actualización de documentación viva
 - Sincronización del sistema
 
-## Configuraciones Adaptativas
+## REQUIRED Configuraciones Adaptativas
 
 ### Tareas Simples (2 Fases)
 - Complejidad ≤ 1.0, Confianza ≥ 0.8
@@ -80,8 +80,8 @@ Activación universal del ecosistema completo de Context Engineering. El meta-co
 - Orquestación completa para resultados exhaustivos
 - Todas las fases activas
 
-## Patrón de Composición
-```
+## MANDATORY Patrón de Composición
+```text
 META (context-eng)
   ↓
 COMPORTAMIENTO (decision, intelligent-fallback, etc.)

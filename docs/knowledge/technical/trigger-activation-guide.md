@@ -68,7 +68,7 @@
 
 ### **Trigger Integration**
 - **Technical Hub**: [Technical Directory](./README.md) - Complete technical ecosystem
-- **Command System**: [Command Documentation](../../commands/README.md) - Command trigger integration
+- **Command System**: [Command Documentation](../commands/README.md) - Command trigger integration
 - **Performance Standards**: [Performance Optimization Guide](../strategies/PERFORMANCE_OPTIMIZATION.md) - Trigger performance integration
 
 ---

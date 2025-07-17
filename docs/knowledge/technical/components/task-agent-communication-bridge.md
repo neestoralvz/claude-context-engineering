@@ -92,7 +92,7 @@ class TaskAgentSessionManager {
 
 ### **Task Agent Side Implementation**
 
-#### **1. Enhanced Task Tool Integration**
+### **1. Enhanced Task Tool Integration**
 ```typescript
 // Extension to existing Task tool
 class EnhancedTaskTool extends TaskTool {
@@ -199,7 +199,7 @@ class EnhancedTaskTool extends TaskTool {
 }
 ```
 
-#### **2. Automatic Progress Detection**
+### **2. Automatic Progress Detection**
 ```typescript
 class ProgressDetector {
   static wrapToolCall(toolName: string, toolCall: Function, reporter: ProgressReporter): Function {
@@ -226,7 +226,7 @@ class ProgressDetector {
 
 ### **Principal Agent Side Implementation**
 
-#### **1. Status Receiver and Display Manager**
+### **1. Status Receiver and Display Manager**
 ```typescript
 class PrincipalAgentStatusHandler {
   private communicationBridge: TaskAgentCommunicationBridge
@@ -306,7 +306,7 @@ class PrincipalAgentStatusHandler {
 }
 ```
 
-#### **2. Progress Display Manager**
+### **2. Progress Display Manager**
 ```typescript
 class ProgressDisplayManager {
   async showInitialization(message: TaskAgentMessage): Promise<void> {

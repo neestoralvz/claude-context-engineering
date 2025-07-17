@@ -1,8 +1,8 @@
 # Core Command Execution Rules - Context Engineering
 
-**Meta-Principle**: "Real execution with complete transparency through systematic integration"
+**Meta-Principle**: "MANDATORY real execution with COMPLETE transparency through systematic integration"
 
-**Authority Redirect**: Complete core command execution rules, protocols, and validation standards are consolidated in [Execution & Integration Standards](./execution-integration-standards.md) for unified implementation across all Context Engineering commands.
+**Authority Redirect**: COMPLETE core command execution rules, MANDATORY protocols, and REQUIRED validation standards are consolidated in [Execution & Integration Standards](./execution-integration-standards.md) for UNIFIED implementation across ALL Context Engineering commands.
 
 **Purpose**: MANDATORY cross-reference hub for core command execution rules, protocol governance, and systematic validation standards.
 
@@ -13,10 +13,10 @@
 **Primary Authority**: [Execution & Integration Standards](./execution-integration-standards.md) - Complete execution protocols and validation standards
 
 **Key Execution Areas Available in Authority Source**:
-- **Universal Execution Principles** - Real execution only protocol with zero simulation tolerance
-- **Command Execution Protocols** - Slash command and tool call execution requirements
-- **Execution Flow Management** - Phase-based and parallel execution standards
-- **Execution Validation** - Quality gates and performance metrics
+- **Universal Execution Principles** - MANDATORY real execution only protocol with ZERO simulation tolerance
+- **Command Execution Protocols** - REQUIRED slash command and tool call execution requirements
+- **Execution Flow Management** - MANDATORY phase-based and parallel execution standards
+- **Execution Validation** - CRITICAL quality gates and performance metrics
 
 ---
 
@@ -38,10 +38,10 @@
 
 ### **Tool Call Execution Requirements**
 **Location**: [Execution & Integration Standards - Tool Call Execution](./execution-integration-standards.md#tool-call-execution-requirements)
-- Tool calls required for all "Deploy", "Execute", "Activate" actions
-- Real script execution mandatory for mathematical validation
-- Actual agent deployment required for Task tool usage
-- Genuine command execution for all slash commands
+- Tool calls REQUIRED for ALL "Deploy", "Execute", "Activate" actions
+- MANDATORY real script execution for mathematical validation
+- REQUIRED actual agent deployment for Task tool usage
+- MANDATORY genuine command execution for all slash commands
 
 ---
 
@@ -49,15 +49,15 @@
 
 ### **Execution Protocol Implementation**
 **Authority Reference**: [Execution & Integration Standards - Command Execution Protocols](./execution-integration-standards.md#-command-execution-protocols)
-- Slash command execution standards with direct implementation
-- Tool call execution requirements with P56 compliance
-- Phase-based execution protocol implementation
-- Parallel execution standards with coordination
+- MANDATORY slash command execution standards with direct implementation
+- REQUIRED tool call execution requirements with P56 compliance
+- CRITICAL phase-based execution protocol implementation
+- MANDATORY parallel execution standards with coordination
 
 ### **Cross-Reference Integration**
 **Navigation Pattern**: [Knowledge Hub](../README.md) → [Command Rules](../README.md#standards--compliance) → [Execution & Integration Standards](./execution-integration-standards.md)
 
-**Execution Efficiency**: ≤2 cognitive steps to complete execution rule specifications from any Context Engineering command context.
+**Execution Efficiency**: REQUIRED ≤2 cognitive steps to complete execution rule specifications from any Context Engineering command context.
 
 ---
 
@@ -85,10 +85,10 @@
 - **User Visibility**: 100% transparency in execution results
 
 ### **Systematic Quality Improvements**
-- **Protocol Standardization**: Unified execution requirements across all commands
-- **Flow Management**: Enhanced phase-based and parallel execution
-- **Validation Framework**: Comprehensive quality gates and performance metrics
-- **Integration Standards**: P55/P56 compliance with systematic validation
+- **Protocol Standardization**: MANDATORY unified execution requirements across all commands
+- **Flow Management**: REQUIRED enhanced phase-based and parallel execution
+- **Validation Framework**: CRITICAL comprehensive quality gates and performance metrics
+- **Integration Standards**: MANDATORY P55/P56 compliance with systematic validation
 
 
 

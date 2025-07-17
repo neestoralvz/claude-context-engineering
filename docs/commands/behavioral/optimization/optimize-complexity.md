@@ -16,10 +16,75 @@ Optimize system complexity to achieve invisible excellence - making complex syst
 
 ---
 
+## MANDATORY Complexity Optimization Decision Framework
+
+**CRITICAL**: Complexity optimization requires systematic decision-making with quantifiable metrics and auto-activation triggers.
+
+```mermaid
+graph TD
+    A[Complexity Optimization Request] --> B{Current Complexity Level?}
+    B -->|>0.8| C[CRITICAL: Emergency Complexity Reduction]
+    B -->|0.6-0.8| D[MANDATORY: Targeted Optimization]
+    B -->|<0.6| E[REQUIRED: Excellence Enhancement]
+    
+    C --> F{Debuggability Risk?}
+    F -->|High| G[MANDATORY: Task Tool Deployment]
+    F -->|Low| H[Direct Complexity Reduction]
+    
+    D --> I{Optimization Focus?}
+    I -->|Magic Experience| J[Invisible Excellence Implementation]
+    I -->|Debuggability| K[Transparency Enhancement]
+    I -->|Balance| L[Pillar Optimization]
+    
+    E --> M[Excellence Monitoring]
+    
+    G --> N[Complexity Transformation]
+    H --> N
+    J --> N
+    K --> N
+    L --> N
+    M --> N
+    
+    N --> O{Magic Experience ≥90%?}
+    O -->|Yes| P[P56: Complexity Optimization SUCCESS]
+    O -->|No| Q[MANDATORY: Escalate Optimization]
+    
+    P --> R[Excellence Monitoring]
+    Q --> C
+```
+
+**Auto-Activation Triggers** (MANDATORY):
+- System complexity >0.8 → CRITICAL complexity reduction
+- Magic experience <90% → MANDATORY optimization
+- Debuggability score <95% → REQUIRED transparency enhancement
+- Pillar balance <0.8 → CRITICAL intervention
+
+**P56 Transparency Announcements** (REQUIRED):
+- Complexity reduction percentage achieved
+- Magic experience improvement metrics
+- Debuggability preservation verification
+- Excellence pillar balance results
+
+---
+
+## 🛡️ P55/P56 Compliance Integration
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Optimize Complexity execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /optimize-complexity [target] [optimization_mode?] [debuggability_level?]
 ```
 
@@ -272,19 +337,19 @@ function optimizeComplexity(system) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **System Architecture Optimization**
-```
+```text
 /optimize-complexity "user-authentication-system" "full-stack" "production"
 ```
 **Result**: Optimize authentication system for invisible excellence while maintaining full debuggability
 
 ### **Workflow Complexity Reduction**
-```
+```text
 /optimize-complexity "deployment-pipeline" "magical-automation" "development"
 ```
 **Result**: Transform complex deployment into magical one-click operation with full debugging
 
 ### **API Interface Simplification**
-```
+```text
 /optimize-complexity "data-processing-api" "intelligent-defaults" "staging"
 ```
 **Result**: Simplify API interface through intelligent defaults while preserving debugging capabilities

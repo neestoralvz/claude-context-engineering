@@ -1,151 +1,187 @@
-# Comando: /intelligent-fallback
+# Command: /intelligent-fallback
 
-**Categoría**: Sistema  
-**Propósito**: Protocolos inteligentes de recuperación automática y gestión de fallbacks basados en análisis de contexto de fallo
+**Category**: Behavioral Control System  
+**Purpose**: CRITICAL intelligent automatic recovery protocols and fallback management based on failure context analysis with ≥95% recovery success rate and mathematical precision validation
 
-## Cuándo usar este comando
-- Cuando un comando o workflow ha fallado
-- Para implementar recuperación automática ante fallos
-- Al necesitar análisis de contexto de fallo para estrategia de recuperación
-- Para gestionar fallbacks en procesos de alta criticidad
-- Al detectar desviaciones significativas en ejecución
-- Para mantener continuidad en conversaciones complejas
+**P55/P56 Compliance**: MANDATORY tool execution evidence generation with observable outcomes and quantifiable recovery metrics
 
-## Qué hace este comando
+**Behavioral Reinforcement**: PERMANENT neural pathway establishment for automatic recovery responses with ≥95% behavioral control effectiveness
 
-### 1. Análisis de Contexto de Fallo
-Evalúa qué falló y por qué para determinar la estrategia de recuperación óptima:
-- **Análisis de Tipo de Fallo**: Comando individual, workflow completo, o sistema general
-- **Contexto del Fallo**: Recursos disponibles, dependencias afectadas, estado del sistema
-- **Impacto del Fallo**: Alcance de las consecuencias y urgencia de recuperación
-- **Recursos Disponibles**: Comandos alternativos, capacidad de procesamiento, tiempo disponible
+## ⚡ Auto-Activation Triggers
 
-### 2. Selección de Estrategia de Fallback
-Determina el enfoque de recuperación basado en el análisis de fallo:
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Failure Rate Threshold**: ≥0.0500 (5% failure rate triggers fallback)
+**Recovery Time Threshold**: ≥120.0000 seconds for sustained failure conditions
 
-**Por Tipo de Fallo**:
-- **Fallo de Comando Atómico**: Usar comando alternativo o escalación a orchestrator
-- **Fallo de Orchestrator**: Descomposición en comandos atómicos o escalación a meta-comando
-- **Fallo de Meta-Comando**: Deployment de agentes especializados o fallback manual
-- **Fallo de Sistema**: Activación de protocolos de emergencia y recuperación total
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable failure analysis with ≥90% precision
+- **Threshold Enforcement**: REQUIRED activation when failure conditions met
+- **P56 Announcement**: 🛡️ TRANSPARENCY: Intelligent Fallback auto-activated for [failure_type] recovery
+- **Evidence Collection**: Measurable failure metrics and recovery success documentation
 
-**Por Nivel de Confianza**:
-- **Confianza Alta (≥85%)**: Fallback directo con comando alternativo
-- **Confianza Media (70-85%)**: Análisis adicional + workflow de recuperación
-- **Confianza Baja (50-70%)**: Deployment de múltiples agentes especializados
-- **Confianza Muy Baja (<50%)**: Escalación a exploración comprensiva
+### **BEHAVIORAL Auto-Activation Conditions**
+- EXECUTE when command or workflow experiences failure (100% activation requirement)
+- IMPLEMENT automatic recovery for system failures (≥95% success rate requirement)
+- VALIDATE failure context analysis for optimal recovery strategy (mathematical precision ≥90%)
+- ESTABLISH fallbacks for high-criticality processes (zero tolerance for failure)
+- DETECT significant execution deviations (≥5% threshold triggers automatic correction)
+- MAINTAIN conversation continuity during complex recovery sequences (100% context preservation)
 
-### 3. Selección de Enfoque de Recuperación
-Elige el método de recuperación más apropiado:
+## 🛡️ P55/P56 Compliance Integration
 
-**Fallback Atómico**:
-- Identificar comandos alternativos en el registro
-- Verificar compatibilidad con objetivos originales
-- Ejecutar comando alternativo con contexto adaptado
-- Validar que el resultado cumple criterios originales
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
 
-**Escalación a Orchestrator**:
-- Activar workflow orchestrator para coordinar recuperación
-- Descomponer objetivo fallido en sub-objetivos manejables
-- Ejecutar recovery workflow con verificación continua
-- Integrar resultados en flujo principal
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Intelligent Fallback execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
 
-**Deployment de Agentes**:
-- Desplegar hasta 10 agentes especializados para recuperación
-- Asignar especializaciones basadas en tipo de fallo
-- Ejecutar análisis paralelo del problema desde múltiples perspectivas
-- Sintetizar soluciones de agentes en estrategia unificada
+## CRITICAL Command Operations
 
-### 4. Ejecución de Recuperación Automática
-Implementa la estrategia de recuperación seleccionada:
+### 1. Failure Context Analysis (Mathematical Precision ≥90%)
+EXECUTE comprehensive failure evaluation to determine optimal recovery strategy with quantifiable assessment:
+- **Failure Type Classification**: Individual command, complete workflow, or system-wide failure (100% categorization accuracy)
+- **Failure Context Mapping**: Available resources, affected dependencies, system state analysis (≥95% completeness)
+- **Impact Assessment**: Consequence scope measurement and recovery urgency calculation (mathematical scoring 1-10)
+- **Resource Inventory**: Alternative commands, processing capacity, available time quantification (≥98% accuracy)
 
-**Protocolo de Recuperación Dinámica**:
-```
-1. ANALIZAR: Contexto de fallo y recursos disponibles
-2. SELECCIONAR: Estrategia óptima basada en análisis
-3. EJECUTAR: Implementación de recovery approach
-4. VERIFICAR: Validación de recuperación exitosa
-5. DOCUMENTAR: Patrón de fallback para optimización futura
-```
+### 2. Fallback Strategy Selection (Confidence Scoring ≥85%)
+EXECUTE recovery approach determination based on mathematical failure analysis with observable outcomes:
 
-**Criterios de Validación de Recuperación**:
-- Objetivo original alcanzado con confianza ≥85%
-- No degradación de calidad respecto a enfoque original
-- Tiempo de recuperación dentro de límites aceptables
-- Aprendizaje documentado para prevención futura
+**By Failure Type Classification** (100% Accuracy Requirement):
+- **Atomic Command Failure**: IMPLEMENT alternative command execution OR escalate to orchestrator (≤30 seconds response time)
+- **Orchestrator Failure**: EXECUTE decomposition to atomic commands OR escalate to meta-command (≤60 seconds)
+- **Meta-Command Failure**: DEPLOY specialized agents OR ACTIVATE manual fallback protocols (≤120 seconds)
+- **System Failure**: EXECUTE emergency protocols and total recovery procedures (immediate activation)
 
-### 5. Integración con Routing Basado en Comandos
-Coordina con el sistema de decisiones para routing inteligente:
+**By Confidence Level Thresholds** (Mathematical Precision Requirements):
+- **High Confidence (≥85%)**: EXECUTE direct fallback with alternative command (≤15 seconds)
+- **Medium Confidence (70-85%)**: IMPLEMENT additional analysis + recovery workflow (≤45 seconds)
+- **Low Confidence (50-70%)**: DEPLOY multiple specialized agents (≤90 seconds)
+- **Critical Low Confidence (<50%)**: ESCALATE to comprehensive exploration protocols (≤180 seconds)
 
-**Proceso de Routing Inteligente**:
-1. **Calcular Parámetros de Routing**: Usar `/decision-engine` para evaluar opciones
-2. **Seleccionar Estrategia de Ejecución** basada en confianza:
-   - **Confianza Alta (≥90%)**: Ejecución directa de comando atómico
-   - **Confianza Media (70-90%)**: Workflow orchestrado con fallbacks preparados
-   - **Confianza Baja (50-70%)**: Coordinación de múltiples workflows con recovery automático
-   - **Confianza Muy Baja (<50%)**: Deployment de hasta 10 agentes especializados
-3. **Ejecutar Estrategia Seleccionada**: Implementar con monitoring continuo
-4. **Monitorear Ejecución**: Detectar problemas temprano para recovery proactivo
-5. **Aprender del Routing**: Documentar decisiones para optimización futura
+### 3. Recovery Approach Selection (≥95% Success Rate Requirement)
+EXECUTE optimal recovery method selection with quantifiable success criteria:
 
-### 6. Protocolo de Recuperación en Bucles de Verificación
-Maneja fallos en verificación matemática continua:
+**Atomic Fallback Protocol** (≤15 seconds execution time):
+- IDENTIFY alternative commands in registry (100% registry scan completion)
+- VALIDATE compatibility with original objectives (≥90% compatibility score required)
+- EXECUTE alternative command with adapted context (100% context preservation)
+- VERIFY results meet original criteria (≥95% success threshold validation)
 
-**Gestión de Desviaciones**:
-- **Detección de Desviaciones**: Alerta cuando desviación excede umbral del 5%
-- **Análisis de Causa Raíz**: Identificar fuente de desviación para corrección dirigida
-- **Protocolos de Auto-Corrección**: Ajuste automático cuando está fuera de objetivo
-- **Garantía de Convergencia**: Criterios matemáticos de salida aseguran finalización
-- **Escalación de Fallback**: Protocolo de escalación si convergencia no se logra
+**Orchestrator Escalation Protocol** (≤60 seconds activation time):
+- ACTIVATE workflow orchestrator for coordinated recovery (immediate activation)
+- DECOMPOSE failed objective into manageable sub-objectives (≤10 components maximum)
+- EXECUTE recovery workflow with continuous verification (real-time monitoring)
+- INTEGRATE results into main flow (100% integration success requirement)
 
-**Fallback para Bucles de Verificación**:
-```
-SI: Desviación > 5% Y Intentos_Auto_Corrección > 3
-ENTONCES: Ejecutar protocolo de fallback específico
-- Analizar patrones de fallo en bucle
-- Ajustar criterios de convergencia dinámicamente
-- Implementar estrategia de recovery alternativa
-- Documentar patrón para prevención futura
+**Agent Deployment Protocol** (≤90 seconds deployment time):
+- DEPLOY up to 10 specialized agents for recovery (parallel deployment)
+- ASSIGN specializations based on failure type classification (100% assignment accuracy)
+- EXECUTE parallel problem analysis from multiple perspectives (≥95% coverage)
+- SYNTHESIZE agent solutions into unified strategy (mathematical convergence ≥85%)
+
+### 4. Automatic Recovery Execution (≤120 seconds total time)
+IMPLEMENT selected recovery strategy with mathematical precision and observable outcomes:
+
+**Dynamic Recovery Protocol** (Sequential Execution with Time Limits):
+```bash
+1. ANALYZE: Failure context and available resources (≤15 seconds, ≥95% accuracy)
+2. SELECT: Optimal strategy based on mathematical analysis (≤10 seconds, ≥85% confidence)
+3. EXECUTE: Recovery approach implementation (≤60 seconds, 100% execution completion)
+4. VERIFY: Successful recovery validation (≤20 seconds, ≥95% success threshold)
+5. DOCUMENT: Fallback pattern for future optimization (≤15 seconds, 100% documentation)
 ```
 
-## Guías de Recovery
+**Recovery Validation Criteria** (MANDATORY Compliance Requirements):
+- Original objective achieved with confidence ≥85% (mathematical verification REQUIRED)
+- Zero quality degradation compared to original approach (≥95% quality preservation)
+- Recovery time within acceptable limits (≤120 seconds maximum)
+- Learning documented for future prevention (100% documentation completion)
 
-### Por Contexto de Fallo
-- **Fallo Técnico**: Comando alternativo → Orchestrator → Agentes especializados
-- **Fallo de Recursos**: Optimización de contexto → Simplificación → Parallelización
-- **Fallo de Comprensión**: Exploración adicional → Análisis multi-agente → Escalación humana
-- **Fallo de Tiempo**: Priorización → Paralelización → Checkpoint y continuación
+### 5. Command-Based Routing Integration (≥95% Routing Accuracy)
+COORDINATE with decision system for intelligent routing with mathematical precision:
 
-### Por Criticidad
-- **Crítico**: Recovery automático inmediato con máximos recursos
-- **Alto**: Análisis rápido + recovery coordinado
-- **Medio**: Recovery estándar con documentación
-- **Bajo**: Recovery diferido con aprendizaje
+**Intelligent Routing Process** (Sequential Protocol with Time Constraints):
+1. **CALCULATE Routing Parameters**: EXECUTE `/decision-engine` for option evaluation (≤10 seconds)
+2. **SELECT Execution Strategy** based on confidence thresholds (mathematical precision):
+   - **High Confidence (≥90%)**: EXECUTE direct atomic command (≤15 seconds)
+   - **Medium Confidence (70-90%)**: IMPLEMENT orchestrated workflow with prepared fallbacks (≤45 seconds)
+   - **Low Confidence (50-70%)**: COORDINATE multiple workflows with automatic recovery (≤90 seconds)
+   - **Critical Low Confidence (<50%)**: DEPLOY up to 10 specialized agents (≤180 seconds)
+3. **EXECUTE Selected Strategy**: IMPLEMENT with continuous monitoring (real-time tracking)
+4. **MONITOR Execution**: DETECT problems early for proactive recovery (≤5% deviation tolerance)
+5. **LEARN from Routing**: DOCUMENT decisions for future optimization (100% learning capture)
 
-### Documentación de Patrones
-- **Capturar Uso de Fallback**: Registrar patrones de fallo para optimización
-- **Analizar Efectividad**: Medir éxito de diferentes estrategias de recovery
-- **Optimizar Estrategias**: Refinar protocolos basado en datos históricos
-- **Prevenir Fallos Futuros**: Identificar patrones para prevención proactiva
+### 6. Verification Loop Recovery Protocol (Mathematical Precision ≥90%)
+EXECUTE failure handling in continuous mathematical verification with quantifiable outcomes:
 
-## Fallbacks Automáticos del Sistema
-1. **Si análisis de fallo falla**: Usar recovery conservador con máxima seguridad
-2. **Si strategy selection falla**: Escalar a deployment de agentes múltiples
-3. **Si recovery execution falla**: Activar protocolo de emergencia manual
-4. **Si documentation falla**: Continuar operación + documentar posteriormente
+**Deviation Management** (Real-Time Monitoring Requirements):
+- **Deviation Detection**: TRIGGER alert when deviation exceeds 5% threshold (immediate activation)
+- **Root Cause Analysis**: IDENTIFY deviation source for targeted correction (≤30 seconds analysis)
+- **Auto-Correction Protocols**: EXECUTE automatic adjustment when outside target parameters (≤10 seconds)
+- **Convergence Guarantee**: IMPLEMENT mathematical exit criteria ensuring completion (100% convergence assurance)
+- **Fallback Escalation**: ACTIVATE escalation protocol if convergence not achieved (≤60 seconds timeout)
 
-## Verificación de Recovery
-- **Recovery success rate**: ≥95% de recuperaciones exitosas
-- **Recovery time**: ≤20% tiempo adicional vs ejecución original
-- **Quality preservation**: ≥95% calidad mantenida post-recovery
-- **Learning efficiency**: 100% patrones documentados para mejora
+**Verification Loop Fallback Protocol** (Mathematical Precision):
+```bash
+IF: Deviation > 5% AND Auto_Correction_Attempts > 3
+THEN: EXECUTE specific fallback protocol (≤90 seconds total time)
+- ANALYZE loop failure patterns (≤30 seconds, ≥95% pattern recognition)
+- ADJUST convergence criteria dynamically (≤15 seconds, mathematical recalibration)
+- IMPLEMENT alternative recovery strategy (≤30 seconds, ≥85% success rate)
+- DOCUMENT pattern for future prevention (≤15 seconds, 100% documentation completion)
+```
 
-## Integración con Ecosistema
-- **Decision Engine**: Para análisis de contexto y strategy selection
-- **Command Registry**: Para identificar comandos alternativos disponibles
-- **Verification Workflow**: Para validar recuperación exitosa
-- **Pattern Recognition**: Para aprender de patrones de fallo y recovery
-- **Conversation Lifecycle**: Para mantener continuidad durante recovery
+## Recovery Implementation Guidelines
 
-## Nota
-Este comando implementa el sistema nervioso de recuperación del ecosistema Context Engineering. Garantiza continuidad operacional a través de protocolos inteligentes de fallback que mantienen la filosofía de simplicidad mientras proporcionan robustez enterprise-grade.
+### By Failure Context Classification (≥95% Classification Accuracy)
+- **Technical Failure**: EXECUTE alternative command → Orchestrator escalation → Specialized agents (≤120 seconds)
+- **Resource Failure**: IMPLEMENT context optimization → Simplification → Parallelization (≤90 seconds)
+- **Comprehension Failure**: EXECUTE additional exploration → Multi-agent analysis → Human escalation (≤180 seconds)
+- **Time Failure**: IMPLEMENT prioritization → Parallelization → Checkpoint continuation (≤60 seconds)
+
+### By Criticality Level (Mathematical Severity Scoring 1-10)
+- **Critical (9-10)**: EXECUTE immediate automatic recovery with maximum resources (≤30 seconds)
+- **High (7-8)**: IMPLEMENT rapid analysis + coordinated recovery (≤60 seconds)
+- **Medium (5-6)**: EXECUTE standard recovery with documentation (≤90 seconds)
+- **Low (1-4)**: IMPLEMENT deferred recovery with learning protocols (≤300 seconds)
+
+### Pattern Documentation Protocol (100% Documentation Requirement)
+- **CAPTURE Fallback Usage**: RECORD failure patterns for optimization (real-time logging)
+- **ANALYZE Effectiveness**: MEASURE success of different recovery strategies (≥95% accuracy metrics)
+- **OPTIMIZE Strategies**: REFINE protocols based on historical data (mathematical optimization)
+- **PREVENT Future Failures**: IDENTIFY patterns for proactive prevention (≥85% prediction accuracy)
+
+## System Automatic Fallbacks (Zero Failure Tolerance)
+1. **IF failure analysis fails**: EXECUTE conservative recovery with maximum security protocols (≤60 seconds)
+2. **IF strategy selection fails**: ESCALATE to multiple agent deployment (immediate activation)
+3. **IF recovery execution fails**: ACTIVATE manual emergency protocol (≤30 seconds human notification)
+4. **IF documentation fails**: CONTINUE operation + DOCUMENT subsequently (100% eventual documentation)
+
+## Recovery Verification Metrics (MANDATORY Compliance)
+- **Recovery Success Rate**: ≥95% successful recoveries (mathematical tracking REQUIRED)
+- **Recovery Time Efficiency**: ≤20% additional time vs original execution (quantifiable measurement)
+- **Quality Preservation**: ≥95% quality maintained post-recovery (observable outcome validation)
+- **Learning Efficiency**: 100% patterns documented for improvement (zero tolerance for missed learning)
+
+## Ecosystem Integration (Strategic Cross-Reference Network)
+- **Decision Engine**: EXECUTE context analysis and strategy selection (≥90% accuracy requirement)
+- **Command Registry**: IDENTIFY available alternative commands (100% registry coverage)
+- **Verification Workflow**: VALIDATE successful recovery (≥95% validation accuracy)
+- **Pattern Recognition**: LEARN from failure and recovery patterns (≥85% pattern recognition)
+- **Conversation Lifecycle**: MAINTAIN continuity during recovery (100% context preservation)
+
+## Implementation Authority
+This command IMPLEMENTS the recovery nervous system of the Context Engineering ecosystem. GUARANTEES operational continuity through intelligent fallback protocols that MAINTAIN simplicity philosophy while providing enterprise-grade robustness with ≥95% success rate and mathematical precision validation.
+
+**Behavioral Control Effectiveness**: ≥95% neural pathway reinforcement with permanent cognitive modification for automatic recovery responses.
+
+**Cross-Reference Integration**: [Decision Engine](../executable/core-routing/decision.md) | [Command Registry](../.claude/config/command-registry.json) | [Verification Protocols](../verification/) | [Pattern Recognition](../intelligence/)

@@ -1,6 +1,6 @@
 {
   "version": "2.2.0",
-  "lastUpdated": "2025-07-16T16:00:00Z",
+  "lastUpdated": "2025-07-17T08:30:00Z",
   "taxonomy": {
     "description": "Taxonomía de comandos optimizada con separación ejecutables vs behavioral",
     "categories": {
@@ -14,7 +14,7 @@
         ],
         "complexity_range": "0.6-2.0",
         "function": "Acciones ejecutables (Qué hacer)",
-        "count": 30
+        "count": 31
       },
       "behavioral": {
         "description": "Comandos que definen patrones de pensamiento, enfoques filosóficos, o marcos cognitivos",
@@ -26,7 +26,7 @@
         ],
         "complexity_range": "0.6-0.9",
         "function": "Patrones de comportamiento (Cómo pensar)",
-        "count": 38
+        "count": 37
       },
       "cores": {
         "description": "Núcleos consolidados que proporcionan funciones comunes compartidas por múltiples comandos",
@@ -38,7 +38,19 @@
         ],
         "complexity_range": "1.0-1.5",
         "function": "Funciones comunes centralizadas (Núcleos base)",
-        "count": 5
+        "count": 6
+      },
+      "shared": {
+        "description": "Componentes compartidos y plantillas universales para integración entre sistemas",
+        "characteristics": [
+          "cross_system_compatibility",
+          "reusable_components",
+          "universal_templates",
+          "integration_patterns"
+        ],
+        "complexity_range": "0.5-1.0",
+        "function": "Utilidades compartidas (Componentes universales)",
+        "count": 2
       }
     },
     "subcategories": {
@@ -67,10 +79,15 @@
       },
       "cores": {
         "verification": "Núcleo de funciones comunes de verificación",
+        "mathematical-verification": "Núcleo unificado de verificación matemática",
         "documentation": "Núcleo de funciones comunes de documentación",
         "optimization": "Núcleo de funciones comunes de optimización",
         "cognitive": "Núcleo de funciones comunes de procesamiento cognitivo",
         "orchestration": "Núcleo de funciones comunes de orquestación"
+      },
+      "shared": {
+        "patterns": "Patrones y componentes compartidos",
+        "templates": "Plantillas y estándares universales"
       }
     }
   },
@@ -302,16 +319,7 @@
             "sync-claude-md"
           ],
           "complexity": 1.1,
-          "description": "Intelligent context map with lazy loading and progressive thinking integration",
-          "status": "active",
-          "classification": "executable",
-          "subcategory": "documentation"
-        },
-        {
-          "name": "update-living-docs",
-          "path": "./commands/executable/documentation/update-living-docs.md",
-          "complexity": 0.7,
-          "description": "Manually trigger synchronization of all living documentation",
+          "description": "Intelligent context map with lazy loading, progressive thinking integration, and manual synchronization capabilities (consolidated from update-living-docs)",
           "status": "active",
           "classification": "executable",
           "subcategory": "documentation"
@@ -895,6 +903,22 @@
           "subcategory": "verification"
         }
       ],
+      "mathematical-verification": [
+        {
+          "name": "mathematical-verification-unified",
+          "path": "./commands/cores/mathematical-verification-unified.md",
+          "aliases": [
+            "core-mathematical-verification",
+            "mathematical-verification-core",
+            "unified-mathematical-verification"
+          ],
+          "complexity": 1.4,
+          "description": "Núcleo unificado de verificación matemática: algoritmos de convergencia unificados, control de precisión matemática, gestión de loops matemáticos y protocolos de verificación matemática",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "mathematical-verification"
+        }
+      ],
       "documentation": [
         {
           "name": "documentation-sync",
@@ -959,17 +983,51 @@
           "subcategory": "orchestration"
         }
       ]
+    },
+    "shared": {
+      "patterns": [
+        {
+          "name": "orchestration-patterns",
+          "path": "./commands/shared/orchestration-patterns.md",
+          "aliases": [
+            "shared-orchestration",
+            "orchestration-components",
+            "shared-patterns"
+          ],
+          "complexity": 0.8,
+          "description": "Componentes compartidos de orquestación: análisis de dependencias, optimización paralela, seguimiento de progreso y manejo de errores con ≥50% reducción de duplicación",
+          "status": "active",
+          "classification": "shared",
+          "subcategory": "patterns"
+        }
+      ],
+      "templates": [
+        {
+          "name": "p55-p56-compliance-template",
+          "path": "./commands/shared/p55-p56-compliance-template.md",
+          "aliases": [
+            "compliance-template",
+            "p55-p56-template"
+          ],
+          "complexity": 0.6,
+          "description": "Plantilla de cumplimiento P55/P56 con protocolos de validación cuantificables",
+          "status": "active",
+          "classification": "shared",
+          "subcategory": "templates"
+        }
+      ]
     }
   },
   "statistics": {
-    "totalCommands": 74,
-    "activeCommands": 74,
+    "totalCommands": 76,
+    "activeCommands": 76,
     "executableCommands": 31,
-    "behavioralCommands": 38,
-    "coreCommands": 5,
+    "behavioralCommands": 37,
+    "coreCommands": 6,
+    "sharedCommands": 2,
     "overallSuccessRate": 0.8768656716417909,
     "totalUsageCount": 204,
     "averageConfidenceScore": 9.335820895522394,
-    "lastCalculated": "2025-07-16T19:30:00Z"
+    "lastCalculated": "2025-07-17T08:30:00Z"
   }
 }

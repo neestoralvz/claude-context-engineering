@@ -16,10 +16,24 @@ Execute systematic knowledge discovery protocol that prioritizes existing codeba
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Knowledge Gap Threshold**: ≥0.4000 (40% missing knowledge requiring hierarchy search)
+**Discovery Time Threshold**: ≥600.0000 seconds for comprehensive knowledge search
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable knowledge completeness with ≥60% existing knowledge discovery
+- **Threshold Enforcement**: REQUIRED activation when knowledge gaps impede effective execution
+- **P56 Announcement**: 📚 TRANSPARENCY: Knowledge Hierarchy auto-activated for [topic] systematic discovery
+- **Evidence Collection**: Measurable knowledge discovery metrics and pattern documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /knowledge-hierarchy [search_topic] [scope?] [depth?]
 ```
 
@@ -36,6 +50,116 @@ Execute systematic knowledge discovery protocol that prioritizes existing codeba
 3. **Configuration Files**: Build tools, dependencies, environment setup
 4. **Test Patterns**: Existing test approaches and utilities
 5. **External Research**: Only if steps 1-4 insufficient
+
+---
+
+## 🧠 **KNOWLEDGE HIERARCHY DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Knowledge Discovery**
+
+```mermaid
+graph TD
+    A[Knowledge Discovery Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Knowledge Processing]
+    B -->|No| D[Standard Knowledge Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Knowledge Discovery]
+    
+    D --> H{Search Scope Assessment}
+    H -->|Complete| I[Full Hierarchy Search]
+    H -->|Partial| J[REQUIRED: Scope Expansion]
+    
+    F --> K[Task Tool: Complex Knowledge Discovery]
+    K --> L[P56: Advanced Knowledge Coordination]
+    
+    G --> M[Phase 1: Internal Documentation]
+    M --> N[Read Tool: Load Documentation]
+    N --> O[Read Tool: Load Code Patterns]
+    
+    I --> P[Phase 1: Internal Search]
+    P --> Q[Read Tool: Systematic Codebase Search]
+    Q --> R[Edit Tool: Document Findings]
+    
+    J --> S[Read Tool: Load Search Context]
+    S --> T[Edit Tool: Expand Scope]
+    T --> I
+    
+    O --> U{Coverage Assessment}
+    U -->|≥75%| V[Internal Search Complete]
+    U -->|<75%| W[Phase 2: Gap Analysis]
+    
+    R --> X{Internal Coverage}
+    X -->|≥90%| Y[Excellent Internal Coverage]
+    X -->|75-90%| Z[Good Internal Coverage]
+    X -->|<75%| AA[REQUIRED: External Research]
+    
+    W --> BB[Read Tool: Load Gap Patterns]
+    BB --> CC[Edit Tool: Document Gaps]
+    CC --> DD[Bash Tool: Gap Prioritization]
+    
+    Y --> EE[Edit Tool: Document Reuse Opportunities]
+    EE --> FF[P56: Knowledge Discovery Success]
+    
+    Z --> GG[Edit Tool: Document Hybrid Approach]
+    GG --> HH[Bash Tool: Integration Planning]
+    HH --> II[P56: Hybrid Knowledge Success]
+    
+    AA --> JJ[Phase 3: External Research]
+    JJ --> KK[Read Tool: Load External Sources]
+    KK --> LL[Edit Tool: Integrate External]
+    
+    DD --> MM{Critical Gaps?}
+    MM -->|Yes| JJ
+    MM -->|No| NN[Edit Tool: Document Partial Solution]
+    
+    LL --> OO[Bash Tool: Knowledge Integration]
+    OO --> PP[Edit Tool: Update Knowledge Base]
+    PP --> QQ[P56: External Research Complete]
+    
+    NN --> RR[P56: Partial Knowledge Success]
+    
+    L --> SS[Agent Knowledge Results]
+    SS --> TT[P56: Expert Knowledge Complete]
+    
+    FF --> UU[Knowledge Discovery Metrics]
+    II --> UU
+    QQ --> UU
+    RR --> UU
+    TT --> UU
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style AA fill:#ffe66d
+    style MM fill:#ff8b94
+    style UU fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+knowledge_hierarchy_transparency:
+  search_assessment:
+    announcement: "🔍 TRANSPARENCY: Knowledge search scope [COMPLETE/PARTIAL] - [X]% coverage expected"
+    evidence: "Search scope analysis with coverage prediction"
+    
+  internal_discovery:
+    announcement: "📚 TRANSPARENCY: Internal coverage [X]% - [EXCELLENT/GOOD/EXTERNAL_REQUIRED]"
+    evidence: "Systematic internal search results with coverage metrics"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [knowledge_operation]"
+    evidence: "Tool selection matrix with knowledge-specific reasoning"
+    
+  gap_analysis:
+    announcement: "📊 TRANSPARENCY: Knowledge gaps [X] identified - [CRITICAL/MANAGEABLE] priority"
+    evidence: "Gap analysis with prioritization and external research requirements"
+    
+  knowledge_integration:
+    announcement: "🔄 TRANSPARENCY: Knowledge integration [SUCCESS/PARTIAL] - [X] patterns added"
+    evidence: "Complete knowledge integration results with organizational learning"
+```
 
 ---
 
@@ -177,19 +301,19 @@ function validateSearchCompleteness(findings, topic) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Feature Implementation Search**
-```
+```text
 /knowledge-hierarchy "user authentication" "backend" "comprehensive"
 ```
 **Result**: Discovers existing auth utilities, session management patterns, user models, test approaches
 
 ### **Technology Integration Search**
-```
+```text
 /knowledge-hierarchy "database optimization" "performance" "deep"
 ```
 **Result**: Finds existing ORM patterns, query optimization utilities, performance test setups
 
 ### **Pattern Discovery Search**
-```
+```text
 /knowledge-hierarchy "error handling" "frontend" "patterns"
 ```
 **Result**: Discovers error boundary patterns, API error handling, user notification systems

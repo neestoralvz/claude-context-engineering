@@ -54,51 +54,160 @@
 
 ---
 
+## 🧠 **SYSTEM REORGANIZATION DECISION TREE**
+
+### **CRITICAL Cognitive Flow for System Reorganization**
+
+```mermaid
+graph TD
+    A[System Reorganization Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Reorganization Processing]
+    B -->|No| D[Standard Reorganization Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Reorganization Execution]
+    
+    D --> H{Reorganization Scope}
+    H -->|System-wide| I[Complete System Restructure]
+    H -->|Nomenclature| J[Nomenclature Standardization]
+    H -->|Validation| K[Structure Validation Only]
+    
+    F --> L[Task Tool: Complex Reorganization]
+    L --> M[P56: Advanced Reorganization Coordination]
+    
+    G --> N{Current Structure Assessment}
+    N -->|Well-organized| O[Enhancement Approach]
+    N -->|Poorly-organized| P[CRITICAL: Full Restructure]
+    
+    I --> Q[Phase 1: Analysis & Planning]
+    Q --> R[Read Tool: Content Inventory]
+    R --> S[Bash Tool: Pattern Assessment]
+    
+    J --> T[Read Tool: Load Nomenclature Standards]
+    T --> U[Edit Tool: Apply Technical Standards]
+    
+    K --> V[Read Tool: Load Validation Patterns]
+    V --> W[Bash Tool: Structure Validation]
+    
+    O --> X[Read Tool: Load Enhancement Patterns]
+    X --> Y[Edit Tool: Document Improvements]
+    
+    P --> Z[Read Tool: Load Restructure Patterns]
+    Z --> AA[Edit Tool: Design New Structure]
+    
+    S --> BB{Assessment Complete?}
+    BB -->|Yes| CC[Phase 2: Structure Implementation]
+    BB -->|No| DD[REQUIRED: Extended Analysis]
+    
+    CC --> EE[Bash Tool: Directory Creation]
+    EE --> FF[Edit Tool: File Movement Strategy]
+    
+    DD --> GG[Read Tool: Load Extended Patterns]
+    GG --> HH[Edit Tool: Document Extended Analysis]
+    HH --> BB
+    
+    FF --> II{Movement Strategy Valid?}
+    II -->|Yes| JJ[Phase 3: Reference Updates]
+    II -->|No| KK[REQUIRED: Strategy Refinement]
+    
+    JJ --> LL[Edit Tool: Registry Updates]
+    LL --> MM[Bash Tool: Validation Steps]
+    
+    KK --> NN[Read Tool: Load Strategy Patterns]
+    NN --> OO[Edit Tool: Refine Strategy]
+    OO --> II
+    
+    MM --> PP{Validation Success?}
+    PP -->|Yes| QQ[Phase 4: Quality Assurance]
+    PP -->|No| RR[CRITICAL: Validation Failure]
+    
+    QQ --> SS[Bash Tool: Nomenclature Verification]
+    SS --> TT[Edit Tool: Documentation Update]
+    
+    RR --> UU[Read Tool: Load Recovery Patterns]
+    UU --> VV[Edit Tool: Recovery Strategy]
+    VV --> WW[Bash Tool: Recovery Execution]
+    WW --> PP
+    
+    U --> XX[Bash Tool: Nomenclature Validation]
+    XX --> YY[P56: Nomenclature Success]
+    
+    W --> ZZ[P56: Validation Success]
+    
+    Y --> AAA[Bash Tool: Enhancement Validation]
+    AAA --> BBB[P56: Enhancement Success]
+    
+    TT --> CCC[Bash Tool: Final Validation]
+    CCC --> DDD[P56: Full Reorganization Success]
+    
+    M --> EEE[Agent Reorganization Results]
+    EEE --> FFF[P56: Expert Reorganization Complete]
+    
+    YY --> GGG[Reorganization Quality Metrics]
+    ZZ --> GGG
+    BBB --> GGG
+    DDD --> GGG
+    FFF --> GGG
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style P fill:#ffe66d
+    style RR fill:#ff8b94
+    style GGG fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+**MANDATORY P56 Reorganization Transparency Requirements:**
+
+**Scope Assessment Transparency**: REQUIRED announcement "🔍 TRANSPARENCY: Reorganization scope [SYSTEM-WIDE/NOMENCLATURE/VALIDATION] - [X] components affected" with complete scope analysis and impact assessment evidence.
+
+**Structure Analysis Transparency**: REQUIRED announcement "📊 TRANSPARENCY: Structure assessment [WELL/POORLY] organized - [X] issues identified" with detailed structure analysis and organizational quality metrics evidence.
+
+**Tool Selection Transparency**: REQUIRED announcement "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [reorganization_operation]" with tool selection matrix and reorganization-specific reasoning evidence.
+
+**Phase Progression Transparency**: REQUIRED announcement "📈 TRANSPARENCY: Phase [X] [COMPLETE/FAILED] - [ANALYSIS/IMPLEMENTATION/UPDATES/ASSURANCE]" with phase completion status and validation results evidence.
+
+**Quality Assurance Transparency**: REQUIRED announcement "✅ TRANSPARENCY: Quality assurance [SUCCESS/FAILURE] - [X]% compliance achieved" with complete quality metrics and compliance validation evidence.
+
+---
+
 ## 🔧 Technical Standards
 
 ### **Nomenclature Standards**
 
-#### **Language and Format**
+****Language and Format****
 - **Primary Language**: English (international standard)
 - **Format**: lowercase-kebab-case
 - **Separators**: Hyphen (-) only
 - **Length**: ≤25 characters per segment
 - **Descriptiveness**: Clear functional purpose
 
-#### **Naming Conventions**
-```yaml
-# Directory Names
-pattern: "##-functional-category"
-examples:
-  - "01-core-intelligence"
-  - "02-verify-mathematics"
-  - "03-discovery-exploration"
+****Naming Conventions****
+**Directory Naming Requirements:**
+- **REQUIRED Pattern**: "##-functional-category" format
+- **Examples**: "01-core-intelligence", "02-verify-mathematics", "03-discovery-exploration"
 
-# File Names
-pattern: "descriptive-function.md"
-examples:
-  - "reorganize-system.md"
-  - "verify-mathematics.md"
-  - "optimize-context.md"
+**File Naming Requirements:**
+- **REQUIRED Pattern**: "descriptive-function.md" format
+- **Examples**: "reorganize-system.md", "verify-mathematics.md", "optimize-context.md"
 
-# Avoid
-- Mixed languages: "exploracion-first.md"
-- Inconsistent separators: "system_reorganization.md"
-- Excessive length: "comprehensive-verify-mathematics-loops.md"
-```
+**FORBIDDEN Patterns:**
+- **Mixed languages**: "exploracion-first.md" - CRITICAL violation
+- **Inconsistent separators**: "system_reorganization.md" - REQUIRED consistency
+- **Excessive length**: "comprehensive-verify-mathematics-loops.md" - MANDATORY brevity
 
-#### **Technical Vocabulary**
-```yaml
-preferred_terms:
-  - "system" (not "sistema")
-  - "verification" (not "verificacion")
-  - "optimization" (not "optimizacion")
-  - "orchestration" (not "orquestacion")
-  - "intelligence" (not "inteligencia")
-  - "architecture" (not "arquitectura")
-  - "methodology" (not "metodologia")
-  - "automation" (not "automatizacion")
-```
+### **Technical Vocabulary**
+**MANDATORY Technical Vocabulary Standards:**
+- **REQUIRED**: "system" (FORBIDDEN: "sistema")
+- **REQUIRED**: "verification" (FORBIDDEN: "verificacion")
+- **REQUIRED**: "optimization" (FORBIDDEN: "optimizacion")
+- **REQUIRED**: "orchestration" (FORBIDDEN: "orquestacion")
+- **REQUIRED**: "intelligence" (FORBIDDEN: "inteligencia")
+- **REQUIRED**: "architecture" (FORBIDDEN: "arquitectura")
+- **REQUIRED**: "methodology" (FORBIDDEN: "metodologia")
+- **REQUIRED**: "automation" (FORBIDDEN: "automatizacion")
 
 ---
 
@@ -106,56 +215,56 @@ preferred_terms:
 
 ### **8 Thematic Groups**
 
-#### **01-core-intelligence/**
+****01-core-intelligence/****
 **Purpose**: Foundational intelligence and system philosophy
 - Meta-principles and core concepts
 - Intelligence evolution and orchestration
 - Decision-making frameworks
 - Autonomous execution patterns
 
-#### **02-verify-mathematics/**
+****02-verify-mathematics/****
 **Purpose**: Mathematical rigor and continuous verification
 - Confidence scoring and mathematical validation
 - Verification loops and convergence
 - Complexity and threshold enforcement
 - System integrity monitoring
 
-#### **03-discovery-exploration/**
+****03-discovery-exploration/****
 **Purpose**: Systematic discovery and pattern recognition
 - Exploration-first methodologies
 - Pattern recognition and crystallization
 - Objective decomposition strategies
 - Discovery workflow orchestration
 
-#### **04-orchestration-flow/**
+****04-orchestration-flow/****
 **Purpose**: Process coordination and execution management
 - Multi-agent orchestration
 - Parallel execution optimization
 - Git workflow strategies
 - Intelligent fallback mechanisms
 
-#### **05-optimize-context/**
+****05-optimize-context/****
 **Purpose**: Resource efficiency and context management
 - Context economy and optimization
 - Single source of truth principles
 - Complexity reduction strategies
 - Resource allocation optimization
 
-#### **06-system-architecture/**
+### **06-system-architecture/**
 **Purpose**: System structure and evolutionary design
 - Organizational architecture patterns
 - Evolution-ready design principles
 - Living documentation systems
 - Modular composition strategies
 
-#### **07-development-methodology/**
+### **07-development-methodology/**
 **Purpose**: Development best practices and methodologies
 - Test-driven development
 - Planning and documentation strategies
 - Development workflow optimization
 - Invisible excellence principles
 
-#### **08-automation-tools/**
+### **08-automation-tools/**
 **Purpose**: Tools and automation systems
 - Command relationship mapping
 - Decision trees and routing
@@ -168,7 +277,7 @@ preferred_terms:
 
 ### **Phase 1: Analysis & Planning**
 
-#### **1.1 Content Inventory**
+****1.1 Content Inventory****
 ```bash
 # Identify all existing commands
 find .claude/commands/ -name "*.md" -type f | sort
@@ -180,79 +289,64 @@ ls -la .claude/commands/
 grep -c "\"name\":" .claude/config/command-registry.json
 ```
 
-#### **1.2 Pattern Assessment**
+### **1.2 Pattern Assessment**
 - **Naming Inconsistencies**: Mixed languages, formats, separators
 - **Organizational Issues**: Scattered functionality, unclear grouping
 - **Documentation Gaps**: Missing or outdated documentation
 - **Reference Problems**: Broken links, incorrect paths
 
-#### **1.3 Categorization Strategy**
-```yaml
-analysis_criteria:
-  - Primary function (core purpose)
-  - Technical domain (area of expertise)
-  - Usage frequency (common vs specialized)
-  - Dependencies (integration requirements)
-  - Complexity level (simple vs complex)
-```
+### **1.3 Categorization Strategy**
+**CRITICAL Analysis Criteria Requirements:**
+- **Primary function**: MANDATORY core purpose identification
+- **Technical domain**: REQUIRED area of expertise classification
+- **Usage frequency**: CRITICAL common vs specialized determination
+- **Dependencies**: MANDATORY integration requirements mapping
+- **Complexity level**: REQUIRED simple vs complex categorization
 
 ### **Phase 2: Structure Implementation**
 
-#### **2.1 Directory Creation**
+****2.1 Directory Creation****
 ```bash
 # Create 8 thematic groups
 mkdir -p 01-core-intelligence 02-verify-mathematics 03-discovery-exploration 04-orchestration-flow 05-optimize-context 06-system-architecture 07-development-methodology 08-automation-tools
 ```
 
-#### **2.2 File Movement Strategy**
-```yaml
-movement_priorities:
-  1. Core commands (most foundational)
-  2. Workflow orchestrators (process coordination)
-  3. Specialized tools (domain-specific)
-  4. Documentation files (reference materials)
-  5. Configuration files (system settings)
-```
+### **2.2 File Movement Strategy**
+**MANDATORY File Movement Priority Sequence:**
+1. **Core commands** - CRITICAL foundational components (highest priority)
+2. **Workflow orchestrators** - REQUIRED process coordination systems
+3. **Specialized tools** - MANDATORY domain-specific functionality
+4. **Documentation files** - REQUIRED reference materials
+5. **Configuration files** - CRITICAL system settings (systematic completion)
 
-#### **2.3 Integration Mapping**
-```yaml
-integration_patterns:
-  atomic_commands:
-    source: "atomic/##-grupo/"
-    destination: "##-english-group/"
-    
-  orchestrators:
-    source: "orchestrators/"
-    destination: "group by primary function"
-    
-  meta_commands:
-    source: "meta/"
-    destination: "01-core-intelligence/"
-    
-  system_commands:
-    source: "system/"
-    destination: "group by technical domain"
-```
+### **2.3 Integration Mapping**
+**CRITICAL Integration Pattern Requirements:**
+
+**Atomic Commands Integration**: MANDATORY migration from "atomic/##-grupo/" source to "##-english-group/" destination with complete nomenclature standardization.
+
+**Orchestrators Integration**: REQUIRED migration from "orchestrators/" source to destination grouped by primary function classification.
+
+**Meta Commands Integration**: CRITICAL migration from "meta/" source to "01-core-intelligence/" destination with foundational command consolidation.
+
+**System Commands Integration**: MANDATORY migration from "system/" source to destination grouped by technical domain expertise.
 
 ### **Phase 3: Reference Updates**
 
-#### **3.1 Registry Updates**
+****3.1 Registry Updates****
 ```bash
 # Update command-registry.json paths
 # Pattern: "./commands/old-path/" → "./commands/new-path/"
 # Preserve all metrics and metadata
 ```
 
-#### **3.2 Documentation Synchronization**
-```yaml
-update_targets:
-  - README.md (main documentation)
-  - CLAUDE.md (context mapping)
-  - Individual command files (cross-references)
-  - Template files (examples and guides)
-```
+### **3.2 Documentation Synchronization**
+**MANDATORY Documentation Update Targets:**
+- **README.md**: CRITICAL main documentation synchronization
+- **CLAUDE.md**: REQUIRED context mapping updates
+- **Individual command files**: MANDATORY cross-reference corrections
+- **Template files**: REQUIRED examples and guides standardization
 
-#### **3.3 Validation Steps**
+****3.3 Validation Steps****
 ```bash
 # Verify file counts
 find .claude/commands/ -name "*.md" | wc -l
@@ -266,69 +360,57 @@ grep -c "\"name\":" .claude/config/command-registry.json
 
 ### **Phase 4: Quality Assurance**
 
-#### **4.1 Nomenclature Verification**
-```yaml
-verification_checklist:
-  - All directories use lowercase-kebab-case
-  - All files use descriptive-function.md format
-  - No mixed language combinations
-  - Consistent technical vocabulary
-  - Appropriate length constraints
-```
+### **4.1 Nomenclature Verification**
+**CRITICAL Nomenclature Verification Requirements:**
+- **MANDATORY**: All directories use lowercase-kebab-case format
+- **REQUIRED**: All files use descriptive-function.md format
+- **FORBIDDEN**: Mixed language combinations (zero tolerance)
+- **REQUIRED**: Consistent technical vocabulary implementation
+- **MANDATORY**: Appropriate length constraints compliance
 
-#### **4.2 Organizational Validation**
-```yaml
-organization_checks:
-  - Each command in appropriate thematic group
-  - Related commands grouped together
-  - Clear functional separation
-  - Logical hierarchical structure
-  - Scalable growth patterns
-```
+### **4.2 Organizational Validation**
+**MANDATORY Organizational Validation Requirements:**
+- **CRITICAL**: Each command in appropriate thematic group placement
+- **REQUIRED**: Related commands grouped together systematically
+- **MANDATORY**: Clear functional separation maintenance
+- **REQUIRED**: Logical hierarchical structure implementation
+- **CRITICAL**: Scalable growth patterns establishment
 
-#### **4.3 Integration Testing**
-```yaml
-integration_tests:
-  - All registry paths resolve correctly
-  - Cross-references work properly
-  - Documentation links are valid
-  - Workflows function as expected
-  - Metrics are preserved
-```
+### **4.3 Integration Testing**
+**CRITICAL Integration Testing Requirements:**
+- **MANDATORY**: All registry paths resolve correctly (100% accuracy)
+- **REQUIRED**: Cross-references work properly (complete functionality)
+- **CRITICAL**: Documentation links are valid (zero broken links)
+- **MANDATORY**: Workflows function as expected (full operational capacity)
+- **REQUIRED**: Metrics are preserved (complete data integrity)
 
 ---
 
 ## 📊 Quality Metrics
 
 ### **Nomenclature Compliance**
-```yaml
-success_criteria:
-  - 100% English technical vocabulary
-  - 100% lowercase-kebab-case format
-  - 0% mixed language combinations
-  - ≤25 character length compliance
-  - Clear functional descriptiveness
-```
+**MANDATORY Nomenclature Success Criteria:**
+- **CRITICAL**: 100% English technical vocabulary compliance
+- **REQUIRED**: 100% lowercase-kebab-case format adherence
+- **FORBIDDEN**: 0% mixed language combinations (absolute requirement)
+- **MANDATORY**: ≤25 character length compliance (strict enforcement)
+- **REQUIRED**: Clear functional descriptiveness validation
 
 ### **Organizational Efficiency**
-```yaml
-efficiency_metrics:
-  - Logical grouping coherence (>95%)
-  - Cross-group dependency clarity (>90%)
-  - Navigation time reduction (>50%)
-  - Search efficiency improvement (>60%)
-  - Maintenance complexity reduction (>40%)
-```
+**CRITICAL Organizational Efficiency Requirements:**
+- **MANDATORY**: Logical grouping coherence >95% achievement
+- **REQUIRED**: Cross-group dependency clarity >90% implementation
+- **CRITICAL**: Navigation time reduction >50% improvement
+- **MANDATORY**: Search efficiency improvement >60% enhancement
+- **REQUIRED**: Maintenance complexity reduction >40% optimization
 
 ### **System Integrity**
-```yaml
-integrity_measures:
-  - Registry path accuracy (100%)
-  - Documentation synchronization (100%)
-  - Cross-reference validity (100%)
-  - Workflow continuity (100%)
-  - Metric preservation (100%)
-```
+**MANDATORY System Integrity Requirements:**
+- **CRITICAL**: Registry path accuracy 100% compliance
+- **REQUIRED**: Documentation synchronization 100% achievement
+- **MANDATORY**: Cross-reference validity 100% functionality
+- **CRITICAL**: Workflow continuity 100% operational capacity
+- **REQUIRED**: Metric preservation 100% data integrity
 
 ---
 

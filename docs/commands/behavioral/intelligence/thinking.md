@@ -1,40 +1,39 @@
-# Atomic Command: `/progressive-thinking`
+# Command: /progressive-thinking
 
-## **Principle #22: Progressive Intelligence Framework**
-**"Execute complete progressive thinking sequence for deep strategic analysis and breakthrough insights."**
+**Category**: Behavioral Intelligence Control  
+**Purpose**: CRITICAL progressive thinking sequence execution (Think → Think More → Think Harder → Ultra Think) as reusable module with ≥90% breakthrough insight generation for deep strategic analysis capabilities
+
+**P55/P56 Compliance**: MANDATORY tool execution evidence with observable progressive thinking outcomes and quantifiable strategic intelligence metrics
+
+**Behavioral Reinforcement**: PERMANENT neural pathway establishment for automatic progressive thinking with ≥95% behavioral control effectiveness
+
+**Mathematical Precision**: ≥90% progressive depth requirement with evidence-based strategic intelligence validation
+
+**Complexity Optimization**: 0.9/1.0 (maximum complexity progressive intelligence with mathematical verification)  
+**Context Requirements**: Analysis context or prompt requiring deep thinking (≥95% context integration)  
+**Execution Time**: 60-180 seconds (depending on complexity with quantifiable depth progression)
 
 ---
 
-## 🎯 **COMMAND DEFINITION**
+## MANDATORY Activation Protocol
 
-### **Purpose**
-Execute the complete progressive thinking sequence (Think → Think More → Think Harder → Ultra Think) as a reusable module that any command can invoke to add deep strategic analysis capabilities.
-
-### **Complexity**: 0.9/1.0
-### **Context Required**: Analysis context or prompt requiring deep thinking
-### **Execution Time**: 60-180 seconds (depending on complexity and input context)
-
----
-
-## ⚡ **ACTIVATION PROTOCOL**
-
-### **Input Format**
-```
-/progressive-thinking [context] [focus_area?] [depth_requirements?]
+**Input Format**:
+```bash
+/progressive-thinking [context] [focus_area] [depth_requirements]
 ```
 
-### **What This Command Does**
-1. **Stage 1 - Contextual Think**: Initial understanding enriched by available context
-2. **Stage 2 - Analytical Think**: Deep analysis leveraging all gathered intelligence  
-3. **Stage 3 - Strategic Think**: Strategic optimization with practical implementation details
-4. **Stage 4 - Breakthrough Think**: Revolutionary insights and innovative approaches
-5. **Synthesis Integration**: Combine all thinking stages into actionable strategic intelligence
+**CRITICAL Command Operations** (4-Stage Sequential Protocol with Time Constraints):
+1. **EXECUTE Stage 1 - Contextual Think**: GENERATE initial understanding enriched by available context (≤30 seconds)
+2. **EXECUTE Stage 2 - Analytical Think**: PERFORM deep analysis leveraging all gathered intelligence (≤45 seconds)
+3. **EXECUTE Stage 3 - Strategic Think**: DEVELOP strategic optimization with practical implementation details (≤60 seconds)
+4. **EXECUTE Stage 4 - Breakthrough Think**: CREATE revolutionary insights and innovative approaches (≤45 seconds)
+5. **SYNTHESIZE Integration**: COMBINE all thinking stages into actionable strategic intelligence (≤30 seconds)
 
-### **Mandatory Requirements**
-- **Complete Sequence**: Always execute all 4 thinking stages
-- **Progressive Depth**: Each stage builds meaningfully on previous insights
-- **Context Integration**: Leverage provided context throughout progression
-- **Strategic Output**: Generate actionable strategic intelligence
+**MANDATORY Requirements** (Zero Tolerance for Deviation):
+- **Complete Sequence**: EXECUTE all 4 thinking stages (100% completion requirement)
+- **Progressive Depth**: BUILD meaningfully on previous insights (≥90% depth progression)
+- **Context Integration**: LEVERAGE provided context throughout progression (≥95% integration)
+- **Strategic Output**: GENERATE actionable strategic intelligence (≥85% actionability score)
 
 ---
 
@@ -68,415 +67,193 @@ progressive_thinking_framework:
     output: "Breakthrough insights + Comprehensive verification framework"
 ```
 
-### **Thinking Integration Engine**
+## 🧠 **PROGRESSIVE THINKING DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Progressive Thinking**
+
+```mermaid
+graph TD
+    A[Progressive Thinking Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Progressive Processing]
+    B -->|No| D[Standard Progressive Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Progressive Execution]
+    
+    D --> H{Context Integration Assessment}
+    H -->|≥95%| I[Full 4-Stage Progression]
+    H -->|<95%| J[REQUIRED: Context Enhancement]
+    
+    F --> K[Task Tool: Complex Progressive Coordination]
+    K --> L[P56: Advanced Progressive Intelligence]
+    
+    G --> M[Stage 1: Contextual Think]
+    M --> N[Read Tool: Load Context Patterns]
+    N --> O[Edit Tool: Strategic Understanding]
+    
+    I --> P[Stage 1: Contextual Think]
+    P --> Q[Read Tool: Load Available Context]
+    Q --> R[Edit Tool: Context-Enriched Analysis]
+    
+    J --> S[Read Tool: Load Context Enhancement]
+    S --> T[Edit Tool: Enhanced Context Integration]
+    T --> U[Bash Tool: Context Validation]
+    U --> H
+    
+    O --> V{Stage 1 Complete?}
+    V -->|Yes| W[Stage 2: Analytical Think]
+    V -->|No| X[REQUIRED: Stage 1 Enhancement]
+    
+    R --> Y{Contextual Understanding ≥95%?}
+    Y -->|Yes| Z[Stage 2: Analytical Think]
+    Y -->|No| AA[REQUIRED: Contextual Enhancement]
+    
+    W --> BB[Read Tool: Load Analysis Patterns]
+    BB --> CC[Edit Tool: Strategic Analysis]
+    
+    Z --> DD[Read Tool: Load Intelligence Patterns]
+    DD --> EE[Edit Tool: Deep Analysis]
+    
+    X --> FF[Read Tool: Load Enhancement Patterns]
+    FF --> GG[Edit Tool: Enhanced Stage 1]
+    GG --> V
+    
+    AA --> HH[Read Tool: Load Context Patterns]
+    HH --> II[Edit Tool: Context Integration]
+    II --> Y
+    
+    CC --> JJ{Stage 2 Complete?}
+    JJ -->|Yes| KK[Stage 3: Strategic Think]
+    JJ -->|No| LL[REQUIRED: Stage 2 Enhancement]
+    
+    EE --> MM{Analysis Depth ≥90%?}
+    MM -->|Yes| NN[Stage 3: Strategic Think]
+    MM -->|No| OO[REQUIRED: Analysis Enhancement]
+    
+    KK --> PP[Read Tool: Load Strategic Patterns]
+    PP --> QQ[Edit Tool: Strategic Implementation]
+    
+    NN --> RR[Read Tool: Load Implementation Patterns]
+    RR --> SS[Edit Tool: Strategic Execution Plan]
+    
+    LL --> TT[Read Tool: Load Analysis Enhancement]
+    TT --> UU[Edit Tool: Enhanced Analysis]
+    UU --> JJ
+    
+    OO --> VV[Read Tool: Load Depth Enhancement]
+    VV --> WW[Edit Tool: Enhanced Deep Analysis]
+    WW --> MM
+    
+    QQ --> XX{Stage 3 Complete?}
+    XX -->|Yes| YY[Stage 4: Breakthrough Think]
+    XX -->|No| ZZ[REQUIRED: Stage 3 Enhancement]
+    
+    SS --> AAA{Strategic Planning ≥90%?}
+    AAA -->|Yes| BBB[Stage 4: Breakthrough Think]
+    AAA -->|No| CCC[REQUIRED: Strategic Enhancement]
+    
+    YY --> DDD[Read Tool: Load Breakthrough Patterns]
+    DDD --> EEE[Edit Tool: Revolutionary Insights]
+    
+    BBB --> FFF[Read Tool: Load Innovation Patterns]
+    FFF --> GGG[Edit Tool: Breakthrough Innovation]
+    
+    ZZ --> HHH[Read Tool: Load Strategic Enhancement]
+    HHH --> III[Edit Tool: Enhanced Strategic Plan]
+    III --> XX
+    
+    CCC --> JJJ[Read Tool: Load Planning Enhancement]
+    JJJ --> KKK[Edit Tool: Enhanced Planning]
+    KKK --> AAA
+    
+    EEE --> LLL{Stage 4 Complete?}
+    LLL -->|Yes| MMM[Synthesis Integration]
+    LLL -->|No| NNN[REQUIRED: Stage 4 Enhancement]
+    
+    GGG --> OOO{Breakthrough Insights ≥90%?}
+    OOO -->|Yes| PPP[Synthesis Integration]
+    OOO -->|No| QQQ[REQUIRED: Breakthrough Enhancement]
+    
+    MMM --> RRR[Read Tool: Load Synthesis Patterns]
+    RRR --> SSS[Edit Tool: Strategic Intelligence]
+    
+    PPP --> TTT[Read Tool: Load Integration Patterns]
+    TTT --> UUU[Edit Tool: Comprehensive Integration]
+    
+    NNN --> VVV[Read Tool: Load Stage Enhancement]
+    VVV --> WWW[Edit Tool: Enhanced Breakthrough]
+    WWW --> LLL
+    
+    QQQ --> XXX[Read Tool: Load Insight Enhancement]
+    XXX --> YYY[Edit Tool: Enhanced Breakthrough]
+    YYY --> OOO
+    
+    SSS --> ZZZ[Bash Tool: Progressive Validation]
+    ZZZ --> AAAA[P56: Progressive Thinking Success]
+    
+    UUU --> BBBB[Bash Tool: Integration Validation]
+    BBBB --> CCCC[P56: Comprehensive Progressive Success]
+    
+    L --> DDDD[Agent Progressive Results]
+    DDDD --> EEEE[P56: Expert Progressive Complete]
+    
+    AAAA --> FFFF[Progressive Thinking Metrics]
+    CCCC --> FFFF
+    EEEE --> FFFF
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style J fill:#ffe66d
+    style NNN fill:#ff8b94
+    style FFFF fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
 ```yaml
-integration_synthesis:
-  context_optimization:
-    process: "Optimize context utilization across all thinking stages"
-    validation: "Ensure context informs each progressive thinking stage effectively"
-    output: "Context-optimized thinking progression"
+progressive_thinking_transparency:
+  stage_progression:
+    announcement: "🔍 TRANSPARENCY: Stage [X] [CONTEXTUAL/ANALYTICAL/STRATEGIC/BREAKTHROUGH] - [X]% depth achieved"
+    evidence: "Complete stage progression with depth metrics"
     
-  insight_synthesis:
-    process: "Combine insights across thinking stages for breakthrough solutions"
-    criteria: "Strategic effectiveness, innovation potential, implementation feasibility"
-    output: "Synthesized strategic intelligence with breakthrough insights"
+  context_integration:
+    announcement: "📊 TRANSPARENCY: Context integration [X]% - [STANDARD/ENHANCED] approach required"
+    evidence: "Context integration assessment with enhancement requirements"
     
-  strategic_coordination:
-    process: "Design optimal coordination strategy based on thinking progression"
-    optimization: "Maximize strategic efficiency while maintaining quality"
-    output: "Coordinated strategic execution framework"
-```
-
----
-
-## MANDATORY Script Execution Section
-
-**⚠️ BASH TOOL EXECUTION REQUIRED ⚠️**
-
-This command MANDATES real tool execution. No simulation allowed.
-
-### Mathematical Foundation Integration
-
-```bash
-# Load Context Engineering Mathematical Formulas
-source ../../../../scripts/core/path-helper.sh && source_script "scripts/formulas/context_engineering_formulas.sh"
-
-# Calculate thinking progression metrics
-contextual_depth=$(calculate_confidence 0.9 0.85 0.8)
-analytical_quality=$(calculate_complexity 4 1.3 1.2)
-strategic_planning=$(calculate_threshold_compliance $contextual_depth 0.85 "gte")
-breakthrough_insights=$(calculate_adaptive_threshold "high")
-
-echo "🧮 Mathematical Validation:"
-echo "  Contextual Depth: $contextual_depth"
-echo "  Analytical Quality: $analytical_quality"
-echo "  Strategic Planning: $strategic_planning"
-echo "  Breakthrough Insights: $breakthrough_insights"
-```
-
-### Script Integration Points
-
-1. **Mathematical Validation**: Sources `../../../scripts/formulas/context_engineering_formulas.sh`
-2. **Quality Assessment**: Executes `../../../scripts/validation/analyze-content-quality.sh`
-3. **Progressive Metrics**: Calls `../../../scripts/core/calculate-real-metrics.sh`
-4. **Compliance Check**: Runs `../../../scripts/compliance/generate-p55-compliance-report.sh`
-
-## 🔍 **MATHEMATICAL VALIDATION**
-
-### **Progressive Thinking Score**
-```javascript
-function calculateProgressiveThinking(thinking_progression) {
-  const contextual_depth = assessContextualDepth(thinking_progression.stage1)
-  const analytical_quality = assessAnalyticalQuality(thinking_progression.stage2)
-  const strategic_planning = assessStrategicPlanning(thinking_progression.stage3)
-  const breakthrough_insights = assessBreakthroughInsights(thinking_progression.stage4)
-  
-  return {
-    thinking_score: (contextual_depth * 0.2 + analytical_quality * 0.3 + 
-                     strategic_planning * 0.3 + breakthrough_insights * 0.2),
-    progressive_quality: thinking_score >= 0.85,
-    breakthrough_achieved: breakthrough_insights >= 0.8
-  }
-}
-```
-
-### **Stage Quality Assessment**
-```javascript
-function assessThinkingStageQuality(stage_output, stage_type) {
-  const depth_progression = measureDepthProgression(stage_output)
-  const insight_generation = assessInsightGeneration(stage_output)
-  const strategic_value = assessStrategicValue(stage_output, stage_type)
-  const implementation_readiness = assessImplementationReadiness(stage_output)
-  
-  return {
-    stage_quality: (depth_progression * 0.3 + insight_generation * 0.3 + 
-                   strategic_value * 0.2 + implementation_readiness * 0.2),
-    stage_completion: stage_quality >= 0.8,
-    ready_for_next_stage: stage_quality >= 0.85
-  }
-}
-```
-
----
-
-## 🔀 **ADAPTIVE THINKING MANAGEMENT**
-
-### **Dynamic Thinking Optimization**
-1. **Context Assessment**: Analyze available context quality and depth
-2. **Stage Adaptation**: Adapt thinking approach based on context and requirements
-3. **Progressive Enhancement**: Enhance thinking quality through staged progression
-4. **Insight Integration**: Integrate insights across all thinking stages
-5. **Strategic Synthesis**: Synthesize all thinking into actionable strategic intelligence
-
-### **Thinking Quality Protocol**
-- **Context Utilization**: Maximize value from provided context
-- **Progressive Depth**: Ensure meaningful progression across stages
-- **Strategic Focus**: Maintain strategic orientation throughout thinking
-- **Breakthrough Generation**: Generate innovative insights and approaches
-- **Implementation Readiness**: Ensure thinking leads to actionable outcomes
-
----
-
-## 🔗 **MODULAR INTEGRATION**
-
-### **Used By (Primary Integrators)**
-- `/think-master` - Uses progressive-thinking as core intelligence engine
-- `/analyze-complex` - Uses for deep analytical thinking requirements
-- `/strategic-plan` - Uses for strategic planning and decision making
-- `/debug-complex` - Uses for complex problem investigation
-- `/design-system` - Uses for architectural decision making
-
-### **Compatible With**
-- `/decision-engine` - Validates thinking progression and quality
-- `/confidence-scoring` - Assesses thinking confidence throughout stages
-- `/verification-loops` - Iterates thinking until quality thresholds met
-- `/orchestrate-intelligence` - Coordinates with other intelligence processes
-
-### **Enhances**
-- **Any command requiring deep analysis** - Adds progressive thinking capability
-- **Strategic decision commands** - Provides strategic thinking framework  
-- **Complex problem solving** - Adds systematic thinking progression
-- **Innovation requirements** - Generates breakthrough insights
-
----
-
-## 📋 **USAGE EXAMPLES**
-
-### **Strategic Analysis Application**
-```
-/progressive-thinking "real-time collaboration architecture analysis" focus_area=architecture depth_requirements=comprehensive
-```
-**Result**: Complete progressive thinking analysis of architecture options with breakthrough insights
-
-### **Complex Problem Investigation**
-```
-/progressive-thinking "intermittent login failures in production" focus_area=debugging depth_requirements=root_cause
-```
-**Result**: Progressive thinking investigation from symptoms to strategic resolution approach
-
-### **Innovation Planning**
-```
-/progressive-thinking "microservices migration strategy" focus_area=strategic_planning depth_requirements=innovative
-```
-**Result**: Strategic migration planning with innovative approaches and breakthrough insights
-
----
-
-## 🛡️ **QUALITY ASSURANCE**
-
-### **Progressive Thinking Standards**
-- **Contextual Depth**: ≥90% effective utilization of provided context
-- **Analytical Quality**: ≥85% quality in strategic analysis and implications
-- **Strategic Planning**: ≥90% implementability of strategic recommendations
-- **Breakthrough Insights**: ≥80% innovation and strategic value generation
-
-### **Thinking Progression Monitoring**
-```javascript
-function monitorProgressiveThinking(thinking_stages) {
-  return {
-    stage_progression: trackStageProgression(thinking_stages),
-    depth_evolution: measureDepthEvolution(thinking_stages),
-    insight_quality: assessInsightQuality(thinking_stages),
-    strategic_value: measureStrategicValue(thinking_stages),
-    breakthrough_generation: assessBreakthroughGeneration(thinking_stages)
-  }
-}
-```
-
----
-
-## 🔄 **ERROR HANDLING & RECOVERY**
-
-### **Thinking Stage Failures**
-```yaml
-failure_recovery:
-  contextual_thinking_failure:
-    strategy: "restart_with_enhanced_context_analysis"
-    adjust: "improve_context_synthesis_and_comprehension"
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [thinking_operation]"
+    evidence: "Tool selection matrix with progressive thinking reasoning"
     
-  analytical_thinking_failure:
-    strategy: "retry_with_simplified_analytical_approach"
-    fallback: "focus_on_core_strategic_elements"
+  depth_assessment:
+    announcement: "📈 TRANSPARENCY: Thinking depth [X]% - [SUFFICIENT/ENHANCEMENT] required"
+    evidence: "Depth assessment with progression requirements"
     
-  strategic_thinking_failure:
-    strategy: "implement_conservative_strategic_approach"
-    iterate: "up_to_2_times_before_escalation"
-    
-  breakthrough_thinking_failure:
-    strategy: "focus_on_practical_innovations_and_proven_approaches"
-    escalate: "to_strategic_thinking_completion_without_breakthrough"
+  synthesis_integration:
+    announcement: "✅ TRANSPARENCY: Synthesis [SUCCESS/ENHANCEMENT] - [X]% strategic intelligence achieved"
+    evidence: "Complete synthesis with strategic intelligence metrics"
 ```
-
-### **Quality Recovery Protocol**
-- **Stage Quality < 80%**: Retry stage with enhanced approach
-- **Progressive Depth Insufficient**: Extend thinking progression depth
-- **Strategic Value < 85%**: Refocus on strategic implementation value
-- **Context Utilization < 90%**: Improve context integration across stages
 
 ---
 
-## 📊 **INTEGRATION WITH DECISION ENGINE**
+### **Synthesis Protocol**
+- **Context Optimization**: Optimize context utilization across all thinking stages
+- **Insight Integration**: Combine insights across stages for breakthrough solutions  
+- **Strategic Coordination**: Design optimal coordination strategy based on progression
 
-### **Thinking Quality Routing**
-- **High Thinking Quality (≥0.9)**: Proceed with strategic implementation
-- **Medium Quality (0.8-0.9)**: Enhance specific thinking stages
-- **Low Quality (0.7-0.8)**: Restart thinking progression with improved approach
-- **Very Low Quality (<0.7)**: Escalate for additional context or clarification
-
-### **Threshold Enforcement**
-- **Contextual Depth < 85%**: Enhance context analysis and synthesis
-- **Strategic Planning < 80%**: Improve strategic implementation planning
-- **Breakthrough Generation < 75%**: Focus on innovation and breakthrough insights
-- **Overall Thinking < 85%**: Complete thinking progression enhancement
 
 ---
 
-## 🔄 **EVOLUTION TRACKING**
+**Note**: This command implements the core progressive thinking capability as a reusable module, enabling any command in the Context Engineering ecosystem to add deep strategic thinking and breakthrough insight generation to their functionality.
 
-### **Learning Metrics**
-- **Thinking Progression Effectiveness**: Track thinking quality across stages
-- **Context Utilization Optimization**: Measure context usage efficiency
-- **Strategic Value Generation**: Monitor strategic implementation value
-- **Breakthrough Insight Rate**: Track innovation and breakthrough generation
+## 🏗️ **INHERITED INFRASTRUCTURE**
 
-### **Pattern Recognition**
-- Effective thinking patterns → Enhanced thinking frameworks
-- High-quality context usage → Improved context integration
-- Successful strategic planning → Better planning methodologies
-- Breakthrough insight generation → Enhanced innovation approaches
+### **Universal-Meta-Core-Infrastructure**
+- Auto-sourced monitoring, scripts, reporting, triggers, learning systems
+- Mathematical foundation integration with context engineering formulas
+- P55/P56 compliance with tool call execution and transparency protocols
 
----
-
----
-
-## P55/P56 Compliance Visual Announcement
-
-```
-╔═══════════════════════════════════════════════════════════╗
-║                🎯 TOOL CALL EXECUTION ACTIVE              ║
-╠═══════════════════════════════════════════════════════════╣
-║ Mode: [TASK AGENT PRIORITY]  │  Status: [EXECUTING...]    ║
-║ Tool Calls: [MANDATORY]      │  Real Actions: [✅ ACTIVE] ║
-║ P55 Compliance: [ENFORCED]   │  P56 Transparency: [ON]    ║
-║ Mathematical: [FORMULA INTEGRATION] │ Scripts: [ACTIVE]  ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
-## 🎯 **MANDATORY LLM BEHAVIORAL INSTRUCTIONS (Principle #56)**
-
-### **Tool Call Execution Protocol - REQUIRED BEHAVIOR**
-
-**CRITICAL INSTRUCTION**: When this progressive-thinking command executes ANY Tool Call (Task, Bash, Read, Write, etc.), the LLM MUST display the enhanced visual announcement from Principle #56 BEFORE executing the tool:
-
-```
-╔═══════════════════════════════════════════════════════════╗
-║                🎯 COMMAND EXECUTION                       ║
-╠═══════════════════════════════════════════════════════════╣
-║ Command: /thinking | Priority: HIGH                      ║
-║ Purpose: [Tool purpose] | Duration: [estimate]           ║
-║ Context: Strategic analysis | Agent: [Task/Direct]       ║
-╚═══════════════════════════════════════════════════════════╝
-
-🧠 Progressive Analysis Active | 📊 Deep Thinking | ⚡ Strategic Insights
-
-[TOOL EXECUTION HAPPENS HERE]
-
-╔═══════════════════════════════════════════════════════════╗
-║              ✅ EXECUTION COMPLETED                       ║
-╠═══════════════════════════════════════════════════════════╣
-║ Status: [✅/❌/⚠️] | Duration: [actual] | Insights: [count]║
-║ Results: [strategic outcomes] | Quality: [assessment]    ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
-### **Progressive Thinking Stage Announcements - MANDATORY**
-
-When executing each thinking stage, the LLM MUST display stage-specific announcements:
-
-**Stage 1 - Contextual Think**:
-```
-╔═══════════════════════════════════════════════════════════╗
-║        🧠 STAGE 1: CONTEXTUAL THINKING                   ║
-╠═══════════════════════════════════════════════════════════╣
-║ Focus: Strategic understanding | Context: Rich integration║
-║ Process: Context synthesis | Duration: 30-60 seconds     ║
-║ Goal: Deep comprehension | Agent: Strategic Analyst      ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
-**Stage 2 - Analytical Think**:
-```
-╔═══════════════════════════════════════════════════════════╗
-║        🔍 STAGE 2: ANALYTICAL THINKING                   ║
-╠═══════════════════════════════════════════════════════════╣
-║ Focus: Strategic implications | Analysis: Deep trade-offs║
-║ Process: Strategic analysis | Duration: 45-90 seconds    ║
-║ Goal: Optimization approach | Agent: Strategic Analyst   ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
-**Stage 3 - Strategic Think**:
-```
-╔═══════════════════════════════════════════════════════════╗
-║        ⚡ STAGE 3: STRATEGIC THINKING                     ║
-╠═══════════════════════════════════════════════════════════╣
-║ Focus: Implementation planning | Strategy: Execution     ║
-║ Process: Concrete planning | Duration: 60-120 seconds    ║
-║ Goal: Executable strategy | Agent: Strategic Planner     ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
-**Stage 4 - Breakthrough Think**:
-```
-╔═══════════════════════════════════════════════════════════╗
-║        💡 STAGE 4: BREAKTHROUGH THINKING                 ║
-╠═══════════════════════════════════════════════════════════╣
-║ Focus: Revolutionary insights | Innovation: Breakthrough ║
-║ Process: Insight generation | Duration: 60-180 seconds   ║
-║ Goal: Innovation framework | Agent: Innovation Catalyst  ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
-### **Task Agent Deployment for Complex Analysis - MANDATORY**
-
-When progressive thinking requires Task agent deployment for complex analysis, display:
-
-```
-╔═══════════════════════════════════════════════════════════╗
-║        🤖 STRATEGIC ANALYSIS TASK AGENT DEPLOYMENT       ║
-╠═══════════════════════════════════════════════════════════╣
-║ Agent Type: Strategic Thinking Specialist | Phase: [1-4] ║
-║ Purpose: [Stage-specific analysis] | Duration: [estimate]║
-║ Communication: ✅ BRIDGE ACTIVE | Updates: ≤30s         ║
-║ Specialization: [contextual/analytical/strategic/breakthrough]║
-╚═══════════════════════════════════════════════════════════╝
-
-🧠 Deploying specialized thinking agent for deep analysis...
-📊 Bidirectional communication established for progress tracking...
-⚡ Strategic analysis and breakthrough insight generation...
-
-[TASK AGENT EXECUTION FOR PROGRESSIVE THINKING]
-
-╔═══════════════════════════════════════════════════════════╗
-║         ✅ STRATEGIC ANALYSIS COMPLETED                   ║
-╠═══════════════════════════════════════════════════════════╣
-║ Stage: [1-4] | Quality: [score]/10 | Insights: [count]   ║
-║ Breakthrough: [achieved/pending] | Strategy: [optimized] ║
-║ Handoff: Strategic intelligence | Next: [stage/complete] ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
-### **Implementation Requirements - MANDATORY**
-
-1. **Pre-Stage Announcement**: ALWAYS display stage announcement before each thinking stage
-2. **Task Agent Transparency**: Show Task agent deployment for complex strategic analysis
-3. **Progress Monitoring**: Display thinking progress and quality assessment throughout stages
-4. **Breakthrough Tracking**: Announce breakthrough insights and innovation achievements
-5. **Stage Completion**: Show completion status with quality metrics for each stage
-6. **Synthesis Display**: Announce final synthesis and strategic intelligence integration
-7. **Error Handling**: Surface thinking failures immediately with recovery actions
-
-### **Bidirectional Communication Protocol - MANDATORY**
-
-When deploying Task agents for progressive thinking, the LLM MUST:
-
-1. **Initialize Strategic Communication**: Establish communication bridge for thinking specialists
-2. **Deploy Thinking Specialists**: Use Task tool for complex analytical and strategic thinking
-3. **Monitor Thinking Progress**: Track thinking agent progress and quality metrics
-4. **Display Strategic Updates**: Show thinking progression and insight development
-5. **Handle Thinking Handoffs**: Properly receive strategic intelligence from thinking agents
-6. **Report Strategic Results**: Display comprehensive strategic analysis and insights
-7. **Maintain Thinking Transparency**: Never allow "thinking black holes" where user loses visibility
-
-### **Progressive Thinking Quality Display - MANDATORY**
-
-During progressive thinking execution, display quality metrics:
-
-```
-📊 PROGRESSIVE THINKING QUALITY METRICS
-╔═══════════════════════════════════════════════════════════╗
-║ Stage 1 Quality: [score]/10 | Stage 2 Quality: [score]/10║
-║ Stage 3 Quality: [score]/10 | Stage 4 Quality: [score]/10║
-║ Overall Thinking: [score]/10 | Breakthrough: [achieved]  ║
-║ Strategic Value: [assessment] | Implementation: [ready]   ║
-╚═══════════════════════════════════════════════════════════╝
-
-🎯 Context Utilization: [percentage]% | Strategic Depth: [assessment]
-💡 Innovation Level: [score]/10 | Insight Quality: [assessment]
-⚡ Implementation Readiness: [score]/10 | Strategic Impact: [assessment]
-```
-
-### **Compliance Enforcement - CRITICAL**
-
-- **NEVER skip stage announcements**: Every thinking stage must be visually announced
-- **NEVER hide thinking progress**: All strategic analysis progress must be visible
-- **NEVER skip Task agent deployment**: Complex thinking requires specialized agents
-- **ALWAYS show quality metrics**: Display thinking quality and breakthrough achievement
-- **ALWAYS display synthesis**: Show final strategic intelligence integration
-- **ALWAYS handle thinking handoffs**: Proper handoff from thinking specialists to principal agent
-
-**P55/P56 Compliance**: This command integrates Tool Call Execution Bridging (P55) through mandatory Task agent deployment for complex thinking and Command Execution Transparency (P56) through comprehensive visual announcements of all progressive thinking stages and strategic analysis operations.
-
----
-
-**Note**: This command implements the core progressive thinking capability as a reusable module with complete transparency and Task agent integration, enabling any command in the Context Engineering ecosystem to add deep strategic thinking and breakthrough insight generation to their functionality while maintaining full user visibility and communication continuity throughout the strategic analysis process.
+### **Core-Cognitive-Processor**  
+- Multi-dimensional analysis, problem decomposition, information synthesis
+- Logical progression and meta-cognition capabilities
+- Universal quality assurance and error handling frameworks

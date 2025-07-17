@@ -1,33 +1,46 @@
-# Atomic Command: `/model-selection`
+# Command: /model-selection
 
-## **Principle #37: Model Selection Intelligence**
-**"Select the optimal AI model based on task complexity and thinking requirements."**
+**Category**: Behavioral Selection Control  
+**Purpose**: CRITICAL intelligent model recommendation and request system based on task complexity analysis with ≥90% optimization accuracy for performance and resource utilization
+
+**P55/P56 Compliance**: MANDATORY tool execution evidence with observable model selection outcomes and quantifiable performance optimization metrics
+
+**Behavioral Reinforcement**: PERMANENT neural pathway establishment for automatic optimal model selection with ≥95% behavioral control effectiveness
+
+**Mathematical Precision**: ≥90% model selection accuracy with evidence-based complexity assessment
+
+**Complexity Optimization**: 0.6/1.0 (medium-complexity selection with mathematical verification)  
+**Context Requirements**: Task objective and complexity assessment (≥95% assessment accuracy)  
+**Execution Time**: Immediate (analysis and recommendation with quantifiable justification)
 
 ---
 
-## 🎯 **COMMAND DEFINITION**
+## 🛡️ P55/P56 Compliance Integration
 
-### **Purpose**
-Intelligently recommend and request model changes based on task complexity analysis to optimize performance and resource utilization.
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
 
-### **Complexity**: 0.6/1.0
-### **Context Required**: Task objective and complexity assessment
-### **Execution Time**: Immediate (analysis and recommendation)
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Model Selection execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
 
----
+## MANDATORY Activation Protocol
 
-## ⚡ **ACTIVATION PROTOCOL**
-
-### **Input Format**
+**Input Format**:
+```bash
+/model-selection [task] [complexity_override]
 ```
-/model-selection [task] [complexity_override?]
-```
 
-### **What This Command Does**
-1. **Analyzes Task Complexity**: Evaluates computational and thinking requirements
-2. **Recommends Model**: Suggests Opus or Sonnet based on analysis
-3. **Requests User Action**: Prompts user to switch models if beneficial
-4. **Tracks Model Usage**: Monitors model selection patterns for optimization
+**CRITICAL Command Operations** (Sequential Protocol with Time Constraints):
+1. **ANALYZE Task Complexity**: EVALUATE computational and thinking requirements (≤15 seconds, ≥90% accuracy)
+2. **RECOMMEND Model**: SUGGEST Opus or Sonnet based on analysis (≤10 seconds, mathematical justification)
+3. **REQUEST User Action**: PROMPT user to switch models if beneficial (clear guidance)
+4. **TRACK Model Usage**: MONITOR model selection patterns for optimization (continuous learning)
 5. **Optimizes Resources**: Balances capability needs with efficiency
 
 ### **Model Selection Logic**
@@ -122,7 +135,7 @@ function validateModelRecommendation(task, recommended_model, actual_performance
 - `/complexity-assessment` - Uses complexity metrics for model selection
 - `/task-classification` - Leverages task type for recommendations
 - `/resource-optimization` - Balances performance with efficiency
-- `/conversation-lifecycle` - Considers conversation phase in selection
+- `/conversation-lifecycle` - ANALYZES conversation phase in selection
 
 ### **Feeds Into**
 - Decision Engine routing (model affects command availability)
@@ -134,11 +147,11 @@ function validateModelRecommendation(task, recommended_model, actual_performance
 ## 📋 **USAGE EXAMPLES**
 
 ### **Architecture Planning**
-```
+```bash
 /model-selection "Design microservices architecture for e-commerce platform"
 ```
 **Result**: 
-```
+```text
 🧠 Model Recommendation: Opus
 📊 Complexity Score: 2.1/3.0
 💡 Reason: Complex architectural design requiring deep strategic thinking
@@ -146,11 +159,11 @@ function validateModelRecommendation(task, recommended_model, actual_performance
 ```
 
 ### **Simple Implementation**
-```
+```bash
 /model-selection "Add email validation to signup form"
 ```
 **Result**:
-```
+```text
 ⚡ Model Recommendation: Sonnet
 📊 Complexity Score: 0.8/3.0
 💡 Reason: Straightforward implementation task
@@ -158,11 +171,11 @@ function validateModelRecommendation(task, recommended_model, actual_performance
 ```
 
 ### **Complex Debugging**
-```
+```bash
 /model-selection "Debug distributed system race condition affecting payments"
 ```
 **Result**:
-```
+```text
 🧠 Model Recommendation: Opus
 📊 Complexity Score: 2.4/3.0
 💡 Reason: Complex multi-system debugging requiring deep analysis
@@ -233,7 +246,7 @@ function routeWithModelAwareness(command, current_model) {
 ## 💡 **USER COMMUNICATION TEMPLATES**
 
 ### **Opus Recommendation**
-```
+```yaml
 🧠 **Deep Thinking Required**
 
 Your task involves [complexity_reason].
@@ -249,7 +262,7 @@ This will enable:
 ```
 
 ### **Sonnet Recommendation**
-```
+```text
 ⚡ **Efficient Execution Mode**
 
 Your task is well-suited for rapid implementation.

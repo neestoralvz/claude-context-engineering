@@ -1,8 +1,8 @@
 # Command Structure Rules - Context Engineering
 
-**Meta-Principle**: "Enable models through structured context, not control"
+**Meta-Principle**: "ENABLE intelligence through MANDATORY structured context, not restrictive control"
 
-**Authority Redirect**: Complete command structure rules, architectural standards, and validation protocols are consolidated in [Core Writing & Structure Standards](./core-writing-structure-standards.md) for unified structural implementation across all Context Engineering commands.
+**Authority Redirect**: COMPLETE command structure rules, MANDATORY architectural standards, and REQUIRED validation protocols are consolidated in [Core Writing & Structure Standards](./core-writing-structure-standards.md) for UNIFIED structural implementation across ALL Context Engineering commands.
 
 **Purpose**: MANDATORY cross-reference hub for command structure rules, architectural standards, and systematic validation protocols.
 
@@ -13,10 +13,10 @@
 **Primary Authority**: [Core Writing & Structure Standards](./core-writing-structure-standards.md) - Complete structural and organizational protocols
 
 **Key Structural Areas Available in Authority Source**:
-- **Auto-Activation Triggers** - MANDATORY trigger definitions with quantifiable thresholds
-- **Adaptive Intelligent Activation Protocol** - Complexity-based activation scaling
-- **Command Architecture Standards** - Comprehensive structural requirements
-- **Quality Assurance Standards** - Professional compliance and validation
+- **Auto-Activation Triggers** - MANDATORY trigger definitions with REQUIRED quantifiable thresholds
+- **Adaptive Intelligent Activation Protocol** - CRITICAL complexity-based activation scaling
+- **Command Architecture Standards** - MANDATORY comprehensive structural requirements
+- **Quality Assurance Standards** - REQUIRED professional compliance and MANDATORY validation
 
 ---
 
@@ -25,23 +25,23 @@
 ### **Auto-Activation Triggers**
 **Location**: [Core Writing & Structure Standards - Auto-Activation Triggers](./core-writing-structure-standards.md#1-auto-activation-triggers-mandatory-for-all-commands)
 - MANDATORY trigger definitions (≥95% trigger accuracy)
-- Complexity and confidence thresholds
-- Quantifiable performance metrics
-- Verification methods and success criteria
+- REQUIRED complexity and confidence thresholds
+- MANDATORY quantifiable performance metrics
+- CRITICAL verification methods and success criteria
 
 ### **Adaptive Activation Protocol**
 **Location**: [Core Writing & Structure Standards - Adaptive Protocol](./core-writing-structure-standards.md#2-adaptive-intelligent-activation-protocol-mandatory)
-- Intelligent activation scaling (≥92% trigger accuracy)
-- Complexity threshold management
-- Performance validation requirements
-- Execution mode optimization
+- MANDATORY intelligent activation scaling (≥92% trigger accuracy)
+- REQUIRED complexity threshold management
+- MANDATORY performance validation requirements
+- CRITICAL execution mode optimization
 
 ### **Command Architecture**
 **Location**: [Core Writing & Structure Standards - Architecture](./core-writing-structure-standards.md#3-command-architecture-standards)
 - MANDATORY structural requirements
-- Header, trigger, execution, integration sections
-- Tool call compliance and transparency
-- Cross-reference integration standards
+- REQUIRED header, trigger, execution, integration sections
+- MANDATORY tool call compliance and transparency
+- CRITICAL cross-reference integration standards
 
 ---
 
@@ -49,15 +49,15 @@
 
 ### **Command Structure Implementation**
 **Authority Reference**: [Core Writing & Structure Standards - Command Architecture](./core-writing-structure-standards.md#3-command-architecture-standards)
-- Structured header with meta-principle
-- Trigger section with auto-activation definitions
-- Execution section with tool integration
-- Integration section with cross-references
+- MANDATORY structured header with meta-principle
+- REQUIRED trigger section with auto-activation definitions
+- CRITICAL execution section with tool integration
+- MANDATORY integration section with cross-references
 
 ### **Cross-Reference Integration**
 **Navigation Pattern**: [Knowledge Hub](../README.md) → [Command Rules](../README.md#standards--compliance) → [Core Writing & Structure Standards](./core-writing-structure-standards.md)
 
-**Structural Efficiency**: ≤2 cognitive steps to complete command structure specifications from any Context Engineering command context.
+**Structural Efficiency**: REQUIRED ≤2 cognitive steps to complete command structure specifications from any Context Engineering command context.
 
 ---
 
@@ -85,10 +85,10 @@
 - **Cross-Reference Quality**: ≥90% navigation efficiency improvement
 
 ### **Systematic Quality Improvements**
-- **Architecture Standardization**: Unified structural requirements across all commands
-- **Trigger Optimization**: Enhanced auto-activation with quantifiable thresholds
-- **Tool Integration**: P55/P56 compliance with visual transparency
-- **Quality Validation**: Comprehensive effectiveness verification protocols
+- **Architecture Standardization**: MANDATORY unified structural requirements across all commands
+- **Trigger Optimization**: REQUIRED enhanced auto-activation with quantifiable thresholds
+- **Tool Integration**: MANDATORY P55/P56 compliance with visual transparency
+- **Quality Validation**: CRITICAL comprehensive effectiveness verification protocols
 
 
 ---

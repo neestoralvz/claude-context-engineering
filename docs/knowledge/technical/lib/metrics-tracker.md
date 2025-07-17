@@ -38,7 +38,7 @@
 **Consolidated Authority**: [Metrics & Pattern Crystallization System](../metrics-and-pattern-crystallization.md) | **Navigation Hub**: [Technical Hub](../TECHNICAL_DOCS.md)
 
 ### **Success Rate Calculation**
-```
+```yaml
 Success Rate = (Successful Executions / Total Executions)
 
 Success Criteria:

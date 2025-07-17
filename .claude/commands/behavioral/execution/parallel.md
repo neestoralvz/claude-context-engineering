@@ -1,9 +1,11 @@
-# Command Reference: `/parallel-over-sequential` → `/parallel-multi-agent`
+# Cognitive Command: `/parallel-thinking`
 
-## **Command Migration Notice**
-**This command has been consolidated and enhanced as `/parallel-multi-agent` for improved clarity and functionality.**
+## **Cognitive-Execution Bridge Notice**
+**This command focuses on COGNITIVE parallel thinking patterns. For TECHNICAL parallel execution, see executable commands.**
 
-**Redirect**: [Multi-Agent Parallel Execution](../../executable/execution/parallel-multi-agent.md) - Complete multi-agent coordination and specialized parallel execution
+**Cognitive Focus**: This command - Parallel thinking patterns, decision-making, and strategic approaches
+**Technical Execution**: [Parallel Tool Execution](../../executable/execution/parallel-tool-execution.md) - Technical tool orchestration
+**Multi-Agent Coordination**: [Parallel Multi-Agent](../../executable/execution/parallel-multi-agent.md) - Agent deployment and management
 
 ## **Principle #10: Parallel > Sequential**
 **"Execute multiple approaches simultaneously for faster exploration and better solutions."**
@@ -13,11 +15,15 @@
 ## 🎯 **COMMAND DEFINITION**
 
 ### **Purpose**
-Enable parallel execution of multiple approaches to maximize efficiency and discover optimal solutions through simultaneous exploration.
+Enable parallel THINKING patterns and cognitive strategies to identify parallelization opportunities and design optimal approaches for simultaneous exploration and problem-solving.
 
-### **Complexity**: 0.9/1.0
-### **Context Required**: Task dependencies and parallelization opportunities
-### **Execution Time**: Variable (depends on parallel workload)
+### **Complexity**: 0.7/1.0 (Cognitive analysis)
+### **Context Required**: Problem structure and cognitive dependency analysis
+### **Execution Time**: Medium (cognitive analysis and strategy development)
+
+### **Cognitive vs Technical Distinction**
+- **This Command (Cognitive)**: Strategic thinking, approach design, dependency analysis
+- **Technical Execution**: Use executable commands for actual parallel implementation
 
 ---
 
@@ -28,14 +34,19 @@ Enable parallel execution of multiple approaches to maximize efficiency and disc
 /parallel-over-sequential [task] [approaches_count?] [dependency_map?]
 ```
 
-### **What This Command Does (Enhanced Script Integration)**
-1. **EXECUTES REAL ANALYSIS**: Runs ParallelizationAnalyzer.js with advanced script coordination
-2. **Mathematical Validation**: Integrates context_engineering_formulas.sh for real-time calculations
-3. **Multi-Agent Coordination**: Enhanced coordination protocols with calculate-real-metrics.sh
-4. **Advanced Dependency Mapping**: Superior dependency matrix analysis with mathematical precision
-5. **Optimal Agent Deployment**: Script-validated agent count with resource optimization
-6. **Performance Monitoring**: Comprehensive metrics integration with trigger system validation
-7. **Results Synthesis**: Advanced consolidation using validated algorithms and mathematical formulas
+### **What This Command Does (Cognitive Analysis Focus)**
+1. **Strategic Analysis**: Analyze problem structure for parallelization potential
+2. **Dependency Mapping**: Identify cognitive dependencies and independent pathways
+3. **Approach Design**: Design multiple parallel approaches to the same problem
+4. **Risk Assessment**: Evaluate parallelization benefits vs coordination overhead
+5. **Strategy Synthesis**: Create comprehensive parallel thinking strategy
+6. **Execution Bridge**: Design handoff to executable parallel commands
+
+### **Cognitive → Executable Bridge**
+This cognitive command designs the strategy, then bridges to executable commands:
+- **Strategy Output** → [Parallel Tool Execution](../../executable/execution/parallel-tool-execution.md) for technical implementation
+- **Multi-Agent Strategy** → [Parallel Multi-Agent](../../executable/execution/parallel-multi-agent.md) for agent coordination
+- **Git Strategy** → [Git Worktrees Parallel](../../executable/execution/git-worktrees-parallel.md) for development workflows
 
 ### **ENHANCED REAL EXECUTION PROTOCOL WITH MULTI-SCRIPT INTEGRATION**
 When invoked, this command automatically executes multiple integrated scripts to provide:

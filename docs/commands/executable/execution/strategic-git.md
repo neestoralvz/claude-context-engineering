@@ -8,7 +8,7 @@
 ## 🎯 **COMMAND DEFINITION**
 
 ### **Purpose**
-Implement strategic version control methodology using Git as both a safety net for experimentation and comprehensive documentation of development progress and decision points.
+Implement REQUIRED strategic version control methodology using Git as both a safety net for experimentation and comprehensive documentation of development progress and decision points.
 
 ### **Complexity**: 0.6/1.0
 ### **Context Required**: Current development context and Git repository state
@@ -18,8 +18,23 @@ Implement strategic version control methodology using Git as both a safety net f
 
 ## ⚡ **ACTIVATION PROTOCOL**
 
+### **Auto-Activation Triggers**
+
+**MANDATORY Activation Conditions**:
+- **Complexity Threshold**: ≥0.9000 (90% complexity floor)
+- **Confidence Threshold**: <0.7000 (70% confidence ceiling)
+- **Development Progress Threshold**: ≥30.0000 minutes since last strategic checkpoint
+- **Risk Assessment Threshold**: Change risk score ≥0.6000 (60% risk floor)
+- **Time Threshold**: 20 minutes for sustained strategic versioning conditions
+
+**CRITICAL Trigger Validation**:
+- **Mathematical Assessment**: Quantifiable strategic git evaluation with checkpoint coverage metrics
+- **Threshold Enforcement**: REQUIRED activation when development safety conditions met
+- **P56 Announcement**: Visual confirmation of auto-activation with checkpoint creation indicators
+- **Evidence Collection**: Measurable trigger condition documentation with recovery capability metrics
+
 ### **Input Format**
-```
+```markdown
 /strategic-git [checkpoint_type] [description] [scope?]
 ```
 
@@ -31,11 +46,11 @@ Implement strategic version control methodology using Git as both a safety net f
 5. **Facilitate Collaboration**: Provide clear progress visibility for team members
 
 ### **Strategic Git Protocol**
-1. **Pre-Process Commit**: Capture state before major changes
-2. **In-Process Commits**: Commit at logical checkpoints during development
-3. **Post-Process Commit**: Document completed changes with full context
-4. **Milestone Push**: Push to remote at significant achievement points
-5. **Recovery Documentation**: Maintain ability to return to any decision point
+1. **Pre-Process Commit**: REQUIRED capture state before major changes
+2. **In-Process Commits**: REQUIRED commit at logical checkpoints during development
+3. **Post-Process Commit**: REQUIRED document completed changes with full context
+4. **Milestone Push**: REQUIRED push to remote at significant achievement points
+5. **Recovery Documentation**: MANDATORY maintain ability to return to any decision point
 
 ---
 
@@ -49,16 +64,21 @@ Implement strategic version control methodology using Git as both a safety net f
 - **Collaboration Support**: Team members can understand development progression
 
 ### **Mathematical Validation**
-```javascript
-strategic_git_effectiveness = (
-  (checkpoint_coverage * 0.30) +
-  (message_quality * 0.25) +
-  (recovery_capability * 0.25) +
-  (progress_visibility * 0.15) +
-  (collaboration_support * 0.05)
-)
-// Required: ≥ 8.5/10
-```
+
+**CRITICAL Strategic Git Effectiveness Calculation** (Natural Language Implementation):
+
+**Effectiveness Components**:
+- **Checkpoint Coverage**: 30% weight - percentage of development stages with commits
+- **Message Quality**: 25% weight - quality of commit messages and rationale
+- **Recovery Capability**: 25% weight - ability to return to any development decision point
+- **Progress Visibility**: 15% weight - clarity of development progress through commit history
+- **Collaboration Support**: 5% weight - team understanding of development progression
+
+**Calculation Formula**:
+- **Strategic Git Effectiveness** = (Checkpoint Coverage × 0.30) + (Message Quality × 0.25) + (Recovery Capability × 0.25) + (Progress Visibility × 0.15) + (Collaboration Support × 0.05)
+- **Required Threshold**: ≥ 8.5/10
+
+**Success Criteria**: Strategic Git effectiveness must achieve 8.5 or higher on a 10-point scale
 
 ---
 
@@ -84,19 +104,19 @@ strategic_git_effectiveness = (
 ## 📋 **USAGE EXAMPLES**
 
 ### **Feature Development**
-```
+```text
 /strategic-git "pre-process" "Starting user authentication feature" "auth_system"
 ```
 **Result**: Commits current state before beginning authentication work, enabling safe experimentation
 
 ### **Architecture Change**
-```
+```text
 /strategic-git "milestone" "Database migration to PostgreSQL completed" "data_layer"
 ```
 **Result**: Documents major architectural milestone with full context and decision rationale
 
 ### **Debugging Session**
-```
+```text
 /strategic-git "in-process" "Identified memory leak in image processor" "performance"
 ```
 **Result**: Commits debugging discovery, preserving investigation progress and findings
@@ -171,10 +191,10 @@ strategic_git_effectiveness = (
 ## 📊 **INTEGRATION WITH DECISION ENGINE**
 
 ### **Git Strategy Routing**
-- **High Risk Changes**: Mandatory pre-process commits before proceeding
-- **Complex Development**: Increased in-process commit frequency
-- **Team Collaboration**: Enhanced commit messaging for visibility
-- **Experimental Work**: Mandatory recovery point creation
+- **High Risk Changes**: MANDATORY pre-process commits before proceeding
+- **Complex Development**: REQUIRED increased in-process commit frequency
+- **Team Collaboration**: REQUIRED enhanced commit messaging for visibility
+- **Experimental Work**: MANDATORY recovery point creation
 
 ### **Version Control Pattern Recognition**
 - Successful commit patterns → Templates for similar development scenarios
@@ -223,24 +243,27 @@ git worktree add ../experiment-c experiment-c
 4. **Release Branches**: For stable release preparation
 
 ### **Commit Message Templates**
-```
-[Type]: [Summary] - [Context]
 
-Details:
-- [Key_change_1]
-- [Key_change_2]
-- [Decision_rationale]
+**CRITICAL Commit Message Template Structure** (Natural Language Implementation):
 
-Impact:
-- [Business_impact]
-- [Technical_impact]
-- [Next_steps]
+**Message Header**: [Type]: [Summary] - [Context]
 
-Verification:
-- [Tests_status]
-- [Performance_impact]
-- [Quality_metrics]
-```
+**Details Section**:
+- Key change 1: Description of primary change
+- Key change 2: Description of secondary change
+- Decision rationale: Explanation of why this approach was chosen
+
+**Impact Section**:
+- Business impact: How this change affects business objectives
+- Technical impact: How this change affects technical architecture
+- Next steps: What should be done next in development
+
+**Verification Section**:
+- Tests status: Current state of testing for this change
+- Performance impact: How this change affects system performance
+- Quality metrics: Measures of code quality and standards compliance
+
+**Template Purpose**: Ensure consistent, comprehensive commit messages that capture decision rationale and impact
 
 ---
 
@@ -263,6 +286,29 @@ Verification:
 - **Problem Isolation**: Issues can be traced to specific development points
 - **Pattern Recognition**: Development patterns become visible through history
 - **Process Improvement**: Commit analysis reveals development efficiency patterns
+
+---
+
+## 🛡️ **P55/P56 COMPLIANCE INTEGRATION**
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9, strategic Git operations complexity automatically triggers specialized version control agents
+- **Success Rate Target**: ≥98% completion guarantee for checkpoint creation, commit operations, and strategic versioning activities
+- **Execution Evidence**: Actual tool results with quantitative validation showing checkpoint coverage ≥95%, commit message quality scores, and recovery capability validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Strategic Git execution initiated with checkpoint creation, commit operations, and recovery point establishment indicators
+- **Tool Evidence**: Observable outcomes with specific metrics including commit success rates, checkpoint coverage percentages, and strategic versioning effectiveness scores
+- **Completion Verification**: Quantifiable success criteria with documented strategic git effectiveness ≥8.5/10, recovery capability validation, and collaboration support metrics
+
+### **Strategic Git Compliance Requirements**
+**MANDATORY Implementation Standards**:
+- **Real Git Operations**: 100% actual Git commands via Task agents for checkpoint creation, strategic commits, and recovery point establishment
+- **Version Control Monitoring**: Continuous tracking with checkpoint coverage ≥95%, message quality validation, and recovery capability testing
+- **Git Transparency**: Complete visibility into versioning operations, commit strategies, and recovery processes with real-time progress reporting
+- **Mathematical Validation**: Quantifiable metrics for strategic git effectiveness, checkpoint coverage, and collaboration support with precise measurements
 
 ---
 

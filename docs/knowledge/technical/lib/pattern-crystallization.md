@@ -73,7 +73,7 @@ New commands must:
 - System learns from crystallization outcomes
 
 ### **Example Crystallization**
-```
+```json
 Pattern detected: "registry-metrics-update"
 - Usage: 3 times
 - Success: 100%

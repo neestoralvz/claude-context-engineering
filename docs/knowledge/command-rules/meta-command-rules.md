@@ -2,7 +2,7 @@
 
 ## Overview
 
-Specialized rules governing meta-command behavior, orchestration protocols, and system-level coordination within the Context Engineering framework.
+MANDATORY specialized rules governing meta-command behavior, REQUIRED orchestration protocols, and CRITICAL system-level coordination within the Context Engineering framework.
 
 ## 🎯 Meta-Command Core Principles
 
@@ -40,28 +40,28 @@ multi_phase_orchestration:
 ```yaml
 phase_0_requirements:
   script_system_validation:
-    mandatory: "Execute foundational script system validation"
+    mandatory: "EXECUTE foundational script system validation"
     tools: ["Bash tool for script execution"]
-    evidence: "Real script outputs and mathematical foundations"
+    evidence: "REQUIRED real script outputs and mathematical foundations"
     scripts:
       - "formulas/context_engineering_formulas.sh"
       - "core/calculate-real-metrics.sh"
       - "core/test-trigger-system.sh"
   
   decision_engine_analysis:
-    mandatory: "Load and execute /decision-engine command"
+    mandatory: "LOAD and EXECUTE /decision-engine command"
     tools: ["Read tool for command loading", "Direct command execution"]
-    evidence: "Real complexity/confidence analysis with numerical results"
-    integration: "Use script-validated foundation for enhanced accuracy"
+    evidence: "REQUIRED real complexity/confidence analysis with numerical results"
+    integration: "MANDATORY use script-validated foundation for enhanced accuracy"
   
   parallelization_analysis:
-    mandatory: "Load and execute /parallel-over-sequential command"
+    mandatory: "LOAD and EXECUTE /parallel-over-sequential command"
     tools: ["Read tool for command loading", "Direct command execution"]
-    evidence: "Mathematical parallel benefit analysis with script validation"
-    optimization: "Use script metrics for precision calculations"
+    evidence: "REQUIRED mathematical parallel benefit analysis with script validation"
+    optimization: "MANDATORY use script metrics for precision calculations"
   
   routing_strategy_synthesis:
-    mandatory: "Synthesize master routing strategy from all analyses"
+    mandatory: "SYNTHESIZE master routing strategy from all analyses"
     dependencies: ["Script results", "Decision analysis", "Parallelization analysis"]
     output: "Script-validated routing strategy for all 5 phases"
 ```

@@ -16,10 +16,75 @@ Implement systematic context optimization that loads only minimum necessary cont
 
 ---
 
+## MANDATORY Context Optimization Decision Framework
+
+**CRITICAL**: Context optimization requires systematic decision-making with quantifiable metrics and auto-activation triggers.
+
+```mermaid
+graph TD
+    A[Context Optimization Request] --> B{Current Context Efficiency?}
+    B -->|<70%| C[CRITICAL: Emergency Context Optimization]
+    B -->|70-85%| D[MANDATORY: Targeted Context Enhancement]
+    B -->|>85%| E[REQUIRED: Context Refinement]
+    
+    C --> F{Task Complexity ≥ 0.9?}
+    F -->|Yes| G[MANDATORY: Task Tool Deployment]
+    F -->|No| H[Direct Context Reduction]
+    
+    D --> I{Optimization Strategy?}
+    I -->|Aggressive| J[80%+ Context Reduction]
+    I -->|Balanced| K[Selective Context Optimization]
+    I -->|Conservative| L[Gradual Context Enhancement]
+    
+    E --> M[Context Efficiency Monitoring]
+    
+    G --> N[Context Implementation]
+    H --> N
+    J --> N
+    K --> N
+    L --> N
+    M --> N
+    
+    N --> O{Context Utilization ≥85%?}
+    O -->|Yes| P[P56: Context Optimization SUCCESS]
+    O -->|No| Q[MANDATORY: Escalate Optimization]
+    
+    P --> R[Context Monitoring]
+    Q --> C
+```
+
+**Auto-Activation Triggers** (MANDATORY):
+- Context efficiency <70% → CRITICAL context optimization
+- Context utilization <85% → MANDATORY context enhancement
+- Context-to-output ratio suboptimal → REQUIRED optimization
+- Functionality preservation at risk → CRITICAL intervention
+
+**P56 Transparency Announcements** (REQUIRED):
+- Context reduction percentage achieved
+- Functionality preservation verification
+- Context utilization effectiveness metrics
+- Context-to-output ratio improvements
+
+---
+
+## 🛡️ P55/P56 Compliance Integration
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Optimize Context execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /optimize-context [task_scope] [optimization_level?] [preserve_requirements?]
 ```
 
@@ -252,19 +317,19 @@ function monitorContextEffectiveness(active_context, task_progress) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Feature Development Optimization**
-```
+```text
 /optimize-context "user authentication system" "aggressive" "preserve_security"
 ```
 **Result**: Load core auth requirements immediately, security context on-demand, implementation details during development
 
 ### **Bug Investigation Optimization**
-```
+```text
 /optimize-context "database performance issue" "balanced" "preserve_debugging_capability"
 ```
 **Result**: Essential debugging context first, performance metrics on-demand, detailed logs when needed
 
 ### **Architecture Planning Optimization**
-```
+```text
 /optimize-context "microservices design" "conservative" "preserve_all_requirements"
 ```
 **Result**: Core requirements immediately, architectural patterns on-demand, implementation details deferred
@@ -336,7 +401,7 @@ function validateContextSafety(optimized_context, original_requirements) {
 ## 💡 **OPTIMIZATION COMMUNICATION**
 
 ### **Context Optimization Report**
-```
+```yaml
 🎯 **Context Optimization Results**
 
 **Reduction Achieved**: 82% context reduction

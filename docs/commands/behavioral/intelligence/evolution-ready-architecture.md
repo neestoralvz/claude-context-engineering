@@ -16,10 +16,24 @@ Design and implement architecture that can grow infinitely while maintaining bac
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Evolution Readiness Threshold**: <0.8000 (80% architectural adaptability required)
+**Architecture Analysis Time Threshold**: ≥600.0000 seconds for comprehensive evolution assessment
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable evolution readiness with ≥80% architectural adaptability
+- **Threshold Enforcement**: REQUIRED activation when system architecture lacks evolution capability
+- **P56 Announcement**: 🏗️ TRANSPARENCY: Evolution Ready Architecture auto-activated for [system] adaptability enhancement
+- **Evidence Collection**: Measurable evolution metrics and architectural flexibility documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /evolution-ready-architecture [system_scope] [evolution_type?] [compatibility_requirements?]
 ```
 
@@ -36,6 +50,122 @@ Design and implement architecture that can grow infinitely while maintaining bac
 - **Pattern Evolution**: System learns and adapts patterns from usage
 - **Backward Compatibility**: All evolution maintains compatibility with existing system
 - **Performance Scaling**: Architecture maintains performance during unlimited growth
+
+---
+
+## 🧠 **EVOLUTION-READY ARCHITECTURE DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Evolutionary Architecture**
+
+```mermaid
+graph TD
+    A[Evolution Architecture Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Evolution Processing]
+    B -->|No| D[Standard Evolution Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Evolution Implementation]
+    
+    D --> H{System Scope Assessment}
+    H -->|Complete| I[Full Evolution Analysis]
+    H -->|Partial| J[REQUIRED: Scope Expansion]
+    
+    F --> K[Task Tool: Complex Evolution]
+    K --> L[P56: Advanced Evolution Coordination]
+    
+    G --> M{Evolution Readiness Score}
+    M -->|≥0.9| N[Proceed with Evolution]
+    M -->|<0.9| O[CRITICAL: Readiness Enhancement]
+    
+    I --> P{Dynamic Discovery Ready?}
+    P -->|Yes| Q[Implement Discovery Systems]
+    P -->|No| R[Build Discovery Framework]
+    
+    J --> S[Read Tool: Load System Context]
+    S --> T[Edit Tool: Document Architecture]
+    T --> I
+    
+    N --> U{Template Compliance?}
+    U -->|≥0.95| V[Template Integration]
+    U -->|<0.95| W[Template Framework Development]
+    
+    O --> X[Read Tool: Load Enhancement Patterns]
+    X --> Y[Edit Tool: Document Requirements]
+    Y --> Z[Bash Tool: Readiness Calculation]
+    Z --> M
+    
+    Q --> AA[Bash Tool: Discovery Implementation]
+    AA --> BB[Edit Tool: Document Discovery]
+    
+    R --> CC[Read Tool: Load Framework Patterns]
+    CC --> DD[Edit Tool: Design Framework]
+    DD --> EE[Bash Tool: Framework Testing]
+    EE --> P
+    
+    V --> FF{Pattern Evolution Ready?}
+    FF -->|Yes| GG[Pattern Learning Engine]
+    FF -->|No| HH[Pattern Recognition Development]
+    
+    W --> II[Read Tool: Load Template Standards]
+    II --> JJ[Edit Tool: Implement Compliance]
+    JJ --> KK[Bash Tool: Compliance Validation]
+    KK --> U
+    
+    GG --> LL{Compatibility Check}
+    LL -->|≥0.98| MM[Backward Compatibility Assured]
+    LL -->|<0.98| NN[CRITICAL: Compatibility Layer]
+    
+    HH --> OO[Task Tool: Pattern Recognition]
+    OO --> PP[P56: Pattern Development Complete]
+    
+    MM --> QQ[Bash Tool: Performance Scaling]
+    QQ --> RR[P56: Evolution Architecture Success]
+    
+    NN --> SS[Read Tool: Load Compatibility Patterns]
+    SS --> TT[Edit Tool: Design Compatibility Layer]
+    TT --> UU[Bash Tool: Compatibility Testing]
+    UU --> LL
+    
+    L --> VV[Agent Evolution Results]
+    VV --> WW[P56: Expert Evolution Complete]
+    
+    BB --> XX[Discovery System Metrics]
+    PP --> XX
+    RR --> XX
+    WW --> XX
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style O fill:#ffe66d
+    style NN fill:#ff8b94
+    style XX fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+evolution_decision_transparency:
+  readiness_assessment:
+    announcement: "🔍 TRANSPARENCY: Evolution readiness assessed at [X]/1.0 - [READY/ENHANCEMENT_REQUIRED]"
+    evidence: "Mathematical readiness calculation with component breakdown"
+    
+  discovery_implementation:
+    announcement: "🔄 TRANSPARENCY: Dynamic discovery [IMPLEMENTED/DEVELOPED] - [X]% capability achieved"
+    evidence: "Discovery system implementation with capability metrics"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [evolution_operation]"
+    evidence: "Tool selection matrix with evolution-specific reasoning"
+    
+  compatibility_validation:
+    announcement: "🔗 TRANSPARENCY: Compatibility level [X]/1.0 - [ASSURED/LAYER_REQUIRED]"
+    evidence: "Backward compatibility analysis with assurance metrics"
+    
+  evolution_completion:
+    announcement: "🚀 TRANSPARENCY: Evolution architecture [SUCCESS/FAILED] - [performance_impact]"
+    evidence: "Complete evolution results with performance scaling metrics"
+```
 
 ---
 
@@ -164,19 +294,19 @@ function monitorEvolutionArchitecture(architecture) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Command System Evolution**
-```
+```bash
 /evolution-ready-architecture "command-system" evolution_type=dynamic-discovery compatibility_requirements=full
 ```
 **Result**: Implement dynamic command discovery with full backward compatibility
 
 ### **Template Architecture Evolution**
-```
+```text
 /evolution-ready-architecture "template-system" evolution_type=auto-compliance compatibility_requirements=strict
 ```
 **Result**: Create self-adapting template system with strict compatibility
 
 ### **Full System Evolution**
-```
+```text
 /evolution-ready-architecture "complete-system" evolution_type=pattern-based compatibility_requirements=unlimited
 ```
 **Result**: Implement pattern-based evolution for unlimited system growth

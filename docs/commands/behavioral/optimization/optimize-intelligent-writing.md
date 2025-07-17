@@ -16,10 +16,75 @@ Implement unified intelligent writing standards combining natural language princ
 
 ---
 
+## MANDATORY Intelligent Writing Decision Framework
+
+**CRITICAL**: Intelligent writing optimization requires systematic decision-making with quantifiable metrics and auto-activation triggers.
+
+```mermaid
+graph TD
+    A[Intelligent Writing Request] --> B{Current Writing Quality?}
+    B -->|<75%| C[CRITICAL: Emergency Writing Optimization]
+    B -->|75-90%| D[MANDATORY: Targeted Writing Enhancement]
+    B -->|>90%| E[REQUIRED: Writing Refinement]
+    
+    C --> F{Content Complexity ≥ 0.9?}
+    F -->|Yes| G[MANDATORY: Task Tool Deployment]
+    F -->|No| H[Direct Writing Optimization]
+    
+    D --> I{Optimization Focus?}
+    I -->|Density| J[Information Density Maximization]
+    I -->|Clarity| K[Clarity Enhancement]
+    I -->|Value| L[Value Density Optimization]
+    
+    E --> M[Writing Quality Monitoring]
+    
+    G --> N[Writing Transformation]
+    H --> N
+    J --> N
+    K --> N
+    L --> N
+    M --> N
+    
+    N --> O{Information Density ≥95%?}
+    O -->|Yes| P[P56: Intelligent Writing SUCCESS]
+    O -->|No| Q[MANDATORY: Escalate Optimization]
+    
+    P --> R[Writing Quality Monitoring]
+    Q --> C
+```
+
+**Auto-Activation Triggers** (MANDATORY):
+- Information density <95% → CRITICAL writing optimization
+- Value-to-word ratio <90% → MANDATORY density enhancement
+- Clarity score <90% → REQUIRED clarity improvement
+- Reader ROI score <85% → CRITICAL intervention
+
+**P56 Transparency Announcements** (REQUIRED):
+- Information density percentage achieved
+- Value-to-word ratio improvement metrics
+- Clarity score enhancement results
+- Reader ROI optimization outcomes
+
+---
+
+## 🛡️ P55/P56 Compliance Integration
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Optimize Intelligent Writing execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /optimize-intelligent-writing [content_scope] [audience_level?] [communication_objective?] [density_target?]
 ```
 
@@ -314,7 +379,7 @@ function measureDensityAndQuality(optimized_content) {
 
 ### **Density-Specific Optimization Strategies**
 
-#### **Semantic Layering Techniques**
+### **Semantic Layering Techniques**
 ```javascript
 function implementSemanticLayering(content) {
   const layering_strategies = {
@@ -328,7 +393,7 @@ function implementSemanticLayering(content) {
 }
 ```
 
-#### **Information Architecture Optimization**
+### **Information Architecture Optimization**
 ```javascript
 function optimizeInformationArchitecture(content) {
   const architecture_optimization = {
@@ -342,7 +407,7 @@ function optimizeInformationArchitecture(content) {
 }
 ```
 
-#### **Value Proposition Enhancement**
+### **Value Proposition Enhancement**
 ```javascript
 function enhanceValueProposition(content) {
   const value_enhancement = {
@@ -475,7 +540,7 @@ function prioritizeImpact(synthesized_content) {
 ## 💡 **INTELLIGENT WRITING COMMUNICATION**
 
 ### **Enhanced Writing Optimization Report**
-```
+```yaml
 📝 **Advanced Writing Optimization Results**
 
 **Information Density**: 96% meaningful content per word achieved

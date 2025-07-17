@@ -19,7 +19,7 @@ Execute mathematical simplicity measurement and enforcement protocol that quanti
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /mathematical-simplicity [target] [threshold_type?] [action?]
 ```
 
@@ -32,7 +32,9 @@ Execute mathematical simplicity measurement and enforcement protocol that quanti
 6. **Continuous Monitoring**: Track complexity evolution and trend analysis
 
 ### **Complexity Calculation Formula**
-```
+**Uses Shared Mathematical Complexity Core**: [mathematical-complexity-core.md](./mathematical-complexity-core.md)
+
+```text
 C = (S × F × D × R) / (A × P)
 ```
 
@@ -43,6 +45,141 @@ Where:
 - **R**: Responsibility Factor (number of distinct responsibilities)
 - **A**: Atomic Compliance (adherence to single responsibility principle)
 - **P**: Purpose Clarity (how clearly defined the purpose is)
+
+**Implementation**: All mathematical calculations delegate to the shared core for consistency and maintainability.
+
+---
+
+## 🧠 **MATHEMATICAL SIMPLICITY DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Mathematical Simplicity**
+
+```mermaid
+graph TD
+    A[Mathematical Simplicity Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Simplicity Processing]
+    B -->|No| D[Standard Simplicity Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Simplicity Execution]
+    
+    D --> H{Target Type Assessment}
+    H -->|Atomic| I[Atomic Threshold: ≤1.0]
+    H -->|Orchestrator| J[Orchestrator Threshold: ≤1.5]
+    H -->|Meta/System| K[Meta/System Threshold: ≤2.0/2.5]
+    
+    F --> L[Task Tool: Complex Simplicity Analysis]
+    L --> M[P56: Advanced Simplicity Coordination]
+    
+    G --> N[Mathematical Calculation: C = (S × F × D × R) / (A × P)]
+    N --> O[Bash Tool: Execute Formula]
+    
+    I --> P[Threshold Check: Score ≤ 1.0]
+    J --> Q[Threshold Check: Score ≤ 1.5]
+    K --> R[Threshold Check: Score ≤ 2.0/2.5]
+    
+    O --> S{Calculation Success?}
+    S -->|Yes| T[Apply Threshold Logic]
+    S -->|No| U[CRITICAL: Formula Failure]
+    
+    T --> V{Target Type?}
+    V -->|Atomic| P
+    V -->|Orchestrator| Q
+    V -->|Meta/System| R
+    
+    P --> W{Score ≤ 1.0?}
+    W -->|Yes| X[Complexity Approved]
+    W -->|No| Y[MANDATORY: Automatic Blocking]
+    
+    Q --> Z{Score ≤ 1.5?}
+    Z -->|Yes| X
+    Z -->|No| Y
+    
+    R --> AA{Score ≤ 2.0/2.5?}
+    AA -->|Yes| X
+    AA -->|No| Y
+    
+    Y --> BB[Read Tool: Load Optimization Patterns]
+    BB --> CC[Edit Tool: Generate Recommendations]
+    
+    CC --> DD{Optimization Type?}
+    DD -->|Size| EE[Size Reduction Strategy]
+    DD -->|Feature| FF[Feature Simplification]
+    DD -->|Dependency| GG[Dependency Reduction]
+    DD -->|Responsibility| HH[Responsibility Clarification]
+    
+    EE --> II[Read Tool: Load Size Patterns]
+    II --> JJ[Edit Tool: Size Optimization Plan]
+    
+    FF --> KK[Read Tool: Load Feature Patterns]
+    KK --> LL[Edit Tool: Feature Extraction Plan]
+    
+    GG --> MM[Read Tool: Load Dependency Patterns]
+    MM --> NN[Edit Tool: Dependency Optimization]
+    
+    HH --> OO[Read Tool: Load Responsibility Patterns]
+    OO --> PP[Edit Tool: Responsibility Split Plan]
+    
+    JJ --> QQ[Bash Tool: Validate Optimization]
+    LL --> QQ
+    NN --> QQ
+    PP --> QQ
+    
+    QQ --> RR{Optimization Valid?}
+    RR -->|Yes| SS[P56: Optimization Plan Complete]
+    RR -->|No| TT[REQUIRED: Enhanced Optimization]
+    
+    TT --> UU[Read Tool: Load Enhanced Patterns]
+    UU --> VV[Edit Tool: Enhanced Optimization]
+    VV --> QQ
+    
+    U --> WW[Fallback: Conservative Estimation]
+    WW --> XX[Manual Review Required]
+    XX --> YY[P56: Manual Assessment Required]
+    
+    X --> ZZ[Bash Tool: Approval Validation]
+    ZZ --> AAA[P56: Complexity Approval Success]
+    
+    M --> BBB[Agent Simplicity Results]
+    BBB --> CCC[P56: Expert Simplicity Complete]
+    
+    SS --> DDD[Mathematical Simplicity Metrics]
+    AAA --> DDD
+    YY --> DDD
+    CCC --> DDD
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style Y fill:#ffe66d
+    style U fill:#ff8b94
+    style DDD fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+mathematical_simplicity_transparency:
+  complexity_calculation:
+    announcement: "🔍 TRANSPARENCY: Complexity calculated C = [X] using formula (S × F × D × R) / (A × P)"
+    evidence: "Complete mathematical calculation with factor breakdown"
+    
+  threshold_assessment:
+    announcement: "📊 TRANSPARENCY: Threshold [X] applied for [ATOMIC/ORCHESTRATOR/META/SYSTEM] - [APPROVED/BLOCKED]"
+    evidence: "Threshold determination with compliance validation"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [simplicity_operation]"
+    evidence: "Tool selection matrix with simplicity-specific reasoning"
+    
+  optimization_generation:
+    announcement: "💡 TRANSPARENCY: Optimization [X] recommendations generated - [SIZE/FEATURE/DEPENDENCY/RESPONSIBILITY]"
+    evidence: "Detailed optimization plan with implementation steps"
+    
+  simplicity_validation:
+    announcement: "✅ TRANSPARENCY: Simplicity validation [SUCCESS/FAILURE] - [X]% improvement achieved"
+    evidence: "Mathematical validation with improvement metrics"
+```
 
 ---
 
@@ -426,25 +563,25 @@ function monitorComplexityTrend(target) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Command Simplicity Analysis**
-```
+```bash
 /mathematical-simplicity "/user-authentication" "atomic_command" "analyze"
 ```
 **Result**: Calculates complexity using C = (S × F × D × R) / (A × P), applies 1.0 threshold, provides specific optimization recommendations if C > 1.0
 
 ### **Documentation Simplicity Enforcement**
-```
+```text
 /mathematical-simplicity "project-documentation" "system_component" "enforce"
 ```
 **Result**: Measures documentation complexity, blocks if C > 2.5, suggests decomposition and clarity improvements
 
 ### **Workflow Simplicity Optimization**
-```
+```text
 /mathematical-simplicity "deployment-workflow" "orchestrator" "optimize"
 ```
 **Result**: Analyzes workflow complexity, provides ranked optimization recommendations, tracks improvement
 
 ### **System-Wide Simplicity Audit**
-```
+```text
 /mathematical-simplicity "all-components" "respective" "monitor"
 ```
 **Result**: Calculates complexity for all system components, identifies violations, provides trend analysis

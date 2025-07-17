@@ -16,10 +16,24 @@ Activate autonomous execution mode where the AI system operates independently wi
 
 ---
 
-## ⚡ **ACTIVATION PROTOCOL**
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Autonomy Opportunity Threshold**: ≥0.8000 (80% autonomous capability)
+**Decision Time Threshold**: ≥180.0000 seconds for complex autonomous decision-making
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable autonomous capability with ≥80% decision accuracy
+- **Threshold Enforcement**: REQUIRED activation when autonomous operation benefits exceed control overhead
+- **P56 Announcement**: 🤖 TRANSPARENCY: Autonomous Mode auto-activated for [scope] independent operation
+- **Evidence Collection**: Measurable autonomous decision metrics and quality validation documentation
+
+## **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /enable-dont-control [scope] [confidence_threshold?] [guardrails?]
 ```
 
@@ -38,13 +52,109 @@ Activate autonomous execution mode where the AI system operates independently wi
 
 ---
 
+## 🧠 **AUTONOMOUS DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Autonomous Execution**
+
+```mermaid
+graph TD
+    A[Autonomous Request Input] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Autonomous Processing]
+    B -->|No| D[Standard Autonomous Processing]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Autonomous Execution]
+    
+    D --> H{Scope Boundaries Clear?}
+    H -->|Yes| I[Framework Activation]
+    H -->|No| J[REQUIRED: Boundary Definition]
+    
+    F --> K[Task Tool Deployment]
+    K --> L[P56: Complex Autonomous Coordination]
+    
+    G --> M{Guardrails Satisfied?}
+    M -->|Yes| N[Execute Within Bounds]
+    M -->|No| O[CRITICAL: Guardrail Enforcement]
+    
+    I --> P{Confidence Threshold Met?}
+    P -->|Yes| Q[Autonomous Decision Making]
+    P -->|No| R[Enhanced Monitoring Mode]
+    
+    J --> S[Read Tool: Load Boundaries]
+    S --> T[Edit Tool: Document Scope]
+    T --> I
+    
+    N --> U[Bash Tool: Execute Actions]
+    U --> V[P56: Autonomous Execution Complete]
+    
+    O --> W[Fallback Protocol Activation]
+    W --> X[MANDATORY: Human Oversight]
+    
+    Q --> Y{Risk Level Assessment}
+    Y -->|High| Z[Controlled Autonomous Mode]
+    Y -->|Low| AA[Full Autonomous Mode]
+    
+    R --> BB[Continuous Confidence Monitoring]
+    BB --> CC{Confidence Improved?}
+    CC -->|Yes| Q
+    CC -->|No| F
+    
+    Z --> DD[Read Tool: Load Safety Protocols]
+    DD --> EE[Edit Tool: Document Decisions]
+    EE --> FF[Bash Tool: Monitored Execution]
+    
+    AA --> GG[Task Tool: Complex Orchestration]
+    GG --> HH[P56: Full Autonomous Success]
+    
+    L --> II[Agent Coordination Results]
+    II --> JJ[P56: Expert Delegation Complete]
+    
+    V --> KK[Autonomous Execution Metrics]
+    HH --> KK
+    JJ --> KK
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style O fill:#ffe66d
+    style X fill:#ff8b94
+    style KK fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+autonomous_decision_transparency:
+  complexity_assessment:
+    announcement: "🔍 TRANSPARENCY: Complexity assessed at [X]/1.0 - [STANDARD/ADVANCED] processing required"
+    evidence: "Mathematical complexity calculation with breakdown factors"
+    
+  confidence_evaluation:
+    announcement: "📊 TRANSPARENCY: Confidence level [X]/1.0 - [DIRECT/DELEGATED] execution path selected"
+    evidence: "Confidence scoring with decision rationale"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [specific_reason]"
+    evidence: "Tool selection matrix with autonomous decision logic"
+    
+  guardrail_enforcement:
+    announcement: "🛡️ TRANSPARENCY: Guardrail status - [SATISFIED/VIOLATED] - [action_taken]"
+    evidence: "Boundary checking results with enforcement actions"
+    
+  execution_completion:
+    announcement: "✅ TRANSPARENCY: Autonomous execution [SUCCESS/FAILED] - [outcome_details]"
+    evidence: "Complete execution results with autonomy metrics"
+```
+
+---
+
 ## 🎯 **UNIVERSAL TOOL CALL EXECUTION PROTOCOL**
 
 ### **P55/P56 Compliance Implementation**
 **Revolutionary Enhancement**: Complete autonomous execution transparency with P55 tool call bridging and P56 visual announcements for autonomous mode operations.
 
 ### **P56 Visual Announcement System**
-```
+```text
 ╔═══════════════════════════════════════════════════════════╗
 ║            🤖 AUTONOMOUS EXECUTION ACTIVATION             ║
 ╠═══════════════════════════════════════════════════════════╣
@@ -270,19 +380,19 @@ function monitorAutonomousExecution(session) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Code Implementation**
-```
+```text
 /enable-dont-control "full development workflow" confidence_threshold=0.8
 ```
 **Result**: AI autonomously handles coding, testing, debugging, and documentation
 
 ### **Problem Solving**
-```
+```text
 /enable-dont-control "system optimization" guardrails="no production changes"
 ```
 **Result**: AI autonomously analyzes and optimizes system with safety boundaries
 
 ### **Research and Analysis**
-```
+```text
 /enable-dont-control "competitive analysis" scope="public information only"
 ```
 **Result**: AI autonomously researches and analyzes competition within defined scope

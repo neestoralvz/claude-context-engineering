@@ -51,17 +51,16 @@ These words function as **behavioral control and reinforcement strategies** for 
 - Elimination of unnecessary jargon with maximum information density
 
 **Context-Based Application**:
-```yaml
-# ✅ CORRECT - LLM Instruction Sections
-"MANDATORY tool execution with REQUIRED transparency"
-"EXECUTE real scripts with FORBIDDEN simulation"
-"CRITICAL compliance validation with ALWAYS visible progress"
 
-# ✅ CORRECT - Human Documentation Sections  
-"Este comando utiliza herramientas reales para garantizar transparencia"
-"Ejecuta scripts automatizados con validación continua"
-"Proporciona validación de cumplimiento con progreso visible"
-```
+**CORRECT LLM Instruction Examples**:
+- MANDATORY tool execution with REQUIRED transparency protocols
+- EXECUTE real scripts with FORBIDDEN simulation behavior
+- CRITICAL compliance validation with ALWAYS visible progress tracking
+
+**CORRECT Human Documentation Examples**:
+- Este comando utiliza herramientas reales para garantizar transparencia
+- Ejecuta scripts automatizados con validación continua
+- Proporciona validación de cumplimiento con progreso visible
 
 ---
 
@@ -73,26 +72,25 @@ These words function as **behavioral control and reinforcement strategies** for 
 
 **EVIDENCE REQUIRED**: Users MUST observe auto-activation executing with documented trigger conditions and quantifiable performance metrics.
 
-```yaml
-auto_activation_triggers:
-  primary_trigger:
-    condition: "[Condición específica del comando]"
-    threshold: "[Umbral numérico cuando aplique]"
-    action: "[Acción de auto-activación]"
-    verification: "[Método de verificación]"
-    
-  complexity_trigger:
-    condition: "Task complexity ≥ [threshold]"
-    threshold: "[Valor específico del comando]"
-    action: "Auto-activate [command-name] for [purpose]"
-    verification: "[Método de validación]"
-    
-  confidence_trigger:
-    condition: "Confidence < [threshold]"
-    threshold: "[Valor específico del comando]" 
-    action: "Auto-activate [command-name] for [purpose]"
-    verification: "[Criterio de éxito]"
-```
+**Auto-Activation Trigger Requirements**:
+
+**Primary Trigger Protocol**:
+- **Condition**: Define specific trigger condition for the command
+- **Threshold**: Establish numerical threshold when applicable
+- **Action**: Specify auto-activation behavior
+- **Verification**: Define verification method for trigger success
+
+**Complexity-Based Trigger Protocol**:
+- **Condition**: Task complexity reaches or exceeds specified threshold
+- **Threshold**: Command-specific complexity value requirement
+- **Action**: Auto-activate command for complexity management purpose
+- **Verification**: Define validation method for complexity assessment
+
+**Confidence-Based Trigger Protocol**:
+- **Condition**: Confidence level falls below specified threshold
+- **Threshold**: Command-specific confidence value requirement
+- **Action**: Auto-activate command for confidence enhancement purpose
+- **Verification**: Define success criteria for confidence improvement
 
 ### **2. Adaptive Intelligent Activation Protocol (MANDATORY)**
 
@@ -100,54 +98,52 @@ auto_activation_triggers:
 
 **EVIDENCE REQUIRED**: Users MUST observe adaptive activation scaling appropriately based on complexity thresholds with quantifiable performance validation.
 
-```yaml
-adaptive_activation:
-  simple_tasks:
-    complexity_threshold: "≤ 1.0"
-    confidence_threshold: "≥ 0.8"
-    activation_level: "Basic command execution"
-    monitoring: "Standard performance tracking"
-    
-  moderate_tasks:
-    complexity_threshold: "1.0-1.5"
-    confidence_threshold: "0.6-0.8"
-    activation_level: "Enhanced command execution with validation"
-    monitoring: "Real-time progress tracking"
-    
-  complex_tasks:
-    complexity_threshold: "≥ 1.5"
-    confidence_threshold: "< 0.6"
-    activation_level: "Full orchestration with Task agent deployment"
-    monitoring: "Comprehensive progress tracking with bidirectional communication"
-```
+**Adaptive Activation Protocol Requirements**:
+
+**Simple Task Activation**:
+- **Complexity Threshold**: Tasks with complexity ≤ 1.0
+- **Confidence Threshold**: Confidence level ≥ 0.8 required
+- **Activation Level**: Basic command execution with standard protocols
+- **Monitoring**: Standard performance tracking with core metrics
+
+**Moderate Task Activation**:
+- **Complexity Threshold**: Tasks with complexity 1.0-1.5 range
+- **Confidence Threshold**: Confidence level 0.6-0.8 range
+- **Activation Level**: Enhanced command execution with validation protocols
+- **Monitoring**: Real-time progress tracking with enhanced metrics
+
+**Complex Task Activation**:
+- **Complexity Threshold**: Tasks with complexity ≥ 1.5
+- **Confidence Threshold**: Confidence level < 0.6
+- **Activation Level**: Full orchestration with Task agent deployment
+- **Monitoring**: Comprehensive progress tracking with bidirectional communication protocols
 
 ### **3. Command Architecture Standards**
 
 **MANDATORY Command Structure**:
 
-```yaml
-command_architecture:
-  header_section:
-    title: "Command name with clear purpose identification"
-    meta_principle: "Core philosophical foundation"
-    purpose: "MANDATORY clear objective with success criteria"
-    scope: "REQUIRED operational boundaries and limitations"
-    
-  trigger_section:
-    auto_activation: "MANDATORY trigger definitions with quantifiable thresholds"
-    manual_activation: "Clear instructions for manual execution"
-    validation: "Success criteria and verification methods"
-    
-  execution_section:
-    tool_calls: "REQUIRED real tool execution with P55/P56 compliance"
-    transparency: "Visual execution announcements and progress tracking"
-    validation: "Real-time success validation and error handling"
-    
-  integration_section:
-    cross_references: "Strategic links to related commands and documentation"
-    dependencies: "Required system components and integrations"
-    compatibility: "Integration standards and version requirements"
-```
+**MANDATORY Command Architecture Standards**:
+
+**Header Section Requirements**:
+- **Title**: Command name with clear purpose identification
+- **Meta-Principle**: Core philosophical foundation statement
+- **Purpose**: MANDATORY clear objective with success criteria
+- **Scope**: REQUIRED operational boundaries and limitations
+
+**Trigger Section Requirements**:
+- **Auto-Activation**: MANDATORY trigger definitions with quantifiable thresholds
+- **Manual Activation**: Clear instructions for manual execution protocols
+- **Validation**: Success criteria and verification methods
+
+**Execution Section Requirements**:
+- **Tool Calls**: REQUIRED real tool execution with P55/P56 compliance
+- **Transparency**: Visual execution announcements and progress tracking
+- **Validation**: Real-time success validation and error handling
+
+**Integration Section Requirements**:
+- **Cross-References**: Strategic links to related commands and documentation
+- **Dependencies**: Required system components and integrations
+- **Compatibility**: Integration standards and version requirements
 
 ---
 

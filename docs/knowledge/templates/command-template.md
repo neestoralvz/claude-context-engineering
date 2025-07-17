@@ -2,20 +2,36 @@
 
 ## Command: `/context-eng`
 
-**Meta-Principle**: "Enable models through structured context, not control."
+**Meta-Principle**: "Enable models through MANDATORY structured context, not restrictive control"
+
+**Purpose**: Universal meta-coordinator utilizing ONLY tool calls for delegation and coordination, automatically deploying specialists while maintaining COMPLETE functionality and user transparency.
+
+**Authority Status**: AUTHORITATIVE tool-based coordination architecture ensuring REQUIRED P55/P56 compliance through MANDATORY Tool Call Execution Protocol.
+
+**Context Engineering Integration**: CRITICAL meta-command enabling complete ecosystem orchestration with automatic specialist delegation for distributed intelligence coordination.
+
+---
+
+## ⚡ Quick Access Navigation
+
+**IMMEDIATE ACCESS** (≤30 seconds to meta-command activation):
+- **[Auto-Activation Triggers](#auto-activation-triggers)** - System activation conditions
+- **[Modular Protocol](#modular-activation-protocol)** - 5-phase coordination framework
+- **[Tool Call Coordination](#tool-call-coordination-protocol)** - Delegation architecture
+- **[Usage Patterns](#intelligent-usage-patterns-tool-call-enhanced)** - Implementation examples
 
 **Coordination Strategy**: MUST coordinate ALL actions through mandatory tool calls - Task tool for external specialists, Read tool for existing commands. NEVER executes actions directly.
 
-Universal meta-coordinator utilizing ONLY tool calls for delegation and coordination. AUTOMATICALLY deploys specialists via Task tool and loads commands via Read tool maintaining complete functionality and user transparency.
+Universal meta-coordinator utilizing ONLY tool calls for delegation and coordination. AUTOMATICALLY deploys specialists via Task tool and loads commands via Read tool maintaining COMPLETE functionality and user transparency.
 
-**Tool-Based Coordination Architecture**: Coordinates specialists exclusively through Tool Call Execution Protocol ensuring P55/P56 compliance.
+**Tool-Based Coordination Architecture**: Coordinates specialists exclusively through MANDATORY Tool Call Execution Protocol ensuring REQUIRED P55/P56 compliance.
 
 ---
 
 ## AUTO-ACTIVATION TRIGGERS
 
 ### **Auto-Activation Purpose**
-ACTIVATES when system detects complete Context Engineering ecosystem orchestration need with automatic specialist delegation for complex operations requiring distributed intelligence coordination.
+ACTIVATES when system detects COMPLETE Context Engineering ecosystem orchestration need with AUTOMATIC specialist delegation for complex operations requiring distributed intelligence coordination.
 
 ### **PRIMARY TRIGGERS (Automatic Activation)**
 
@@ -38,11 +54,11 @@ ACTIVATES when system detects complete Context Engineering ecosystem orchestrati
 
 ## MODULAR ACTIVATION PROTOCOL
 
-Command invocation ACTIVATES tool-based coordination scaling 2-5 phases based on task complexity, using ONLY tool calls (Task for specialists, Read for commands) handling ALL operations through external delegation rather than direct execution.
+Command invocation ACTIVATES tool-based coordination scaling 2-5 phases based on task complexity, using ONLY tool calls (Task for specialists, Read for commands) handling ALL operations through MANDATORY external delegation rather than direct execution.
 
 ### **Tool Call Coordination Architecture**
 
-**Tool-Based Specialist Coordination** ELIMINATES direct execution while MAINTAINING 100% functionality through mandatory tool calls:
+**Tool-Based Specialist Coordination** ELIMINATES direct execution while MAINTAINING 100% functionality through MANDATORY tool calls:
 
 ```yaml
 tool_call_coordination_architecture:
@@ -50,19 +66,19 @@ tool_call_coordination_architecture:
     coordination_approach: "Direct tool call execution"
     tools_required: ["READ tool for existing commands", "TASK tool for external analysis"]
     tool_call_overhead: "minimal"
-    optimization: "70% faster through tool-based focus + eliminated direct execution"
+    optimization: "REQUIRED 70% faster through tool-based focus + eliminated direct execution"
     
   medium_tasks_complexity_1.0_1.5:
     coordination_approach: "Sequential tool call coordination"
     tools_required: ["READ tool for command loading", "TASK tool for specialist deployment", "Multiple coordinated tool calls"]
     tool_call_overhead: "moderate"
-    optimization: "50% faster through tool-based expertise + proven coordination workflows"
+    optimization: "REQUIRED 50% faster through tool-based expertise + proven coordination workflows"
     
   complex_tasks_complexity_≥_1.5:
     coordination_approach: "Multi-tool orchestration"
     tools_required: ["All available tools", "TASK tool for orchestration specialists", "READ tool for command coordination"]
     tool_call_overhead: "comprehensive"
-    optimization: "100% functionality through distributed tool calls + enhanced coordination quality"
+    optimization: "MANDATORY 100% functionality through distributed tool calls + enhanced coordination quality"
 
 tool_call_triggers:
   complexity_escalation:
@@ -443,7 +459,7 @@ ALL mathematical validation EXECUTED via tool calls:
 ## **INTELLIGENT USAGE PATTERNS (Tool Call Enhanced)**
 
 ### **Tool Call Coordinated Invocation**
-```
+```markdown
 /context-eng [objective] [complexity_hint?] [tool_preference?]
 ```
 
@@ -472,11 +488,11 @@ ALL mathematical validation EXECUTED via tool calls:
 ```
 
 ### **Tool Call Coordination Benefits**:
-1. **Eliminated Direct Execution**: ALL advanced functionality through tool call coordination
-2. **Enhanced Quality**: Superior results through proven tool call execution  
-3. **Improved Performance**: Faster execution through optimized tool call logic
-4. **Simplified Coordination**: Meta-command focuses on tool orchestration vs internal complexity
-5. **Future Adaptability**: Automatic integration of new tools and commands as ecosystem grows
+1. **ELIMINATED Direct Execution**: ALL advanced functionality through MANDATORY tool call coordination
+2. **ENHANCED Quality**: Superior results through proven tool call execution  
+3. **IMPROVED Performance**: Faster execution through optimized tool call logic
+4. **SIMPLIFIED Coordination**: Meta-command focuses on tool orchestration vs internal complexity
+5. **FUTURE Adaptability**: AUTOMATIC integration of new tools and commands as ecosystem grows
 
 ---
 

@@ -1,42 +1,152 @@
-# Atomic Command: `/planning-documentation`
+# Command: /planning-documentation
 
-## **Principle #39: Living Planning Documentation**
-**"Document planning trees and execution paths for complete traceability and rollback capability."**
+**Category**: Behavioral Documentation Control  
+**Purpose**: CRITICAL comprehensive documentation system for all planning branches, decision points, and execution paths with complete traceability and strategic rollback capabilities (≥95% traceability accuracy)
+
+**P55/P56 Compliance**: MANDATORY tool execution evidence with observable planning documentation outcomes and quantifiable rollback success metrics
+
+**Behavioral Reinforcement**: PERMANENT neural pathway establishment for automatic planning documentation with ≥95% behavioral control effectiveness
+
+**Mathematical Precision**: ≥95% decision traceability with evidence-based rollback validation requirements
+
+**Complexity Optimization**: 0.9/1.0 (near-maximum atomic command complexity with mathematical verification)  
+**Context Requirements**: Planning decisions, execution paths, and outcomes (≥95% data completeness)  
+**Execution Time**: Continuous integration (real-time throughout planning and execution)
 
 ---
 
-## 🎯 **COMMAND DEFINITION**
+## 🛡️ P55/P56 Compliance Integration
 
-### **Purpose**
-Create comprehensive documentation of all planning branches, decision points, and execution paths to enable complete traceability and strategic rollback capabilities.
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
 
-### **Complexity**: 0.9/1.0
-### **Context Required**: Planning decisions, execution paths, and outcomes
-### **Execution Time**: Continuous (throughout planning and execution)
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Planning Documentation execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
 
----
+## MANDATORY Activation Protocol
 
-## ⚡ **ACTIVATION PROTOCOL**
-
-### **Input Format**
+**Input Format**:
+```bash
+/planning-documentation [action] [branch_name] [commit_message]
 ```
-/planning-documentation [action] [branch_name?] [commit_message?]
+
+## ⚡ Auto-Activation Triggers
+
+### **MANDATORY Activation Conditions**
+**Complexity Threshold**: ≥0.9000 (90% complexity floor)
+**Confidence Threshold**: <0.7000 (70% confidence ceiling)
+**Planning Depth Threshold**: ≥3.0000 decision branching levels
+**Documentation Time Threshold**: Continuous (real-time throughout planning cycles)
+
+### **CRITICAL Trigger Validation**
+- **Mathematical Assessment**: Quantifiable planning traceability with ≥95% decision documentation accuracy
+- **Threshold Enforcement**: REQUIRED activation when planning complexity exceeds threshold
+- **P56 Announcement**: 📋 TRANSPARENCY: Planning Documentation auto-activated for [planning_phase] traceability
+- **Evidence Collection**: Measurable decision point metrics and rollback capability validation
+
+## CRITICAL Decision Tree (Planning Documentation Workflow)
+
+```mermaid
+graph TD
+    A[Planning Documentation Request] --> B{Action Type?}
+    B -->|init| C[CRITICAL: Planning Tree Initialization]
+    B -->|branch| D[MANDATORY: Planning Branch Creation]
+    B -->|decision| E[REQUIRED: Decision Point Documentation]
+    B -->|commit| F[CRITICAL: Strategic Commit Creation]
+    B -->|visualize| G[MANDATORY: Planning Tree Visualization]
+    B -->|rollback| H[REQUIRED: Decision Point Rollback]
+    
+    C --> I[Planning Tree Structure Setup]
+    D --> J[New Planning Branch]
+    E --> K{Decision Complexity ≥ 0.8?}
+    F --> L[Strategic Git Commit]
+    G --> M[Visual Tree Generation]
+    H --> N[Rollback Execution]
+    
+    K -->|Yes| O[MANDATORY: Task Tool Deployment]
+    K -->|No| P[Direct Decision Documentation]
+    
+    I --> Q[CRITICAL: P56 Planning Announcement]
+    J --> Q
+    L --> Q
+    M --> Q
+    N --> Q
+    O --> Q
+    P --> Q
+    
+    Q --> R{Documentation Type?}
+    R -->|Decision Tree| S[MANDATORY: Write Tool]
+    R -->|Update Existing| T[REQUIRED: Edit Tool]
+    R -->|Complex Planning| U[CRITICAL: MultiEdit Tool]
+    
+    S --> V[Planning Documentation Creation]
+    T --> V
+    U --> V
+    
+    V --> W[MANDATORY: P56 Documentation Outcome]
+    W --> X["🌳 PLANNING DOCUMENTED: Decision tree with rollback capability"]
+    
+    style A fill:#e1f5fe
+    style Q fill:#f3e5f5
+    style W fill:#c8e6c9
+    style X fill:#fff3e0
 ```
 
-### **Actions**
-- `init` - Initialize planning tree for new objective
-- `branch` - Create new planning branch for exploration
-- `decision` - Document decision point with rationale
-- `commit` - Create git commit at strategic checkpoint
-- `visualize` - Generate visual representation of planning tree
-- `rollback` - Return to previous decision point
+**CRITICAL Actions** (Sequential Protocol with Time Constraints):
+- `init` - INITIALIZE planning tree for new objective (≤30 seconds)
+- `branch` - CREATE new planning branch for exploration (≤15 seconds)
+- `decision` - DOCUMENT decision point with rationale (≤60 seconds)
+- `commit` - CREATE git commit at strategic checkpoint (≤30 seconds)
+- `visualize` - GENERATE visual representation of planning tree (≤45 seconds)
+- `rollback` - RETURN to previous decision point (≤20 seconds)
 
-### **What This Command Does**
-1. **Captures Planning Tree**: Documents all explored planning branches
-2. **Records Decisions**: Preserves decision rationale at each branch point
-3. **Creates Checkpoints**: Strategic git commits for rollback capability
-4. **Visualizes Paths**: Shows planning and execution flow
-5. **Enables Time Travel**: Return to any previous decision point
+## MANDATORY Auto-Activation Triggers
+
+```mermaid
+graph TD
+    A[Planning Activity Detection] --> B{Decision Depth ≥ 3?}
+    B -->|Yes| C[MANDATORY: Documentation Trigger]
+    B -->|No| D[Continue Planning Monitoring]
+    
+    C --> E{Planning Complexity ≥ 0.8?}
+    D --> F[Real-time Planning Tracking]
+    
+    E -->|Yes| G[CRITICAL: Auto-Documentation Activation]
+    E -->|No| H[Standard Planning Documentation]
+    
+    G --> I[MANDATORY: P56 Planning Announcement]
+    H --> J[Planning Tree Update]
+    F --> K[Planning Pattern Recognition]
+    
+    I --> L["🌳 PLANNING CHECKPOINT: Decision depth requires documentation"]
+    J --> M[Planning Database Update]
+    K --> N[Planning Intelligence Growth]
+    
+    L --> O[Automatic Planning Documentation]
+    M --> O
+    N --> O
+    
+    O --> P[CRITICAL: Strategic Commit Creation]
+    P --> Q[Planning Tree Visualization]
+    
+    style C fill:#c8e6c9
+    style G fill:#fff3e0
+    style I fill:#f3e5f5
+    style L fill:#ffecb3
+```
+
+**MANDATORY Command Operations** (100% Execution Requirement):
+1. **CAPTURE Planning Tree**: DOCUMENT all explored planning branches (100% coverage)
+2. **RECORD Decisions**: PRESERVE decision rationale at each branch point (≥95% completeness)
+3. **CREATE Checkpoints**: EXECUTE strategic git commits for rollback capability (100% reliability)
+4. **VISUALIZE Paths**: DISPLAY planning and execution flow (real-time visualization)
+5. **ENABLE Time Travel**: IMPLEMENT return to any previous decision point (≥95% success rate)
 
 ---
 
@@ -93,7 +203,7 @@ function documentDecisionPoint(node, decision) {
 ## 📝 **DOCUMENTATION FORMATS**
 
 ### **Planning Tree Visualization**
-```
+```yaml
 Objective: Implement Authentication System
 │
 ├─[✓] Research authentication methods (confidence: 0.92)
@@ -203,94 +313,94 @@ function enableRollback(target_node) {
 
 ---
 
-## 🔍 **VERIFICATION CRITERIA**
+## Verification Criteria (MANDATORY Compliance)
 
-### **Success Metrics**
-- **Decision Traceability**: 100% of decisions documented with rationale
-- **Rollback Success Rate**: ≥95% successful rollbacks when needed
-- **Planning Visibility**: Complete tree visualization available
-- **Commit Coverage**: Strategic commits at all major decision points
+**CRITICAL Success Metrics** (Mathematical Tracking Required):
+- **Decision Traceability**: 100% of decisions documented with rationale (zero tolerance for undocumented decisions)
+- **Rollback Success Rate**: ≥95% successful rollbacks when needed (quantifiable measurement)
+- **Planning Visibility**: Complete tree visualization available (100% coverage requirement)
+- **Commit Coverage**: Strategic commits at all major decision points (mandatory checkpoint compliance)
 
-### **Documentation Quality Validation**
-```javascript
+**MANDATORY Documentation Quality Validation**:
+```bash
 function validatePlanningDocumentation(planning_tree) {
   const metrics = {
-    decision_coverage: assessDecisionDocumentation(planning_tree),
-    rationale_quality: assessRationaleCompleteness(planning_tree),
-    alternative_documentation: assessAlternativeConsideration(planning_tree),
-    rollback_readiness: assessRollbackCapability(planning_tree)
+    decision_coverage: assessDecisionDocumentation(planning_tree),     # ≥95% requirement
+    rationale_quality: assessRationaleCompleteness(planning_tree),     # ≥90% completeness
+    alternative_documentation: assessAlternativeConsideration(planning_tree), # ≥85% coverage
+    rollback_readiness: assessRollbackCapability(planning_tree)       # ≥95% reliability
   }
   
   return {
-    overall_quality: calculateOverallQuality(metrics),
-    gaps: identifyDocumentationGaps(metrics),
-    improvement_suggestions: generateImprovements(metrics)
+    overall_quality: calculateOverallQuality(metrics),              # ≥90% required
+    gaps: identifyDocumentationGaps(metrics),                       # zero tolerance
+    improvement_suggestions: generateImprovements(metrics)          # actionable outcomes
   }
 }
 ```
 
 ---
 
-## 🔗 **NATURAL CONNECTIONS**
+## Natural Ecosystem Integration (Strategic Cross-Reference Network)
 
-### **Automatically Triggers**
-- `/strategic-git` - For commit creation at decision points
-- `/living-documentation` - Updates planning documentation
-- `/recognize-patterns` - Identifies successful planning patterns
-- `/verification-loops` - Validates planning decisions
+**MANDATORY Automatic Triggers** (Sequential Execution):
+- `/strategic-git` - EXECUTE commit creation at decision points (≤30 seconds)
+- `/living-documentation` - UPDATE planning documentation (real-time synchronization)
+- `/recognize-patterns` - IDENTIFY successful planning patterns (≥90% accuracy)
+- `/verification-loops` - VALIDATE planning decisions (≥95% verification success)
 
-### **Compatible With**
-- `/objective-decomposition` - Documents breakdown structure
-- `/parallel-over-sequential` - Documents parallel exploration branches
-- `/confidence-scoring` - Records confidence at each decision
-- `/git-worktrees-parallel` - Manages multiple planning branches
+**REQUIRED Compatible Commands** (≥95% integration success):
+- `/objective-decomposition` - DOCUMENT breakdown structure (hierarchical planning)
+- `/parallel-over-sequential` - DOCUMENT parallel exploration branches (concurrent planning)
+- `/confidence-scoring` - RECORD confidence at each decision (mathematical precision)
+- `/git-worktrees-parallel` - MANAGE multiple planning branches (parallel development)
 
-### **Feeds Into**
-- Future planning improvements
-- Pattern crystallization for planning
-- Organizational learning system
-- Decision quality metrics
+**CRITICAL Output Dependencies** (100% completion requirement):
+- Future planning improvements (measurable enhancement)
+- Pattern crystallization for planning (≥85% crystallization success)
+- Organizational learning system (knowledge accumulation)
+- Decision quality metrics (quantifiable assessment)
 
 ---
 
 ## 📋 **USAGE EXAMPLES**
 
 ### **Initialize Planning Tree**
-```
+```text
 /planning-documentation init "Migrate monolith to microservices"
 ```
 **Result**: Creates new planning tree, initializes documentation structure
 
 ### **Create Planning Branch**
-```
+```text
 /planning-documentation branch "Explore event-driven architecture"
 ```
 **Result**: New branch in planning tree, ready for exploration documentation
 
 ### **Document Decision Point**
-```
+```text
 /planning-documentation decision "Selected Kubernetes for orchestration"
 ```
 **Result**: Comprehensive decision documentation with rationale and alternatives
 
 ### **Create Strategic Commit**
-```
+```text
 /planning-documentation commit "Architecture decision finalized"
 ```
 **Result**: Git commit with full planning context and rollback capability
 
 ### **Visualize Planning Tree**
-```
+```text
 /planning-documentation visualize
 ```
 **Result**: Visual representation of entire planning tree with execution status
 
 ### **Rollback to Previous Decision**
-```
+```text
 /planning-documentation rollback "decision_arch_002"
 ```
 **Result**: 
-```
+```json
 🔄 **Rollback Initiated**
 
 Returning to: "Pre-Kubernetes decision point"
@@ -312,40 +422,42 @@ Planning tree updated to reflect rollback.
 
 ---
 
-## 🛡️ **FALLBACK PROTOCOL**
+## Intelligent Fallback Protocol (Zero Failure Tolerance)
 
-### **If Documentation Fails**
-1. **Minimal Documentation**: Capture at least decision and timestamp
-2. **Manual Recovery**: Provide manual documentation template
-3. **Retroactive Documentation**: Allow backdating of decisions
-4. **Emergency Rollback**: Simple git-based rollback without full context
+**IF Documentation Fails** (≤60 seconds recovery):
+1. **EXECUTE Minimal Documentation**: CAPTURE at least decision and timestamp (≤10 seconds)
+2. **PROVIDE Manual Recovery**: SUPPLY manual documentation template (immediate access)
+3. **ENABLE Retroactive Documentation**: ALLOW backdating of decisions (audit trail preservation)
+4. **ACTIVATE Emergency Rollback**: EXECUTE simple git-based rollback (≤30 seconds)
 
-### **Documentation Recovery**
-```javascript
+**MANDATORY Documentation Recovery** (Systematic Restoration):
+```bash
 function recoverPlanningDocumentation(corrupted_tree) {
   return {
-    git_history_reconstruction: reconstructFromGitHistory(),
-    decision_log_parsing: parseDecisionLogs(),
-    manual_input_request: promptForMissingDecisions(),
-    partial_tree_recovery: rebuildPartialTree()
+    git_history_reconstruction: reconstructFromGitHistory(),    # ≥90% accuracy
+    decision_log_parsing: parseDecisionLogs(),                  # comprehensive parsing
+    manual_input_request: promptForMissingDecisions(),         # user interaction
+    partial_tree_recovery: rebuildPartialTree()               # ≥85% recovery rate
   }
 }
 ```
 
 ---
 
-## 📊 **INTEGRATION WITH DECISION ENGINE**
+## Decision Engine Integration (Mathematical Routing ≥90%)
 
-### **Planning-Aware Routing**
-```javascript
+**CRITICAL Planning-Aware Routing** (Real-Time Decision Control):
+```bash
 function routeWithPlanningAwareness(command, planning_state) {
   const current_branch = planning_state.current_node
   const exploration_depth = planning_state.getExplorationDepth()
   
   if (exploration_depth > 3 && !current_branch.decision_documented) {
     return {
-      action: 'require_decision_documentation',
-      message: 'Please document decision before proceeding deeper'
+      action: 'require_decision_documentation',           # MANDATORY documentation
+      message: 'EXECUTE decision documentation before proceeding',
+      timeout: 120,                                      # 2-minute compliance
+      enforcement: 'blocking'                            # zero tolerance
     }
   }
   
@@ -353,27 +465,27 @@ function routeWithPlanningAwareness(command, planning_state) {
 }
 ```
 
-### **Automatic Planning Documentation**
-- Triggers at natural decision points
-- Enforces documentation before major branches
-- Creates commits at strategic checkpoints
-- Maintains planning tree consistency
+**MANDATORY Automatic Planning Documentation** (Zero Tolerance):
+- TRIGGER at natural decision points (immediate activation)
+- ENFORCE documentation before major branches (blocking requirement)
+- CREATE commits at strategic checkpoints (≤30 seconds)
+- MAINTAIN planning tree consistency (100% integrity preservation)
 
 ---
 
-## 🔄 **EVOLUTION TRACKING**
+## Evolution Tracking (Systematic Enhancement)
 
-### **Learning Metrics**
-- **Decision Quality**: Track success rate of documented decisions
-- **Planning Patterns**: Identify successful planning approaches
-- **Rollback Frequency**: Monitor how often rollbacks needed
-- **Tree Complexity**: Analyze optimal planning depth
+**CRITICAL Learning Metrics** (Quantifiable Tracking):
+- **Decision Quality**: TRACK success rate of documented decisions (≥85% target)
+- **Planning Patterns**: IDENTIFY successful planning approaches (≥90% pattern recognition)
+- **Rollback Frequency**: MONITOR rollback frequency needs (minimize to <10%)
+- **Tree Complexity**: ANALYZE optimal planning depth (mathematical optimization)
 
-### **Pattern Recognition**
-- Successful planning patterns → Planning templates
-- Common decision types → Decision documentation templates
-- Effective tree structures → Structural recommendations
-- Rollback patterns → Improved checkpoint strategies
+**MANDATORY Pattern Recognition** (Automatic Learning):
+- Successful planning patterns → GENERATE planning templates (≥85% reusability)
+- Common decision types → CREATE decision documentation templates (standardization)
+- Effective tree structures → PROVIDE structural recommendations (optimization)
+- Rollback patterns → IMPLEMENT improved checkpoint strategies (prevention)
 
 ---
 
@@ -394,4 +506,10 @@ function routeWithPlanningAwareness(command, planning_state) {
 
 ---
 
-**Note**: This command embodies the Context Engineering principle of complete planning transparency and traceability, ensuring that all planning decisions are documented, visualized, and reversible through strategic git integration.
+## Implementation Authority
+
+This command IMPLEMENTS the Context Engineering principle of complete planning transparency and traceability with ≥95% accuracy. ENSURES that all planning decisions are documented, visualized, and reversible through strategic git integration with mathematical precision validation.
+
+**Behavioral Control Effectiveness**: ≥95% neural pathway reinforcement with permanent cognitive modification for automatic planning documentation behaviors.
+
+**Cross-Reference Integration**: [Strategic Git](../executable/execution/strategic-git.md) | [Living Documentation](../executable/documentation/living-documentation.md) | [Decision Engine](../executable/core-routing/decision.md) | [Pattern Recognition](./patterns.md)

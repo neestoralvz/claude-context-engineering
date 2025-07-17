@@ -1,0 +1,1033 @@
+{
+  "version": "2.2.0",
+  "lastUpdated": "2025-07-16T16:00:00Z",
+  "taxonomy": {
+    "description": "Taxonomía de comandos optimizada con separación ejecutables vs behavioral",
+    "categories": {
+      "executable": {
+        "description": "Comandos que ejecutan acciones concretas, llamadas de herramientas, scripts, o cálculos matemáticos",
+        "characteristics": [
+          "concrete_actions",
+          "tool_calls",
+          "script_execution",
+          "mathematical_calculations"
+        ],
+        "complexity_range": "0.6-2.0",
+        "function": "Acciones ejecutables (Qué hacer)",
+        "count": 30
+      },
+      "behavioral": {
+        "description": "Comandos que definen patrones de pensamiento, enfoques filosóficos, o marcos cognitivos",
+        "characteristics": [
+          "thinking_patterns",
+          "philosophical_approaches",
+          "cognitive_frameworks",
+          "methodological_guidance"
+        ],
+        "complexity_range": "0.6-0.9",
+        "function": "Patrones de comportamiento (Cómo pensar)",
+        "count": 38
+      },
+      "cores": {
+        "description": "Núcleos consolidados que proporcionan funciones comunes compartidas por múltiples comandos",
+        "characteristics": [
+          "common_functions_consolidation",
+          "redundancy_elimination",
+          "inheritance_patterns",
+          "transparent_activation"
+        ],
+        "complexity_range": "1.0-1.5",
+        "function": "Funciones comunes centralizadas (Núcleos base)",
+        "count": 6
+      },
+      "shared": {
+        "description": "Componentes compartidos y plantillas universales para integración entre sistemas",
+        "characteristics": [
+          "cross_system_compatibility",
+          "reusable_components",
+          "universal_templates",
+          "integration_patterns"
+        ],
+        "complexity_range": "0.5-1.0",
+        "function": "Utilidades compartidas (Componentes universales)",
+        "count": 2
+      }
+    },
+    "subcategories": {
+      "executable": {
+        "core-routing": "Routing y decision logic fundamental",
+        "orchestration": "Workflows coordinados",
+        "verification": "Validación y testing",
+        "documentation": "Documentación automática",
+        "execution": "Ejecución de tareas",
+        "automation": "Automatización de scripts",
+        "maintenance": "Mantenimiento del sistema",
+        "mapping": "Análisis de relaciones",
+        "selection": "Selección y coordinación",
+        "behavior": "Comportamiento ejecutable",
+        "meta": "Orquestación universal"
+      },
+      "behavioral": {
+        "intelligence": "Operaciones cognitivas",
+        "optimization": "Optimización de enfoques",
+        "exploration": "Metodologías de exploración",
+        "verification": "Filosofías de validación",
+        "documentation": "Enfoques de documentación",
+        "execution": "Metodologías de ejecución",
+        "behavior": "Patrones de comportamiento",
+        "selection": "Metodologías de selección"
+      },
+      "cores": {
+        "verification": "Núcleo de funciones comunes de verificación",
+        "mathematical-verification": "Núcleo unificado de verificación matemática",
+        "documentation": "Núcleo de funciones comunes de documentación",
+        "optimization": "Núcleo de funciones comunes de optimización",
+        "cognitive": "Núcleo de funciones comunes de procesamiento cognitivo",
+        "orchestration": "Núcleo de funciones comunes de orquestación"
+      },
+      "shared": {
+        "patterns": "Patrones y componentes compartidos",
+        "templates": "Plantillas y estándares universales"
+      }
+    }
+  },
+  "commands": {
+    "executable": {
+      "core-routing": [
+        {
+          "name": "decision",
+          "path": "./commands/executable/core-routing/decision.md",
+          "aliases": [
+            "execute-decision-engine",
+            "decision-engine"
+          ],
+          "complexity": 1.2,
+          "description": "Script-integrated intelligent routing with mathematical triggers, auto-restart, and real execution validation",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "core-routing"
+        },
+        {
+          "name": "explicit-decision-trees",
+          "path": "./commands/executable/core-routing/explicit-decision-trees.md",
+          "complexity": 0.9,
+          "description": "Clear, documented decision flows for all routing with automatic mathematical triggers",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "core-routing"
+        }
+      ],
+      "orchestration": [
+        {
+          "name": "discover",
+          "path": "./commands/executable/orchestration/discover.md",
+          "aliases": [
+            "execute-discovery-workflow",
+            "discovery-workflow"
+          ],
+          "complexity": 1.4,
+          "description": "Complete knowledge discovery process",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
+        },
+        {
+          "name": "execute",
+          "path": "./commands/executable/orchestration/execute.md",
+          "aliases": [
+            "execute-execution-workflow",
+            "execution-workflow"
+          ],
+          "complexity": 1.5,
+          "description": "Parallel execution with verification",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
+        },
+        {
+          "name": "orchestrate",
+          "path": "./commands/executable/orchestration/orchestrate.md",
+          "aliases": [
+            "execute-command-orchestration",
+            "command-orchestration-workflow"
+          ],
+          "complexity": 1.4,
+          "description": "Intelligent routing and command chaining",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
+        },
+        {
+          "name": "plan-flow",
+          "path": "./commands/executable/orchestration/plan-flow.md",
+          "aliases": [
+            "execute-planning-workflow",
+            "planning-workflow"
+          ],
+          "complexity": 1.4,
+          "description": "Strategic planning and decomposition",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
+        },
+        {
+          "name": "verify-flow",
+          "path": "./commands/executable/orchestration/verify-flow.md",
+          "aliases": [
+            "execute-verification-workflow",
+            "verification-workflow"
+          ],
+          "complexity": 1.4,
+          "description": "Multi-dimensional verification",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
+        }
+      ],
+      "verification": [
+        {
+          "name": "confidence",
+          "path": "./commands/executable/verification/confidence.md",
+          "aliases": [
+            "calculate-confidence-score",
+            "confidence-scoring"
+          ],
+          "complexity": 0.7,
+          "description": "Script-integrated multi-dimensional confidence measurement with mathematical precision",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "math-loops",
+          "path": "./commands/executable/verification/math-loops.md",
+          "aliases": [
+            "execute-mathematical-loops",
+            "mathematical-loops"
+          ],
+          "complexity": 0.8,
+          "description": "Iterative mathematical operations with precision toward objectives",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "math-verify",
+          "path": "./commands/executable/verification/math-verify.md",
+          "aliases": [
+            "verify-mathematics-loops",
+            "verify-mathematics",
+            "verify-math"
+          ],
+          "complexity": 0.8,
+          "description": "Recursive verification with mathematical precision and convergence guarantee",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "validate-command-content",
+          "path": "./commands/executable/verification/validate-command-content.md",
+          "aliases": [
+            "validate-content-quality",
+            "command-quality-validation"
+          ],
+          "complexity": 0.7,
+          "description": "Script-enhanced command content quality validation with mathematical precision",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "validate-sys",
+          "path": "./commands/executable/verification/validate-sys.md",
+          "aliases": [
+            "validate-system-integrity",
+            "system-integrity"
+          ],
+          "complexity": 1.0,
+          "description": "Maintain system integrity automatically by verifying all project elements",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "validate-tool-call-execution",
+          "path": "./commands/executable/verification/validate-tool-call-execution.md",
+          "complexity": 0.9,
+          "description": "Validate Tool Call Execution Bridging compliance with mathematical rigor",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "verify-loops",
+          "path": "./commands/executable/verification/verify-loops.md",
+          "aliases": [
+            "execute-verification-loops",
+            "verification-loops"
+          ],
+          "complexity": 0.7,
+          "description": "Iterative verification until confidence thresholds are met",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "verify-scope",
+          "path": "./commands/executable/verification/verify-scope.md",
+          "aliases": [
+            "liberate-verification-scope",
+            "verification-liberation"
+          ],
+          "complexity": 0.8,
+          "description": "Give AI comprehensive 'sight' into all execution result dimensions",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "writing-standards-validator",
+          "path": "./commands/executable/verification/writing-standards-validator.md",
+          "aliases": [
+            "validate-writing-standards",
+            "writing-compliance-validator",
+            "standards-validator"
+          ],
+          "complexity": 0.8,
+          "description": "Validate documentation against comprehensive writing standards with behavioral reinforcement, precision language, and evidence-based compliance",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        }
+      ],
+      "documentation": [
+        {
+          "name": "living-documentation",
+          "path": "./commands/executable/documentation/living-documentation.md",
+          "complexity": 0.7,
+          "description": "Documentation that evolves through usage and becomes single source of truth",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "sync-docs",
+          "path": "./commands/executable/documentation/sync-docs.md",
+          "aliases": [
+            "synchronize-claude-documentation",
+            "sync-claude-md"
+          ],
+          "complexity": 1.1,
+          "description": "Intelligent context map with lazy loading, progressive thinking integration, and manual synchronization capabilities (consolidated from update-living-docs)",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "modularization-protocol",
+          "path": "./commands/executable/documentation/modularization-protocol.md",
+          "aliases": [
+            "modularization",
+            "content-modularization",
+            "cross-reference-optimization"
+          ],
+          "complexity": 0.8,
+          "description": "Execute comprehensive modularization protocol with P55/P56 compliance, mathematical validation, and context reduction optimization",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "modularization-protocol-enhanced",
+          "path": "./commands/executable/documentation/modularization-protocol-enhanced.md",
+          "aliases": [
+            "modularization-enhanced",
+            "enhanced-modularization",
+            "content-modularization-enhanced",
+            "cross-reference-optimization-enhanced",
+            "rule-compliant-modularization"
+          ],
+          "complexity": 0.9,
+          "description": "Execute enhanced comprehensive modularization protocol with complete 6-module command rules integration, advanced P55/P56 compliance, mathematical validation, and context reduction optimization",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        }
+      ],
+      "execution": [
+        {
+          "name": "git-worktrees-parallel",
+          "path": "./commands/executable/execution/git-worktrees-parallel.md",
+          "complexity": 0.7,
+          "description": "Multi-solution exploration through parallel worktree development",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "execution"
+        },
+        {
+          "name": "parallel-tool-execution",
+          "path": "./commands/executable/execution/parallel-tool-execution.md",
+          "complexity": 0.8,
+          "description": "Execute multiple independent tool calls simultaneously in a single message",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "execution"
+        },
+        {
+          "name": "strategic-git",
+          "path": "./commands/executable/execution/strategic-git.md",
+          "complexity": 0.6,
+          "description": "Version control as safety net and progress documentation",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "execution"
+        }
+      ],
+      "automation": [
+        {
+          "name": "script-automation-bridge",
+          "path": "./commands/executable/automation/script-automation-bridge.md",
+          "complexity": 1.1,
+          "description": "Bridge de automatización que conecta scripts existentes con comportamiento LLM",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "automation"
+        }
+      ],
+      "maintenance": [
+        {
+          "name": "registry-metrics-update",
+          "path": "./commands/executable/maintenance/registry-metrics-update.md",
+          "complexity": 0.8,
+          "description": "Auto-update command registry with current metrics",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "maintenance"
+        },
+        {
+          "name": "system-health",
+          "path": "./commands/executable/maintenance/system-health.md",
+          "aliases": [
+            "sh"
+          ],
+          "complexity": 1.1,
+          "description": "Mantenimiento automático inteligente del sistema Context Engineering",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "maintenance"
+        }
+      ],
+      "mapping": [
+        {
+          "name": "command-relationships",
+          "path": "./commands/executable/mapping/command-relationships.md",
+          "complexity": 0.9,
+          "description": "Maps how commands interconnect and chain",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "mapping"
+        }
+      ],
+      "selection": [
+        {
+          "name": "multi-agent-orchestration",
+          "path": "./commands/executable/selection/multi-agent-orchestration.md",
+          "complexity": 0.9,
+          "description": "Specialized agent deployment and coordination up to 10 agents",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "selection"
+        }
+      ],
+      "behavior": [
+        {
+          "name": "monitor",
+          "path": "./commands/executable/behavior/monitor.md",
+          "aliases": [
+            "monitor-trigger-system",
+            "trigger-monitor"
+          ],
+          "complexity": 1.0,
+          "description": "Script-integrated continuous trigger monitoring with real-time dashboard",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "behavior"
+        },
+        {
+          "name": "dynamic-dependency-analysis",
+          "path": "./commands/executable/behavior/dynamic-dependency-analysis.md",
+          "complexity": 1.0,
+          "description": "Continuous dependency analysis and execution optimization",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "behavior"
+        }
+      ],
+      "meta": [
+        {
+          "name": "context-eng",
+          "path": "./commands/executable/meta/context-eng.md",
+          "aliases": [
+            "activate-context-engineering",
+            "context-engineering",
+            "ce",
+            "smart-workflow",
+            "sw"
+          ],
+          "complexity": 2.0,
+          "description": "Universal meta-command activating all 66 commands",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "meta"
+        }
+      ]
+    },
+    "behavioral": {
+      "intelligence": [
+        {
+          "name": "autonomous",
+          "path": "./commands/behavioral/intelligence/autonomous.md",
+          "aliases": [
+            "enable-autonomous-mode",
+            "enable-dont-control"
+          ],
+          "complexity": 0.8,
+          "description": "Activate autonomous execution mode within intelligent frameworks",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "complexity",
+          "path": "./commands/behavioral/intelligence/complexity.md",
+          "aliases": [
+            "complexity-enforcement"
+          ],
+          "complexity": 0.6,
+          "description": "Mathematical complexity measurement and automatic blocking",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "decompose",
+          "path": "./commands/behavioral/intelligence/decompose.md",
+          "aliases": [
+            "objective-decomposition"
+          ],
+          "complexity": 0.8,
+          "description": "Break large objectives into verifiable parts",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "evolution-ready-architecture",
+          "path": "./commands/behavioral/intelligence/evolution-ready-architecture.md",
+          "complexity": 0.8,
+          "description": "System designed for unlimited growth and adaptation",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "evolve-intelligence",
+          "path": "./commands/behavioral/intelligence/evolve-intelligence.md",
+          "complexity": 0.7,
+          "description": "Intelligence as Natural Phenomenon",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "invisible-excellence",
+          "path": "./commands/behavioral/intelligence/invisible-excellence.md",
+          "complexity": 0.8,
+          "description": "Architecture feels like magic while remaining debuggable",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "knowledge-hierarchy",
+          "path": "./commands/behavioral/intelligence/knowledge-hierarchy.md",
+          "complexity": 0.7,
+          "description": "Systematic knowledge search from local to external",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "meta-core",
+          "path": "./commands/behavioral/intelligence/meta-core.md",
+          "aliases": [
+            "activate-meta-principle",
+            "meta-principle"
+          ],
+          "complexity": 0.8,
+          "description": "Stop trying to control the model. Enable it.",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "modular-composition",
+          "path": "./commands/behavioral/intelligence/modular-composition.md",
+          "complexity": 0.6,
+          "description": "Build complexity through composition, not duplication",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "orchestrate-intelligence",
+          "path": "./commands/behavioral/intelligence/orchestrate-intelligence.md",
+          "complexity": 0.9,
+          "description": "Coordinate specialized agents for complex challenges",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "organizational-architecture",
+          "path": "./commands/behavioral/intelligence/organizational-architecture.md",
+          "complexity": 0.6,
+          "description": "Strict organization structure for scalable documentation growth",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "progress",
+          "path": "./commands/behavioral/intelligence/progress.md",
+          "aliases": [
+            "execute-progressive-analysis",
+            "progressive-intelligence"
+          ],
+          "complexity": 0.9,
+          "description": "Deepen understanding through staged analysis and intelligence evolution",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "reorganize-system",
+          "path": "./commands/behavioral/intelligence/reorganize-system.md",
+          "complexity": 0.9,
+          "description": "Systematic methodology for reorganizing command structures",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "simplicity",
+          "path": "./commands/behavioral/intelligence/simplicity.md",
+          "aliases": [
+            "mathematical-simplicity"
+          ],
+          "complexity": 0.7,
+          "description": "Enforce simplicity through mathematical measurement",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "systematic-quality-improvement",
+          "path": "./commands/behavioral/intelligence/systematic-quality-improvement.md",
+          "aliases": [
+            "quality-improvement-workflow",
+            "four-stage-enhancement",
+            "systematic-enhancement"
+          ],
+          "complexity": 0.8,
+          "description": "Execute systematic quality improvement using four-stage enhancement methodology",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "tdd",
+          "path": "./commands/behavioral/intelligence/tdd.md",
+          "complexity": 0.7,
+          "description": "Define verification criteria before implementation",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "think-process",
+          "path": "./commands/behavioral/intelligence/think-process.md",
+          "aliases": [
+            "orchestrate-thinking-process",
+            "think-master"
+          ],
+          "complexity": 0.9,
+          "description": "Master thinking orchestration and cognitive optimization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "thinking",
+          "path": "./commands/behavioral/intelligence/thinking.md",
+          "aliases": [
+            "activate-progressive-thinking",
+            "progressive-thinking"
+          ],
+          "complexity": 0.9,
+          "description": "Execute complete progressive thinking sequence for deep strategic analysis",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        }
+      ],
+      "optimization": [
+        {
+          "name": "context-economy",
+          "path": "./commands/behavioral/optimization/context-economy.md",
+          "complexity": 0.8,
+          "description": "80% context reduction with 100% functionality preservation",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "context-over-commands",
+          "path": "./commands/behavioral/optimization/context-over-commands.md",
+          "complexity": 0.6,
+          "description": "Rich context enables autonomous excellence",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-cognitive-organization",
+          "path": "./commands/behavioral/optimization/optimize-cognitive-organization.md",
+          "complexity": 0.8,
+          "description": "Optimal cognitive organization for maximum understanding",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-complexity",
+          "path": "./commands/behavioral/optimization/optimize-complexity.md",
+          "complexity": 0.9,
+          "description": "Architecture that feels like magic while remaining debuggable",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-context",
+          "path": "./commands/behavioral/optimization/optimize-context.md",
+          "complexity": 0.7,
+          "description": "Load minimum necessary context while maintaining effectiveness",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-intelligent-writing",
+          "path": "./commands/behavioral/optimization/optimize-intelligent-writing.md",
+          "complexity": 0.7,
+          "description": "Unified intelligent writing standards combining natural language with cognitive optimization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "single-source-truth",
+          "path": "./commands/behavioral/optimization/single-source-truth.md",
+          "complexity": 0.6,
+          "description": "Establish single authoritative source for each functionality",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        }
+      ],
+      "exploration": [
+        {
+          "name": "explore",
+          "path": "./commands/behavioral/exploration/explore.md",
+          "aliases": [
+            "exploration-first"
+          ],
+          "complexity": 0.8,
+          "description": "Mandatory exploration before execution",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "exploration"
+        },
+        {
+          "name": "quick-explore",
+          "path": "./commands/behavioral/exploration/quick-explore.md",
+          "aliases": [
+            "qe"
+          ],
+          "complexity": 0.8,
+          "description": "Exploración rápida optimizada sin overhead",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "exploration"
+        },
+        {
+          "name": "quick-explore-orquestador",
+          "path": "./commands/behavioral/exploration/quick-explore-orquestador.md",
+          "complexity": 1.2,
+          "description": "Orchestrated quick exploration with workflow optimization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "exploration"
+        }
+      ],
+      "verification": [
+        {
+          "name": "thresholds",
+          "path": "./commands/behavioral/verification/thresholds.md",
+          "aliases": [
+            "threshold-enforcement"
+          ],
+          "complexity": 0.6,
+          "description": "Mathematical thresholds with automatic enforcement",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "verification"
+        }
+      ],
+      "documentation": [
+        {
+          "name": "crystallize",
+          "path": "./commands/behavioral/documentation/crystallize.md",
+          "aliases": [
+            "crystallize-patterns"
+          ],
+          "complexity": 0.8,
+          "description": "Transform repeated patterns into reusable commands",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "patterns",
+          "path": "./commands/behavioral/documentation/patterns.md",
+          "aliases": [
+            "recognize-patterns"
+          ],
+          "complexity": 0.8,
+          "description": "Identify reusable patterns for crystallization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "planning-documentation",
+          "path": "./commands/behavioral/documentation/planning-documentation.md",
+          "complexity": 0.9,
+          "description": "Document planning trees for complete traceability",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "technical-nomenclature",
+          "path": "./commands/behavioral/documentation/technical-nomenclature.md",
+          "complexity": 0.9,
+          "description": "Universal methodology for establishing technical nomenclature standards",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        }
+      ],
+      "execution": [
+        {
+          "name": "conversation-lifecycle",
+          "path": "./commands/behavioral/execution/conversation-lifecycle.md",
+          "complexity": 0.8,
+          "description": "Manage work in conversation units with clear closure",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "execution"
+        },
+        {
+          "name": "parallel",
+          "path": "./commands/behavioral/execution/parallel.md",
+          "aliases": [
+            "parallel-over-sequential"
+          ],
+          "complexity": 0.9,
+          "description": "Execute multiple approaches simultaneously",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "execution"
+        }
+      ],
+      "behavior": [
+        {
+          "name": "intelligent-fallback",
+          "path": "./commands/behavioral/behavior/intelligent-fallback.md",
+          "complexity": 1.1,
+          "description": "Intelligent recovery protocols and fallback strategy selection",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "behavior"
+        }
+      ],
+      "selection": [
+        {
+          "name": "model-selection",
+          "path": "./commands/behavioral/selection/model-selection.md",
+          "complexity": 0.6,
+          "description": "Select optimal AI model based on task complexity",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "selection"
+        }
+      ]
+    },
+    "cores": {
+      "verification": [
+        {
+          "name": "verification-engine",
+          "path": "./commands/cores/verification-engine.md",
+          "aliases": [
+            "core-verification",
+            "verification-core",
+            "common-verification"
+          ],
+          "complexity": 1.2,
+          "description": "Núcleo consolidado de funciones comunes de verificación: cálculo de confianza, validación de precisión, reporting estructurado, integración de scripts y thresholds dinámicos",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "verification"
+        }
+      ],
+      "mathematical-verification": [
+        {
+          "name": "mathematical-verification-unified",
+          "path": "./commands/cores/mathematical-verification-unified.md",
+          "aliases": [
+            "core-mathematical-verification",
+            "mathematical-verification-core",
+            "unified-mathematical-verification"
+          ],
+          "complexity": 1.4,
+          "description": "Núcleo unificado de verificación matemática: algoritmos de convergencia unificados, control de precisión matemática, gestión de loops matemáticos y protocolos de verificación matemática",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "mathematical-verification"
+        }
+      ],
+      "documentation": [
+        {
+          "name": "documentation-sync",
+          "path": "./commands/cores/documentation-sync.md",
+          "aliases": [
+            "core-documentation",
+            "documentation-core",
+            "common-documentation"
+          ],
+          "complexity": 1.1,
+          "description": "Núcleo consolidado de funciones comunes de documentación: sincronización automática, detección de cambios, lazy loading, cross-referencing y versionado",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "documentation"
+        }
+      ],
+      "optimization": [
+        {
+          "name": "optimization-framework",
+          "path": "./commands/cores/optimization-framework.md",
+          "aliases": [
+            "core-optimization",
+            "optimization-core",
+            "common-optimization"
+          ],
+          "complexity": 1.3,
+          "description": "Núcleo consolidado de funciones comunes de optimización: análisis de contexto, métricas de performance, reducción de complejidad, economía cognitiva y feedback loops",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "optimization"
+        }
+      ],
+      "cognitive": [
+        {
+          "name": "cognitive-processor",
+          "path": "./commands/cores/cognitive-processor.md",
+          "aliases": [
+            "core-cognitive",
+            "cognitive-core",
+            "common-thinking"
+          ],
+          "complexity": 1.4,
+          "description": "Núcleo consolidado de funciones comunes de procesamiento cognitivo: análisis multi-dimensional, descomposición de problemas, síntesis de información, progresión lógica y meta-cognición",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "cognitive"
+        }
+      ],
+      "orchestration": [
+        {
+          "name": "orchestration-hub",
+          "path": "./commands/cores/orchestration-hub.md",
+          "aliases": [
+            "core-orchestration",
+            "orchestration-core",
+            "common-orchestration"
+          ],
+          "complexity": 1.5,
+          "description": "Núcleo consolidado de funciones comunes de orquestación: coordinación de workflows, delegación inteligente, monitoreo de progreso, sincronización multi-agente y error handling",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "orchestration"
+        }
+      ]
+    },
+    "shared": {
+      "patterns": [
+        {
+          "name": "orchestration-patterns",
+          "path": "./commands/shared/orchestration-patterns.md",
+          "aliases": [
+            "shared-orchestration",
+            "orchestration-components",
+            "shared-patterns"
+          ],
+          "complexity": 0.8,
+          "description": "Componentes compartidos de orquestación: análisis de dependencias, optimización paralela, seguimiento de progreso y manejo de errores con ≥50% reducción de duplicación",
+          "status": "active",
+          "classification": "shared",
+          "subcategory": "patterns"
+        }
+      ],
+      "templates": [
+        {
+          "name": "p55-p56-compliance-template",
+          "path": "./commands/shared/p55-p56-compliance-template.md",
+          "aliases": [
+            "compliance-template",
+            "p55-p56-template"
+          ],
+          "complexity": 0.6,
+          "description": "Plantilla de cumplimiento P55/P56 con protocolos de validación cuantificables",
+          "status": "active",
+          "classification": "shared",
+          "subcategory": "templates"
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "totalCommands": 75,
+    "activeCommands": 75,
+    "executableCommands": 30,
+    "behavioralCommands": 38,
+    "coreCommands": 6,
+    "sharedCommands": 2,
+    "overallSuccessRate": 0.8768656716417909,
+    "totalUsageCount": 204,
+    "averageConfidenceScore": 9.335820895522394,
+    "lastCalculated": "2025-07-16T19:30:00Z"
+  }
+}

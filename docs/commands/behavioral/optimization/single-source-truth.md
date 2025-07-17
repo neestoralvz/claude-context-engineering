@@ -16,10 +16,75 @@ Establish and maintain a single authoritative source for each piece of functiona
 
 ---
 
+## MANDATORY Single Source Truth Decision Framework
+
+**CRITICAL**: Single source truth optimization requires systematic decision-making with quantifiable metrics and auto-activation triggers.
+
+```mermaid
+graph TD
+    A[Single Source Truth Request] --> B{Current Duplication Level?}
+    B -->|>20%| C[CRITICAL: Emergency Deduplication]
+    B -->|5-20%| D[MANDATORY: Targeted Consolidation]
+    B -->|<5%| E[REQUIRED: Truth Maintenance]
+    
+    C --> F{Consolidation Complexity ≥ 0.9?}
+    F -->|Yes| G[MANDATORY: Task Tool Deployment]
+    F -->|No| H[Direct Consolidation]
+    
+    D --> I{Consolidation Strategy?}
+    I -->|Comprehensive| J[Full System Consolidation]
+    I -->|Atomic| K[Targeted Function Consolidation]
+    I -->|Incremental| L[Gradual Deduplication]
+    
+    E --> M[Truth Integrity Monitoring]
+    
+    G --> N[Truth Establishment]
+    H --> N
+    J --> N
+    K --> N
+    L --> N
+    M --> N
+    
+    N --> O{Duplication Reduction ≥95%?}
+    O -->|Yes| P[P56: Single Source Truth SUCCESS]
+    O -->|No| Q[MANDATORY: Escalate Consolidation]
+    
+    P --> R[Truth Monitoring]
+    Q --> C
+```
+
+**Auto-Activation Triggers** (MANDATORY):
+- Duplication level >20% → CRITICAL emergency deduplication
+- Reference inconsistency >2% → MANDATORY consolidation
+- Authority clarity <90% → REQUIRED truth establishment
+- System consistency violations detected → CRITICAL intervention
+
+**P56 Transparency Announcements** (REQUIRED):
+- Duplication reduction percentage achieved
+- Authority establishment verification
+- Reference consistency improvement metrics
+- System consistency enhancement results
+
+---
+
+## 🛡️ P55/P56 Compliance Integration
+
+### **P55 Tool Execution Bridging**
+**MANDATORY**: Real tool execution vs simulation prohibition
+- **Task Agent Deployment**: REQUIRED for complexity ≥0.9
+- **Success Rate Target**: ≥98% completion guarantee
+- **Execution Evidence**: Actual tool results with quantitative validation
+
+### **P56 Transparency Protocol**
+**CRITICAL**: Visual execution confirmation system
+- **P56 Announcement**: Single Source Truth execution initiated
+- **Tool Evidence**: Observable outcomes with specific metrics
+- **Completion Verification**: Quantifiable success criteria
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /single-source-truth [domain] [consolidation_scope?] [validation_level?]
 ```
 
@@ -160,19 +225,19 @@ function monitorSingleSource(domain) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Code Functionality Consolidation**
-```
+```text
 /single-source-truth "authentication-logic" consolidation_scope=comprehensive validation_level=strict
 ```
 **Result**: Consolidate all authentication logic into single authoritative implementation
 
 ### **Documentation Consolidation**
-```
+```text
 /single-source-truth "command-documentation" consolidation_scope=atomic_commands validation_level=high
 ```
 **Result**: Establish single authoritative source for all command documentation
 
 ### **Configuration Consolidation**
-```
+```yaml
 /single-source-truth "system-configuration" consolidation_scope=all_configs validation_level=strict
 ```
 **Result**: Consolidate all system configurations into single authoritative source

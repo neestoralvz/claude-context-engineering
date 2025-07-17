@@ -19,7 +19,7 @@ Enforce modular composition architecture where orchestrators USE modules, module
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /modular-composition [target] [action] [scope?]
 ```
 
@@ -38,6 +38,116 @@ Enforce modular composition architecture where orchestrators USE modules, module
 4. **Detect Duplication**: Find replicated functionality across modules
 5. **Enforce Boundaries**: Ensure single-capability module design
 6. **Optimize Structure**: Recommend composition improvements
+
+---
+
+## 🧠 **MODULAR COMPOSITION DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Modular Composition**
+
+```mermaid
+graph TD
+    A[Modular Composition Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Composition Processing]
+    B -->|No| D[Standard Composition Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Composition Execution]
+    
+    D --> H{Target Scope Assessment}
+    H -->|System-wide| I[Full System Analysis]
+    H -->|Component-specific| J[Targeted Component Analysis]
+    
+    F --> K[Task Tool: Complex Composition Analysis]
+    K --> L[P56: Advanced Composition Coordination]
+    
+    G --> M{Composition Validation Type}
+    M -->|Orchestrator| N[Orchestrator Compliance Check]
+    M -->|Module| O[Module Boundary Validation]
+    M -->|System| P[Full System Validation]
+    
+    I --> Q[Read Tool: Load System Architecture]
+    Q --> R[Bash Tool: Dependency Mapping]
+    
+    J --> S[Read Tool: Load Component Context]
+    S --> T[Edit Tool: Document Analysis]
+    
+    N --> U{Direct Implementation Check}
+    U -->|Found| V[CRITICAL: Boundary Violation]
+    U -->|None| W[Orchestrator Compliant]
+    
+    O --> X{Single Capability Check}
+    X -->|Multiple| Y[REQUIRED: Module Split]
+    X -->|Single| Z[Module Compliant]
+    
+    P --> AA[Bash Tool: Duplication Detection]
+    AA --> BB{Duplication Found?}
+    BB -->|Yes| CC[MANDATORY: Deduplication]
+    BB -->|No| DD[System Clean]
+    
+    R --> EE[Edit Tool: Document Dependencies]
+    EE --> FF[Mathematical Composition Score]
+    
+    V --> GG[Read Tool: Load Refactoring Patterns]
+    GG --> HH[Edit Tool: Generate Extraction Plan]
+    HH --> II[P56: Boundary Correction Plan]
+    
+    Y --> JJ[Read Tool: Load Split Patterns]
+    JJ --> KK[Edit Tool: Generate Split Strategy]
+    KK --> LL[P56: Module Split Plan]
+    
+    CC --> MM[Read Tool: Load Deduplication Patterns]
+    MM --> NN[Edit Tool: Generate Consolidation Plan]
+    NN --> OO[P56: Deduplication Strategy]
+    
+    W --> PP[P56: Orchestrator Validation Success]
+    Z --> QQ[P56: Module Validation Success]
+    DD --> RR[P56: System Validation Success]
+    
+    L --> SS[Agent Composition Results]
+    SS --> TT[P56: Expert Composition Complete]
+    
+    FF --> UU[Composition Quality Metrics]
+    II --> UU
+    LL --> UU
+    OO --> UU
+    PP --> UU
+    QQ --> UU
+    RR --> UU
+    TT --> UU
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style V fill:#ffe66d
+    style CC fill:#ff8b94
+    style UU fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+modular_composition_transparency:
+  composition_analysis:
+    announcement: "🔍 TRANSPARENCY: Composition analysis - [SYSTEM/COMPONENT] scope, [X] components analyzed"
+    evidence: "Complete composition analysis with dependency mapping"
+    
+  violation_detection:
+    announcement: "🚨 TRANSPARENCY: Violations detected - [BOUNDARY/DUPLICATION/CAPABILITY] type, [X] count"
+    evidence: "Detailed violation analysis with severity and impact assessment"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [composition_operation]"
+    evidence: "Tool selection matrix with composition-specific reasoning"
+    
+  refactoring_strategy:
+    announcement: "🔄 TRANSPARENCY: Refactoring strategy - [EXTRACTION/SPLIT/CONSOLIDATION] approach"
+    evidence: "Complete refactoring plan with implementation steps"
+    
+  composition_quality:
+    announcement: "📊 TRANSPARENCY: Composition quality [X]/10 - [COMPLIANT/IMPROVEMENT_REQUIRED]"
+    evidence: "Mathematical composition score with quality metrics"
+```
 
 ---
 
@@ -432,6 +542,7 @@ function detectCompositionAntiPatterns(system) {
 - `/organizational-architecture` - Aligns with system organization
 - `/crystallize-patterns` - Identifies successful composition patterns
 - `/living-documentation` - Documents architecture evolution
+- `/mathematical-complexity-core` - Uses shared complexity calculations for modular assessment
 
 ### **Feeds Into**
 - `/decision-engine` - Provides architectural routing criteria
@@ -443,19 +554,19 @@ function detectCompositionAntiPatterns(system) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **System Architecture Analysis**
-```
+```text
 /modular-composition "entire-system" "analyze" "full"
 ```
 **Result**: Complete dependency mapping, composition validation, and duplication detection across all system components
 
 ### **Orchestrator Compliance Check**
-```
+```text
 /modular-composition "user-management-orchestrator" "validate" "orchestrator"
 ```
 **Result**: Verifies orchestrator uses modules correctly, identifies direct implementation violations
 
 ### **Module Boundary Enforcement**
-```
+```text
 /modular-composition "authentication-module" "enforce" "boundaries"
 ```
 **Result**: Ensures single-capability design, suggests splits if multiple capabilities detected

@@ -7,7 +7,7 @@ This document defines the standard pattern for Context Engineering commands to r
 ## Problem Solved
 
 Commands in `.claude/commands/` are located at 4 levels deep from the project root:
-```
+```markdown
 /Users/nalve/claude-context-engineering/
 └── .claude/commands/               # Level 1
     ├── behavioral/                 # Level 2  

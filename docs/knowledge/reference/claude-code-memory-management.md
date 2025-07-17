@@ -2,18 +2,18 @@
 
 **Meta-Principle**: "Enable persistent context through intelligent memory architecture"
 
-**Purpose**: CRITICAL comprehensive guide for Claude Code memory management, covering the `/memory` command, memory types, import systems, and best practices for maintaining persistent AI context across development sessions.
+**Purpose**: MANDATORY comprehensive authority for Claude Code memory management. REQUIRED guide covering the `/memory` command, memory types, import systems, and CRITICAL best practices for maintaining persistent AI context across development sessions.
 
-**Context Engineering Integration**: Essential component of the Context Engineering ecosystem enabling persistent behavioral patterns and contextual intelligence across all Claude Code sessions.
+**Context Engineering Integration**: CRITICAL component of the Context Engineering ecosystem. MANDATORY enablement of persistent behavioral patterns and contextual intelligence across ALL Claude Code sessions.
 
 ---
 
 ## 🧠 Memory Architecture Overview
 
-Claude Code implements a **hierarchical memory system** that enables persistent context, behavioral patterns, and project-specific knowledge across all development sessions.
+Claude Code implements a **MANDATORY hierarchical memory system** that ENABLES persistent context, behavioral patterns, and project-specific knowledge across ALL development sessions.
 
 ### **Memory Hierarchy**
-```
+```python
 User Memory (~/.claude/CLAUDE.md)
 ├── Global preferences and behaviors
 ├── Personal development patterns
@@ -35,24 +35,24 @@ Import Network (@./path/to/file.md)
 ## ⚡ The `/memory` Command
 
 ### **Core Functionality**
-The `/memory` command provides **interactive memory management** for viewing, editing, and organizing Claude's persistent context.
+The `/memory` command provides **MANDATORY interactive memory management** for viewing, editing, and organizing Claude's persistent context.
 
 ```bash
 /memory
 ```
 
-### **Command Capabilities**
-- **View Active Memory**: Display all currently loaded memory files
-- **Edit Memory Files**: Open CLAUDE.md files in your system editor
-- **Manage Imports**: View and modify import relationships
-- **Verify Loading**: Confirm which memories are active in current session
+### **CRITICAL Command Capabilities**
+- **View Active Memory**: DISPLAY all currently loaded memory files
+- **Edit Memory Files**: OPEN CLAUDE.md files in your system editor
+- **Manage Imports**: VIEW and MODIFY import relationships
+- **Verify Loading**: CONFIRM which memories are active in current session
 
 ### **Interactive Interface**
-When you run `/memory`, Claude Code presents:
-1. **List of loaded memory files** with their locations
-2. **Import chain visualization** showing file relationships
-3. **Edit options** for each memory file
-4. **Memory verification** to confirm loading status
+When you run `/memory`, Claude Code PRESENTS:
+1. **COMPLETE list** of loaded memory files with their locations
+2. **MANDATORY import chain visualization** showing file relationships
+3. **IMMEDIATE edit options** for each memory file
+4. **REQUIRED memory verification** to confirm loading status
 
 ---
 
@@ -123,7 +123,7 @@ When you run `/memory`, Claude Code presents:
 ## 🚀 Quick Memory Addition
 
 ### **Rapid Memory Creation**
-Start any message with `#` to add memory content directly:
+Start any message with `#` to add memory content IMMEDIATELY:
 
 ```bash
 # Use React Query for all API calls
@@ -131,13 +131,13 @@ Start any message with `#` to add memory content directly:
 # Prefer CSS Modules over styled-components
 ```
 
-Claude will prompt you to select which memory file to update.
+Claude will PROMPT you to select which memory file to update.
 
 ### **Memory Selection Dialog**
-When using `#` syntax, Claude presents:
-1. **User memory** - Apply to all projects
-2. **Project memory** - Apply to current project only
-3. **Create new file** - For specialized memory modules
+When using `#` syntax, Claude PRESENTS:
+1. **User memory** - APPLY to ALL projects
+2. **Project memory** - APPLY to current project ONLY
+3. **Create new file** - FOR specialized memory modules
 
 ---
 
@@ -158,10 +158,10 @@ Use `@` symbol to import additional files into CLAUDE.md:
 ```
 
 ### **Recursive Loading**
-- **Maximum depth**: 5 import hops
-- **Circular protection**: Prevents infinite loops
-- **Hierarchical loading**: Parent files load before imported files
-- **Error handling**: Continues loading even if some imports fail
+- **MAXIMUM depth**: 5 import hops (ENFORCED limit)
+- **ABSOLUTE circular protection**: PREVENTS infinite loops
+- **MANDATORY hierarchical loading**: Parent files load BEFORE imported files
+- **ROBUST error handling**: CONTINUES loading even if some imports fail
 
 ### **Import Network Example**
 ```markdown
@@ -183,14 +183,14 @@ Use `@` symbol to import additional files into CLAUDE.md:
 ## 🔍 Memory Loading Process
 
 ### **Automatic Loading Sequence**
-1. **Session Start**: Claude Code searches for CLAUDE.md files
-2. **Directory Traversal**: Searches from current directory upward
-3. **Import Resolution**: Recursively loads all imported files
-4. **Memory Activation**: All content becomes active context
-5. **Verification**: `/memory` command confirms loading status
+1. **Session Start**: Claude Code SEARCHES for CLAUDE.md files
+2. **Directory Traversal**: SEARCHES from current directory upward
+3. **Import Resolution**: RECURSIVELY loads ALL imported files
+4. **Memory Activation**: ALL content becomes ACTIVE context
+5. **Verification**: `/memory` command CONFIRMS loading status
 
 ### **Loading Hierarchy**
-```
+```yaml
 Current Directory: ./project/feature/
 ├── ./project/feature/CLAUDE.md        (Most specific)
 ├── ./project/CLAUDE.md                (Project level)
@@ -199,21 +199,21 @@ Current Directory: ./project/feature/
 ```
 
 ### **Memory Priority**
-- **More specific locations** override general ones
-- **Project memory** takes precedence over user memory
-- **Local files** override imported content for conflicts
-- **Last loaded** wins for duplicate instructions
+- **SPECIFIC locations** OVERRIDE general ones
+- **PROJECT memory** takes PRECEDENCE over user memory
+- **LOCAL files** OVERRIDE imported content for conflicts
+- **LAST loaded** WINS for duplicate instructions
 
 ---
 
 ## 💡 Best Practices
 
 ### **Memory Organization**
-1. **Be Specific**: Use precise, actionable instructions
-2. **Use Structure**: Organize with clear markdown headings
-3. **Modular Design**: Split complex context into imported modules
-4. **Regular Review**: Periodically audit and update memory content
-5. **Version Control**: Include CLAUDE.md in your git repository
+1. **MANDATORY Specificity**: Use PRECISE, actionable instructions
+2. **REQUIRED Structure**: Organize with CLEAR markdown headings
+3. **CRITICAL Modular Design**: Split complex context into imported modules
+4. **ESSENTIAL Regular Review**: Periodically audit and update memory content
+5. **MANDATORY Version Control**: Include CLAUDE.md in your git repository
 
 ### **Content Guidelines**
 ```markdown
@@ -231,10 +231,10 @@ Current Directory: ./project/feature/
 ```
 
 ### **Import Strategy**
-- **Foundation First**: Import core principles before specific rules
-- **Logical Grouping**: Group related concepts in same files
-- **Avoid Deep Nesting**: Keep import chains ≤3 levels deep
-- **Document Dependencies**: Comment import purposes
+- **MANDATORY Foundation First**: Import core principles BEFORE specific rules
+- **REQUIRED Logical Grouping**: Group related concepts in SAME files
+- **CRITICAL Avoid Deep Nesting**: Keep import chains ≤3 levels deep
+- **ESSENTIAL Document Dependencies**: Comment import purposes
 
 ---
 
@@ -260,10 +260,10 @@ cat ~/.claude/CLAUDE.md
 ```
 
 ### **Memory Optimization**
-- **Remove Outdated Content**: Clean up obsolete instructions
-- **Consolidate Duplicates**: Merge similar rules across files
-- **Optimize Import Chains**: Reduce unnecessary nesting
-- **Monitor Performance**: Large memory files can slow loading
+- **MANDATORY Remove Outdated Content**: Clean up obsolete instructions
+- **REQUIRED Consolidate Duplicates**: Merge similar rules across files
+- **CRITICAL Optimize Import Chains**: Reduce unnecessary nesting
+- **ESSENTIAL Monitor Performance**: Large memory files can slow loading
 
 ---
 
@@ -313,22 +313,22 @@ cat ~/.claude/CLAUDE.md
 ## 📊 Memory Performance Metrics
 
 ### **Loading Performance**
-- **Typical Load Time**: <500ms for standard memory files
-- **Large Files**: >1MB may impact session startup
-- **Import Depth**: Each level adds ~50ms processing time
-- **Network Files**: Remote imports significantly slower
+- **MAXIMUM Load Time**: <500ms for standard memory files
+- **CRITICAL Large Files**: >1MB WILL impact session startup
+- **MEASURED Import Depth**: Each level adds ~50ms processing time
+- **WARNING Network Files**: Remote imports significantly slower
 
 ### **Memory Efficiency**
-- **Optimal File Size**: 50-200KB per CLAUDE.md file
-- **Import Limit**: ≤10 imported files per memory hierarchy
-- **Content Density**: Focus on actionable, specific instructions
-- **Regular Cleanup**: Archive or remove unused memory content
+- **REQUIRED Optimal File Size**: 50-200KB per CLAUDE.md file
+- **MANDATORY Import Limit**: ≤10 imported files per memory hierarchy
+- **CRITICAL Content Density**: Focus on actionable, specific instructions
+- **ESSENTIAL Regular Cleanup**: Archive or remove unused memory content
 
 ### **Context Quality Metrics**
-- **Instruction Clarity**: Measurable, specific directives
-- **Behavioral Consistency**: Predictable AI responses
-- **Context Relevance**: Project-appropriate knowledge activation
-- **Memory Persistence**: Consistent behavior across sessions
+- **MANDATORY Instruction Clarity**: Measurable, specific directives
+- **REQUIRED Behavioral Consistency**: Predictable AI responses
+- **CRITICAL Context Relevance**: Project-appropriate knowledge activation
+- **ESSENTIAL Memory Persistence**: Consistent behavior across sessions
 
 ---
 
@@ -428,4 +428,4 @@ cat ~/.claude/CLAUDE.md   # View user memory
 
 **Navigation**: [Knowledge Hub](../README.md) | **Integration**: [CLAUDE.md Import System](./claude-md-imports.md) | **Quality**: [Writing Standards](../writing-standards.md)
 
-**Memory Authorities**: [Core Principles](../principles/) | [Writing Standards](../writing-standards.md) | [Command System](../../commands/README.md)
+**Memory Authorities**: [Core Principles](../principles/) | [Writing Standards](../writing-standards.md) | [Command System](../commands/README.md)

@@ -77,10 +77,119 @@ This command activates automatically when the system detects the need to establi
 - **Action**: Activate meta-principle for realignment
 - **Verification**: Fundamental principles restored
 
+## 🧠 **META-CORE DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Meta-Principle Activation**
+
+```mermaid
+graph TD
+    A[Meta-Principle Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Meta Processing]
+    B -->|No| D[Standard Meta Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Meta Activation]
+    
+    D --> H{Context Richness Check}
+    H -->|≥85%| I[Sufficient Context]
+    H -->|<85%| J[REQUIRED: Context Enrichment]
+    
+    F --> K[Task Tool: Complex Meta Coordination]
+    K --> L[P56: Advanced Meta Processing]
+    
+    G --> M{Objective Clarity}
+    M -->|Measurable| N[Clear Objectives Established]
+    M -->|Non-measurable| O[CRITICAL: Objective Clarification]
+    
+    I --> P{Autonomy Readiness}
+    P -->|Ready| Q[Enable Autonomous Mode]
+    P -->|Not Ready| R[REQUIRED: Autonomy Preparation]
+    
+    J --> S[Read Tool: Load Context Patterns]
+    S --> T[Edit Tool: Enrich Context]
+    T --> U[Bash Tool: Context Validation]
+    U --> H
+    
+    N --> V{Verification Coverage}
+    V -->|100%| W[Complete Verification Framework]
+    V -->|<100%| X[REQUIRED: Verification Enhancement]
+    
+    O --> Y[Read Tool: Load Objective Patterns]
+    Y --> Z[Edit Tool: Clarify Objectives]
+    Z --> AA[Bash Tool: Measurability Check]
+    AA --> M
+    
+    Q --> BB{Paradigm Shift Required?}
+    BB -->|Yes| CC[Enablement Paradigm Activation]
+    BB -->|No| DD[Direct Autonomous Execution]
+    
+    R --> EE[Read Tool: Load Autonomy Patterns]
+    EE --> FF[Edit Tool: Prepare Autonomy]
+    FF --> GG[Bash Tool: Autonomy Validation]
+    GG --> P
+    
+    W --> HH[Meta-Principle Success]
+    HH --> II[P56: Meta-Principle Activated]
+    
+    X --> JJ[Read Tool: Load Verification Patterns]
+    JJ --> KK[Edit Tool: Enhance Verification]
+    KK --> LL[Bash Tool: Verification Check]
+    LL --> V
+    
+    CC --> MM[Edit Tool: Document Paradigm Shift]
+    MM --> NN[Bash Tool: Paradigm Validation]
+    NN --> OO[P56: Paradigm Shift Complete]
+    
+    DD --> PP[Edit Tool: Document Autonomous Setup]
+    PP --> QQ[P56: Autonomous Mode Active]
+    
+    L --> RR[Agent Meta Results]
+    RR --> SS[P56: Expert Meta Complete]
+    
+    II --> TT[Meta-Principle Metrics]
+    OO --> TT
+    QQ --> TT
+    SS --> TT
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style O fill:#ffe66d
+    style X fill:#ff8b94
+    style TT fill:#95e1d3
+```
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+meta_core_transparency:
+  context_assessment:
+    announcement: "🔍 TRANSPARENCY: Context richness [X]% - [SUFFICIENT/ENRICHMENT_REQUIRED]"
+    evidence: "Context richness calculation with enablement readiness"
+    
+  objective_analysis:
+    announcement: "🎯 TRANSPARENCY: Objectives [MEASURABLE/NON_MEASURABLE] - [X] clarity score"
+    evidence: "Objective clarity assessment with measurability validation"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [meta_operation]"
+    evidence: "Tool selection matrix with meta-principle reasoning"
+    
+  paradigm_shift:
+    announcement: "🔄 TRANSPARENCY: Paradigm shift [REQUIRED/ACTIVE] - [CONTROL/ENABLEMENT] mode"
+    evidence: "Paradigm assessment with shift requirements and autonomy preparation"
+    
+  meta_activation:
+    announcement: "⚡ TRANSPARENCY: Meta-principle [ACTIVATED/FAILED] - [X]% autonomy level achieved"
+    evidence: "Complete meta-principle activation with autonomy metrics"
+```
+
+---
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /meta-principle [objective]
 ```
 
@@ -137,19 +246,19 @@ meta_principle_score = (context_richness + objective_clarity + autonomy_level + 
 ## 📋 **USAGE EXAMPLES**
 
 ### **Basic Activation**
-```
+```text
 /meta-principle "Implement user authentication system"
 ```
 **Result**: AI gains autonomy to explore approaches, select technologies, design architecture
 
 ### **With Constraints** 
-```
+```text
 /meta-principle "Optimize database performance while maintaining sub-100ms response times"
 ```
 **Result**: AI autonomously explores optimization strategies within the performance constraint
 
 ### **Complex Objective**
-```
+```json
 /meta-principle "Refactor entire frontend for better maintainability, performance, and accessibility"
 ```
 **Result**: AI gets full autonomy to analyze, plan, and execute comprehensive refactoring

@@ -437,7 +437,7 @@ Formulas are documented with:
 
 ```bash
 # Universal entry points
-/context-eng     # Activates all 62 commands + 56 principles
+/context-eng     # Activates all 62 commands + 65 principles
 /decision        # Intelligent routing with auto-triggers
 /thinking        # Deep strategic analysis + breakthrough insights
 
@@ -521,7 +521,7 @@ npm run clean && npm run build
 ### Documentation Structure
 ```
 docs/
-├── principles/          # 56 principles across 7 categories
+├── principles/          # 65 principles across 8 categories
 ├── automation/         # LLM automation patterns
 ├── technical/          # Implementation details
 ├── patterns/           # Design patterns and best practices
@@ -536,7 +536,7 @@ docs/
 
 ### API Reference
 - **Commands**: 62 natural language commands
-- **Principles**: 56 organizational principles
+- **Principles**: 65 organizational principles
 - **Formulas**: Mathematical optimization formulas
 - **Components**: Reusable UI component library
 
