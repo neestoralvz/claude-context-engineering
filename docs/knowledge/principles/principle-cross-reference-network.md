@@ -1,6 +1,6 @@
 # 🕸️ Principle Cross-Reference Network
 
-**CRITICAL Principle Interconnection System**: Red sistemática de cross-references bidireccionales entre los 92 principios Context Engineering que permite navegación inteligente, descubrimiento de conexiones, y comprensión holística del sistema de principios.
+**CRITICAL Principle Interconnection System**: Red sistemática de cross-references bidireccionales entre los 89 principios Context Engineering que permite navegación inteligente, descubrimiento de conexiones, y comprensión holística del sistema de principios.
 
 ---
 
