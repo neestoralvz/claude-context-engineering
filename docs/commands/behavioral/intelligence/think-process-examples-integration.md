@@ -301,7 +301,7 @@ strategic_planning_intelligence:
 
 ### Advanced Directory Structure Specialization
 
-**Primary Output Routing**: `/docs/outputs/orchestrators/think-master/`
+**Primary Output Routing**: `/docs/operations/outputs/orchestrators/think-master/`
 - **Strategic Plans**: `strategic-plan-[timestamp].md` - Universal AI-orchestrated strategic planning
 - **Strategic Execution Intelligence**: `execution-analysis-[request]-[date].md` - Comprehensive strategic execution strategy and coordination
 - **Strategic Parallelization Analytics**: `parallelization-analysis-[complexity].md` - Strategic todo parallelization and dependency intelligence
@@ -310,7 +310,7 @@ strategic_planning_intelligence:
 ### Sophisticated Organizational Architecture
 
 ```markdown
-/docs/outputs/orchestrators/think-master/
+/docs/operations/outputs/orchestrators/think-master/
 ├── strategic-planning/
 │   ├── universal-strategic-plan-[request]-YYYYMMDD.md        # Complete universal AI-orchestrated strategic planning
 │   ├── strategic-execution-strategy-[complexity]-[date].md   # Dynamic strategic execution orchestration and command coordination
@@ -392,7 +392,7 @@ strategic_planning_intelligence:
 - [ ] No analysis or research functionality duplication (uses strategic thinking progression and strategic validation only)
 - [ ] Command Matrix Orchestrator section updated with strategic planning coordination dependencies
 - [ ] Decision Engine integration properly documented and implemented
-- [ ] Output organization follows `/docs/outputs/` structure
+- [ ] Output organization follows `/docs/operations/outputs/` structure
 
 **Anti-Pattern Prevention**:
 - ❌ **Research Reimplementation** - Use strategic thinking progression, not research duplication

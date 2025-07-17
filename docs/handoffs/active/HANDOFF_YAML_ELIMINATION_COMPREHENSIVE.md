@@ -236,17 +236,17 @@ on:
 ## 📋 **Handoff Documentation**
 
 ### **Session 2 Handoff**
-- **Document**: `/docs/handoffs/active/HANDOFF_YAML_ELIMINATION_SESSION_2.md`
+- **Document**: `/docs/operations/handoffs/active/HANDOFF_YAML_ELIMINATION_SESSION_2.md`
 - **Status**: Current session progress and file-by-file analysis
 - **Content**: Detailed conversion status and next steps
 
 ### **Master Handoff**
-- **Document**: `/docs/handoffs/active/YAML_ELIMINATION_MASTER_HANDOFF.md`
+- **Document**: `/docs/operations/handoffs/active/YAML_ELIMINATION_MASTER_HANDOFF.md`
 - **Status**: Updated with current statistics and priorities
 - **Content**: System-wide overview and execution plan
 
 ### **Session 3 Planning**
-- **Document**: `/docs/handoffs/active/HANDOFF_SESSION_3_KNOWLEDGE_BASE_PLANNING.md`
+- **Document**: `/docs/operations/handoffs/active/HANDOFF_SESSION_3_KNOWLEDGE_BASE_PLANNING.md`
 - **Status**: Comprehensive next-phase planning
 - **Content**: Knowledge Base analysis and conversion strategy
 

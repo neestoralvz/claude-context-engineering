@@ -234,7 +234,7 @@ done
 
 **Valor diferencial**: Va más allá de verificación reactiva para supervisión proactiva de cumplimiento de principios, garantizando que la metodología Context Engineering se mantenga íntegra durante todas las actividades del sistema.
 
-### 84. Evolutionary System Maintenance
+### 97. Evolutionary System Maintenance
 **Definition**: Sistema automático de auto-mantenimiento y auto-evolución que garantiza la integridad continua del sistema Context Engineering através de mecanismos evolutivos inteligentes, propagación automática de estándares, y capacidades de auto-reparación.
 
 **See Also**: [Principle Compliance Supervision](#64-principle-compliance-supervision) | [System Integrity Assurance](#37-system-integrity-assurance) | [Self-Improving Intelligence](./intelligent-adaptation.md#52-self-improving-intelligence--learning)
@@ -346,7 +346,7 @@ detect_system_patterns → analyze_evolutionary_needs → apply_improvements →
 ### 88. Documentation Compliance Enforcement
 **Definition**: Sistema automático de validación y enforcement de cumplimiento de documentación que garantiza adherencia obligatoria a estándares de escritura, terminología MANDATORY, y precisión técnica con validación en tiempo real y corrección automática.
 
-**See Also**: [Writing Standards Hub](../writing-standards.md) | [Principle Compliance Supervision](#64-principle-compliance-supervision) | [Evolutionary System Maintenance](#84-evolutionary-system-maintenance)
+**See Also**: [Writing Standards Hub](../writing-standards.md) | [Principle Compliance Supervision](#64-principle-compliance-supervision) | [Evolutionary System Maintenance](#97-evolutionary-system-maintenance)
 
 **Core Documentation Compliance Framework**:
 1. **MANDATORY Terminology Enforcement**: CRITICAL validación automática de terminología REQUIRED (MANDATORY/CRITICAL/REQUIRED/FORBIDDEN) con blocking automático de violaciones
@@ -436,6 +436,101 @@ validate_terminology → check_standards_adherence → assess_technical_accuracy
 ```
 
 **Valor diferencial**: **Sistema completamente automatizado de compliance de documentación** que garantiza adherencia obligatoria a estándares de escritura con validation en tiempo real, auto-correction inteligente, y enforcement automático de terminología MANDATORY, asegurando excelencia y consistency de documentación sin intervención manual.
+
+### 98. Systematic Post-Execution Documentation Review
+**Definition**: MANDATORY systematic questioning protocol que REQUIRE asking "¿hay algo que actualizar?" después de CUALQUIER ejecución, modificación, o operación para garantizar actualización comprehensiva de documentación, archivos relacionados, cross-references, y sistemas dependientes con ZERO tolerance para operaciones sin revisión post-ejecución.
+
+**See Also**: [Operational Documentation Lifecycle Management](#94-operational-documentation-lifecycle-management) | [Mandatory Documentation Standards](#87-mandatory-documentation-standards) | [Proactive Cross-Reference Maintenance](#91-proactive-cross-reference-maintenance)
+
+**Core Post-Execution Review Framework**:
+1. **MANDATORY Systematic Questioning**: CRITICAL requirement to systematically ask update questions after ANY execution
+2. **Documentation Impact Analysis**: REQUIRED analysis of documentation changes needed based on modifications
+3. **Cross-Reference Update Validation**: ESSENTIAL verification of related systems requiring updates
+4. **Completeness Verification**: MANDATORY confirmation that all impacted elements are updated
+5. **Archive and Lifecycle Management**: CRITICAL progression of operational documentation through complete lifecycle
+
+**CRITICAL Implementation Protocol**:
+
+**MANDATORY Systematic Questioning Framework**:
+- **CRITICAL Post-Execution Questions**: AUTOMATIC activation of systematic questioning after ANY execution with ZERO exception tolerance
+- **REQUIRED Update Identification**: "¿Qué documentación necesita actualización con estas modificaciones?" with COMPREHENSIVE analysis
+- **MANDATORY File Impact Assessment**: "¿Qué archivos deben modificarse para reflejar estas modificaciones?" with SYSTEMATIC coverage
+- **ESSENTIAL Cross-Reference Review**: "¿Qué cross-references necesitan ajuste?" with COMPLETE validation
+- **CRITICAL System Dependencies**: "¿Qué sistemas relacionados requieren actualizaciones?" with THOROUGH analysis
+
+**Documentation Impact Analysis Protocol**:
+- **MANDATORY Documentation Mapping**: ≥95% accuracy in identifying impacted documentation with COMPREHENSIVE coverage
+- **CRITICAL Change Propagation**: AUTOMATIC analysis of change propagation needs with ZERO missed dependencies
+- **REQUIRED Related File Detection**: SYSTEMATIC identification of all related files requiring updates with COMPLETE mapping
+- **ESSENTIAL Context Preservation**: ≥98% context preservation during documentation updates with SEMANTIC validation
+
+**Cross-Reference Update Validation Framework**:
+- **CRITICAL Reference Integrity**: ≥99% accuracy in cross-reference impact analysis with AUTOMATIC validation
+- **MANDATORY Link Maintenance**: SYSTEMATIC update of all affected links and references with COMPREHENSIVE coverage
+- **REQUIRED Connectivity Verification**: COMPLETE validation of documentation connectivity after updates with MATHEMATICAL precision
+- **ESSENTIAL Navigation Optimization**: ≤2.5 cognitive steps navigation maintained after updates with VALIDATED measurement
+
+**Completeness Verification Protocol**:
+- **CRITICAL Update Coverage**: ≥95% completion coverage of all identified update needs with MANDATORY validation
+- **MANDATORY Quality Assurance**: SYSTEMATIC verification of update quality and accuracy with COMPREHENSIVE assessment
+- **REQUIRED Consistency Checking**: AUTOMATIC consistency validation across all updated elements with MATHEMATICAL precision
+- **ESSENTIAL Integration Testing**: COMPLETE integration testing of updated documentation ecosystem with VALIDATED functionality
+
+**Archive and Lifecycle Management Framework**:
+- **CRITICAL Lifecycle Progression**: MANDATORY progression through creation → execution → completion → archival with COMPLETE tracking
+- **MANDATORY Operational Documentation**: SYSTEMATIC management of all operational documents with ZERO incomplete cycles
+- **REQUIRED Archive Maintenance**: AUTOMATIC archival of completed operational documentation with COMPREHENSIVE organization
+- **ESSENTIAL Learning Extraction**: ≥90% learning extraction from completed operations with SYSTEMATIC knowledge capture
+
+**Post-Execution Review Validation Framework**:
+- **Question Activation Rate**: 100% activation of systematic questioning after executions
+- **Update Identification Accuracy**: ≥95% accuracy in identifying documentation updates needed
+- **Cross-Reference Coverage**: ≥99% coverage of cross-reference impact analysis
+- **Completion Verification**: ≥95% successful completion of all identified updates
+- **Review Response Time**: ≤60 seconds from execution completion to review activation
+- **Documentation Quality**: ≥98% documentation quality maintenance after updates
+
+**Integration with Existing Principles**:
+- **Enhances #94 Operational Documentation Lifecycle Management**: Systematic post-execution review como critical lifecycle component
+- **Strengthens #87 Mandatory Documentation Standards**: Post-execution review como mandatory standard enforcement
+- **Supports #91 Proactive Cross-Reference Maintenance**: Systematic questioning como proactive maintenance trigger
+- **Extends #88 Documentation Compliance Enforcement**: Post-execution review como compliance validation checkpoint
+
+**Post-Execution Review Automation Scripts**:
+- **scripts/validation/systematic-post-execution-review.sh** - Core post-execution questioning protocol
+- **scripts/core/identify-documentation-updates.sh** - Automatic documentation impact analysis
+- **scripts/validation/cross-reference-impact-analysis.sh** - Cross-reference update validation
+- **scripts/compliance/verify-update-completeness.sh** - Completeness verification and validation
+
+**Review Activation Points**:
+1. **Command Completion**: Automatic activation after ALL command executions
+2. **File Modifications**: Immediate activation after any file modification operations
+3. **System Operations**: Systematic review after system maintenance or configuration changes
+4. **Documentation Updates**: Review activation after documentation modification operations
+5. **Cross-Reference Changes**: Automatic review when cross-references are modified
+
+**Expected Post-Execution Outcomes**:
+- **Zero Missed Updates**: Target 0 unidentified documentation updates after operations
+- **Complete Documentation Coverage**: ≥95% coverage of all documentation update needs
+- **System Consistency**: ≥98% consistency across all updated documentation elements
+- **Optimal Navigation**: ≤2.5 cognitive steps navigation maintained after all updates
+- **Lifecycle Completeness**: 100% completion of operational documentation lifecycles
+
+**Systematic Questioning Template**:
+```bash
+# Automatic post-execution review cycle
+ask_documentation_updates → identify_file_modifications → analyze_cross_reference_impact → verify_system_dependencies → validate_completion_coverage → execute_updates → confirm_lifecycle_progression
+```
+
+**CRITICAL Post-Execution Questions (MANDATORY)**:
+1. "¿Qué documentación viva necesita actualización basada en estas modificaciones?"
+2. "¿Qué archivos específicos deben modificarse para reflejar estos cambios?"
+3. "¿Qué cross-references requieren ajuste o actualización?"
+4. "¿Qué sistemas o componentes relacionados necesitan actualizaciones?"
+5. "¿Se completó el ciclo de vida de la documentación operacional?"
+6. "¿Hay algún aprendizaje que deba documentarse o archivarse?"
+
+**Valor diferencial**: **ELIMINATION of the critical gap** donde operaciones completan sin consideration sistemática de sus impacts en documentación y integration, garantizando que EVERY execution includes MANDATORY systematic review de update needs con AUTOMATIC questioning protocol y COMPREHENSIVE coverage validation.
 
 ---
 

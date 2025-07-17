@@ -80,7 +80,7 @@
 
 ---
 
-## 55. Tool Call Execution Bridging
+### 55. Tool Call Execution Bridging
 **"LLMs ejecutan trabajo real vía tool calls, no simulan - con Task Agents para garantía de ejecución"**
 
 LLMs deben ejecutar acciones concretas usando tool calls en lugar de simular, describir o documentar teóricamente el trabajo. Este principio transforma asistentes conversacionales en agentes ejecutores reales, con Task agents como método principal para garantizar ejecución completa.

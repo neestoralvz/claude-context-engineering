@@ -116,26 +116,26 @@ Análisis de compliance, estrategias y procedimientos de monitoreo:
 ### **Acción Inmediata (Hoy)**
 ```bash
 # Máxima prioridad
-docs/handoffs/active/YAML_ELIMINATION_MASTER_HANDOFF.md
-docs/handoffs/active/HANDOFF_COMMAND_SYNC_CRISIS.md
-docs/handoffs/active/HANDOFF_PRINCIPLE_ENFORCEMENT_MONITORING.md
+docs/operations/handoffs/active/YAML_ELIMINATION_MASTER_HANDOFF.md
+docs/operations/handoffs/active/HANDOFF_COMMAND_SYNC_CRISIS.md
+docs/operations/handoffs/active/HANDOFF_PRINCIPLE_ENFORCEMENT_MONITORING.md
 ```
 
 ### **Seguimiento Semanal**
 ```bash
 # Tareas operacionales
-docs/handoffs/active/HANDOFF_COMPLIANCE_MONITORING_MAINTENANCE.md
-docs/handoffs/active/HANDOFF_NEW_COMMAND_CATEGORIES.md
-docs/handoffs/active/HANDOFF_TDD_DASHBOARD_IMPLEMENTATION.md
+docs/operations/handoffs/active/HANDOFF_COMPLIANCE_MONITORING_MAINTENANCE.md
+docs/operations/handoffs/active/HANDOFF_NEW_COMMAND_CATEGORIES.md
+docs/operations/handoffs/active/HANDOFF_TDD_DASHBOARD_IMPLEMENTATION.md
 ```
 
 ### **Referencia y Análisis**
 ```bash
 # Documentación completada
-docs/handoffs/completed/
+docs/operations/handoffs/completed/
 
 # Procedimientos y estrategias
-docs/handoffs/analysis/
+docs/operations/handoffs/analysis/
 ```
 
 ## 🎯 **Comandos de Navegación Rápida**
@@ -143,28 +143,28 @@ docs/handoffs/analysis/
 ### **Ver Estado Actual**
 ```bash
 # Estructura completa
-tree docs/handoffs/
+tree docs/operations/handoffs/
 
 # Solo archivos activos
-ls -la docs/handoffs/active/
+ls -la docs/operations/handoffs/active/
 
 # Solo completados
-ls -la docs/handoffs/completed/
+ls -la docs/operations/handoffs/completed/
 
 # Solo análisis
-ls -la docs/handoffs/analysis/
+ls -la docs/operations/handoffs/analysis/
 ```
 
 ### **Acceso Directo por Prioridad**
 ```bash
 # Críticas (acción inmediata)
-ls docs/handoffs/active/ | grep -E "(YAML_ELIMINATION|COMMAND_SYNC|PRINCIPLE_ENFORCEMENT)"
+ls docs/operations/handoffs/active/ | grep -E "(YAML_ELIMINATION|COMMAND_SYNC|PRINCIPLE_ENFORCEMENT)"
 
 # Operacionales (seguimiento)
-ls docs/handoffs/active/ | grep -E "(COMPLIANCE_MONITORING|NEW_COMMAND|TDD_DASHBOARD)"
+ls docs/operations/handoffs/active/ | grep -E "(COMPLIANCE_MONITORING|NEW_COMMAND|TDD_DASHBOARD)"
 
 # Referencias (consulta)
-ls docs/handoffs/completed/ docs/handoffs/analysis/
+ls docs/operations/handoffs/completed/ docs/operations/handoffs/analysis/
 ```
 
 ## 📈 **Métricas de Efectividad**

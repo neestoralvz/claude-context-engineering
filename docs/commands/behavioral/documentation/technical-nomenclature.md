@@ -468,7 +468,7 @@ graph TD
 - **Deployment**: `vercel.json`, `netlify.toml`, `docker-compose.yml`
 - **Custom**: `[system]-config.json`, `[component]-settings.json`
 
-### **9. Analysis/Output Domain** `docs/outputs/`
+### **9. Analysis/Output Domain** `docs/operations/outputs/`
 
 ### **Philosophy**: "Temporal organization with content clarity"
 **CRITICAL Standards Framework**:
@@ -546,7 +546,7 @@ find . -type f | grep -E "\.(md|js|html|json)$" | grep -v node_modules | sort
 - **Templates**: Files in `templates/` directory
 - **Web**: HTML files and web assets
 - **Config**: Configuration files in root or config directories
-- **Analysis**: Files in `docs/outputs/` with timestamp patterns
+- **Analysis**: Files in `docs/operations/outputs/` with timestamp patterns
 - **SuperClaude**: Files in `superclaude/` directory
 
 ### **Phase 2: Standards Application**

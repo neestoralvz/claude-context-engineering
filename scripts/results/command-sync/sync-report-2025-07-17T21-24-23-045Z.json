@@ -1,0 +1,2315 @@
+{
+  "timestamp": "2025-07-17T21:24:23.045Z",
+  "backup_file": "/Users/nalve/claude-context-engineering/scripts/backups/command-sync-backup-2025-07-17-152423.json",
+  "statistics": {
+    "total_docs_commands": 149,
+    "total_claude_commands": 141,
+    "copied_to_claude": null,
+    "copied_to_docs_review": 0,
+    "conflicts_detected": 141,
+    "errors_encountered": 0
+  },
+  "conflicts": [
+    {
+      "path": ".archived/originals/context-economy.md",
+      "docsModified": "2025-07-16T22:25:56.841Z",
+      "claudeModified": "2025-07-17T21:23:10.102Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": ".archived/originals/execute.md",
+      "docsModified": "2025-07-16T22:26:06.657Z",
+      "claudeModified": "2025-07-17T21:23:10.102Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": ".archived/originals/math-verify.md",
+      "docsModified": "2025-07-16T22:26:06.654Z",
+      "claudeModified": "2025-07-17T21:23:10.102Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": ".archived/originals/sync-docs.md",
+      "docsModified": "2025-07-16T22:26:06.650Z",
+      "claudeModified": "2025-07-17T21:23:10.102Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": ".archived/originals/thinking.md",
+      "docsModified": "2025-07-16T22:25:56.836Z",
+      "claudeModified": "2025-07-17T21:23:10.102Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/behavior/intelligent-fallback.md",
+      "docsModified": "2025-07-17T16:28:45.645Z",
+      "claudeModified": "2025-07-17T21:23:10.103Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/documentation/crystallize.md",
+      "docsModified": "2025-07-17T16:28:19.811Z",
+      "claudeModified": "2025-07-17T21:23:10.103Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/documentation/patterns.md",
+      "docsModified": "2025-07-17T14:15:26.166Z",
+      "claudeModified": "2025-07-17T21:23:10.103Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/documentation/planning-documentation.md",
+      "docsModified": "2025-07-17T14:15:50.603Z",
+      "claudeModified": "2025-07-17T21:23:10.103Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/documentation/technical-nomenclature.md",
+      "docsModified": "2025-07-17T21:23:05.582Z",
+      "claudeModified": "2025-07-17T21:23:10.103Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/execution/conversation-lifecycle.md",
+      "docsModified": "2025-07-17T15:57:41.298Z",
+      "claudeModified": "2025-07-17T21:23:10.103Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/execution/parallel.md",
+      "docsModified": "2025-07-17T14:19:20.130Z",
+      "claudeModified": "2025-07-17T21:23:10.104Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/exploration/explore.md",
+      "docsModified": "2025-07-17T16:28:02.649Z",
+      "claudeModified": "2025-07-17T21:23:10.104Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/exploration/quick-explore-orquestador.md",
+      "docsModified": "2025-07-17T20:09:52.717Z",
+      "claudeModified": "2025-07-17T21:23:10.104Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/exploration/quick-explore.md",
+      "docsModified": "2025-07-17T18:22:53.380Z",
+      "claudeModified": "2025-07-17T21:23:10.104Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/autonomous.md",
+      "docsModified": "2025-07-17T15:58:40.460Z",
+      "claudeModified": "2025-07-17T21:23:10.104Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/complexity.md",
+      "docsModified": "2025-07-17T15:57:44.532Z",
+      "claudeModified": "2025-07-17T21:23:10.104Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/decompose.md",
+      "docsModified": "2025-07-17T15:58:46.853Z",
+      "claudeModified": "2025-07-17T21:23:10.105Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/evolution-ready-architecture.md",
+      "docsModified": "2025-07-17T14:26:18.483Z",
+      "claudeModified": "2025-07-17T21:23:10.105Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/evolve-intelligence.md",
+      "docsModified": "2025-07-17T14:22:22.081Z",
+      "claudeModified": "2025-07-17T21:23:10.105Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/invisible-excellence.md",
+      "docsModified": "2025-07-17T14:26:30.556Z",
+      "claudeModified": "2025-07-17T21:23:10.105Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/knowledge-hierarchy.md",
+      "docsModified": "2025-07-17T15:57:47.981Z",
+      "claudeModified": "2025-07-17T21:23:10.106Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/mathematical-complexity-core.md",
+      "docsModified": "2025-07-17T03:51:04.713Z",
+      "claudeModified": "2025-07-17T21:23:10.106Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/meta-core.md",
+      "docsModified": "2025-07-17T14:23:20.064Z",
+      "claudeModified": "2025-07-17T21:23:10.106Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/modular-composition.md",
+      "docsModified": "2025-07-17T14:26:15.007Z",
+      "claudeModified": "2025-07-17T21:23:10.106Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/orchestrate-intelligence.md",
+      "docsModified": "2025-07-17T15:57:51.387Z",
+      "claudeModified": "2025-07-17T21:23:10.106Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/organizational-architecture.md",
+      "docsModified": "2025-07-17T21:23:15.858Z",
+      "claudeModified": "2025-07-17T21:23:10.106Z",
+      "suggestion": "docs-newer"
+    },
+    {
+      "path": "behavioral/intelligence/progress.md",
+      "docsModified": "2025-07-17T15:57:54.670Z",
+      "claudeModified": "2025-07-17T21:23:10.107Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/reorganize-system.md",
+      "docsModified": "2025-07-17T15:58:13.554Z",
+      "claudeModified": "2025-07-17T21:23:10.107Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/simplicity.md",
+      "docsModified": "2025-07-17T13:34:50.462Z",
+      "claudeModified": "2025-07-17T21:23:10.107Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/systematic-quality-improvement.md",
+      "docsModified": "2025-07-17T14:26:15.117Z",
+      "claudeModified": "2025-07-17T21:23:10.107Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/tdd.md",
+      "docsModified": "2025-07-17T14:26:15.146Z",
+      "claudeModified": "2025-07-17T21:23:10.107Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-core.md",
+      "docsModified": "2025-07-17T03:44:07.407Z",
+      "claudeModified": "2025-07-17T21:23:10.108Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-execution-phases.md",
+      "docsModified": "2025-07-17T15:58:27.484Z",
+      "claudeModified": "2025-07-17T21:23:10.108Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-validation-framework.md",
+      "docsModified": "2025-07-17T03:44:07.409Z",
+      "claudeModified": "2025-07-17T21:23:10.108Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/think-process.md",
+      "docsModified": "2025-07-17T14:26:58.350Z",
+      "claudeModified": "2025-07-17T21:23:10.108Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/intelligence/thinking.md",
+      "docsModified": "2025-07-17T16:14:40.801Z",
+      "claudeModified": "2025-07-17T21:23:10.109Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/optimization/context-economy.md",
+      "docsModified": "2025-07-17T14:07:02.094Z",
+      "claudeModified": "2025-07-17T21:23:10.109Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/optimization/context-over-commands.md",
+      "docsModified": "2025-07-17T16:13:54.767Z",
+      "claudeModified": "2025-07-17T21:23:10.109Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/optimization/optimize-cognitive-organization.md",
+      "docsModified": "2025-07-17T14:07:12.586Z",
+      "claudeModified": "2025-07-17T21:23:10.109Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/optimization/optimize-complexity.md",
+      "docsModified": "2025-07-17T14:07:18.227Z",
+      "claudeModified": "2025-07-17T21:23:10.109Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/optimization/optimize-context.md",
+      "docsModified": "2025-07-17T15:57:58.780Z",
+      "claudeModified": "2025-07-17T21:23:10.109Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/optimization/optimize-intelligent-writing.md",
+      "docsModified": "2025-07-17T14:07:29.839Z",
+      "claudeModified": "2025-07-17T21:23:10.110Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/optimization/single-source-truth.md",
+      "docsModified": "2025-07-17T14:07:35.182Z",
+      "claudeModified": "2025-07-17T21:23:10.110Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/selection/model-selection.md",
+      "docsModified": "2025-07-17T14:07:41.601Z",
+      "claudeModified": "2025-07-17T21:23:10.110Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "behavioral/verification/thresholds.md",
+      "docsModified": "2025-07-17T14:07:47.317Z",
+      "claudeModified": "2025-07-17T21:23:10.110Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "cores/cognitive-processor.md",
+      "docsModified": "2025-07-17T14:14:06.557Z",
+      "claudeModified": "2025-07-17T21:23:10.110Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "cores/documentation-sync.md",
+      "docsModified": "2025-07-17T14:04:30.553Z",
+      "claudeModified": "2025-07-17T21:23:10.110Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "cores/mathematical-verification-unified.md",
+      "docsModified": "2025-07-17T16:02:55.481Z",
+      "claudeModified": "2025-07-17T21:23:10.111Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "cores/optimization-framework.md",
+      "docsModified": "2025-07-17T14:14:28.688Z",
+      "claudeModified": "2025-07-17T21:23:10.111Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "cores/universal-meta-core-infrastructure.md",
+      "docsModified": "2025-07-17T14:14:48.476Z",
+      "claudeModified": "2025-07-17T21:23:10.111Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "cores/verification-engine.md",
+      "docsModified": "2025-07-17T14:04:30.616Z",
+      "claudeModified": "2025-07-17T21:23:10.111Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "cores/verification-unified-core.md",
+      "docsModified": "2025-07-17T13:49:52.191Z",
+      "claudeModified": "2025-07-17T21:23:10.111Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "examples/math-verify-refactored.md",
+      "docsModified": "2025-07-17T03:44:07.415Z",
+      "claudeModified": "2025-07-17T21:23:10.112Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/automation/script-automation-bridge.md",
+      "docsModified": "2025-07-17T14:22:41.598Z",
+      "claudeModified": "2025-07-17T21:23:10.112Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/behavior/behavioral-control-layer.md",
+      "docsModified": "2025-07-17T16:41:51.781Z",
+      "claudeModified": "2025-07-17T21:23:10.112Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/behavior/monitor.md",
+      "docsModified": "2025-07-17T14:15:10.076Z",
+      "claudeModified": "2025-07-17T21:23:10.112Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-ecosystem.md",
+      "docsModified": "2025-07-17T13:50:24.257Z",
+      "claudeModified": "2025-07-17T21:23:10.113Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-engine-orchestrator.md",
+      "docsModified": "2025-07-17T15:58:02.194Z",
+      "claudeModified": "2025-07-17T21:23:10.113Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-execution.md",
+      "docsModified": "2025-07-17T13:54:35.502Z",
+      "claudeModified": "2025-07-17T21:23:10.113Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-integration-protocols.md",
+      "docsModified": "2025-07-17T03:46:10.022Z",
+      "claudeModified": "2025-07-17T21:23:10.113Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-logic-core.md",
+      "docsModified": "2025-07-17T03:46:10.023Z",
+      "claudeModified": "2025-07-17T21:23:10.113Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-routing-patterns.md",
+      "docsModified": "2025-07-17T03:46:10.024Z",
+      "claudeModified": "2025-07-17T21:23:10.113Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-triggers.md",
+      "docsModified": "2025-07-17T03:02:33.564Z",
+      "claudeModified": "2025-07-17T21:23:10.114Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision-validation-framework.md",
+      "docsModified": "2025-07-17T03:46:10.021Z",
+      "claudeModified": "2025-07-17T21:23:10.114Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/decision.md",
+      "docsModified": "2025-07-17T16:02:00.127Z",
+      "claudeModified": "2025-07-17T21:23:10.114Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/evolutionary-decision-trees.md",
+      "docsModified": "2025-07-17T15:57:51.569Z",
+      "claudeModified": "2025-07-17T21:23:10.114Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/explicit-decision-trees.md",
+      "docsModified": "2025-07-17T13:44:44.632Z",
+      "claudeModified": "2025-07-17T21:23:10.114Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/core-routing/principle-activation-engine.md",
+      "docsModified": "2025-07-17T16:35:50.400Z",
+      "claudeModified": "2025-07-17T21:23:10.114Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/documentation/documentation-orchestrator.md",
+      "docsModified": "2025-07-17T20:09:53.475Z",
+      "claudeModified": "2025-07-17T21:23:10.114Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/documentation/living-documentation.md",
+      "docsModified": "2025-07-17T14:15:10.101Z",
+      "claudeModified": "2025-07-17T21:23:10.115Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/documentation/modularization-protocol.md",
+      "docsModified": "2025-07-17T16:09:18.030Z",
+      "claudeModified": "2025-07-17T21:23:10.115Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/documentation/sync-docs.md",
+      "docsModified": "2025-07-17T21:21:55.115Z",
+      "claudeModified": "2025-07-17T21:23:10.115Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/documentation/unified-pattern-management.md",
+      "docsModified": "2025-07-17T20:09:54.266Z",
+      "claudeModified": "2025-07-17T21:23:10.115Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/documentation/update-living-docs.md",
+      "docsModified": "2025-07-17T20:33:28.888Z",
+      "claudeModified": "2025-07-17T21:23:10.115Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/execution/execution-orchestrator.md",
+      "docsModified": "2025-07-17T20:09:55.021Z",
+      "claudeModified": "2025-07-17T21:23:10.115Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/execution/git-worktrees-parallel.md",
+      "docsModified": "2025-07-17T15:58:35.491Z",
+      "claudeModified": "2025-07-17T21:23:10.115Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/execution/parallel-multi-agent.md",
+      "docsModified": "2025-07-17T20:09:55.792Z",
+      "claudeModified": "2025-07-17T21:23:10.116Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/execution/parallel-tool-execution.md",
+      "docsModified": "2025-07-17T14:22:54.957Z",
+      "claudeModified": "2025-07-17T21:23:10.116Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/execution/strategic-git.md",
+      "docsModified": "2025-07-17T20:20:24.304Z",
+      "claudeModified": "2025-07-17T21:23:10.116Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/git-workflow/claude-session-worktrees.md",
+      "docsModified": "2025-07-17T20:10:03.496Z",
+      "claudeModified": "2025-07-17T21:23:10.116Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/maintenance/registry-metrics-update.md",
+      "docsModified": "2025-07-17T14:15:10.251Z",
+      "claudeModified": "2025-07-17T21:23:10.117Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/maintenance/system-health.md",
+      "docsModified": "2025-07-17T14:22:26.434Z",
+      "claudeModified": "2025-07-17T21:23:10.117Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/mapping/command-relationships.md",
+      "docsModified": "2025-07-17T16:10:05.213Z",
+      "claudeModified": "2025-07-17T21:23:10.117Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/adaptive-intelligent-activation.md",
+      "docsModified": "2025-07-17T03:46:10.007Z",
+      "claudeModified": "2025-07-17T21:23:10.117Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/command-principle-bridges.md",
+      "docsModified": "2025-07-17T16:40:17.080Z",
+      "claudeModified": "2025-07-17T21:23:10.118Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/context-engineering-core-standards.md",
+      "docsModified": "2025-07-17T18:53:34.811Z",
+      "claudeModified": "2025-07-17T21:23:10.118Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/cross-reference-intelligence.md",
+      "docsModified": "2025-07-17T18:59:41.311Z",
+      "claudeModified": "2025-07-17T21:23:10.118Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/implementation-guidelines.md",
+      "docsModified": "2025-07-17T18:32:16.844Z",
+      "claudeModified": "2025-07-17T21:23:10.118Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/mathematical-validation-protocols.md",
+      "docsModified": "2025-07-17T18:25:16.940Z",
+      "claudeModified": "2025-07-17T21:23:10.118Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/meta-command-orchestration.md",
+      "docsModified": "2025-07-17T18:59:29.030Z",
+      "claudeModified": "2025-07-17T21:23:10.119Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/p55-p56-execution-framework.md",
+      "docsModified": "2025-07-17T18:30:05.365Z",
+      "claudeModified": "2025-07-17T21:23:10.119Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/performance-metrics-framework.md",
+      "docsModified": "2025-07-17T18:27:49.313Z",
+      "claudeModified": "2025-07-17T21:23:10.119Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/quality-assurance-protocols.md",
+      "docsModified": "2025-07-17T18:23:42.062Z",
+      "claudeModified": "2025-07-17T21:23:10.119Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/real-time-monitoring.md",
+      "docsModified": "2025-07-17T18:31:38.090Z",
+      "claudeModified": "2025-07-17T21:23:10.119Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/tool-call-execution-standards.md",
+      "docsModified": "2025-07-17T18:18:18.258Z",
+      "claudeModified": "2025-07-17T21:23:10.119Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/compliance/visual-announcement-framework.md",
+      "docsModified": "2025-07-17T18:30:57.663Z",
+      "claudeModified": "2025-07-17T21:23:10.120Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/context-eng-compliant.md",
+      "docsModified": "2025-07-17T14:12:44.678Z",
+      "claudeModified": "2025-07-17T21:23:10.120Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/context-eng.md",
+      "docsModified": "2025-07-17T18:51:59.014Z",
+      "claudeModified": "2025-07-17T21:23:10.120Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/enhanced-phase-protocols.md",
+      "docsModified": "2025-07-17T18:50:46.609Z",
+      "claudeModified": "2025-07-17T21:23:10.121Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/intelligent-orchestration-systems.md",
+      "docsModified": "2025-07-17T18:21:48.235Z",
+      "claudeModified": "2025-07-17T21:23:10.121Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/tool-call-execution-framework.md",
+      "docsModified": "2025-07-17T18:33:24.547Z",
+      "claudeModified": "2025-07-17T21:23:10.121Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/meta/user-experience-communication.md",
+      "docsModified": "2025-07-17T18:44:16.560Z",
+      "claudeModified": "2025-07-17T21:23:10.122Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/monitoring/real-time-compliance-dashboard.md",
+      "docsModified": "2025-07-17T16:43:31.438Z",
+      "claudeModified": "2025-07-17T21:23:10.122Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/optimization/adaptive-learning-system.md",
+      "docsModified": "2025-07-17T16:44:58.151Z",
+      "claudeModified": "2025-07-17T21:23:10.122Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/orchestration/discover.md",
+      "docsModified": "2025-07-17T16:02:15.294Z",
+      "claudeModified": "2025-07-17T21:23:10.122Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/orchestration/execute.md",
+      "docsModified": "2025-07-17T16:28:31.523Z",
+      "claudeModified": "2025-07-17T21:23:10.123Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/orchestration/orchestrate.md",
+      "docsModified": "2025-07-17T15:57:41.875Z",
+      "claudeModified": "2025-07-17T21:23:10.123Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/orchestration/plan-flow.md",
+      "docsModified": "2025-07-17T16:18:30.849Z",
+      "claudeModified": "2025-07-17T21:23:10.123Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/orchestration/verify-flow.md",
+      "docsModified": "2025-07-17T13:51:08.106Z",
+      "claudeModified": "2025-07-17T21:23:10.123Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/selection/multi-agent-orchestration.md",
+      "docsModified": "2025-07-17T15:57:28.977Z",
+      "claudeModified": "2025-07-17T21:23:10.123Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/compliance-validation-system.md",
+      "docsModified": "2025-07-17T16:37:16.180Z",
+      "claudeModified": "2025-07-17T21:23:10.124Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/confidence.md",
+      "docsModified": "2025-07-17T13:51:28.083Z",
+      "claudeModified": "2025-07-17T21:23:10.124Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/intelligent-retry-protocol.md",
+      "docsModified": "2025-07-17T15:58:26.300Z",
+      "claudeModified": "2025-07-17T21:23:10.124Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/math-loops.md",
+      "docsModified": "2025-07-17T15:59:31.433Z",
+      "claudeModified": "2025-07-17T21:23:10.124Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/math-verify.md",
+      "docsModified": "2025-07-17T16:01:35.009Z",
+      "claudeModified": "2025-07-17T21:23:10.124Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/mathematical-verification.md",
+      "docsModified": "2025-07-17T20:10:04.204Z",
+      "claudeModified": "2025-07-17T21:23:10.125Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/objective-validation-system.md",
+      "docsModified": "2025-07-17T16:20:35.345Z",
+      "claudeModified": "2025-07-17T21:23:10.125Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/principle-blocking-mechanisms.md",
+      "docsModified": "2025-07-17T16:38:49.210Z",
+      "claudeModified": "2025-07-17T21:23:10.125Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/validate-command-content/enhanced-validation-process.md",
+      "docsModified": "2025-07-17T03:44:07.381Z",
+      "claudeModified": "2025-07-17T21:23:10.125Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/validate-command-content/integration-ecosystem.md",
+      "docsModified": "2025-07-17T14:29:18.692Z",
+      "claudeModified": "2025-07-17T21:23:10.125Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/validate-command-content/quality-measurement-communication.md",
+      "docsModified": "2025-07-17T03:44:07.381Z",
+      "claudeModified": "2025-07-17T21:23:10.125Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/validate-command-content/tool-call-execution-protocol.md",
+      "docsModified": "2025-07-17T03:44:07.381Z",
+      "claudeModified": "2025-07-17T21:23:10.126Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/validate-command-content.md",
+      "docsModified": "2025-07-17T16:01:46.067Z",
+      "claudeModified": "2025-07-17T21:23:10.126Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/validate-sys.md",
+      "docsModified": "2025-07-17T15:58:10.440Z",
+      "claudeModified": "2025-07-17T21:23:10.126Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/validate-tool-call-execution.md",
+      "docsModified": "2025-07-17T14:22:18.100Z",
+      "claudeModified": "2025-07-17T21:23:10.126Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/verify-loops.md",
+      "docsModified": "2025-07-17T15:59:23.335Z",
+      "claudeModified": "2025-07-17T21:23:10.126Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/verify-scope.md",
+      "docsModified": "2025-07-17T13:52:09.921Z",
+      "claudeModified": "2025-07-17T21:23:10.126Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "executable/verification/writing-standards-validator.md",
+      "docsModified": "2025-07-17T13:52:18.060Z",
+      "claudeModified": "2025-07-17T21:23:10.127Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/communication/compact-conversation-feedback.md",
+      "docsModified": "2025-07-17T15:56:11.179Z",
+      "claudeModified": "2025-07-17T21:23:10.127Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/communication/maximum-density-enforcement.md",
+      "docsModified": "2025-07-17T18:29:38.263Z",
+      "claudeModified": "2025-07-17T21:23:10.127Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/compliance/p55-p56-universal-compliance.md",
+      "docsModified": "2025-07-17T16:36:27.636Z",
+      "claudeModified": "2025-07-17T21:23:10.127Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/control/loop-control-framework.md",
+      "docsModified": "2025-07-17T14:06:11.338Z",
+      "claudeModified": "2025-07-17T21:23:10.127Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/core/universal-tool-execution.md",
+      "docsModified": "2025-07-17T13:48:28.791Z",
+      "claudeModified": "2025-07-17T21:23:10.127Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/documentation/universal-documentation-management.md",
+      "docsModified": "2025-07-17T14:06:45.048Z",
+      "claudeModified": "2025-07-17T21:23:10.128Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/monitoring/progress-tracking-system.md",
+      "docsModified": "2025-07-17T15:48:24.346Z",
+      "claudeModified": "2025-07-17T21:23:10.128Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/orchestration-patterns.md",
+      "docsModified": "2025-07-17T15:58:21.336Z",
+      "claudeModified": "2025-07-17T21:23:10.128Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/resources/universal-resource-allocation.md",
+      "docsModified": "2025-07-17T14:07:14.811Z",
+      "claudeModified": "2025-07-17T21:23:10.128Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/task-coordination/compact-task-feedback.md",
+      "docsModified": "2025-07-17T15:56:15.683Z",
+      "claudeModified": "2025-07-17T21:23:10.128Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/validation/universal-validation-framework.md",
+      "docsModified": "2025-07-17T14:07:26.004Z",
+      "claudeModified": "2025-07-17T21:23:10.129Z",
+      "suggestion": "claude-newer"
+    },
+    {
+      "path": "shared/verification/zero-root-file-verification.md",
+      "docsModified": "2025-07-17T21:24:01.183Z",
+      "claudeModified": "2025-07-17T21:23:10.130Z",
+      "suggestion": "docs-newer"
+    }
+  ],
+  "docs_files": [
+    {
+      "path": ".archived/originals/context-economy.md",
+      "size": 11944,
+      "modified": "2025-07-16T22:25:56.841Z"
+    },
+    {
+      "path": ".archived/originals/execute.md",
+      "size": 33002,
+      "modified": "2025-07-16T22:26:06.657Z"
+    },
+    {
+      "path": ".archived/originals/math-verify.md",
+      "size": 17369,
+      "modified": "2025-07-16T22:26:06.654Z"
+    },
+    {
+      "path": ".archived/originals/sync-docs.md",
+      "size": 48897,
+      "modified": "2025-07-16T22:26:06.650Z"
+    },
+    {
+      "path": ".archived/originals/thinking.md",
+      "size": 25035,
+      "modified": "2025-07-16T22:25:56.836Z"
+    },
+    {
+      "path": "behavioral/behavior/intelligent-fallback.md",
+      "size": 13824,
+      "modified": "2025-07-17T16:28:45.645Z"
+    },
+    {
+      "path": "behavioral/documentation/crystallize.md",
+      "size": 11946,
+      "modified": "2025-07-17T16:28:19.811Z"
+    },
+    {
+      "path": "behavioral/documentation/patterns.md",
+      "size": 15998,
+      "modified": "2025-07-17T14:15:26.166Z"
+    },
+    {
+      "path": "behavioral/documentation/planning-documentation.md",
+      "size": 18878,
+      "modified": "2025-07-17T14:15:50.603Z"
+    },
+    {
+      "path": "behavioral/documentation/technical-nomenclature.md",
+      "size": 31680,
+      "modified": "2025-07-17T21:23:05.582Z"
+    },
+    {
+      "path": "behavioral/execution/conversation-lifecycle.md",
+      "size": 19323,
+      "modified": "2025-07-17T15:57:41.298Z"
+    },
+    {
+      "path": "behavioral/execution/parallel.md",
+      "size": 28533,
+      "modified": "2025-07-17T14:19:20.130Z"
+    },
+    {
+      "path": "behavioral/exploration/explore.md",
+      "size": 20730,
+      "modified": "2025-07-17T16:28:02.649Z"
+    },
+    {
+      "path": "behavioral/exploration/quick-explore-orquestador.md",
+      "size": 10037,
+      "modified": "2025-07-17T20:09:52.717Z"
+    },
+    {
+      "path": "behavioral/exploration/quick-explore.md",
+      "size": 20323,
+      "modified": "2025-07-17T18:22:53.380Z"
+    },
+    {
+      "path": "behavioral/intelligence/autonomous.md",
+      "size": 19199,
+      "modified": "2025-07-17T15:58:40.460Z"
+    },
+    {
+      "path": "behavioral/intelligence/complexity.md",
+      "size": 25711,
+      "modified": "2025-07-17T15:57:44.532Z"
+    },
+    {
+      "path": "behavioral/intelligence/decompose.md",
+      "size": 16546,
+      "modified": "2025-07-17T15:58:46.853Z"
+    },
+    {
+      "path": "behavioral/intelligence/evolution-ready-architecture.md",
+      "size": 16982,
+      "modified": "2025-07-17T14:26:18.483Z"
+    },
+    {
+      "path": "behavioral/intelligence/evolve-intelligence.md",
+      "size": 18139,
+      "modified": "2025-07-17T14:22:22.081Z"
+    },
+    {
+      "path": "behavioral/intelligence/invisible-excellence.md",
+      "size": 17908,
+      "modified": "2025-07-17T14:26:30.556Z"
+    },
+    {
+      "path": "behavioral/intelligence/knowledge-hierarchy.md",
+      "size": 16042,
+      "modified": "2025-07-17T15:57:47.981Z"
+    },
+    {
+      "path": "behavioral/intelligence/mathematical-complexity-core.md",
+      "size": 19324,
+      "modified": "2025-07-17T03:51:04.713Z"
+    },
+    {
+      "path": "behavioral/intelligence/meta-core.md",
+      "size": 11661,
+      "modified": "2025-07-17T14:23:20.064Z"
+    },
+    {
+      "path": "behavioral/intelligence/modular-composition.md",
+      "size": 22067,
+      "modified": "2025-07-17T14:26:15.007Z"
+    },
+    {
+      "path": "behavioral/intelligence/orchestrate-intelligence.md",
+      "size": 30600,
+      "modified": "2025-07-17T15:57:51.387Z"
+    },
+    {
+      "path": "behavioral/intelligence/organizational-architecture.md",
+      "size": 13985,
+      "modified": "2025-07-17T21:23:15.858Z"
+    },
+    {
+      "path": "behavioral/intelligence/progress.md",
+      "size": 16041,
+      "modified": "2025-07-17T15:57:54.670Z"
+    },
+    {
+      "path": "behavioral/intelligence/reorganize-system.md",
+      "size": 18248,
+      "modified": "2025-07-17T15:58:13.554Z"
+    },
+    {
+      "path": "behavioral/intelligence/simplicity.md",
+      "size": 22350,
+      "modified": "2025-07-17T13:34:50.462Z"
+    },
+    {
+      "path": "behavioral/intelligence/systematic-quality-improvement.md",
+      "size": 15700,
+      "modified": "2025-07-17T14:26:15.117Z"
+    },
+    {
+      "path": "behavioral/intelligence/tdd.md",
+      "size": 15033,
+      "modified": "2025-07-17T14:26:15.146Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-core.md",
+      "size": 9767,
+      "modified": "2025-07-17T03:44:07.407Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-execution-phases.md",
+      "size": 39741,
+      "modified": "2025-07-17T15:58:27.484Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-validation-framework.md",
+      "size": 17310,
+      "modified": "2025-07-17T03:44:07.409Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process.md",
+      "size": 16625,
+      "modified": "2025-07-17T14:26:58.350Z"
+    },
+    {
+      "path": "behavioral/intelligence/thinking.md",
+      "size": 12795,
+      "modified": "2025-07-17T16:14:40.801Z"
+    },
+    {
+      "path": "behavioral/optimization/context-economy.md",
+      "size": 8942,
+      "modified": "2025-07-17T14:07:02.094Z"
+    },
+    {
+      "path": "behavioral/optimization/context-over-commands.md",
+      "size": 10832,
+      "modified": "2025-07-17T16:13:54.767Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-cognitive-organization.md",
+      "size": 19571,
+      "modified": "2025-07-17T14:07:12.586Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-complexity.md",
+      "size": 17122,
+      "modified": "2025-07-17T14:07:18.227Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-context.md",
+      "size": 15711,
+      "modified": "2025-07-17T15:57:58.780Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-intelligent-writing.md",
+      "size": 26891,
+      "modified": "2025-07-17T14:07:29.839Z"
+    },
+    {
+      "path": "behavioral/optimization/single-source-truth.md",
+      "size": 11506,
+      "modified": "2025-07-17T14:07:35.182Z"
+    },
+    {
+      "path": "behavioral/selection/model-selection.md",
+      "size": 9908,
+      "modified": "2025-07-17T14:07:41.601Z"
+    },
+    {
+      "path": "behavioral/verification/thresholds.md",
+      "size": 15952,
+      "modified": "2025-07-17T14:07:47.317Z"
+    },
+    {
+      "path": "cores/cognitive-processor.md",
+      "size": 24348,
+      "modified": "2025-07-17T14:14:06.557Z"
+    },
+    {
+      "path": "cores/documentation-sync.md",
+      "size": 17966,
+      "modified": "2025-07-17T14:04:30.553Z"
+    },
+    {
+      "path": "cores/mathematical-verification-unified.md",
+      "size": 22156,
+      "modified": "2025-07-17T16:02:55.481Z"
+    },
+    {
+      "path": "cores/optimization-framework.md",
+      "size": 24474,
+      "modified": "2025-07-17T14:14:28.688Z"
+    },
+    {
+      "path": "cores/universal-meta-core-infrastructure.md",
+      "size": 22565,
+      "modified": "2025-07-17T14:14:48.476Z"
+    },
+    {
+      "path": "cores/verification-engine.md",
+      "size": 15530,
+      "modified": "2025-07-17T14:04:30.616Z"
+    },
+    {
+      "path": "cores/verification-unified-core.md",
+      "size": 23580,
+      "modified": "2025-07-17T13:49:52.191Z"
+    },
+    {
+      "path": "examples/math-verify-refactored.md",
+      "size": 11820,
+      "modified": "2025-07-17T03:44:07.415Z"
+    },
+    {
+      "path": "executable/automation/script-automation-bridge.md",
+      "size": 17801,
+      "modified": "2025-07-17T14:22:41.598Z"
+    },
+    {
+      "path": "executable/behavior/behavioral-control-layer.md",
+      "size": 27039,
+      "modified": "2025-07-17T16:41:51.781Z"
+    },
+    {
+      "path": "executable/behavior/monitor.md",
+      "size": 30043,
+      "modified": "2025-07-17T14:15:10.076Z"
+    },
+    {
+      "path": "executable/core-routing/decision-ecosystem.md",
+      "size": 21088,
+      "modified": "2025-07-17T13:50:24.257Z"
+    },
+    {
+      "path": "executable/core-routing/decision-engine-orchestrator.md",
+      "size": 14357,
+      "modified": "2025-07-17T15:58:02.194Z"
+    },
+    {
+      "path": "executable/core-routing/decision-execution.md",
+      "size": 16226,
+      "modified": "2025-07-17T13:54:35.502Z"
+    },
+    {
+      "path": "executable/core-routing/decision-integration-protocols.md",
+      "size": 16455,
+      "modified": "2025-07-17T03:46:10.022Z"
+    },
+    {
+      "path": "executable/core-routing/decision-logic-core.md",
+      "size": 10372,
+      "modified": "2025-07-17T03:46:10.023Z"
+    },
+    {
+      "path": "executable/core-routing/decision-routing-patterns.md",
+      "size": 13035,
+      "modified": "2025-07-17T03:46:10.024Z"
+    },
+    {
+      "path": "executable/core-routing/decision-triggers.md",
+      "size": 15639,
+      "modified": "2025-07-17T03:02:33.564Z"
+    },
+    {
+      "path": "executable/core-routing/decision-validation-framework.md",
+      "size": 14718,
+      "modified": "2025-07-17T03:46:10.021Z"
+    },
+    {
+      "path": "executable/core-routing/decision.md",
+      "size": 6936,
+      "modified": "2025-07-17T16:02:00.127Z"
+    },
+    {
+      "path": "executable/core-routing/evolutionary-decision-trees.md",
+      "size": 25388,
+      "modified": "2025-07-17T15:57:51.569Z"
+    },
+    {
+      "path": "executable/core-routing/explicit-decision-trees.md",
+      "size": 26778,
+      "modified": "2025-07-17T13:44:44.632Z"
+    },
+    {
+      "path": "executable/core-routing/principle-activation-engine.md",
+      "size": 13251,
+      "modified": "2025-07-17T16:35:50.400Z"
+    },
+    {
+      "path": "executable/documentation/documentation-orchestrator.md",
+      "size": 11378,
+      "modified": "2025-07-17T20:09:53.475Z"
+    },
+    {
+      "path": "executable/documentation/living-documentation.md",
+      "size": 16478,
+      "modified": "2025-07-17T14:15:10.101Z"
+    },
+    {
+      "path": "executable/documentation/modularization-protocol.md",
+      "size": 39905,
+      "modified": "2025-07-17T16:09:18.030Z"
+    },
+    {
+      "path": "executable/documentation/sync-docs.md",
+      "size": 20337,
+      "modified": "2025-07-17T21:21:55.115Z"
+    },
+    {
+      "path": "executable/documentation/unified-pattern-management.md",
+      "size": 15139,
+      "modified": "2025-07-17T20:09:54.266Z"
+    },
+    {
+      "path": "executable/documentation/update-living-docs.md",
+      "size": 2371,
+      "modified": "2025-07-17T20:33:28.888Z"
+    },
+    {
+      "path": "executable/execution/execution-orchestrator.md",
+      "size": 12318,
+      "modified": "2025-07-17T20:09:55.021Z"
+    },
+    {
+      "path": "executable/execution/git-worktrees-parallel.md",
+      "size": 17275,
+      "modified": "2025-07-17T15:58:35.491Z"
+    },
+    {
+      "path": "executable/execution/parallel-multi-agent.md",
+      "size": 15913,
+      "modified": "2025-07-17T20:09:55.792Z"
+    },
+    {
+      "path": "executable/execution/parallel-tool-execution.md",
+      "size": 20990,
+      "modified": "2025-07-17T14:22:54.957Z"
+    },
+    {
+      "path": "executable/execution/strategic-git.md",
+      "size": 13829,
+      "modified": "2025-07-17T20:20:24.304Z"
+    },
+    {
+      "path": "executable/git-workflow/claude-session-worktrees.md",
+      "size": 17211,
+      "modified": "2025-07-17T20:10:03.496Z"
+    },
+    {
+      "path": "executable/maintenance/registry-metrics-update.md",
+      "size": 7102,
+      "modified": "2025-07-17T14:15:10.251Z"
+    },
+    {
+      "path": "executable/maintenance/system-health.md",
+      "size": 35628,
+      "modified": "2025-07-17T14:22:26.434Z"
+    },
+    {
+      "path": "executable/mapping/command-relationships.md",
+      "size": 27454,
+      "modified": "2025-07-17T16:10:05.213Z"
+    },
+    {
+      "path": "executable/meta/adaptive-intelligent-activation.md",
+      "size": 12690,
+      "modified": "2025-07-17T03:46:10.007Z"
+    },
+    {
+      "path": "executable/meta/command-principle-bridges.md",
+      "size": 23294,
+      "modified": "2025-07-17T16:40:17.080Z"
+    },
+    {
+      "path": "executable/meta/compliance/context-engineering-core-standards.md",
+      "size": 11151,
+      "modified": "2025-07-17T18:53:34.811Z"
+    },
+    {
+      "path": "executable/meta/compliance/cross-reference-intelligence.md",
+      "size": 3114,
+      "modified": "2025-07-17T18:59:41.311Z"
+    },
+    {
+      "path": "executable/meta/compliance/implementation-guidelines.md",
+      "size": 2800,
+      "modified": "2025-07-17T18:32:16.844Z"
+    },
+    {
+      "path": "executable/meta/compliance/mathematical-validation-protocols.md",
+      "size": 17784,
+      "modified": "2025-07-17T18:25:16.940Z"
+    },
+    {
+      "path": "executable/meta/compliance/meta-command-orchestration.md",
+      "size": 3161,
+      "modified": "2025-07-17T18:59:29.030Z"
+    },
+    {
+      "path": "executable/meta/compliance/p55-p56-execution-framework.md",
+      "size": 15221,
+      "modified": "2025-07-17T18:30:05.365Z"
+    },
+    {
+      "path": "executable/meta/compliance/performance-metrics-framework.md",
+      "size": 4718,
+      "modified": "2025-07-17T18:27:49.313Z"
+    },
+    {
+      "path": "executable/meta/compliance/quality-assurance-protocols.md",
+      "size": 16591,
+      "modified": "2025-07-17T18:23:42.062Z"
+    },
+    {
+      "path": "executable/meta/compliance/real-time-monitoring.md",
+      "size": 3463,
+      "modified": "2025-07-17T18:31:38.090Z"
+    },
+    {
+      "path": "executable/meta/compliance/tool-call-execution-standards.md",
+      "size": 18655,
+      "modified": "2025-07-17T18:18:18.258Z"
+    },
+    {
+      "path": "executable/meta/compliance/visual-announcement-framework.md",
+      "size": 4210,
+      "modified": "2025-07-17T18:30:57.663Z"
+    },
+    {
+      "path": "executable/meta/context-eng-compliant.md",
+      "size": 94949,
+      "modified": "2025-07-17T14:12:44.678Z"
+    },
+    {
+      "path": "executable/meta/context-eng.md",
+      "size": 17310,
+      "modified": "2025-07-17T18:51:59.014Z"
+    },
+    {
+      "path": "executable/meta/enhanced-phase-protocols.md",
+      "size": 46599,
+      "modified": "2025-07-17T18:50:46.609Z"
+    },
+    {
+      "path": "executable/meta/intelligent-orchestration-systems.md",
+      "size": 25768,
+      "modified": "2025-07-17T18:21:48.235Z"
+    },
+    {
+      "path": "executable/meta/tool-call-execution-framework.md",
+      "size": 34435,
+      "modified": "2025-07-17T18:33:24.547Z"
+    },
+    {
+      "path": "executable/meta/user-experience-communication.md",
+      "size": 30529,
+      "modified": "2025-07-17T18:44:16.560Z"
+    },
+    {
+      "path": "executable/monitoring/real-time-compliance-dashboard.md",
+      "size": 26027,
+      "modified": "2025-07-17T16:43:31.438Z"
+    },
+    {
+      "path": "executable/optimization/adaptive-learning-system.md",
+      "size": 24053,
+      "modified": "2025-07-17T16:44:58.151Z"
+    },
+    {
+      "path": "executable/orchestration/discover.md",
+      "size": 25022,
+      "modified": "2025-07-17T16:02:15.294Z"
+    },
+    {
+      "path": "executable/orchestration/execute.md",
+      "size": 13673,
+      "modified": "2025-07-17T16:28:31.523Z"
+    },
+    {
+      "path": "executable/orchestration/orchestrate.md",
+      "size": 28039,
+      "modified": "2025-07-17T15:57:41.875Z"
+    },
+    {
+      "path": "executable/orchestration/plan-flow.md",
+      "size": 30647,
+      "modified": "2025-07-17T16:18:30.849Z"
+    },
+    {
+      "path": "executable/orchestration/verify-flow.md",
+      "size": 29870,
+      "modified": "2025-07-17T13:51:08.106Z"
+    },
+    {
+      "path": "executable/selection/multi-agent-orchestration.md",
+      "size": 24905,
+      "modified": "2025-07-17T15:57:28.977Z"
+    },
+    {
+      "path": "executable/verification/compliance-validation-system.md",
+      "size": 20610,
+      "modified": "2025-07-17T16:37:16.180Z"
+    },
+    {
+      "path": "executable/verification/confidence.md",
+      "size": 10361,
+      "modified": "2025-07-17T13:51:28.083Z"
+    },
+    {
+      "path": "executable/verification/intelligent-retry-protocol.md",
+      "size": 18778,
+      "modified": "2025-07-17T15:58:26.300Z"
+    },
+    {
+      "path": "executable/verification/math-loops.md",
+      "size": 20958,
+      "modified": "2025-07-17T15:59:31.433Z"
+    },
+    {
+      "path": "executable/verification/math-verify.md",
+      "size": 6324,
+      "modified": "2025-07-17T16:01:35.009Z"
+    },
+    {
+      "path": "executable/verification/mathematical-verification.md",
+      "size": 25748,
+      "modified": "2025-07-17T20:10:04.204Z"
+    },
+    {
+      "path": "executable/verification/objective-validation-system.md",
+      "size": 16642,
+      "modified": "2025-07-17T16:20:35.345Z"
+    },
+    {
+      "path": "executable/verification/principle-blocking-mechanisms.md",
+      "size": 22976,
+      "modified": "2025-07-17T16:38:49.210Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/enhanced-validation-process.md",
+      "size": 21135,
+      "modified": "2025-07-17T03:44:07.381Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/integration-ecosystem.md",
+      "size": 6849,
+      "modified": "2025-07-17T14:29:18.692Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/quality-measurement-communication.md",
+      "size": 14410,
+      "modified": "2025-07-17T03:44:07.381Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/tool-call-execution-protocol.md",
+      "size": 11160,
+      "modified": "2025-07-17T03:44:07.381Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content.md",
+      "size": 11870,
+      "modified": "2025-07-17T16:01:46.067Z"
+    },
+    {
+      "path": "executable/verification/validate-sys.md",
+      "size": 8305,
+      "modified": "2025-07-17T15:58:10.440Z"
+    },
+    {
+      "path": "executable/verification/validate-tool-call-execution.md",
+      "size": 6551,
+      "modified": "2025-07-17T14:22:18.100Z"
+    },
+    {
+      "path": "executable/verification/verify-loops.md",
+      "size": 20250,
+      "modified": "2025-07-17T15:59:23.335Z"
+    },
+    {
+      "path": "executable/verification/verify-scope.md",
+      "size": 11340,
+      "modified": "2025-07-17T13:52:09.921Z"
+    },
+    {
+      "path": "executable/verification/writing-standards-validator.md",
+      "size": 26087,
+      "modified": "2025-07-17T13:52:18.060Z"
+    },
+    {
+      "path": "review/claude-unique/behavioral/exploration/quick-explore-orquestador.md",
+      "size": 10037,
+      "modified": "2025-07-17T19:53:09.844Z"
+    },
+    {
+      "path": "review/claude-unique/executable/documentation/documentation-orchestrator.md",
+      "size": 11378,
+      "modified": "2025-07-17T19:53:09.844Z"
+    },
+    {
+      "path": "review/claude-unique/executable/documentation/unified-pattern-management.md",
+      "size": 15139,
+      "modified": "2025-07-17T19:53:09.844Z"
+    },
+    {
+      "path": "review/claude-unique/executable/documentation/update-living-docs.md",
+      "size": 2371,
+      "modified": "2025-07-17T20:12:02.014Z"
+    },
+    {
+      "path": "review/claude-unique/executable/execution/execution-orchestrator.md",
+      "size": 12318,
+      "modified": "2025-07-17T19:53:09.845Z"
+    },
+    {
+      "path": "review/claude-unique/executable/execution/parallel-multi-agent.md",
+      "size": 15913,
+      "modified": "2025-07-17T19:53:09.845Z"
+    },
+    {
+      "path": "review/claude-unique/executable/git-workflow/claude-session-worktrees.md",
+      "size": 17211,
+      "modified": "2025-07-17T19:53:09.845Z"
+    },
+    {
+      "path": "review/claude-unique/executable/verification/mathematical-verification.md",
+      "size": 25748,
+      "modified": "2025-07-17T19:53:09.845Z"
+    },
+    {
+      "path": "shared/communication/compact-conversation-feedback.md",
+      "size": 7197,
+      "modified": "2025-07-17T15:56:11.179Z"
+    },
+    {
+      "path": "shared/communication/maximum-density-enforcement.md",
+      "size": 2359,
+      "modified": "2025-07-17T18:29:38.263Z"
+    },
+    {
+      "path": "shared/compliance/p55-p56-universal-compliance.md",
+      "size": 20254,
+      "modified": "2025-07-17T16:36:27.636Z"
+    },
+    {
+      "path": "shared/control/loop-control-framework.md",
+      "size": 26191,
+      "modified": "2025-07-17T14:06:11.338Z"
+    },
+    {
+      "path": "shared/core/universal-tool-execution.md",
+      "size": 18989,
+      "modified": "2025-07-17T13:48:28.791Z"
+    },
+    {
+      "path": "shared/documentation/universal-documentation-management.md",
+      "size": 16281,
+      "modified": "2025-07-17T14:06:45.048Z"
+    },
+    {
+      "path": "shared/monitoring/progress-tracking-system.md",
+      "size": 27828,
+      "modified": "2025-07-17T15:48:24.346Z"
+    },
+    {
+      "path": "shared/orchestration-patterns.md",
+      "size": 24527,
+      "modified": "2025-07-17T15:58:21.336Z"
+    },
+    {
+      "path": "shared/resources/universal-resource-allocation.md",
+      "size": 17423,
+      "modified": "2025-07-17T14:07:14.811Z"
+    },
+    {
+      "path": "shared/task-coordination/compact-task-feedback.md",
+      "size": 7232,
+      "modified": "2025-07-17T15:56:15.683Z"
+    },
+    {
+      "path": "shared/validation/universal-validation-framework.md",
+      "size": 14671,
+      "modified": "2025-07-17T14:07:26.004Z"
+    },
+    {
+      "path": "shared/verification/zero-root-file-verification.md",
+      "size": 9520,
+      "modified": "2025-07-17T21:24:01.183Z"
+    }
+  ],
+  "claude_files": [
+    {
+      "path": ".archived/originals/context-economy.md",
+      "size": 11944,
+      "modified": "2025-07-17T21:23:10.102Z"
+    },
+    {
+      "path": ".archived/originals/execute.md",
+      "size": 33002,
+      "modified": "2025-07-17T21:23:10.102Z"
+    },
+    {
+      "path": ".archived/originals/math-verify.md",
+      "size": 17369,
+      "modified": "2025-07-17T21:23:10.102Z"
+    },
+    {
+      "path": ".archived/originals/sync-docs.md",
+      "size": 48897,
+      "modified": "2025-07-17T21:23:10.102Z"
+    },
+    {
+      "path": ".archived/originals/thinking.md",
+      "size": 25035,
+      "modified": "2025-07-17T21:23:10.102Z"
+    },
+    {
+      "path": "behavioral/behavior/intelligent-fallback.md",
+      "size": 13824,
+      "modified": "2025-07-17T21:23:10.103Z"
+    },
+    {
+      "path": "behavioral/documentation/crystallize.md",
+      "size": 11946,
+      "modified": "2025-07-17T21:23:10.103Z"
+    },
+    {
+      "path": "behavioral/documentation/patterns.md",
+      "size": 15998,
+      "modified": "2025-07-17T21:23:10.103Z"
+    },
+    {
+      "path": "behavioral/documentation/planning-documentation.md",
+      "size": 18878,
+      "modified": "2025-07-17T21:23:10.103Z"
+    },
+    {
+      "path": "behavioral/documentation/technical-nomenclature.md",
+      "size": 31680,
+      "modified": "2025-07-17T21:23:10.103Z"
+    },
+    {
+      "path": "behavioral/execution/conversation-lifecycle.md",
+      "size": 19323,
+      "modified": "2025-07-17T21:23:10.103Z"
+    },
+    {
+      "path": "behavioral/execution/parallel.md",
+      "size": 28533,
+      "modified": "2025-07-17T21:23:10.104Z"
+    },
+    {
+      "path": "behavioral/exploration/explore.md",
+      "size": 20730,
+      "modified": "2025-07-17T21:23:10.104Z"
+    },
+    {
+      "path": "behavioral/exploration/quick-explore-orquestador.md",
+      "size": 10037,
+      "modified": "2025-07-17T21:23:10.104Z"
+    },
+    {
+      "path": "behavioral/exploration/quick-explore.md",
+      "size": 20323,
+      "modified": "2025-07-17T21:23:10.104Z"
+    },
+    {
+      "path": "behavioral/intelligence/autonomous.md",
+      "size": 19199,
+      "modified": "2025-07-17T21:23:10.104Z"
+    },
+    {
+      "path": "behavioral/intelligence/complexity.md",
+      "size": 25711,
+      "modified": "2025-07-17T21:23:10.104Z"
+    },
+    {
+      "path": "behavioral/intelligence/decompose.md",
+      "size": 16546,
+      "modified": "2025-07-17T21:23:10.105Z"
+    },
+    {
+      "path": "behavioral/intelligence/evolution-ready-architecture.md",
+      "size": 16982,
+      "modified": "2025-07-17T21:23:10.105Z"
+    },
+    {
+      "path": "behavioral/intelligence/evolve-intelligence.md",
+      "size": 18139,
+      "modified": "2025-07-17T21:23:10.105Z"
+    },
+    {
+      "path": "behavioral/intelligence/invisible-excellence.md",
+      "size": 17908,
+      "modified": "2025-07-17T21:23:10.105Z"
+    },
+    {
+      "path": "behavioral/intelligence/knowledge-hierarchy.md",
+      "size": 16042,
+      "modified": "2025-07-17T21:23:10.106Z"
+    },
+    {
+      "path": "behavioral/intelligence/mathematical-complexity-core.md",
+      "size": 19324,
+      "modified": "2025-07-17T21:23:10.106Z"
+    },
+    {
+      "path": "behavioral/intelligence/meta-core.md",
+      "size": 11661,
+      "modified": "2025-07-17T21:23:10.106Z"
+    },
+    {
+      "path": "behavioral/intelligence/modular-composition.md",
+      "size": 22067,
+      "modified": "2025-07-17T21:23:10.106Z"
+    },
+    {
+      "path": "behavioral/intelligence/orchestrate-intelligence.md",
+      "size": 30600,
+      "modified": "2025-07-17T21:23:10.106Z"
+    },
+    {
+      "path": "behavioral/intelligence/organizational-architecture.md",
+      "size": 13974,
+      "modified": "2025-07-17T21:23:10.106Z"
+    },
+    {
+      "path": "behavioral/intelligence/progress.md",
+      "size": 16041,
+      "modified": "2025-07-17T21:23:10.107Z"
+    },
+    {
+      "path": "behavioral/intelligence/reorganize-system.md",
+      "size": 18248,
+      "modified": "2025-07-17T21:23:10.107Z"
+    },
+    {
+      "path": "behavioral/intelligence/simplicity.md",
+      "size": 22350,
+      "modified": "2025-07-17T21:23:10.107Z"
+    },
+    {
+      "path": "behavioral/intelligence/systematic-quality-improvement.md",
+      "size": 15700,
+      "modified": "2025-07-17T21:23:10.107Z"
+    },
+    {
+      "path": "behavioral/intelligence/tdd.md",
+      "size": 15033,
+      "modified": "2025-07-17T21:23:10.107Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-core.md",
+      "size": 9767,
+      "modified": "2025-07-17T21:23:10.108Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-execution-phases.md",
+      "size": 39741,
+      "modified": "2025-07-17T21:23:10.108Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process-validation-framework.md",
+      "size": 17310,
+      "modified": "2025-07-17T21:23:10.108Z"
+    },
+    {
+      "path": "behavioral/intelligence/think-process.md",
+      "size": 16625,
+      "modified": "2025-07-17T21:23:10.108Z"
+    },
+    {
+      "path": "behavioral/intelligence/thinking.md",
+      "size": 12795,
+      "modified": "2025-07-17T21:23:10.109Z"
+    },
+    {
+      "path": "behavioral/optimization/context-economy.md",
+      "size": 8942,
+      "modified": "2025-07-17T21:23:10.109Z"
+    },
+    {
+      "path": "behavioral/optimization/context-over-commands.md",
+      "size": 10832,
+      "modified": "2025-07-17T21:23:10.109Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-cognitive-organization.md",
+      "size": 19571,
+      "modified": "2025-07-17T21:23:10.109Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-complexity.md",
+      "size": 17122,
+      "modified": "2025-07-17T21:23:10.109Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-context.md",
+      "size": 15711,
+      "modified": "2025-07-17T21:23:10.109Z"
+    },
+    {
+      "path": "behavioral/optimization/optimize-intelligent-writing.md",
+      "size": 26891,
+      "modified": "2025-07-17T21:23:10.110Z"
+    },
+    {
+      "path": "behavioral/optimization/single-source-truth.md",
+      "size": 11506,
+      "modified": "2025-07-17T21:23:10.110Z"
+    },
+    {
+      "path": "behavioral/selection/model-selection.md",
+      "size": 9908,
+      "modified": "2025-07-17T21:23:10.110Z"
+    },
+    {
+      "path": "behavioral/verification/thresholds.md",
+      "size": 15952,
+      "modified": "2025-07-17T21:23:10.110Z"
+    },
+    {
+      "path": "cores/cognitive-processor.md",
+      "size": 24348,
+      "modified": "2025-07-17T21:23:10.110Z"
+    },
+    {
+      "path": "cores/documentation-sync.md",
+      "size": 17966,
+      "modified": "2025-07-17T21:23:10.110Z"
+    },
+    {
+      "path": "cores/mathematical-verification-unified.md",
+      "size": 22156,
+      "modified": "2025-07-17T21:23:10.111Z"
+    },
+    {
+      "path": "cores/optimization-framework.md",
+      "size": 24474,
+      "modified": "2025-07-17T21:23:10.111Z"
+    },
+    {
+      "path": "cores/universal-meta-core-infrastructure.md",
+      "size": 22565,
+      "modified": "2025-07-17T21:23:10.111Z"
+    },
+    {
+      "path": "cores/verification-engine.md",
+      "size": 15530,
+      "modified": "2025-07-17T21:23:10.111Z"
+    },
+    {
+      "path": "cores/verification-unified-core.md",
+      "size": 23580,
+      "modified": "2025-07-17T21:23:10.111Z"
+    },
+    {
+      "path": "examples/math-verify-refactored.md",
+      "size": 11820,
+      "modified": "2025-07-17T21:23:10.112Z"
+    },
+    {
+      "path": "executable/automation/script-automation-bridge.md",
+      "size": 17801,
+      "modified": "2025-07-17T21:23:10.112Z"
+    },
+    {
+      "path": "executable/behavior/behavioral-control-layer.md",
+      "size": 27039,
+      "modified": "2025-07-17T21:23:10.112Z"
+    },
+    {
+      "path": "executable/behavior/monitor.md",
+      "size": 30043,
+      "modified": "2025-07-17T21:23:10.112Z"
+    },
+    {
+      "path": "executable/core-routing/decision-ecosystem.md",
+      "size": 21088,
+      "modified": "2025-07-17T21:23:10.113Z"
+    },
+    {
+      "path": "executable/core-routing/decision-engine-orchestrator.md",
+      "size": 14357,
+      "modified": "2025-07-17T21:23:10.113Z"
+    },
+    {
+      "path": "executable/core-routing/decision-execution.md",
+      "size": 16226,
+      "modified": "2025-07-17T21:23:10.113Z"
+    },
+    {
+      "path": "executable/core-routing/decision-integration-protocols.md",
+      "size": 16455,
+      "modified": "2025-07-17T21:23:10.113Z"
+    },
+    {
+      "path": "executable/core-routing/decision-logic-core.md",
+      "size": 10372,
+      "modified": "2025-07-17T21:23:10.113Z"
+    },
+    {
+      "path": "executable/core-routing/decision-routing-patterns.md",
+      "size": 13035,
+      "modified": "2025-07-17T21:23:10.113Z"
+    },
+    {
+      "path": "executable/core-routing/decision-triggers.md",
+      "size": 15639,
+      "modified": "2025-07-17T21:23:10.114Z"
+    },
+    {
+      "path": "executable/core-routing/decision-validation-framework.md",
+      "size": 14718,
+      "modified": "2025-07-17T21:23:10.114Z"
+    },
+    {
+      "path": "executable/core-routing/decision.md",
+      "size": 6936,
+      "modified": "2025-07-17T21:23:10.114Z"
+    },
+    {
+      "path": "executable/core-routing/evolutionary-decision-trees.md",
+      "size": 25388,
+      "modified": "2025-07-17T21:23:10.114Z"
+    },
+    {
+      "path": "executable/core-routing/explicit-decision-trees.md",
+      "size": 26778,
+      "modified": "2025-07-17T21:23:10.114Z"
+    },
+    {
+      "path": "executable/core-routing/principle-activation-engine.md",
+      "size": 13251,
+      "modified": "2025-07-17T21:23:10.114Z"
+    },
+    {
+      "path": "executable/documentation/documentation-orchestrator.md",
+      "size": 11378,
+      "modified": "2025-07-17T21:23:10.114Z"
+    },
+    {
+      "path": "executable/documentation/living-documentation.md",
+      "size": 16478,
+      "modified": "2025-07-17T21:23:10.115Z"
+    },
+    {
+      "path": "executable/documentation/modularization-protocol.md",
+      "size": 39905,
+      "modified": "2025-07-17T21:23:10.115Z"
+    },
+    {
+      "path": "executable/documentation/sync-docs.md",
+      "size": 20337,
+      "modified": "2025-07-17T21:23:10.115Z"
+    },
+    {
+      "path": "executable/documentation/unified-pattern-management.md",
+      "size": 15139,
+      "modified": "2025-07-17T21:23:10.115Z"
+    },
+    {
+      "path": "executable/documentation/update-living-docs.md",
+      "size": 2371,
+      "modified": "2025-07-17T21:23:10.115Z"
+    },
+    {
+      "path": "executable/execution/execution-orchestrator.md",
+      "size": 12318,
+      "modified": "2025-07-17T21:23:10.115Z"
+    },
+    {
+      "path": "executable/execution/git-worktrees-parallel.md",
+      "size": 17275,
+      "modified": "2025-07-17T21:23:10.115Z"
+    },
+    {
+      "path": "executable/execution/parallel-multi-agent.md",
+      "size": 15913,
+      "modified": "2025-07-17T21:23:10.116Z"
+    },
+    {
+      "path": "executable/execution/parallel-tool-execution.md",
+      "size": 20990,
+      "modified": "2025-07-17T21:23:10.116Z"
+    },
+    {
+      "path": "executable/execution/strategic-git.md",
+      "size": 13829,
+      "modified": "2025-07-17T21:23:10.116Z"
+    },
+    {
+      "path": "executable/git-workflow/claude-session-worktrees.md",
+      "size": 17211,
+      "modified": "2025-07-17T21:23:10.116Z"
+    },
+    {
+      "path": "executable/maintenance/registry-metrics-update.md",
+      "size": 7102,
+      "modified": "2025-07-17T21:23:10.117Z"
+    },
+    {
+      "path": "executable/maintenance/system-health.md",
+      "size": 35628,
+      "modified": "2025-07-17T21:23:10.117Z"
+    },
+    {
+      "path": "executable/mapping/command-relationships.md",
+      "size": 27454,
+      "modified": "2025-07-17T21:23:10.117Z"
+    },
+    {
+      "path": "executable/meta/adaptive-intelligent-activation.md",
+      "size": 12690,
+      "modified": "2025-07-17T21:23:10.117Z"
+    },
+    {
+      "path": "executable/meta/command-principle-bridges.md",
+      "size": 23294,
+      "modified": "2025-07-17T21:23:10.118Z"
+    },
+    {
+      "path": "executable/meta/compliance/context-engineering-core-standards.md",
+      "size": 11151,
+      "modified": "2025-07-17T21:23:10.118Z"
+    },
+    {
+      "path": "executable/meta/compliance/cross-reference-intelligence.md",
+      "size": 3114,
+      "modified": "2025-07-17T21:23:10.118Z"
+    },
+    {
+      "path": "executable/meta/compliance/implementation-guidelines.md",
+      "size": 2800,
+      "modified": "2025-07-17T21:23:10.118Z"
+    },
+    {
+      "path": "executable/meta/compliance/mathematical-validation-protocols.md",
+      "size": 17784,
+      "modified": "2025-07-17T21:23:10.118Z"
+    },
+    {
+      "path": "executable/meta/compliance/meta-command-orchestration.md",
+      "size": 3161,
+      "modified": "2025-07-17T21:23:10.119Z"
+    },
+    {
+      "path": "executable/meta/compliance/p55-p56-execution-framework.md",
+      "size": 15221,
+      "modified": "2025-07-17T21:23:10.119Z"
+    },
+    {
+      "path": "executable/meta/compliance/performance-metrics-framework.md",
+      "size": 4718,
+      "modified": "2025-07-17T21:23:10.119Z"
+    },
+    {
+      "path": "executable/meta/compliance/quality-assurance-protocols.md",
+      "size": 16591,
+      "modified": "2025-07-17T21:23:10.119Z"
+    },
+    {
+      "path": "executable/meta/compliance/real-time-monitoring.md",
+      "size": 3463,
+      "modified": "2025-07-17T21:23:10.119Z"
+    },
+    {
+      "path": "executable/meta/compliance/tool-call-execution-standards.md",
+      "size": 18655,
+      "modified": "2025-07-17T21:23:10.119Z"
+    },
+    {
+      "path": "executable/meta/compliance/visual-announcement-framework.md",
+      "size": 4210,
+      "modified": "2025-07-17T21:23:10.120Z"
+    },
+    {
+      "path": "executable/meta/context-eng-compliant.md",
+      "size": 94949,
+      "modified": "2025-07-17T21:23:10.120Z"
+    },
+    {
+      "path": "executable/meta/context-eng.md",
+      "size": 17310,
+      "modified": "2025-07-17T21:23:10.120Z"
+    },
+    {
+      "path": "executable/meta/enhanced-phase-protocols.md",
+      "size": 46599,
+      "modified": "2025-07-17T21:23:10.121Z"
+    },
+    {
+      "path": "executable/meta/intelligent-orchestration-systems.md",
+      "size": 25768,
+      "modified": "2025-07-17T21:23:10.121Z"
+    },
+    {
+      "path": "executable/meta/tool-call-execution-framework.md",
+      "size": 34435,
+      "modified": "2025-07-17T21:23:10.121Z"
+    },
+    {
+      "path": "executable/meta/user-experience-communication.md",
+      "size": 30529,
+      "modified": "2025-07-17T21:23:10.122Z"
+    },
+    {
+      "path": "executable/monitoring/real-time-compliance-dashboard.md",
+      "size": 26027,
+      "modified": "2025-07-17T21:23:10.122Z"
+    },
+    {
+      "path": "executable/optimization/adaptive-learning-system.md",
+      "size": 24053,
+      "modified": "2025-07-17T21:23:10.122Z"
+    },
+    {
+      "path": "executable/orchestration/discover.md",
+      "size": 25022,
+      "modified": "2025-07-17T21:23:10.122Z"
+    },
+    {
+      "path": "executable/orchestration/execute.md",
+      "size": 13673,
+      "modified": "2025-07-17T21:23:10.123Z"
+    },
+    {
+      "path": "executable/orchestration/orchestrate.md",
+      "size": 28039,
+      "modified": "2025-07-17T21:23:10.123Z"
+    },
+    {
+      "path": "executable/orchestration/plan-flow.md",
+      "size": 30647,
+      "modified": "2025-07-17T21:23:10.123Z"
+    },
+    {
+      "path": "executable/orchestration/verify-flow.md",
+      "size": 29870,
+      "modified": "2025-07-17T21:23:10.123Z"
+    },
+    {
+      "path": "executable/selection/multi-agent-orchestration.md",
+      "size": 24905,
+      "modified": "2025-07-17T21:23:10.123Z"
+    },
+    {
+      "path": "executable/verification/compliance-validation-system.md",
+      "size": 20610,
+      "modified": "2025-07-17T21:23:10.124Z"
+    },
+    {
+      "path": "executable/verification/confidence.md",
+      "size": 10361,
+      "modified": "2025-07-17T21:23:10.124Z"
+    },
+    {
+      "path": "executable/verification/intelligent-retry-protocol.md",
+      "size": 18778,
+      "modified": "2025-07-17T21:23:10.124Z"
+    },
+    {
+      "path": "executable/verification/math-loops.md",
+      "size": 20958,
+      "modified": "2025-07-17T21:23:10.124Z"
+    },
+    {
+      "path": "executable/verification/math-verify.md",
+      "size": 6324,
+      "modified": "2025-07-17T21:23:10.124Z"
+    },
+    {
+      "path": "executable/verification/mathematical-verification.md",
+      "size": 25748,
+      "modified": "2025-07-17T21:23:10.125Z"
+    },
+    {
+      "path": "executable/verification/objective-validation-system.md",
+      "size": 16642,
+      "modified": "2025-07-17T21:23:10.125Z"
+    },
+    {
+      "path": "executable/verification/principle-blocking-mechanisms.md",
+      "size": 22976,
+      "modified": "2025-07-17T21:23:10.125Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/enhanced-validation-process.md",
+      "size": 21135,
+      "modified": "2025-07-17T21:23:10.125Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/integration-ecosystem.md",
+      "size": 6849,
+      "modified": "2025-07-17T21:23:10.125Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/quality-measurement-communication.md",
+      "size": 14410,
+      "modified": "2025-07-17T21:23:10.125Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content/tool-call-execution-protocol.md",
+      "size": 11160,
+      "modified": "2025-07-17T21:23:10.126Z"
+    },
+    {
+      "path": "executable/verification/validate-command-content.md",
+      "size": 11870,
+      "modified": "2025-07-17T21:23:10.126Z"
+    },
+    {
+      "path": "executable/verification/validate-sys.md",
+      "size": 8305,
+      "modified": "2025-07-17T21:23:10.126Z"
+    },
+    {
+      "path": "executable/verification/validate-tool-call-execution.md",
+      "size": 6551,
+      "modified": "2025-07-17T21:23:10.126Z"
+    },
+    {
+      "path": "executable/verification/verify-loops.md",
+      "size": 20250,
+      "modified": "2025-07-17T21:23:10.126Z"
+    },
+    {
+      "path": "executable/verification/verify-scope.md",
+      "size": 11340,
+      "modified": "2025-07-17T21:23:10.126Z"
+    },
+    {
+      "path": "executable/verification/writing-standards-validator.md",
+      "size": 26087,
+      "modified": "2025-07-17T21:23:10.127Z"
+    },
+    {
+      "path": "shared/communication/compact-conversation-feedback.md",
+      "size": 7197,
+      "modified": "2025-07-17T21:23:10.127Z"
+    },
+    {
+      "path": "shared/communication/maximum-density-enforcement.md",
+      "size": 2359,
+      "modified": "2025-07-17T21:23:10.127Z"
+    },
+    {
+      "path": "shared/compliance/p55-p56-universal-compliance.md",
+      "size": 20254,
+      "modified": "2025-07-17T21:23:10.127Z"
+    },
+    {
+      "path": "shared/control/loop-control-framework.md",
+      "size": 26191,
+      "modified": "2025-07-17T21:23:10.127Z"
+    },
+    {
+      "path": "shared/core/universal-tool-execution.md",
+      "size": 18989,
+      "modified": "2025-07-17T21:23:10.127Z"
+    },
+    {
+      "path": "shared/documentation/universal-documentation-management.md",
+      "size": 16281,
+      "modified": "2025-07-17T21:23:10.128Z"
+    },
+    {
+      "path": "shared/monitoring/progress-tracking-system.md",
+      "size": 27828,
+      "modified": "2025-07-17T21:23:10.128Z"
+    },
+    {
+      "path": "shared/orchestration-patterns.md",
+      "size": 24527,
+      "modified": "2025-07-17T21:23:10.128Z"
+    },
+    {
+      "path": "shared/resources/universal-resource-allocation.md",
+      "size": 17423,
+      "modified": "2025-07-17T21:23:10.128Z"
+    },
+    {
+      "path": "shared/task-coordination/compact-task-feedback.md",
+      "size": 7232,
+      "modified": "2025-07-17T21:23:10.128Z"
+    },
+    {
+      "path": "shared/validation/universal-validation-framework.md",
+      "size": 14671,
+      "modified": "2025-07-17T21:23:10.129Z"
+    },
+    {
+      "path": "shared/verification/zero-root-file-verification.md",
+      "size": 9472,
+      "modified": "2025-07-17T21:23:10.130Z"
+    }
+  ],
+  "success": true
+}

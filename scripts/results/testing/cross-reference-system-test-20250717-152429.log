@@ -1,0 +1,7 @@
+[0;34m🧪 Context Engineering - Cross-Reference System Testing[0m
+==================================================================
+Test started: Thu Jul 17 15:24:29 CST 2025
+Project root: /Users/nalve/claude-context-engineering
+Test log: /Users/nalve/claude-context-engineering/scripts/results/testing/cross-reference-system-test-20250717-152429.log
+
+./scripts/test/test-cross-reference-system.sh: line 356: unexpected argument `newline' to conditional binary operator

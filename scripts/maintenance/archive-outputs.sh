@@ -8,7 +8,7 @@ set -euo pipefail
 
 # Configuration
 PROJECT_ROOT="/Users/nalve/claude-context-engineering"
-OUTPUTS_DIR="$PROJECT_ROOT/outputs"
+OUTPUTS_DIR="$PROJECT_ROOT/docs/operations/outputs"
 SCRIPTS_RESULTS_DIR="$PROJECT_ROOT/scripts/results"
 ARCHIVE_DAYS=30
 CURRENT_DATE=$(date +%Y-%m-%d)
@@ -54,10 +54,10 @@ create_archive_structure() {
 
 # Archive old outputs/analysis files
 archive_analysis_files() {
-    log "Checking outputs/analysis for files older than $ARCHIVE_DAYS days..."
+    log "Checking docs/operations/outputs/analysis for files older than $ARCHIVE_DAYS days..."
     
     if [ ! -d "$OUTPUTS_DIR/analysis" ]; then
-        warning "outputs/analysis directory not found, skipping..."
+        warning "docs/operations/outputs/analysis directory not found, skipping..."
         return
     fi
     
@@ -162,7 +162,7 @@ generate_archive_report() {
 ## Archive Summary
 
 ### **Outputs Archive**
-- **Location**: \`outputs/archive/$CURRENT_YEAR/\`
+- **Location**: \`docs/operations/outputs/archive/$CURRENT_YEAR/\`
 - **Files Archived**: Analysis files older than $ARCHIVE_DAYS days
 - **Archive Date**: $CURRENT_DATE
 
@@ -174,7 +174,7 @@ generate_archive_report() {
 ## Archive Structure
 
 \`\`\`
-outputs/archive/$CURRENT_YEAR/           ← Analysis files
+docs/operations/outputs/archive/$CURRENT_YEAR/           ← Analysis files
 scripts/results/archive/
 └── $CURRENT_YEAR/$CURRENT_MONTH/        ← Script results by category
     ├── compliance/

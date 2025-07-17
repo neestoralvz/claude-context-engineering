@@ -49,7 +49,7 @@ zero_root_verification_protocol:
 file_classification:
   handoffs:
     pattern: "HANDOFF_*.md, coordination files, task transitions"
-    destination: "/handoffs/"
+    destination: "/docs/operations/handoffs/"
     auto_create: true
     
   reports:
@@ -59,7 +59,7 @@ file_classification:
     
   outputs:
     pattern: "temporary results, validation outputs, processing intermediates"
-    destination: "/outputs/"
+    destination: "/docs/operations/outputs/"
     auto_create: true
     
   scripts:
@@ -161,7 +161,7 @@ auto_reorganization:
 ### **Documentation Commands**
 - **`/sync-docs`**: Verify no temp files left in root
 - **`/update-living-docs`**: Ensure docs go to `/docs/` hierarchy
-- **`/handoff`**: Force HANDOFF_*.md files to `/handoffs/`
+- **`/handoff`**: Force HANDOFF_*.md files to `/docs/operations/handoffs/`
 
 ### **Analysis Commands**  
 - **`/verify-flow`**: Output validation reports to `/docs/operations/reports/`

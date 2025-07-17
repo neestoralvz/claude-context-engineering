@@ -308,9 +308,9 @@ requirements:
 ## 📚 **Referencias y Documentación**
 
 ### **Handoffs Relacionados**
-- **Comprehensive**: `/docs/handoffs/active/HANDOFF_YAML_ELIMINATION_COMPREHENSIVE.md`
-- **Master**: `/docs/handoffs/active/YAML_ELIMINATION_MASTER_HANDOFF.md`
-- **Previous Sessions**: `/docs/handoffs/active/HANDOFF_YAML_ELIMINATION_SESSION_*.md`
+- **Comprehensive**: `/docs/operations/handoffs/active/HANDOFF_YAML_ELIMINATION_COMPREHENSIVE.md`
+- **Master**: `/docs/operations/handoffs/active/YAML_ELIMINATION_MASTER_HANDOFF.md`
+- **Previous Sessions**: `/docs/operations/handoffs/active/HANDOFF_YAML_ELIMINATION_SESSION_*.md`
 
 ### **Authorities y Standards**
 - **P55/P6 Framework**: `/docs/knowledge/technical/enhanced-command-execution.md`

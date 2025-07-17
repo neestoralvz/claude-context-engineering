@@ -105,21 +105,21 @@ Implement REQUIRED strategic version control methodology using Git as both a saf
 
 ### **Feature Development**
 ```text
-/strategic-git "pre-process" "Starting user authentication feature" "auth_system"
+/strategic-git "feat(auth): user authentication feature prep"
 ```
-**Result**: Commits current state before beginning authentication work, enabling safe experimentation
+**Result**: Commits current state before beginning authentication work using optimized format, enabling safe experimentation
 
 ### **Architecture Change**
 ```text
-/strategic-git "milestone" "Database migration to PostgreSQL completed" "data_layer"
+/strategic-git "feat(data): postgresql migration completed"
 ```
-**Result**: Documents major architectural milestone with full context and decision rationale
+**Result**: Documents major architectural milestone using optimized format with full context and decision rationale
 
 ### **Debugging Session**
 ```text
-/strategic-git "in-process" "Identified memory leak in image processor" "performance"
+/strategic-git "fix(perf): memory leak in image processor"
 ```
-**Result**: Commits debugging discovery, preserving investigation progress and findings
+**Result**: Commits debugging discovery using optimized format, preserving investigation progress and findings
 
 ---
 
@@ -132,7 +132,7 @@ Implement REQUIRED strategic version control methodology using Git as both a saf
 - Before refactoring sessions
 - Before experimental approaches
 
-**Format**: `Pre-process: [description] - [rationale]`
+**Format**: `feat(prep): [description] - [rationale]` (optimized conventional format)
 
 ### **In-Process Commits**
 **Purpose**: Document progress and decisions during development
@@ -141,7 +141,7 @@ Implement REQUIRED strategic version control methodology using Git as both a saf
 - After solving complex problems
 - When switching approaches or strategies
 
-**Format**: `Progress: [achievement] - [next_steps]`
+**Format**: `feat(progress): [achievement] - [next_steps]` (optimized conventional format)
 
 ### **Post-Process Commits**
 **Purpose**: Document completed work with full context
@@ -150,7 +150,7 @@ Implement REQUIRED strategic version control methodology using Git as both a saf
 - Bug fixes with root cause analysis
 - Integration completion with verification results
 
-**Format**: `Complete: [objective] - [outcome] - [impact]`
+**Format**: `feat(complete): [objective] - [outcome]` (optimized conventional format)
 
 ### **Milestone Commits**
 **Purpose**: Mark significant project achievements
@@ -159,7 +159,7 @@ Implement REQUIRED strategic version control methodology using Git as both a saf
 - Performance target achievements
 - Project phase completions
 
-**Format**: `Milestone: [achievement] - [business_value] - [next_phase]`
+**Format**: `feat(milestone): [achievement] - [business_value]` (optimized conventional format)
 
 ### **Recovery Commits**
 **Purpose**: Document fallback or alternative approaches
@@ -168,7 +168,7 @@ Implement REQUIRED strategic version control methodology using Git as both a saf
 - When recovering from complex conflicts
 - When adapting to changed requirements
 
-**Format**: `Recovery: [situation] - [action] - [learning]`
+**Format**: `fix(recovery): [situation] - [action]` (optimized conventional format)
 
 ---
 
@@ -244,13 +244,13 @@ git worktree add ../experiment-c experiment-c
 
 ### **Commit Message Templates**
 
-**CRITICAL Commit Message Template Structure** (Natural Language Implementation):
+**CRITICAL Commit Message Template Structure** (Optimized Conventional Format):
 
-**Message Header**: [Type]: [Summary] - [Context]
+**Message Header**: `type(scope): description` (≤50 characters)
 
 **Details Section**:
 - Key change 1: Description of primary change
-- Key change 2: Description of secondary change
+- Key change 2: Description of secondary change  
 - Decision rationale: Explanation of why this approach was chosen
 
 **Impact Section**:
@@ -263,7 +263,7 @@ git worktree add ../experiment-c experiment-c
 - Performance impact: How this change affects system performance
 - Quality metrics: Measures of code quality and standards compliance
 
-**Template Purpose**: Ensure consistent, comprehensive commit messages that capture decision rationale and impact
+**Template Purpose**: Ensure consistent, comprehensive commit messages using optimized conventional commits format with ≥40% character reduction while capturing decision rationale and impact
 
 ---
 

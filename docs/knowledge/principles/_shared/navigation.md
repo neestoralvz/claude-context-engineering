@@ -10,13 +10,13 @@
 **[← Volver al índice principal](../README.md)**
 
 ### 🌟 Principios por Categoría
-- **[Filosóficos](../philosophical-foundations.md)** - Fundamentos conceptuales (5 principios)
-- **[Operativos](../operational-excellence.md)** - Metodología de trabajo (11 principios)
-- **[Técnicos](../technical-standards.md)** - Implementación práctica (13 principios)
+- **[Filosóficos](../philosophical-foundations.md)** - Fundamentos conceptuales (6 principios)
+- **[Operativos](../operational-excellence.md)** - Metodología de trabajo (19 principios)
+- **[Técnicos](../technical-standards.md)** - Implementación práctica (26 principios)
 - **[Matemáticos](../mathematical-rigor.md)** - Fundamentos cuantitativos (9 principios)
-- **[Validación](../validation-protocols.md)** - Verificación y aseguramiento (6 principios)
-- **[Cognitivos](../cognitive-optimization.md)** - Usabilidad y comprensión (5 principios)
-- **[Adaptación Inteligente](../intelligent-adaptation.md)** - Inteligencia avanzada (9 principios)
+- **[Validación](../validation-protocols.md)** - Verificación y aseguramiento (10 principios)
+- **[Cognitivos](../cognitive-optimization.md)** - Usabilidad y comprensión (6 principios)
+- **[Adaptación Inteligente](../intelligent-adaptation.md)** - Inteligencia avanzada (12 principios)
 - **[Seguridad y Privacidad](../security-privacy.md)** - Protección y transparencia (2 principios)
 - **[Automatización Avanzada](../advanced-automation.md)** - Sistemas automatizados (2 principios)
 - **[Inteligencia de Rendimiento](../performance-intelligence.md)** - Optimización inteligente (2 principios)
@@ -44,7 +44,7 @@
 - [#16 Strategic Git Versioning](../operational-excellence.md#16-strategic-git-versioning)
 - [#33 Conversation Lifecycle Management](../operational-excellence.md#33-conversation-lifecycle-management)
 - [#34 Living Planning Documentation](../operational-excellence.md#34-living-planning-documentation)
-- [#83 Documentation as Living Context](../operational-excellence.md#83-documentation-as-living-context)
+- [#96 Documentation as Living Context](../operational-excellence.md#96-documentation-as-living-context)
 
 ### 🔧 Principios Técnicos
 - [#17 Parallel > Sequential](../technical-standards.md#17-parallel--sequential)

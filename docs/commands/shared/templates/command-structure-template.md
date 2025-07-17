@@ -178,6 +178,26 @@ function [functionName]([parameters]) {
 3. **CAPTURE** actual results from tool execution
 4. **PROVIDE** complete transparency of all operations
 5. **MAINTAIN** evidence trail for compliance verification
+
+### **MANDATORY Post-Execution Documentation Review**
+**CRITICAL Integration**: [Systematic Post-Execution Review Protocol](../../knowledge/protocols/systematic-post-execution-review-protocol.md)
+
+**REQUIRED Questions After ANY Command Execution**:
+```
+🔍 POST-EXECUTION REVIEW (MANDATORY)
+1. "¿Qué documentación viva necesita actualización basada en estas modificaciones?"
+2. "¿Qué archivos específicos deben modificarse para reflejar estos cambios?"
+3. "¿Qué cross-references requieren ajuste o actualización?"
+4. "¿Qué sistemas o componentes relacionados necesitan actualizaciones?"
+5. "¿Se completó el ciclo de vida de la documentación operacional?"
+6. "¿Hay algún aprendizaje que deba documentarse o archivarse?"
+```
+
+**Implementation Requirements**:
+- **AUTOMATIC Activation**: Post-execution review MUST activate within ≤60 seconds
+- **SYSTEMATIC Analysis**: COMPREHENSIVE impact analysis with ≥95% accuracy
+- **COMPLETE Coverage**: ≥95% coverage of all documentation update needs
+- **ZERO Tolerance**: NO operations complete without systematic review
 ```
 
 ---

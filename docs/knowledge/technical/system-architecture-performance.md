@@ -42,7 +42,7 @@ Context Engineering Hub (CLAUDE.md)                    \u2190 Navigation Hub
 \u251c\u2500\u2500 docs/ DOCUMENTATION
 \u2502   \u251c\u2500\u2500 knowledge/ (unified documentation system)       \u2190 Single source of truth with strategic cross-referencing
 \u2502   \u251c\u2500\u2500 commands/ (command documentation)         \u2190 Behavioral + executable taxonomy documentation
-\u2502   \u251c\u2500\u2500 outputs/analysis/ (synthesis reports)      \u2190 Performance metrics and optimization analysis
+\u2502   \u251c\u2500\u2500 operations/outputs/analysis/ (synthesis reports)      \u2190 Performance metrics and optimization analysis
 \u2502   \u251c\u2500\u2500 testing/ (validation and testing frameworks)      \u2190 Testing strategies and hook validation
 \u2502   \u2514\u2500\u2500 templates/ (reusable patterns)  \u2190 Command and integration templates
 \u2514\u2500\u2500 projects/ SELF-CONTAINED PROJECTS

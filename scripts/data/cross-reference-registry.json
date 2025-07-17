@@ -1,0 +1,280 @@
+{
+  "registry_metadata": {
+    "version": "1.0.0",
+    "created": "2025-07-17T15:14:45-06:00",
+    "last_updated": "2025-07-17T15:14:45-06:00",
+    "description": "Centralized registry of all cross-references in Context Engineering project",
+    "maintainer": "Context Engineering Automation System"
+  },
+  "reference_patterns": {
+    "principle_references": {
+      "direct_hash": {
+        "pattern": "#[0-9]+",
+        "description": "Direct principle references like #94",
+        "examples": ["#1", "#94", "#100"],
+        "file_types": ["md", "json"],
+        "criticality": "high",
+        "auto_update": true
+      },
+      "principle_with_text": {
+        "pattern": "Principle #[0-9]+",
+        "description": "Formal principle references",
+        "examples": ["Principle #94", "Principle #100"],
+        "file_types": ["md"],
+        "criticality": "high",
+        "auto_update": true
+      },
+      "spanish_count": {
+        "pattern": "[0-9]+ principios?",
+        "description": "Spanish principle count references",
+        "examples": ["94 principios", "100 principios"],
+        "file_types": ["md"],
+        "criticality": "medium",
+        "auto_update": true
+      },
+      "english_count": {
+        "pattern": "[0-9]+ principles?",
+        "description": "English principle count references",
+        "examples": ["94 principles", "100 principles"],
+        "file_types": ["md", "json"],
+        "criticality": "medium",
+        "auto_update": true
+      }
+    },
+    "cross_reference_links": {
+      "markdown_internal": {
+        "pattern": "\\[.*\\]\\(\\..*\\.md.*\\)",
+        "description": "Internal markdown links",
+        "examples": ["[link](./file.md)", "[text](../other.md#section)"],
+        "file_types": ["md"],
+        "criticality": "high",
+        "auto_update": false
+      },
+      "see_also_sections": {
+        "pattern": "\\*\\*See Also\\*\\*.*",
+        "description": "See Also cross-reference sections",
+        "examples": ["**See Also**: [link](./file.md)"],
+        "file_types": ["md"],
+        "criticality": "high",
+        "auto_update": false
+      },
+      "anchor_links": {
+        "pattern": "\\[.*\\]\\(.*\\.md#.*\\)",
+        "description": "Markdown links with anchors",
+        "examples": ["[text](./file.md#section)"],
+        "file_types": ["md"],
+        "criticality": "high",
+        "auto_update": false
+      }
+    },
+    "named_references": {
+      "strategic_online_research": {
+        "pattern": "Strategic Online Research",
+        "description": "Named reference to principle content",
+        "current_principle": "#100",
+        "previous_principle": "#94",
+        "file_types": ["md"],
+        "criticality": "medium",
+        "auto_update": true
+      },
+      "operational_documentation": {
+        "pattern": "Operational Documentation Lifecycle",
+        "description": "Named reference to principle content",
+        "current_principle": "#94",
+        "file_types": ["md"],
+        "criticality": "medium",
+        "auto_update": true
+      }
+    }
+  },
+  "critical_files": {
+    "core_principle_files": [
+      {
+        "path": "docs/knowledge/principles/README.md",
+        "role": "Main principles index",
+        "criticality": "critical",
+        "update_priority": 1,
+        "validation_required": true
+      },
+      {
+        "path": "docs/knowledge/principles/principle-cross-reference-network.md",
+        "role": "Cross-reference network hub",
+        "criticality": "critical",
+        "update_priority": 1,
+        "validation_required": true
+      },
+      {
+        "path": "CLAUDE.md",
+        "role": "Main project configuration",
+        "criticality": "critical",
+        "update_priority": 1,
+        "validation_required": true
+      }
+    ],
+    "navigation_files": [
+      {
+        "path": "docs/knowledge/principles/_shared/navigation.md",
+        "role": "Principle navigation system",
+        "criticality": "high",
+        "update_priority": 2,
+        "validation_required": true
+      }
+    ],
+    "principle_category_files": [
+      {
+        "path": "docs/knowledge/principles/philosophical-foundations.md",
+        "role": "Philosophical principles",
+        "criticality": "high",
+        "principle_count": 6,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/operational-excellence.md",
+        "role": "Operational principles",
+        "criticality": "high",
+        "principle_count": 19,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/technical-standards.md",
+        "role": "Technical principles",
+        "criticality": "high",
+        "principle_count": 26,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/mathematical-rigor.md",
+        "role": "Mathematical principles",
+        "criticality": "high",
+        "principle_count": 9,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/validation-protocols.md",
+        "role": "Validation principles",
+        "criticality": "high",
+        "principle_count": 10,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/cognitive-optimization.md",
+        "role": "Cognitive principles",
+        "criticality": "high",
+        "principle_count": 6,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/intelligent-adaptation.md",
+        "role": "Adaptation principles",
+        "criticality": "high",
+        "principle_count": 12,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/security-privacy.md",
+        "role": "Security principles",
+        "criticality": "high",
+        "principle_count": 2,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/advanced-automation.md",
+        "role": "Automation principles",
+        "criticality": "high",
+        "principle_count": 2,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/performance-intelligence.md",
+        "role": "Performance principles",
+        "criticality": "high",
+        "principle_count": 2,
+        "update_priority": 2
+      },
+      {
+        "path": "docs/knowledge/principles/integration-ecosystem.md",
+        "role": "Integration principles",
+        "criticality": "high",
+        "principle_count": 2,
+        "update_priority": 2
+      }
+    ]
+  },
+  "known_issues": {
+    "resolved": [
+      {
+        "issue": "Duplicate principle #94",
+        "description": "Strategic Online Research and Operational Documentation both used #94",
+        "resolution": "Strategic Online Research renumbered to #100",
+        "resolved_date": "2025-07-17",
+        "files_affected": [
+          "docs/knowledge/principles/intelligent-adaptation.md",
+          "docs/knowledge/principles/principle-cross-reference-network.md",
+          "docs/knowledge/principles/operational-excellence.md"
+        ]
+      },
+      {
+        "issue": "Inconsistent principle counts",
+        "description": "Documentation showed 92/94 instead of actual 100 principles",
+        "resolution": "Updated all count references to 100",
+        "resolved_date": "2025-07-17",
+        "files_affected": [
+          "CLAUDE.md",
+          "docs/knowledge/principles/README.md",
+          "docs/knowledge/principles/principle-cross-reference-network.md",
+          "docs/knowledge/principles/_shared/navigation.md"
+        ]
+      }
+    ],
+    "monitoring": [
+      {
+        "issue": "Category count accuracy",
+        "description": "Monitor that category counts in navigation.md sum to total",
+        "expected_sum": 100,
+        "monitoring_script": "scripts/validation/validate-reference-integrity.sh"
+      }
+    ]
+  },
+  "automation_config": {
+    "update_scripts": {
+      "analysis": "scripts/maintenance/analyze-cross-references.sh",
+      "validation": "scripts/validation/validate-reference-integrity.sh",
+      "update": "scripts/maintenance/update-cross-references.sh"
+    },
+    "git_hooks": {
+      "pre_commit": "scripts/hooks/pre-commit-reference-check.sh",
+      "post_commit": null,
+      "pre_push": null
+    },
+    "monitoring": {
+      "enabled": true,
+      "frequency": "weekly",
+      "alerts": {
+        "broken_references": true,
+        "inconsistent_counts": true,
+        "missing_principles": true
+      }
+    }
+  },
+  "statistics": {
+    "total_principles": 100,
+    "principle_range": "1-100",
+    "last_validation": "2025-07-17T15:14:45-06:00",
+    "reference_integrity": "verified",
+    "cross_reference_density": 0.847,
+    "navigation_efficiency": "≤2.5 cognitive steps"
+  },
+  "maintenance_log": [
+    {
+      "date": "2025-07-17",
+      "action": "Initial registry creation",
+      "changes": [
+        "Created comprehensive reference patterns",
+        "Catalogued critical files",
+        "Documented known issues",
+        "Established automation config"
+      ],
+      "validator": "Context Engineering Automation System"
+    }
+  ]
+}

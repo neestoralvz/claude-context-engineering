@@ -19,7 +19,7 @@ Implement and maintain strict organizational structure for all documentation and
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```
+```markdown
 /organizational-architecture [domain] [structure_type?] [growth_projection?]
 ```
 
@@ -35,6 +35,160 @@ Implement and maintain strict organizational structure for all documentation and
 - **Predictable Locations**: Consistent, logical file and directory placement
 - **Scalable Structure**: Architecture supports unlimited growth
 - **Standard Compliance**: Adherence to established naming and organization conventions
+
+---
+
+## 🧠 **ORGANIZATIONAL ARCHITECTURE DECISION TREE**
+
+### **CRITICAL Cognitive Flow for Organizational Architecture**
+
+```mermaid
+graph TD
+    A[Organizational Architecture Request] --> B{Complexity ≥ 0.9?}
+    B -->|Yes| C[CRITICAL: Advanced Architecture Processing]
+    B -->|No| D[Standard Architecture Analysis]
+    
+    C --> E{Confidence < 0.7?}
+    E -->|Yes| F[MANDATORY: Expert Task Delegation]
+    E -->|No| G[Direct Architecture Implementation]
+    
+    D --> H{Structure Type Assessment}
+    H -->|Hierarchical| I[Hierarchical Structure Design]
+    H -->|Categorical| J[Categorical Structure Design]
+    H -->|Topic-based| K[Topic-based Structure Design]
+    
+    F --> L[Task Tool: Complex Architecture]
+    L --> M[P56: Advanced Architecture Coordination]
+    
+    G --> N{Current Structure Analysis}
+    N -->|Well-organized| O[Structure Enhancement]
+    N -->|Poorly-organized| P[CRITICAL: Full Restructure]
+    
+    I --> Q[Read Tool: Load Hierarchy Patterns]
+    Q --> R[Edit Tool: Design Hierarchy]
+    
+    J --> S[Read Tool: Load Category Patterns]
+    S --> T[Edit Tool: Design Categories]
+    
+    K --> U[Read Tool: Load Topic Patterns]
+    U --> V[Edit Tool: Design Topics]
+    
+    O --> W{Scalability Assessment}
+    W -->|≥2.0| X[Scalability Sufficient]
+    W -->|<2.0| Y[REQUIRED: Scalability Enhancement]
+    
+    P --> Z[Read Tool: Load Restructure Patterns]
+    Z --> AA[Edit Tool: Design New Structure]
+    AA --> BB[Bash Tool: Structure Validation]
+    
+    R --> CC{Hierarchy Compliance}
+    CC -->|≥95%| DD[Hierarchy Compliant]
+    CC -->|<95%| EE[REQUIRED: Hierarchy Refinement]
+    
+    T --> FF{Category Compliance}
+    FF -->|≥95%| GG[Category Compliant]
+    FF -->|<95%| HH[REQUIRED: Category Refinement]
+    
+    V --> II{Topic Compliance}
+    II -->|≥95%| JJ[Topic Compliant]
+    II -->|<95%| KK[REQUIRED: Topic Refinement]
+    
+    X --> LL[Bash Tool: Scalability Validation]
+    LL --> MM[P56: Architecture Enhancement Success]
+    
+    Y --> NN[Read Tool: Load Scalability Patterns]
+    NN --> OO[Edit Tool: Enhance Scalability]
+    OO --> PP[Bash Tool: Scalability Testing]
+    PP --> W
+    
+    EE --> QQ[Read Tool: Load Refinement Patterns]
+    QQ --> RR[Edit Tool: Refine Hierarchy]
+    RR --> CC
+    
+    HH --> QQ
+    KK --> QQ
+    
+    BB --> SS{Structure Validation}
+    SS -->|Pass| TT[Structure Implementation]
+    SS -->|Fail| UU[CRITICAL: Structure Redesign]
+    
+    DD --> VV[P56: Hierarchy Success]
+    GG --> WW[P56: Category Success]
+    JJ --> XX[P56: Topic Success]
+    
+    TT --> YY[Edit Tool: Implement Structure]
+    YY --> ZZ[Bash Tool: Implementation Validation]
+    ZZ --> AAA[P56: Full Restructure Success]
+    
+    UU --> BBB[Task Tool: Expert Redesign]
+    BBB --> CCC[P56: Redesign Complete]
+    
+    M --> DDD[Agent Architecture Results]
+    DDD --> EEE[P56: Expert Architecture Complete]
+    
+    MM --> FFF[Architecture Quality Metrics]
+    VV --> FFF
+    WW --> FFF
+    XX --> FFF
+    AAA --> FFF
+    CCC --> FFF
+    EEE --> FFF
+    
+    style C fill:#ff6b6b
+    style F fill:#4ecdc4
+    style P fill:#ffe66d
+    style UU fill:#ff8b94
+    style FFF fill:#95e1d3
+```
+
+## 🛠️ **TOOL SELECTION CRITERIA**
+
+### **MANDATORY Tool Selection Matrix**
+**READ Tool Usage**:
+- **File Count**: ≤3 files for direct analysis
+- **Complexity**: <0.7000 (straightforward operations)
+- **Scope**: Well-defined, single-purpose operations
+
+**TASK Tool Usage**:
+- **File Count**: ≥4 files or unknown scope
+- **Complexity**: ≥0.7000 (complex operations)
+- **Scope**: Multi-step, exploratory, or research operations
+
+**Other Tools**:
+- **Grep**: Pattern search across multiple files
+- **Glob**: File pattern matching and discovery
+- **Bash**: System operations and automation
+
+### **CRITICAL Tool Selection Logic**
+- **Complexity Assessment**: Quantifiable complexity evaluation
+- **Scope Validation**: File count and operation scope measurement
+- **P56 Announcement**: Visual confirmation of tool selection reasoning
+- **Evidence Collection**: Measurable tool selection criteria documentation
+
+### **MANDATORY P56 Transparency Announcements**
+
+```yaml
+organizational_architecture_transparency:
+  structure_analysis:
+    announcement: "🔍 TRANSPARENCY: Structure type [HIERARCHICAL/CATEGORICAL/TOPIC] - [WELL/POORLY] organized"
+    evidence: "Current structure assessment with organization quality metrics"
+    
+  architecture_design:
+    announcement: "🏗️ TRANSPARENCY: Architecture design [ENHANCEMENT/RESTRUCTURE] - [X] components organized"
+    evidence: "Complete architecture design with organizational patterns"
+    
+  tool_selection:
+    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [architecture_operation]"
+    evidence: "Tool selection matrix with architecture-specific reasoning"
+    
+  scalability_assessment:
+    announcement: "📈 TRANSPARENCY: Scalability factor [X] - [SUFFICIENT/ENHANCEMENT_REQUIRED]"
+    evidence: "Scalability analysis with growth projection validation"
+    
+  compliance_validation:
+    announcement: "✅ TRANSPARENCY: Compliance [X]% - [COMPLIANT/REFINEMENT_REQUIRED]"
+    evidence: "Organizational compliance metrics with standard adherence"
+```
 
 ---
 
@@ -84,7 +238,7 @@ function assessGrowthSustainability(structure, growth_projection) {
 7. **Evolution Planning**: Plan for future growth and adaptation
 
 ### **Standard Structure Components**
-- **Categorical Hierarchy**: `/docs/outputs/[category]/[timestamp]-[topic].md`
+- **Categorical Hierarchy**: `/docs/operations/outputs/[category]/[timestamp]-[topic].md`
 - **Purpose-Based Organization**: Grouping by function and intent
 - **Timestamp Integration**: Chronological organization within categories
 - **Naming Conventions**: Clear, consistent naming patterns
@@ -156,19 +310,19 @@ function monitorOrganizationalArchitecture(structure) {
 ## 📋 **USAGE EXAMPLES**
 
 ### **Documentation Architecture**
-```
+```text
 /organizational-architecture "system-documentation" structure_type=hierarchical growth_projection=high
 ```
 **Result**: Implement hierarchical documentation structure for high growth
 
 ### **Command Architecture**
-```
+```bash
 /organizational-architecture "command-system" structure_type=categorical growth_projection=medium
 ```
 **Result**: Organize command system with categorical structure for medium growth
 
 ### **Knowledge Architecture**
-```
+```text
 /organizational-architecture "knowledge-base" structure_type=topic-based growth_projection=unlimited
 ```
 **Result**: Create topic-based knowledge organization for unlimited growth

@@ -1,0 +1,324 @@
+# Docker Compose Template - Context Engineering Standards
+# Production-ready multi-service setup with networking, persistence, and monitoring
+version: '3.8'
+
+services:
+  # Main application service
+  {{SERVICE_NAME}}:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+      args:
+        BUILD_DATE: ${BUILD_DATE:-$(date -u +'%Y-%m-%dT%H:%M:%SZ')}
+        VCS_REF: ${VCS_REF:-$(git rev-parse --short HEAD)}
+        VERSION: ${VERSION:-latest}
+    container_name: {{CONTAINER_NAME}}
+    hostname: {{SERVICE_NAME}}
+    restart: unless-stopped
+    
+    # Port configuration with environment variable support
+    ports:
+      - "${{{PORT_ENV_VAR}}:-{{DEFAULT_PORT}}}:${{{INTERNAL_PORT_ENV_VAR}}:-{{DEFAULT_PORT}}}"
+    
+    # Environment configuration
+    environment:
+      - APP_ENV=${APP_ENV:-production}
+      - {{PORT_ENV_VAR}}=${{{INTERNAL_PORT_ENV_VAR}}:-{{DEFAULT_PORT}}}
+      - DATABASE_URL=${DATABASE_URL:-{{DEFAULT_DATABASE_URL}}}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - PYTHONUNBUFFERED=1
+    
+    # Volume mounts for persistence and development
+    volumes:
+      # Persistent data storage
+      - {{SERVICE_NAME}}_data:/app/data
+      # Application logs
+      - {{SERVICE_NAME}}_logs:/app/logs
+      # Configuration files (optional)
+      - ./config:/app/config:ro
+      # Development mode: mount source code (comment out for production)
+      # - type: bind
+      #   source: .
+      #   target: /app
+      #   consistency: cached
+    
+    # Network configuration
+    networks:
+      - {{NETWORK_NAME}}
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: {{MEMORY_LIMIT}}
+          cpus: '{{CPU_LIMIT}}'
+        reservations:
+          memory: {{MEMORY_RESERVATION}}
+          cpus: '{{CPU_RESERVATION}}'
+    
+    # Health check configuration
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:${{{INTERNAL_PORT_ENV_VAR}}:-{{DEFAULT_PORT}}}/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Service dependencies
+    depends_on:
+      - database
+      - redis
+    
+    # Labels for management and monitoring
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.service=main"
+      - "traefik.enable=true"
+      - "traefik.http.routers.{{SERVICE_NAME}}.rule=Host(`{{DOMAIN_NAME}}`)"
+      - "traefik.http.services.{{SERVICE_NAME}}.loadbalancer.server.port={{DEFAULT_PORT}}"
+
+  # Database service (PostgreSQL example)
+  database:
+    image: postgres:15-alpine
+    container_name: {{PROJECT_NAME}}-database
+    hostname: database
+    restart: unless-stopped
+    
+    environment:
+      POSTGRES_DB: ${DB_NAME:-{{DEFAULT_DB_NAME}}}
+      POSTGRES_USER: ${DB_USER:-{{DEFAULT_DB_USER}}}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-{{DEFAULT_DB_PASSWORD}}}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+    
+    volumes:
+      - database_data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d:ro
+    
+    networks:
+      - {{NETWORK_NAME}}
+    
+    # Resource limits for database
+    deploy:
+      resources:
+        limits:
+          memory: {{DB_MEMORY_LIMIT}}
+          cpus: '{{DB_CPU_LIMIT}}'
+    
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-{{DEFAULT_DB_USER}}} -d ${DB_NAME:-{{DEFAULT_DB_NAME}}}"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.service=database"
+
+  # Redis cache service
+  redis:
+    image: redis:7-alpine
+    container_name: {{PROJECT_NAME}}-redis
+    hostname: redis
+    restart: unless-stopped
+    
+    command: redis-server /usr/local/etc/redis/redis.conf
+    
+    volumes:
+      - redis_data:/data
+      - ./config/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    
+    networks:
+      - {{NETWORK_NAME}}
+    
+    # Resource limits for Redis
+    deploy:
+      resources:
+        limits:
+          memory: {{REDIS_MEMORY_LIMIT}}
+          cpus: '{{REDIS_CPU_LIMIT}}'
+    
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.service=cache"
+
+  # Nginx reverse proxy (optional)
+  nginx:
+    image: nginx:alpine
+    container_name: {{PROJECT_NAME}}-nginx
+    hostname: nginx
+    restart: unless-stopped
+    
+    ports:
+      - "${NGINX_PORT:-80}:80"
+      - "${NGINX_SSL_PORT:-443}:443"
+    
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - nginx_logs:/var/log/nginx
+    
+    networks:
+      - {{NETWORK_NAME}}
+    
+    depends_on:
+      - {{SERVICE_NAME}}
+    
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.service=proxy"
+    
+    profiles:
+      - proxy
+
+  # Monitoring service (Prometheus + Grafana stack)
+  monitoring:
+    image: prom/prometheus:latest
+    container_name: {{PROJECT_NAME}}-monitoring
+    hostname: monitoring
+    restart: unless-stopped
+    
+    ports:
+      - "${MONITORING_PORT:-9090}:9090"
+    
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - monitoring_data:/prometheus
+    
+    networks:
+      - {{NETWORK_NAME}}
+    
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.service=monitoring"
+    
+    profiles:
+      - monitoring
+
+  # Development tools (only for development)
+  dev-tools:
+    image: nicolaka/netshoot
+    container_name: {{PROJECT_NAME}}-devtools
+    hostname: devtools
+    command: sleep infinity
+    
+    networks:
+      - {{NETWORK_NAME}}
+    
+    volumes:
+      - .:/workspace
+    
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.service=devtools"
+    
+    profiles:
+      - development
+
+# Named volumes for data persistence
+volumes:
+  {{SERVICE_NAME}}_data:
+    name: {{PROJECT_NAME}}_{{SERVICE_NAME}}_data
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.volume=app_data"
+  
+  {{SERVICE_NAME}}_logs:
+    name: {{PROJECT_NAME}}_{{SERVICE_NAME}}_logs
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.volume=app_logs"
+  
+  database_data:
+    name: {{PROJECT_NAME}}_database_data
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.volume=database"
+  
+  redis_data:
+    name: {{PROJECT_NAME}}_redis_data
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.volume=cache"
+  
+  nginx_logs:
+    name: {{PROJECT_NAME}}_nginx_logs
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.volume=proxy_logs"
+  
+  monitoring_data:
+    name: {{PROJECT_NAME}}_monitoring_data
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.volume=monitoring"
+
+# Isolated network for security
+networks:
+  {{NETWORK_NAME}}:
+    name: {{PROJECT_NAME}}_network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: {{SUBNET_RANGE}}
+    labels:
+      - "com.docker.compose.project={{PROJECT_NAME}}"
+      - "com.docker.compose.network=main"
+
+#############################################
+# Template Variables to Replace:
+#
+# Project Configuration:
+# {{PROJECT_NAME}} - Project name (e.g., personal-dashboard)
+# {{SERVICE_NAME}} - Main service name (e.g., dashboard)
+# {{CONTAINER_NAME}} - Container name (e.g., personal-dashboard-app)
+# {{NETWORK_NAME}} - Network name (e.g., dashboard_network)
+#
+# Port Configuration:
+# {{DEFAULT_PORT}} - Default application port (e.g., 8080)
+# {{PORT_ENV_VAR}} - Port environment variable name (e.g., DASHBOARD_PORT)
+# {{INTERNAL_PORT_ENV_VAR}} - Internal port environment variable (e.g., DASHBOARD_INTERNAL_PORT)
+#
+# Database Configuration:
+# {{DEFAULT_DATABASE_URL}} - Default database URL
+# {{DEFAULT_DB_NAME}} - Default database name
+# {{DEFAULT_DB_USER}} - Default database user
+# {{DEFAULT_DB_PASSWORD}} - Default database password
+#
+# Resource Limits:
+# {{MEMORY_LIMIT}} - Memory limit (e.g., 512m)
+# {{CPU_LIMIT}} - CPU limit (e.g., 1.0)
+# {{MEMORY_RESERVATION}} - Memory reservation (e.g., 256m)
+# {{CPU_RESERVATION}} - CPU reservation (e.g., 0.5)
+# {{DB_MEMORY_LIMIT}} - Database memory limit (e.g., 256m)
+# {{DB_CPU_LIMIT}} - Database CPU limit (e.g., 0.5)
+# {{REDIS_MEMORY_LIMIT}} - Redis memory limit (e.g., 128m)
+# {{REDIS_CPU_LIMIT}} - Redis CPU limit (e.g., 0.25)
+#
+# Network Configuration:
+# {{SUBNET_RANGE}} - Subnet range (e.g., 172.20.0.0/16)
+# {{DOMAIN_NAME}} - Domain name for Traefik routing
+#
+#############################################

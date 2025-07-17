@@ -160,14 +160,15 @@ backup_command_registry() {
 create_milestone_commit() {
     local milestone_type="$1"
     local description="$2"
+    local scope="${3:-milestone}"
     
     log "🎯 Creating milestone commit: $milestone_type"
     
-    # Generate comprehensive commit message
+    # Generate optimized conventional commit message
     local commit_message
     case "$milestone_type" in
         "feature")
-            commit_message="🎯 MILESTONE: $description
+            commit_message="feat($scope): $description
 
 ✅ Feature implementation complete
 ✅ Validation suite passed
@@ -180,7 +181,7 @@ create_milestone_commit() {
 Co-Authored-By: Claude <noreply@anthropic.com>"
             ;;
         "release")
-            commit_message="🌟 RELEASE: $description
+            commit_message="chore(release): $description
 
 🚀 Major milestone achieved
 📊 Performance metrics updated
@@ -193,7 +194,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 Co-Authored-By: Claude <noreply@anthropic.com>"
             ;;
         "hotfix")
-            commit_message="🔧 HOTFIX: $description
+            commit_message="fix($scope): $description
 
 ⚡ Critical issue resolved
 ✅ Emergency validation passed
@@ -205,7 +206,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 Co-Authored-By: Claude <noreply@anthropic.com>"
             ;;
         *)
-            commit_message="🎯 MILESTONE: $description
+            commit_message="feat($scope): $description
 
 ✅ Milestone achieved
 📊 Metrics updated
@@ -229,8 +230,8 @@ create_release_tag() {
     
     log "🏷️  Creating release tag: $version"
     
-    # Generate comprehensive tag message
-    local tag_message="🌟 Context Engineering System $version
+    # Generate optimized conventional tag message
+    local tag_message="chore(release): Context Engineering System $version
 
 $description
 

@@ -140,32 +140,53 @@ analyze_recent_commits() {
     info "Analyzing $total_commits recent commits..."
     
     local valid_operational=0
-    local valid_standard=0
+    local valid_conventional=0
+    local valid_legacy=0
     local invalid_format=0
     local missing_attribution=0
     
     while IFS= read -r commit_hash; do
         if [ -n "$commit_hash" ]; then
-            validate_commit_format "$commit_hash"
-            case $? in
-                0) ((valid_operational++)) ;;
-                1) ((missing_attribution++)) ;;
-                2) ((invalid_format++)) ;;
-            esac
+            local commit_message=$(git log --format=%B -n 1 "$commit_hash")
+            
+            # Check operational commits first
+            if echo "$commit_message" | grep -qE "^(🚀 PRE-OP|⚡ PROGRESS|✅ COMPLETE):"; then
+                if echo "$commit_message" | grep -q "🤖 Generated with \[Claude Code\]"; then
+                    ((valid_operational++))
+                else
+                    ((missing_attribution++))
+                fi
+            # Check conventional commits (optimized format)
+            elif echo "$commit_message" | grep -qE "^(feat|fix|docs|style|refactor|test|chore|perf|ci)(\(.+\))?: .+"; then
+                ((valid_conventional++))
+            # Check legacy emoji format (backward compatibility)
+            elif echo "$commit_message" | grep -qE "^(🚀 feat|🔧 fix|📚 docs|✨ enhance|♻️ refactor|✅ test|🛠️ build|⚙️ ci|🏗️ chore):"; then
+                ((valid_legacy++))
+            else
+                ((invalid_format++))
+            fi
         fi
     done <<< "$recent_commits"
     
     # Calculate compliance percentages
-    local format_compliance=$(echo "scale=1; ($valid_operational + $valid_standard) * 100 / $total_commits" | bc -l)
+    local total_valid=$((valid_operational + valid_conventional + valid_legacy))
+    local format_compliance=$(echo "scale=1; $total_valid * 100 / $total_commits" | bc -l)
+    local conventional_usage=$(echo "scale=1; $valid_conventional * 100 / $total_commits" | bc -l)
+    local legacy_usage=$(echo "scale=1; $valid_legacy * 100 / $total_commits" | bc -l)
     local attribution_compliance=$(echo "scale=1; $valid_operational * 100 / ($valid_operational + $missing_attribution)" | bc -l 2>/dev/null || echo "0")
     
     # Report results
     echo "📊 Commit Format Analysis:"
-    echo "   Valid operational commits: $valid_operational"
-    echo "   Valid standard commits: $valid_standard"
-    echo "   Invalid format: $invalid_format"
-    echo "   Missing attribution: $missing_attribution"
-    echo "   Format compliance: ${format_compliance}%"
+    echo "   ✅ Valid operational commits: $valid_operational"
+    echo "   🎯 Valid conventional commits: $valid_conventional (OPTIMIZED FORMAT)"
+    echo "   🔄 Valid legacy commits: $valid_legacy (deprecated format)"
+    echo "   ❌ Invalid format: $invalid_format"
+    echo "   ⚠️  Missing attribution: $missing_attribution"
+    echo ""
+    echo "📈 Compliance Metrics:"
+    echo "   Overall format compliance: ${format_compliance}%"
+    echo "   Conventional format usage: ${conventional_usage}% (TARGET: ≥80%)"
+    echo "   Legacy format usage: ${legacy_usage}% (DEPRECATED)"
     echo "   Attribution compliance: ${attribution_compliance}%"
     
     # Compliance validation
@@ -173,6 +194,25 @@ analyze_recent_commits() {
         success "Commit format compliance: ${format_compliance}% (target: ≥80%)"
     else
         error "Commit format compliance below threshold: ${format_compliance}% (target: ≥80%)"
+    fi
+    
+    # Legacy format warnings
+    if (( $(echo "$legacy_usage > 0" | bc -l) )); then
+        warning "Legacy emoji format detected (${legacy_usage}% of commits)"
+        echo ""
+        echo -e "${YELLOW}📌 RECOMMENDATION: Migrate to optimized conventional commits format${NC}"
+        echo "   Legacy: 🚀 feat(scope): description"
+        echo "   Optimized: feat(scope): description"
+        echo "   Use: scripts/utilities/commit-helper.sh --optimize 'message'"
+    fi
+    
+    # Conventional format promotion
+    if (( $(echo "$conventional_usage >= 80" | bc -l) )); then
+        success "Excellent conventional format adoption: ${conventional_usage}%"
+    elif (( $(echo "$conventional_usage >= 50" | bc -l) )); then
+        warning "Good conventional format adoption: ${conventional_usage}% (target: ≥80%)"
+    else
+        error "Low conventional format adoption: ${conventional_usage}% (target: ≥80%)"
     fi
 }
 
@@ -320,24 +360,124 @@ main() {
     log "Commit compliance check completed successfully"
 }
 
+# Install commit-msg hook for real-time validation
+install_commit_hook() {
+    local hook_path=".git/hooks/commit-msg"
+    
+    info "Installing commit-msg hook for real-time validation..."
+    
+    cat > "$hook_path" << 'EOF'
+#!/bin/bash
+# Commit Message Validation Hook
+# Validates commit messages against Context Engineering standards
+
+commit_msg_file=$1
+commit_msg=$(cat "$commit_msg_file")
+
+# Skip if commit message is empty or contains only comments
+if [ -z "$(echo "$commit_msg" | grep -v '^#')" ]; then
+    exit 0
+fi
+
+# Check for operational commit patterns (Principle #84)
+if echo "$commit_msg" | grep -qE "^(🚀 PRE-OP|⚡ PROGRESS|✅ COMPLETE):"; then
+    # Operational commits require Claude Code attribution
+    if ! echo "$commit_msg" | grep -q "🤖 Generated with \[Claude Code\]"; then
+        echo "❌ Error: Operational commits require Claude Code attribution"
+        echo "Add the following to your commit message:"
+        echo ""
+        echo "🤖 Generated with [Claude Code](https://claude.ai/code)"
+        echo ""
+        echo "Co-Authored-By: Claude <noreply@anthropic.com>"
+        exit 1
+    fi
+    exit 0
+fi
+
+# Check for conventional commits format
+if echo "$commit_msg" | grep -qE "^(feat|fix|docs|style|refactor|test|chore|perf|ci)(\(.+\))?: .+"; then
+    # Check subject line length
+    subject_line=$(echo "$commit_msg" | head -n1)
+    if [ ${#subject_line} -gt 50 ]; then
+        echo "⚠️  Warning: Subject line is ${#subject_line} characters (recommended: ≤50)"
+        echo "Consider shortening: $subject_line"
+    fi
+    exit 0
+fi
+
+# Check for legacy emoji-prefixed commits (backward compatibility)
+if echo "$commit_msg" | grep -qE "^(🚀 feat|🔧 fix|📚 docs|✨ enhance|♻️ refactor|✅ test|🛠️ build|⚙️ ci|🏗️ chore):"; then
+    exit 0
+fi
+
+# Invalid format
+echo "❌ Error: Invalid commit message format"
+echo ""
+echo "Use one of these formats:"
+echo "  feat(scope): description          # New feature"
+echo "  fix(scope): description           # Bug fix"
+echo "  docs(scope): description          # Documentation"
+echo "  🚀 PRE-OP: description           # Operation start"
+echo "  ⚡ PROGRESS: description          # Operation progress"
+echo "  ✅ COMPLETE: description          # Operation complete"
+echo ""
+echo "Your message: $commit_msg"
+exit 1
+EOF
+
+    chmod +x "$hook_path"
+    success "Commit-msg hook installed at $hook_path"
+}
+
+# Uninstall commit-msg hook
+uninstall_commit_hook() {
+    local hook_path=".git/hooks/commit-msg"
+    
+    if [ -f "$hook_path" ]; then
+        rm "$hook_path"
+        success "Commit-msg hook removed"
+    else
+        warning "No commit-msg hook found to remove"
+    fi
+}
+
 # Script usage
 usage() {
-    echo "Usage: $0 [time_period]"
+    echo "Usage: $0 [OPTION] [time_period]"
+    echo ""
+    echo "Options:"
+    echo "  --install-hook        Install commit-msg hook for real-time validation"
+    echo "  --uninstall-hook      Remove commit-msg hook"
+    echo "  --help, -h            Show this help message"
     echo ""
     echo "Examples:"
     echo "  $0                    # Check last 24 hours (default)"
     echo "  $0 '3 days ago'       # Check last 3 days"
     echo "  $0 '1 week ago'       # Check last week"
     echo "  $0 '2024-01-01'       # Check since specific date"
+    echo "  $0 --install-hook     # Install real-time validation hook"
     echo ""
     echo "This script validates compliance with Principle #84: Mandatory Commit Operations"
 }
 
 # Handle command line arguments
-if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
-    usage
-    exit 0
-fi
-
-# Execute main function
-main "$1"
+case "$1" in
+    --help|-h)
+        usage
+        exit 0
+        ;;
+    --install-hook)
+        validate_git_repo
+        install_commit_hook
+        exit 0
+        ;;
+    --uninstall-hook)
+        validate_git_repo
+        uninstall_commit_hook
+        exit 0
+        ;;
+    *)
+        # Execute main function with time period
+        main "$1"
+        ;;
+esac

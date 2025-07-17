@@ -70,7 +70,7 @@ verification_algorithm:
     hidden_files: "include_in_scan"
     
   violation_classification:
-    handoff_files: "HANDOFF_*.md → relocate to /handoffs/"
+    handoff_files: "HANDOFF_*.md → relocate to /docs/operations/handoffs/"
     report_files: "*_REPORT.md, *_ANALYSIS.md → relocate to /docs/operations/reports/"
     output_files: "temporary results → relocate to /docs/operations/outputs/"
     script_files: "*.py, *.sh, *.js → relocate to /scripts/"
@@ -112,7 +112,7 @@ critical_integration:
   documentation_commands:
     - "/sync-docs": "Verify no temp files in root after documentation sync"
     - "/update-living-docs": "Ensure living docs properly placed in /docs/"
-    - "/handoff": "Force HANDOFF_*.md to /handoffs/ directory"
+    - "/handoff": "Force HANDOFF_*.md to /docs/operations/handoffs/ directory"
     
   analysis_commands:
     - "/verify-flow": "Output validation reports to /docs/operations/reports/"

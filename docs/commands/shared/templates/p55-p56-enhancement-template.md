@@ -90,28 +90,28 @@
 ### **🔧 ENHANCED EVIDENCE COLLECTION PROTOCOL**
 
 **MANDATORY Evidence Documentation Standards**:
-```yaml
-evidence_collection_requirements:
-  [EVIDENCE_CATEGORY_1]_evidence:
-    - "[REQUIREMENT_1] with [VALIDATION_1]"
-    - "[REQUIREMENT_2] with [VALIDATION_2]"
-    - "[REQUIREMENT_3] with [VALIDATION_3]"
-    
-  [EVIDENCE_CATEGORY_2]_evidence:
-    - "[REQUIREMENT_4] with [VALIDATION_4]"
-    - "[REQUIREMENT_5] with [VALIDATION_5]"
-    - "[REQUIREMENT_6] with [VALIDATION_6]"
-    
-  tool_execution_evidence:
-    - "Complete tool call log with timing and success validation"
-    - "Real vs simulation verification with 100% real execution proof"
-    - "Agent coordination results with communication flow documentation"
-    
-  mathematical_validation_evidence:
-    - "4-decimal precision calculations for all measurements"
-    - "Statistical analysis of [OPERATION] effectiveness"
-    - "Quantifiable results for all optimization metrics"
-```
+
+**Evidence Collection Requirements**:
+
+**[EVIDENCE_CATEGORY_1] Evidence**:
+- `[REQUIREMENT_1] with [VALIDATION_1]`
+- `[REQUIREMENT_2] with [VALIDATION_2]`
+- `[REQUIREMENT_3] with [VALIDATION_3]`
+
+**[EVIDENCE_CATEGORY_2] Evidence**:
+- `[REQUIREMENT_4] with [VALIDATION_4]`
+- `[REQUIREMENT_5] with [VALIDATION_5]`
+- `[REQUIREMENT_6] with [VALIDATION_6]`
+
+**Tool Execution Evidence**:
+- Complete tool call log with timing and success validation
+- Real vs simulation verification with 100% real execution proof
+- Agent coordination results with communication flow documentation
+
+**Mathematical Validation Evidence**:
+- 4-decimal precision calculations for all measurements
+- Statistical analysis of [OPERATION] effectiveness
+- Quantifiable results for all optimization metrics
 
 **CRITICAL Performance Validation Requirements**:
 - **[METRIC_1]**: Must achieve ≥[THRESHOLD_1] with mathematical proof

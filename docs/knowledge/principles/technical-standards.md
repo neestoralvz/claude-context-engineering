@@ -189,7 +189,7 @@
 **Definition**: Strict organization structure for scalable documentation growth.
 
 **Structure**:
-- `/docs/outputs/[category]/[timestamp]-[topic].md`
+- `/docs/operations/outputs/[category]/[timestamp]-[topic].md`
 - Hierarchical organization by purpose
 - No arbitrary file creation
 - Clear naming conventions
@@ -844,9 +844,9 @@ Specialist Deployment → Context Preservation → Handoff Protocols → Result 
 - **Zero Tolerance**: NO exceptions beyond explicitly permitted files with ABSOLUTE enforcement
 
 **REQUIRED Intelligent Location Detection**:
-- **Handoffs Directory**: `/handoffs/` - ALL handoff documents and coordination files
+- **Handoffs Directory**: `/docs/operations/handoffs/` - ALL handoff documents and coordination files
 - **Reports Directory**: `/docs/operations/reports/` - Analysis reports, compliance reports, completion reports
-- **Outputs Directory**: `/outputs/` - Temporary outputs, validation results, analysis data
+- **Outputs Directory**: `/docs/operations/outputs/` - Temporary outputs, validation results, analysis data
 - **Documentation Directory**: `/docs/` - Permanent documentation, principles, commands, knowledge
 - **Scripts Directory**: `/scripts/` - Automation scripts, validation tools, maintenance utilities
 - **Projects Directory**: `/projects/` - Independent project directories with complete autonomy
@@ -864,7 +864,7 @@ Specialist Deployment → Context Preservation → Handoff Protocols → Result 
 - **Structure Optimization**: CONTINUOUS improvement of organization patterns
 
 ### **CRITICAL File Type Classification**
-**HANDOFFS** → `/handoffs/`:
+**HANDOFFS** → `/docs/operations/handoffs/`:
 - HANDOFF_*.md files
 - Coordination documents
 - Task transition files
@@ -876,7 +876,7 @@ Specialist Deployment → Context Preservation → Handoff Protocols → Result 
 - MODULARIZATION_COMPLETION_REPORT.md
 - All compliance and analysis reports
 
-**OUTPUTS & RESULTS** → `/outputs/`:
+**OUTPUTS & RESULTS** → `/docs/operations/outputs/`:
 - Temporary analysis results
 - Validation outputs
 - Generated content requiring review
@@ -914,7 +914,7 @@ Specialist Deployment → Context Preservation → Handoff Protocols → Result 
 - **Reports**: COMMAND_RULES_*.md, LINK_VALIDATION_*.md (8 files) → Should be in `/docs/operations/reports/`
 - **Analysis**: MODULARIZATION_*.md, COMPLETION_*.md (6 files) → Should be in `/docs/operations/reports/analysis/`
 - **Scripts**: *.py files (3 files) → Should be in `/scripts/`
-- **Logs**: *.log files (1 file) → Should be in `/logs/` or `/outputs/`
+- **Logs**: *.log files (1 file) → Should be in `/logs/` or `/docs/operations/outputs/`
 
 ### **CRITICAL Implementation Requirements**
 1. **BLOCKING VALIDATION**: System MUST verify structure before file creation

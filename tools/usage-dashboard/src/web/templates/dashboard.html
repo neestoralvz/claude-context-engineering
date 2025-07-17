@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Usage Dashboard - Claude Code</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Personal Usage Dashboard</h1>
+            <div class="connection-status" id="connectionStatus">
+                <span class="status-indicator"></span>
+                <span class="status-text">Connecting...</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Metrics Overview -->
+            <section class="metrics-overview">
+                <div class="metric-card">
+                    <h3>Total Sessions</h3>
+                    <div class="metric-value" id="totalSessions">-</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Commands Today</h3>
+                    <div class="metric-value" id="recentCommands">-</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Active Sessions</h3>
+                    <div class="metric-value" id="activeSessions">-</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Avg Session</h3>
+                    <div class="metric-value" id="avgSessionDuration">-</div>
+                    <div class="metric-unit">minutes</div>
+                </div>
+            </section>
+
+            <!-- Current Session Info -->
+            <section class="current-session">
+                <h2>Current Session</h2>
+                <div class="session-info" id="currentSession">
+                    <p>Loading session information...</p>
+                </div>
+            </section>
+
+            <!-- Goals Progress -->
+            <section class="goals-section">
+                <h2>Goals & Progress</h2>
+                <div class="goals-container" id="goalsContainer">
+                    <p>Loading goals...</p>
+                </div>
+            </section>
+
+            <!-- Recent Commands -->
+            <section class="recent-commands">
+                <h2>Recent Commands</h2>
+                <div class="commands-list" id="commandsList">
+                    <p>Loading commands...</p>
+                </div>
+            </section>
+
+            <!-- Notifications -->
+            <section class="notifications">
+                <h2>Notifications</h2>
+                <div class="notifications-list" id="notificationsList">
+                    <p>No unread notifications</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+    <script src="/static/js/realtime.js"></script>
+</body>
+</html>

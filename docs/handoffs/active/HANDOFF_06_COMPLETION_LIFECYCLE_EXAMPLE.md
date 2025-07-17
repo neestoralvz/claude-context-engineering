@@ -148,7 +148,7 @@
 
 ---
 
-**Archive Location**: `docs/handoffs/archive/2025/07/HANDOFF_06_LINK_VALIDATION_COMPLETE.md`  
+**Archive Location**: `docs/operations/handoffs/archive/2025/07/HANDOFF_06_LINK_VALIDATION_COMPLETE.md`  
 **Knowledge Integration**: `docs/knowledge/patterns/monitoring-validation-patterns.md`  
 **Template Repository**: `docs/templates/operational-lifecycle-templates/`  
 **Learning Library**: `docs/knowledge/lessons/validation-monitoring-lessons.md`

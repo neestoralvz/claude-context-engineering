@@ -55,25 +55,46 @@
    - **Timing**: BEFORE substantial operation initiation
    - **Purpose**: Capture current state for recovery capability
    - **Format**: `🚀 PRE-OP: [operation] - [objective]`
+     
+     **Required Footer**:
+     ```
+     🤖 Generated with [Claude Code](https://claude.ai/code)
+     
+     Co-Authored-By: Claude <noreply@anthropic.com>
+     ```
    - **Evidence**: Git status showing clean commit before operation
 
 2. **Progress Commits**:
    - **Timing**: At logical checkpoints during operation (≥1 per 30 minutes)
    - **Purpose**: Document operational progress and intermediate achievements
    - **Format**: `⚡ PROGRESS: [milestone] - [achievement] ([percentage]% complete)`
+     
+     **Required Footer**:
+     ```
+     🤖 Generated with [Claude Code](https://claude.ai/code)
+     
+     Co-Authored-By: Claude <noreply@anthropic.com>
+     ```
    - **Evidence**: Git log showing progress documentation
 
 3. **Post-Operation Commit**:
    - **Timing**: IMMEDIATELY after operation completion
    - **Purpose**: Document final state, outcomes, and validation results
    - **Format**: `✅ COMPLETE: [operation] - [outcome_summary]`
+     
+     **Required Footer**:
+     ```
+     🤖 Generated with [Claude Code](https://claude.ai/code)
+     
+     Co-Authored-By: Claude <noreply@anthropic.com>
+     ```
    - **Evidence**: Final commit with comprehensive operation documentation
 
 **Integration with Execution Evidence**:
-- **P55 Tool Execution**: Git commits serve as MANDATORY tool execution evidence for operational changes
-- **P56 Transparency**: Commit history provides visible operational progress and completion verification
-- **Evidence Documentation**: Commit messages include metrics, validation results, and operational impact
-- **Recovery Capability**: Pre-operation commits ensure 100% rollback capability for all substantial operations
+- **P55 Tool Execution**: Git commits serve as MANDATORY tool execution evidence for operational changes (with optimized format compliance)
+- **P56 Transparency**: Commit history provides visible operational progress and completion verification through standardized operational commit formats
+- **Evidence Documentation**: Commit messages include metrics, validation results, and operational impact with required Claude Code attribution
+- **Recovery Capability**: Pre-operation commits ensure 100% rollback capability for all substantial operations using consistent format standards
 
 **Execution Flow Enhancement**:
 

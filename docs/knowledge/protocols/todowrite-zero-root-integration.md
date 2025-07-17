@@ -103,10 +103,10 @@ analysis_tasks:
     - "Create analysis of [subject]"
     
   verification_requirements:
-    results_directory: "/outputs/"
+    results_directory: "/docs/operations/outputs/"
     reports_directory: "/docs/operations/reports/"
     temp_cleanup: "mandatory"
-    compliance_announcement: "📋 ANALYSIS TASK VERIFIED: Results properly organized in /outputs/ and /docs/operations/reports/"
+    compliance_announcement: "📋 ANALYSIS TASK VERIFIED: Results properly organized in /docs/operations/outputs/ and /docs/operations/reports/"
 ```
 
 ### **Handoff and Coordination Tasks**
@@ -119,10 +119,10 @@ handoff_tasks:
     - "Document context transfer"
     
   verification_requirements:
-    handoff_directory: "/handoffs/"
+    handoff_directory: "/docs/operations/handoffs/"
     auto_relocation: "mandatory"
     naming_validation: "HANDOFF_*.md pattern"
-    compliance_announcement: "📋 HANDOFF TASK VERIFIED: Documents properly placed in /handoffs/"
+    compliance_announcement: "📋 HANDOFF TASK VERIFIED: Documents properly placed in /docs/operations/handoffs/"
 ```
 
 ### **Script and Automation Tasks**
@@ -176,10 +176,10 @@ context_specific_announcements:
     template: "📋 DOCUMENTATION VERIFIED: [task_description] - Files organized in /docs/"
     
   analysis_context:
-    template: "📋 ANALYSIS VERIFIED: [task_description] - Results in /outputs/, reports in /docs/operations/reports/"
+    template: "📋 ANALYSIS VERIFIED: [task_description] - Results in /docs/operations/outputs/, reports in /docs/operations/reports/"
     
   handoff_context:
-    template: "📋 HANDOFF VERIFIED: [task_description] - Documents in /handoffs/"
+    template: "📋 HANDOFF VERIFIED: [task_description] - Documents in /docs/operations/handoffs/"
     
   automation_context:
     template: "📋 AUTOMATION VERIFIED: [task_description] - Scripts in /scripts/"

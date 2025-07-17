@@ -255,7 +255,7 @@
 - **[Command Structure Template](../docs/commands/shared/templates/command-structure-template.md)** - Standardized command patterns
 - **[Script Inventory](./script-inventory.json)** - Complete script catalog with metadata
 - **[Script-Command Mapping](./script-command-mapping.json)** - Detailed mapping analysis
-- **[HANDOFF_P55_SCRIPT_EXECUTION](../handoffs/HANDOFF_P55_SCRIPT_EXECUTION.md)** - Resolution handoff documentation
+- **[HANDOFF_P55_SCRIPT_EXECUTION](../docs/operations/handoffs/HANDOFF_P55_SCRIPT_EXECUTION.md)** - Resolution handoff documentation
 
 ---
 

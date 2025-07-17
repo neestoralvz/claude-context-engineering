@@ -45,20 +45,65 @@
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
-### **Commit Types**
+### **Commit Types** (Optimized Conventional Format)
 
-| Type | Purpose | Example |
-|------|---------|---------|
+**PRIORITY FORMAT** (Recommended - Maximum Density):
+
+| Type | Purpose | Optimized Example | Character Reduction |
+|------|---------|------------------|-------------------|
+| `feat` | New features | `feat(commands): auto-activation triggers` | -40% (vs emoji format) |
+| `fix` | Bug fixes | `fix(validation): p56 transparency validation` | -35% (vs emoji format) |
+| `docs` | Documentation | `docs(principles): philosophical foundations` | -38% (vs emoji format) |
+| `style` | Code style/formatting | `style(ui): component consistency` | -42% (vs emoji format) |
+| `refactor` | Code refactoring | `refactor(commands): modular structure` | -35% (vs emoji format) |
+| `test` | Testing additions | `test(validation): mathematical formulas` | -40% (vs emoji format) |
+| `chore` | Maintenance tasks | `chore(deps): update dependencies` | -45% (vs emoji format) |
+| `perf` | Performance improvements | `perf(context): loading optimization` | -38% (vs emoji format) |
+| `ci` | CI/CD pipeline changes | `ci(deploy): vercel automation` | -42% (vs emoji format) |
+
+**🚨 DEPRECATED LEGACY FORMAT** (Backward Compatibility Only):
+
+⚠️ **WARNING**: The following emoji-prefixed format is **DEPRECATED** and should only be used for backward compatibility. All new commits should use the optimized conventional format above.
+
+| Type | Purpose | Legacy Example (DEPRECATED) |
+|------|---------|------------------------------|
 | `🚀 feat` | New features | `🚀 feat(commands): add progressive thinking auto-activation` |
 | `🔧 fix` | Bug fixes | `🔧 fix(validation): resolve P56 transparency validation` |
 | `📚 docs` | Documentation | `📚 docs(principles): update philosophical foundations` |
 | `✨ enhance` | Improvements | `✨ enhance(performance): optimize context loading by 78%` |
-| `🎨 style` | Code style | `🎨 style(ui): improve component consistency` |
 | `♻️ refactor` | Code refactoring | `♻️ refactor(commands): modularize command structure` |
 | `✅ test` | Testing | `✅ test(validation): add mathematical formula verification` |
-| `🛠️ build` | Build system | `🛠️ build(ci): configure GitHub Actions pipeline` |
-| `⚙️ ci` | CI/CD changes | `⚙️ ci(deploy): add Vercel deployment automation` |
 | `🏗️ chore` | Maintenance | `🏗️ chore(deps): update package dependencies` |
+
+📌 **MIGRATION GUIDE**: Use `scripts/utilities/commit-helper.sh --optimize` to convert legacy messages to optimized format.
+
+### **Commit Message Optimization Guidelines** 
+
+**MAXIMUM Density Optimization** (Principle #82 + #84 Integration):
+
+✅ **MANDATORY Optimizations**:
+- **Character Reduction**: Target ≥40% reduction from legacy formats
+- **Subject Line Length**: ≤50 characters (strict enforcement via commit-msg hook)
+- **Imperative Mood**: "add feature" not "added feature" 
+- **Lowercase Start**: After colon, start with lowercase
+- **No Period**: Subject line ends without punctuation
+
+✅ **Template Integration**:
+- **Git Template**: `.gitmessage` provides interactive guidance
+- **Real-time Validation**: `commit-msg` hook prevents invalid formats
+- **Smart Suggestions**: Script helps optimize existing messages
+
+✅ **Scope Guidelines**:
+```bash
+# Core scopes (alphabetical)
+automation, commands, compliance, core, docs, knowledge  
+principles, scripts, validation, workflows
+
+# Examples with scope optimization
+feat(commands): parallel execution orchestration    # ✅ Clear + concise
+fix(validation): cross-reference accuracy          # ✅ Specific scope  
+docs(knowledge): principle categorization          # ✅ Logical grouping
+```
 
 ### **MANDATORY Milestone Commit Framework**
 

@@ -525,7 +525,8 @@ docs/
 ├── automation/         # LLM automation patterns
 ├── technical/          # Implementation details
 ├── patterns/           # Design patterns and best practices
-└── outputs/           # Analysis and reports
+└── operations/
+    └── outputs/       # Analysis and reports
 ```
 
 ### Learning Resources

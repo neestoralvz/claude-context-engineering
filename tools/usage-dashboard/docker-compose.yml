@@ -1,0 +1,102 @@
+# Personal Usage Dashboard - Docker Compose Configuration
+# Optimized for development and production deployment
+version: '3.8'
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    container_name: personal-dashboard
+    hostname: dashboard
+    ports:
+      - "${DASHBOARD_PORT:-8080}:${DASHBOARD_INTERNAL_PORT:-8080}"
+    environment:
+      - DASHBOARD_HOST=0.0.0.0
+      - DASHBOARD_PORT=${DASHBOARD_INTERNAL_PORT:-8080}
+      - PYTHONUNBUFFERED=1
+      - FLASK_ENV=${FLASK_ENV:-production}
+    volumes:
+      # Persistent data storage
+      - dashboard_data:/app/data
+      # Development mode: mount source code for hot reload
+      - type: bind
+        source: .
+        target: /app
+        consistency: cached
+        # Only in development
+        bind:
+          propagation: rprivate
+    networks:
+      - dashboard_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:${DASHBOARD_INTERNAL_PORT:-8080}/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      - redis
+    labels:
+      - "com.docker.compose.project=personal-dashboard"
+      - "com.docker.compose.service=main"
+
+  redis:
+    image: redis:7-alpine
+    container_name: dashboard-redis
+    hostname: redis
+    ports:
+      - "${REDIS_PORT:-6380}:6379"
+    volumes:
+      - redis_data:/data
+      - ./config/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    networks:
+      - dashboard_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    command: redis-server /usr/local/etc/redis/redis.conf
+    labels:
+      - "com.docker.compose.project=personal-dashboard"
+      - "com.docker.compose.service=cache"
+
+  # Development tools (only in dev environment)
+  dev-tools:
+    image: nicolaka/netshoot
+    container_name: dashboard-devtools
+    networks:
+      - dashboard_network
+    command: sleep infinity
+    profiles:
+      - dev
+    labels:
+      - "com.docker.compose.project=personal-dashboard"
+      - "com.docker.compose.service=devtools"
+
+# Named volumes for data persistence
+volumes:
+  dashboard_data:
+    name: personal_dashboard_data
+    labels:
+      - "com.docker.compose.project=personal-dashboard"
+      - "com.docker.compose.volume=data"
+  
+  redis_data:
+    name: personal_dashboard_redis
+    labels:
+      - "com.docker.compose.project=personal-dashboard"
+      - "com.docker.compose.volume=cache"
+
+# Isolated network for security
+networks:
+  dashboard_network:
+    name: personal_dashboard_network
+    driver: bridge
+    labels:
+      - "com.docker.compose.project=personal-dashboard"
+      - "com.docker.compose.network=main"

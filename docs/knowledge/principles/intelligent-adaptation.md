@@ -250,7 +250,7 @@
 ### 65. Intelligent Handoff and Context Control
 **Definition**: Sistema inteligente de gestión de handoffs que detecta hitos naturales, controla el tamaño del contexto, y coordina cambios de modelo para mantener capacidades óptimas del LLM a través de múltiples conversaciones.
 
-**See Also**: [Conversation Lifecycle Management](./operational-excellence.md#33-conversation-lifecycle-management) | [Context Economy](./cognitive-optimization.md#41-context-economy) | [Graceful Degradation Cascades](#61-graceful-degradation-cascades) | [Documentation as Living Context](./operational-excellence.md#83-documentation-as-living-context) | [Strategic Git Versioning](./operational-excellence.md#16-strategic-git-versioning)
+**See Also**: [Conversation Lifecycle Management](./operational-excellence.md#33-conversation-lifecycle-management) | [Context Economy](./cognitive-optimization.md#41-context-economy) | [Graceful Degradation Cascades](#61-graceful-degradation-cascades) | [Documentation as Living Context](./operational-excellence.md#96-documentation-as-living-context) | [Strategic Git Versioning](./operational-excellence.md#16-strategic-git-versioning)
 
 **Core Handoff Intelligence Principles**:
 1. **Milestone Detection**: AUTOMATED detection de natural conversation boundaries con ≥90% precision
@@ -383,10 +383,10 @@ intelligent_handoff_triggers:
 
 **Differential Value**: **Intelligent automated handoff system** que maintains optimal LLM capabilities mientras preserving essential context y enabling seamless multi-conversation workflows.
 
-### 81. Strategic Online Research
+### 100. Strategic Online Research
 **CRITICAL Definition**: MANDATORY intelligent online research system for success cases, proven solutions, and best practices, with systematic documentation and integration into problem-solving workflows, executed ONLY after comprehensive local context analysis.
 
-**See Also**: [Reinforced Local-First Exploration](./operational-excellence.md#79-reinforced-local-first-exploration) | [Knowledge Discovery Hierarchy](./operational-excellence.md#7-knowledge-discovery-hierarchy) | [Research Knowledge Crystallization](./operational-excellence.md#82-research-knowledge-crystallization) | [Automated Exploration Orchestration](#54-automated-exploration-orchestration)
+**See Also**: [Reinforced Local-First Exploration](./operational-excellence.md#79-reinforced-local-first-exploration) | [Knowledge Discovery Hierarchy](./operational-excellence.md#7-knowledge-discovery-hierarchy) | [Research Knowledge Crystallization](./operational-excellence.md#95-research-knowledge-crystallization) | [Automated Exploration Orchestration](#54-automated-exploration-orchestration)
 
 **MANDATORY Strategic Research Protocol**: COMPLETE local context analysis FIRST → IDENTIFY specific knowledge gaps → EXECUTE targeted online research → VALIDATE solutions against local context → DOCUMENT findings systematically → INTEGRATE into problem-solving framework
 

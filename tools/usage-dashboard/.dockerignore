@@ -1,0 +1,67 @@
+# Personal Usage Dashboard - Docker Build Context Optimization
+
+# Development files
+*.md
+!README.md
+.git/
+.gitignore
+.env*
+.vscode/
+.idea/
+
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data and logs (will be mounted as volumes)
+data/
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Test files
+tests/
+test_*.py
+*_test.py
+
+# Documentation and examples
+docs/
+examples/
+*.txt
+!requirements.txt
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp

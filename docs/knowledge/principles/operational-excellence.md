@@ -483,7 +483,7 @@
 **Living Context Framework**:
 
 **MANDATORY Storage Protocol**:
-- **Analysis Documentation**: REQUIRED storage of all analysis in outputs/ with systematic file naming and organization
+- **Analysis Documentation**: REQUIRED storage of all analysis in docs/operations/outputs/ with systematic file naming and organization
 - **Action Linking**: CRITICAL linking of documentation to specific actions taken with precise timestamps and traceability
 - **Progress Tracking**: CONTINUOUS updating of documents as actions progress with delta tracking and evolution
 - **Context Threading**: ESSENTIAL maintenance of contextual connections across work sessions with continuity
@@ -1119,7 +1119,7 @@ git blame [affected_file] # Identify recent changes
 
 **REQUIRED Archive Organization Structure**:
 ```
-docs/handoffs/archive/YYYY/MM/
+docs/operations/handoffs/archive/YYYY/MM/
 ├── plans/
 ├── handoffs/
 ├── operations/reports/

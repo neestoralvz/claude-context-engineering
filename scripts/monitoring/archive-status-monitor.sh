@@ -57,8 +57,8 @@ analyze_archive_system() {
     local archive_dirs=(
         "scripts/backups"
         "scripts/results/archive"
-        "handoffs/archive"
-        "outputs/archive"
+        "docs/operations/handoffs/archive"
+        "docs/operations/outputs/archive"
         "docs/commands (backup cleanup completed)"
     )
     
@@ -85,8 +85,8 @@ analyze_storage_usage() {
     local categories=(
         "scripts/backups:Script Backups"
         "scripts/results/archive:Results Archive"
-        "handoffs/archive:Handoffs Archive"
-        "outputs/archive:Outputs Archive"
+        "docs/operations/handoffs/archive:Handoffs Archive"
+        "docs/operations/outputs/archive:Outputs Archive"
     )
     
     echo "Category Breakdown:"
@@ -116,8 +116,8 @@ analyze_recent_activity() {
     local archive_paths=(
         "scripts/backups"
         "scripts/results/archive"
-        "handoffs/archive"
-        "outputs/archive"
+        "docs/operations/handoffs/archive"
+        "docs/operations/outputs/archive"
     )
     
     for path in "${archive_paths[@]}"; do
@@ -172,8 +172,8 @@ perform_health_check() {
     # Check for proper directory structure
     local required_dirs=(
         "scripts/results/archive"
-        "handoffs/archive"
-        "outputs/archive"
+        "docs/operations/handoffs/archive"
+        "docs/operations/outputs/archive"
     )
     
     for dir in "${required_dirs[@]}"; do

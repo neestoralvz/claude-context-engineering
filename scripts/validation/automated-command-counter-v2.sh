@@ -68,20 +68,28 @@ show_section_header() {
     echo ""
 }
 
-# Command validation function
+# Command validation function - aligned with unidirectional sync exclusions
 is_valid_command() {
     local file="$1"
+    local basename_file=$(basename "$file")
     
     # Skip if not markdown file
     [[ "$file" != *.md ]] && return 1
     
     # Skip README files
-    [[ "$(basename "$file")" == "README.md" ]] && return 1
+    [[ "$basename_file" == "README.md" ]] && return 1
     
-    # Skip backup directories
-    [[ "$file" =~ \.backup\. ]] && return 1
+    # Skip analysis files (aligned with unidirectional exclusions)
+    [[ "$basename_file" == "command-structure-analysis-matrix.md" ]] && return 1
+    [[ "$basename_file" =~ -analysis.*\.md$ ]] && return 1
+    [[ "$basename_file" =~ -matrix\.md$ ]] && return 1
     
-    # Skip archived directories
+    # Skip review directories
+    [[ "$file" =~ /review/ ]] && return 1
+    
+    # Skip backup and archive files
+    [[ "$file" =~ \.backup ]] && return 1
+    [[ "$file" =~ \.archive ]] && return 1
     [[ "$file" =~ /\.archived/ ]] && return 1
     
     # Skip examples directory (non-executable commands)
