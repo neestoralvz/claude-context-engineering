@@ -1,14 +1,16 @@
-# Atomic Command: `/context-over-commands`
+# Behavioral Command: `/context-over-commands`
 
-## **Principle #3: Context > Commands > Prompts**
-**"Rich context enables autonomous excellence."**
+## **🚨 BLOCKING Context Engineering: Context > Commands > Prompts**
+**🚨 MANDATORY: Sistema WILL enable autonomous excellence through rich context with AUTOMATIC blocking of prompt-only approaches and REQUIRED contextual verification**
+
+**Principle #3**: "Rich context enables autonomous excellence."
 
 ---
 
 ## 🎯 **COMMAND DEFINITION**
 
-### **Purpose**
-Load comprehensive project context to enable autonomous AI decision-making within contextual boundaries instead of relying on precise commands.
+### **🚨 BLOCKING Purpose**
+🚨 MANDATORY: Sistema WILL load comprehensive project context to enable autonomous AI decision-making with AUTOMATIC blocking of prompt-only approaches and REQUIRED contextual verification. BLOCKING of context-deficient requests and MANDATORY enforcement of context-driven decisions.
 
 ### **Complexity**: 0.6/1.0
 ### **Context Required**: Project structure and domain knowledge
@@ -16,9 +18,9 @@ Load comprehensive project context to enable autonomous AI decision-making withi
 
 ---
 
-## MANDATORY Context Priority Decision Framework
+## 🚨 BLOCKING Context Priority Decision Framework
 
-**CRITICAL**: Context-over-commands optimization requires systematic decision-making with quantifiable metrics and auto-activation triggers.
+**🚨 CRITICAL**: Sistema WILL execute context-over-commands optimization with AUTOMATIC blocking of non-contextual approaches and MANDATORY systematic decision-making with quantifiable metrics and real-time auto-activation triggers.
 
 ```mermaid
 graph TD
@@ -53,11 +55,11 @@ graph TD
     Q --> C
 ```
 
-**Auto-Activation Triggers** (MANDATORY):
-- Context quality <70% → CRITICAL context enhancement
-- Pattern recognition <90% → MANDATORY context optimization
-- Autonomous capability <85% → REQUIRED context loading
-- Context utilization <80% → CRITICAL intervention
+**🚨 BLOCKING Auto-Activation Triggers** (MANDATORY):
+- 🚨 AUTOMATIC: Context quality <70% → BLOCKING of execution until context enhancement
+- 🚨 MANDATORY: Pattern recognition <90% → Sistema WILL enforce context optimization
+- 🚨 CRITICAL: Autonomous capability <85% → BLOCKING of prompt-only approaches
+- 🚨 REQUIRED: Context utilization <80% → IMMEDIATE intervention with real-time correction
 
 **P56 Transparency Announcements** (REQUIRED):
 - Context completeness percentage achieved
@@ -81,36 +83,36 @@ graph TD
 - **Tool Evidence**: Observable outcomes with specific metrics
 - **Completion Verification**: Quantifiable success criteria
 
-## ⚡ **ACTIVATION PROTOCOL**
+## 🚨 BLOCKING ACTIVATION PROTOCOL
 
-### **Input Format**
+### **🚨 MANDATORY Input Format**
 ```markdown
 /context-over-commands [domain] [depth_level?] [focus_areas?]
 ```
 
-### **What This Command Does**
-1. **Load Complete Context**: Project structure, patterns, constraints, conventions
-2. **Enable Understanding**: AI comprehends domain-specific knowledge and patterns
-3. **Autonomous Decision-Making**: AI makes intelligent choices within context boundaries
-4. **Pattern Recognition**: AI identifies and applies existing project patterns
+### **🚨 BLOCKING Command Operations**
+1. **🚨 MANDATORY Load Complete Context**: Sistema WILL load project structure, patterns, constraints, conventions with BLOCKING of incomplete loading
+2. **🚨 CRITICAL Enable Understanding**: Sistema WILL comprehend domain-specific knowledge with AUTOMATIC pattern verification
+3. **🚨 BLOCKING Autonomous Decision-Making**: Sistema WILL make intelligent choices within context boundaries with BLOCKING of prompt-only fallbacks
+4. **🚨 REQUIRED Pattern Recognition**: Sistema WILL identify and apply existing project patterns with real-time validation
 
-### **Implementation Steps**
-1. Load CLAUDE.md and project documentation
-2. Analyze codebase patterns and conventions
-3. Understand domain-specific constraints and requirements
-4. Load relevant libraries, frameworks, and dependencies
-5. Identify existing solutions and approaches
-6. Enable autonomous operation within contextual boundaries
+### **🚨 BLOCKING Implementation Steps**
+1. **🚨 MANDATORY Load CLAUDE.md**: Sistema WILL load project documentation with BLOCKING of execution without complete context
+2. **🚨 CRITICAL Analyze Patterns**: Sistema WILL analyze codebase patterns with AUTOMATIC convention verification
+3. **🚨 REQUIRED Domain Understanding**: Sistema WILL understand constraints with BLOCKING of domain-blind execution
+4. **🚨 AUTOMATIC Dependency Loading**: Sistema WILL load relevant libraries with real-time verification
+5. **🚨 BLOCKING Solution Identification**: Sistema WILL identify existing approaches with BLOCKING of reinvention
+6. **🚨 MANDATORY Autonomous Operation**: Sistema WILL enable contextual boundaries with BLOCKING of context-free decisions
 
 ---
 
 ## 🔍 **VERIFICATION CRITERIA**
 
-### **Success Metrics**
-- **Context Completeness**: ≥95% of relevant project context loaded
-- **Pattern Recognition**: ≥90% of existing patterns identified and understood
-- **Autonomous Capability**: ≥85% of decisions made without additional guidance
-- **Context Utilization**: AI actively uses loaded context in decision-making
+### **🚨 BLOCKING Success Metrics**
+- **🚨 MANDATORY Context Completeness**: ≥95% of relevant project context loaded with BLOCKING below threshold
+- **🚨 CRITICAL Pattern Recognition**: ≥90% of existing patterns identified with AUTOMATIC verification
+- **🚨 BLOCKING Autonomous Capability**: ≥85% of decisions made without guidance with BLOCKING of prompt-dependency
+- **🚨 REQUIRED Context Utilization**: Sistema WILL actively use loaded context with real-time monitoring
 
 ### **Mathematical Validation**
 ```javascript
@@ -168,11 +170,11 @@ context_effectiveness = (
 
 ## 🛡️ **FALLBACK PROTOCOL**
 
-### **If Command Fails**
-1. **Incomplete Context Loading**: Prioritize essential context, load additional on-demand
-2. **Pattern Recognition Failure**: Manual pattern analysis with documentation
-3. **Insufficient Autonomy**: Provide minimal guidance while preserving context benefits
-4. **Context Overload**: Implement lazy loading and context prioritization
+### **🚨 BLOCKING Failure Protocol**
+1. **🚨 CRITICAL Incomplete Context Loading**: Sistema WILL prioritize essential context with BLOCKING of execution until threshold
+2. **🚨 MANDATORY Pattern Recognition Failure**: Sistema WILL execute manual pattern analysis with BLOCKING of pattern-blind execution
+3. **🚨 BLOCKING Insufficient Autonomy**: Sistema WILL provide minimal guidance with BLOCKING of prompt-dependency regression
+4. **🚨 AUTOMATIC Context Overload**: Sistema WILL implement lazy loading with real-time prioritization monitoring
 
 ### **Recovery Strategy**
 - Start with minimal essential context, expand incrementally
@@ -184,11 +186,11 @@ context_effectiveness = (
 
 ## 📊 **INTEGRATION WITH DECISION ENGINE**
 
-### **Context-Based Routing**
-- **Rich Context Available**: Direct autonomous execution
-- **Partial Context**: Load additional context before proceeding
-- **No Context**: Mandatory `/knowledge-hierarchy` before execution
-- **Context Conflicts**: Analyze and resolve conflicts before proceeding
+### **🚨 BLOCKING Context-Based Routing**
+- **🚨 CRITICAL Rich Context Available**: Sistema WILL execute direct autonomous operation with real-time verification
+- **🚨 MANDATORY Partial Context**: Sistema WILL load additional context with BLOCKING until sufficient
+- **🚨 BLOCKING No Context**: Sistema WILL execute mandatory `/knowledge-hierarchy` with BLOCKING of context-free execution
+- **🚨 REQUIRED Context Conflicts**: Sistema WILL analyze and resolve conflicts with AUTOMATIC blocking until resolution
 
 ### **Pattern-Based Optimization**
 - Successful context patterns → Faster context loading templates

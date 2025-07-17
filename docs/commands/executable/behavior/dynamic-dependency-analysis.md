@@ -1,32 +1,94 @@
-# Comando: /dynamic-dependency-analysis
+# Atomic Command: /dynamic-dependency-analysis
 
-**Categoría**: Sistema  
-**Propósito**: REQUIRED análisis y gestión continua de dependencias para optimización de ejecución paralela y secuencial
+## **Principle #80: Parallel Task Intelligence**
+**"Default to simultaneous Task tool deployment for comprehensive analysis + research + exploration, with ≥3 Task tools for complex objectives and automatic dependency detection"**
 
-## ⚡ Auto-Activation Triggers
+---
 
-### **MANDATORY Activation Conditions**
-**Complexity Threshold**: ≥0.9000 (90% complexity floor)
-**Confidence Threshold**: <0.7000 (70% confidence ceiling)
-**Dependency Complexity Threshold**: ≥3.0000 concurrent tasks requiring analysis
-**Parallelization Efficiency Threshold**: <0.8500 (85% efficiency floor)
-**Time Threshold**: 120 seconds for sustained dependency analysis conditions
+## 🎯 **COMMAND DEFINITION**
 
-### **CRITICAL Trigger Validation**
-- **Mathematical Assessment**: Quantifiable dependency mapping evaluation with statistical precision
-- **Threshold Enforcement**: REQUIRED activation when multi-task dependency conditions met
-- **P56 Announcement**: Visual confirmation of auto-activation with dependency analysis indicators
-- **Evidence Collection**: Measurable trigger condition documentation with parallelization metrics
+### **Purpose**
+EXECUTE dynamic dependency analysis achieving ≥85% parallelization efficiency to ensure optimal execution coordination with observable dependency mapping and resource optimization.
 
-## Cuándo usar este comando
-- Para mapear dependencias entre múltiples comandos o tareas
-- Al planificar ejecución paralela de workflows complejos
-- Cuando necesitas optimizar el orden de ejecución de tareas
-- Para identificar oportunidades de paralelización en tiempo real
-- Al gestionar recursos y conflictos entre comandos concurrentes
-- Durante la re-evaluación continua de estrategias de ejecución
+**Observable Outcomes**:
+- **Parallelization Efficiency**: ≥85% parallel execution vs sequential baseline
+- **Dependency Mapping Accuracy**: ≥95% correct dependency identification
+- **Resource Utilization**: ≥80% effective resource allocation
+- **Execution Time Reduction**: ≥40% improvement vs naive sequential execution
 
-## Qué hace este comando
+**Quantifiable Validation**: Analysis process MUST achieve ≥85% parallelization efficiency, dependency mapping MUST demonstrate ≥95% accuracy, and resource optimization MUST maintain ≥80% utilization with observable metrics.
+
+### **Complexity**: 0.9/1.0 (Validated via mathematical dependency analysis formulas)
+### **Context Required**: Multi-command workflows with ≥95% dependency context completeness
+### **Execution Time**: 120-300 seconds (dependency analysis: 60s, optimization: 90s, validation: 90s)
+
+**Success Criteria**:
+- **Dependency Detection**: ≥90% independent command identification
+- **Conflict Resolution**: ≥98% resource conflict prevention
+- **Optimization Performance**: ≥85% adaptive adjustment success rate
+
+---
+
+## 🏗️ **MODULE INHERITANCE**
+
+**Inherits from**: [Parallel Task Intelligence](../../../knowledge/protocols/parallel-task-intelligence-protocol.md)
+
+**Inherited Functions**:
+- Multi-task orchestration with dependency detection
+- Resource optimization and conflict prevention
+- Parallel execution coordination protocols
+
+**Specialized Functions Added**:
+- Dynamic dependency mapping with real-time updates
+- Adaptive parallelization optimization
+- Continuous workflow re-evaluation systems
+
+---
+
+## ⚡ **ACTIVATION PROTOCOL**
+
+### **Input Format**
+```bash
+/dynamic-dependency-analysis [workflow_context] [parallelization_target?] [resource_constraints?]
+```
+
+### **Auto-Activation Triggers**
+This command EXECUTES automatically when multi-command workflows detected with ≥0.9 complexity and ≥3.0 concurrent task requirements.
+
+**Verification Protocol**:
+- **Complexity Assessment**: ≥0.9000 complexity threshold validation
+- **Dependency Detection**: ≥3.0000 concurrent task requirement verification
+- **Resource Analysis**: ≥0.8500 parallelization efficiency floor enforcement
+
+### **Primary Triggers**
+**WORKFLOW_COMPLEXITY**: Multi-command workflow optimization
+- **Condition**: Task complexity ≥0.9 with ≥3 concurrent commands
+- **Threshold**: ≥0.9000 complexity + ≥3.0000 concurrent tasks
+- **Action**: AUTO-EXECUTE dependency analysis with parallelization optimization
+- **Verification**: Dependency mapping completion with ≥85% efficiency validation
+
+---
+
+## 📊 **MATHEMATICAL VALIDATION**
+
+### **Dependency Analysis Formula**
+```javascript
+function calculateDependencyOptimization(tasks, dependencies, resources) {
+  const parallelizationRatio = (tasks.length - dependencies.length) / tasks.length
+  const resourceEfficiency = resources.utilized / resources.available
+  const optimizationScore = (parallelizationRatio * 0.6) + (resourceEfficiency * 0.4)
+  
+  return {
+    parallelization_efficiency: parallelizationRatio,
+    resource_utilization: resourceEfficiency,
+    optimization_success: optimizationScore >= 0.85 // 85% threshold
+  }
+}
+```
+
+---
+
+## 🔧 **COMMAND FUNCTIONALITY**
 
 ### MANDATORY Proceso Integral de Gestión de Dependencias
 
@@ -148,7 +210,75 @@ Habilita ejecución paralela libre de conflictos:
 
 ---
 
-## 🛡️ **P55/P56 COMPLIANCE INTEGRATION**
+## 🔗 **USAGE CRITERIA**
+
+### **Automatic Activation**
+- Multi-command workflows with ≥0.9 complexity requiring dependency analysis
+- Concurrent task scenarios with ≥3 parallel execution opportunities
+- Resource optimization needs with <0.85 current parallelization efficiency
+
+### **Manual Activation**
+- Strategic workflow planning requiring dependency mapping
+- Performance optimization analysis for complex execution chains
+- Resource allocation optimization for concurrent command execution
+
+---
+
+## 🎯 **SUCCESS METRICS**
+
+### **Performance Optimization**
+- **Parallelization Efficiency**: ≥85% (target: ≥90%)
+- **Execution Time Reduction**: ≥40% vs sequential (target: ≥50%)
+- **Resource Utilization**: ≥80% effective allocation (target: ≥85%)
+
+### **Dependency Analysis**
+- **Mapping Accuracy**: ≥95% correct identification (target: ≥98%)
+- **Conflict Resolution**: ≥98% prevention success (target: ≥99%)
+- **Optimization Adaptability**: ≥85% successful adjustments (target: ≥90%)
+
+---
+
+## 🛡️ **P55/P56 COMPLIANCE FRAMEWORK**
+
+**Inherits from**: [Universal P55/P56 Compliance](../../shared/compliance/p55-p56-universal-compliance.md)
+
+**Compliance Functions**:
+- Tool call execution bridging with zero simulation tolerance
+- Visual announcement system with progress tracking  
+- Evidence collection framework with complete audit trails
+- Universal error handling with transparency protocols
+
+**Command-Specific Implementation**:
+Dynamic dependency analysis with MANDATORY Task tool deployment for complexity ≥0.9, real dependency mapping execution, and quantifiable parallelization optimization outcomes.
+
+### **Tool Call Execution Protocol**
+**MANDATORY**: When this command executes ANY Tool Call, the LLM MUST display the enhanced visual announcement:
+
+```text
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                    🔄 DEPENDENCY ANALYSIS TOOL EXECUTION ACTIVE                      ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║ Command: /dynamic-dependency-analysis     │  Complexity: 0.9/1.0                    ║
+║ Mode: [TASK DEPLOYMENT]                   │  Status: [ANALYZING...]                  ║
+║ P55 Compliance: [ENFORCED]                │  P56 Transparency: [ACTIVE]              ║
+║ Task Tools: [DEPENDENCY MAPPING]          │  Evidence: [QUANTIFIABLE METRICS]       ║
+║ Expected: Dependency graph + optimization │  Target: ≥85% parallelization efficiency ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
+### **Behavioral Requirements**
+1. **ALWAYS** execute real Task tool calls for dependency analysis (never simulate)
+2. **DISPLAY** visual announcements before each analysis phase
+3. **CAPTURE** actual dependency mapping results and optimization metrics
+4. **PROVIDE** complete transparency of parallelization improvements
+5. **MAINTAIN** evidence trail for optimization validation
+
+---
+
+**Module Dependencies**: [Parallel Task Intelligence](../../../knowledge/protocols/parallel-task-intelligence-protocol.md), [Command Relationships](../mapping/command-relationships.md)
+**Used By**: [Context Engineering Meta-Command](../meta/context-eng.md), [Parallel Tool Execution](../execution/parallel-tool-execution.md)
+**Integration**: [Workflow Orchestration](../orchestration/), [Verification Systems](../verification/)
+**Compliance Authority**: [Principle #80](../../../knowledge/principles/technical-standards.md#80-parallel-task-intelligence)
 
 ### **P55 Tool Execution Bridging**
 **MANDATORY**: Real tool execution vs simulation prohibition

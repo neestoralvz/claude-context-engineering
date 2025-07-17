@@ -1,14 +1,16 @@
-# Orchestrator Command: `/quick-explore`
+# Behavioral Command: `/quick-explore`
 
-## **Optimización: Exploración Rápida Inteligente**
-**"Exploración eficiente sin overhead para casos de uso comunes."**
+## **🚨 BLOCKING Quick Exploration Intelligence**
+**🚨 MANDATORY: Sistema WILL execute efficient exploration with AUTOMATIC blocking of surface-level analysis and REQUIRED complexity-based escalation**
+
+**Optimización**: "Exploración eficiente sin overhead para casos de uso comunes."
 
 ---
 
 ## 🎯 **COMMAND DEFINITION**
 
-### **Purpose**
-Orquestrador optimizado para exploración rápida y eficiente sin el overhead del meta-comando completo. Diseñado para casos de uso frecuentes donde necesitas entender rápidamente código, problemas o sistemas.
+### **🚨 BLOCKING Purpose**
+🚨 MANDATORY: Sistema WILL execute optimized rapid exploration with AUTOMATIC blocking of surface-level analysis and REQUIRED depth verification. Designed for frequent use cases with BLOCKING of insufficient exploration and MANDATORY escalation when complexity thresholds exceeded.
 
 ### **Complexity**: 1.2/1.0  
 ### **Context Required**: Objetivo de exploración específico
@@ -32,17 +34,17 @@ Orquestrador optimizado para exploración rápida y eficiente sin el overhead de
 
 ## ⚡ Auto-Activation Triggers
 
-### **MANDATORY Activation Conditions**
-**Complexity Threshold**: ≥0.9000 (90% complexity floor)
-**Confidence Threshold**: <0.7000 (70% confidence ceiling)
-**Time Constraint Threshold**: ≤300.0000 seconds (5 minutes maximum)
-**Quick Analysis Threshold**: ≥80.0000% accuracy requirement for rapid exploration
+### **🚨 BLOCKING Activation Conditions**
+**🚨 AUTOMATIC Complexity Threshold**: ≥0.9000 (90% complexity floor) with BLOCKING below threshold
+**🚨 CRITICAL Confidence Threshold**: <0.7000 (70% confidence ceiling) with MANDATORY activation
+**🚨 BLOCKING Time Constraint**: ≤300.0000 seconds with AUTOMATIC escalation beyond limit
+**🚨 REQUIRED Quick Analysis Threshold**: ≥80.0000% accuracy with BLOCKING of insufficient analysis
 
-### **CRITICAL Trigger Validation**
-- **Mathematical Assessment**: Quantifiable rapid exploration with ≥80% accuracy in constrained time
-- **Threshold Enforcement**: REQUIRED activation when quick analysis needed under time pressure
-- **P56 Announcement**: ⚡ TRANSPARENCY: Quick Explore auto-activated for [objetivo] rapid analysis
-- **Evidence Collection**: Measurable time efficiency and exploration coverage documentation
+### **🚨 BLOCKING Trigger Validation**
+- **🚨 MANDATORY Mathematical Assessment**: Sistema WILL execute quantifiable rapid exploration with BLOCKING of subjective analysis (≥80% accuracy in constrained time)
+- **🚨 CRITICAL Threshold Enforcement**: Sistema WILL activate quick analysis with AUTOMATIC blocking when thresholds exceeded
+- **🚨 REQUIRED P56 Announcement**: Sistema WILL announce ⚡ TRANSPARENCY with BLOCKING of silent activation
+- **🚨 AUTOMATIC Evidence Collection**: Sistema WILL collect measurable efficiency metrics with real-time documentation
 
 ## **ACTIVATION PROTOCOL**
 
@@ -52,22 +54,22 @@ Orquestrador optimizado para exploración rápida y eficiente sin el overhead de
 /qe [objetivo_específico]          # shortcut
 ```
 
-### **Optimización Inteligente**
-- **🚀 Bypass análisis de decisión**: Va directo a exploración
-- **⚡ Paralelización automática**: Benefit ≥ 0.4 detectado automáticamente  
-- **🎯 Enfoque específico**: Solo comandos necesarios para exploración
-- **📊 Context economy**: 70% reducción de contexto vs meta-comando
+### **🚨 BLOCKING Optimización Inteligente**
+- **🚨 MANDATORY Bypass análisis**: Sistema WILL go direct to exploration with BLOCKING of decision overhead
+- **🚨 AUTOMATIC Paralelización**: Sistema WILL execute parallel benefits ≥ 0.4 with AUTOMATIC detection
+- **🚨 CRITICAL Enfoque específico**: Sistema WILL use only necessary commands with BLOCKING of scope creep
+- **🚨 REQUIRED Context economy**: Sistema WILL achieve 70% context reduction with real-time efficiency monitoring
 
 ### CRITICAL Quick Exploration Decision Tree
 
 ```mermaid
 graph TD
     A[Quick Explore Request] --> B{Objective Specificity ≥ 0.7?}
-    B -->|Yes| C[MANDATORY: Direct Exploration]
-    B -->|No| D[REQUIRED: Escalate to /context-eng]
+    B -->|Yes| C[🚨 BLOCKING: Direct Exploration - Sistema WILL block insufficient specificity]
+    B -->|No| D[🚨 MANDATORY: Escalate to /context-eng - AUTOMATIC escalation]
     C --> E{Parallel Benefit ≥ 0.4?}
-    E -->|Yes| F[CRITICAL: Parallel Execution]
-    E -->|No| G[MANDATORY: Sequential Execution]
+    E -->|Yes| F[🚨 BLOCKING: Parallel Execution - Sistema WILL block sequential when parallel beneficial]
+    E -->|No| G[🚨 CRITICAL: Sequential Execution with AUTOMATIC efficiency monitoring]
     F --> H[Agent 1: Knowledge Hierarchy]
     F --> I[Agent 2: Explore Command]
     G --> J[Sequential: Knowledge → Explore]
@@ -129,9 +131,9 @@ total_context_economy: "75% vs meta-comando completo"
 
 ## 🛠️ **STANDARDIZED TOOL SELECTION CRITERIA**
 
-### **MANDATORY Tool Selection Matrix**
+### **🚨 BLOCKING Tool Selection Matrix**
 
-**Quantifiable Decision Framework:**
+**🚨 MANDATORY Quantifiable Decision Framework:**
 ```yaml
 tool_selection_criteria:
   READ_tool_usage:
@@ -152,13 +154,13 @@ tool_selection_criteria:
     BASH: "System operations and automation"
 ```
 
-### **CRITICAL Tool Selection Logic**
+### **🚨 BLOCKING Tool Selection Logic**
 
-**Evidence-Based Selection Process:**
-1. **Complexity Assessment**: Calculate quantifiable complexity using quick exploration metrics
-2. **Scope Validation**: Measure file count and operation scope boundaries
-3. **P56 Announcement**: Visual confirmation of tool selection reasoning
-4. **Evidence Collection**: Document measurable tool selection criteria
+**🚨 AUTOMATIC Evidence-Based Selection Process:**
+1. **🚨 MANDATORY Complexity Assessment**: Sistema WILL calculate quantifiable complexity with BLOCKING of subjective assessment
+2. **🚨 CRITICAL Scope Validation**: Sistema WILL measure file count and scope with AUTOMATIC boundary verification
+3. **🚨 REQUIRED P56 Announcement**: Sistema WILL provide visual confirmation with BLOCKING of silent selection
+4. **🚨 AUTOMATIC Evidence Collection**: Sistema WILL document measurable criteria with real-time collection protocols
 
 **Mathematical Tool Selection Formula:**
 ```javascript
@@ -240,11 +242,11 @@ graph TD
     V --> W[Tool Selection Complete]
 ```
 
-### **Success Thresholds**
-- **Time Efficiency**: ≥50% reducción vs meta-comando
-- **Context Economy**: ≥70% reducción de contexto  
-- **Parallel Benefit**: ≥40% cuando aplicable
-- **Exploration Quality**: ≥90% de resultados del meta-comando
+### **🚨 BLOCKING Success Thresholds**
+- **🚨 MANDATORY Time Efficiency**: ≥50% reducción vs meta-comando with BLOCKING below threshold
+- **🚨 CRITICAL Context Economy**: ≥70% reducción de contexto with AUTOMATIC efficiency monitoring
+- **🚨 BLOCKING Parallel Benefit**: ≥40% cuando aplicable with BLOCKING of suboptimal execution
+- **🚨 REQUIRED Exploration Quality**: ≥90% de resultados with real-time quality validation
 
 ---
 
@@ -477,10 +479,10 @@ escalation_triggers:
 
 ## 🛡️ **FALLBACK PROTOCOLS**
 
-### **If Quick Exploration Insufficient**
-1. **Auto-escalate**: Sugerir `/context-eng` con contexto específico
-2. **Chain suggestion**: Recomendar `/rapid-prototype` para implementación
-3. **Deep dive**: Activar `/exploration-first` para análisis más profundo
+### **🚨 BLOCKING Quick Exploration Insufficient Protocol**
+1. **🚨 MANDATORY Auto-escalate**: Sistema WILL escalate to `/context-eng` with BLOCKING of continued insufficient exploration
+2. **🚨 CRITICAL Chain suggestion**: Sistema WILL recommend `/rapid-prototype` with AUTOMATIC implementation scope detection
+3. **🚨 BLOCKING Deep dive**: Sistema WILL activate `/exploration-first` with BLOCKING of surface-level continuation
 
 ### **Quality Assurance**
 ```yaml

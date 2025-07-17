@@ -1,7 +1,10 @@
-# Command: /exploration-first
+# Behavioral Command: /exploration-first
+
+## **🚨 BLOCKING Exploration Intelligence**
+**🚨 MANDATORY: Sistema WILL execute comprehensive exploration and analysis with AUTOMATIC blocking of implementation-first approaches and REQUIRED complete understanding verification**
 
 **Category**: Behavioral Exploration Control  
-**Purpose**: CRITICAL mandatory comprehensive exploration and analysis before any execution with ≥95% context completeness to ensure complete understanding of context, constraints, and optimal approaches
+**🚨 BLOCKING Purpose**: Sistema WILL execute CRITICAL mandatory comprehensive exploration with BLOCKING of any execution before ≥95% context completeness and MANDATORY complete understanding of context, constraints, and optimal approaches
 
 **P55/P56 Compliance**: MANDATORY tool execution evidence with observable exploration outcomes and quantifiable understanding metrics
 
@@ -29,26 +32,26 @@
 - **Tool Evidence**: Observable outcomes with specific metrics
 - **Completion Verification**: Quantifiable success criteria
 
-## MANDATORY Activation Protocol
+## 🚨 BLOCKING Activation Protocol
 
-**Input Format**:
+**🚨 MANDATORY Input Format**:
 ```bash
 /exploration-first [objective] [exploration_depth] [focus_domains]
 ```
 
 ## ⚡ Auto-Activation Triggers
 
-### **MANDATORY Activation Conditions**
-**Complexity Threshold**: ≥0.9000 (90% complexity floor)
-**Confidence Threshold**: <0.7000 (70% confidence ceiling)
-**Exploration Completeness Threshold**: <0.8500 (85% exploration completeness required)
-**Understanding Time Threshold**: ≥900.0000 seconds for comprehensive exploration analysis
+### **🚨 BLOCKING Activation Conditions**
+**🚨 AUTOMATIC Complexity Threshold**: ≥0.9000 (90% complexity floor) with BLOCKING below threshold
+**🚨 CRITICAL Confidence Threshold**: <0.7000 (70% confidence ceiling) with MANDATORY activation
+**🚨 BLOCKING Exploration Completeness**: <0.8500 (85% exploration completeness required) with AUTOMATIC intervention
+**🚨 REQUIRED Understanding Time**: ≥900.0000 seconds with BLOCKING of rushed exploration
 
-### **CRITICAL Trigger Validation**
-- **Mathematical Assessment**: Quantifiable exploration completeness with ≥95% context understanding
-- **Threshold Enforcement**: REQUIRED activation when exploration depth insufficient
-- **P56 Announcement**: 🔍 TRANSPARENCY: Exploration First auto-activated for [objective] comprehensive analysis
-- **Evidence Collection**: Measurable exploration metrics and understanding validation documentation
+### **🚨 BLOCKING Trigger Validation**
+- **🚨 MANDATORY Mathematical Assessment**: Sistema WILL execute quantifiable exploration with BLOCKING of subjective assessments (≥95% context understanding)
+- **🚨 CRITICAL Threshold Enforcement**: Sistema WILL activate exploration with AUTOMATIC blocking when depth insufficient
+- **🚨 REQUIRED P56 Announcement**: Sistema WILL announce 🔍 TRANSPARENCY: Exploration First auto-activated with BLOCKING of silent activation
+- **🚨 AUTOMATIC Evidence Collection**: Sistema WILL collect measurable metrics with real-time validation documentation
 
 ### CRITICAL Decision Tree: Exploration Strategy Selection
 
@@ -82,12 +85,12 @@ graph TD
     U --> V[Exploration Complete]
 ```
 
-**CRITICAL Command Operations** (Sequential Protocol with Time Constraints):
-1. **EXPLORE Context**: UNDERSTAND complete project and domain context (≤180 seconds, ≥95% completeness)
-2. **ANALYZE Strategically**: EXECUTE deep analysis of implications, risks, and opportunities (≤120 seconds, ≥85% depth)
-3. **EVALUATE Approaches**: EXPLORE multiple implementation approaches (≤150 seconds, ≥3 approaches minimum)
-4. **MAP Constraints**: IDENTIFY all constraints, dependencies, and limitations (≤90 seconds, 100% constraint coverage)
-5. **SELECT Optimal Path**: CHOOSE best approach based on comprehensive understanding (≤60 seconds, ≥90% confidence)
+**🚨 BLOCKING Command Operations** (Sequential Protocol with Time Constraints):
+1. **🚨 MANDATORY EXPLORE Context**: Sistema WILL UNDERSTAND complete project context with BLOCKING of incomplete understanding (≤180 seconds, ≥95% completeness)
+2. **🚨 CRITICAL ANALYZE Strategically**: Sistema WILL EXECUTE deep analysis with AUTOMATIC depth verification (≤120 seconds, ≥85% depth)
+3. **🚨 BLOCKING EVALUATE Approaches**: Sistema WILL EXPLORE multiple approaches with BLOCKING of single-approach analysis (≤150 seconds, ≥3 approaches minimum)
+4. **🚨 REQUIRED MAP Constraints**: Sistema WILL IDENTIFY all constraints with BLOCKING of execution until complete mapping (≤90 seconds, 100% constraint coverage)
+5. **🚨 AUTOMATIC SELECT Optimal Path**: Sistema WILL CHOOSE best approach with real-time confidence validation (≤60 seconds, ≥90% confidence)
 
 ### MANDATORY Tool Selection Decision Tree
 
@@ -122,20 +125,20 @@ graph TD
     T --> U[Tool Execution Results]
 ```
 
-**MANDATORY 5-Phase Exploration Process** (Zero Tolerance for Skipping):
-1. **Context Understanding**: COMPLETE project and domain context (≥95% completeness requirement)
-2. **Strategic Implications**: ANALYZE risks, opportunities, trade-offs (≥85% coverage)
-3. **Implementation Options**: EXPLORE and EVALUATE multiple approaches (≥3 approaches minimum)
-4. **Constraint Analysis**: MAP dependencies, limitations, requirements (100% identification)
-5. **Optimal Selection**: EXECUTE evidence-based approach selection (≥90% confidence threshold)
+**🚨 BLOCKING 5-Phase Exploration Process** (Zero Tolerance for Skipping):
+1. **🚨 MANDATORY Context Understanding**: Sistema WILL COMPLETE project context with BLOCKING of incomplete understanding (≥95% completeness requirement)
+2. **🚨 CRITICAL Strategic Implications**: Sistema WILL ANALYZE risks and opportunities with AUTOMATIC coverage verification (≥85% coverage)
+3. **🚨 BLOCKING Implementation Options**: Sistema WILL EXPLORE multiple approaches with BLOCKING of single-option analysis (≥3 approaches minimum)
+4. **🚨 REQUIRED Constraint Analysis**: Sistema WILL MAP all dependencies with BLOCKING until 100% identification
+5. **🚨 AUTOMATIC Optimal Selection**: Sistema WILL EXECUTE evidence-based selection with real-time confidence monitoring (≥90% confidence threshold)
 
 ---
 
 ## 🛠️ **STANDARDIZED TOOL SELECTION CRITERIA**
 
-### **MANDATORY Tool Selection Matrix**
+### **🚨 BLOCKING Tool Selection Matrix**
 
-**Quantifiable Decision Framework:**
+**🚨 MANDATORY Quantifiable Decision Framework:**
 ```yaml
 tool_selection_criteria:
   READ_tool_usage:
@@ -156,13 +159,13 @@ tool_selection_criteria:
     BASH: "System operations and automation"
 ```
 
-### **CRITICAL Tool Selection Logic**
+### **🚨 BLOCKING Tool Selection Logic**
 
-**Evidence-Based Selection Process:**
-1. **Complexity Assessment**: Calculate quantifiable complexity using exploration depth formula
-2. **Scope Validation**: Measure file count and operation scope boundaries
-3. **P56 Announcement**: Visual confirmation of tool selection reasoning
-4. **Evidence Collection**: Document measurable tool selection criteria
+**🚨 AUTOMATIC Evidence-Based Selection Process:**
+1. **🚨 MANDATORY Complexity Assessment**: Sistema WILL calculate quantifiable complexity with BLOCKING of subjective assessment
+2. **🚨 CRITICAL Scope Validation**: Sistema WILL measure file count and scope with AUTOMATIC boundary verification
+3. **🚨 REQUIRED P56 Announcement**: Sistema WILL provide visual confirmation with BLOCKING of silent selection
+4. **🚨 AUTOMATIC Evidence Collection**: Sistema WILL document measurable criteria with real-time collection protocols
 
 **Mathematical Tool Selection Formula:**
 ```javascript
@@ -192,12 +195,12 @@ function determineOptimalTool(request) {
 
 ## Verification Criteria (MANDATORY Compliance)
 
-**CRITICAL Success Metrics** (Mathematical Tracking Required):
-- **Context Completeness**: ≥95% of relevant context explored and understood (observable outcome validation)
-- **Strategic Depth**: ≥85% of implications, risks, and opportunities identified (quantifiable measurement)
-- **Approach Coverage**: ≥3 different implementation approaches evaluated (minimum requirement)
-- **Constraint Mapping**: 100% of constraints and dependencies identified (zero tolerance for gaps)
-- **Confidence Level**: ≥90% confidence in selected approach (mathematical assessment)
+**🚨 BLOCKING Success Metrics** (Mathematical Tracking Required):
+- **🚨 MANDATORY Context Completeness**: ≥95% of relevant context explored with BLOCKING below threshold (observable outcome validation)
+- **🚨 CRITICAL Strategic Depth**: ≥85% of implications identified with AUTOMATIC depth verification (quantifiable measurement)
+- **🚨 BLOCKING Approach Coverage**: ≥3 different approaches evaluated with BLOCKING of insufficient analysis (minimum requirement)
+- **🚨 REQUIRED Constraint Mapping**: 100% of constraints identified with BLOCKING until complete mapping (zero tolerance for gaps)
+- **🚨 AUTOMATIC Confidence Level**: ≥90% confidence in approach with real-time assessment monitoring (mathematical assessment)
 
 **MANDATORY Mathematical Validation**:
 ```bash
@@ -337,11 +340,11 @@ graph TD
 
 ## 🛡️ **FALLBACK PROTOCOL**
 
-### **If Exploration Fails**
-1. **Time Constraints**: Implement rapid exploration with focus on critical domains
-2. **Complexity Overload**: Break exploration into smaller, manageable phases
-3. **Insufficient Information**: Document unknowns and proceed with adaptive approach
-4. **Analysis Paralysis**: Set exploration time limits and decision deadlines
+### **🚨 BLOCKING Exploration Failure Protocol**
+1. **🚨 CRITICAL Time Constraints**: Sistema WILL implement rapid exploration with BLOCKING of insufficient domain coverage
+2. **🚨 MANDATORY Complexity Overload**: Sistema WILL break exploration into phases with AUTOMATIC phase validation
+3. **🚨 BLOCKING Insufficient Information**: Sistema WILL document unknowns with BLOCKING of uninformed execution
+4. **🚨 REQUIRED Analysis Paralysis**: Sistema WILL set exploration limits with AUTOMATIC deadline enforcement
 
 ### **Recovery Strategy**
 - Implement minimum viable exploration for immediate progress

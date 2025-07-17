@@ -1,111 +1,176 @@
-# Orchestrator Command: `/planning-workflow`
+# Atomic Command: `/planning-workflow`
 
-## **Workflow Orchestrator: Strategic Planning and Decomposition**
-**Combines Principles #7, #8, #9: TDD + Objective Decomposition + Strategic Git**
+## **Principle #7: Test-Driven Development (TDD)**
+**"Begin with the end in mind: tests first, then implementation, ensuring every line of code has a purpose"**
 
 ---
 
-## 🎯 **ORCHESTRATOR DEFINITION**
+## 🎯 **COMMAND DEFINITION**
 
 ### **Purpose**
-Coordinate comprehensive strategic planning phase that transforms discovered knowledge into executable plans with clear verification criteria and strategic checkpoints.
+IMPLEMENT strategic planning workflow achieving ≥95% planning completeness to ensure comprehensive execution preparation with observable decomposition and verification outcomes.
 
-### **Complexity**: 1.4/1.5
-### **Context Required**: Discovery results and planning objectives
-### **Execution Time**: 10-30 minutes (depending on planning complexity)
+**Observable Outcomes**:
+- **Planning Completeness**: ≥95% execution requirements planned
+- **Verification Coverage**: 100% objectives have measurable success criteria
+- **Parallelization Optimization**: ≥75% work executable in parallel
+- **Documentation Quality**: Complete planning traceability maintained
+
+**Quantifiable Validation**: Planning process MUST achieve ≥95% completeness, verification coverage MUST demonstrate 100% measurable criteria, and parallelization MUST maintain ≥75% efficiency with observable metrics.
+
+### **Complexity**: 1.4/1.5 (Validated via strategic planning complexity analysis)
+### **Context Required**: Discovery results and planning objectives with ≥90% context completeness
+### **Execution Time**: 10-30 minutes (decomposition: 3-10min, verification: 2-6min, optimization: 2-8min, documentation: 3-6min)
+
+**Success Criteria**:
+- **Decomposition Quality**: ≥90% independent sub-objectives
+- **Execution Readiness**: Plan ready for immediate implementation
+- **Workflow Efficiency**: ≥85% time reduction over manual planning
 
 ---
 
-## P55/P56 Compliance Visual Announcement
+## 🏗️ **MODULE INHERITANCE**
 
-```text
-╔═══════════════════════════════════════════════════════════╗
-║                🎯 TOOL CALL EXECUTION ACTIVE              ║
-╠═══════════════════════════════════════════════════════════╣
-║ Mode: [ORCHESTRATOR ACTIVE] │  Status: [EXECUTING...]    ║
-║ Tool Calls: [MANDATORY]      │  Real Actions: [✅ ACTIVE] ║
-║ P55 Compliance: [ENFORCED]   │  P56 Transparency: [ON]    ║
-║ Mathematical: [FORMULA INTEGRATION] │ Scripts: [ACTIVE]  ║
-╚═══════════════════════════════════════════════════════════╝
-```
+**Inherits from**: [Orchestration Patterns](../../shared/orchestration/orchestration-patterns.md)
 
-## MANDATORY Script Execution Section
+**Inherited Functions**:
+- Multi-phase workflow coordination
+- Strategic decomposition methodologies
+- Verification design frameworks
 
-**⚠️ BASH TOOL EXECUTION REQUIRED ⚠️**
+**Specialized Functions Added**:
+- TDD-based planning approach
+- Parallel execution optimization
+- Strategic git checkpoint integration
 
-This orchestrator MANDATES real tool execution. No simulation allowed.
+---
 
-### Mathematical Foundation Integration
-
-```bash
-# Load Context Engineering Mathematical Formulas
-source ../../../scripts/formulas/context_engineering_formulas.sh
-
-# Calculate planning workflow metrics
-planning_complexity=$(calculate_complexity 5 1.4 1.3)
-decomposition_confidence=$(calculate_confidence 0.95 0.90 0.85)
-optimization_target=$(calculate_adaptive_threshold "medium")
-workflow_quality=$(calculate_functional_score $decomposition_confidence $planning_complexity 0.85)
-
-echo "🧮 Mathematical Validation:"
-echo "  Planning Complexity: $planning_complexity"
-echo "  Decomposition Confidence: $decomposition_confidence"
-echo "  Optimization Target: $optimization_target"
-echo "  Workflow Quality: $workflow_quality"
-```
-
-### Script Integration Points
-
-1. **Planning Validation**: Executes `../../../scripts/validation/validate-system-integrity.sh`
-2. **Mathematical Foundation**: Sources `../../../scripts/formulas/context_engineering_formulas.sh`
-3. **Quality Assessment**: Calls `../../../scripts/validation/analyze-content-quality.sh`
-4. **Compliance Check**: Runs `../../../scripts/compliance/generate-p55-compliance-report.sh`
-5. **Workflow Optimization**: Executes `../../../scripts/automation/workflow-triggers.js`
-
-## ⚡ **ORCHESTRATION PROTOCOL**
+## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```markdown
+```bash
 /planning-workflow [objective] [planning_depth?] [parallelization_target?]
 ```
 
-### **Command Chain Execution**
-1. **`/objective-decomposition`** - Break objective into verifiable sub-objectives
-2. **`/tdd`** - Define verification criteria for each component
-3. **`/strategic-git`** - Create planning checkpoints and documentation
-4. **`/parallel-over-sequential`** - Optimize execution strategy for maximum parallelization
-5. **`/planning-documentation`** - Document complete planning tree for traceability
+### **Auto-Activation Triggers**
+This command EXECUTES automatically when complex objectives require strategic planning with ≥1.4 complexity and multiple execution phases.
 
-### **Orchestration Logic**
+**Verification Protocol**:
+- **Complexity Assessment**: ≥1.4 complexity threshold validation
+- **Planning Scope**: Multi-phase execution requirement verification
+- **Resource Analysis**: Strategic planning resource availability check
 
-**Planning Workflow Execution Process**:
+### **Primary Triggers**
+**STRATEGIC_PLANNING**: Complex objective strategic planning
+- **Condition**: Objective complexity ≥1.4 with multiple execution phases
+- **Threshold**: ≥1.4 complexity + multi-phase requirements
+- **Action**: AUTO-EXECUTE strategic planning with TDD integration
+- **Verification**: Planning completeness with ≥95% coverage validation
 
-**Phase 1: Strategic Decomposition**
-- Execute objective-decomposition command with specified depth and parallelization target
-- Break down main objective into manageable sub-objectives
-- Optimize decomposition for parallel execution opportunities
+---
 
-**Phase 2: Verification Design**
-- Execute TDD command with decomposed objectives and verification types
-- Design verification approach for functional, integration, and performance aspects
-- Establish success threshold of 85% for verification completion
+## 📊 **MATHEMATICAL VALIDATION**
 
-**Phase 3: Strategic Documentation**
-- Execute strategic-git command to create planning milestone checkpoint
-- Document planning completion with comprehensive description
-- Establish planning phase scope and recovery points
+### **Planning Effectiveness Formula**
+```javascript
+function calculatePlanningEffectiveness(decomposition, verification, optimization) {
+  const completenessScore = (decomposition.coverage + verification.coverage) / 2
+  const qualityScore = (decomposition.quality + verification.quality + optimization.quality) / 3
+  const efficiencyScore = optimization.parallelization_ratio
+  
+  return {
+    planning_completeness: completenessScore,
+    planning_quality: qualityScore,
+    planning_success: (completenessScore >= 0.95) && (qualityScore >= 0.85) && (efficiencyScore >= 0.75)
+  }
+}
+```
 
-**Phase 4: Execution Optimization**
-- Execute parallel-over-sequential command with decomposed tasks
-- Optimize execution strategy with parallelization target (default 75%)
-- Design resource allocation and scheduling strategy
+---
 
-**Phase 5: Planning Documentation**
-- Execute planning-documentation command with synthesized results
-- Create complete planning tree with full traceability
-- Document planning hierarchy and decision rationale
+## 🔧 **COMMAND FUNCTIONALITY**
 
-**Result Synthesis**: Combine strategic decomposition, verification design, and execution optimization into comprehensive execution plan with measurable success criteria.
+### **5-Phase Strategic Planning**
+Coordinate comprehensive strategic planning that transforms discovered knowledge into executable plans with clear verification criteria and strategic checkpoints.
+
+### **TDD Integration**
+Implement test-driven development methodology with verification-first planning approach for all strategic objectives.
+
+### **Parallel Execution Optimization**
+Optimize planning outcomes for maximum parallelization efficiency with ≥75% parallel execution targets.
+
+---
+
+## 🔗 **USAGE CRITERIA**
+
+### **Automatic Activation**
+- Complex objectives requiring strategic planning with ≥1.4 complexity
+- Multi-phase execution scenarios needing comprehensive planning
+- Strategic decomposition requirements with parallelization optimization
+
+### **Manual Activation**
+- Strategic planning for complex feature development
+- System architecture planning with verification requirements
+- Performance optimization planning with measurable targets
+
+---
+
+## 🎯 **SUCCESS METRICS**
+
+### **Planning Quality**
+- **Completeness**: ≥95% execution requirements (target: ≥98%)
+- **Verification Coverage**: 100% measurable criteria (target: 100%)
+- **Documentation Quality**: Complete traceability (target: ≥95%)
+
+### **Execution Optimization**
+- **Parallelization**: ≥75% parallel execution (target: ≥80%)
+- **Efficiency**: ≥85% time reduction (target: ≥90%)
+- **Readiness**: Plan ready for immediate implementation (target: 100%)
+
+---
+
+## 🛡️ **P55/P56 COMPLIANCE FRAMEWORK**
+
+**Inherits from**: [Universal P55/P56 Compliance](../../shared/compliance/p55-p56-universal-compliance.md)
+
+**Compliance Functions**:
+- Tool call execution bridging with zero simulation tolerance
+- Visual announcement system with progress tracking  
+- Evidence collection framework with complete audit trails
+- Universal error handling with transparency protocols
+
+**Command-Specific Implementation**:
+Strategic planning workflow with MANDATORY Task tool deployment for complex planning operations, real decomposition execution, and quantifiable planning optimization outcomes.
+
+### **Tool Call Execution Protocol**
+**MANDATORY**: When this command executes ANY Tool Call, the LLM MUST display the enhanced visual announcement:
+
+```text
+╔═══════════════════════════════════════════════════════════╗
+║                🎯 PLANNING WORKFLOW TOOL EXECUTION ACTIVE                ║
+╠═══════════════════════════════════════════════════════════╣
+║ Command: /planning-workflow              │  Complexity: 1.4/1.5         ║
+║ Mode: [STRATEGIC PLANNING]               │  Status: [EXECUTING...]       ║
+║ P55 Compliance: [ENFORCED]               │  P56 Transparency: [ACTIVE]   ║
+║ Task Tools: [PLANNING SPECIALISTS]       │  Evidence: [QUANTIFIABLE]     ║
+║ Expected: Complete execution plan        │  Target: ≥95% completeness    ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+### **Behavioral Requirements**
+1. **ALWAYS** execute real Task tool calls for strategic planning (never simulate)
+2. **DISPLAY** visual announcements before each planning phase
+3. **CAPTURE** actual planning results and optimization metrics
+4. **PROVIDE** complete transparency of planning completeness and quality
+5. **MAINTAIN** evidence trail for planning validation
+
+---
+
+**Module Dependencies**: [Orchestration Patterns](../../shared/orchestration/orchestration-patterns.md), [TDD Frameworks](../verification/tdd.md)
+**Used By**: [Context Engineering Meta-Command](../meta/context-eng.md), [Execution Workflows](../execution/)
+**Integration**: [Discovery Workflows](../discovery/), [Verification Systems](../verification/)
+**Compliance Authority**: [Principle #7](../../../knowledge/principles/development-patterns.md#7-test-driven-development-tdd)
+
 
 ---
 

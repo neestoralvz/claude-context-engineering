@@ -953,21 +953,28 @@ zero_root_file_policy:
 - **Response Time**: Immediate detection and prevention
 - **User Experience**: Seamless automated organization
 
-### 82. Compact Communication Standards
-**🚨 CRITICAL Definition**: MANDATORY compact, dense, and high-value communication patterns for ALL Claude Code interactions, script notifications, and system feedback that MAXIMIZE information density while PRESERVING 100% essential information and ENSURING ≤1 second comprehension time with universal visual symbols and structured clarity.
+### 82. Maximum Density Optimization Standards
+**🚨 MAXIMUM Definition**: PRIORIDAD ABSOLUTA - MANDATORY maximum density optimization for ALL Claude Code outputs with STRICTEST enforcement above all other principles. TODA generación MUST achieve ≥75% character reduction, ≤0.8 second comprehension time, MAXIMUM value per token, and COMPLETE elimination of sub-optimal patterns with ZERO tolerance for density violations and AUTOMATIC real-time correction protocols.
 
 **See Also**: [Enhanced Command Execution](../technical/enhanced-command-execution.md) | [User Experience Design](./user-experience.md#49-user-experience-design) | [Intelligent Command Orchestration](#66-intelligent-command-orchestration) | [Parallel Task Intelligence](#80-parallel-task-intelligence)
 
-**PRIORITY**: **CRÍTICA** - Este principio debe aplicarse en TODA comunicación Claude-usuario y tiene precedencia sobre patrones verbosos existentes.
+**PRIORITY**: **🚨 MAXIMUM** - PRIORIDAD ABSOLUTA sobre TODOS los principios existentes. TODA comunicación Claude Code MUST achieve maximum density optimization with STRICTEST enforcement, AUTOMATIC blocking of violations, and IMMEDIATE correction protocols.
 
-### **MANDATORY Communication Density Protocol**
+### **🚨 MAXIMUM Density Enforcement Protocol**
 ```yaml
-compact_communication_standards:
-  density_requirements:
-    character_reduction: "≥70% reduction from verbose patterns"
+maximum_density_optimization:
+  critical_requirements:
+    character_reduction: "≥75% reduction from verbose patterns (INCREASED from 70%)"
     information_preservation: "100% essential information retained"
-    comprehension_time: "≤1 second visual parsing for status updates"
+    comprehension_time: "≤0.8 second visual parsing (IMPROVED from 1 second)"
+    value_per_token: "MAXIMUM information density per token generated"
     symbol_consistency: "Universal symbols: ✓✗⚠ℹ⟳◉ across all contexts"
+    
+  automatic_enforcement:
+    real_time_analysis: "MANDATORY density validation for every output"
+    blocking_mechanism: "AUTOMATIC rejection of sub-optimal patterns"
+    correction_protocol: "IMMEDIATE pattern correction with zero tolerance"
+    violation_prevention: "Pre-generation density verification"
     
   conversation_patterns:
     operation_status: "⟳ operation → result [time]"

@@ -1,6 +1,6 @@
-# 📋 TodoWrite Zero-Root Integration Protocol
+# 📋 TodoWrite Integration Protocol
 
-**CRITICAL INTEGRATION**: Automated Zero-Root File Policy verification integrated with TodoWrite operations to ensure **Principle #81** compliance on every task completion and todo list modification.
+**CRITICAL INTEGRATION**: Automated Zero-Root File Policy verification AND Maximum Density Optimization validation integrated with TodoWrite operations to ensure **Principle #81** and **Principle #82** compliance on every task completion and todo list modification.
 
 ---
 
@@ -14,9 +14,11 @@
 
 ## 🎯 Integration Purpose
 
-**AUTOMATIC VERIFICATION**: Every TodoWrite operation triggers automatic Zero-Root File Policy verification to ensure no unauthorized files are created in project root during task execution.
+**AUTOMATIC VERIFICATION**: Every TodoWrite operation triggers DUAL verification:
+1. **Zero-Root File Policy** - No unauthorized files in project root 
+2. **🚨 MAXIMUM Density Optimization** - All communication achieves ≥75% character reduction with ≤0.8s comprehension
 
-**SEAMLESS OPERATION**: Integration operates transparently without disrupting user workflow while maintaining 100% compliance with Principle #81.
+**SEAMLESS OPERATION**: Integration operates transparently without disrupting user workflow while maintaining 100% compliance with Principles #81 and #82.
 
 ---
 
@@ -27,7 +29,9 @@
 todowrite_integration:
   task_completion:
     trigger: "Any todo marked as 'completed'"
-    verification: "Execute immediate zero-root file scan"
+    zero_root_verification: "Execute immediate zero-root file scan"
+    density_verification: "🚨 MAXIMUM: Validate communication density ≥75% reduction + ≤0.8s comprehension"
+    automatic_correction: "IMMEDIATE blocking and correction of density violations"
     announcement: "📋 TASK COMPLETION VERIFIED: Zero-Root Policy maintained"
     timing: "immediate_post_completion"
     

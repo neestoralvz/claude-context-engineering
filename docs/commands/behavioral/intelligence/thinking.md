@@ -1,7 +1,10 @@
-# Command: /progressive-thinking
+# Behavioral Command: /progressive-thinking
+
+## **🚨 BLOCKING Progressive Thinking Intelligence**
+**🚨 MANDATORY: Sistema WILL execute progressive thinking sequence with AUTOMATIC blocking of simple responses when complexity ≥0.9 and REQUIRED breakthrough insight generation**
 
 **Category**: Behavioral Intelligence Control  
-**Purpose**: CRITICAL progressive thinking sequence execution (Think → Think More → Think Harder → Ultra Think) as reusable module with ≥90% breakthrough insight generation for deep strategic analysis capabilities
+**🚨 BLOCKING Purpose**: Sistema WILL execute CRITICAL progressive thinking sequence (Think → Think More → Think Harder → Ultra Think) with AUTOMATIC blocking of surface-level analysis and MANDATORY ≥90% breakthrough insight generation for deep strategic analysis capabilities
 
 **P55/P56 Compliance**: MANDATORY tool execution evidence with observable progressive thinking outcomes and quantifiable strategic intelligence metrics
 
@@ -15,25 +18,25 @@
 
 ---
 
-## MANDATORY Activation Protocol
+## 🚨 BLOCKING Activation Protocol
 
-**Input Format**:
+**🚨 MANDATORY Input Format**:
 ```bash
 /progressive-thinking [context] [focus_area] [depth_requirements]
 ```
 
-**CRITICAL Command Operations** (4-Stage Sequential Protocol with Time Constraints):
-1. **EXECUTE Stage 1 - Contextual Think**: GENERATE initial understanding enriched by available context (≤30 seconds)
-2. **EXECUTE Stage 2 - Analytical Think**: PERFORM deep analysis leveraging all gathered intelligence (≤45 seconds)
-3. **EXECUTE Stage 3 - Strategic Think**: DEVELOP strategic optimization with practical implementation details (≤60 seconds)
-4. **EXECUTE Stage 4 - Breakthrough Think**: CREATE revolutionary insights and innovative approaches (≤45 seconds)
-5. **SYNTHESIZE Integration**: COMBINE all thinking stages into actionable strategic intelligence (≤30 seconds)
+**🚨 BLOCKING Command Operations** (4-Stage Sequential Protocol with Time Constraints):
+1. **🚨 MANDATORY Stage 1 - Contextual Think**: Sistema WILL GENERATE initial understanding with BLOCKING of surface-level analysis (≤30 seconds)
+2. **🚨 CRITICAL Stage 2 - Analytical Think**: Sistema WILL PERFORM deep analysis with AUTOMATIC intelligence verification (≤45 seconds)
+3. **🚨 BLOCKING Stage 3 - Strategic Think**: Sistema WILL DEVELOP strategic optimization with BLOCKING of incomplete planning (≤60 seconds)
+4. **🚨 REQUIRED Stage 4 - Breakthrough Think**: Sistema WILL CREATE revolutionary insights with BLOCKING of conventional thinking (≤45 seconds)
+5. **🚨 AUTOMATIC Synthesis Integration**: Sistema WILL COMBINE all stages with real-time intelligence validation (≤30 seconds)
 
-**MANDATORY Requirements** (Zero Tolerance for Deviation):
-- **Complete Sequence**: EXECUTE all 4 thinking stages (100% completion requirement)
-- **Progressive Depth**: BUILD meaningfully on previous insights (≥90% depth progression)
-- **Context Integration**: LEVERAGE provided context throughout progression (≥95% integration)
-- **Strategic Output**: GENERATE actionable strategic intelligence (≥85% actionability score)
+**🚨 BLOCKING Requirements** (Zero Tolerance for Deviation):
+- **🚨 MANDATORY Complete Sequence**: Sistema WILL EXECUTE all 4 thinking stages with BLOCKING of incomplete sequences (100% completion requirement)
+- **🚨 CRITICAL Progressive Depth**: Sistema WILL BUILD meaningfully on insights with AUTOMATIC depth verification (≥90% depth progression)
+- **🚨 BLOCKING Context Integration**: Sistema WILL LEVERAGE provided context with BLOCKING of context-deficient analysis (≥95% integration)
+- **🚨 REQUIRED Strategic Output**: Sistema WILL GENERATE actionable intelligence with real-time actionability monitoring (≥85% actionability score)
 
 ---
 
@@ -69,17 +72,17 @@ progressive_thinking_framework:
 
 ## 🧠 **PROGRESSIVE THINKING DECISION TREE**
 
-### **CRITICAL Cognitive Flow for Progressive Thinking**
+### **🚨 BLOCKING Cognitive Flow for Progressive Thinking**
 
 ```mermaid
 graph TD
     A[Progressive Thinking Request] --> B{Complexity ≥ 0.9?}
-    B -->|Yes| C[CRITICAL: Advanced Progressive Processing]
-    B -->|No| D[Standard Progressive Analysis]
+    B -->|Yes| C[🚨 BLOCKING: Advanced Progressive Processing - Sistema WILL block simple responses]
+    B -->|No| D[🚨 MANDATORY: Standard Progressive Analysis with depth verification]
     
     C --> E{Confidence < 0.7?}
-    E -->|Yes| F[MANDATORY: Expert Task Delegation]
-    E -->|No| G[Direct Progressive Execution]
+    E -->|Yes| F[🚨 BLOCKING: Expert Task Delegation - AUTOMATIC activation]
+    E -->|No| G[🚨 CRITICAL: Direct Progressive Execution with BLOCKING fallbacks]
     
     D --> H{Context Integration Assessment}
     H -->|≥95%| I[Full 4-Stage Progression]
@@ -211,27 +214,27 @@ graph TD
 
 ## 🛠️ **TOOL SELECTION CRITERIA**
 
-### **MANDATORY Tool Selection Matrix**
-**READ Tool Usage**:
-- **File Count**: ≤3 files for direct analysis
-- **Complexity**: <0.7000 (straightforward operations)
-- **Scope**: Well-defined, single-purpose operations
+### **🚨 BLOCKING Tool Selection Matrix**
+**🚨 MANDATORY READ Tool Usage**:
+- **🚨 CRITICAL File Count**: ≤3 files for direct analysis with BLOCKING above threshold
+- **🚨 BLOCKING Complexity**: <0.7000 (straightforward operations) with AUTOMATIC escalation
+- **🚨 REQUIRED Scope**: Well-defined operations with real-time validation
 
-**TASK Tool Usage**:
-- **File Count**: ≥4 files or unknown scope
-- **Complexity**: ≥0.7000 (complex operations)
-- **Scope**: Multi-step, exploratory, or research operations
+**🚨 AUTOMATIC TASK Tool Usage**:
+- **🚨 MANDATORY File Count**: ≥4 files with BLOCKING of READ tool misuse
+- **🚨 CRITICAL Complexity**: ≥0.7000 with AUTOMATIC complex operations activation
+- **🚨 BLOCKING Scope**: Multi-step operations with BLOCKING of single-tool attempts
 
 **Other Tools**:
 - **Grep**: Pattern search across multiple files
 - **Glob**: File pattern matching and discovery
 - **Bash**: System operations and automation
 
-### **CRITICAL Tool Selection Logic**
-- **Complexity Assessment**: Quantifiable complexity evaluation
-- **Scope Validation**: File count and operation scope measurement
-- **P56 Announcement**: Visual confirmation of tool selection reasoning
-- **Evidence Collection**: Measurable tool selection criteria documentation
+### **🚨 BLOCKING Tool Selection Logic**
+- **🚨 MANDATORY Complexity Assessment**: Sistema WILL execute quantifiable complexity evaluation with BLOCKING of subjective assessments
+- **🚨 CRITICAL Scope Validation**: Sistema WILL measure file count and scope with AUTOMATIC validation protocols
+- **🚨 REQUIRED P56 Announcement**: Sistema WILL provide visual confirmation with BLOCKING of silent tool selection
+- **🚨 AUTOMATIC Evidence Collection**: Sistema WILL document measurable criteria with real-time collection protocols
 
 ### **MANDATORY P56 Transparency Announcements**
 

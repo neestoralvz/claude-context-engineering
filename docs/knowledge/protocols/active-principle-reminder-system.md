@@ -24,12 +24,15 @@ active_principle_system:
     priority_scoring: "🚨 AUTOMATIC: Mathematical scoring system for principle relevance (0.0-1.0) with real-time compliance monitoring"
     activation_triggers: "🚨 MANDATORY: Automatic principle activation based on command type and context with blocking for non-compliance"
     
-  compact_communication_priority:
-    communication_analysis: "🚨 BLOCKING: Analyze all Claude responses for verbosity patterns with AUTOMATIC violation detection"
-    pattern_detection: "🚨 MANDATORY: Detect prohibited verbose patterns (preambles, redundancy) with real-time blocking"
+  maximum_density_priority:
+    priority_level: "🚨 MAXIMUM: PRIORIDAD ABSOLUTA - Highest enforcement level above ALL other principles"
+    communication_analysis: "🚨 BLOCKING: Analyze all Claude responses for density optimization with STRICTEST enforcement"
+    pattern_detection: "🚨 MAXIMUM: Detect sub-optimal patterns with ZERO tolerance and IMMEDIATE blocking"
     symbol_enforcement: "🚨 AUTOMATIC: Enforce universal symbols ⟳✓✗⚠◉ℹ in all responses with correction protocols"
-    density_validation: "🚨 BLOCKING: ≥70% character reduction while preserving 100% essential information with violation alerts"
-    clarity_enforcement: "🚨 MANDATORY: ≤1 second comprehension time for all status communications with automatic pattern correction"
+    density_validation: "🚨 BLOCKING: ≥75% character reduction while preserving 100% essential information (INCREASED from 70%)"
+    clarity_enforcement: "🚨 MAXIMUM: ≤0.8 second comprehension time for all communications (IMPROVED from 1 second)"
+    value_optimization: "🚨 AUTOMATIC: MAXIMUM value per token with real-time efficiency monitoring"
+    violation_prevention: "🚨 BLOCKING: Pre-generation density verification with automatic correction"
     
   reminder_integration:
     command_execution_hooks: "Integration into all command execution flows"
