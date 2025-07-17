@@ -1,1772 +1,975 @@
 {
-  "version": "2.1.0",
-  "lastUpdated": "2025-07-16T15:45:00Z",
+  "version": "2.2.0",
+  "lastUpdated": "2025-07-16T16:00:00Z",
   "taxonomy": {
-    "description": "Taxonomía de comandos optimizada con separación de concerns de decisión",
+    "description": "Taxonomía de comandos optimizada con separación ejecutables vs behavioral",
     "categories": {
-      "operacionales": {
-        "description": "Comandos atómicos con responsabilidad única y enfoque específico",
+      "executable": {
+        "description": "Comandos que ejecutan acciones concretas, llamadas de herramientas, scripts, o cálculos matemáticos",
         "characteristics": [
-          "single_responsibility",
-          "high_reusability",
-          "building_blocks"
+          "concrete_actions",
+          "tool_calls",
+          "script_execution",
+          "mathematical_calculations"
+        ],
+        "complexity_range": "0.6-2.0",
+        "function": "Acciones ejecutables (Qué hacer)",
+        "count": 30
+      },
+      "behavioral": {
+        "description": "Comandos que definen patrones de pensamiento, enfoques filosóficos, o marcos cognitivos",
+        "characteristics": [
+          "thinking_patterns",
+          "philosophical_approaches",
+          "cognitive_frameworks",
+          "methodological_guidance"
         ],
         "complexity_range": "0.6-0.9",
-        "function": "Acciones específicas (Qué)",
-        "examples": [
-          "meta-core",
-          "explore",
-          "tdd",
-          "strategic-git",
-          "confidence"
-        ]
+        "function": "Patrones de comportamiento (Cómo pensar)",
+        "count": 38
       },
-      "decision": {
-        "description": "Routing, orchestration, y selection logic - el sistema nervioso del ecosistema",
+      "cores": {
+        "description": "Núcleos consolidados que proporcionan funciones comunes compartidas por múltiples comandos",
         "characteristics": [
-          "intelligent_routing",
-          "orchestration_coordination",
-          "strategy_selection",
-          "mathematical_triggers"
+          "common_functions_consolidation",
+          "redundancy_elimination",
+          "inheritance_patterns",
+          "transparent_activation"
         ],
-        "complexity_range": "0.9-1.4",
-        "function": "Decisiones y coordinación (Cuándo/Cómo)",
-        "examples": [
-          "decision",
-          "orchestrate",
-          "model-selection",
-          "multi-agent-orchestration",
-          "explicit-decision-trees"
-        ]
-      },
-      "orquestadores": {
-        "description": "Workflows coordinados multi-comando para procesos estructurados",
-        "characteristics": [
-          "chain_multiple_commands",
-          "structured_workflows",
-          "process_coordination"
-        ],
-        "complexity_range": "1.1-1.5",
-        "function": "Workflows coordinados (Procesos)",
-        "examples": [
-          "plan-flow",
-          "execute",
-          "verify-flow",
-          "doc-flow",
-          "quick-explore"
-        ]
-      },
-      "comportamiento": {
-        "description": "Monitoring, adaptation, y recovery del sistema",
-        "characteristics": [
-          "system_monitoring",
-          "adaptive_behavior",
-          "automatic_recovery",
-          "maintenance_automation"
-        ],
-        "complexity_range": "0.8-1.2",
-        "function": "Inteligencia adaptativa (Monitoring/Recovery)",
-        "examples": [
-          "intelligent-fallback",
-          "dynamic-dependency-analysis",
-          "sync-docs",
-          "monitor",
-          "validate-sys"
-        ]
-      },
-      "meta": {
-        "description": "Activación universal del ecosistema completo",
-        "characteristics": [
-          "ecosystem_activation",
-          "universal_orchestration",
-          "full_system_coordination"
-        ],
-        "complexity_range": "2.0",
-        "function": "Orquestación universal (Todo)",
-        "examples": [
-          "context-eng"
-        ]
+        "complexity_range": "1.0-1.5",
+        "function": "Funciones comunes centralizadas (Núcleos base)",
+        "count": 5
       }
     },
-    "abstraction_levels": {
-      "nivel_1": "Operacional - Acciones específicas (44 comandos)",
-      "nivel_2": "Decision - Routing y coordinación (7 comandos)",
-      "nivel_3": "Orquestación - Workflows coordinados (7 comandos)",
-      "nivel_4": "Comportamiento - Monitoring y adaptación (8 comandos)",
-      "nivel_5": "Meta - Activación universal (1 comando)"
-    },
-    "composition_pattern": "OPERACIONAL → DECISION → ORQUESTADOR → COMPORTAMIENTO → META"
+    "subcategories": {
+      "executable": {
+        "core-routing": "Routing y decision logic fundamental",
+        "orchestration": "Workflows coordinados",
+        "verification": "Validación y testing",
+        "documentation": "Documentación automática",
+        "execution": "Ejecución de tareas",
+        "automation": "Automatización de scripts",
+        "maintenance": "Mantenimiento del sistema",
+        "mapping": "Análisis de relaciones",
+        "selection": "Selección y coordinación",
+        "behavior": "Comportamiento ejecutable",
+        "meta": "Orquestación universal"
+      },
+      "behavioral": {
+        "intelligence": "Operaciones cognitivas",
+        "optimization": "Optimización de enfoques",
+        "exploration": "Metodologías de exploración",
+        "verification": "Filosofías de validación",
+        "documentation": "Enfoques de documentación",
+        "execution": "Metodologías de ejecución",
+        "behavior": "Patrones de comportamiento",
+        "selection": "Metodologías de selección"
+      },
+      "cores": {
+        "verification": "Núcleo de funciones comunes de verificación",
+        "documentation": "Núcleo de funciones comunes de documentación",
+        "optimization": "Núcleo de funciones comunes de optimización",
+        "cognitive": "Núcleo de funciones comunes de procesamiento cognitivo",
+        "orchestration": "Núcleo de funciones comunes de orquestación"
+      }
+    }
   },
   "commands": {
-    "operacionales": [
-      {
-        "name": "meta-core",
-        "path": "./commands/operacionales/meta-core.md",
-        "principle": 1,
-        "complexity": 0.8,
-        "description": "Stop trying to control the model. Enable it.",
-        "aliases": [
-          "activate-meta-principle",
-          "meta-principle"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 4,
-          "lastUsed": "2025-07-10T00:55:28-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "evolve-intelligence",
-        "path": "./commands/operacionales/evolve-intelligence.md",
-        "principle": 2,
-        "complexity": 0.7,
-        "description": "Intelligence as Natural Phenomenon",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 2,
-          "lastUsed": "2025-06-19T00:55:28-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "context-over-commands",
-        "path": "./commands/operacionales/context-over-commands.md",
-        "principle": 3,
-        "complexity": 0.6,
-        "description": "Rich context enables autonomous excellence",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 1,
-          "lastUsed": "2025-06-26T00:55:28-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "autonomous",
-        "path": "./commands/operacionales/autonomous.md",
-        "principle": 4,
-        "complexity": 0.8,
-        "description": "Activate autonomous execution mode within intelligent frameworks",
-        "aliases": [
-          "enable-autonomous-mode",
-          "enable-dont-control"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 2,
-          "lastUsed": "2025-07-08T00:55:28-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "knowledge-hierarchy",
-        "path": "./commands/operacionales/knowledge-hierarchy.md",
-        "principle": 7,
-        "complexity": 0.7,
-        "description": "Systematic knowledge search from local to external",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 2,
-          "lastUsed": "2025-06-22T00:55:28-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "explore",
-        "path": "./commands/operacionales/explore.md",
-        "principle": 8,
-        "complexity": 0.8,
-        "description": "Mandatory exploration before execution",
-        "aliases": [
-          "exploration-first"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 4,
-          "lastUsed": "2025-07-12T00:55:28-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "tdd",
-        "path": "./commands/operacionales/tdd.md",
-        "principle": 9,
-        "complexity": 0.7,
-        "description": "Define verification criteria before implementation",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 1,
-          "lastUsed": "2025-06-18T00:55:28-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "decompose",
-        "path": "./commands/operacionales/decompose.md",
-        "principle": 10,
-        "complexity": 0.8,
-        "description": "Break large objectives into verifiable parts",
-        "aliases": [
-          "objective-decomposition"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 3,
-          "lastUsed": "2025-06-16T00:55:28-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "verify-scope",
-        "path": "./commands/operacionales/verify-scope.md",
-        "aliases": [
-          "liberate-verification-scope",
-          "verification-liberation"
-        ],
-        "principle": 11,
-        "complexity": 0.8,
-        "description": "Give AI comprehensive 'sight' into all execution result dimensions",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 5,
-          "lastUsed": "2025-07-15T00:55:28-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "verify-loops",
-        "path": "./commands/operacionales/verify-loops.md",
-        "aliases": [
-          "execute-verification-loops",
-          "verification-loops"
-        ],
-        "principle": 12,
-        "complexity": 0.7,
-        "description": "Iterative verification until confidence thresholds are met",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 4,
-          "lastUsed": "2025-06-25T00:55:29-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "living-documentation",
-        "path": "./commands/operacionales/living-documentation.md",
-        "principle": 13,
-        "complexity": 0.7,
-        "description": "Documentation that evolves through usage and becomes single source of truth",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 1,
-          "lastUsed": "2025-06-18T00:55:29-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "update-living-docs",
-        "path": "./commands/operacionales/update-living-docs.md",
-        "principle": 13,
-        "complexity": 0.7,
-        "description": "Manually trigger synchronization of all living documentation",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 5,
-          "lastUsed": "2025-06-24T00:55:29-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "patterns",
-        "path": "./commands/operacionales/patterns.md",
-        "principle": 14,
-        "complexity": 0.8,
-        "description": "Identify reusable patterns for crystallization",
-        "aliases": [
-          "recognize-patterns"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 5,
-          "lastUsed": "2025-06-30T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "crystallize",
-        "path": "./commands/operacionales/crystallize.md",
-        "principle": 15,
-        "complexity": 0.8,
-        "description": "Transform repeated patterns into reusable commands",
-        "aliases": [
-          "crystallize-patterns"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 1,
-          "lastUsed": "2025-07-03T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "strategic-git",
-        "path": "./commands/operacionales/strategic-git.md",
-        "principle": 16,
-        "complexity": 0.6,
-        "description": "Version control as safety net and progress documentation",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 1,
-          "lastUsed": "2025-07-11T00:55:29-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "parallel",
-        "path": "./commands/operacionales/parallel.md",
-        "principle": 17,
-        "complexity": 0.9,
-        "description": "Execute multiple approaches simultaneously",
-        "aliases": [
-          "parallel-over-sequential"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 1,
-          "lastUsed": "2025-06-25T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "multi-agent-orchestration",
-        "path": "./commands/operacionales/multi-agent-orchestration.md",
-        "principle": 18,
-        "complexity": 0.9,
-        "description": "Specialized agent deployment and coordination up to 10 agents",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 4,
-          "lastUsed": "2025-06-26T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "git-worktrees-parallel",
-        "path": "./commands/operacionales/git-worktrees-parallel.md",
-        "principle": 19,
-        "complexity": 0.7,
-        "description": "Multi-solution exploration through parallel worktree development",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 4,
-          "lastUsed": "2025-06-25T00:55:29-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "context-economy",
-        "path": "./commands/operacionales/context-economy.md",
-        "principle": 20,
-        "complexity": 0.8,
-        "description": "80% context reduction with 100% functionality preservation",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 2,
-          "lastUsed": "2025-07-05T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "math-loops",
-        "path": "./commands/operacionales/math-loops.md",
-        "aliases": [
-          "execute-mathematical-loops",
-          "mathematical-loops"
-        ],
-        "principle": 21,
-        "complexity": 0.8,
-        "description": "Iterative mathematical operations with precision toward objectives",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 2,
-          "lastUsed": "2025-06-27T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "progress",
-        "path": "./commands/operacionales/progress.md",
-        "aliases": [
-          "execute-progressive-analysis",
-          "progressive-intelligence"
-        ],
-        "principle": 22,
-        "complexity": 0.9,
-        "description": "Deepen understanding through staged analysis and intelligence evolution",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 3,
-          "lastUsed": "2025-07-09T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "thinking",
-        "path": "./commands/operacionales/thinking.md",
-        "aliases": [
-          "activate-progressive-thinking",
-          "progressive-thinking"
-        ],
-        "principle": "22b",
-        "complexity": 0.9,
-        "description": "Execute complete progressive thinking sequence for deep strategic analysis and breakthrough insights",
-        "status": "active",
-        "category": "core-intelligence",
-        "integration_with_decision_engine": {
-          "auto_activation_conditions": [
-            "complexity >= 1.0",
-            "confidence < 0.7",
-            "deep_analysis_required"
+    "executable": {
+      "core-routing": [
+        {
+          "name": "decision",
+          "path": "./commands/executable/core-routing/decision.md",
+          "aliases": [
+            "execute-decision-engine",
+            "decision-engine"
           ],
-          "integration_status": "active",
-          "stages_automated": 4
+          "complexity": 1.2,
+          "description": "Script-integrated intelligent routing with mathematical triggers, auto-restart, and real execution validation",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "core-routing"
         },
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 4,
-          "lastUsed": "2025-06-26T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
+        {
+          "name": "explicit-decision-trees",
+          "path": "./commands/executable/core-routing/explicit-decision-trees.md",
+          "complexity": 0.9,
+          "description": "Clear, documented decision flows for all routing with automatic mathematical triggers",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "core-routing"
         }
-      },
-      {
-        "name": "orchestrate-intelligence",
-        "path": "./commands/operacionales/orchestrate-intelligence.md",
-        "principle": 23,
-        "complexity": 0.9,
-        "description": "Coordinate specialized agents for complex challenges",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 2,
-          "lastUsed": "2025-07-06T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "optimize-context",
-        "path": "./commands/operacionales/optimize-context.md",
-        "principle": 24,
-        "complexity": 0.7,
-        "description": "Load minimum necessary context while maintaining effectiveness",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 4,
-          "lastUsed": "2025-06-17T00:55:29-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "modular-composition",
-        "path": "./commands/operacionales/modular-composition.md",
-        "principle": 25,
-        "complexity": 0.6,
-        "description": "Build complexity through composition, not duplication",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 4,
-          "lastUsed": "2025-07-08T00:55:29-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "single-source-truth",
-        "path": "./commands/operacionales/single-source-truth.md",
-        "principle": 26,
-        "complexity": 0.6,
-        "description": "Establish single authoritative source for each functionality",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 1,
-          "lastUsed": "2025-07-02T00:55:29-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "explicit-decision-trees",
-        "path": "./commands/operacionales/explicit-decision-trees.md",
-        "principle": 28,
-        "complexity": 0.9,
-        "description": "Clear, documented decision flows for all routing with automatic mathematical triggers",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 3,
-          "lastUsed": "2025-06-18T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "confidence",
-        "path": "./commands/operacionales/confidence.md",
-        "aliases": [
-          "calculate-confidence-score",
-          "confidence-scoring"
-        ],
-        "principle": 30,
-        "complexity": 0.7,
-        "description": "Script-integrated multi-dimensional confidence measurement with mathematical precision and automation bridge",
-        "status": "active",
-        "version": "3.0",
-        "enhancements": [
-          "script_automation_bridge_integration",
-          "mathematical_formula_validation",
-          "progressive_thinking_integration",
-          "decision_engine_script_integration",
-          "auto_restart_with_script_validation",
-          "pipeline_automation_complete",
-          "trigger_monitor_script_activation"
-        ],
-        "script_integration": {
-          "script_automation_bridge": "active",
-          "mathematical_calculation": "calculate_confidence",
-          "progressive_thinking_activation": "auto",
-          "pipeline_enhancement": "complete"
-        },
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 5,
-          "lastUsed": "2025-07-13T00:55:29-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "model-selection",
-        "path": "./commands/operacionales/model-selection.md",
-        "principle": 32,
-        "complexity": 0.6,
-        "description": "Select optimal AI model based on task complexity",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 2,
-          "lastUsed": "2025-06-26T00:55:29-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "conversation-lifecycle",
-        "path": "./commands/operacionales/conversation-lifecycle.md",
-        "principle": 33,
-        "complexity": 0.8,
-        "description": "Manage work in conversation units with clear closure",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 5,
-          "lastUsed": "2025-07-12T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "planning-documentation",
-        "path": "./commands/operacionales/planning-documentation.md",
-        "principle": 34,
-        "complexity": 0.9,
-        "description": "Document planning trees for complete traceability",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 3,
-          "lastUsed": "2025-06-19T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "organizational-architecture",
-        "path": "./commands/operacionales/organizational-architecture.md",
-        "principle": 35,
-        "complexity": 0.6,
-        "description": "Strict organization structure for scalable documentation growth",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 2,
-          "lastUsed": "2025-06-20T00:55:29-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "evolution-ready-architecture",
-        "path": "./commands/operacionales/evolution-ready-architecture.md",
-        "principle": 36,
-        "complexity": 0.8,
-        "description": "System designed for unlimited growth and adaptation",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 2,
-          "lastUsed": "2025-07-14T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "math-verify",
-        "path": "./commands/operacionales/math-verify.md",
-        "principle": 38,
-        "complexity": 0.8,
-        "description": "Recursive verification with mathematical precision and convergence guarantee",
-        "aliases": [
-          "verify-mathematics-loops",
-          "verify-mathematics",
-          "verify-math"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 5,
-          "lastUsed": "2025-06-19T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "thresholds",
-        "path": "./commands/operacionales/thresholds.md",
-        "principle": 39,
-        "complexity": 0.6,
-        "description": "Mathematical thresholds with automatic enforcement",
-        "aliases": [
-          "threshold-enforcement"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 3,
-          "lastUsed": "2025-07-02T00:55:29-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "complexity",
-        "path": "./commands/operacionales/complexity.md",
-        "principle": 39,
-        "complexity": 0.6,
-        "description": "Mathematical complexity measurement and automatic blocking",
-        "aliases": [
-          "complexity-enforcement"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.94,
-          "usageCount": 2,
-          "lastUsed": "2025-06-30T00:55:29-06:00",
-          "averageExecutionTime": 103.2,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "simplicity",
-        "path": "./commands/operacionales/simplicity.md",
-        "principle": 40,
-        "complexity": 0.7,
-        "description": "Enforce simplicity through mathematical measurement",
-        "aliases": [
-          "mathematical-simplicity"
-        ],
-        "status": "active",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 5,
-          "lastUsed": "2025-07-05T00:55:29-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "invisible-excellence",
-        "path": "./commands/operacionales/invisible-excellence.md",
-        "principle": 41,
-        "complexity": 0.8,
-        "description": "Architecture feels like magic while remaining debuggable",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 1,
-          "lastUsed": "2025-07-15T00:55:29-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "optimize-complexity",
-        "path": "./commands/operacionales/optimize-complexity.md",
-        "principle": 42,
-        "complexity": 0.9,
-        "description": "Architecture that feels like magic while remaining debuggable",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 4,
-          "lastUsed": "2025-07-11T00:55:29-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "optimize-cognitive-organization",
-        "path": "./commands/operacionales/optimize-cognitive-organization.md",
-        "principle": 42,
-        "complexity": 0.8,
-        "description": "Optimal cognitive organization for maximum understanding with minimum cognitive friction",
-        "status": "active",
-        "alias": "complexity-optimization",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 1,
-          "lastUsed": "2025-07-05T00:55:30-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "parallel-tool-execution",
-        "path": "./commands/operacionales/parallel-tool-execution.md",
-        "principle": "10b",
-        "complexity": 0.8,
-        "description": "Execute multiple independent tool calls simultaneously in a single message",
-        "status": "active",
-        "category": "orquestacion-flujo",
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 3,
-          "lastUsed": "2025-07-14T00:55:30-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "optimize-intelligent-writing",
-        "path": "./commands/operacionales/optimize-intelligent-writing.md",
-        "principle": "6+43",
-        "complexity": 0.7,
-        "description": "Unified intelligent writing standards combining natural language with cognitive optimization",
-        "status": "active",
-        "category": "metodologia-desarrollo",
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 5,
-          "lastUsed": "2025-07-12T00:55:30-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "technical-nomenclature",
-        "path": "./commands/operacionales/technical-nomenclature.md",
-        "principle": "28+35",
-        "complexity": 0.9,
-        "description": "Universal methodology for establishing and maintaining technical nomenclature standards across all system domains",
-        "status": "active",
-        "category": "system-architecture",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 4,
-          "lastUsed": "2025-07-10T00:55:30-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "validate-tool-call-execution",
-        "path": "./commands/operacionales/validate-tool-call-execution.md",
-        "principle": 55,
-        "complexity": 0.9,
-        "description": "Validate Tool Call Execution Bridging compliance with mathematical rigor",
-        "status": "active",
-        "category": "mathematical-verification",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 4,
-          "lastUsed": "2025-06-24T00:55:30-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "validate-command-content",
-        "path": "./commands/operacionales/validate-command-content.md",
-        "principle": "6+11+48+55+56",
-        "complexity": 0.7,
-        "description": "Script-enhanced command content quality validation with mathematical precision and mandatory tool call execution",
-        "status": "active",
-        "category": "mathematical-verification",
-        "aliases": [
-          "validate-content-quality",
-          "command-quality-validation"
-        ],
-        "enhancements": [
-          "script_integration_framework",
-          "mathematical_validation_foundation",
-          "tool_call_enforcement_protocol",
-          "natural_language_compliance_validation",
-          "technical_nomenclature_validation",
-          "multi_dimensional_verification",
-          "comprehensive_quality_measurement"
-        ],
-        "script_integration": {
-          "setup_validation_environment": "active",
-          "analyze_content_quality": "active",
-          "validate_natural_language_compliance": "active",
-          "validate_technical_nomenclature": "active",
-          "validate_tool_call_compliance": "active",
-          "calculate_comprehensive_quality_metrics": "active",
-          "mathematical_formula_library": "required"
-        },
-        "validation_thresholds": {
-          "information_density": 0.95,
-          "clarity_score": 0.9,
-          "natural_language_compliance": 0.95,
-          "technical_accuracy": 0.9,
-          "nomenclature_compliance": 0.95,
-          "tool_call_compliance": 0.98,
-          "overall_quality": 0.9
-        },
-        "metrics": {
-          "successRate": 0.93,
-          "usageCount": 1,
-          "lastUsed": "2025-07-05T00:55:30-06:00",
-          "averageExecutionTime": 104.4,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "systematic-quality-improvement",
-        "path": "./commands/operacionales/systematic-quality-improvement.md",
-        "principle": "Discovery→Planning→Execution→Verification",
-        "complexity": 0.8,
-        "description": "Execute systematic quality improvement using four-stage enhancement methodology with mathematical precision",
-        "status": "active",
-        "category": "mathematical-verification",
-        "aliases": [
-          "quality-improvement-workflow",
-          "four-stage-enhancement",
-          "systematic-enhancement"
-        ],
-        "pattern_source": "validate-command-content",
-        "crystallization_date": "2025-07-16T15:30:00-06:00",
-        "methodology_stages": [
-          "discovery",
-          "planning",
-          "execution",
-          "verification"
-        ],
-        "script_integration": {
-          "discovery_scripts": [
-            "analyze-content-quality.sh",
-            "validate-natural-language-compliance.sh",
-            "validate-technical-nomenclature.sh",
-            "validate-tool-call-compliance.sh"
+      ],
+      "orchestration": [
+        {
+          "name": "discover",
+          "path": "./commands/executable/orchestration/discover.md",
+          "aliases": [
+            "execute-discovery-workflow",
+            "discovery-workflow"
           ],
-          "planning_integration": [
-            "decompose",
-            "tdd",
-            "planning-documentation"
+          "complexity": 1.4,
+          "description": "Complete knowledge discovery process",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
+        },
+        {
+          "name": "execute",
+          "path": "./commands/executable/orchestration/execute.md",
+          "aliases": [
+            "execute-execution-workflow",
+            "execution-workflow"
           ],
-          "execution_automation": [
-            "parallel",
-            "autonomous",
-            "script_integration_framework"
+          "complexity": 1.5,
+          "description": "Parallel execution with verification",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
+        },
+        {
+          "name": "orchestrate",
+          "path": "./commands/executable/orchestration/orchestrate.md",
+          "aliases": [
+            "execute-command-orchestration",
+            "command-orchestration-workflow"
           ],
-          "verification_protocols": [
-            "verify-loops",
-            "math-verify",
-            "confidence"
-          ]
+          "complexity": 1.4,
+          "description": "Intelligent routing and command chaining",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
         },
-        "metrics": {
-          "successRate": 0.92,
-          "usageCount": 2,
-          "lastUsed": "2025-07-07T00:55:30-06:00",
-          "averageExecutionTime": 105.6,
-          "confidenceScore": 9.5
-        }
-      },
-      {
-        "name": "reorganize-system",
-        "path": "./commands/operacionales/reorganize-system.md",
-        "principle": "35+36",
-        "complexity": 0.9,
-        "description": "Systematic methodology for reorganizing command structures with uniform technical nomenclature",
-        "status": "active",
-        "category": "system-architecture",
-        "metrics": {
-          "successRate": 0.91,
-          "usageCount": 5,
-          "lastUsed": "2025-06-18T00:55:30-06:00",
-          "averageExecutionTime": 106.8,
-          "confidenceScore": 9.5
-        }
-      }
-    ],
-    "decision": [
-      {
-        "name": "decision",
-        "path": "./commands/decision/decision.md",
-        "aliases": [
-          "execute-decision-engine",
-          "decision-engine"
-        ],
-        "complexity": 1.2,
-        "description": "Script-integrated intelligent routing with mathematical triggers, auto-restart, and real execution validation",
-        "status": "active"
-      },
-      {
-        "name": "orchestrate",
-        "path": "./commands/decision/orchestrate.md",
-        "aliases": [
-          "execute-command-orchestration",
-          "command-orchestration-workflow"
-        ],
-        "complexity": 1.4,
-        "description": "Intelligent routing and command chaining",
-        "status": "active"
-      },
-      {
-        "name": "discover",
-        "path": "./commands/decision/discover.md",
-        "aliases": [
-          "execute-discovery-workflow",
-          "discovery-workflow"
-        ],
-        "complexity": 1.4,
-        "description": "Complete knowledge discovery process",
-        "status": "active"
-      },
-      {
-        "name": "explicit-decision-trees",
-        "path": "./commands/decision/explicit-decision-trees.md",
-        "complexity": 0.9,
-        "description": "Clear, documented decision flows for all routing with automatic mathematical triggers",
-        "status": "active"
-      },
-      {
-        "name": "model-selection",
-        "path": "./commands/decision/model-selection.md",
-        "complexity": 0.6,
-        "description": "Select optimal AI model based on task complexity",
-        "status": "active"
-      },
-      {
-        "name": "multi-agent-orchestration",
-        "path": "./commands/decision/multi-agent-orchestration.md",
-        "complexity": 0.9,
-        "description": "Specialized agent deployment and coordination up to 10 agents",
-        "status": "active"
-      },
-      {
-        "name": "command-relationships",
-        "path": "./commands/decision/command-relationships.md",
-        "complexity": 0.9,
-        "description": "Maps how commands interconnect and chain",
-        "status": "active"
-      }
-    ],
-    "orquestadores": [
-      {
-        "name": "discover",
-        "path": "./commands/orquestadores/discover.md",
-        "aliases": [
-          "execute-discovery-workflow",
-          "discovery-workflow"
-        ],
-        "complexity": 1.4,
-        "chains": [
-          "meta-core",
-          "knowledge-hierarchy",
-          "explore",
-          "patterns",
-          "living-documentation"
-        ],
-        "description": "Complete knowledge discovery process",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.66,
-          "usageCount": 1,
-          "lastUsed": "2025-06-26T00:55:30-06:00",
-          "averageExecutionTime": 316.8,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.594
-        }
-      },
-      {
-        "name": "plan-flow",
-        "path": "./commands/orquestadores/plan-flow.md",
-        "aliases": [
-          "execute-planning-workflow",
-          "planning-workflow"
-        ],
-        "complexity": 1.4,
-        "chains": [
-          "decompose",
-          "tdd",
-          "strategic-git",
-          "parallel",
-          "planning-documentation"
-        ],
-        "description": "Strategic planning and decomposition",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.66,
-          "usageCount": 2,
-          "lastUsed": "2025-07-01T00:55:30-06:00",
-          "averageExecutionTime": 316.8,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.594
-        }
-      },
-      {
-        "name": "execute",
-        "path": "./commands/orquestadores/execute.md",
-        "aliases": [
-          "execute-execution-workflow",
-          "execution-workflow"
-        ],
-        "complexity": 1.5,
-        "chains": [
-          "parallel",
-          "autonomous",
-          "verify-loops",
-          "strategic-git",
-          "patterns"
-        ],
-        "description": "Parallel execution with verification",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.65,
-          "usageCount": 2,
-          "lastUsed": "2025-07-07T00:55:30-06:00",
-          "averageExecutionTime": 318.0,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.585
-        }
-      },
-      {
-        "name": "verify-flow",
-        "path": "./commands/orquestadores/verify-flow.md",
-        "aliases": [
-          "execute-verification-workflow",
-          "verification-workflow"
-        ],
-        "complexity": 1.4,
-        "chains": [
-          "verify-scope",
-          "math-verify",
-          "confidence",
-          "verify-loops",
-          "patterns"
-        ],
-        "description": "Multi-dimensional verification",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.66,
-          "usageCount": 1,
-          "lastUsed": "2025-07-07T00:55:30-06:00",
-          "averageExecutionTime": 316.8,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.594
-        }
-      },
-      {
-        "name": "doc-flow",
-        "path": "./commands/orquestadores/doc-flow.md",
-        "aliases": [
-          "execute-documentation-workflow",
-          "documentation-workflow"
-        ],
-        "complexity": 1.3,
-        "chains": [
-          "living-documentation",
-          "single-source-truth",
-          "crystallize",
-          "knowledge-hierarchy",
-          "validate-sys",
-          "sync-docs"
-        ],
-        "description": "Living documentation evolution",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.67,
-          "usageCount": 1,
-          "lastUsed": "2025-06-29T00:55:30-06:00",
-          "averageExecutionTime": 315.6,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.603
-        }
-      },
-      {
-        "name": "orchestrate",
-        "path": "./commands/orquestadores/orchestrate.md",
-        "aliases": [
-          "execute-command-orchestration",
-          "command-orchestration-workflow"
-        ],
-        "complexity": 1.4,
-        "chains": [
-          "decision",
-          "intelligent-fallback",
-          "dynamic-dependency-analysis"
-        ],
-        "description": "Intelligent routing and command chaining",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.66,
-          "usageCount": 4,
-          "lastUsed": "2025-07-10T00:55:30-06:00",
-          "averageExecutionTime": 316.8,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.594
-        }
-      },
-      {
-        "name": "quick-explore",
-        "path": "./commands/orquestadores/quick-explore.md",
-        "aliases": [
-          "qe"
-        ],
-        "complexity": 1.2,
-        "chains": [
-          "knowledge-hierarchy",
-          "explore",
-          "patterns"
-        ],
-        "description": "Exploración rápida optimizada sin overhead del meta-comando",
-        "status": "active",
-        "category": "optimized-orchestrator",
-        "optimization": {
-          "time_savings": 0.6,
-          "context_reduction": 0.75,
-          "parallel_benefit": 0.4
-        },
-        "metrics": {
-          "successRate": 0.68,
-          "usageCount": 2,
-          "lastUsed": "2025-06-29T00:55:30-06:00",
-          "averageExecutionTime": 314.4,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.612
-        }
-      },
-      {
-        "name": "rapid-prototype",
-        "path": "./commands/orquestadores/rapid-prototype.md",
-        "aliases": [
-          "rp"
-        ],
-        "complexity": 1.3,
-        "chains": [
-          "decompose",
-          "tdd",
-          "parallel",
-          "verify-loops"
-        ],
-        "description": "Prototipado ágil con paralelización automática y TDD integrado",
-        "status": "active",
-        "category": "optimized-orchestrator",
-        "optimization": {
-          "time_savings": 0.5,
-          "parallel_benefit": 0.6,
-          "tdd_integrated": true
-        },
-        "metrics": {
-          "successRate": 0.67,
-          "usageCount": 2,
-          "lastUsed": "2025-07-06T00:55:30-06:00",
-          "averageExecutionTime": 315.6,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.603
-        }
-      },
-      {
-        "name": "system-health",
-        "path": "./commands/orquestadores/system-health.md",
-        "aliases": [
-          "sh"
-        ],
-        "complexity": 1.1,
-        "chains": [
-          "validate-sys",
-          "sync-docs",
-          "registry-metrics-update",
-          "reorganize-system"
-        ],
-        "description": "Mantenimiento automático inteligente del sistema Context Engineering",
-        "status": "active",
-        "category": "optimized-orchestrator",
-        "optimization": {
-          "time_savings": 0.75,
-          "auto_scheduling": true,
-          "auto_remediation": true
-        },
-        "metrics": {
-          "successRate": 0.69,
-          "usageCount": 4,
-          "lastUsed": "2025-06-16T00:55:30-06:00",
-          "averageExecutionTime": 313.2,
-          "confidenceScore": 8.0,
-          "chainEfficiency": 0.621
-        }
-      }
-    ],
-    "meta": [
-      {
-        "name": "context-eng",
-        "path": "./commands/meta/context-eng.md",
-        "aliases": [
-          "activate-context-engineering",
-          "context-engineering",
-          "ce",
-          "smart-workflow",
-          "sw"
-        ],
-        "complexity": 2.0,
-        "activatesAll": true,
-        "description": "Universal meta-command activating all 42 principles",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.55,
-          "usageCount": 2,
-          "lastUsed": "2025-07-09T00:55:30-06:00",
-          "averageExecutionTime": 504.0,
-          "confidenceScore": 10.0,
-          "activationEfficiency": 0.5225
-        }
-      }
-    ],
-    "comportamiento": [
-      {
-        "name": "decision",
-        "path": "./commands/comportamiento/decision.md",
-        "aliases": [
-          "execute-decision-engine",
-          "decision-engine"
-        ],
-        "complexity": 1.2,
-        "description": "Script-integrated intelligent routing with mathematical triggers, auto-restart, and real execution validation",
-        "status": "active",
-        "version": "3.0",
-        "enhancements": [
-          "script_integration",
-          "test_trigger_system_validation",
-          "execute_commands_integration",
-          "progressive_thinking_integration",
-          "mathematical_formula_validation",
-          "real_time_script_monitoring",
-          "auto_restart_with_script_fallback",
-          "pipeline_automation_complete"
-        ],
-        "script_integration": {
-          "trigger_validation_script": "test-trigger-system.sh",
-          "execution_script": "execute-commands.sh",
-          "formula_library": "context_engineering_formulas.sh",
-          "progressive_analysis": "progressive-thinking.md",
-          "integration_status": "active"
-        },
-        "metrics": {
-          "successRate": 0.86,
-          "usageCount": 2,
-          "lastUsed": "2025-06-26T00:55:30-06:00",
-          "averageExecutionTime": 86.4,
-          "confidenceScore": 9.7,
-          "routingAccuracy": 0.8428,
-          "mandatoryValidationRate": 1.0,
-          "autoRestartSuccessRate": 0.95,
-          "convergenceRate": 0.92,
-          "confidenceImprovementRate": 0.85,
-          "complexityReductionRate": 0.78,
-          "parallelDetectionAccuracy": 0.93,
-          "triggerActivationAccuracy": 0.97,
-          "scriptValidationRate": 0.95,
-          "progressiveThinkingActivationRate": 0.88,
-          "mathematicalTriggersActive": true,
-          "scriptIntegrationActive": true,
-          "validationEnforcement": true,
-          "autoRestartEnabled": true,
-          "confidenceIntegrationEnabled": true,
-          "scriptSystemHealth": "healthy",
-          "triggerTestsPassed": 22,
-          "triggerTestsTotal": 22,
-          "formulaValidationAccuracy": 1.0,
-          "realTimeMonitoringActive": true,
-          "pipelineAutomationComplete": true
-        }
-      },
-      {
-        "name": "command-relationships",
-        "path": "./commands/comportamiento/command-relationships.md",
-        "complexity": 0.9,
-        "description": "Maps how commands interconnect and chain",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.89,
-          "usageCount": 13,
-          "lastUsed": "2025-07-10T00:55:30-06:00",
-          "averageExecutionTime": 82.8,
-          "confidenceScore": 9.7,
-          "mappingAccuracy": 0.97
-        }
-      },
-      {
-        "name": "sync-docs",
-        "path": "./commands/comportamiento/sync-docs.md",
-        "aliases": [
-          "synchronize-claude-documentation",
-          "sync-claude-md"
-        ],
-        "complexity": 1.1,
-        "description": "Intelligent context map with lazy loading: philosophical core + progressive thinking + dynamic principle loading",
-        "status": "active",
-        "version": "2.0",
-        "enhancements": [
-          "lazy_loading_system",
-          "philosophical_core_permanent_loading",
-          "progressive_thinking_integration",
-          "optimize_intelligent_writing_integration",
-          "cognitive_efficiency_optimization",
-          "auto_trigger_system",
-          "context_need_detection"
-        ],
-        "lazy_loading_integration": {
-          "permanent_context": [
-            "philosophical_foundations",
-            "progressive_thinking"
+        {
+          "name": "plan-flow",
+          "path": "./commands/executable/orchestration/plan-flow.md",
+          "aliases": [
+            "execute-planning-workflow",
+            "planning-workflow"
           ],
-          "dynamic_loading": [
-            "operational",
-            "technical",
-            "mathematical",
-            "validation",
-            "cognitive",
-            "adaptation"
-          ],
-          "cognitive_efficiency": "≤3_mental_steps",
-          "context_optimization": "active"
+          "complexity": 1.4,
+          "description": "Strategic planning and decomposition",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
         },
-        "metrics": {
-          "successRate": 0.87,
-          "usageCount": 4,
-          "lastUsed": "2025-06-25T00:55:30-06:00",
-          "averageExecutionTime": 85.2,
-          "confidenceScore": 9.7,
-          "syncAccuracy": 1.0,
-          "lazyLoadingEfficiency": 0.92,
-          "cognitiveEfficiencyScore": 0.96,
-          "contextDensityOptimization": 0.95,
-          "philosophicalCoreAvailability": 1.0,
-          "progressiveThinkingIntegration": 0.98,
-          "intelligentWritingApplication": 0.94,
-          "autoTriggerAccuracy": 0.93,
-          "contextReductionAchieved": 0.87,
-          "navigationEfficiency": 0.96
-        }
-      },
-      {
-        "name": "dynamic-dependency-analysis",
-        "path": "./commands/comportamiento/dynamic-dependency-analysis.md",
-        "complexity": 1.0,
-        "description": "Continuous dependency analysis and execution optimization",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.88,
-          "usageCount": 5,
-          "lastUsed": "2025-06-23T00:55:30-06:00",
-          "averageExecutionTime": 84.0,
-          "confidenceScore": 9.7,
-          "parallelizationEfficiency": 0.0,
-          "dependencyAccuracy": 0.0
-        }
-      },
-      {
-        "name": "intelligent-fallback",
-        "path": "./commands/comportamiento/intelligent-fallback.md",
-        "complexity": 1.1,
-        "description": "Intelligent recovery protocols and fallback strategy selection",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.87,
-          "usageCount": 3,
-          "lastUsed": "2025-07-08T00:55:30-06:00",
-          "averageExecutionTime": 85.2,
-          "confidenceScore": 9.7,
-          "recoveryAccuracy": 0.0,
-          "fallbackEfficiency": 0.0
-        }
-      },
-      {
-        "name": "validate-sys",
-        "path": "./commands/comportamiento/validate-sys.md",
-        "aliases": [
-          "validate-system-integrity",
-          "system-integrity"
-        ],
-        "complexity": 1.0,
-        "description": "Maintain system integrity automatically by verifying all project elements comply with established principles",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.88,
-          "usageCount": 4,
-          "lastUsed": "2025-06-19T00:55:30-06:00",
-          "averageExecutionTime": 84.0,
-          "confidenceScore": 9.7,
-          "complianceAccuracy": 0.0,
-          "remediationEfficiency": 0.0
-        }
-      },
-      {
-        "name": "monitor",
-        "path": "./commands/comportamiento/monitor.md",
-        "aliases": [
-          "monitor-trigger-system",
-          "trigger-monitor"
-        ],
-        "complexity": 1.0,
-        "description": "Script-integrated continuous trigger monitoring with real-time dashboard and mathematical validation",
-        "status": "active",
-        "version": "3.0",
-        "enhancements": [
-          "script_automation_bridge_monitoring",
-          "script_health_monitoring",
-          "mathematical_trigger_validation",
-          "progressive_thinking_monitoring",
-          "pipeline_automation_script_enhanced",
-          "real_time_script_dashboard",
-          "confidence_scoring_script_integration",
-          "automatic_escalation_with_script_diagnostics"
-        ],
-        "script_integration": {
-          "monitors_scripts": [
-            "test-trigger-system.sh",
-            "execute-commands.sh",
-            "progressive-thinking.md"
+        {
+          "name": "verify-flow",
+          "path": "./commands/executable/orchestration/verify-flow.md",
+          "aliases": [
+            "execute-verification-workflow",
+            "verification-workflow"
           ],
-          "script_health_monitoring": "active",
-          "mathematical_validation": "continuous"
-        },
-        "metrics": {
-          "successRate": 0.88,
-          "usageCount": 5,
-          "lastUsed": "2025-06-29T00:55:30-06:00",
-          "averageExecutionTime": 84.0,
-          "confidenceScore": 9.7,
-          "triggerAccuracy": 0.97,
-          "activationSpeed": 2.5,
-          "pipelineMonitoringRate": 1.0,
-          "dashboardUptime": 0.99,
-          "confidenceScoringIntegrationRate": 1.0,
-          "pipelineHealthScore": 9.2,
-          "autoEscalationRate": 0.03,
-          "scriptIntegrationHealth": 0.98,
-          "mathematicalValidationRate": 1.0,
-          "scriptTriggerTestsPassed": 22,
-          "scriptTriggerTestsTotal": 22,
-          "progressiveThinkingMonitoring": 0.95,
-          "pipelineAutomationEnabled": true,
-          "scriptIntegrationEnabled": true,
-          "realTimeDashboardEnabled": true,
-          "confidenceScoringIntegrationEnabled": true,
-          "automaticEscalationEnabled": true
+          "complexity": 1.4,
+          "description": "Multi-dimensional verification",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "orchestration"
         }
-      },
-      {
-        "name": "registry-metrics-update",
-        "path": "./commands/comportamiento/registry-metrics-update.md",
-        "complexity": 0.8,
-        "description": "Auto-update command registry with current metrics",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.9,
-          "usageCount": 4,
-          "lastUsed": "2025-06-21T00:55:30-06:00",
-          "averageExecutionTime": 81.6,
-          "confidenceScore": 9.7,
-          "updateAccuracy": 1.0,
-          "metricsIntegrationRate": 1.0
-        }
-      },
-      {
-        "name": "think-process",
-        "path": "./commands/comportamiento/think-process.md",
-        "aliases": [
-          "orchestrate-thinking-process",
-          "think-master"
-        ],
-        "complexity": 0.9,
-        "description": "Master thinking orchestration and cognitive optimization",
-        "status": "active",
-        "metrics": {
-          "successRate": 0.89,
-          "usageCount": 3,
-          "lastUsed": "2025-06-28T00:55:30-06:00",
-          "averageExecutionTime": 82.8,
-          "confidenceScore": 9.7,
-          "cognitiveOptimization": 0.0,
-          "thinkingOrchestration": 0.0
-        }
-      },
-      {
-        "name": "script-automation-bridge",
-        "path": "./commands/comportamiento/script-automation-bridge.md",
-        "complexity": 1.1,
-        "description": "Bridge de automatización que conecta scripts existentes con comportamiento LLM para automatización completa",
-        "status": "active",
-        "category": "automation-tools",
-        "script_integration": {
-          "connects_scripts": [
-            "test-trigger-system.sh",
-            "execute-commands.sh",
-            "context_engineering_formulas.sh",
-            "progressive-thinking.md"
+      ],
+      "verification": [
+        {
+          "name": "confidence",
+          "path": "./commands/executable/verification/confidence.md",
+          "aliases": [
+            "calculate-confidence-score",
+            "confidence-scoring"
           ],
-          "integration_type": "behavioral_bridge",
-          "automation_level": "fully_automated"
+          "complexity": 0.7,
+          "description": "Script-integrated multi-dimensional confidence measurement with mathematical precision",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
         },
-        "metrics": {
-          "successRate": 0.87,
-          "usageCount": 1,
-          "lastUsed": "2025-07-09T00:55:30-06:00",
-          "averageExecutionTime": 85.2,
-          "confidenceScore": 9.7,
-          "scriptIntegrationSuccess": 1.0,
-          "triggerValidationAccuracy": 0.97,
-          "executionBridgeSuccess": 0.93,
-          "progressiveThinkingActivation": 0.88,
-          "bridgeSystemHealth": "healthy",
-          "automationLevelAchieved": "fully_automated"
+        {
+          "name": "math-loops",
+          "path": "./commands/executable/verification/math-loops.md",
+          "aliases": [
+            "execute-mathematical-loops",
+            "mathematical-loops"
+          ],
+          "complexity": 0.8,
+          "description": "Iterative mathematical operations with precision toward objectives",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "math-verify",
+          "path": "./commands/executable/verification/math-verify.md",
+          "aliases": [
+            "verify-mathematics-loops",
+            "verify-mathematics",
+            "verify-math"
+          ],
+          "complexity": 0.8,
+          "description": "Recursive verification with mathematical precision and convergence guarantee",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "validate-command-content",
+          "path": "./commands/executable/verification/validate-command-content.md",
+          "aliases": [
+            "validate-content-quality",
+            "command-quality-validation"
+          ],
+          "complexity": 0.7,
+          "description": "Script-enhanced command content quality validation with mathematical precision",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "validate-sys",
+          "path": "./commands/executable/verification/validate-sys.md",
+          "aliases": [
+            "validate-system-integrity",
+            "system-integrity"
+          ],
+          "complexity": 1.0,
+          "description": "Maintain system integrity automatically by verifying all project elements",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "validate-tool-call-execution",
+          "path": "./commands/executable/verification/validate-tool-call-execution.md",
+          "complexity": 0.9,
+          "description": "Validate Tool Call Execution Bridging compliance with mathematical rigor",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "verify-loops",
+          "path": "./commands/executable/verification/verify-loops.md",
+          "aliases": [
+            "execute-verification-loops",
+            "verification-loops"
+          ],
+          "complexity": 0.7,
+          "description": "Iterative verification until confidence thresholds are met",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "verify-scope",
+          "path": "./commands/executable/verification/verify-scope.md",
+          "aliases": [
+            "liberate-verification-scope",
+            "verification-liberation"
+          ],
+          "complexity": 0.8,
+          "description": "Give AI comprehensive 'sight' into all execution result dimensions",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
+        },
+        {
+          "name": "writing-standards-validator",
+          "path": "./commands/executable/verification/writing-standards-validator.md",
+          "aliases": [
+            "validate-writing-standards",
+            "writing-compliance-validator",
+            "standards-validator"
+          ],
+          "complexity": 0.8,
+          "description": "Validate documentation against comprehensive writing standards with behavioral reinforcement, precision language, and evidence-based compliance",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "verification"
         }
-      }
-    ]
+      ],
+      "documentation": [
+        {
+          "name": "living-documentation",
+          "path": "./commands/executable/documentation/living-documentation.md",
+          "complexity": 0.7,
+          "description": "Documentation that evolves through usage and becomes single source of truth",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "sync-docs",
+          "path": "./commands/executable/documentation/sync-docs.md",
+          "aliases": [
+            "synchronize-claude-documentation",
+            "sync-claude-md"
+          ],
+          "complexity": 1.1,
+          "description": "Intelligent context map with lazy loading and progressive thinking integration",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "update-living-docs",
+          "path": "./commands/executable/documentation/update-living-docs.md",
+          "complexity": 0.7,
+          "description": "Manually trigger synchronization of all living documentation",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "modularization-protocol",
+          "path": "./commands/executable/documentation/modularization-protocol.md",
+          "aliases": [
+            "modularization",
+            "content-modularization",
+            "cross-reference-optimization"
+          ],
+          "complexity": 0.8,
+          "description": "Execute comprehensive modularization protocol with P55/P56 compliance, mathematical validation, and context reduction optimization",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "modularization-protocol-enhanced",
+          "path": "./commands/executable/documentation/modularization-protocol-enhanced.md",
+          "aliases": [
+            "modularization-enhanced",
+            "enhanced-modularization",
+            "content-modularization-enhanced",
+            "cross-reference-optimization-enhanced",
+            "rule-compliant-modularization"
+          ],
+          "complexity": 0.9,
+          "description": "Execute enhanced comprehensive modularization protocol with complete 6-module command rules integration, advanced P55/P56 compliance, mathematical validation, and context reduction optimization",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "documentation"
+        }
+      ],
+      "execution": [
+        {
+          "name": "git-worktrees-parallel",
+          "path": "./commands/executable/execution/git-worktrees-parallel.md",
+          "complexity": 0.7,
+          "description": "Multi-solution exploration through parallel worktree development",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "execution"
+        },
+        {
+          "name": "parallel-tool-execution",
+          "path": "./commands/executable/execution/parallel-tool-execution.md",
+          "complexity": 0.8,
+          "description": "Execute multiple independent tool calls simultaneously in a single message",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "execution"
+        },
+        {
+          "name": "strategic-git",
+          "path": "./commands/executable/execution/strategic-git.md",
+          "complexity": 0.6,
+          "description": "Version control as safety net and progress documentation",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "execution"
+        }
+      ],
+      "automation": [
+        {
+          "name": "script-automation-bridge",
+          "path": "./commands/executable/automation/script-automation-bridge.md",
+          "complexity": 1.1,
+          "description": "Bridge de automatización que conecta scripts existentes con comportamiento LLM",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "automation"
+        }
+      ],
+      "maintenance": [
+        {
+          "name": "registry-metrics-update",
+          "path": "./commands/executable/maintenance/registry-metrics-update.md",
+          "complexity": 0.8,
+          "description": "Auto-update command registry with current metrics",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "maintenance"
+        },
+        {
+          "name": "system-health",
+          "path": "./commands/executable/maintenance/system-health.md",
+          "aliases": [
+            "sh"
+          ],
+          "complexity": 1.1,
+          "description": "Mantenimiento automático inteligente del sistema Context Engineering",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "maintenance"
+        }
+      ],
+      "mapping": [
+        {
+          "name": "command-relationships",
+          "path": "./commands/executable/mapping/command-relationships.md",
+          "complexity": 0.9,
+          "description": "Maps how commands interconnect and chain",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "mapping"
+        }
+      ],
+      "selection": [
+        {
+          "name": "multi-agent-orchestration",
+          "path": "./commands/executable/selection/multi-agent-orchestration.md",
+          "complexity": 0.9,
+          "description": "Specialized agent deployment and coordination up to 10 agents",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "selection"
+        }
+      ],
+      "behavior": [
+        {
+          "name": "monitor",
+          "path": "./commands/executable/behavior/monitor.md",
+          "aliases": [
+            "monitor-trigger-system",
+            "trigger-monitor"
+          ],
+          "complexity": 1.0,
+          "description": "Script-integrated continuous trigger monitoring with real-time dashboard",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "behavior"
+        },
+        {
+          "name": "dynamic-dependency-analysis",
+          "path": "./commands/executable/behavior/dynamic-dependency-analysis.md",
+          "complexity": 1.0,
+          "description": "Continuous dependency analysis and execution optimization",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "behavior"
+        }
+      ],
+      "meta": [
+        {
+          "name": "context-eng",
+          "path": "./commands/executable/meta/context-eng.md",
+          "aliases": [
+            "activate-context-engineering",
+            "context-engineering",
+            "ce",
+            "smart-workflow",
+            "sw"
+          ],
+          "complexity": 2.0,
+          "description": "Universal meta-command activating all 66 commands",
+          "status": "active",
+          "classification": "executable",
+          "subcategory": "meta"
+        }
+      ]
+    },
+    "behavioral": {
+      "intelligence": [
+        {
+          "name": "autonomous",
+          "path": "./commands/behavioral/intelligence/autonomous.md",
+          "aliases": [
+            "enable-autonomous-mode",
+            "enable-dont-control"
+          ],
+          "complexity": 0.8,
+          "description": "Activate autonomous execution mode within intelligent frameworks",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "complexity",
+          "path": "./commands/behavioral/intelligence/complexity.md",
+          "aliases": [
+            "complexity-enforcement"
+          ],
+          "complexity": 0.6,
+          "description": "Mathematical complexity measurement and automatic blocking",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "decompose",
+          "path": "./commands/behavioral/intelligence/decompose.md",
+          "aliases": [
+            "objective-decomposition"
+          ],
+          "complexity": 0.8,
+          "description": "Break large objectives into verifiable parts",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "evolution-ready-architecture",
+          "path": "./commands/behavioral/intelligence/evolution-ready-architecture.md",
+          "complexity": 0.8,
+          "description": "System designed for unlimited growth and adaptation",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "evolve-intelligence",
+          "path": "./commands/behavioral/intelligence/evolve-intelligence.md",
+          "complexity": 0.7,
+          "description": "Intelligence as Natural Phenomenon",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "invisible-excellence",
+          "path": "./commands/behavioral/intelligence/invisible-excellence.md",
+          "complexity": 0.8,
+          "description": "Architecture feels like magic while remaining debuggable",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "knowledge-hierarchy",
+          "path": "./commands/behavioral/intelligence/knowledge-hierarchy.md",
+          "complexity": 0.7,
+          "description": "Systematic knowledge search from local to external",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "meta-core",
+          "path": "./commands/behavioral/intelligence/meta-core.md",
+          "aliases": [
+            "activate-meta-principle",
+            "meta-principle"
+          ],
+          "complexity": 0.8,
+          "description": "Stop trying to control the model. Enable it.",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "modular-composition",
+          "path": "./commands/behavioral/intelligence/modular-composition.md",
+          "complexity": 0.6,
+          "description": "Build complexity through composition, not duplication",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "orchestrate-intelligence",
+          "path": "./commands/behavioral/intelligence/orchestrate-intelligence.md",
+          "complexity": 0.9,
+          "description": "Coordinate specialized agents for complex challenges",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "organizational-architecture",
+          "path": "./commands/behavioral/intelligence/organizational-architecture.md",
+          "complexity": 0.6,
+          "description": "Strict organization structure for scalable documentation growth",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "progress",
+          "path": "./commands/behavioral/intelligence/progress.md",
+          "aliases": [
+            "execute-progressive-analysis",
+            "progressive-intelligence"
+          ],
+          "complexity": 0.9,
+          "description": "Deepen understanding through staged analysis and intelligence evolution",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "reorganize-system",
+          "path": "./commands/behavioral/intelligence/reorganize-system.md",
+          "complexity": 0.9,
+          "description": "Systematic methodology for reorganizing command structures",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "simplicity",
+          "path": "./commands/behavioral/intelligence/simplicity.md",
+          "aliases": [
+            "mathematical-simplicity"
+          ],
+          "complexity": 0.7,
+          "description": "Enforce simplicity through mathematical measurement",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "systematic-quality-improvement",
+          "path": "./commands/behavioral/intelligence/systematic-quality-improvement.md",
+          "aliases": [
+            "quality-improvement-workflow",
+            "four-stage-enhancement",
+            "systematic-enhancement"
+          ],
+          "complexity": 0.8,
+          "description": "Execute systematic quality improvement using four-stage enhancement methodology",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "tdd",
+          "path": "./commands/behavioral/intelligence/tdd.md",
+          "complexity": 0.7,
+          "description": "Define verification criteria before implementation",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "think-process",
+          "path": "./commands/behavioral/intelligence/think-process.md",
+          "aliases": [
+            "orchestrate-thinking-process",
+            "think-master"
+          ],
+          "complexity": 0.9,
+          "description": "Master thinking orchestration and cognitive optimization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        },
+        {
+          "name": "thinking",
+          "path": "./commands/behavioral/intelligence/thinking.md",
+          "aliases": [
+            "activate-progressive-thinking",
+            "progressive-thinking"
+          ],
+          "complexity": 0.9,
+          "description": "Execute complete progressive thinking sequence for deep strategic analysis",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "intelligence"
+        }
+      ],
+      "optimization": [
+        {
+          "name": "context-economy",
+          "path": "./commands/behavioral/optimization/context-economy.md",
+          "complexity": 0.8,
+          "description": "80% context reduction with 100% functionality preservation",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "context-over-commands",
+          "path": "./commands/behavioral/optimization/context-over-commands.md",
+          "complexity": 0.6,
+          "description": "Rich context enables autonomous excellence",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-cognitive-organization",
+          "path": "./commands/behavioral/optimization/optimize-cognitive-organization.md",
+          "complexity": 0.8,
+          "description": "Optimal cognitive organization for maximum understanding",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-complexity",
+          "path": "./commands/behavioral/optimization/optimize-complexity.md",
+          "complexity": 0.9,
+          "description": "Architecture that feels like magic while remaining debuggable",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-context",
+          "path": "./commands/behavioral/optimization/optimize-context.md",
+          "complexity": 0.7,
+          "description": "Load minimum necessary context while maintaining effectiveness",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "optimize-intelligent-writing",
+          "path": "./commands/behavioral/optimization/optimize-intelligent-writing.md",
+          "complexity": 0.7,
+          "description": "Unified intelligent writing standards combining natural language with cognitive optimization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        },
+        {
+          "name": "single-source-truth",
+          "path": "./commands/behavioral/optimization/single-source-truth.md",
+          "complexity": 0.6,
+          "description": "Establish single authoritative source for each functionality",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "optimization"
+        }
+      ],
+      "exploration": [
+        {
+          "name": "explore",
+          "path": "./commands/behavioral/exploration/explore.md",
+          "aliases": [
+            "exploration-first"
+          ],
+          "complexity": 0.8,
+          "description": "Mandatory exploration before execution",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "exploration"
+        },
+        {
+          "name": "quick-explore",
+          "path": "./commands/behavioral/exploration/quick-explore.md",
+          "aliases": [
+            "qe"
+          ],
+          "complexity": 0.8,
+          "description": "Exploración rápida optimizada sin overhead",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "exploration"
+        },
+        {
+          "name": "quick-explore-orquestador",
+          "path": "./commands/behavioral/exploration/quick-explore-orquestador.md",
+          "complexity": 1.2,
+          "description": "Orchestrated quick exploration with workflow optimization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "exploration"
+        }
+      ],
+      "verification": [
+        {
+          "name": "thresholds",
+          "path": "./commands/behavioral/verification/thresholds.md",
+          "aliases": [
+            "threshold-enforcement"
+          ],
+          "complexity": 0.6,
+          "description": "Mathematical thresholds with automatic enforcement",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "verification"
+        }
+      ],
+      "documentation": [
+        {
+          "name": "crystallize",
+          "path": "./commands/behavioral/documentation/crystallize.md",
+          "aliases": [
+            "crystallize-patterns"
+          ],
+          "complexity": 0.8,
+          "description": "Transform repeated patterns into reusable commands",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "patterns",
+          "path": "./commands/behavioral/documentation/patterns.md",
+          "aliases": [
+            "recognize-patterns"
+          ],
+          "complexity": 0.8,
+          "description": "Identify reusable patterns for crystallization",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "planning-documentation",
+          "path": "./commands/behavioral/documentation/planning-documentation.md",
+          "complexity": 0.9,
+          "description": "Document planning trees for complete traceability",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        },
+        {
+          "name": "technical-nomenclature",
+          "path": "./commands/behavioral/documentation/technical-nomenclature.md",
+          "complexity": 0.9,
+          "description": "Universal methodology for establishing technical nomenclature standards",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "documentation"
+        }
+      ],
+      "execution": [
+        {
+          "name": "conversation-lifecycle",
+          "path": "./commands/behavioral/execution/conversation-lifecycle.md",
+          "complexity": 0.8,
+          "description": "Manage work in conversation units with clear closure",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "execution"
+        },
+        {
+          "name": "parallel",
+          "path": "./commands/behavioral/execution/parallel.md",
+          "aliases": [
+            "parallel-over-sequential"
+          ],
+          "complexity": 0.9,
+          "description": "Execute multiple approaches simultaneously",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "execution"
+        }
+      ],
+      "behavior": [
+        {
+          "name": "intelligent-fallback",
+          "path": "./commands/behavioral/behavior/intelligent-fallback.md",
+          "complexity": 1.1,
+          "description": "Intelligent recovery protocols and fallback strategy selection",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "behavior"
+        }
+      ],
+      "selection": [
+        {
+          "name": "model-selection",
+          "path": "./commands/behavioral/selection/model-selection.md",
+          "complexity": 0.6,
+          "description": "Select optimal AI model based on task complexity",
+          "status": "active",
+          "classification": "behavioral",
+          "subcategory": "selection"
+        }
+      ]
+    },
+    "cores": {
+      "verification": [
+        {
+          "name": "verification-engine",
+          "path": "./commands/cores/verification-engine.md",
+          "aliases": [
+            "core-verification",
+            "verification-core",
+            "common-verification"
+          ],
+          "complexity": 1.2,
+          "description": "Núcleo consolidado de funciones comunes de verificación: cálculo de confianza, validación de precisión, reporting estructurado, integración de scripts y thresholds dinámicos",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "verification"
+        }
+      ],
+      "documentation": [
+        {
+          "name": "documentation-sync",
+          "path": "./commands/cores/documentation-sync.md",
+          "aliases": [
+            "core-documentation",
+            "documentation-core",
+            "common-documentation"
+          ],
+          "complexity": 1.1,
+          "description": "Núcleo consolidado de funciones comunes de documentación: sincronización automática, detección de cambios, lazy loading, cross-referencing y versionado",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "documentation"
+        }
+      ],
+      "optimization": [
+        {
+          "name": "optimization-framework",
+          "path": "./commands/cores/optimization-framework.md",
+          "aliases": [
+            "core-optimization",
+            "optimization-core",
+            "common-optimization"
+          ],
+          "complexity": 1.3,
+          "description": "Núcleo consolidado de funciones comunes de optimización: análisis de contexto, métricas de performance, reducción de complejidad, economía cognitiva y feedback loops",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "optimization"
+        }
+      ],
+      "cognitive": [
+        {
+          "name": "cognitive-processor",
+          "path": "./commands/cores/cognitive-processor.md",
+          "aliases": [
+            "core-cognitive",
+            "cognitive-core",
+            "common-thinking"
+          ],
+          "complexity": 1.4,
+          "description": "Núcleo consolidado de funciones comunes de procesamiento cognitivo: análisis multi-dimensional, descomposición de problemas, síntesis de información, progresión lógica y meta-cognición",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "cognitive"
+        }
+      ],
+      "orchestration": [
+        {
+          "name": "orchestration-hub",
+          "path": "./commands/cores/orchestration-hub.md",
+          "aliases": [
+            "core-orchestration",
+            "orchestration-core",
+            "common-orchestration"
+          ],
+          "complexity": 1.5,
+          "description": "Núcleo consolidado de funciones comunes de orquestación: coordinación de workflows, delegación inteligente, monitoreo de progreso, sincronización multi-agente y error handling",
+          "status": "active",
+          "classification": "cores",
+          "subcategory": "orchestration"
+        }
+      ]
+    }
   },
   "statistics": {
-    "totalCommands": 67,
-    "activeCommands": 67,
-    "pendingCommands": 0,
-    "operacionales": 44,
-    "decision": 7,
-    "orquestadores": 7,
-    "comportamiento": 8,
-    "meta": 1,
-    "optimizedOrchestrators": 4,
+    "totalCommands": 74,
+    "activeCommands": 74,
+    "executableCommands": 31,
+    "behavioralCommands": 38,
+    "coreCommands": 5,
     "overallSuccessRate": 0.8768656716417909,
     "totalUsageCount": 204,
     "averageConfidenceScore": 9.335820895522394,
-    "lastCalculated": "2025-07-16T00:55:30-06:00",
-    "enhancementIntegration": {
-      "scriptIntegratedCommands": 1,
-      "toolCallEnforcedCommands": 1,
-      "mathematicalValidationActive": true,
-      "validationAutomationFramework": "active"
-    },
-    "usagePatterns": [
-      {
-        "pattern": "meta-core → decision → command-relationships",
-        "frequency": 5,
-        "successRate": 0.96,
-        "averageExecutionTime": 250,
-        "lastOccurrence": "2025-07-15T11:45:00Z"
-      },
-      {
-        "pattern": "decision → command-relationships",
-        "frequency": 8,
-        "successRate": 0.94,
-        "averageExecutionTime": 130,
-        "lastOccurrence": "2025-07-15T11:30:00Z"
-      }
-    ],
-    "crystallizationCandidates": [
-      {
-        "pattern": "registry-metrics-update",
-        "description": "Auto-update command registry with current metrics",
-        "usageCount": 3,
-        "successRate": 1.0,
-        "readyForCrystallization": true,
-        "detectedAt": "2025-07-15T12:00:00Z"
-      },
-      {
-        "pattern": "improvement-methodology-pattern",
-        "description": "Four-stage systematic improvement workflow (Discovery → Planning → Execution → Verification)",
-        "usageCount": 1,
-        "successRate": 0.942,
-        "qualityImprovementRate": 0.942,
-        "redundancyReduction": 0.733,
-        "readyForCrystallization": true,
-        "detectedAt": "2025-07-16T15:30:00-06:00",
-        "sourceCommand": "validate-command-content",
-        "patternLocation": "./docs/patterns/improvement-methodology-pattern.md"
-      }
-    ]
-  },
-  "autoLoading": {
-    "rules": [
-      {
-        "condition": "confidence < 0.5",
-        "load": [
-          "core-principles.md"
-        ],
-        "metrics": {
-          "triggeredCount": 2,
-          "successRate": 1.0,
-          "lastTriggered": "2025-07-14T15:30:00Z"
-        }
-      },
-      {
-        "condition": "routing_needed",
-        "load": [
-          "decision.md"
-        ],
-        "metrics": {
-          "triggeredCount": 8,
-          "successRate": 0.92,
-          "lastTriggered": "2025-07-15T11:30:00Z"
-        }
-      },
-      {
-        "condition": "command_invoked",
-        "load": [
-          "command_definition"
-        ],
-        "metrics": {
-          "triggeredCount": 15,
-          "successRate": 0.96,
-          "lastTriggered": "2025-07-15T11:45:00Z"
-        }
-      }
-    ],
-    "optimizationMetrics": {
-      "contextReduction": 0.78,
-      "loadTimeImprovement": 0.65,
-      "accuracyMaintained": 0.98
-    }
-  },
-  "livingDocumentation": {
-    "enabled": true,
-    "updateFrequency": "on_execution",
-    "patternThreshold": {
-      "usageCount": 3,
-      "successRate": 0.85
-    },
-    "metrics": {
-      "documentsUpdated": 12,
-      "patternsDetected": 7,
-      "crystallizationEvents": 1,
-      "lastUpdate": "2025-07-15T12:00:00Z",
-      "evolutionRate": 0.23
-    }
-  },
-  "completion": {
-    "overallStatus": "completed",
-    "phase1": {
-      "name": "Command Creation",
-      "progress": 1.0,
-      "completed": [
-        "all_atomic_commands",
-        "all_orchestrator_commands",
-        "meta_command",
-        "system_commands",
-        "dynamic_dependency_analysis"
-      ],
-      "pending": []
-    },
-    "phase2": {
-      "name": "Pattern Crystallization",
-      "progress": 1.0,
-      "completed": [
-        "command_ecosystem",
-        "natural_language_format",
-        "principle_mapping"
-      ],
-      "pending": []
-    },
-    "phase3": {
-      "name": "Living Documentation",
-      "progress": 1.0,
-      "completed": [
-        "complete_command_system",
-        "registry_synchronization",
-        "context_optimization"
-      ],
-      "pending": []
-    },
-    "targetMetrics": {
-      "commandSuccessRate": 0.95,
-      "patternRecognition": 0.85,
-      "documentationCurrency": 7,
-      "modelSelectionAccuracy": 0.9,
-      "conversationContinuity": 1.0
-    },
-    "currentMetrics": {
-      "commandSuccessRate": 1.0,
-      "patternRecognition": 1.0,
-      "documentationCurrency": 0,
-      "modelSelectionAccuracy": 1.0,
-      "conversationContinuity": 1.0
-    }
+    "lastCalculated": "2025-07-16T19:30:00Z"
   }
 }

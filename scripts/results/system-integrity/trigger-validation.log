@@ -4,30 +4,37 @@
 [0;35m🔍 PHASE 1: TRIGGER CONDITION PARSING[0m
 =====================================
 [0;36m📝 Scanning command files for triggers...[0m
-  ✅ Triggers found in: script-automation-bridge
-  ✅ Triggers found in: intelligent-fallback
-  ✅ Triggers found in: validate-sys
-  ✅ Triggers found in: README
   ✅ Triggers found in: monitor
+  ✅ Triggers found in: command-relationships
+  ✅ Triggers found in: living-documentation
   ✅ Triggers found in: sync-docs
-  ✅ Triggers found in: registry-metrics-update
-  ✅ Triggers found in: think-process
+  ✅ Triggers found in: modularization-protocol
   ✅ Triggers found in: context-eng
-  ✅ Triggers found in: optimize-complexity
-  ✅ Triggers found in: optimize-context
-  ✅ Triggers found in: single-source-truth
-  ✅ Triggers found in: patterns
-  ✅ Triggers found in: crystallize
+  ✅ Triggers found in: context-eng-compliant
+  ✅ Triggers found in: writing-standards-validator
   ✅ Triggers found in: math-loops
   ✅ Triggers found in: verify-loops
+  ✅ Triggers found in: validate-sys
   ✅ Triggers found in: validate-command-content
   ✅ Triggers found in: verify-scope
   ✅ Triggers found in: validate-tool-call-execution
-  ✅ Triggers found in: thresholds
   ✅ Triggers found in: confidence
   ✅ Triggers found in: math-verify
+  ✅ Triggers found in: explicit-decision-trees
+  ✅ Triggers found in: decision
+  ✅ Triggers found in: plan-flow
+  ✅ Triggers found in: verify-flow
+  ✅ Triggers found in: orchestrate
+  ✅ Triggers found in: execute
+  ✅ Triggers found in: discover
+  ✅ Triggers found in: system-health
+  ✅ Triggers found in: registry-metrics-update
+  ✅ Triggers found in: multi-agent-orchestration
+  ✅ Triggers found in: script-automation-bridge
+  ✅ Triggers found in: intelligent-fallback
+  ✅ Triggers found in: patterns
+  ✅ Triggers found in: crystallize
   ✅ Triggers found in: autonomous
-  ✅ Triggers found in: explore
   ✅ Triggers found in: thinking
   ✅ Triggers found in: organizational-architecture
   ✅ Triggers found in: reorganize-system
@@ -41,26 +48,19 @@
   ✅ Triggers found in: decompose
   ✅ Triggers found in: systematic-quality-improvement
   ✅ Triggers found in: evolve-intelligence
+  ✅ Triggers found in: think-process
   ✅ Triggers found in: complexity
-  ✅ Triggers found in: parallel
-  ✅ Triggers found in: README
-  ✅ Triggers found in: living-documentation
-  ✅ Triggers found in: plan-flow
-  ✅ Triggers found in: system-health
-  ✅ Triggers found in: verify-flow
-  ✅ Triggers found in: doc-flow
-  ✅ Triggers found in: rapid-prototype
+  ✅ Triggers found in: optimize-complexity
+  ✅ Triggers found in: optimize-context
+  ✅ Triggers found in: single-source-truth
+  ✅ Triggers found in: explore
+  ✅ Triggers found in: quick-explore-orquestador
   ✅ Triggers found in: quick-explore
-  ✅ Triggers found in: execute
+  ✅ Triggers found in: thresholds
+  ✅ Triggers found in: parallel
   ✅ Triggers found in: model-selection
-  ✅ Triggers found in: explicit-decision-trees
-  ✅ Triggers found in: command-relationships
-  ✅ Triggers found in: multi-agent-orchestration
   ✅ Triggers found in: README
-  ✅ Triggers found in: orchestrate
-  ✅ Triggers found in: decision
-  ✅ Triggers found in: discover
-📊 Scanned 73 files, found triggers in 56 commands
+📊 Scanned 71 files, found triggers in 56 commands
 
 [0;35m🧮 PHASE 2: MATHEMATICAL TRIGGER VALIDATION[0m
 ============================================
