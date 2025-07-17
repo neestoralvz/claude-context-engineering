@@ -14,7 +14,7 @@
         ],
         "complexity_range": "0.6-2.0",
         "function": "Acciones ejecutables (Qué hacer)",
-        "count": 38
+        "count": 31
       },
       "behavioral": {
         "description": "Comandos que definen patrones de pensamiento, enfoques filosóficos, o marcos cognitivos",
@@ -38,7 +38,7 @@
         ],
         "complexity_range": "1.0-1.5",
         "function": "Funciones comunes centralizadas (Núcleos base)",
-        "count": 5
+        "count": 6
       },
       "shared": {
         "description": "Componentes compartidos y plantillas universales para integración entre sistemas",
@@ -50,7 +50,7 @@
         ],
         "complexity_range": "0.5-1.0",
         "function": "Utilidades compartidas (Componentes universales)",
-        "count": 1
+        "count": 2
       }
     },
     "subcategories": {
@@ -1025,15 +1025,15 @@
     }
   },
   "statistics": {
-    "totalCommands": 81,
-    "activeCommands": 81,
-    "executableCommands": 38,
+    "totalCommands": 76,
+    "activeCommands": 76,
+    "executableCommands": 31,
     "behavioralCommands": 37,
-    "coreCommands": 5,
-    "sharedCommands": 1,
+    "coreCommands": 6,
+    "sharedCommands": 2,
     "overallSuccessRate": 0.8768656716417909,
     "totalUsageCount": 204,
     "averageConfidenceScore": 9.335820895522394,
-    "lastCalculated": "2025-07-17T12:14:08Z"
+    "lastCalculated": "2025-07-17T08:30:00Z"
   }
 }
