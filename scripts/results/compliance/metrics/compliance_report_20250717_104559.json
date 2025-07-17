@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-07-17T10:45:59-06:00",
+  "compliance_metrics": {
+    "tool_execution_rate": 0,
+    "script_execution_rate": 0,
+    "transparency_rate": 0,
+    "real_work_rate": 50.00,
+    "principle_compliance_rate": 76.82
+  },
+  "thresholds": {
+    "tool_execution": 80,
+    "script_execution": 95,
+    "transparency": 90,
+    "real_work": 70,
+    "principle_compliance": 85
+  },
+  "compliance_status": {
+    "tool_execution": 0,
+    "script_execution": 0,
+    "transparency": 0,
+    "real_work": 0,
+    "principle_compliance": 0
+  },
+  "overall_compliance": 25.36400000000000000000
+}

@@ -1,0 +1,59 @@
+{
+  "command_count_report": {
+    "timestamp": "2025-07-17T10:42:45-06:00",
+    "report_date": "20250717-104245",
+    "methodology": {
+      "description": "Automated command counting with validation",
+      "criteria": [
+        "Must be .md file",
+        "Must not be README.md",
+        "Must not be in backup/archived directories",
+        "Must not be in examples directory",
+        "Must contain command structure or triggers"
+      ],
+      "directories_analyzed": [
+        "docs/commands/",
+        ".claude/commands/"
+      ]
+    },
+    "counts": {
+      "docs_commands": {
+        "total": 136,
+        "behavioral": 41,
+        "executable": 70,
+        "cores": 8,
+        "shared": 16,
+        "other": 1
+      },
+      "claude_commands": {
+        "total": 81,
+        "behavioral": 37,
+        "executable": 38,
+        "cores": 5,
+        "shared": 1,
+        "other": 0
+      }
+    },
+    "discrepancies": {
+      "total_found": 9,
+      "details": {"total_count":"docs:136 vs claude:81 (diff:55)","behavioral_count":"docs:41 vs claude:37 (diff:4)","executable_count":"docs:70 vs claude:38 (diff:32)","cores_count":"docs:8 vs claude:5 (diff:3)","shared_count":"docs:16 vs claude:1 (diff:15)","other_count":"docs:1 vs claude:0 (diff:1)","missing_in_claude":"64 files","missing_in_docs":"9 files","registry_total":"registry:76 vs counted:81 (diff:-5)"}
+    },
+    "registry_validation": {"registry_total":76,"counted_total":81,"matches":false},
+    "summary": {
+      "total_unique_commands": 81,
+      "synchronization_status": "DISCREPANCIES_DETECTED",
+      "validation_status": "FAILED",
+      "recommendations": [
+        "Resolve 9 discrepancies for full synchronization",
+        "Regular automated counting maintains accuracy",
+        "Integration with CI/CD ensures continuous validation",
+        "Registry synchronization maintains system coherence"
+      ]
+    },
+    "ci_cd_integration": {
+      "exit_code": 1,
+      "suitable_for_automation": true,
+      "monitoring_ready": true
+    }
+  }
+}

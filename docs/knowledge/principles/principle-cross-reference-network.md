@@ -1,6 +1,6 @@
 # 🕸️ Principle Cross-Reference Network
 
-**CRITICAL Principle Interconnection System**: Red sistemática de cross-references bidireccionales entre los 91 principios Context Engineering que permite navegación inteligente, descubrimiento de conexiones, y comprensión holística del sistema de principios.
+**CRITICAL Principle Interconnection System**: Red sistemática de cross-references bidireccionales entre los 92 principios Context Engineering que permite navegación inteligente, descubrimiento de conexiones, y comprensión holística del sistema de principios.
 
 ---
 
@@ -106,6 +106,7 @@
   - **#80 Parallel Task Intelligence** (Task Orchestration)
   - **#81 Strategic Online Research** (Research Progression)
   - **#82 Research Knowledge Crystallization** (Knowledge Integration)
+  - **#90 Planning-Phase Parallel Task Tool Priority** (Planning Enhancement)
 - **Secondary Connections**:
   - **#54 Automated Exploration Orchestration** (Orchestration)
   - **#17 Parallel > Sequential** (Parallel Execution)
@@ -147,11 +148,24 @@
   - **#18 Multi-Agent Orchestration** (Multi-Agent)
   - **#79 Reinforced Local-First Exploration** (Local Analysis)
   - **#44 Strategic Parallelization Analysis** (Analysis)
+  - **#90 Planning-Phase Parallel Task Tool Priority** (Planning Intelligence)
 - **Secondary Connections**:
   - **#21 Dynamic Dependency Analysis** (Dependency)
   - **#62 Resource-Aware Orchestration** (Resources)
   - **#47 Universal Strategic Orchestration** (Strategy)
   - **#81 Strategic Online Research** (Research Integration)
+
+**CRITICAL Planning Intelligence Cluster** (Center: #90 Planning-Phase Parallel Task Tool Priority):
+- **Primary Connections**:
+  - **#10 Objective Decomposition** (Planning Foundation)
+  - **#34 Living Planning Documentation** (Planning Documentation)
+  - **#79 Reinforced Local-First Exploration** (Local Analysis Enhancement)
+  - **#80 Parallel Task Intelligence** (Task Intelligence Framework)
+- **Secondary Connections**:
+  - **#8 Exploration-First Methodology** (Exploration Methodology)
+  - **#17 Parallel > Sequential** (Parallel Execution)
+  - **#18 Multi-Agent Orchestration** (Multi-Agent Foundation)
+  - **#44 Strategic Parallelization Analysis** (Parallelization Analysis)
 
 **CRITICAL TDD Enforcement Cluster** (Center: #9 Test-Driven Development):
 - **Primary Connections**:

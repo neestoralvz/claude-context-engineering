@@ -60,33 +60,31 @@
 - **INTELLIGENT ACTIVATION TRIGGERS**: Mathematical triggers activate optimal command combinations automatically
 - **SYSTEMATIC COVERAGE VALIDATION**: Continuous verification that no relevant commands are overlooked
 
-**Command Orchestration Framework**:
-```yaml
-explicit_decision_trees:
-  comprehensive_command_evaluation:
-    behavioral_commands: "MANDATORY: Evaluate all 38 behavioral commands for cognitive framework needs"
-    executable_commands: "MANDATORY: Evaluate all 30 executable commands for implementation requirements"
-    core_commands: "MANDATORY: Evaluate all 6 core commands for infrastructure needs"
-    shared_commands: "MANDATORY: Evaluate all 2 shared commands for integration requirements"
-    
-  situational_command_mapping:
-    planning_situations: "Map planning contexts to strategic command combinations (exploration, decomposition, tdd)"
-    execution_situations: "Map execution contexts to operational command combinations (parallel, orchestration, verification)"
-    analysis_situations: "Map analysis contexts to intelligence command combinations (thinking, complexity, mathematical)"
-    maintenance_situations: "Map maintenance contexts to system command combinations (validation, monitoring, optimization)"
-    
-  automatic_activation_triggers:
-    complexity_threshold: "≥0.8: Activate advanced cognitive and mathematical command sets"
-    parallelization_threshold: "≥3 tasks: Activate parallel execution and orchestration command sets"  
-    planning_threshold: "Strategic objectives: Activate planning and decomposition command sets"
-    quality_threshold: "Verification needs: Activate validation and testing command sets"
-    
-  utilization_optimization:
-    command_coverage_analysis: "Analyze command utilization patterns to prevent ecosystem gaps"
-    intelligent_suggestion_engine: "Suggest underutilized commands relevant to current context"
-    systematic_activation_protocol: "Ensure comprehensive command ecosystem activation"
-    continuous_optimization: "Learn from command usage patterns for improved future activation"
-```
+**CRITICAL Command Orchestration Framework**:
+
+**MANDATORY Comprehensive Command Evaluation**:
+- **Behavioral Commands**: REQUIRED evaluation of ALL 38 behavioral commands for cognitive framework needs with systematic assessment
+- **Executable Commands**: MANDATORY evaluation of ALL 30 executable commands for implementation requirements with complete coverage
+- **Core Commands**: ESSENTIAL evaluation of ALL 6 core commands for infrastructure needs with priority analysis
+- **Shared Commands**: CRITICAL evaluation of ALL 2 shared commands for integration requirements with compatibility validation
+
+**INTELLIGENT Situational Command Mapping**:
+- **Planning Situations**: AUTOMATIC mapping of planning contexts to strategic command combinations (exploration, decomposition, TDD) with optimization
+- **Execution Situations**: SYSTEMATIC mapping of execution contexts to operational command combinations (parallel, orchestration, verification) with efficiency
+- **Analysis Situations**: INTELLIGENT mapping of analysis contexts to cognitive command combinations (thinking, complexity, mathematical) with precision
+- **Maintenance Situations**: COMPREHENSIVE mapping of maintenance contexts to system command combinations (validation, monitoring, optimization) with reliability
+
+**AUTOMATIC Activation Triggers**:
+- **Complexity Threshold**: ≥0.8 complexity TRIGGERS automatic activation of advanced cognitive and mathematical command sets with MANDATORY deployment
+- **Parallelization Threshold**: ≥3 tasks ACTIVATES parallel execution and orchestration command sets with REQUIRED coordination
+- **Planning Threshold**: Strategic objectives TRIGGER activation of planning and decomposition command sets with ESSENTIAL analysis
+- **Quality Threshold**: Verification needs ACTIVATE validation and testing command sets with CRITICAL compliance
+
+**ESSENTIAL Utilization Optimization**:
+- **Command Coverage Analysis**: CONTINUOUS analysis of command utilization patterns to prevent ecosystem gaps with MANDATORY monitoring
+- **Intelligent Suggestion Engine**: AUTOMATED suggestion of underutilized commands relevant to current context with SMART recommendations
+- **Systematic Activation Protocol**: GUARANTEED comprehensive command ecosystem activation with COMPLETE coverage validation
+- **Continuous Optimization**: INTELLIGENT learning from command usage patterns for improved future activation with ADAPTIVE enhancement
 
 **CRITICAL Implementation Requirements**:
 - **Ecosystem Awareness**: System maintains awareness of ALL 76 available commands and their capabilities
@@ -342,16 +340,13 @@ Confidence = (Pattern_Match * 0.3) + (Context_Clarity * 0.4) + (Objective_Specif
 Complexity_Score = (Size_Factor * Feature_Density * Dependency_Factor * Responsibility_Factor) / (Atomic_Compliance * Purpose_Clarity)
 ```
 
-### Threshold Enforcement
-```yaml
-FOR each threshold IN system_thresholds:
-  current_value = measure_metric(threshold.metric)
-  IF current_value violates threshold.limit:
-    trigger_enforcement_action(threshold.action)
-    log_violation(threshold, current_value)
-  END
-END
-```
+### CRITICAL Threshold Enforcement Protocol
+
+**MANDATORY Threshold Monitoring Process**:
+- **CONTINUOUS Measurement**: FOR each threshold in system thresholds, MEASURE current metric value with REAL-TIME precision
+- **AUTOMATIC Violation Detection**: IF current value violates threshold limit, IMMEDIATELY TRIGGER enforcement action with ZERO tolerance
+- **COMPREHENSIVE Violation Logging**: MANDATORY logging of threshold violations with complete context and current value for AUDIT compliance
+- **SYSTEMATIC Enforcement**: EXECUTE enforcement actions automatically with GUARANTEED compliance restoration
 
 ---
 

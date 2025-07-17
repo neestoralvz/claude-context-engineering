@@ -1,0 +1,39 @@
+[0;34m🚀 Initializing Real-Time Compliance Monitor[0m
+Database initialized at: /Users/nalve/claude-context-engineering/scripts/results/compliance/metrics/compliance_monitoring.db
+All monitoring services started
+[0;32m✅ Real-Time Compliance Monitor initialized successfully[0m
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+/Users/nalve/claude-context-engineering/scripts/monitoring/real-time-compliance-monitor.sh: line 470: [[: 9.28: syntax error: invalid arithmetic operator (error token is ".28")
+/Users/nalve/claude-context-engineering/scripts/monitoring/real-time-compliance-monitor.sh: line 470: [[: 41G: value too great for base (error token is "41G")
+Parse error near line 1: unrecognized token: "41G"
+   80, 0, 'System CPU usage'),     ('memory_usage', 41G, 80, 0, 'System memory u
+                                      error here ---^
+Compliance report generated: /Users/nalve/claude-context-engineering/scripts/results/compliance/metrics/compliance_report_20250717_104559.json
+/Users/nalve/claude-context-engineering/scripts/monitoring/real-time-compliance-monitor.sh: line 298: 17527707593N: value too great for base (error token is "17527707593N")

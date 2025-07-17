@@ -1,0 +1,35 @@
+2025-07-17T10:45:47-06:00: Starting compliance monitoring deployment
+[0;32m[2025-07-17T10:45:47-06:00][0m ✅ Directory structure created
+[0;34m[2025-07-17T10:45:47-06:00][0m 🔍 Validating Prerequisites
+[0;32m[2025-07-17T10:45:47-06:00][0m ✅ Python 3 found
+[0;32m[2025-07-17T10:45:47-06:00][0m ✅ Python package 'sqlite3' available
+[0;32m[2025-07-17T10:45:53-06:00][0m ✅ Python package 'pandas' available
+[0;32m[2025-07-17T10:45:53-06:00][0m ✅ Python package 'numpy' available
+[1;33m[2025-07-17T10:45:53-06:00][0m ⚠️  Python package 'scikit-learn' not found - will attempt to install
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Successfully installed scikit-learn
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Python package 'requests' available
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Correct project directory confirmed
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Found monitoring script: real-time-compliance-monitor.sh
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Found monitoring script: compliance-alerting-system.py
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Found monitoring script: predictive-analytics.py
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Found monitoring script: automated-remediation.py
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ All prerequisites validated
+[0;34m[2025-07-17T10:45:57-06:00][0m 📊 Deploying Monitoring Database
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Monitoring database deployed at /Users/nalve/claude-context-engineering/scripts/results/compliance/metrics/compliance_monitoring.db
+[0;34m[2025-07-17T10:45:57-06:00][0m 🔧 Deploying Monitoring Services
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Monitoring scripts made executable
+[1;33m[2025-07-17T10:45:57-06:00][0m ⚠️  Real-time monitor script validation failed or timed out
+[1;33m[2025-07-17T10:45:57-06:00][0m ⚠️  Alerting system script validation failed or timed out
+[1;33m[2025-07-17T10:45:57-06:00][0m ⚠️  Predictive analytics script validation failed or timed out
+[1;33m[2025-07-17T10:45:57-06:00][0m ⚠️  Automated remediation script validation failed or timed out
+[1;33m[2025-07-17T10:45:57-06:00][0m ⚠️  Some script validations failed or timed out - proceeding with caution
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Monitoring services deployed
+[0;34m[2025-07-17T10:45:57-06:00][0m 🖥️  Deploying Dashboard Integration
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Dashboard directory found
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Dashboard metrics file initialized
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Dashboard alerts file initialized
+[0;32m[2025-07-17T10:45:57-06:00][0m ✅ Dashboard integration deployed
+[0;34m[2025-07-17T10:45:57-06:00][0m 🚀 Starting Monitoring Services
+[0;32m[2025-07-17T10:45:59-06:00][0m ✅ Real-time compliance monitor started (PID: 46194)
+[0;31m[2025-07-17T10:46:01-06:00][0m ❌ Failed to start compliance alerting system
+[0;31m[2025-07-17T10:46:01-06:00][0m ❌ Failed to start monitoring services

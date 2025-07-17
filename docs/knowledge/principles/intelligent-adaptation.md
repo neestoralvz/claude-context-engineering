@@ -122,29 +122,27 @@
 - **Decision Engine Feedback Loop**: Feeds system evolution
 - **Token Optimization Learning**: Continuous learning for token efficiency improvement ([Token Optimization Intelligence](../technical/token-optimization-intelligence.md#continuous-learning-system))
 
-**Token Learning Integration**:
-```yaml
-token_optimization_learning:
-  pattern_extraction:
-    context_complexity_patterns: "Learn optimal compression strategies by complexity level"
-    objective_type_patterns: "Discover token-efficient approaches for different objectives"
-    agent_coordination_patterns: "Optimize multi-agent token usage through learning"
-    
-  strategy_evolution:
-    budget_allocation_learning: "Evolve budget allocation based on success patterns"
-    compression_strategy_optimization: "Refine compression techniques through feedback"
-    context_selection_improvement: "Learn optimal context selection for token efficiency"
-    
-  effectiveness_tracking:
-    efficiency_pattern_analysis: "Track which patterns achieve ≥40% token reduction"
-    quality_preservation_learning: "Learn to maintain ≥95% quality while optimizing"
-    success_prediction: "Predict optimization success based on historical patterns"
-    
-  continuous_improvement:
-    real_time_adaptation: "Immediate application of learned optimization patterns"
-    cross_context_transfer: "Apply successful patterns across different contexts"
-    predictive_optimization: "Proactively optimize based on learned success indicators"
-```
+**CRITICAL Token Learning Integration**:
+
+**MANDATORY Pattern Extraction Engine**:
+- **Context Complexity Patterns**: LEARNS optimal compression strategies by complexity level with mathematical precision
+- **Objective Type Patterns**: DISCOVERS token-efficient approaches for different objectives with ≥90% effectiveness
+- **Agent Coordination Patterns**: OPTIMIZES multi-agent token usage through intelligent learning algorithms
+
+**REQUIRED Strategy Evolution System**:
+- **Budget Allocation Learning**: EVOLVES budget allocation based on success patterns with statistical validation
+- **Compression Strategy Optimization**: REFINES compression techniques through systematic feedback loops
+- **Context Selection Improvement**: LEARNS optimal context selection for maximum token efficiency
+
+**ESSENTIAL Effectiveness Tracking**:
+- **Efficiency Pattern Analysis**: TRACKS patterns achieving ≥40% token reduction with mathematical validation
+- **Quality Preservation Learning**: MAINTAINS ≥95% quality while optimizing through intelligent algorithms
+- **Success Prediction**: PREDICTS optimization success based on historical patterns with ≥85% accuracy
+
+**CRITICAL Continuous Improvement**:
+- **Real-Time Adaptation**: IMMEDIATE application of learned optimization patterns with <100ms response
+- **Cross-Context Transfer**: APPLIES successful patterns across different contexts with intelligent mapping
+- **Predictive Optimization**: PROACTIVELY optimizes based on learned success indicators with statistical confidence
 
 **Learning Effectiveness Metrics**:
 - **Pattern Recognition Rate**: ≥80% accuracy in identifying successful token optimization patterns
@@ -180,36 +178,34 @@ token_optimization_learning:
 4. **Automatic Recovery Detection**: Intelligent detection de system recovery para restore full functionality
 5. **Learning from Degradation**: Pattern recognition para improve degradation strategies
 
-**Graceful Degradation Framework**:
-```yaml
-graceful_degradation_cascades:
-  degradation_hierarchy:
-    level_0_full_functionality: "100% system capability with all features active"
-    level_1_core_preservation: "Essential functions maintained, non-critical features disabled"
-    level_2_minimal_operation: "Basic functionality only, simplified user interface"
-    level_3_emergency_mode: "Critical operations only, maximum resource conservation"
-    level_4_safe_shutdown: "Controlled system shutdown with data preservation"
-    
-  cascade_triggers:
-    resource_exhaustion: "CPU/Memory utilization ≥90% sustained for ≥30 seconds"
-    component_failure: "Critical component failure detected"
-    network_degradation: "Network latency ≥5 seconds or availability <80%"
-    security_threat: "Security breach detected requiring capability restriction"
-    user_defined_limits: "User-configured performance or resource thresholds exceeded"
-    
-  fallback_strategies:
-    feature_prioritization: "Automatic ranking and selective feature disabling"
-    resource_reallocation: "Dynamic resource reallocation to critical functions"
-    simplified_interfaces: "Reduced complexity user interfaces during degradation"
-    cached_responses: "Fallback to cached data when real-time unavailable"
-    local_processing: "Local-only processing when network connectivity fails"
-    
-  recovery_protocols:
-    health_monitoring: "Continuous system health assessment for recovery detection"
-    gradual_restoration: "Incremental feature restoration as conditions improve"
-    validation_gates: "Quality validation before each restoration level"
-    rollback_capability: "Immediate rollback if restored functionality fails"
-```
+**CRITICAL Graceful Degradation Framework**:
+
+**MANDATORY Degradation Hierarchy**:
+- **Level 0 Full Functionality**: 100% system capability with ALL features ACTIVE and operational
+- **Level 1 Core Preservation**: ESSENTIAL functions MAINTAINED, non-critical features DISABLED with intelligence
+- **Level 2 Minimal Operation**: BASIC functionality ONLY, simplified user interface with maximum efficiency
+- **Level 3 Emergency Mode**: CRITICAL operations ONLY, maximum resource conservation with zero waste
+- **Level 4 Safe Shutdown**: CONTROLLED system shutdown with MANDATORY data preservation
+
+**AUTOMATED Cascade Triggers**:
+- **Resource Exhaustion**: CPU/Memory utilization ≥90% sustained for ≥30 seconds with automatic detection
+- **Component Failure**: CRITICAL component failure detected with immediate response protocols
+- **Network Degradation**: Network latency ≥5 seconds or availability <80% with intelligent fallback
+- **Security Threat**: Security breach detected REQUIRING capability restriction with zero tolerance
+- **User-Defined Limits**: User-configured performance or resource thresholds exceeded with validation
+
+**INTELLIGENT Fallback Strategies**:
+- **Feature Prioritization**: AUTOMATIC ranking and selective feature disabling with mathematical precision
+- **Resource Reallocation**: DYNAMIC resource reallocation to critical functions with optimization
+- **Simplified Interfaces**: REDUCED complexity user interfaces during degradation with usability preservation
+- **Cached Responses**: FALLBACK to cached data when real-time unavailable with consistency validation
+- **Local Processing**: LOCAL-ONLY processing when network connectivity fails with autonomy
+
+**MANDATORY Recovery Protocols**:
+- **Health Monitoring**: CONTINUOUS system health assessment for recovery detection with real-time analysis
+- **Gradual Restoration**: INCREMENTAL feature restoration as conditions improve with validation
+- **Validation Gates**: QUALITY validation before each restoration level with zero compromise
+- **Rollback Capability**: IMMEDIATE rollback if restored functionality fails with automatic detection
 
 **Degradation Intelligence Patterns**:
 - **Predictive Degradation**: Anticipate potential failures and prepare fallback strategies
@@ -263,71 +259,73 @@ graceful_degradation_cascades:
 4. **Conversation Continuity**: PRESERVED context essence con ≥95% information preservation across handoffs
 5. **Mathematical Validation**: QUANTIFIED handoff quality assessment con measurable success metrics
 
-**Intelligent Handoff Framework**:
-```yaml
-intelligent_handoff_control:
-  milestone_detection:
-    natural_boundaries:
-      completion_indicators: "Task completion signals, success confirmations, deliverable finalization"
-      context_saturation: "Context window ≥80% utilization with diminishing returns"
-      phase_transitions: "Discovery → Planning → Execution → Validation transitions"
-      strategic_checkpoints: "Major architectural decisions, critical validations, milestone achievements"
-      user_satisfaction_signals: "Explicit satisfaction, implicit completion cues, next-phase requests"
-    
-    automated_triggers:
-      context_threshold: "Context utilization ≥75% with complexity ≥0.8"
-      conversation_length: "≥50 exchanges or ≥90 minutes active session duration"
-      cognitive_load: "Cognitive complexity saturation requiring model switch"
-      error_accumulation: "≥3 sequential errors or declining performance patterns"
-      resource_optimization: "Memory efficiency <60% requiring context consolidation"
-  
-  context_control_strategies:
-    progressive_optimization:
-      stage_1_compression: "Non-essential context pruning maintaining ≥95% capability"
-      stage_2_synthesis: "Key insight consolidation with mathematical validation"
-      stage_3_handoff_prep: "Essential context distillation for seamless transition"
-      stage_4_continuation: "Next conversation initialization with preserved context"
-    
-    context_preservation:
-      essential_elements: "Core objectives, key decisions, critical constraints, success metrics"
-      strategic_insights: "Pattern recognition, learned preferences, optimization discoveries"
-      technical_state: "Codebase understanding, architectural decisions, implementation patterns"
-      relationship_context: "User preferences, communication style, collaboration patterns"
-  
-  model_switching_intelligence:
-    selection_criteria:
-      planning_requirements: "Strategic thinking, long-term planning → Advanced reasoning models"
-      execution_tasks: "Code implementation, file operations → Efficient execution models"
-      verification_needs: "Quality validation, mathematical precision → Verification-optimized models"
-      continuation_context: "Handoff preservation, context synthesis → Context-aware models"
-    
-    transition_protocols:
-      capability_assessment: "Model capabilities matched to upcoming task requirements"
-      context_optimization: "Context package optimized for target model capabilities"
-      performance_prediction: "Expected outcomes validated against model strengths"
-      fallback_strategies: "Alternative model selection if primary choice fails"
+**CRITICAL Intelligent Handoff Framework**:
 
-  handoff_generation_system:
-    synthesis_protocols:
-      conversation_summary: "Concise yet comprehensive conversation overview ≤500 words"
-      key_achievements: "Major accomplishments, deliverables, and success metrics"
-      pending_objectives: "Remaining tasks with priority levels and complexity assessment"
-      learned_context: "User preferences, technical patterns, optimization insights"
-      continuation_strategy: "Recommended next steps with execution roadmap"
-      
-    documentation_integration:
-      living_context_sync: "Synchronize with Documentation as Living Context (#83)"
-      analysis_persistence: "Store analysis results in outputs/ with systematic organization"
-      git_integration: "Integrate with Strategic Git Versioning (#16) 5-phase protocol"
-      context_threading: "Maintain contextual thread across multiple handoff sessions"
-      progress_tracking: "Document progress delta and decision rationale"
-    
-    quality_validation:
-      completeness_check: "≥95% essential information preserved"
-      clarity_assessment: "Handoff clarity rated ≥9/10 for seamless continuation"
-      actionability_validation: "Next conversation can begin productive work ≤2 minutes"
-      relationship_preservation: "User relationship context maintained ≥90%"
-```
+**MANDATORY Milestone Detection System**:
+
+**Natural Boundaries Recognition**:
+- **Completion Indicators**: DETECTS task completion signals, success confirmations, deliverable finalization with ≥95% accuracy
+- **Context Saturation**: MONITORS context window ≥80% utilization with diminishing returns detection
+- **Phase Transitions**: IDENTIFIES Discovery → Planning → Execution → Validation transitions automatically
+- **Strategic Checkpoints**: RECOGNIZES major architectural decisions, critical validations, milestone achievements
+- **User Satisfaction Signals**: ANALYZES explicit satisfaction, implicit completion cues, next-phase requests
+
+**AUTOMATED Trigger System**:
+- **Context Threshold**: ACTIVATES at context utilization ≥75% with complexity ≥0.8 automatically
+- **Conversation Length**: TRIGGERS at ≥50 exchanges or ≥90 minutes active session duration
+- **Cognitive Load**: DETECTS cognitive complexity saturation requiring model switch with intelligence
+- **Error Accumulation**: RESPONDS to ≥3 sequential errors or declining performance patterns
+- **Resource Optimization**: ACTIVATES when memory efficiency <60% requiring context consolidation
+
+**ESSENTIAL Context Control Strategies**:
+
+**Progressive Optimization Protocol**:
+- **Stage 1 Compression**: NON-ESSENTIAL context pruning maintaining ≥95% capability with mathematical validation
+- **Stage 2 Synthesis**: KEY insight consolidation with mathematical validation and quality preservation
+- **Stage 3 Handoff Preparation**: ESSENTIAL context distillation for seamless transition with optimization
+- **Stage 4 Continuation**: NEXT conversation initialization with preserved context and continuity
+
+**CRITICAL Context Preservation**:
+- **Essential Elements**: PRESERVES core objectives, key decisions, critical constraints, success metrics
+- **Strategic Insights**: MAINTAINS pattern recognition, learned preferences, optimization discoveries
+- **Technical State**: PRESERVES codebase understanding, architectural decisions, implementation patterns
+- **Relationship Context**: MAINTAINS user preferences, communication style, collaboration patterns
+
+**INTELLIGENT Model Switching System**:
+
+**Selection Criteria Engine**:
+- **Planning Requirements**: Strategic thinking, long-term planning → SELECTS Advanced reasoning models
+- **Execution Tasks**: Code implementation, file operations → CHOOSES Efficient execution models
+- **Verification Needs**: Quality validation, mathematical precision → USES Verification-optimized models
+- **Continuation Context**: Handoff preservation, context synthesis → APPLIES Context-aware models
+
+**Transition Protocols**:
+- **Capability Assessment**: MODEL capabilities MATCHED to upcoming task requirements with precision
+- **Context Optimization**: Context package OPTIMIZED for target model capabilities with efficiency
+- **Performance Prediction**: Expected outcomes VALIDATED against model strengths with confidence
+- **Fallback Strategies**: Alternative model selection if primary choice fails with automatic detection
+
+**MANDATORY Handoff Generation System**:
+
+**Synthesis Protocols**:
+- **Conversation Summary**: CONCISE yet comprehensive conversation overview ≤500 words with precision
+- **Key Achievements**: MAJOR accomplishments, deliverables, and success metrics with quantification
+- **Pending Objectives**: REMAINING tasks with priority levels and complexity assessment
+- **Learned Context**: USER preferences, technical patterns, optimization insights with intelligence
+- **Continuation Strategy**: RECOMMENDED next steps with execution roadmap and validation
+
+**Documentation Integration**:
+- **Living Context Sync**: SYNCHRONIZES with Documentation as Living Context (#83) automatically
+- **Analysis Persistence**: STORES analysis results in outputs/ with systematic organization
+- **Git Integration**: INTEGRATES with Strategic Git Versioning (#16) 5-phase protocol seamlessly
+- **Context Threading**: MAINTAINS contextual thread across multiple handoff sessions with continuity
+- **Progress Tracking**: DOCUMENTS progress delta and decision rationale with transparency
+
+**Quality Validation Standards**:
+- **Completeness Check**: ENSURES ≥95% essential information preserved with mathematical validation
+- **Clarity Assessment**: VALIDATES handoff clarity rated ≥9/10 for seamless continuation
+- **Actionability Validation**: GUARANTEES next conversation can begin productive work ≤2 minutes
+- **Relationship Preservation**: MAINTAINS user relationship context ≥90% with continuity
 
 **Context Control Mathematical Framework**:
 - **Context Efficiency Ratio**: `Preserved_Information / Context_Size ≥ 0.85`
@@ -392,33 +390,31 @@ intelligent_handoff_triggers:
 
 **MANDATORY Strategic Research Protocol**: COMPLETE local context analysis FIRST → IDENTIFY specific knowledge gaps → EXECUTE targeted online research → VALIDATE solutions against local context → DOCUMENT findings systematically → INTEGRATE into problem-solving framework
 
-**Strategic Online Research Framework**:
-```yaml
-strategic_online_research:
-  research_triggering_system:
-    local_gap_validation: "MANDATORY: Confirm knowledge gaps cannot be resolved locally"
-    specific_research_needs: "Define precise research objectives based on local analysis"
-    success_case_prioritization: "Prioritize research for proven success cases and solutions"
-    contextual_relevance_filtering: "Filter research targets for local context relevance"
-    
-  intelligent_research_execution:
-    multi_source_research: "Execute research across multiple sources (Context7, WebSearch, documentation)"
-    success_case_analysis: "Focus on documented success cases and proven implementations"
-    solution_validation: "Validate proposed solutions against local context and constraints"
-    comparative_analysis: "Compare multiple solutions for optimal fit with local requirements"
-    
-  research_documentation_system:
-    structured_documentation: "Document research findings in systematic, reusable format"
-    solution_cataloging: "Catalog solutions by problem type, technology, and context"
-    success_pattern_extraction: "Extract patterns from successful implementations"
-    failure_analysis: "Document failure cases and anti-patterns for future reference"
-    
-  integration_and_application:
-    solution_adaptation: "Adapt researched solutions to local context and requirements"
-    implementation_planning: "Create implementation plans based on research findings"
-    risk_assessment: "Assess risks and challenges based on documented experiences"
-    success_metrics_definition: "Define success metrics based on researched best practices"
-```
+**CRITICAL Strategic Online Research Framework**:
+
+**MANDATORY Research Triggering System**:
+- **Local Gap Validation**: MANDATORY confirmation that knowledge gaps cannot be resolved locally with verification
+- **Specific Research Needs**: DEFINES precise research objectives based on local analysis with mathematical precision
+- **Success Case Prioritization**: PRIORITIZES research for proven success cases and solutions with evidence validation
+- **Contextual Relevance Filtering**: FILTERS research targets for local context relevance with intelligent matching
+
+**INTELLIGENT Research Execution Engine**:
+- **Multi-Source Research**: EXECUTES research across multiple sources (Context7, WebSearch, documentation) systematically
+- **Success Case Analysis**: FOCUSES on documented success cases and proven implementations with validation
+- **Solution Validation**: VALIDATES proposed solutions against local context and constraints with precision
+- **Comparative Analysis**: COMPARES multiple solutions for optimal fit with local requirements mathematically
+
+**ESSENTIAL Research Documentation System**:
+- **Structured Documentation**: DOCUMENTS research findings in systematic, reusable format with standardization
+- **Solution Cataloging**: CATALOGS solutions by problem type, technology, and context with intelligent organization
+- **Success Pattern Extraction**: EXTRACTS patterns from successful implementations with mathematical analysis
+- **Failure Analysis**: DOCUMENTS failure cases and anti-patterns for future reference with learning integration
+
+**CRITICAL Integration and Application**:
+- **Solution Adaptation**: ADAPTS researched solutions to local context and requirements with intelligence
+- **Implementation Planning**: CREATES implementation plans based on research findings with systematic approach
+- **Risk Assessment**: ASSESSES risks and challenges based on documented experiences with quantification
+- **Success Metrics Definition**: DEFINES success metrics based on researched best practices with validation
 
 **Research Intelligence Requirements**:
 - **Gap-Driven Research**: Research triggered ONLY by identified knowledge gaps from local analysis

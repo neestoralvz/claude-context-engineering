@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-07-17T11:02:53-06:00",
+  "metrics": {
+    "": {"value": , "threshold": , "compliant": , "timestamp": ""}
+  },
+  "status": "active",
+  "monitoring_interval": 2
+}

@@ -21,33 +21,31 @@
 
 **CRITICAL Protocol**: DISCOVER external systems → ANALYZE integration requirements → DESIGN integration architecture → IMPLEMENT connectors → MONITOR integration health
 
-**Universal Integration Framework**:
-```yaml
-universal_integration_protocol:
-  system_discovery:
-    automatic_discovery: "Automatic discovery of available external systems and services"
-    capability_analysis: "Analysis of external system capabilities and integration points"
-    compatibility_assessment: "Assessment of integration compatibility and requirements"
-    security_evaluation: "Security evaluation of external systems and data flows"
-    
-  integration_architecture:
-    standardized_protocols: "Standardized integration protocols for common integration patterns"
-    adapter_framework: "Intelligent adapter framework for system-specific integrations"
-    message_transformation: "Automatic message transformation and data mapping"
-    error_handling: "Comprehensive error handling and retry mechanisms"
-    
-  connector_development:
-    automated_generation: "Automated generation of integration connectors"
-    template_library: "Library of integration templates for common systems"
-    custom_adapters: "Framework for developing custom integration adapters"
-    testing_framework: "Comprehensive testing framework for integration validation"
-    
-  integration_management:
-    health_monitoring: "Continuous monitoring of integration health and performance"
-    version_management: "Version management for integration components"
-    dependency_tracking: "Tracking of integration dependencies and relationships"
-    lifecycle_management: "Complete lifecycle management of integrations"
-```
+**CRITICAL Universal Integration Framework**:
+
+**MANDATORY System Discovery**:
+- **Automatic Discovery**: REQUIRED automatic discovery of available external systems and services with COMPREHENSIVE scanning
+- **Capability Analysis**: ESSENTIAL analysis of external system capabilities and integration points for COMPLETE understanding
+- **Compatibility Assessment**: MANDATORY assessment of integration compatibility and requirements for SYSTEMATIC validation
+- **Security Evaluation**: CRITICAL security evaluation of external systems and data flows for MAXIMUM protection
+
+**ESSENTIAL Integration Architecture**:
+- **Standardized Protocols**: REQUIRED standardized integration protocols for common integration patterns with CONSISTENT implementation
+- **Adapter Framework**: INTELLIGENT adapter framework for system-specific integrations with FLEXIBLE connectivity
+- **Message Transformation**: AUTOMATIC message transformation and data mapping with SEAMLESS conversion
+- **Error Handling**: COMPREHENSIVE error handling and retry mechanisms with ROBUST resilience
+
+**CRITICAL Connector Development**:
+- **Automated Generation**: MANDATORY automated generation of integration connectors with EFFICIENT development
+- **Template Library**: EXTENSIVE library of integration templates for common systems with REUSABLE patterns
+- **Custom Adapters**: FLEXIBLE framework for developing custom integration adapters with SPECIALIZED functionality
+- **Testing Framework**: COMPREHENSIVE testing framework for integration validation with COMPLETE coverage
+
+**MANDATORY Integration Management**:
+- **Health Monitoring**: CONTINUOUS monitoring of integration health and performance with REAL-TIME visibility
+- **Version Management**: SYSTEMATIC version management for integration components with COMPLETE traceability
+- **Dependency Tracking**: INTELLIGENT tracking of integration dependencies and relationships with FULL mapping
+- **Lifecycle Management**: COMPLETE lifecycle management of integrations with AUTOMATED governance
 
 **Integration Validation Metrics**:
 - **Integration Success Rate**: ≥95% - Percentage of successful integrations
@@ -62,33 +60,31 @@ universal_integration_protocol:
 
 **CRITICAL Protocol**: DESIGN API-first → IMPLEMENT comprehensive APIs → DOCUMENT extensively → SECURE rigorously → MONITOR continuously
 
-**API-First Framework**:
-```yaml
-api_first_architecture:
-  api_design_principles:
-    design_first_approach: "API design precedes implementation with comprehensive specifications"
-    consistent_patterns: "Consistent API patterns and conventions across all endpoints"
-    versioning_strategy: "Comprehensive versioning strategy for API evolution"
-    documentation_standards: "Standardized documentation with interactive examples"
-    
-  comprehensive_coverage:
-    full_functionality_access: "Complete programmatic access to all system functionality"
-    headless_operations: "Support for headless operations without UI dependencies"
-    bulk_operations: "Efficient bulk operations for large-scale data processing"
-    real_time_capabilities: "Real-time API capabilities with WebSocket support"
-    
-  security_framework:
-    authentication_authorization: "Comprehensive authentication and authorization framework"
-    rate_limiting: "Intelligent rate limiting with adaptive thresholds"
-    api_security: "API security with encryption and request validation"
-    audit_logging: "Comprehensive audit logging for all API operations"
-    
-  developer_experience:
-    sdk_generation: "Automatic SDK generation for multiple programming languages"
-    interactive_documentation: "Interactive API documentation with live examples"
-    testing_tools: "Comprehensive testing tools for API validation"
-    developer_portal: "Developer portal with resources and community support"
-```
+**CRITICAL API-First Framework**:
+
+**MANDATORY API Design Principles**:
+- **Design-First Approach**: REQUIRED API design precedes implementation with comprehensive specifications for SYSTEMATIC development
+- **Consistent Patterns**: ESSENTIAL consistent API patterns and conventions across ALL endpoints for UNIFIED experience
+- **Versioning Strategy**: MANDATORY comprehensive versioning strategy for API evolution with SEAMLESS compatibility
+- **Documentation Standards**: CRITICAL standardized documentation with interactive examples for COMPLETE understanding
+
+**ESSENTIAL Comprehensive Coverage**:
+- **Full Functionality Access**: REQUIRED complete programmatic access to ALL system functionality with ZERO limitations
+- **Headless Operations**: MANDATORY support for headless operations without UI dependencies for MAXIMUM flexibility
+- **Bulk Operations**: EFFICIENT bulk operations for large-scale data processing with OPTIMIZED performance
+- **Real-Time Capabilities**: CRITICAL real-time API capabilities with WebSocket support for IMMEDIATE responsiveness
+
+**CRITICAL Security Framework**:
+- **Authentication Authorization**: MANDATORY comprehensive authentication and authorization framework with MAXIMUM security
+- **Rate Limiting**: INTELLIGENT rate limiting with adaptive thresholds for OPTIMAL resource protection
+- **API Security**: REQUIRED API security with encryption and request validation for COMPLETE protection
+- **Audit Logging**: COMPREHENSIVE audit logging for ALL API operations with FULL traceability
+
+**ESSENTIAL Developer Experience**:
+- **SDK Generation**: AUTOMATIC SDK generation for multiple programming languages with COMPLETE coverage
+- **Interactive Documentation**: REQUIRED interactive API documentation with live examples for IMMEDIATE understanding
+- **Testing Tools**: COMPREHENSIVE testing tools for API validation with COMPLETE verification
+- **Developer Portal**: COMPLETE developer portal with resources and community support for MAXIMUM productivity
 
 **API-First Validation Metrics**:
 - **API Coverage**: 100% - Complete programmatic access to all functionality

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/nalve/claude-context-engineering/scripts/monitoring/compliance-alerting-system.py", line 20, in <module>
+    from email.mime.text import MimeText
+ImportError: cannot import name 'MimeText' from 'email.mime.text' (/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/text.py)
