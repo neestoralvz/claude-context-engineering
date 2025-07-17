@@ -189,7 +189,7 @@ Create `CLAUDE.md` in repository root for optimal AI behavior:
 
 ### **Advanced Workflow Configuration**
 
-**Custom Trigger Phrases**:
+**CRITICAL Custom Trigger Phrases Configuration**:
 ```yaml
 # Customize trigger phrases for different behaviors
 with:
@@ -199,7 +199,7 @@ with:
   fix-trigger: '@claude fix'
 ```
 
-**Conditional Responses**:
+**CRITICAL Conditional Response Configuration**:
 ```yaml
 # Respond only to specific users or teams
 if: |

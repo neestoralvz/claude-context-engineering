@@ -1,0 +1,8 @@
+[2025-07-17T13:49:05-06:00] [INFO] [LINK_SCAN_START] Scanning for broken links in: docs/knowledge/principles/
+[2025-07-17T13:49:05-06:00] [ERROR] [BROKEN_LINK] docs/knowledge/principles/philosophical-foundations.md:9 -> /intelligent-adaptation.md
+[2025-07-17T13:49:05-06:00] [ERROR] [BROKEN_LINK] docs/knowledge/principles/philosophical-foundations.md:11 -> /_shared/workflow.md
+[2025-07-17T13:49:05-06:00] [ERROR] [BROKEN_LINK] docs/knowledge/principles/philosophical-foundations.md:32 -> /operational-excellence.md#15-crystallize-patterns
+[2025-07-17T13:49:05-06:00] [ERROR] [BROKEN_LINK] docs/knowledge/principles/philosophical-foundations.md:43 -> /technical-standards.md#24-optimize-context
+[2025-07-17T13:49:05-06:00] [ERROR] [BROKEN_LINK] docs/knowledge/principles/philosophical-foundations.md:54 -> /validation-protocols.md#31-intelligent-fallback
+[2025-07-17T13:49:05-06:00] [ERROR] [BROKEN_LINK] docs/knowledge/principles/philosophical-foundations.md:66 -> /cognitive-optimization.md#43-organización-cognitiva-óptima
+[2025-07-17T13:49:05-06:00] [ERROR] [BROKEN_LINK] docs/knowledge/principles/philosophical-foundations.md:88 -> /validation-protocols.md#11-verification-as-liberation

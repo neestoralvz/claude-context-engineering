@@ -6,6 +6,53 @@
 
 **Philosophy**: "Simple maintenance through existing tools, not new complexity."
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes comprehensive validation scripts:
+
+```bash
+# Core system validation
+./scripts/validation/validate-system-integrity.sh
+./scripts/validation/validate-navigation.sh
+./scripts/validation/validate-principle-compliance.sh
+./scripts/validation/validate-tool-call-compliance.sh
+
+# Technical compliance validation
+./scripts/validation/validate-technical-nomenclature.sh
+./scripts/validation/validate-natural-language-compliance.sh
+./scripts/validation/validate-adaptive-thresholds.sh
+./scripts/validation/validate-execution-thresholds.sh
+
+# Content quality analysis
+./scripts/validation/analyze-content-quality.sh
+./scripts/validation/analyze-domain-consistency.sh
+./scripts/validation/analyze-simulation-prevention.sh
+
+# P55/P56 compliance reporting
+./scripts/compliance/generate-p55-compliance-report.sh
+./scripts/validation/validate-p56-transparency.sh
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: System state assessment and prerequisite validation
+2. **Core Validation**: Run comprehensive validation suite (12 scripts)
+3. **Analysis Phase**: Content quality and domain consistency analysis
+4. **Compliance Reporting**: Generate P55/P56 compliance reports
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute comprehensive system integrity validation across all components
+2. Analyze content quality, navigation, and principle compliance
+3. Validate P55/P56 transparency and technical nomenclature compliance
+4. Generate detailed compliance reports with actionable recommendations
+
+**Status Updates**:
+- 🔄 **Starting**: System validation suite initiated (12 validation scripts)
+- 📊 **Progress**: Running integrity, navigation, and compliance checks
+- ✅ **Complete**: Full system validation completed with compliance metrics
+- 📈 **Metrics**: P55/P56 compliance status updated and reported
+
 ---
 
 ## 🔍 AUTOMATIC COMPLIANCE VERIFICATION

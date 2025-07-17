@@ -42,33 +42,32 @@
 **🚨 CRITICAL INTEGRATION**: ALL substantial Context Engineering operations MUST include git commit documentation as part of execution evidence and operational transparency (Authority: [Principle #84: Mandatory Commit Operations](../principles/technical-standards.md#84-mandatory-commit-operations)).
 
 **Commit Requirements for All Operations**:
-```yaml
-operational_commit_integration:
-  substantial_operation_threshold:
-    file_changes: ">2 files modified during operation"
-    duration_threshold: ">30 minutes of sustained operation"
-    system_impact: "Changes to principles, commands, or core architecture"
-    meta_command_activation: "Any /context-eng, /orchestrate, or meta-command execution"
-    
-  mandatory_commit_sequence:
-    pre_operation_commit:
-      timing: "BEFORE substantial operation initiation"
-      purpose: "Capture current state for recovery capability"
-      format: "🚀 PRE-OP: [operation] - [objective]"
-      evidence: "Git status showing clean commit before operation"
-      
-    progress_commits:
-      timing: "At logical checkpoints during operation (≥1 per 30 minutes)"
-      purpose: "Document operational progress and intermediate achievements"
-      format: "⚡ PROGRESS: [milestone] - [achievement] ([percentage]% complete)"
-      evidence: "Git log showing progress documentation"
-      
-    post_operation_commit:
-      timing: "IMMEDIATELY after operation completion"
-      purpose: "Document final state, outcomes, and validation results"
-      format: "✅ COMPLETE: [operation] - [outcome_summary]"
-      evidence: "Final commit with comprehensive operation documentation"
-```
+
+**Substantial Operation Threshold**:
+- **File Changes**: >2 files modified during operation
+- **Duration Threshold**: >30 minutes of sustained operation
+- **System Impact**: Changes to principles, commands, or core architecture
+- **Meta Command Activation**: Any /context-eng, /orchestrate, or meta-command execution
+
+**Mandatory Commit Sequence**:
+
+1. **Pre-Operation Commit**:
+   - **Timing**: BEFORE substantial operation initiation
+   - **Purpose**: Capture current state for recovery capability
+   - **Format**: `🚀 PRE-OP: [operation] - [objective]`
+   - **Evidence**: Git status showing clean commit before operation
+
+2. **Progress Commits**:
+   - **Timing**: At logical checkpoints during operation (≥1 per 30 minutes)
+   - **Purpose**: Document operational progress and intermediate achievements
+   - **Format**: `⚡ PROGRESS: [milestone] - [achievement] ([percentage]% complete)`
+   - **Evidence**: Git log showing progress documentation
+
+3. **Post-Operation Commit**:
+   - **Timing**: IMMEDIATELY after operation completion
+   - **Purpose**: Document final state, outcomes, and validation results
+   - **Format**: `✅ COMPLETE: [operation] - [outcome_summary]`
+   - **Evidence**: Final commit with comprehensive operation documentation
 
 **Integration with Execution Evidence**:
 - **P55 Tool Execution**: Git commits serve as MANDATORY tool execution evidence for operational changes
@@ -77,16 +76,14 @@ operational_commit_integration:
 - **Recovery Capability**: Pre-operation commits ensure 100% rollback capability for all substantial operations
 
 **Execution Flow Enhancement**:
-```yaml
-enhanced_execution_flow:
-  command_execution_with_commits:
-    1. "Pre-operation commit: Capture current state"
-    2. "P56 announcement: Operation initiation with commit evidence"
-    3. "Execute command/operation with progress commits at checkpoints"
-    4. "P56 transparency: Show real tool results and git evidence"
-    5. "Post-operation commit: Document completion and validation"
-    6. "Report completion with git history as execution evidence"
-```
+
+**Command Execution with Commits**:
+1. **Pre-operation commit**: Capture current state
+2. **P56 announcement**: Operation initiation with commit evidence
+3. **Execute command/operation**: With progress commits at checkpoints
+4. **P56 transparency**: Show real tool results and git evidence
+5. **Post-operation commit**: Document completion and validation
+6. **Report completion**: With git history as execution evidence
 
 ---
 
@@ -95,44 +92,41 @@ enhanced_execution_flow:
 ### **Slash Command Execution Standards**
 
 **MANDATORY Requirements**:
-```yaml
-slash_command_protocol:
-  requirement: "Direct execution of Context Engineering commands"
-  pattern: "Load command → Execute directly → Show results"
-  tools: ["Read tool for command loading", "Direct command execution"]
-  evidence: "Real command output with actual results"
-  
-  execution_sequence:
-    1. "Display P56 announcement before command execution"
-    2. "Load command definition via Read tool"
-    3. "Execute command functionality directly"
-    4. "Display real execution results and evidence"
-    5. "Report completion status with performance metrics"
-```
+
+**Slash Command Protocol**:
+- **Requirement**: Direct execution of Context Engineering commands
+- **Pattern**: Load command → Execute directly → Show results
+- **Tools**: Read tool for command loading, Direct command execution
+- **Evidence**: Real command output with actual results
+
+**Execution Sequence**:
+1. **Display P56 announcement** before command execution
+2. **Load command definition** via Read tool
+3. **Execute command functionality** directly
+4. **Display real execution results** and evidence
+5. **Report completion status** with performance metrics
 
 ### **Tool Call Execution Requirements**
 
 **CRITICAL Implementation Standards**:
-```yaml
-tool_call_execution:
-  mandatory_scenarios:
-    - "When protocols mention 'Deploy Task agents'"
-    - "When 'Execute command' is specified"
-    - "When 'Activate' functionality is required"
-    - "When script execution is needed"
-  
-  execution_sequence:
-    1. "Display P56 announcement before tool execution"
-    2. "Execute actual tool call with required parameters"
-    3. "Display real tool results and outputs"
-    4. "Show completion status and evidence"
-  
-  verification:
-    - "Users see tool call announcements"
-    - "Real tool execution results displayed"
-    - "Evidence of actual functionality provided"
-    - "No simulation or description substitution"
-```
+
+**Mandatory Scenarios**:
+- When protocols mention "Deploy Task agents"
+- When "Execute command" is specified
+- When "Activate" functionality is required
+- When script execution is needed
+
+**Execution Sequence**:
+1. **Display P56 announcement** before tool execution
+2. **Execute actual tool call** with required parameters
+3. **Display real tool results** and outputs
+4. **Show completion status** and evidence
+
+**Verification Requirements**:
+- Users see tool call announcements
+- Real tool execution results displayed
+- Evidence of actual functionality provided
+- No simulation or description substitution
 
 ---
 
@@ -144,39 +138,38 @@ tool_call_execution:
 
 **EVIDENCE REQUIRED**: Users MUST observe script integration executing with mathematical precision and documented phase completion.
 
-```yaml
-universal_script_integration:
-  phase_0_script_system_validation:
-    purpose: "Validate script availability and mathematical foundation"
-    requirement: "100% script availability before command execution"
-    tools: ["Bash tool for script validation"]
-    evidence: "Real script directory listings and availability confirmation"
-    
-  phase_1_formula_library_loading:
-    purpose: "Load mathematical calculation functions"
-    script: "formulas/context_engineering_formulas.sh"
-    functions: ["calculate_confidence", "calculate_complexity", "calculate_parallel_benefit"]
-    precision: "4 decimal places (tolerance ±0.0001)"
-    evidence: "Real formula library loading confirmation"
-    
-  phase_2_real_time_metrics:
-    purpose: "Execute comprehensive metrics calculation"
-    script: "core/calculate-real-metrics.sh"
-    integration: "Registry updates with real performance data"
-    evidence: "Actual numerical results from script execution"
-    
-  phase_3_mathematical_validation:
-    purpose: "Validate mathematical precision and compliance"
-    script: "compliance/verify-mathematical-formulas.sh"
-    requirement: "≥21/22 tests pass (95% precision threshold)"
-    evidence: "Real validation results with pass/fail status"
-    
-  phase_4_trigger_system_validation:
-    purpose: "Validate automatic trigger conditions"
-    script: "core/test-trigger-system.sh"
-    tests: "22 trigger validation tests"
-    evidence: "Real trigger system validation results"
-```
+**Universal Script Integration Phases**:
+
+**Phase 0: Script System Validation**
+- **Purpose**: Validate script availability and mathematical foundation
+- **Requirement**: 100% script availability before command execution
+- **Tools**: Bash tool for script validation
+- **Evidence**: Real script directory listings and availability confirmation
+
+**Phase 1: Formula Library Loading**
+- **Purpose**: Load mathematical calculation functions
+- **Script**: `formulas/context_engineering_formulas.sh`
+- **Functions**: `calculate_confidence`, `calculate_complexity`, `calculate_parallel_benefit`
+- **Precision**: 4 decimal places (tolerance ±0.0001)
+- **Evidence**: Real formula library loading confirmation
+
+**Phase 2: Real-Time Metrics**
+- **Purpose**: Execute comprehensive metrics calculation
+- **Script**: `core/calculate-real-metrics.sh`
+- **Integration**: Registry updates with real performance data
+- **Evidence**: Actual numerical results from script execution
+
+**Phase 3: Mathematical Validation**
+- **Purpose**: Validate mathematical precision and compliance
+- **Script**: `compliance/verify-mathematical-formulas.sh`
+- **Requirement**: ≥21/22 tests pass (95% precision threshold)
+- **Evidence**: Real validation results with pass/fail status
+
+**Phase 4: Trigger System Validation**
+- **Purpose**: Validate automatic trigger conditions
+- **Script**: `core/test-trigger-system.sh`
+- **Tests**: 22 trigger validation tests
+- **Evidence**: Real trigger system validation results
 
 ### **Mandatory Script Execution Requirements**
 

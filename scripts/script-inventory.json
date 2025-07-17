@@ -1,0 +1,605 @@
+{
+  "metadata": {
+    "generated": "2025-01-17",
+    "total_scripts": 66,
+    "categories": 12,
+    "purpose": "P55 Script Execution Compliance Resolution"
+  },
+  "statistics": {
+    "by_category": {
+      "validation": 19,
+      "core": 13,
+      "automation": 6,
+      "compliance": 5,
+      "utilities": 5,
+      "monitoring": 5,
+      "tdd": 3,
+      "git-workflow": 2,
+      "deployment": 2,
+      "formulas": 2,
+      "demo": 2,
+      "maintenance": 1
+    },
+    "by_type": {
+      "shell": 58,
+      "python": 5,
+      "javascript": 3
+    }
+  },
+  "scripts": {
+    "automation": [
+      {
+        "name": "automated-git-workflows.sh",
+        "path": "scripts/automation/automated-git-workflows.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Git workflow automation",
+        "associated_commands": ["/git-worktrees-parallel", "/execute"]
+      },
+      {
+        "name": "git-automation-suite.sh",
+        "path": "scripts/automation/git-automation-suite.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Git automation suite",
+        "associated_commands": ["/strategic-git"]
+      },
+      {
+        "name": "parallelization-analyzer.js",
+        "path": "scripts/automation/parallelization-analyzer.js",
+        "type": "javascript",
+        "priority": "mandatory",
+        "purpose": "Parallelization analysis and optimization",
+        "associated_commands": ["/parallel-tool-execution"]
+      },
+      {
+        "name": "real-time-dependency-adapter.js",
+        "path": "scripts/automation/real-time-dependency-adapter.js",
+        "type": "javascript",
+        "priority": "mandatory",
+        "purpose": "Real-time dependency monitoring",
+        "associated_commands": ["/orchestrate"]
+      },
+      {
+        "name": "todo-parallelization-trigger.js",
+        "path": "scripts/automation/todo-parallelization-trigger.js",
+        "type": "javascript",
+        "priority": "mandatory",
+        "purpose": "Todo parallelization triggers",
+        "associated_commands": ["/parallel-multi-agent"]
+      },
+      {
+        "name": "todo-workflow-optimizer.js",
+        "path": "scripts/automation/todo-workflow-optimizer.js",
+        "type": "javascript",
+        "priority": "optional",
+        "purpose": "Todo workflow optimization",
+        "associated_commands": ["/systematic-quality-improvement"]
+      }
+    ],
+    "compliance": [
+      {
+        "name": "enforce-commit-requirements.sh",
+        "path": "scripts/compliance/enforce-commit-requirements.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Enforce commit requirements",
+        "associated_commands": ["/mandatory-commit-operations"]
+      },
+      {
+        "name": "enhanced-p55-p56-monitor.sh",
+        "path": "scripts/compliance/enhanced-p55-p56-monitor.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "P55/P56 compliance monitoring",
+        "associated_commands": ["/context-eng", "/verify-flow"]
+      },
+      {
+        "name": "generate-p55-compliance-report.sh",
+        "path": "scripts/compliance/generate-p55-compliance-report.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Generate P55 compliance reports",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "principle-prioritization-monitor.sh",
+        "path": "scripts/compliance/principle-prioritization-monitor.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Monitor principle prioritization",
+        "associated_commands": ["/principle-driven-action"]
+      },
+      {
+        "name": "verify-mathematical-formulas.sh",
+        "path": "scripts/compliance/verify-mathematical-formulas.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Verify mathematical formulas",
+        "associated_commands": ["/mathematical-verification-unified"]
+      }
+    ],
+    "core": [
+      {
+        "name": "calculate-complexity.sh",
+        "path": "scripts/core/calculate-complexity.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Calculate complexity metrics",
+        "associated_commands": ["/complexity", "/context-eng"]
+      },
+      {
+        "name": "calculate-confidence.sh",
+        "path": "scripts/core/calculate-confidence.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Calculate confidence levels",
+        "associated_commands": ["/confidence", "/context-eng"]
+      },
+      {
+        "name": "calculate-real-metrics.sh",
+        "path": "scripts/core/calculate-real-metrics.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Calculate real-time metrics",
+        "associated_commands": ["/context-eng", "/verify-flow"]
+      },
+      {
+        "name": "compact-notifications.sh",
+        "path": "scripts/core/compact-notifications.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Compact notification system",
+        "associated_commands": ["/compact"]
+      },
+      {
+        "name": "execute-commands.sh",
+        "path": "scripts/core/execute-commands.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Core command execution",
+        "associated_commands": ["/execute", "/context-eng"]
+      },
+      {
+        "name": "handoff-manager.sh",
+        "path": "scripts/core/handoff-manager.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Handoff management",
+        "associated_commands": ["/handoff"]
+      },
+      {
+        "name": "lifecycle-demo.sh",
+        "path": "scripts/core/lifecycle-demo.sh",
+        "type": "shell",
+        "priority": "optional",
+        "purpose": "Lifecycle demonstration",
+        "associated_commands": ["/demo"]
+      },
+      {
+        "name": "lifecycle-progress-tracker.sh",
+        "path": "scripts/core/lifecycle-progress-tracker.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Track lifecycle progress",
+        "associated_commands": ["/context-eng"]
+      },
+      {
+        "name": "path-helper.sh",
+        "path": "scripts/core/path-helper.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Path helper utilities",
+        "associated_commands": ["/context-eng"]
+      },
+      {
+        "name": "recovery-manager.sh",
+        "path": "scripts/core/recovery-manager.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "System recovery management",
+        "associated_commands": ["/recovery"]
+      },
+      {
+        "name": "resource-manager.sh",
+        "path": "scripts/core/resource-manager.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Resource management",
+        "associated_commands": ["/context-eng"]
+      },
+      {
+        "name": "test-trigger-system.sh",
+        "path": "scripts/core/test-trigger-system.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Test trigger system",
+        "associated_commands": ["/decision", "/context-eng"]
+      },
+      {
+        "name": "universal-script-bridge.sh",
+        "path": "scripts/core/universal-script-bridge.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Universal script bridge",
+        "associated_commands": ["/context-eng"]
+      }
+    ],
+    "validation": [
+      {
+        "name": "analyze-content-quality.sh",
+        "path": "scripts/validation/analyze-content-quality.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Analyze content quality",
+        "associated_commands": ["/systematic-quality-improvement"]
+      },
+      {
+        "name": "analyze-domain-consistency.sh",
+        "path": "scripts/validation/analyze-domain-consistency.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Analyze domain consistency",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "analyze-simulation-prevention.sh",
+        "path": "scripts/validation/analyze-simulation-prevention.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Analyze simulation prevention",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "automated-command-counter-v2.sh",
+        "path": "scripts/validation/automated-command-counter-v2.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Automated command counting v2",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "automated-command-counter.sh",
+        "path": "scripts/validation/automated-command-counter.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Automated command counting",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "calculate-comprehensive-quality-metrics.sh",
+        "path": "scripts/validation/calculate-comprehensive-quality-metrics.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Calculate comprehensive quality metrics",
+        "associated_commands": ["/systematic-quality-improvement"]
+      },
+      {
+        "name": "json_safety_functions.sh",
+        "path": "scripts/validation/json_safety_functions.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "JSON safety functions",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "setup-validation-environment.sh",
+        "path": "scripts/validation/setup-validation-environment.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Setup validation environment",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "test-validation-environment.sh",
+        "path": "scripts/validation/test-validation-environment.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Test validation environment",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-adaptive-thresholds.sh",
+        "path": "scripts/validation/validate-adaptive-thresholds.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate adaptive thresholds",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-execution-thresholds.sh",
+        "path": "scripts/validation/validate-execution-thresholds.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate execution thresholds",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-natural-language-compliance.sh",
+        "path": "scripts/validation/validate-natural-language-compliance.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate natural language compliance",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-navigation.sh",
+        "path": "scripts/validation/validate-navigation.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate navigation",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-p56-transparency.sh",
+        "path": "scripts/validation/validate-p56-transparency.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate P56 transparency",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-principle-compliance.sh",
+        "path": "scripts/validation/validate-principle-compliance.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate principle compliance",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-system-integrity.sh",
+        "path": "scripts/validation/validate-system-integrity.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate system integrity",
+        "associated_commands": ["/validate-sys", "/verify-flow"]
+      },
+      {
+        "name": "validate-technical-nomenclature.sh",
+        "path": "scripts/validation/validate-technical-nomenclature.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate technical nomenclature",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "validate-tool-call-compliance.sh",
+        "path": "scripts/validation/validate-tool-call-compliance.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Validate tool call compliance",
+        "associated_commands": ["/validate-sys"]
+      },
+      {
+        "name": "yaml-cleanup-monitoring.sh",
+        "path": "scripts/validation/yaml-cleanup-monitoring.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "YAML cleanup monitoring",
+        "associated_commands": ["/validate-sys"]
+      }
+    ],
+    "utilities": [
+      {
+        "name": "analyze_code_blocks.py",
+        "path": "scripts/utilities/analyze_code_blocks.py",
+        "type": "python",
+        "priority": "optional",
+        "purpose": "Analyze code blocks",
+        "associated_commands": ["/analyze"]
+      },
+      {
+        "name": "find_unspecified_blocks.py",
+        "path": "scripts/utilities/find_unspecified_blocks.py",
+        "type": "python",
+        "priority": "optional",
+        "purpose": "Find unspecified blocks",
+        "associated_commands": ["/analyze"]
+      },
+      {
+        "name": "fix_code_blocks.py",
+        "path": "scripts/utilities/fix_code_blocks.py",
+        "type": "python",
+        "priority": "optional",
+        "purpose": "Fix code blocks",
+        "associated_commands": ["/fix"]
+      },
+      {
+        "name": "fix_header_hierarchy.py",
+        "path": "scripts/utilities/fix_header_hierarchy.py",
+        "type": "python",
+        "priority": "optional",
+        "purpose": "Fix header hierarchy",
+        "associated_commands": ["/fix"]
+      },
+      {
+        "name": "validate_cross_references.py",
+        "path": "scripts/utilities/validate_cross_references.py",
+        "type": "python",
+        "priority": "optional",
+        "purpose": "Validate cross references",
+        "associated_commands": ["/validate-sys"]
+      }
+    ],
+    "monitoring": [
+      {
+        "name": "automated-remediation.py",
+        "path": "scripts/monitoring/automated-remediation.py",
+        "type": "python",
+        "priority": "mandatory",
+        "purpose": "Automated remediation",
+        "associated_commands": ["/monitor"]
+      },
+      {
+        "name": "compliance-alerting-system.py",
+        "path": "scripts/monitoring/compliance-alerting-system.py",
+        "type": "python",
+        "priority": "mandatory",
+        "purpose": "Compliance alerting system",
+        "associated_commands": ["/monitor"]
+      },
+      {
+        "name": "deploy-compliance-monitoring.sh",
+        "path": "scripts/monitoring/deploy-compliance-monitoring.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Deploy compliance monitoring",
+        "associated_commands": ["/monitor"]
+      },
+      {
+        "name": "predictive-analytics.py",
+        "path": "scripts/monitoring/predictive-analytics.py",
+        "type": "python",
+        "priority": "optional",
+        "purpose": "Predictive analytics",
+        "associated_commands": ["/monitor"]
+      },
+      {
+        "name": "real-time-compliance-monitor.sh",
+        "path": "scripts/monitoring/real-time-compliance-monitor.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Real-time compliance monitor",
+        "associated_commands": ["/monitor"]
+      }
+    ],
+    "tdd": [
+      {
+        "name": "test-quality-gates.sh",
+        "path": "scripts/tdd/test-quality-gates.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Test quality gates",
+        "associated_commands": ["/tdd"]
+      },
+      {
+        "name": "test-universal-activation-integration.sh",
+        "path": "scripts/tdd/test-universal-activation-integration.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Test universal activation integration",
+        "associated_commands": ["/tdd"]
+      },
+      {
+        "name": "test-verification-loops.sh",
+        "path": "scripts/tdd/test-verification-loops.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Test verification loops",
+        "associated_commands": ["/tdd"]
+      }
+    ],
+    "git-workflow": [
+      {
+        "name": "claude-worktree-manager.sh",
+        "path": "scripts/git-workflow/claude-worktree-manager.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Claude worktree manager",
+        "associated_commands": ["/git-worktrees-parallel"]
+      },
+      {
+        "name": "worktree-session-monitor.py",
+        "path": "scripts/git-workflow/worktree-session-monitor.py",
+        "type": "python",
+        "priority": "mandatory",
+        "purpose": "Worktree session monitor",
+        "associated_commands": ["/git-worktrees-parallel"]
+      }
+    ],
+    "deployment": [
+      {
+        "name": "fix-vercel-deployment.sh",
+        "path": "scripts/deployment/fix-vercel-deployment.sh",
+        "type": "shell",
+        "priority": "optional",
+        "purpose": "Fix Vercel deployment",
+        "associated_commands": ["/deploy"]
+      },
+      {
+        "name": "install-context7-claude-code.sh",
+        "path": "scripts/deployment/install-context7-claude-code.sh",
+        "type": "shell",
+        "priority": "optional",
+        "purpose": "Install Context7 Claude Code",
+        "associated_commands": ["/deploy"]
+      }
+    ],
+    "formulas": [
+      {
+        "name": "context_engineering_formulas.sh",
+        "path": "scripts/formulas/context_engineering_formulas.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Context engineering formulas",
+        "associated_commands": ["/mathematical-verification-unified"]
+      },
+      {
+        "name": "token-optimization-formulas.sh",
+        "path": "scripts/formulas/token-optimization-formulas.sh",
+        "type": "shell",
+        "priority": "mandatory",
+        "purpose": "Token optimization formulas",
+        "associated_commands": ["/mathematical-verification-unified"]
+      }
+    ],
+    "demo": [
+      {
+        "name": "command-counting-demo.sh",
+        "path": "scripts/demo/command-counting-demo.sh",
+        "type": "shell",
+        "priority": "optional",
+        "purpose": "Command counting demo",
+        "associated_commands": ["/demo"]
+      },
+      {
+        "name": "compact-notification-examples.sh",
+        "path": "scripts/demo/compact-notification-examples.sh",
+        "type": "shell",
+        "priority": "optional",
+        "purpose": "Compact notification examples",
+        "associated_commands": ["/demo"]
+      }
+    ],
+    "maintenance": [
+      {
+        "name": "archive-outputs.sh",
+        "path": "scripts/maintenance/archive-outputs.sh",
+        "type": "shell",
+        "priority": "optional",
+        "purpose": "Archive outputs",
+        "associated_commands": ["/maintenance"]
+      }
+    ],
+    "misc": [
+      {
+        "name": "copy-command-registry.js",
+        "path": "scripts/copy-command-registry.js",
+        "type": "javascript",
+        "priority": "optional",
+        "purpose": "Copy command registry",
+        "associated_commands": ["/copy-registry"]
+      }
+    ]
+  },
+  "priority_analysis": {
+    "mandatory_scripts": 52,
+    "optional_scripts": 14,
+    "mandatory_percentage": 78.79,
+    "p55_target": 95,
+    "compliance_gap": 43
+  },
+  "key_findings": {
+    "script_command_gaps": [
+      "Many validation scripts not mapped to specific commands",
+      "Core scripts need better integration with /context-eng",
+      "Compliance scripts need P55/P56 integration"
+    ],
+    "high_priority_integrations": [
+      "/context-eng - needs core/, compliance/, validation/ scripts",
+      "/validate-sys - needs all validation/ scripts",
+      "/verify-flow - needs compliance/ and validation/ scripts",
+      "/mathematical-verification-unified - needs formulas/ scripts"
+    ]
+  }
+}

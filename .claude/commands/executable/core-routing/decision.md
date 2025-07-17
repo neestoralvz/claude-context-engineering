@@ -14,6 +14,39 @@ Implement intelligent command routing and orchestration based on mathematical co
 ### **Context Required**: Task context, objectives, and decision parameters
 ### **Execution Time**: Medium (depends on analysis complexity)
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes decision analysis and trigger validation scripts:
+
+```bash
+# Core trigger system testing
+./scripts/core/test-trigger-system.sh --decision-analysis
+
+# Complexity and confidence calculation
+./scripts/core/calculate-complexity.sh --decision-context
+./scripts/core/calculate-confidence.sh --routing-analysis
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate decision context and trigger requirements
+2. **Trigger Analysis**: Test trigger system for optimal decision routing
+3. **Metrics Calculation**: Calculate complexity and confidence for decision quality
+4. **Decision Validation**: Verify optimal routing selection and execution
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute intelligent decision routing with trigger system validation
+2. Calculate complexity and confidence metrics for optimal command selection
+3. Validate decision quality through mathematical analysis
+4. Provide autonomous decision-making with transparent routing logic
+
+**Status Updates**:
+- 🔄 **Starting**: Decision engine analysis initiated with trigger validation
+- 📊 **Progress**: Calculating complexity and confidence for optimal routing
+- ✅ **Complete**: Decision routing completed with validated trigger system
+- 📈 **Metrics**: Decision quality and routing optimization confirmed
+
 ---
 
 ## ⚡ **ACTIVATION PROTOCOL**

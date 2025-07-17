@@ -3,6 +3,7 @@
 # Enforce Commit Requirements Compliance Script
 # Validates and enforces Principle #84: Mandatory Commit Operations
 # Part of Context Engineering compliance monitoring system
+# Enhanced with conventional commits support and optimized patterns
 
 # Color codes for output
 RED='\033[0;31m'
@@ -102,7 +103,7 @@ validate_commit_format() {
     local commit_hash=$1
     local commit_message=$(git log --format=%B -n 1 "$commit_hash")
     
-    # Check for operational commit patterns
+    # Check for operational commit patterns (Principle #84)
     if echo "$commit_message" | grep -qE "^(🚀 PRE-OP|⚡ PROGRESS|✅ COMPLETE):"; then
         # Validate operational commit structure
         if echo "$commit_message" | grep -q "🤖 Generated with \[Claude Code\]"; then
@@ -110,13 +111,14 @@ validate_commit_format() {
         else
             return 1  # Missing Claude Code attribution
         fi
+    # Check for conventional commits format (optimized)
+    elif echo "$commit_message" | grep -qE "^(feat|fix|docs|style|refactor|test|chore|perf|ci)(\(.+\))?: .+"; then
+        return 0  # Valid conventional commit
+    # Check for legacy emoji-prefixed commits (backward compatibility)
+    elif echo "$commit_message" | grep -qE "^(🚀 feat|🔧 fix|📚 docs|✨ enhance|♻️ refactor|✅ test|🛠️ build|⚙️ ci|🏗️ chore):"; then
+        return 0  # Valid legacy commit
     else
-        # Check for standard commit types
-        if echo "$commit_message" | grep -qE "^(🚀 feat|🔧 fix|📚 docs|✨ enhance|♻️ refactor|✅ test|🛠️ build|⚙️ ci|🏗️ chore):"; then
-            return 0  # Valid standard commit
-        else
-            return 2  # Invalid commit format
-        fi
+        return 2  # Invalid commit format
     fi
 }
 

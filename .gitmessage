@@ -1,0 +1,52 @@
+# Commit Message Template - Context Engineering System
+# 
+# Format: <type>(<scope>): <description>
+#
+# Types:
+#   feat     - New feature or capability
+#   fix      - Bug fix or issue resolution  
+#   docs     - Documentation changes
+#   style    - Code style/formatting changes
+#   refactor - Code refactoring without feature changes
+#   test     - Adding or updating tests
+#   chore    - Maintenance, build, or auxiliary tasks
+#   perf     - Performance improvements
+#   ci       - CI/CD pipeline changes
+#
+# Operational Commit Types (Principle #84 - Triple Commit Protocol):
+#   pre-op   - 🚀 PRE-OP: Operation initiation
+#   progress - ⚡ PROGRESS: Milestone documentation  
+#   complete - ✅ COMPLETE: Operation finalization
+#
+# Scope Examples:
+#   commands, docs, scripts, core, validation, automation
+#   knowledge, principles, handoffs, compliance, workflows
+#
+# Description Guidelines:
+#   - Use imperative mood: "add feature" not "added feature"
+#   - Start with lowercase
+#   - No period at end
+#   - Max 50 characters for subject line
+#   - Explain WHAT and WHY, not HOW
+#
+# Examples:
+#   feat(commands): add parallel execution orchestration
+#   fix(validation): resolve cross-reference accuracy issues
+#   docs(knowledge): update principle categorization
+#   refactor(scripts): optimize compliance checking logic
+#   🚀 PRE-OP: YAML elimination comprehensive conversion
+#   ⚡ PROGRESS: batch 2 meta compliance files completed
+#   ✅ COMPLETE: knowledge base planning handoff
+#
+# For operational commits (>2 files or >30 minutes), include:
+#
+# 🤖 Generated with [Claude Code](https://claude.ai/code)
+#
+# Co-Authored-By: Claude <noreply@anthropic.com>
+#
+# ---
+# Remember: 
+# - Keep subject line ≤50 characters
+# - Separate subject from body with blank line
+# - Use body to explain what and why, not how
+# - Reference issues/PRs: Closes #123, Refs #456

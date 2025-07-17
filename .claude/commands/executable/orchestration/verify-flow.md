@@ -14,6 +14,46 @@ Coordinate comprehensive multi-dimensional verification process that gives AI co
 ### **Context Required**: Execution results and verification requirements
 ### **Execution Time**: 5-20 minutes (depending on verification scope)
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes verification and mathematical validation scripts:
+
+```bash
+# Core system validation
+./scripts/validation/validate-system-integrity.sh
+
+# Mathematical formula verification
+./scripts/compliance/verify-mathematical-formulas.sh
+./scripts/formulas/context_engineering_formulas.sh --verify-all
+
+# P55/P56 compliance monitoring
+./scripts/compliance/enhanced-p55-p56-monitor.sh --verification-mode
+./scripts/validation/validate-p56-transparency.sh
+
+# Real-time metrics calculation
+./scripts/core/calculate-real-metrics.sh --verification-context
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate system state and verification requirements
+2. **Mathematical Verification**: Run formula validation and compliance checks
+3. **Transparency Validation**: Verify P56 compliance and monitoring
+4. **Metrics Collection**: Calculate and report verification metrics
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute comprehensive verification workflow with mathematical precision
+2. Validate system integrity and formula correctness
+3. Monitor P55/P56 compliance throughout verification process
+4. Generate detailed verification metrics and confidence scores
+
+**Status Updates**:
+- 🔄 **Starting**: Multi-dimensional verification workflow initiated
+- 📊 **Progress**: Running mathematical validation and compliance checks
+- ✅ **Complete**: Verification workflow completed with confidence scores
+- 📈 **Metrics**: Real-time verification metrics and compliance status updated
+
 ---
 
 ## ⚡ **ORCHESTRATION PROTOCOL**
