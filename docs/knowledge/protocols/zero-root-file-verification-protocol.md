@@ -54,7 +54,7 @@ file_classification:
     
   reports:
     pattern: "*_REPORT.md, *_ANALYSIS.md, compliance documents"
-    destination: "/reports/"
+    destination: "/docs/operations/reports/"
     auto_create: true
     
   outputs:
@@ -164,9 +164,9 @@ auto_reorganization:
 - **`/handoff`**: Force HANDOFF_*.md files to `/handoffs/`
 
 ### **Analysis Commands**  
-- **`/verify-flow`**: Output validation reports to `/reports/`
-- **`/mathematical-verification`**: Results to `/outputs/` or `/reports/`
-- **`/validate-system`**: Compliance reports to `/reports/`
+- **`/verify-flow`**: Output validation reports to `/docs/operations/reports/`
+- **`/mathematical-verification`**: Results to `/outputs/` or `/docs/operations/reports/`
+- **`/validate-system`**: Compliance reports to `/docs/operations/reports/`
 
 ### **Orchestration Commands**
 - **`/orchestrate`**: Any generated files follow Zero-Root Policy
@@ -211,7 +211,7 @@ auto_reorganization:
 2. **Execute documentation command** → Should verify Zero-Root compliance
 3. **Complete TodoWrite task** → Should trigger automatic verification
 4. **Generate handoff document** → Should auto-route to `/handoffs/`
-5. **Run analysis command** → Should output to `/reports/` or `/outputs/`
+5. **Run analysis command** → Should output to `/docs/operations/reports/` or `/outputs/`
 
 ---
 

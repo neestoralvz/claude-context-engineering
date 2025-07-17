@@ -48,23 +48,23 @@ zero-root-verify --post-action --command="[COMMAND_NAME]" --transparency --auto-
 - **Documentation Files**: All generated docs must be in `/docs/` hierarchy
 - **Living Documentation**: Updated docs maintain proper `/docs/` structure
 - **Temporary Files**: Any temp files must be cleaned from root directory
-- **Report Generation**: Any reports must be placed in `/reports/` directory
+- **Report Generation**: Any reports must be placed in `/docs/operations/reports/` directory
 ```
 
 ### **Analysis Commands**
 ```markdown
 **Verification Requirements**:
-- **Analysis Results**: All results must be in `/outputs/` directory
-- **Validation Reports**: All reports must be placed in `/reports/` directory
+- **Analysis Results**: All results must be in `/docs/operations/outputs/` directory
+- **Validation Reports**: All reports must be placed in `/docs/operations/reports/` directory
 - **Temporary Processing**: Any temp files must be cleaned from root directory
-- **Data Files**: Processed data must be in appropriate `/outputs/` subdirectories
+- **Data Files**: Processed data must be in appropriate `/docs/operations/outputs/` subdirectories
 ```
 
 ### **Orchestration Commands**
 ```markdown
 **Verification Requirements**:
 - **Generated Scripts**: Any scripts must be in `/scripts/` hierarchy
-- **Orchestration Outputs**: Results must be in `/outputs/orchestration/`
+- **Orchestration Outputs**: Results must be in `/docs/operations/outputs/orchestration/`
 - **Workflow Files**: Configuration files in appropriate subdirectories
 - **Temporary Files**: Any temp files must be cleaned from root directory
 ```
@@ -72,9 +72,9 @@ zero-root-verify --post-action --command="[COMMAND_NAME]" --transparency --auto-
 ### **File Generation Commands**
 ```markdown
 **Verification Requirements**:
-- **HANDOFF Files**: All HANDOFF_*.md files must be in `/handoffs/` directory
-- **Report Files**: All *_REPORT.md files must be in `/reports/` directory
-- **Output Files**: Generated content must be in `/outputs/` hierarchy
+- **HANDOFF Files**: All HANDOFF_*.md files must be in `/docs/operations/handoffs/` directory
+- **Report Files**: All *_REPORT.md files must be in `/docs/operations/reports/` directory
+- **Output Files**: Generated content must be in `/docs/operations/outputs/` hierarchy
 - **Documentation**: Any docs must be in appropriate `/docs/` subdirectories
 ```
 
@@ -83,40 +83,40 @@ zero-root-verify --post-action --command="[COMMAND_NAME]" --transparency --auto-
 ## 📊 P56 Transparency Templates
 
 ### **Standard Announcements**
-```yaml
-transparency_templates:
-  verification_start:
-    template: "🚨 ZERO-ROOT VERIFICATION: Validating [COMMAND_NAME] file structure compliance..."
-    timing: "immediate_post_execution"
-    
-  compliance_verified:
-    template: "✅ COMPLIANCE VERIFIED: Zero-Root File Policy maintained"
-    condition: "no_violations_detected"
-    
-  files_organized:
-    template: "📁 ALL FILES ORGANIZED: [file_type] properly placed in [target_directory]"
-    detail: "show_specific_files_moved"
-    
-  command_complete:
-    template: "🛡️ [COMMAND_NAME] COMPLETE: Zero-Root Policy compliance confirmed"
-    timing: "final_announcement"
-```
+
+**Transparency Templates**:
+
+**Verification Start**:
+- **Template**: `🚨 ZERO-ROOT VERIFICATION: Validating [COMMAND_NAME] file structure compliance...`
+- **Timing**: `immediate_post_execution`
+
+**Compliance Verified**:
+- **Template**: `✅ COMPLIANCE VERIFIED: Zero-Root File Policy maintained`
+- **Condition**: `no_violations_detected`
+
+**Files Organized**:
+- **Template**: `📁 ALL FILES ORGANIZED: [file_type] properly placed in [target_directory]`
+- **Detail**: `show_specific_files_moved`
+
+**Command Complete**:
+- **Template**: `🛡️ [COMMAND_NAME] COMPLETE: Zero-Root Policy compliance confirmed`
+- **Timing**: `final_announcement`
 
 ### **Violation Handling Announcements**
-```yaml
-violation_announcements:
-  violations_detected:
-    template: "⚠️ VIOLATIONS DETECTED: [count] files require relocation from root"
-    action: "auto_relocation_initiated"
-    
-  auto_relocating:
-    template: "🔄 AUTO-RELOCATING: Moving [filename] → [destination]"
-    detail: "show_each_file_moved"
-    
-  compliance_restored:
-    template: "✅ COMPLIANCE RESTORED: All files properly organized"
-    condition: "all_violations_resolved"
-```
+
+**Violation Announcements**:
+
+**Violations Detected**:
+- **Template**: `⚠️ VIOLATIONS DETECTED: [count] files require relocation from root`
+- **Action**: `auto_relocation_initiated`
+
+**Auto Relocating**:
+- **Template**: `🔄 AUTO-RELOCATING: Moving [filename] → [destination]`
+- **Detail**: `show_each_file_moved`
+
+**Compliance Restored**:
+- **Template**: `✅ COMPLIANCE RESTORED: All files properly organized`
+- **Condition**: `all_violations_resolved`
 
 ---
 
@@ -161,13 +161,13 @@ zero-root-verify --post-action --command="verify-flow" --transparency --auto-res
 
 # Verification announcements
 # ✅ COMPLIANCE VERIFIED: Zero-Root File Policy maintained
-# 📁 ALL FILES ORGANIZED: Verification reports properly placed in /reports/
+# 📁 ALL FILES ORGANIZED: Verification reports properly placed in /docs/operations/reports/
 # 🛡️ VERIFY-FLOW COMPLETE: Zero-Root Policy compliance confirmed
 ```
 
 **Verification Requirements**:
-- **Verification Reports**: All reports must be placed in `/reports/` directory
-- **Analysis Results**: Results must be in `/outputs/verification/` directory
+- **Verification Reports**: All reports must be placed in `/docs/operations/reports/` directory
+- **Analysis Results**: Results must be in `/docs/operations/outputs/verification/` directory
 - **Temporary Files**: Any temp files must be cleaned from root directory
 - **Compliance Confirmation**: 100% Zero-Root Policy adherence before command completion
 ```

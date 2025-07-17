@@ -359,7 +359,7 @@ zero-root-verify --post-action --command="sync-docs" --transparency --auto-resol
 **Verification Requirements**:
 - **Documentation Files**: All generated docs must be in `/docs/` hierarchy
 - **Temporary Files**: Any temp files must be cleaned from root directory
-- **Report Generation**: Sync reports must be placed in `/reports/` directory
+- **Report Generation**: Sync reports must be placed in `/docs/operations/reports/` directory
 - **Compliance Confirmation**: 100% Zero-Root Policy adherence before command completion
 
 ---

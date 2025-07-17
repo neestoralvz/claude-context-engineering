@@ -89,7 +89,7 @@ documentation_tasks:
   verification_requirements:
     target_directory: "/docs/"
     temp_file_cleanup: "mandatory"
-    report_placement: "/reports/"
+    report_placement: "/docs/operations/reports/"
     compliance_announcement: "📋 DOCUMENTATION TASK VERIFIED: Files properly placed in /docs/ hierarchy"
 ```
 
@@ -104,9 +104,9 @@ analysis_tasks:
     
   verification_requirements:
     results_directory: "/outputs/"
-    reports_directory: "/reports/"
+    reports_directory: "/docs/operations/reports/"
     temp_cleanup: "mandatory"
-    compliance_announcement: "📋 ANALYSIS TASK VERIFIED: Results properly organized in /outputs/ and /reports/"
+    compliance_announcement: "📋 ANALYSIS TASK VERIFIED: Results properly organized in /outputs/ and /docs/operations/reports/"
 ```
 
 ### **Handoff and Coordination Tasks**
@@ -176,7 +176,7 @@ context_specific_announcements:
     template: "📋 DOCUMENTATION VERIFIED: [task_description] - Files organized in /docs/"
     
   analysis_context:
-    template: "📋 ANALYSIS VERIFIED: [task_description] - Results in /outputs/, reports in /reports/"
+    template: "📋 ANALYSIS VERIFIED: [task_description] - Results in /outputs/, reports in /docs/operations/reports/"
     
   handoff_context:
     template: "📋 HANDOFF VERIFIED: [task_description] - Documents in /handoffs/"

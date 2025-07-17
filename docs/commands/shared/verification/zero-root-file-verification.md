@@ -71,8 +71,8 @@ verification_algorithm:
     
   violation_classification:
     handoff_files: "HANDOFF_*.md → relocate to /handoffs/"
-    report_files: "*_REPORT.md, *_ANALYSIS.md → relocate to /reports/"
-    output_files: "temporary results → relocate to /outputs/"
+    report_files: "*_REPORT.md, *_ANALYSIS.md → relocate to /docs/operations/reports/"
+    output_files: "temporary results → relocate to /docs/operations/outputs/"
     script_files: "*.py, *.sh, *.js → relocate to /scripts/"
     documentation: "*.md docs → relocate to appropriate /docs/ subfolder"
     
@@ -115,9 +115,9 @@ critical_integration:
     - "/handoff": "Force HANDOFF_*.md to /handoffs/ directory"
     
   analysis_commands:
-    - "/verify-flow": "Output validation reports to /reports/"
-    - "/mathematical-verification": "Results to /outputs/ or /reports/"
-    - "/validate-system": "Compliance reports to /reports/"
+    - "/verify-flow": "Output validation reports to /docs/operations/reports/"
+    - "/mathematical-verification": "Results to /docs/operations/outputs/ or /docs/operations/reports/"
+    - "/validate-system": "Compliance reports to /docs/operations/reports/"
     - "/orchestrate": "Verify all generated orchestration files"
     
   file_generation:
@@ -225,8 +225,8 @@ validation_checklist:
   compliance_validation:
     - [ ] Zero unauthorized files in project root
     - [ ] All handoffs properly routed to /handoffs/
-    - [ ] All reports properly placed in /reports/
-    - [ ] All outputs organized in /outputs/
+    - [ ] All reports properly placed in /docs/operations/reports/
+    - [ ] All outputs organized in /docs/operations/outputs/
     - [ ] Documentation maintained in /docs/ hierarchy
 ```
 

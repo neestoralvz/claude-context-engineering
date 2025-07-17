@@ -214,7 +214,7 @@ The monitoring script automatically:
 - **Checkpoint Reports**: `scripts/results/yaml-cleanup/checkpoint_[PHASE]_[TIMESTAMP].json`
 - **Validation Logs**: `scripts/results/yaml-cleanup/[validation-type]-check.log`
 - **Emergency Reports**: `scripts/results/yaml-cleanup/EMERGENCY_RESPONSE_[TIMESTAMP].json`
-- **Final Reports**: `reports/YAML_CLEANUP_FINAL_VALIDATION.md`
+- **Final Reports**: `docs/operations/reports/YAML_CLEANUP_FINAL_VALIDATION.md`
 
 ### **Report Contents**
 - Validation status for each system component

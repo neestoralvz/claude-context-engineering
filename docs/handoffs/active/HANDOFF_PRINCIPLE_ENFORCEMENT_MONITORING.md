@@ -74,7 +74,7 @@ Real-time Compliance Monitoring
 
 ### **Evidence File**
 ```
-./reports/PRINCIPLE_PRIORITIZATION_SYSTEM_COMPLETE.md
+./docs/operations/reports/PRINCIPLE_PRIORITIZATION_SYSTEM_COMPLETE.md
 Status: 100% operational as of 2025-07-17
 Integration: 50 scripts + automated monitoring + enforcement
 ```

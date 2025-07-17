@@ -290,7 +290,7 @@
 ### 95. Research Knowledge Crystallization
 **CRITICAL Definition**: MANDATORY systematic documentation and crystallization of research findings into reusable knowledge patterns, with intelligent cataloging, cross-referencing, and integration into organizational knowledge base for future problem-solving acceleration.
 
-**See Also**: [Pattern Crystallization](#15-pattern-crystallization) | [Strategic Online Research](./intelligent-adaptation.md#94-strategic-online-research) | [Living Documentation](#13-living-documentation) | [Knowledge Discovery Hierarchy](#7-knowledge-discovery-hierarchy)
+**See Also**: [Pattern Crystallization](#15-pattern-crystallization) | [Strategic Online Research](./intelligent-adaptation.md#100-strategic-online-research) | [Living Documentation](#13-living-documentation) | [Knowledge Discovery Hierarchy](#7-knowledge-discovery-hierarchy)
 
 **MANDATORY Crystallization Protocol**: COLLECT research findings → STRUCTURE into reusable patterns → VALIDATE against multiple contexts → CATALOG with intelligent tagging → INTEGRATE into knowledge base → ENABLE discovery and reuse
 
@@ -1122,7 +1122,7 @@ git blame [affected_file] # Identify recent changes
 docs/handoffs/archive/YYYY/MM/
 ├── plans/
 ├── handoffs/
-├── reports/
+├── operations/reports/
 ├── analyses/
 └── learning-extracts/
 ```
