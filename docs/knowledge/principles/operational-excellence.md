@@ -880,45 +880,41 @@ git blame [affected_file] # Identify recent changes
 **PRIORITY**: **CRÍTICA** - Este principio se activa automáticamente durante CUALQUIER fase de planificación y tiene precedencia sobre enfoques secuenciales de análisis.
 
 ### **MANDATORY Planning-Phase Parallel Execution Protocol**
-```yaml
-planning_phase_parallel_task_priority:
-  automatic_activation_triggers:
-    planning_phase_detection: "MANDATORY: Auto-detection when Claude Code enters planning mode"
-    complexity_threshold: "CRITICAL: Automatic activation for objectives with complexity ≥0.7"
-    multi_domain_analysis: "REQUIRED: Activate when planning spans multiple knowledge domains"
-    time_critical_planning: "ENFORCED: Priority activation for time-sensitive planning scenarios"
-    
-  parallel_task_deployment_requirements:
-    minimum_task_tools: "MANDATORY: Deploy ≥3 Task tools simultaneously for comprehensive analysis"
-    maximum_parallelization: "CRITICAL: Deploy ≥5 Task tools for complex planning scenarios"
-    domain_specialization: "REQUIRED: Each Task tool focuses on specialized planning domain"
-    dependency_mapping: "ENFORCED: Automatic dependency detection and coordination"
-    
-  planning_domain_specialization:
-    task_1_strategic_analysis: "Strategic planning and high-level architecture analysis"
-    task_2_technical_analysis: "Technical feasibility and implementation pathway analysis"
-    task_3_resource_analysis: "Resource requirements and constraint analysis"
-    task_4_risk_analysis: "Risk assessment and mitigation strategy analysis"
-    task_5_integration_analysis: "Integration points and system compatibility analysis"
-```
+
+**CRITICAL Automatic Activation Triggers**:
+- **MANDATORY**: Auto-detection when Claude Code enters planning mode
+- **CRITICAL**: Automatic activation for objectives with complexity ≥0.7
+- **REQUIRED**: Activate when planning spans multiple knowledge domains
+- **ENFORCED**: Priority activation for time-sensitive planning scenarios
+
+**MANDATORY Parallel Task Deployment Requirements**:
+- **MANDATORY**: Deploy ≥3 Task tools simultaneously for comprehensive analysis
+- **CRITICAL**: Deploy ≥5 Task tools for complex planning scenarios
+- **REQUIRED**: Each Task tool focuses on specialized planning domain
+- **ENFORCED**: Automatic dependency detection and coordination
+
+**CRITICAL Planning Domain Specialization**:
+1. **Task 1 - Strategic Analysis**: Strategic planning and high-level architecture analysis
+2. **Task 2 - Technical Analysis**: Technical feasibility and implementation pathway analysis
+3. **Task 3 - Resource Analysis**: Resource requirements and constraint analysis
+4. **Task 4 - Risk Analysis**: Risk assessment and mitigation strategy analysis
+5. **Task 5 - Integration Analysis**: Integration points and system compatibility analysis
 
 ### **Comprehensive Planning Intelligence Framework**
 
 #### **MANDATORY Parallel Task Orchestration (Auto-Execution)**
-```yaml
-parallel_task_orchestration:
-  intelligent_coordination:
-    automatic_deployment: "MANDATORY: Automatic deployment without manual intervention"
-    domain_expertise: "CRITICAL: Each Task tool operates with specialized domain knowledge"
-    cross_task_communication: "REQUIRED: Real-time coordination between parallel Task tools"
-    synthesis_intelligence: "ENFORCED: Intelligent synthesis of parallel analysis results"
-    
-  planning_convergence_optimization:
-    accelerated_analysis: "300% faster planning through parallel intelligence deployment"
-    comprehensive_coverage: "≥95% planning domain coverage through specialized Task tools"
-    dependency_detection: "Automatic detection of planning dependencies and constraints"
-    solution_synthesis: "Intelligent synthesis of multi-domain analysis into unified plan"
-```
+
+**CRITICAL Intelligent Coordination Protocol**:
+- **MANDATORY**: Automatic deployment without manual intervention
+- **CRITICAL**: Each Task tool operates with specialized domain knowledge
+- **REQUIRED**: Real-time coordination between parallel Task tools
+- **ENFORCED**: Intelligent synthesis of parallel analysis results
+
+**MANDATORY Planning Convergence Optimization**:
+- **300% faster planning** through parallel intelligence deployment
+- **≥95% planning domain coverage** through specialized Task tools
+- **Automatic detection** of planning dependencies and constraints
+- **Intelligent synthesis** of multi-domain analysis into unified plan
 
 #### **CRITICAL Planning Domain Coverage (Parallel Deployment)**
 1. **Strategic Planning Domain** (Task Tool 1)
@@ -952,20 +948,18 @@ parallel_task_orchestration:
    - Compliance and regulatory requirement analysis
 
 #### **MANDATORY Parallel Task Success Metrics**
-```yaml
-parallel_task_success_metrics:
-  deployment_efficiency:
-    activation_speed: "≤30 seconds: Time from planning phase detection to parallel Task deployment"
-    task_coordination: "≥95%: Success rate of coordinated parallel Task execution"
-    coverage_completeness: "≥95%: Planning domain coverage through parallel analysis"
-    synthesis_quality: "≥90%: Quality of synthesized planning results from parallel tasks"
-    
-  planning_acceleration:
-    time_reduction: "≥60%: Planning time reduction through parallel vs sequential analysis"
-    quality_improvement: "≥40%: Planning quality improvement through comprehensive parallel coverage"
-    dependency_detection: "≥85%: Accuracy of dependency detection through specialized analysis"
-    risk_identification: "≥90%: Risk identification improvement through specialized risk analysis"
-```
+
+**CRITICAL Deployment Efficiency Requirements**:
+- **≤30 seconds**: Time from planning phase detection to parallel Task deployment
+- **≥95%**: Success rate of coordinated parallel Task execution
+- **≥95%**: Planning domain coverage through parallel analysis
+- **≥90%**: Quality of synthesized planning results from parallel tasks
+
+**MANDATORY Planning Acceleration Standards**:
+- **≥60%**: Planning time reduction through parallel vs sequential analysis
+- **≥40%**: Planning quality improvement through comprehensive parallel coverage
+- **≥85%**: Accuracy of dependency detection through specialized analysis
+- **≥90%**: Risk identification improvement through specialized risk analysis
 
 ### **Integration with Existing Planning Principles**
 
@@ -1002,24 +996,22 @@ parallel_task_success_metrics:
 - ✅ **Continuous Optimization**: Continuous optimization of parallel Task deployment based on planning complexity
 
 ### **Planning Phase Detection Triggers**
-```yaml
-planning_phase_detection:
-  explicit_planning_requests:
-    user_planning_commands: "Direct user requests for planning (/plan, /strategy, /design)"
-    objective_decomposition: "Requests for objective breakdown and analysis"
-    architecture_planning: "System architecture and design planning requests"
-    
-  implicit_planning_scenarios:
-    complexity_analysis: "When Claude Code detects planning need through complexity analysis"
-    multi_step_objectives: "Objectives requiring multiple coordinated steps"
-    resource_intensive_tasks: "Tasks requiring significant resource planning"
-    integration_requirements: "Tasks requiring integration planning across systems"
-    
-  automatic_escalation:
-    complexity_threshold_exceeded: "Automatic escalation when complexity ≥0.7 detected"
-    planning_quality_requirements: "When high-quality planning is critical for success"
-    risk_mitigation_needs: "When comprehensive risk analysis is required"
-```
+
+**MANDATORY Explicit Planning Requests**:
+- **Direct user requests** for planning (/plan, /strategy, /design)
+- **Objective decomposition** requests for breakdown and analysis
+- **Architecture planning** requests for system architecture and design
+
+**CRITICAL Implicit Planning Scenarios**:
+- **Complexity analysis**: When Claude Code detects planning need through complexity analysis
+- **Multi-step objectives**: Objectives requiring multiple coordinated steps
+- **Resource-intensive tasks**: Tasks requiring significant resource planning
+- **Integration requirements**: Tasks requiring integration planning across systems
+
+**AUTOMATIC Escalation Triggers**:
+- **Complexity threshold exceeded**: Automatic escalation when complexity ≥0.7 detected
+- **Planning quality requirements**: When high-quality planning is critical for success
+- **Risk mitigation needs**: When comprehensive risk analysis is required
 
 ---
 
