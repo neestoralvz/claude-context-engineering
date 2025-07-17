@@ -24,50 +24,46 @@
 ### **🚫 PROHIBITED Simulation Patterns**
 
 **Automatic Blocking Requirements**:
-```yaml
-prohibited_patterns:
-  simulation_language:
-    - "I would use [tool]"
-    - "Let me describe how I would..."
-    - "This would involve using..."
-    - "I could execute..."
-    - "The process would be..."
-  
-  estimation_patterns:
-    - "Approximately X lines"
-    - "Roughly Y results"
-    - "About Z files"
-    - "Probably contains..."
-    - "Likely to show..."
-  
-  description_patterns:
-    - "This command does..."
-    - "The tool would..."
-    - "Expected output..."
-    - "Typical results..."
-    - "Standard behavior..."
-```
+
+**PROHIBITED Simulation Language Patterns**:
+- "I would use [tool]"
+- "Let me describe how I would..."
+- "This would involve using..."
+- "I could execute..."
+- "The process would be..."
+
+**PROHIBITED Estimation Patterns**:
+- "Approximately X lines"
+- "Roughly Y results"
+- "About Z files"
+- "Probably contains..."
+- "Likely to show..."
+
+**PROHIBITED Description Patterns**:
+- "This command does..."
+- "The tool would..."
+- "Expected output..."
+- "Typical results..."
+- "Standard behavior..."
 
 ### **✅ REQUIRED Execution Patterns**
 
 **Compliance Implementation**:
-```yaml
-execution_requirements:
-  tool_call_implementation:
-    pre_execution: "Visual announcement with tool specification"
-    execution: "Actual tool call with real parameters"
-    post_execution: "Result verification with evidence documentation"
-  
-  evidence_generation:
-    quantifiable_results: "100% - All tool outputs must be measurable"
-    validation_evidence: "MANDATORY - Tool execution confirmation"
-    performance_metrics: "REQUIRED - Execution time and success tracking"
-  
-  compliance_verification:
-    real_time_monitoring: "CONTINUOUS - P55 adherence tracking"
-    automatic_enforcement: "IMMEDIATE - Block non-compliant patterns"
-    quality_assurance: "SYSTEMATIC - Multi-dimensional validation"
-```
+
+**MANDATORY Tool Call Implementation Standards**:
+- **Pre-Execution**: Visual announcement with tool specification
+- **Execution**: Actual tool call with real parameters
+- **Post-Execution**: Result verification with evidence documentation
+
+**REQUIRED Evidence Generation Standards**:
+- **Quantifiable Results**: 100% - All tool outputs must be measurable
+- **Validation Evidence**: MANDATORY - Tool execution confirmation
+- **Performance Metrics**: REQUIRED - Execution time and success tracking
+
+**CRITICAL Compliance Verification Requirements**:
+- **Real-Time Monitoring**: CONTINUOUS - P55 adherence tracking
+- **Automatic Enforcement**: IMMEDIATE - Block non-compliant patterns
+- **Quality Assurance**: SYSTEMATIC - Multi-dimensional validation
 
 ---
 
@@ -115,23 +111,21 @@ execution_requirements:
 ### **🔍 Transparency Validation Framework**
 
 **Real-Time Transparency Monitoring**:
-```yaml
-transparency_requirements:
-  announcement_compliance:
-    pre_execution: "100% - Visual announcement before tool calls"
-    progress_reporting: "≤30s intervals - Real-time status updates"
-    completion_confirmation: "MANDATORY - Post-execution validation"
-  
-  user_communication:
-    clarity_standards: "UNAMBIGUOUS - Clear execution communication"
-    status_visibility: "TRANSPARENT - Execution progress visibility"
-    evidence_presentation: "SYSTEMATIC - Result documentation"
-  
-  compliance_verification:
-    template_adherence: "REQUIRED - Standard format compliance"
-    timing_validation: "AUTOMATIC - Announcement timing verification"
-    quality_assessment: "CONTINUOUS - Transparency effectiveness measurement"
-```
+
+**MANDATORY Announcement Compliance Standards**:
+- **Pre-Execution**: 100% - Visual announcement before tool calls
+- **Progress Reporting**: ≤30s intervals - Real-time status updates
+- **Completion Confirmation**: MANDATORY - Post-execution validation
+
+**REQUIRED User Communication Standards**:
+- **Clarity Standards**: UNAMBIGUOUS - Clear execution communication
+- **Status Visibility**: TRANSPARENT - Execution progress visibility
+- **Evidence Presentation**: SYSTEMATIC - Result documentation
+
+**CRITICAL Compliance Verification Requirements**:
+- **Template Adherence**: REQUIRED - Standard format compliance
+- **Timing Validation**: AUTOMATIC - Announcement timing verification
+- **Quality Assessment**: CONTINUOUS - Transparency effectiveness measurement
 
 ---
 
@@ -147,61 +141,55 @@ transparency_requirements:
 ### **🛡️ Compliance Gate Enforcement**
 
 **Pre-Execution Gates**:
-```yaml
-pre_execution_validation:
-  p55_readiness:
-    requirement: "Verify real execution capability"
-    validation: "Check tool availability and parameters"
-    enforcement: "Block execution if simulation patterns detected"
-  
-  p56_preparation:
-    requirement: "Prepare visual announcement"
-    validation: "Verify announcement template compliance"
-    enforcement: "Require announcement before tool execution"
-  
-  parameter_verification:
-    requirement: "Validate all required parameters"
-    validation: "Check parameter completeness and format"
-    enforcement: "Block execution with invalid parameters"
-```
+
+**MANDATORY P55 Readiness Standards**:
+- **Requirement**: Verify real execution capability
+- **Validation**: Check tool availability and parameters
+- **Enforcement**: Block execution if simulation patterns detected
+
+**REQUIRED P56 Preparation Standards**:
+- **Requirement**: Prepare visual announcement
+- **Validation**: Verify announcement template compliance
+- **Enforcement**: Require announcement before tool execution
+
+**CRITICAL Parameter Verification Requirements**:
+- **Requirement**: Validate all required parameters
+- **Validation**: Check parameter completeness and format
+- **Enforcement**: Block execution with invalid parameters
 
 **During-Execution Monitoring**:
-```yaml
-execution_monitoring:
-  real_time_tracking:
-    p55_compliance: "Monitor actual tool execution vs simulation"
-    p56_transparency: "Track visual announcement compliance"
-    evidence_generation: "Verify quantifiable result production"
-  
-  performance_measurement:
-    execution_timing: "Track tool call response times"
-    success_validation: "Monitor execution completion status"
-    quality_assessment: "Evaluate result quality and evidence"
-  
-  deviation_prevention:
-    pattern_detection: "Identify non-compliant execution patterns"
-    automatic_correction: "Apply immediate compliance restoration"
-    escalation_protocols: "Manual intervention for complex scenarios"
-```
+
+**MANDATORY Real-Time Tracking Standards**:
+- **P55 Compliance**: Monitor actual tool execution vs simulation
+- **P56 Transparency**: Track visual announcement compliance
+- **Evidence Generation**: Verify quantifiable result production
+
+**REQUIRED Performance Measurement Standards**:
+- **Execution Timing**: Track tool call response times
+- **Success Validation**: Monitor execution completion status
+- **Quality Assessment**: Evaluate result quality and evidence
+
+**CRITICAL Deviation Prevention Requirements**:
+- **Pattern Detection**: Identify non-compliant execution patterns
+- **Automatic Correction**: Apply immediate compliance restoration
+- **Escalation Protocols**: Manual intervention for complex scenarios
 
 **Post-Execution Validation**:
-```yaml
-post_execution_verification:
-  result_validation:
-    evidence_confirmation: "Verify quantifiable results production"
-    quality_assessment: "Evaluate output quality and completeness"
-    compliance_documentation: "Record P55/P56 adherence status"
-  
-  transparency_confirmation:
-    announcement_completion: "Verify completion announcement delivery"
-    user_communication: "Confirm clear result communication"
-    evidence_presentation: "Validate evidence accessibility"
-  
-  improvement_identification:
-    performance_analysis: "Analyze execution efficiency"
-    compliance_optimization: "Identify compliance enhancement opportunities"
-    quality_enhancement: "Recommend execution quality improvements"
-```
+
+**MANDATORY Result Validation Standards**:
+- **Evidence Confirmation**: Verify quantifiable results production
+- **Quality Assessment**: Evaluate output quality and completeness
+- **Compliance Documentation**: Record P55/P56 adherence status
+
+**REQUIRED Transparency Confirmation Standards**:
+- **Announcement Completion**: Verify completion announcement delivery
+- **User Communication**: Confirm clear result communication
+- **Evidence Presentation**: Validate evidence accessibility
+
+**SYSTEMATIC Improvement Identification Requirements**:
+- **Performance Analysis**: Analyze execution efficiency
+- **Compliance Optimization**: Identify compliance enhancement opportunities
+- **Quality Enhancement**: Recommend execution quality improvements
 
 ---
 
@@ -226,23 +214,21 @@ post_execution_verification:
 ### **🔍 Compliance Scoring Framework**
 
 **Real-Time Compliance Calculation**:
-```yaml
-compliance_scoring:
-  p55_execution_score:
-    formula: "(real_executions / total_executions) * 100"
-    target: "≥98.7%"
-    enforcement: "Automatic blocking below 95%"
-  
-  p56_transparency_score:
-    formula: "(compliant_announcements / total_announcements) * 100"
-    target: "100%"
-    enforcement: "Immediate correction for non-compliance"
-  
-  overall_compliance_score:
-    formula: "(p55_score * 0.6) + (p56_score * 0.4)"
-    target: "≥95%"
-    enforcement: "Comprehensive compliance gates"
-```
+
+**MANDATORY P55 Execution Score Standards**:
+- **Formula**: (real_executions / total_executions) * 100
+- **Target**: ≥98.7%
+- **Enforcement**: Automatic blocking below 95%
+
+**REQUIRED P56 Transparency Score Standards**:
+- **Formula**: (compliant_announcements / total_announcements) * 100
+- **Target**: 100%
+- **Enforcement**: Immediate correction for non-compliance
+
+**CRITICAL Overall Compliance Score Requirements**:
+- **Formula**: (p55_score * 0.6) + (p56_score * 0.4)
+- **Target**: ≥95%
+- **Enforcement**: Comprehensive compliance gates
 
 ---
 
@@ -315,44 +301,40 @@ compliance_scoring:
 ### **⚡ Real-Time Enforcement Mechanisms**
 
 **Automatic Compliance Enforcement**:
-```yaml
-enforcement_protocols:
-  pattern_detection:
-    simulation_blocking: "IMMEDIATE - Block simulation language patterns"
-    compliance_scoring: "CONTINUOUS - Real-time P55/P56 calculation"
-    quality_enforcement: "AUTOMATIC - Quality gate activation"
-  
-  recovery_mechanisms:
-    automatic_correction: "SELF-HEALING - Compliance pattern restoration"
-    user_guidance: "ASSISTED - Compliance improvement recommendations"
-    escalation_handling: "MANUAL - Complex compliance scenario resolution"
-  
-  monitoring_systems:
-    real_time_tracking: "CONTINUOUS - Execution and transparency monitoring"
-    performance_measurement: "SYSTEMATIC - Metrics collection and analysis"
-    improvement_identification: "PROACTIVE - Optimization opportunity detection"
-```
+
+**MANDATORY Pattern Detection Standards**:
+- **Simulation Blocking**: IMMEDIATE - Block simulation language patterns
+- **Compliance Scoring**: CONTINUOUS - Real-time P55/P56 calculation
+- **Quality Enforcement**: AUTOMATIC - Quality gate activation
+
+**REQUIRED Recovery Mechanisms**:
+- **Automatic Correction**: SELF-HEALING - Compliance pattern restoration
+- **User Guidance**: ASSISTED - Compliance improvement recommendations
+- **Escalation Handling**: MANUAL - Complex compliance scenario resolution
+
+**CRITICAL Monitoring Systems Requirements**:
+- **Real-Time Tracking**: CONTINUOUS - Execution and transparency monitoring
+- **Performance Measurement**: SYSTEMATIC - Metrics collection and analysis
+- **Improvement Identification**: PROACTIVE - Optimization opportunity detection
 
 ### **🔍 Compliance Recovery Framework**
 
 **Recovery Protocols by Violation Severity**:
-```yaml
-recovery_protocols:
-  critical_violations:
-    p55_execution_failure: "IMMEDIATE BLOCK + CORRECTION GUIDANCE"
-    p56_transparency_absence: "EXECUTION HALT + ANNOUNCEMENT REQUIREMENT"
-    evidence_production_failure: "RESULT INVALIDATION + RE-EXECUTION"
-  
-  moderate_violations:
-    partial_compliance: "WARNING + OPTIMIZATION SUGGESTIONS"
-    timing_deviations: "ADJUSTMENT + PERFORMANCE MONITORING"
-    template_inconsistencies: "CORRECTION + STANDARD ENFORCEMENT"
-  
-  minor_violations:
-    optimization_opportunities: "RECOMMENDATIONS + CONTINUOUS MONITORING"
-    performance_improvements: "SUGGESTIONS + BEST PRACTICE GUIDANCE"
-    quality_enhancements: "TIPS + EFFECTIVENESS MEASUREMENT"
-```
+
+**CRITICAL Violation Response Standards**:
+- **P55 Execution Failure**: IMMEDIATE BLOCK + CORRECTION GUIDANCE
+- **P56 Transparency Absence**: EXECUTION HALT + ANNOUNCEMENT REQUIREMENT
+- **Evidence Production Failure**: RESULT INVALIDATION + RE-EXECUTION
+
+**MODERATE Violation Response Standards**:
+- **Partial Compliance**: WARNING + OPTIMIZATION SUGGESTIONS
+- **Timing Deviations**: ADJUSTMENT + PERFORMANCE MONITORING
+- **Template Inconsistencies**: CORRECTION + STANDARD ENFORCEMENT
+
+**MINOR Violation Response Standards**:
+- **Optimization Opportunities**: RECOMMENDATIONS + CONTINUOUS MONITORING
+- **Performance Improvements**: SUGGESTIONS + BEST PRACTICE GUIDANCE
+- **Quality Enhancements**: TIPS + EFFECTIVENESS MEASUREMENT
 
 ---
 
