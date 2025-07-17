@@ -2,7 +2,7 @@
  * Command Registry Integration System
  * 
  * This module provides comprehensive data structures and utilities for
- * managing the 62 Context Engineering commands from the command registry.
+ * managing the 155 Context Engineering commands from the command registry.
  */
 
 export interface CommandMetrics {
