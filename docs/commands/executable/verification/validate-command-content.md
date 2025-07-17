@@ -1,7 +1,9 @@
 # Atomic Command: `/validate-command-content` - Modular System
 
-## **Principles #6 + #11 + #48 + #55 + #56: Universal Command Content Quality Validation**
+## **🚨 BLOCKING Principles #6 + #11 + #48 + #55 + #56: Universal Command Content Quality Validation**
 **"Comprehensive command content quality validation through systematic P55/P56 compliance, mathematical precision, and cross-system integration excellence."**
+
+**🚨 MANDATORY ENFORCEMENT**: Sistema WILL execute comprehensive command validation with AUTOMATIC blocking of non-compliant content and REQUIRED quality verification. ZERO tolerance for commands lacking proper validation or compliance standards.
 
 ## 🏗️ Core Inheritance
 

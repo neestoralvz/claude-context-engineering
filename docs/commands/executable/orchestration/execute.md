@@ -1,14 +1,14 @@
 # Orchestrator Command: `/execution-workflow`
 
-## **Workflow Orchestrator: Parallel Execution with Verification**
-**Combines Principles #10, #11, #12: Parallel > Sequential + Verification Loops + Enable Don't Control**
+## **🚨 BLOCKING Workflow Orchestrator: Parallel Execution with Verification**
+**🚨 MANDATORY: Sistema WILL enforce parallel execution with AUTOMATIC blocking of sequential approaches and REQUIRED verification loops with real-time compliance monitoring**
 
 ---
 
 ## 🎯 **ORCHESTRATOR DEFINITION**
 
-### **Purpose**
-EXECUTE autonomous parallel execution of planned objectives with ≥75% parallelization success rate, continuous verification loops achieving ≥85% accuracy, and minimal control intervention with ≥90% autonomy effectiveness. MAXIMIZE speed and quality through REQUIRED intelligent orchestration with quantifiable performance metrics.
+### **🚨 BLOCKING Purpose**
+🚨 MANDATORY: Sistema WILL EXECUTE autonomous parallel execution of planned objectives with ≥75% parallelization success rate, continuous verification loops achieving ≥85% accuracy, and minimal control intervention with ≥90% autonomy effectiveness. AUTOMATIC blocking of sequential execution and REQUIRED intelligence orchestration with quantifiable performance metrics enforcement.
 
 **Observable Outcomes**: 
 - **Parallel Execution**: ≥75% parallelization achieved with measured efficiency gains

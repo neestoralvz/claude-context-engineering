@@ -1,7 +1,9 @@
 # Atomic Command: `/verify-mathematics-loops` (aliases: `/verify-mathematics`, `/math-verify`, `/verify-math`)
 
-## **Principle #39: Mathematical Verification Loops**
+## **🚨 BLOCKING Principle #39: Mathematical Verification Loops**
 **"Recursive precision through measurable objectives and automatic convergence guarantee."**
+
+**🚨 MANDATORY ENFORCEMENT**: Sistema WILL execute mathematical verification with AUTOMATIC blocking of non-mathematical approaches and REQUIRED convergence verification. ZERO tolerance for simulation or theoretical discussion without concrete mathematical execution.
 
 ## 🏗️ Core Inheritance
 
@@ -24,17 +26,17 @@
 
 ### **Recursive Verification Specialization**
 
-**Recursive Verification Process**:
+**🚨 BLOCKING Recursive Verification Process**:
 
-**Convergence Algorithm Selection**:
-- Use inherited unified convergence algorithms
-- Select convergence algorithm based on objectives and precision requirements
-- Establish convergence foundation for recursive verification
+**🚨 MANDATORY Convergence Algorithm Selection**:
+- 🚨 REQUIRED: Use inherited unified convergence algorithms with AUTOMATIC verification
+- 🚨 BLOCKING: Select convergence algorithm based on objectives with MANDATORY precision requirements
+- 🚨 CRITICAL: Establish convergence foundation with real-time recursive verification monitoring
 
-**Auto-Correction Protocol**:
-- **Performance Gap Threshold**: 5.0 threshold for performance correction
-- **Quality Gap Threshold**: 5.0 threshold for quality improvement
-- **Functionality Gap Threshold**: 5.0 threshold for functionality enhancement
+**🚨 BLOCKING Auto-Correction Protocol**:
+- **🚨 MANDATORY Performance Gap Threshold**: 5.0 threshold with AUTOMATIC correction enforcement
+- **🚨 BLOCKING Quality Gap Threshold**: 5.0 threshold with real-time improvement detection
+- **🚨 CRITICAL Functionality Gap Threshold**: 5.0 threshold with immediate enhancement activation
 
 **Correction Actions**:
 - **Resource Reallocation**: Optimize resource allocation for performance gaps

@@ -43,12 +43,14 @@
 
 ## ⚡ **IMMEDIATE ACTIVATION ACCESS**
 
-### **Command Identity**: `/decision-engine`
-**Purpose**: EXECUTE intelligent command routing and orchestration based on mathematical confidence analysis with ≥95% accuracy, complexity assessment with quantifiable metrics, and autonomous decision-making protocols with observable outcomes.
+### **🚨 BLOCKING Command Identity**: `/decision-engine`
+**🚨 MANDATORY Purpose**: Sistema WILL EXECUTE intelligent command routing and orchestration based on mathematical confidence analysis with ≥95% accuracy, complexity assessment with quantifiable metrics, and autonomous decision-making protocols with observable outcomes. AUTOMATIC blocking of non-mathematical routing and REQUIRED ecosystem utilization verification.
 
-### **Auto-Activation System**
-The modularized system maintains complete autonomous activation:
-- **Primary Triggers**: Command routing (≥80% certainty), complexity (≥1.0), confidence (<0.7)
+### **🚨 BLOCKING Auto-Activation System**
+The modularized system maintains complete autonomous activation with enforcement:
+- **🚨 MANDATORY Primary Triggers**: Command routing (≥80% certainty), complexity (≥1.0), confidence (<0.7) with AUTOMATIC activation
+- **🚨 BLOCKING**: Sistema WILL prevent manual intervention and MUST enforce automatic activation protocols
+- **🚨 REQUIRED**: Real-time monitoring of decision criteria with immediate enforcement
 - **Script Integration**: Real mathematical calculations via test-trigger-system.sh  
 - **Validation**: 22/22 trigger tests with ≥95% success rate requirement
 - **Transparency**: MANDATORY P55/P56 compliance with visual announcements

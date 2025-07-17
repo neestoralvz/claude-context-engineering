@@ -1,14 +1,14 @@
 # Orchestrator Command: `/discovery-workflow`
 
-## **Workflow Orchestrator: Knowledge Discovery Phase**
-**Combines Principles #4, #5, #6: Knowledge Discovery Hierarchy + Exploration-First + Pattern Recognition**
+## **🚨 BLOCKING Workflow Orchestrator: Knowledge Discovery Phase**
+**🚨 MANDATORY: Sistema WILL enforce complete knowledge discovery process with AUTOMATIC blocking of implementation-first approaches and REQUIRED exploration verification before any execution begins**
 
 ---
 
 ## 🎯 **ORCHESTRATOR DEFINITION**
 
-### **Purpose**
-Coordinate the complete knowledge discovery process that forms the foundation of all Context Engineering work. Ensures thorough understanding before any implementation begins.
+### **🚨 BLOCKING Purpose**
+🚨 MANDATORY: Sistema WILL coordinate the complete knowledge discovery process that forms the foundation of all Context Engineering work with AUTOMATIC enforcement. BLOCKING of any implementation attempts without thorough understanding verification and REQUIRED exploration completeness validation.
 
 ### **Complexity**: 1.4/1.5
 ### **Context Required**: Task objective and project context
