@@ -6,7 +6,15 @@
 
 ## 🚨 MANDATORY ENFORCEMENT PATTERNS
 
-### **Header Enforcement**
+### **🚨 MAXIMUM Tier (Highest Priority)**
+```markdown
+# [Command Type]: `/command-name` 
+
+## **🚨 MAXIMUM [Command Category]: [Command Title]**
+**🚨 MAXIMUM: PRIORIDAD ABSOLUTA - Sistema WILL [core functionality] with STRICTEST enforcement above ALL other principles and ZERO tolerance for violations**
+```
+
+### **🚨 CRITICAL/BLOCKING Tier**
 ```markdown
 # [Command Type]: `/command-name` 
 
@@ -14,13 +22,27 @@
 **🚨 MANDATORY: Sistema WILL [core functionality] with AUTOMATIC blocking of [violations] and REQUIRED [verification type]**
 ```
 
-### **Purpose Section Enforcement**
+### **🚨 MAXIMUM Purpose Section**
+```markdown
+### **🚨 MAXIMUM Purpose**
+🚨 MAXIMUM: PRIORIDAD ABSOLUTA - Sistema WILL [execute core function] with STRICTEST enforcement above ALL other principles and ZERO tolerance for violations. COMPLETE elimination of [specific violations] with IMMEDIATE blocking and automatic correction.
+```
+
+### **🚨 CRITICAL/BLOCKING Purpose Section**
 ```markdown
 ### **🚨 BLOCKING Purpose**
 🚨 MANDATORY: Sistema WILL [execute core function] with AUTOMATIC [blocking mechanism] and REQUIRED [compliance verification]. BLOCKING of [specific violations] and MANDATORY [enforcement protocols].
 ```
 
-### **Key Section Enforcement Patterns**
+### **🚨 MAXIMUM Section Patterns**
+```markdown
+**🚨 MAXIMUM [Section Name]**: PRIORIDAD ABSOLUTA
+- 🚨 MAXIMUM: [Function] with STRICTEST enforcement above all principles
+- 🚨 BLOCKING: [Function] with ZERO tolerance and immediate correction
+- 🚨 AUTOMATIC: [Function] with real-time optimization and prevention
+```
+
+### **🚨 CRITICAL/BLOCKING Section Patterns**
 ```markdown
 **🚨 MANDATORY [Section Name]**:
 - 🚨 REQUIRED: [Function] with AUTOMATIC [enforcement mechanism]

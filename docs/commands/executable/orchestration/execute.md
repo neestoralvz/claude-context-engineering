@@ -1,5 +1,14 @@
 # Orchestrator Command: `/execution-workflow`
 
+## **Primary Principle**: [Principle #17: Parallel > Sequential](../../knowledge/principles/technical-standards.md#17-parallel--sequential)
+**Implementation**: This orchestrator enforces parallel execution strategies over sequential approaches, ensuring maximum efficiency through intelligent workflow coordination and verification loops.
+
+## **Supporting Principles**
+- **[Principle #47: Universal Strategic Orchestration](../../knowledge/principles/intelligent-adaptation.md#47-universal-strategic-orchestration)** - Strategic coordination framework
+- **[Principle #66: Intelligent Command Orchestration](../../knowledge/principles/technical-standards.md#66-intelligent-command-orchestration)** - Command execution coordination
+- **[Principle #18: Multi-Agent Orchestration](../../knowledge/principles/technical-standards.md#18-multi-agent-orchestration)** - Multi-agent coordination technique
+- **[Principle #80: Parallel Task Intelligence](../../knowledge/principles/technical-standards.md#80-parallel-task-intelligence)** - Intelligent task orchestration
+
 ## **🚨 BLOCKING Workflow Orchestrator: Parallel Execution with Verification**
 **🚨 MANDATORY: Sistema WILL enforce parallel execution with AUTOMATIC blocking of sequential approaches and REQUIRED verification loops with real-time compliance monitoring**
 

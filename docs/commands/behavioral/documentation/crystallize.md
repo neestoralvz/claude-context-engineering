@@ -1,5 +1,14 @@
 # Command: /crystallize-patterns
 
+## **Primary Principle**: [Principle #15: Pattern Crystallization](../../knowledge/principles/operational-excellence.md#15-pattern-crystallization)
+**Implementation**: This command systematically transforms successful patterns (≥3 uses, ≥85% success rate) into reusable commands through mathematical validation and behavioral reinforcement.
+
+## **Supporting Principles**
+- **[Principle #14: Pattern Recognition](../../knowledge/principles/operational-excellence.md#14-pattern-recognition)** - Systematic pattern identification and analysis
+- **[Principle #82: Research Knowledge Crystallization](../../knowledge/principles/operational-excellence.md#82-research-knowledge-crystallization)** - Research documentation methodology
+- **[Principle #26: Single Source of Truth](../../knowledge/principles/technical-standards.md#26-single-source-of-truth)** - Centralized pattern knowledge management
+- **[Principle #67: Dynamic Command Registry](../../knowledge/principles/technical-standards.md#67-dynamic-command-registry)** - Automated command catalog integration
+
 **Category**: Behavioral Documentation Control  
 **Purpose**: CRITICAL pattern crystallization system that transforms successful patterns (≥3 uses, ≥85% success rate) into reusable commands with mathematical validation and behavioral reinforcement
 

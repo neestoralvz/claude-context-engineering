@@ -39,7 +39,9 @@ describe('AgentCoordinationMatrix Component', () => {
 
   describe('Initial Render and Data Loading', () => {
     test('should render component with loading state initially', async () => {
-      render(<AgentCoordinationMatrix />)
+      await act(async () => {
+        render(<AgentCoordinationMatrix />)
+      })
       
       // Should show loading state
       expect(screen.getByText('Agent Coordination Matrix')).toBeInTheDocument()
@@ -51,7 +53,9 @@ describe('AgentCoordinationMatrix Component', () => {
     })
 
     test('should load and display agent coordination data', async () => {
-      render(<AgentCoordinationMatrix />)
+      await act(async () => {
+        render(<AgentCoordinationMatrix />)
+      })
       
       // Wait for data to load
       await waitFor(() => {
@@ -67,7 +71,9 @@ describe('AgentCoordinationMatrix Component', () => {
     test('should handle API errors gracefully', async () => {
       simulateApiError('getActiveAgents', 'Network error')
       
-      render(<AgentCoordinationMatrix />)
+      await act(async () => {
+        render(<AgentCoordinationMatrix />)
+      })
       
       await waitFor(() => {
         expect(screen.getByText('Failed to Load Coordination Data')).toBeInTheDocument()

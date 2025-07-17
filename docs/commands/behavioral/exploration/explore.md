@@ -1,5 +1,14 @@
 # Behavioral Command: /exploration-first
 
+## **Primary Principle**: [Principle #8: Exploration-First Methodology](../../knowledge/principles/operational-excellence.md#8-exploration-first-methodology)
+**Implementation**: This command enforces systematic exploration before implementation, ensuring comprehensive understanding and optimal approach selection through mandatory discovery phases.
+
+## **Supporting Principles**
+- **[Principle #7: Knowledge Discovery Hierarchy](../../knowledge/principles/operational-excellence.md#7-knowledge-discovery-hierarchy)** - Structured information gathering and analysis
+- **[Principle #79: Reinforced Local-First Exploration](../../knowledge/principles/operational-excellence.md#79-reinforced-local-first-exploration)** - Parallel task local analysis methodology
+- **[Principle #54: Automated Exploration Orchestration](../../knowledge/principles/intelligent-adaptation.md#54-automated-exploration-orchestration)** - Intelligent exploration automation
+- **[Principle #80: Parallel Task Intelligence](../../knowledge/principles/technical-standards.md#80-parallel-task-intelligence)** - Multi-task exploration orchestration
+
 ## **🚨 BLOCKING Exploration Intelligence**
 **🚨 MANDATORY: Sistema WILL execute comprehensive exploration and analysis with AUTOMATIC blocking of implementation-first approaches and REQUIRED complete understanding verification**
 

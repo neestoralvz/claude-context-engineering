@@ -13,6 +13,7 @@
 ### **🚨 BLOCKING Compliance Standards**
 - **Principle #55**: Tool Call Execution Bridging - 🚨 MANDATORY real tool execution with AUTOMATIC blocking of simulation attempts
 - **Principle #56**: Command Execution Transparency - 🚨 REQUIRED visual announcements and progress tracking with violation detection
+- **🚨 MAXIMUM Principle #82**: Density Optimization - 🚨 MAXIMUM PRIORITY - ≥75% character reduction + ≤0.8s comprehension with STRICTEST enforcement
 - **Universal Application**: 🚨 ALL Context Engineering commands MUST implement these patterns with enforcement monitoring
 - **Zero Tolerance**: 🚨 BLOCKING: 100% compliance required with AUTOMATIC correction protocols and violation prevention
 
@@ -53,6 +54,7 @@ enforcement_validation_system:
     simulation_detection: "🚨 AUTOMATIC: Real-time detection of simulation attempts with immediate blocking"
     tool_call_verification: "🚨 MANDATORY: Verification that all operations use actual tool calls with execution evidence"
     transparency_validation: "🚨 CONTINUOUS: Validation of P56 transparency requirements with visual confirmation"
+    density_optimization: "🚨 MAXIMUM: Real-time validation of ≥75% character reduction + ≤0.8s comprehension"
     compliance_scanning: "🚨 REAL-TIME: Continuous scanning for compliance violations with instant correction"
     
   automatic_blocking_mechanisms:
@@ -60,6 +62,8 @@ enforcement_validation_system:
     placeholder_detection: "🚨 AUTOMATIC: Detect and prevent use of placeholder values instead of real calculations"
     description_blocking: "🚨 MANDATORY: Block description of tool outcomes without actual execution"
     assumption_prevention: "🚨 BLOCKING: Prevent assumption of tool results without verification"
+    density_violation_blocking: "🚨 MAXIMUM: Immediate blocking of sub-optimal communication patterns"
+    verbose_pattern_prevention: "🚨 AUTOMATIC: Prevent verbose patterns with real-time correction"
     
   correction_protocols:
     execution_enforcement: "🚨 AUTOMATIC: Enforce real tool execution when simulation detected"

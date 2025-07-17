@@ -1,5 +1,14 @@
 # Command: /intelligent-fallback
 
+## **Primary Principle**: [Principle #31: Intelligent Fallback](../../knowledge/principles/validation-protocols.md#31-intelligent-fallback)
+**Implementation**: This command provides intelligent automatic recovery protocols and fallback management based on failure context analysis with ≥95% recovery success rate and mathematical precision validation.
+
+## **Supporting Principles**
+- **[Principle #53: Intelligent Error Recovery & Graceful Failure](../../knowledge/principles/validation-protocols.md#53-intelligent-error-recovery--graceful-failure)** - Comprehensive error recovery framework
+- **[Principle #61: Graceful Degradation Cascades](../../knowledge/principles/intelligent-adaptation.md#61-graceful-degradation-cascades)** - Intelligent failure management
+- **[Principle #37: System Integrity Assurance](../../knowledge/principles/validation-protocols.md#37-system-integrity-assurance)** - System stability maintenance
+- **[Principle #84: Evolutionary System Maintenance](../../knowledge/principles/validation-protocols.md#84-evolutionary-system-maintenance)** - Continuous system improvement
+
 **Category**: Behavioral Control System  
 **Purpose**: CRITICAL intelligent automatic recovery protocols and fallback management based on failure context analysis with ≥95% recovery success rate and mathematical precision validation
 

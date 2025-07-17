@@ -24,6 +24,17 @@
 
 **REQUIRED Process**: EXECUTE context exploration → CONDUCT strategic analysis → CREATE granular planning → IMPLEMENT TDD execution → MAINTAIN documentation with zero gaps
 
+#### **Implementing Commands**
+- **[/exploration-first](../../commands/behavioral/exploration/explore.md)** - Primary implementation for exploration-first methodology
+- **[/quick-explore](../../commands/behavioral/exploration/quick-explore.md)** - Rapid exploration framework
+- **[/discover](../../commands/executable/orchestration/discover.md)** - Discovery workflow orchestration
+- **[/automated-exploration-orchestration](../../commands/executable/orchestration/automated-exploration-orchestration.md)** - Automated exploration coordination
+
+#### **Related Principles**
+- **[#7: Knowledge Discovery Hierarchy](./operational-excellence.md#7-knowledge-discovery-hierarchy)** - Structured information gathering foundation
+- **[#79: Reinforced Local-First Exploration](./operational-excellence.md#79-reinforced-local-first-exploration)** - Parallel task local analysis methodology
+- **[#54: Automated Exploration Orchestration](./intelligent-adaptation.md#54-automated-exploration-orchestration)** - Intelligent exploration automation
+
 ### 9. Test-Driven Development (TDD)
 **🚨 CRITICAL Definition**: MANDATORY test-driven development enforcement with ZERO tolerance for implementation without passing tests. ALL development MUST follow test-first protocol with continuous validation, automated quality gates, and BLOCKING failure modes that prevent progression until ALL tests pass.
 
@@ -87,6 +98,16 @@ mandatory_tdd_enforcement:
 **Definition**: Transform repeated patterns (≥3 uses, ≥85% success) into reusable commands.
 
 **Process**: Identify → document → validate → create → integrate
+
+#### **Implementing Commands**
+- **[/crystallize-patterns](../../commands/behavioral/documentation/crystallize.md)** - Primary implementation for pattern crystallization system
+- **[/patterns](../../commands/behavioral/documentation/patterns.md)** - Pattern management and recognition
+- **[/unified-pattern-management](../../commands/executable/documentation/unified-pattern-management.md)** - Comprehensive pattern orchestration
+
+#### **Related Principles**
+- **[#14: Pattern Recognition](./operational-excellence.md#14-pattern-recognition)** - Prerequisite for crystallization
+- **[#82: Research Knowledge Crystallization](./operational-excellence.md#82-research-knowledge-crystallization)** - Specialized crystallization methodology
+- **[#26: Single Source of Truth](./technical-standards.md#26-single-source-of-truth)** - Pattern knowledge centralization
 
 ### 16. Strategic Git Versioning
 **Definition**: MANDATORY comprehensive git strategy integrating analysis documentation, incremental progress tracking, and intelligent handoff management through systematic 5-phase commit protocol.
