@@ -150,28 +150,26 @@
 4. **USER APPROVAL**: Wait for user confirmation before proceeding
 5. **OPTIMIZATION TRANSPARENCY**: Communicate expected benefits of model switch
 
-**Model Selection Framework**:
-```yaml
-model_selection_intelligence:
-  planning_tasks_require_opus:
-    triggers: "Strategic planning, architecture design, complex analysis, creative problem solving"
-    mandatory_request: "CRITICAL: System MUST request Opus for planning tasks"
-    user_notification: "Opus model recommended for superior strategic planning capabilities"
-    auto_detection_threshold: "Task complexity ≥0.8, planning_indicators ≥3"
-    
-  execution_tasks_require_sonnet:
-    triggers: "Code implementation, documentation writing, task execution, routine operations"
-    mandatory_request: "CRITICAL: System MUST request Sonnet for execution efficiency"
-    user_notification: "Sonnet model recommended for optimal execution and efficiency"
-    auto_detection_threshold: "Implementation_indicators ≥2, routine_task_score ≥0.7"
-    
-  decision_protocols:
-    automatic_analysis: "Analyze task type, complexity, and required capabilities"
-    threshold_enforcement: "Apply mathematical thresholds for model recommendation"
-    mandatory_stopping: "STOP and request model change when threshold exceeded"
-    user_communication: "Clear explanation of model benefits for specific task"
-    approval_waiting: "Wait for explicit user approval before proceeding"
-```
+**MANDATORY Model Selection Framework**:
+
+**CRITICAL Planning Tasks Require Opus**:
+- **Triggers**: Strategic planning, architecture design, complex analysis, creative problem solving
+- **MANDATORY Request**: CRITICAL - System MUST request Opus for planning tasks with automatic blocking
+- **User Notification**: "Opus model recommended for superior strategic planning capabilities"
+- **Auto-Detection Threshold**: Task complexity ≥0.8, planning indicators ≥3 with mathematical validation
+
+**REQUIRED Execution Tasks Require Sonnet**:
+- **Triggers**: Code implementation, documentation writing, task execution, routine operations
+- **MANDATORY Request**: CRITICAL - System MUST request Sonnet for execution efficiency with automatic optimization
+- **User Notification**: "Sonnet model recommended for optimal execution and efficiency"
+- **Auto-Detection Threshold**: Implementation indicators ≥2, routine task score ≥0.7 with precision measurement
+
+**CRITICAL Decision Protocols**:
+- **Automatic Analysis**: Analyze task type, complexity, and required capabilities with intelligence assessment
+- **Threshold Enforcement**: Apply mathematical thresholds for model recommendation with precision validation
+- **MANDATORY Stopping**: STOP and request model change when threshold exceeded with zero tolerance
+- **User Communication**: Clear explanation of model benefits for specific task with transparency requirements
+- **Approval Waiting**: Wait for explicit user approval before proceeding with confirmation protocols
 
 **CRITICAL Implementation Requirements**:
 - **Planning Detection**: Automatically identify strategic planning, architecture design, complex analysis tasks
