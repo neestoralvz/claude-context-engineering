@@ -86,7 +86,7 @@ Primary sections accessible from the main navigation bar:
 
 - **🏠 Homepage** (`/`): System overview, philosophical foundations, quick access
 - **🎮 Interactive** (`/interactive`): 7 hands-on feature demonstrations  
-- **📚 Principles** (`/principles`): 65 principles across 8 categories
+- **📚 Principles** (`/principles`): 78 principles across 11 categories
 - **⚙️ Commands** (`/commands`): 62-command system with execution registry
 
 ****Tier 2: Content Organization****

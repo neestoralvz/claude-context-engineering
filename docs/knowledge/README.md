@@ -73,7 +73,7 @@
 **Pattern**: [Git Worktrees Guide](./reference/git-worktrees-claude-code.md) → [Session Management](./reference/git-worktrees-claude-code.md#claude-session-management) → [Automation Scripts](../../scripts/git-workflow/)
 
 ### **Optimization & Performance**
-**Pattern**: [Performance Strategy](./strategies/PERFORMANCE_OPTIMIZATION.md) → [Context Optimization](./patterns/context-optimization-20250715.md) → [Metrics & Validation](./technical/system-performance-metrics.md)
+**Pattern**: [Performance Strategy](./strategies/PERFORMANCE_OPTIMIZATION.md) → [Context Optimization](./patterns/universal-patterns-quick-deployment.md) → [Metrics & Validation](./technical/system-performance-metrics.md)
 
 ### **Content Creation & Documentation**
 **Pattern**: [Writing Standards](./writing-standards.md) → [Pattern Templates](./patterns/) → [Command Rules](./command-rules/)
@@ -104,9 +104,9 @@
 
 ### **🎨 Patterns & Methodologies** (Application Layer)
 **Location**: `./patterns/` (Proven workflows)
-- **[Improvement Methodology](./patterns/improvement-methodology-pattern.md)** - 4-stage optimization
-- **[Context Optimization](./patterns/context-optimization-20250715.md)** - Efficiency strategies
-- **[Quality Application](./patterns/quality-optimization-application.md)** - Standards implementation
+- **[Improvement Methodology](./patterns/system-management-patterns.md)** - 4-stage optimization
+- **[Context Optimization](./patterns/universal-patterns-quick-deployment.md)** - Efficiency strategies
+- **[Quality Application](./patterns/quality-improvement-standards.md)** - Standards implementation
 
 ### **🚀 Strategies & Optimization** (Performance Layer)
 **Location**: `./strategies/` (Optimization guides)
@@ -142,7 +142,7 @@
 - **Cross-Reference Optimization**: [Cross-Reference Intelligence Hub](./cross-reference-intelligence-hub.md) → [Documentation Linking Framework](./protocols/documentation-linking-framework.md)
 - **Quality Assurance**: [Writing Standards Hub](./writing-standards.md) → [Implementation Guidelines](./writing-standards/implementation.md)
 - **Technical Implementation**: [Enhanced Command Execution](./technical/enhanced-command-execution.md) → [Technical Architecture](./technical/TECHNICAL_DOCS.md)
-- **Performance Optimization**: [Performance Strategy](./strategies/PERFORMANCE_OPTIMIZATION.md) → [Context Patterns](./patterns/context-optimization-20250715.md)
+- **Performance Optimization**: [Performance Strategy](./strategies/PERFORMANCE_OPTIMIZATION.md) → [Context Patterns](./patterns/universal-patterns-quick-deployment.md)
 - **System Philosophy**: [Core Principles](./principles/) → [Technical Standards](./principles/technical-standards.md) → [Implementation](./technical/TECHNICAL_DOCS.md)
 
 ---
@@ -208,7 +208,7 @@
 ### **For Quality Assurance**
 1. **Standards**: [Writing Standards](./writing-standards.md) for quality requirements
 2. **Validation**: [Protocols](./protocols/) for systematic verification
-3. **Patterns**: [Quality Application](./patterns/quality-optimization-application.md) for implementation
+3. **Patterns**: [Quality Application](./patterns/quality-improvement-standards.md) for implementation
 
 ---
 

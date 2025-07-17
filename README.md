@@ -521,7 +521,7 @@ npm run clean && npm run build
 ### Documentation Structure
 ```
 docs/
-├── principles/          # 65 principles across 8 categories
+├── principles/          # 78 principles across 11 categories
 ├── automation/         # LLM automation patterns
 ├── technical/          # Implementation details
 ├── patterns/           # Design patterns and best practices
