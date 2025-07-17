@@ -95,37 +95,33 @@ graph TD
 ## 🔗 **ORCHESTRATED COMMAND CHAIN**
 
 ### **Secuencia Optimizada (3 comandos core)**
-```yaml
-chain_execution:
-  primary_sequence:
-    1. knowledge-hierarchy: "Búsqueda jerárquica local → external"
-    2. explore: "Exploración obligatoria con patrones"  
-    3. patterns: "Reconocimiento y cristalización"
-  
-  parallel_opportunities:
-    - knowledge-hierarchy + explore (independientes)
-    - patterns (depende de resultados de ambos)
-  
-  execution_strategy:
-    if_parallel_benefit_≥_0.4: "Ejecutar 1+2 en paralelo, luego 3"
-    if_parallel_benefit_<_0.4: "Ejecución secuencial optimizada"
-```
+**CRITICAL Chain Execution Protocol**:
+- **Primary Sequence**:
+  1. **knowledge-hierarchy**: Búsqueda jerárquica local → external
+  2. **explore**: Exploración obligatoria con patrones
+  3. **patterns**: Reconocimiento y cristalización
+
+- **Parallel Opportunities**:
+  - **knowledge-hierarchy + explore** (independientes)
+  - **patterns** (depende de resultados de ambos)
+
+- **Execution Strategy**:
+  - **If parallel benefit ≥ 0.4**: Ejecutar 1+2 en paralelo, luego 3
+  - **If parallel benefit < 0.4**: Ejecución secuencial optimizada
 
 ### **Context Distribution (Economy Active)**
-```yaml
-context_per_command:
-  knowledge-hierarchy: 
-    context: "objetivo + dominio_específico"
-    size: "~20% del contexto total"
-  explore:
-    context: "objetivo + hallazgos_knowledge"  
-    size: "~25% del contexto total"
-  patterns:
-    context: "objetivo + exploration_results"
-    size: "~30% del contexto total"
-    
-total_context_economy: "75% vs meta-comando completo"
-```
+**CRITICAL Context Distribution Framework**:
+- **knowledge-hierarchy**:
+  - **Context**: objetivo + dominio_específico
+  - **Size**: ~20% del contexto total
+- **explore**:
+  - **Context**: objetivo + hallazgos_knowledge
+  - **Size**: ~25% del contexto total
+- **patterns**:
+  - **Context**: objetivo + exploration_results
+  - **Size**: ~30% del contexto total
+
+**Total Context Economy**: 75% vs meta-comando completo
 
 ---
 
@@ -134,25 +130,23 @@ total_context_economy: "75% vs meta-comando completo"
 ### **🚨 BLOCKING Tool Selection Matrix**
 
 **🚨 MANDATORY Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    file_count: "≤3 files for direct analysis"
-    complexity: "<0.7000 (straightforward operations)"
-    scope: "Well-defined, single-purpose operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    file_count: "≥4 files or unknown scope"
-    complexity: "≥0.7000 (complex operations)"
-    scope: "Multi-step, exploratory, or research operations"
-    time_constraint: ">300 seconds or open-ended analysis"
-    
-  other_tools:
-    GREP: "Pattern search across multiple files"
-    GLOB: "File pattern matching and discovery"
-    BASH: "System operations and automation"
-```
+**CRITICAL Tool Selection Criteria**:
+- **READ Tool Usage**:
+  - **File Count**: ≤3 files for direct analysis
+  - **Complexity**: <0.7000 (straightforward operations)
+  - **Scope**: Well-defined, single-purpose operations
+  - **Time Constraint**: ≤300 seconds execution window
+
+- **TASK Tool Usage**:
+  - **File Count**: ≥4 files or unknown scope
+  - **Complexity**: ≥0.7000 (complex operations)
+  - **Scope**: Multi-step, exploratory, or research operations
+  - **Time Constraint**: >300 seconds or open-ended analysis
+
+- **Other Tools**:
+  - **GREP**: Pattern search across multiple files
+  - **GLOB**: File pattern matching and discovery
+  - **BASH**: System operations and automation
 
 ### **🚨 BLOCKING Tool Selection Logic**
 
@@ -253,8 +247,8 @@ graph TD
 ## 🔍 **INTELLIGENT ROUTING CRITERIA**
 
 ### **Ideal Use Cases (Auto-detect)**
-```yaml
-perfect_fit:
+**CRITICAL Use Case Classification**:
+- **Perfect Fit**:
   - "entender este código/archivo/función"
   - "investigar problema específico"
   - "buscar patrones en codebase"
@@ -262,12 +256,11 @@ perfect_fit:
   - "explorar dependencias"
   - "mapear flujo de datos"
 
-avoid_for:
-  - objetivos_múltiples_complejos (usar /context-eng)
-  - implementación_code (usar /rapid-prototype)
-  - verificación_sistema (usar /system-health)
-  - planning_estratégico (usar /planning-workflow)
-```
+- **Avoid For**:
+  - **objetivos_múltiples_complejos** (usar /context-eng)
+  - **implementación_code** (usar /rapid-prototype)
+  - **verificación_sistema** (usar /system-health)
+  - **planning_estratégico** (usar /planning-workflow)
 
 ### **Confidence-Based Routing**
 ```javascript
@@ -291,23 +284,21 @@ function shouldUseQuickExplore(objective, context) {
 ## ⚡ **EXECUTION WORKFLOW**
 
 ### **Phase 1: Parallel Knowledge Discovery (2-3 min)**
-```yaml
-parallel_execution:
-  agent_1_knowledge_hierarchy:
-    task: "Búsqueda sistemática local → external"
-    context: "objetivo + dominio"
-    output: "knowledge_map"
-    
-  agent_2_explore:  
-    task: "Exploración obligatoria con patrones"
-    context: "objetivo + exploration_strategy"
-    output: "exploration_findings"
-    
-coordination:
-  simultaneous_launch: true
-  progress_monitoring: true
-  early_termination: "si uno encuentra solución completa"
-```
+**CRITICAL Parallel Execution Protocol**:
+- **Agent 1 - Knowledge Hierarchy**:
+  - **Task**: Búsqueda sistemática local → external
+  - **Context**: objetivo + dominio
+  - **Output**: knowledge_map
+
+- **Agent 2 - Explore**:
+  - **Task**: Exploración obligatoria con patrones
+  - **Context**: objetivo + exploration_strategy
+  - **Output**: exploration_findings
+
+- **Coordination Requirements**:
+  - **Simultaneous Launch**: true
+  - **Progress Monitoring**: true
+  - **Early Termination**: si uno encuentra solución completa
 
 ### CRITICAL Parallel Execution Decision Tree
 
@@ -347,48 +338,42 @@ graph TD
 ```
 
 ### **Phase 2: Pattern Synthesis (1-2 min)**
-```yaml
-pattern_synthesis:
-  input: "knowledge_map + exploration_findings"
-  process: "consolidar + identificar_patrones + cristalizar"
-  output: "structured_insights + reusable_patterns"
-  documentation: "auto-update living docs si patterns ≥ threshold"
-```
+**CRITICAL Pattern Synthesis Framework**:
+- **Input**: knowledge_map + exploration_findings
+- **Process**: consolidar + identificar_patrones + cristalizar
+- **Output**: structured_insights + reusable_patterns
+- **Documentation**: auto-update living docs si patterns ≥ threshold
 
 ### **Result Format**
-```yaml
-quick_explore_output:
-  executive_summary: "2-3 líneas clave"
-  knowledge_discovered: "mapa de conocimiento estructurado"
-  patterns_identified: "patrones reutilizables encontrados"
-  next_recommended_actions: "sugerencias específicas"
-  crystallization_opportunities: "si aplica"
-  execution_time: "tiempo real vs estimado"
-```
+**CRITICAL Output Format Structure**:
+- **Executive Summary**: 2-3 líneas clave
+- **Knowledge Discovered**: mapa de conocimiento estructurado
+- **Patterns Identified**: patrones reutilizables encontrados
+- **Next Recommended Actions**: sugerencias específicas
+- **Crystallization Opportunities**: si aplica
+- **Execution Time**: tiempo real vs estimado
 
 ---
 
 ## 🔀 **INTELLIGENT CHAINING**
 
 ### **Auto-Chain Opportunities**
-```yaml
-natural_follow_ups:
-  if_patterns_found: 
-    suggest: "/crystallize-patterns"
-    confidence: 0.85
-    
-  if_implementation_needed:
-    suggest: "/rapid-prototype"  
-    confidence: 0.9
-    
-  if_verification_required:
-    suggest: "/verify-flow"
-    confidence: 0.8
-    
-  if_more_depth_needed:
-    suggest: "/context-eng [specific_area]"
-    confidence: 0.7
-```
+**CRITICAL Natural Follow-Up Protocol**:
+- **If Patterns Found**:
+  - **Suggest**: `/crystallize-patterns`
+  - **Confidence**: 0.85
+
+- **If Implementation Needed**:
+  - **Suggest**: `/rapid-prototype`
+  - **Confidence**: 0.9
+
+- **If Verification Required**:
+  - **Suggest**: `/verify-flow`
+  - **Confidence**: 0.8
+
+- **If More Depth Needed**:
+  - **Suggest**: `/context-eng [specific_area]`
+  - **Confidence**: 0.7
 
 ### MANDATORY Auto-Chain Decision Tree
 
@@ -433,13 +418,11 @@ graph TD
 ```
 
 ### **Escalation Protocol**
-```yaml
-escalation_triggers:
-  if_complexity_exceeds_1.5: "auto-suggest /context-eng"
-  if_multiple_objectives_detected: "auto-suggest /smart-workflow"
-  if_implementation_scope_large: "auto-suggest /planning-workflow"
-  if_exploration_insufficient: "auto-trigger second round with /explore"
-```
+**CRITICAL Escalation Triggers**:
+- **If Complexity Exceeds 1.5**: auto-suggest /context-eng
+- **If Multiple Objectives Detected**: auto-suggest /smart-workflow
+- **If Implementation Scope Large**: auto-suggest /planning-workflow
+- **If Exploration Insufficient**: auto-trigger second round with /explore
 
 ---
 
@@ -485,37 +468,35 @@ escalation_triggers:
 3. **🚨 BLOCKING Deep dive**: Sistema WILL activate `/exploration-first` with BLOCKING of surface-level continuation
 
 ### **Quality Assurance**
-```yaml
-quality_checks:
-  minimum_insights: 3
-  pattern_discovery_rate: ≥60%  
-  actionable_next_steps: ≥2
-  execution_time_limit: 6_minutes_max
-  
-fallback_if_failed:
-  retry_with_enhanced_context: true
-  escalate_to_meta_command: "after 2 failed attempts"
-  document_failure_pattern: true
-```
+**CRITICAL Quality Assurance Framework**:
+- **Quality Checks**:
+  - **Minimum Insights**: 3
+  - **Pattern Discovery Rate**: ≥60%
+  - **Actionable Next Steps**: ≥2
+  - **Execution Time Limit**: 6_minutes_max
+
+- **Fallback If Failed**:
+  - **Retry with Enhanced Context**: true
+  - **Escalate to Meta Command**: after 2 failed attempts
+  - **Document Failure Pattern**: true
 
 ---
 
 ## 🎯 **INTEGRATION WITH DECISION ENGINE**
 
 ### **Decision Engine Bypass**
-```yaml
-bypass_protocol:
-  when: "clear_exploration_objective_detected"
-  conditions:
-    - objective_specificity ≥ 0.7
-    - exploration_keywords_present  
-    - complexity_estimate ≤ 1.5
-    - no_implementation_scope_detected
-  
-  direct_execution: true
-  skip_analysis_phases: ["complexity_analysis", "model_selection", "planning"]
-  maintain_monitoring: true
-```
+**CRITICAL Decision Engine Bypass Protocol**:
+- **When**: clear_exploration_objective_detected
+- **Conditions**:
+  - **Objective Specificity**: ≥ 0.7
+  - **Exploration Keywords Present**: true
+  - **Complexity Estimate**: ≤ 1.5
+  - **No Implementation Scope Detected**: true
+
+- **Execution Parameters**:
+  - **Direct Execution**: true
+  - **Skip Analysis Phases**: complexity_analysis, model_selection, planning
+  - **Maintain Monitoring**: true
 
 ### **Smart Re-routing**
 ```javascript
@@ -541,29 +522,25 @@ function smartReroutingLogic(exploration_results) {
 ## 📊 **SUCCESS METRICS & LEARNING**
 
 ### **Performance Tracking**
-```yaml
-metrics_to_track:
-  execution_time: "target: 3-5 min"
-  context_efficiency: "target: 75% reduction"
-  parallel_benefit_achieved: "target: ≥40%"
-  exploration_quality: "target: ≥90% of meta-comando results"
-  user_satisfaction: "target: ≥85%"
-  escalation_rate: "target: ≤15%"
-```
+**CRITICAL Performance Tracking Metrics**:
+- **Execution Time**: target: 3-5 min
+- **Context Efficiency**: target: 75% reduction
+- **Parallel Benefit Achieved**: target: ≥40%
+- **Exploration Quality**: target: ≥90% of meta-comando results
+- **User Satisfaction**: target: ≥85%
+- **Escalation Rate**: target: ≤15%
 
 ### **Learning Loop**
-```yaml
-continuous_improvement:
-  pattern_detection:
-    - successful_exploration_patterns → enhance_knowledge_hierarchy
-    - common_follow_up_chains → improve_auto_suggestions  
-    - escalation_triggers → refine_complexity_detection
-    
-  optimization_opportunities:
-    - reduce_execution_time_further
-    - improve_parallel_coordination
-    - enhance_pattern_synthesis_quality
-```
+**CRITICAL Continuous Improvement Framework**:
+- **Pattern Detection**:
+  - **Successful exploration patterns** → enhance_knowledge_hierarchy
+  - **Common follow-up chains** → improve_auto_suggestions
+  - **Escalation triggers** → refine_complexity_detection
+
+- **Optimization Opportunities**:
+  - **Reduce execution time** further
+  - **Improve parallel coordination**
+  - **Enhance pattern synthesis quality**
 
 ---
 

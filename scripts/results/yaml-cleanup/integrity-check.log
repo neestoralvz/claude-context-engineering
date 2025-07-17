@@ -1,0 +1,42 @@
+🛡️ Context Engineering - System Integrity Validation Engine
+============================================================
+
+[1m🔍 CONTEXT ENGINEERING SYSTEM INTEGRITY VALIDATION[0m
+[1m==================================================[0m
+
+🕐 Started at: [0;36mThu Jul 17 12:17:33 CST 2025[0m
+📂 Base directory: [0;36m/Users/nalve/claude-context-engineering[0m
+📊 Results directory: [0;36m/Users/nalve/claude-context-engineering/scripts/results/system-integrity[0m
+
+[1m[0;35m━━━ PHASE 1/8: DEPENDENCY VALIDATION ━━━[0m
+
+[0;32m✅ SUCCESS:[0m All dependencies and scripts available
+
+[1m[0;35m━━━ PHASE 2/8: MATHEMATICAL FORMULA VALIDATION ━━━[0m
+
+[0;36m🧮 Running mathematical formula verification...[0m
+[0;32m✅ SUCCESS:[0m All 22 mathematical formulas verified (Success: 1.0000)
+
+[1m[0;35m━━━ PHASE 3/8: TRIGGER SYSTEM VALIDATION ━━━[0m
+
+[0;36m🎯 Running trigger system verification...[0m
+[0;32m✅ SUCCESS:[0m All 22 trigger tests passed (Success: 1.0000)
+
+[1m[0;35m━━━ PHASE 4/8: NAVIGATION SYSTEM VALIDATION ━━━[0m
+
+[0;36m🧭 Running navigation system verification...[0m
+[0;32m✅ SUCCESS:[0m Navigation system validated successfully
+
+[1m[0;35m━━━ PHASE 5/8: REGISTRY METRICS VALIDATION ━━━[0m
+
+[0;36m📊 Analyzing registry metrics...[0m
+jq: error (at /Users/nalve/claude-context-engineering/.claude/config/command-registry.json:1038): Cannot iterate over null (null)
+/Users/nalve/claude-context-engineering/scripts/validation/validate-system-integrity.sh: line 229: [: : integer expression expected
+[0;32m✅ SUCCESS:[0m All commands have realistic success rates
+[0;32m✅ SUCCESS:[0m Overall success rate acceptable: 0.8768656716417909
+[0;32m✅ SUCCESS:[0m Command count healthy: 81 commands
+
+[1m[0;35m━━━ PHASE 6/8: COMMAND SYNCHRONIZATION VALIDATION ━━━[0m
+
+[0;36m🔄 Running command synchronization validation...[0m
+[0;31m❌ ERROR:[0m 8 discrepancies found - docs:138 vs claude:81
