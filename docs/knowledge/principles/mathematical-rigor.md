@@ -54,7 +54,7 @@
 **See Also**: [Confidence-Based Routing](#29-confidence-based-routing) | [Threshold Enforcement](#40-threshold-enforcement) | [Evolutionary Decision Trees](../../commands/executable/core-routing/evolutionary-decision-trees.md) | [Intelligent Command Orchestration](../technical-standards.md#66-intelligent-command-orchestration)
 
 **MANDATORY Command Ecosystem Activation Protocol**:
-- **COMPLETE COMMAND EVALUATION**: System MUST evaluate ALL 76 commands for relevance to current operational context
+- **COMPLETE COMMAND EVALUATION**: System MUST evaluate ALL 155 commands for relevance to current operational context
 - **SITUATIONAL COMMAND MAPPING**: Automatic mapping of operational situations to appropriate command combinations  
 - **MANDATORY UTILIZATION PREVENTION**: Zero tolerance for command subutilization - system must consider full ecosystem
 - **INTELLIGENT ACTIVATION TRIGGERS**: Mathematical triggers activate optimal command combinations automatically
@@ -94,7 +94,7 @@
 - **Zero Command Waste**: Mathematical validation that no relevant commands are overlooked or underutilized
 
 **Auto-Trigger Implementation** (Enhanced Comprehensive Protocol):
-1. **Task Intake**: Every task automatically evaluated against ALL 76 commands for potential relevance
+1. **Task Intake**: Every task automatically evaluated against ALL 155 commands for potential relevance
 2. **Comprehensive Analysis**: System calculates optimal command combinations from full ecosystem  
 3. **Intelligent Activation**: Relevant commands activated automatically based on situational triggers
 4. **Utilization Monitoring**: Continuous tracking of command usage to prevent ecosystem gaps
