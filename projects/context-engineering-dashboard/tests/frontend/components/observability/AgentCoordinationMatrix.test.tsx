@@ -47,9 +47,16 @@ describe('AgentCoordinationMatrix Component', () => {
       expect(screen.getByText('Agent Coordination Matrix')).toBeInTheDocument()
       expect(screen.getByText('Visual mapping of agent interactions and coordination patterns')).toBeInTheDocument()
       
-      // Should have view mode controls
-      expect(screen.getByDisplayValue('network')).toBeInTheDocument()
-      expect(screen.getByDisplayValue('6h')).toBeInTheDocument()
+      // Should have view mode controls - look for the select elements
+      const selects = screen.getAllByRole('combobox')
+      expect(selects).toHaveLength(2) // View and Time selects
+      
+      // Find view and time selects by their options
+      const viewSelect = selects.find(select => select.querySelector('option[value="network"]'))
+      const timeSelect = selects.find(select => select.querySelector('option[value="6h"]'))
+      
+      expect(viewSelect).toHaveValue('network')
+      expect(timeSelect).toHaveValue('6h')
     })
 
     test('should load and display agent coordination data', async () => {
@@ -58,14 +65,16 @@ describe('AgentCoordinationMatrix Component', () => {
       })
       
       // Wait for data to load
-      await waitFor(() => {
+      await waitFor(async () => {
         expect(mockSetup.mockApiService.getActiveAgents).toHaveBeenCalledTimes(1)
         expect(mockSetup.mockApiService.getAgentCoordination).toHaveBeenCalledWith('6h')
-      })
+      }, { timeout: 3000 })
 
       // Should display the canvas visualization
-      const canvas = screen.getByRole('img', { hidden: true }) // Canvas is treated as img by testing library
-      expect(canvas).toBeInTheDocument()
+      await waitFor(() => {
+        const canvas = document.querySelector('canvas')
+        expect(canvas).toBeInTheDocument()
+      })
     })
 
     test('should handle API errors gracefully', async () => {

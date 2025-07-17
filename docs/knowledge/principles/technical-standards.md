@@ -217,24 +217,22 @@
 5. **AUTOMATED Scalability**: ENABLE unlimited growth through modular composition without architectural constraints
 6. **REQUIRED Cross-Reference Intelligence**: MAINTAIN systematic interconnections between modules with automated dependency management
 
-**Recursive Modularization Protocol**:
-```yaml
-modularization_architecture:
-  decomposition_criteria:
-    file_size_threshold: ">500 lines triggers automatic modularization"
-    domain_separation: "Clear functional boundaries with zero overlap"
-    cognitive_load_reduction: "≤3 steps navigation to any specialized content"
-    
-  hierarchy_optimization:
-    orchestrator_pattern: "Main files become navigation hubs"
-    specialized_modules: "200-500 line focused components"
-    recursive_structure: "Unlimited depth with clear parent-child relationships"
-    
-  context_reduction:
-    mathematical_overlap_elimination: "≥60% redundancy reduction"
-    progressive_disclosure: "Load complexity on-demand"
-    strategic_cross_references: "Intelligent interconnection patterns"
-```
+**MANDATORY Recursive Modularization Protocol**:
+
+**CRITICAL Decomposition Criteria**:
+- **File Size Threshold**: AUTOMATIC modularization triggered when files exceed 500 lines
+- **Domain Separation**: REQUIRED clear functional boundaries with ZERO overlap tolerance
+- **Cognitive Load Reduction**: MANDATORY ≤3 steps navigation to ANY specialized content
+
+**REQUIRED Hierarchy Optimization**:
+- **Orchestrator Pattern**: TRANSFORM main files into intelligent navigation hubs
+- **Specialized Modules**: CREATE focused components with 200-500 line optimal range
+- **Recursive Structure**: ENABLE unlimited depth with clear parent-child relationships
+
+**MANDATORY Context Reduction**:
+- **Mathematical Overlap Elimination**: ACHIEVE ≥60% redundancy reduction through systematic analysis
+- **Progressive Disclosure**: IMPLEMENT on-demand complexity loading for optimal performance
+- **Strategic Cross-References**: ESTABLISH intelligent interconnection patterns for seamless navigation
 
 **Modularization Success Metrics**:
 - **Context Reduction**: ≥60% reduction in cognitive load through strategic decomposition
@@ -255,33 +253,31 @@ modularization_architecture:
 4. **Right to Deletion**: Built-in capability para complete data removal
 5. **Transparency by Design**: Clear visibility into data usage and processing
 
-**Privacy-First Implementation Framework**:
-```yaml
-privacy_first_architecture:
-  data_collection_controls:
-    minimal_collection: "MANDATORY: Only collect data essential for functionality"
-    purpose_limitation: "Data usage restricted to declared purposes only"
-    consent_verification: "Active consent verification before any data processing"
-    retention_limits: "Automatic data deletion after purpose fulfillment"
-    
-  privacy_protection_mechanisms:
-    automatic_anonymization: "PII anonymization in logs, outputs, and storage"
-    data_encryption: "End-to-end encryption for sensitive data transmission"
-    access_controls: "Role-based access to personal data with audit trails"
-    privacy_boundaries: "Clear boundaries between public and private data"
-    
-  privacy_rights_implementation:
-    data_portability: "Standard formats for data export and transfer"
-    deletion_capability: "Complete data removal on user request"
-    access_transparency: "User visibility into collected and processed data"
-    correction_mechanisms: "User capability to update and correct data"
-    
-  compliance_automation:
-    gdpr_compliance: "Automatic GDPR compliance verification and reporting"
-    ccpa_compliance: "California Consumer Privacy Act compliance framework"
-    regional_adaptation: "Automatic adaptation to local privacy regulations"
-    audit_preparation: "Privacy audit trail generation and compliance reporting"
-```
+**MANDATORY Privacy-First Implementation Framework**:
+
+**CRITICAL Data Collection Controls**:
+- **Minimal Collection**: MANDATORY collection of ONLY data essential for functionality
+- **Purpose Limitation**: STRICT data usage restricted to declared purposes ONLY
+- **Consent Verification**: REQUIRED active consent verification before ANY data processing
+- **Retention Limits**: AUTOMATIC data deletion after purpose fulfillment
+
+**REQUIRED Privacy Protection Mechanisms**:
+- **Automatic Anonymization**: MANDATORY PII anonymization in logs, outputs, and storage
+- **Data Encryption**: CRITICAL end-to-end encryption for sensitive data transmission
+- **Access Controls**: ENFORCED role-based access to personal data with comprehensive audit trails
+- **Privacy Boundaries**: CLEAR boundaries between public and private data with automated enforcement
+
+**MANDATORY Privacy Rights Implementation**:
+- **Data Portability**: STANDARD formats for data export and transfer
+- **Deletion Capability**: COMPLETE data removal on user request with verification
+- **Access Transparency**: FULL user visibility into collected and processed data
+- **Correction Mechanisms**: COMPREHENSIVE user capability to update and correct data
+
+**CRITICAL Compliance Automation**:
+- **GDPR Compliance**: AUTOMATIC GDPR compliance verification and reporting
+- **CCPA Compliance**: COMPREHENSIVE California Consumer Privacy Act compliance framework
+- **Regional Adaptation**: AUTOMATIC adaptation to local privacy regulations
+- **Audit Preparation**: SYSTEMATIC privacy audit trail generation and compliance reporting
 
 **Privacy-by-Design Integration**:
 - **Command Level**: Every command implements privacy protection automatically
@@ -333,33 +329,31 @@ privacy_first_architecture:
 4. **Load Balancing Intelligence**: Optimal distribution de workload across available resources
 5. **Resource Recovery Optimization**: Efficient cleanup y recovery de resources no utilizados
 
-**Resource-Aware Framework**:
-```yaml
-resource_aware_orchestration:
-  resource_monitoring:
-    cpu_utilization: "Real-time CPU usage monitoring con alerting ≥85%"
-    memory_allocation: "Dynamic memory allocation y garbage collection optimization"
-    network_bandwidth: "Network usage optimization con traffic shaping"
-    storage_efficiency: "Intelligent storage allocation y cleanup automation"
-    
-  intelligent_allocation:
-    workload_analysis: "Automatic workload classification para optimal resource assignment"
-    resource_prediction: "Predictive resource needs basado en historical patterns"
-    dynamic_scaling: "Automatic resource scaling basado en demand patterns"
-    priority_management: "Resource priority assignment para critical vs non-critical tasks"
-    
-  load_balancing_intelligence:
-    agent_distribution: "Optimal multi-agent distribution across available resources"
-    task_partitioning: "Intelligent task partitioning para parallel execution efficiency"
-    resource_pooling: "Shared resource pools con intelligent allocation"
-    conflict_resolution: "Automatic resolution de resource conflicts y bottlenecks"
-    
-  performance_optimization:
-    cache_management: "Intelligent caching strategies para memory y storage optimization"
-    connection_pooling: "Network connection optimization y reuse"
-    resource_recycling: "Efficient resource cleanup y recycling patterns"
-    bottleneck_detection: "Real-time bottleneck detection con automatic mitigation"
-```
+**MANDATORY Resource-Aware Framework**:
+
+**CRITICAL Resource Monitoring**:
+- **CPU Utilization**: REAL-TIME CPU usage monitoring with alerting at ≥85% threshold
+- **Memory Allocation**: DYNAMIC memory allocation with garbage collection optimization
+- **Network Bandwidth**: INTELLIGENT network usage optimization with traffic shaping
+- **Storage Efficiency**: AUTOMATED intelligent storage allocation with cleanup automation
+
+**REQUIRED Intelligent Allocation**:
+- **Workload Analysis**: AUTOMATIC workload classification for optimal resource assignment
+- **Resource Prediction**: PREDICTIVE resource needs based on historical patterns
+- **Dynamic Scaling**: AUTOMATIC resource scaling based on demand patterns
+- **Priority Management**: INTELLIGENT resource priority assignment for critical vs non-critical tasks
+
+**MANDATORY Load Balancing Intelligence**:
+- **Agent Distribution**: OPTIMAL multi-agent distribution across available resources
+- **Task Partitioning**: INTELLIGENT task partitioning for parallel execution efficiency
+- **Resource Pooling**: SHARED resource pools with intelligent allocation protocols
+- **Conflict Resolution**: AUTOMATIC resolution of resource conflicts and bottlenecks
+
+**CRITICAL Performance Optimization**:
+- **Cache Management**: INTELLIGENT caching strategies for memory and storage optimization
+- **Connection Pooling**: NETWORK connection optimization and reuse protocols
+- **Resource Recycling**: EFFICIENT resource cleanup and recycling patterns
+- **Bottleneck Detection**: REAL-TIME bottleneck detection with automatic mitigation
 
 **Multi-Agent Resource Coordination**:
 - **Agent Resource Budgets**: Each agent allocated specific resource limits con monitoring
@@ -411,39 +405,37 @@ resource_aware_orchestration:
 4. **Real-Time Objective Validation**: VALIDACIÓN continua de cumplimiento de objetivos originales
 5. **Intelligent Re-execution**: AUTO-RESTART hasta convergencia con análisis de causas de fallo
 
-**Intelligent Orchestration Framework**:
-```yaml
-intelligent_command_orchestration:
-  unique_function_management:
-    atomic_responsibility: "MANDATORY: Single, clear responsibility per command"
-    function_registry: "Automatic mapping of unique functions across all commands"
-    duplication_prevention: "Real-time detection and prevention of functional overlap"
-    specialization_validation: "Continuous validation of command specialization boundaries"
-    
-  natural_synchronization_engine:
-    workflow_flow_analysis: "Automatic analysis of natural user workflow patterns"
-    command_discovery: "Intelligent discovery of complementary commands needed"
-    coordination_protocols: "Seamless coordination between commands without manual intervention"
-    flow_preservation: "Preservation of natural user work patterns over categorical structure"
-    
-  evolutionary_decision_trees:
-    adaptive_thresholds: "Dynamic threshold adjustment based on context and success patterns"
-    pattern_recognition: "Recognition and application of historically successful patterns"
-    predictive_routing: "Predictive command routing based on success probability"
-    learning_integration: "Continuous learning from execution patterns and outcomes"
-    
-  real_time_objective_validation:
-    objective_tracking: "Continuous monitoring of original objective fulfillment"
-    progress_metrics: "Quantifiable progress metrics toward objective completion"
-    deviation_detection: "Automatic detection of objective drift or deviation"
-    course_correction: "Automatic course correction when deviation detected"
-    
-  intelligent_re_execution:
-    convergence_validation: "Mathematical validation of objective convergence"
-    failure_analysis: "Systematic analysis of failure causes and patterns"
-    parameter_optimization: "Automatic optimization of execution parameters"
-    escalation_protocols: "Intelligent escalation when re-execution limits reached"
-```
+**CRITICAL Intelligent Orchestration Framework**:
+
+**MANDATORY Unique Function Management**:
+- **Atomic Responsibility**: ENFORCED single, clear responsibility per command with ZERO exceptions
+- **Function Registry**: AUTOMATIC mapping of unique functions across ALL commands
+- **Duplication Prevention**: REAL-TIME detection and prevention of functional overlap
+- **Specialization Validation**: CONTINUOUS validation of command specialization boundaries
+
+**REQUIRED Natural Synchronization Engine**:
+- **Workflow Flow Analysis**: AUTOMATIC analysis of natural user workflow patterns
+- **Command Discovery**: INTELLIGENT discovery of complementary commands needed
+- **Coordination Protocols**: SEAMLESS coordination between commands without manual intervention
+- **Flow Preservation**: MANDATORY preservation of natural user work patterns over categorical structure
+
+**CRITICAL Evolutionary Decision Trees**:
+- **Adaptive Thresholds**: DYNAMIC threshold adjustment based on context and success patterns
+- **Pattern Recognition**: INTELLIGENT recognition and application of historically successful patterns
+- **Predictive Routing**: ADVANCED predictive command routing based on success probability
+- **Learning Integration**: CONTINUOUS learning from execution patterns and outcomes
+
+**MANDATORY Real-Time Objective Validation**:
+- **Objective Tracking**: CONTINUOUS monitoring of original objective fulfillment
+- **Progress Metrics**: QUANTIFIABLE progress metrics toward objective completion
+- **Deviation Detection**: AUTOMATIC detection of objective drift or deviation
+- **Course Correction**: IMMEDIATE automatic course correction when deviation detected
+
+**CRITICAL Intelligent Re-execution**:
+- **Convergence Validation**: MATHEMATICAL validation of objective convergence
+- **Failure Analysis**: SYSTEMATIC analysis of failure causes and patterns
+- **Parameter Optimization**: AUTOMATIC optimization of execution parameters
+- **Escalation Protocols**: INTELLIGENT escalation when re-execution limits reached
 
 **Command Function Specialization Framework**:
 - **Atomic Responsibility**: Each command has exactly one specialized function with clear boundaries
@@ -523,33 +515,31 @@ intelligent_command_orchestration:
 
 **CRITICAL Priority Implementation**: This principle establishes parallel Task tool deployment as the STANDARD operating procedure, not an optional enhancement. Single Task tool usage should be the exception, reserved only for simple, atomic tasks that cannot benefit from parallel analysis.
 
-**Parallel Task Intelligence Framework**:
-```yaml
-parallel_task_intelligence:
-  dependency_analysis:
-    task_dependency_mapping: "MANDATORY: Map dependencies between parallel tasks"
-    resource_requirement_analysis: "Analyze resource requirements for each task"
-    parallelization_benefit_calculation: "Calculate Net Parallel Benefit ≥ 0.3"
-    execution_order_optimization: "Optimize execution order for maximum efficiency"
-    
-  intelligent_task_orchestration:
-    simultaneous_deployment: "Deploy 3-5 Task tools simultaneously with clear objectives"
-    context_isolation: "Maintain separate context for each Task tool"
-    progress_monitoring: "Real-time monitoring of parallel task progress"
-    resource_balancing: "Automatic load balancing across parallel tasks"
-    
-  result_synthesis_protocols:
-    parallel_result_collection: "Collect results from all parallel tasks"
-    intelligent_synthesis: "Synthesize results with conflict resolution"
-    gap_identification: "Identify gaps requiring additional research"
-    comprehensive_output: "Generate comprehensive analysis from parallel insights"
-    
-  optimization_intelligence:
-    performance_monitoring: "Monitor parallel execution performance"
-    resource_optimization: "Optimize resource allocation based on task requirements"
-    adaptive_parallelization: "Adapt parallelization strategy based on performance"
-    learning_integration: "Learn from parallel execution patterns for future optimization"
-```
+**MANDATORY Parallel Task Intelligence Framework**:
+
+**CRITICAL Dependency Analysis**:
+- **Task Dependency Mapping**: MANDATORY mapping of dependencies between parallel tasks
+- **Resource Requirement Analysis**: COMPREHENSIVE analysis of resource requirements for each task
+- **Parallelization Benefit Calculation**: MATHEMATICAL calculation of Net Parallel Benefit ≥ 0.3
+- **Execution Order Optimization**: INTELLIGENT optimization of execution order for maximum efficiency
+
+**REQUIRED Intelligent Task Orchestration**:
+- **Simultaneous Deployment**: DEPLOY 3-5 Task tools simultaneously with clear objectives
+- **Context Isolation**: MAINTAIN separate context for each Task tool to prevent interference
+- **Progress Monitoring**: REAL-TIME monitoring of parallel task progress
+- **Resource Balancing**: AUTOMATIC load balancing across parallel tasks
+
+**MANDATORY Result Synthesis Protocols**:
+- **Parallel Result Collection**: SYSTEMATIC collection of results from ALL parallel tasks
+- **Intelligent Synthesis**: ADVANCED synthesis of results with conflict resolution
+- **Gap Identification**: AUTOMATIC identification of gaps requiring additional research
+- **Comprehensive Output**: GENERATE comprehensive analysis from parallel insights
+
+**CRITICAL Optimization Intelligence**:
+- **Performance Monitoring**: CONTINUOUS monitoring of parallel execution performance
+- **Resource Optimization**: DYNAMIC optimization of resource allocation based on task requirements
+- **Adaptive Parallelization**: INTELLIGENT adaptation of parallelization strategy based on performance
+- **Learning Integration**: SYSTEMATIC learning from parallel execution patterns for future optimization
 
 **Task Tool Intelligence Requirements**:
 - **Dependency Detection**: MANDATORY analysis of task interdependencies before deployment
@@ -592,39 +582,37 @@ parallel_task_intelligence:
 4. **Integrity Validation**: MANDATORY validación continua de integridad del catálogo
 5. **Discovery Optimization**: REQUIRED optimización para discoverabilidad y navegación intuitiva
 
-**Dynamic Registry Framework**:
-```yaml
-dynamic_command_registry:
-  automated_catalog_maintenance:
-    real_time_updates: "MANDATORY: Automatic updates when commands are added/modified/removed"
-    integrity_validation: "Continuous validation of catalog completeness and accuracy"
-    consistency_enforcement: "Automatic enforcement of catalog consistency across all sources"
-    deprecation_management: "Intelligent management of deprecated commands with migration paths"
-    
-  command_principle_matrix:
-    principle_mapping: "Automatic mapping of commands to their associated principles"
-    dependency_tracking: "Tracking of command dependencies on specific principles"
-    compliance_validation: "Validation that commands comply with their associated principles"
-    impact_analysis: "Analysis of principle changes on associated commands"
-    
-  usage_metrics_integration:
-    usage_frequency: "Tracking of command usage frequency and patterns"
-    success_rate_monitoring: "Monitoring of command success rates and failure patterns"
-    coordination_patterns: "Analysis of command coordination and sequencing patterns"
-    performance_metrics: "Performance metrics for command execution and optimization"
-    
-  integrity_validation_system:
-    completeness_verification: "Verification that all commands are properly cataloged"
-    accuracy_validation: "Validation of command information accuracy and currency"
-    consistency_checking: "Checking for consistency across all catalog sources"
-    quality_assurance: "Quality assurance for catalog content and structure"
-    
-  discovery_optimization:
-    search_optimization: "Optimization of command search and discovery mechanisms"
-    categorization_intelligence: "Intelligent categorization for improved discoverability"
-    recommendation_engine: "Recommendation of relevant commands based on context"
-    navigation_enhancement: "Enhancement of navigation patterns for intuitive access"
-```
+**CRITICAL Dynamic Registry Framework**:
+
+**MANDATORY Automated Catalog Maintenance**:
+- **Real-Time Updates**: AUTOMATIC updates when commands are added/modified/removed
+- **Integrity Validation**: CONTINUOUS validation of catalog completeness and accuracy
+- **Consistency Enforcement**: AUTOMATIC enforcement of catalog consistency across ALL sources
+- **Deprecation Management**: INTELLIGENT management of deprecated commands with migration paths
+
+**REQUIRED Command-Principle Matrix**:
+- **Principle Mapping**: AUTOMATIC mapping of commands to their associated principles
+- **Dependency Tracking**: SYSTEMATIC tracking of command dependencies on specific principles
+- **Compliance Validation**: CONTINUOUS validation that commands comply with their associated principles
+- **Impact Analysis**: COMPREHENSIVE analysis of principle changes on associated commands
+
+**CRITICAL Usage Metrics Integration**:
+- **Usage Frequency**: DETAILED tracking of command usage frequency and patterns
+- **Success Rate Monitoring**: CONTINUOUS monitoring of command success rates and failure patterns
+- **Coordination Patterns**: ADVANCED analysis of command coordination and sequencing patterns
+- **Performance Metrics**: COMPREHENSIVE performance metrics for command execution and optimization
+
+**MANDATORY Integrity Validation System**:
+- **Completeness Verification**: SYSTEMATIC verification that ALL commands are properly cataloged
+- **Accuracy Validation**: CONTINUOUS validation of command information accuracy and currency
+- **Consistency Checking**: AUTOMATED checking for consistency across ALL catalog sources
+- **Quality Assurance**: COMPREHENSIVE quality assurance for catalog content and structure
+
+**REQUIRED Discovery Optimization**:
+- **Search Optimization**: ADVANCED optimization of command search and discovery mechanisms
+- **Categorization Intelligence**: INTELLIGENT categorization for improved discoverability
+- **Recommendation Engine**: SMART recommendation of relevant commands based on context
+- **Navigation Enhancement**: SYSTEMATIC enhancement of navigation patterns for intuitive access
 
 **Command Cataloging Architecture**:
 - **Command Fingerprinting**: Unique identification and fingerprinting of each command
@@ -848,34 +836,32 @@ Specialist Deployment → Context Preservation → Handoff Protocols → Result 
 **PRIORITY**: **MÁXIMA** - Este principio debe ser verificado ANTES de cualquier operación de archivos y tiene precedencia sobre otros principios de organización.
 
 ### **MANDATORY Pre-Creation Analysis Protocol**
-```yaml
-zero_root_file_policy:
-  blocking_enforcement:
-    prohibited_root_files: "ABSOLUTE PROHIBITION: No files in project root except CLAUDE.md, README.md"
-    pre_creation_analysis: "MANDATORY structure analysis before ANY file generation"
-    automatic_blocking: "System MUST prevent root file creation automatically"
-    zero_tolerance: "No exceptions beyond explicitly permitted files"
-    
-  intelligent_location_detection:
-    handoffs: "/handoffs/ - All handoff documents and coordination files"
-    reports: "/reports/ - Analysis reports, compliance reports, completion reports"
-    outputs: "/outputs/ - Temporary outputs, validation results, analysis data"
-    docs: "/docs/ - Permanent documentation, principles, commands, knowledge"
-    scripts: "/scripts/ - Automation scripts, validation tools, maintenance utilities"
-    projects: "/projects/ - Independent project directories with complete autonomy"
-    
-  automatic_folder_creation:
-    detection_algorithm: "Analyze file type, content, purpose, and logical categorization"
-    folder_creation_protocol: "Create missing folders automatically when needed"
-    structure_validation: "Verify folder structure matches project standards"
-    permission_verification: "Ensure folder creation follows project autonomy rules"
-    
-  continuous_monitoring:
-    automated_scanning: "Regular scans for misplaced files in project root"
-    immediate_alerts: "P56 transparency alerts for any root file violations"
-    reorganization_protocols: "Automatic suggestions for file relocation"
-    structure_optimization: "Continuous improvement of organization patterns"
-```
+
+**CRITICAL Blocking Enforcement**:
+- **Prohibited Root Files**: ABSOLUTE PROHIBITION of ANY files in project root except CLAUDE.md, README.md
+- **Pre-Creation Analysis**: MANDATORY structure analysis before ANY file generation
+- **Automatic Blocking**: SYSTEM MUST prevent root file creation automatically with ZERO tolerance
+- **Zero Tolerance**: NO exceptions beyond explicitly permitted files with ABSOLUTE enforcement
+
+**REQUIRED Intelligent Location Detection**:
+- **Handoffs Directory**: `/handoffs/` - ALL handoff documents and coordination files
+- **Reports Directory**: `/reports/` - Analysis reports, compliance reports, completion reports
+- **Outputs Directory**: `/outputs/` - Temporary outputs, validation results, analysis data
+- **Documentation Directory**: `/docs/` - Permanent documentation, principles, commands, knowledge
+- **Scripts Directory**: `/scripts/` - Automation scripts, validation tools, maintenance utilities
+- **Projects Directory**: `/projects/` - Independent project directories with complete autonomy
+
+**MANDATORY Automatic Folder Creation**:
+- **Detection Algorithm**: ANALYZE file type, content, purpose, and logical categorization
+- **Folder Creation Protocol**: CREATE missing folders automatically when needed
+- **Structure Validation**: VERIFY folder structure matches project standards
+- **Permission Verification**: ENSURE folder creation follows project autonomy rules
+
+**CRITICAL Continuous Monitoring**:
+- **Automated Scanning**: REGULAR scans for misplaced files in project root
+- **Immediate Alerts**: P56 transparency alerts for ANY root file violations
+- **Reorganization Protocols**: AUTOMATIC suggestions for file relocation
+- **Structure Optimization**: CONTINUOUS improvement of organization patterns
 
 ### **CRITICAL File Type Classification**
 **HANDOFFS** → `/handoffs/`:
@@ -959,39 +945,37 @@ zero_root_file_policy:
 **PRIORITY**: **🚨 MAXIMUM** - PRIORIDAD ABSOLUTA sobre TODOS los principios existentes. TODA comunicación Claude Code MUST achieve maximum density optimization with STRICTEST enforcement, AUTOMATIC blocking of violations, and IMMEDIATE correction protocols.
 
 ### **🚨 MAXIMUM Density Enforcement Protocol**
-```yaml
-maximum_density_optimization:
-  critical_requirements:
-    character_reduction: "≥75% reduction from verbose patterns (INCREASED from 70%)"
-    information_preservation: "100% essential information retained"
-    comprehension_time: "≤0.8 second visual parsing (IMPROVED from 1 second)"
-    value_per_token: "MAXIMUM information density per token generated"
-    symbol_consistency: "Universal symbols: ✓✗⚠ℹ⟳◉ across all contexts"
-    
-  automatic_enforcement:
-    real_time_analysis: "MANDATORY density validation for every output"
-    blocking_mechanism: "AUTOMATIC rejection of sub-optimal patterns"
-    correction_protocol: "IMMEDIATE pattern correction with zero tolerance"
-    violation_prevention: "Pre-generation density verification"
-    
-  conversation_patterns:
-    operation_status: "⟳ operation → result [time]"
-    progress_indication: "Phase N/Total ████████░░ NN% action"
-    agent_coordination: "◉ N agents → Agent1 + Agent2 + Agent3 [status]"
-    validation_summary: "✓12 ⚠3 ✗1 [time] efficiency% → next_action"
-    
-  script_integration:
-    notification_library: "scripts/core/compact-notifications.sh"
-    function_patterns: "cn_status, cn_progress, cn_metrics, cn_summary"
-    replacement_mandate: "Replace ALL verbose echo patterns with compact functions"
-    consistency_requirement: "Identical patterns between scripts and conversation"
-    
-  clarity_enforcement:
-    prohibited_patterns: "Verbose preambles, redundant explanations, decorative elements"
-    required_patterns: "Direct action → result, immediate context, clear next steps"
-    response_structure: "One line = one operation, symbols before text, time for >1s operations"
-    information_hierarchy: "Critical first, details on-demand, progressive disclosure"
-```
+
+**CRITICAL Requirements**:
+- **Character Reduction**: ACHIEVE ≥75% reduction from verbose patterns (INCREASED from 70%)
+- **Information Preservation**: MAINTAIN 100% essential information retained
+- **Comprehension Time**: TARGET ≤0.8 second visual parsing (IMPROVED from 1 second)
+- **Value Per Token**: MAXIMIZE information density per token generated
+- **Symbol Consistency**: ENFORCE universal symbols: ✓✗⚠ℹ⟳◉ across ALL contexts
+
+**MANDATORY Automatic Enforcement**:
+- **Real-Time Analysis**: MANDATORY density validation for EVERY output
+- **Blocking Mechanism**: AUTOMATIC rejection of sub-optimal patterns
+- **Correction Protocol**: IMMEDIATE pattern correction with ZERO tolerance
+- **Violation Prevention**: PRE-GENERATION density verification
+
+**REQUIRED Conversation Patterns**:
+- **Operation Status**: `⟳ operation → result [time]`
+- **Progress Indication**: `Phase N/Total ████████░░ NN% action`
+- **Agent Coordination**: `◉ N agents → Agent1 + Agent2 + Agent3 [status]`
+- **Validation Summary**: `✓12 ⚠3 ✗1 [time] efficiency% → next_action`
+
+**CRITICAL Script Integration**:
+- **Notification Library**: IMPLEMENT `scripts/core/compact-notifications.sh`
+- **Function Patterns**: UTILIZE `cn_status, cn_progress, cn_metrics, cn_summary`
+- **Replacement Mandate**: REPLACE ALL verbose echo patterns with compact functions
+- **Consistency Requirement**: MAINTAIN identical patterns between scripts and conversation
+
+**MANDATORY Clarity Enforcement**:
+- **Prohibited Patterns**: ELIMINATE verbose preambles, redundant explanations, decorative elements
+- **Required Patterns**: IMPLEMENT direct action → result, immediate context, clear next steps
+- **Response Structure**: ENFORCE one line = one operation, symbols before text, time for >1s operations
+- **Information Hierarchy**: PRIORITIZE critical first, details on-demand, progressive disclosure
 
 ### **Communication Pattern Standards**
 
@@ -1076,32 +1060,30 @@ starting... All capabilities are now available for use..."
 **PRIORITY**: **CRÍTICA** - Este principio debe aplicarse en TODA interacción de IA para maximizar la eficiencia de tokens sin pérdida de calidad.
 
 ### **MANDATORY Token Optimization Protocol**
-```yaml
-token_saving_intelligence:
-  optimization_targets:
-    token_reduction: "40-60% reduction in AI interactions"
-    quality_preservation: "100% information value retention"
-    efficiency_measurement: "Mathematical validation of token savings"
-    budget_management: "Systematic token allocation and conservation"
-    
-  mathematical_formulas:
-    token_efficiency: "TE = ((O-C)/O) × 100, where O=original tokens, C=compressed tokens"
-    compression_ratio: "CR = C/O, target: 0.4-0.6 (40-60% reduction)"
-    quality_coefficient: "QC = InformationValue(compressed)/InformationValue(original), target: ≥1.0"
-    budget_utilization: "BU = TokensUsed/TokensBudgeted, target: ≤0.8 (80% utilization)"
-    
-  ai_to_ai_patterns:
-    response_optimization: "Dense, symbol-rich communication between AI agents"
-    context_compression: "Dynamic context size management based on complexity"
-    handoff_efficiency: "Minimal token handoff protocols with maximum context preservation"
-    coordination_patterns: "Ultra-compact multi-agent coordination protocols"
-    
-  dynamic_context_management:
-    progressive_loading: "Load context incrementally based on need"
-    selective_activation: "Activate only relevant context modules"
-    compression_algorithms: "Real-time context compression without information loss"
-    memory_optimization: "Intelligent memory management for token conservation"
-```
+
+**CRITICAL Optimization Targets**:
+- **Token Reduction**: ACHIEVE 40-60% reduction in AI interactions
+- **Quality Preservation**: MAINTAIN 100% information value retention
+- **Efficiency Measurement**: IMPLEMENT mathematical validation of token savings
+- **Budget Management**: EXECUTE systematic token allocation and conservation
+
+**REQUIRED Mathematical Formulas**:
+- **Token Efficiency**: `TE = ((O-C)/O) × 100, where O=original tokens, C=compressed tokens`
+- **Compression Ratio**: `CR = C/O, target: 0.4-0.6 (40-60% reduction)`
+- **Quality Coefficient**: `QC = InformationValue(compressed)/InformationValue(original), target: ≥1.0`
+- **Budget Utilization**: `BU = TokensUsed/TokensBudgeted, target: ≤0.8 (80% utilization)`
+
+**MANDATORY AI-to-AI Patterns**:
+- **Response Optimization**: IMPLEMENT dense, symbol-rich communication between AI agents
+- **Context Compression**: DEPLOY dynamic context size management based on complexity
+- **Handoff Efficiency**: EXECUTE minimal token handoff protocols with maximum context preservation
+- **Coordination Patterns**: UTILIZE ultra-compact multi-agent coordination protocols
+
+**CRITICAL Dynamic Context Management**:
+- **Progressive Loading**: LOAD context incrementally based on need
+- **Selective Activation**: ACTIVATE only relevant context modules
+- **Compression Algorithms**: IMPLEMENT real-time context compression without information loss
+- **Memory Optimization**: DEPLOY intelligent memory management for token conservation
 
 ### **Token Budget Management System**
 
@@ -1151,14 +1133,13 @@ A3: ⟳ Validation → Systems checked → Issues categorized
 Combined: ✓ 3analyses → Ready for synthesis [3.2s]
 ```
 
-#### **Context Handoff Protocols**
-```yaml
-handoff_efficiency:
-  context_transfer: "Essential context only, compressed references for details"
-  state_preservation: "Minimal state vectors with maximum information density"
-  continuation_markers: "Symbolic continuation indicators for seamless transitions"
-  reference_compression: "File:line notation for precise context without full loading"
-```
+#### **CRITICAL Context Handoff Protocols**
+
+**MANDATORY Handoff Efficiency**:
+- **Context Transfer**: TRANSFER essential context only, compressed references for details
+- **State Preservation**: MAINTAIN minimal state vectors with maximum information density
+- **Continuation Markers**: IMPLEMENT symbolic continuation indicators for seamless transitions
+- **Reference Compression**: UTILIZE File:line notation for precise context without full loading
 
 ### **Mathematical Validation Framework**
 
@@ -1231,26 +1212,24 @@ validate_information_quality() {
 **PRIORITY**: **CRÍTICA** - Este principio debe aplicarse en TODA operación sustancial para garantizar trazabilidad completa y capacidad de recuperación.
 
 ### **MANDATORY Commit Operations Protocol**
-```yaml
-mandatory_commit_operations:
-  enforcement_scope:
-    substantial_operations: "All operations with >2 file changes or >30 minutes duration"
-    command_executions: "All /context-eng, /orchestrate, and meta-command activations"
-    system_modifications: "Any changes to principles, commands, or system architecture"
-    milestone_achievements: "Completion of objectives, phases, or validation cycles"
-    
-  commit_requirements:
-    pre_operation_commit: "MANDATORY: Commit current state before substantial operations"
-    progress_commits: "REQUIRED: Commit at logical checkpoints during operations"
-    post_operation_commit: "MANDATORY: Commit completed changes with full context"
-    recovery_commits: "REQUIRED: Commit before experimental or high-risk operations"
-    
-  commit_standards:
-    message_quality: "Descriptive messages with operation context and rationale"
-    evidence_inclusion: "Include metrics, outcomes, and impact in commit messages"
-    traceability_markers: "Link commits to objectives, principles, and user requests"
-    recovery_documentation: "Clear markers for rollback and recovery operations"
-```
+
+**CRITICAL Enforcement Scope**:
+- **Substantial Operations**: ALL operations with >2 file changes or >30 minutes duration
+- **Command Executions**: ALL /context-eng, /orchestrate, and meta-command activations
+- **System Modifications**: ANY changes to principles, commands, or system architecture
+- **Milestone Achievements**: COMPLETION of objectives, phases, or validation cycles
+
+**REQUIRED Commit Requirements**:
+- **Pre-Operation Commit**: MANDATORY commit of current state before substantial operations
+- **Progress Commits**: REQUIRED commits at logical checkpoints during operations
+- **Post-Operation Commit**: MANDATORY commit of completed changes with full context
+- **Recovery Commits**: REQUIRED commits before experimental or high-risk operations
+
+**MANDATORY Commit Standards**:
+- **Message Quality**: DESCRIPTIVE messages with operation context and rationale
+- **Evidence Inclusion**: INCLUDE metrics, outcomes, and impact in commit messages
+- **Traceability Markers**: LINK commits to objectives, principles, and user requests
+- **Recovery Documentation**: CLEAR markers for rollback and recovery operations
 
 ### **Operational Commit Framework**
 
@@ -1307,24 +1286,22 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 - **Tool Call Evidence**: Git status and commit logs serve as operational evidence
 - **Success Validation**: Commit history validates operational completion and traceability
 
-#### **Command Orchestration Integration**
-```yaml
-command_orchestration_commits:
-  meta_command_activation:
-    pre_commit: "Before /context-eng or /orchestrate activation"
-    checkpoint_commits: "At each command completion within orchestration"
-    synthesis_commit: "After multi-command coordination completion"
-    
-  task_agent_deployment:
-    deployment_commit: "Before Task agent deployment"
-    result_commits: "After each agent completion"
-    consolidation_commit: "After agent result synthesis"
-    
-  validation_workflows:
-    validation_start_commit: "Before validation sequence initiation"
-    checkpoint_commits: "After each validation phase completion"
-    final_validation_commit: "After complete validation sequence"
-```
+#### **CRITICAL Command Orchestration Integration**
+
+**MANDATORY Meta-Command Activation**:
+- **Pre-Commit**: REQUIRED before /context-eng or /orchestrate activation
+- **Checkpoint Commits**: MANDATORY at each command completion within orchestration
+- **Synthesis Commit**: REQUIRED after multi-command coordination completion
+
+**REQUIRED Task Agent Deployment**:
+- **Deployment Commit**: MANDATORY before Task agent deployment
+- **Result Commits**: REQUIRED after each agent completion
+- **Consolidation Commit**: MANDATORY after agent result synthesis
+
+**CRITICAL Validation Workflows**:
+- **Validation Start Commit**: REQUIRED before validation sequence initiation
+- **Checkpoint Commits**: MANDATORY after each validation phase completion
+- **Final Validation Commit**: REQUIRED after complete validation sequence
 
 ### **Mathematical Validation Framework**
 
@@ -1394,26 +1371,24 @@ validate_operational_traceability() {
 **See Also**: [Test-Driven Development (TDD)](./operational-excellence.md#9-test-driven-development-tdd) | [Mandatory TDD Enforcement](./operational-excellence.md#85-mandatory-tdd-enforcement) | [Verification as Liberation](./validation-protocols.md#11-verification-as-liberation) | [Mathematical Verification](./mathematical-rigor.md#27-mathematical-verification)
 
 **🚨 MANDATORY TDD Integration Framework**:
-```yaml
-tdd_integration_protocol:
-  system_integration:
-    development_environment: "MANDATORY: Integrate TDD enforcement into all development environments"
-    ci_cd_pipeline: "REQUIRED: Embed TDD validation in continuous integration/deployment"
-    code_review_process: "CRITICAL: Mandate TDD compliance in code review workflows"
-    deployment_automation: "ENFORCE: Block deployments without comprehensive test validation"
-    
-  tool_integration:
-    ide_integration: "Integrate TDD feedback directly into development IDEs"
-    version_control_hooks: "Git hooks that enforce TDD compliance before commits"
-    automated_testing_frameworks: "Seamless integration with testing frameworks"
-    monitoring_integration: "Real-time monitoring of TDD compliance across systems"
-    
-  process_integration:
-    requirement_gathering: "Integrate testable requirements into all requirements gathering"
-    documentation_standards: "Embed TDD principles in all documentation standards"
-    training_programs: "Mandatory TDD training integrated into all development training"
-    performance_metrics: "TDD compliance metrics integrated into performance evaluation"
-```
+
+**CRITICAL System Integration**:
+- **Development Environment**: MANDATORY integration of TDD enforcement into ALL development environments
+- **CI/CD Pipeline**: REQUIRED embedding of TDD validation in continuous integration/deployment
+- **Code Review Process**: CRITICAL mandate for TDD compliance in code review workflows
+- **Deployment Automation**: ENFORCED blocking of deployments without comprehensive test validation
+
+**REQUIRED Tool Integration**:
+- **IDE Integration**: INTEGRATE TDD feedback directly into development IDEs
+- **Version Control Hooks**: IMPLEMENT Git hooks that enforce TDD compliance before commits
+- **Automated Testing Frameworks**: ESTABLISH seamless integration with testing frameworks
+- **Monitoring Integration**: DEPLOY real-time monitoring of TDD compliance across systems
+
+**MANDATORY Process Integration**:
+- **Requirement Gathering**: INTEGRATE testable requirements into ALL requirements gathering
+- **Documentation Standards**: EMBED TDD principles in ALL documentation standards
+- **Training Programs**: MANDATORY TDD training integrated into ALL development training
+- **Performance Metrics**: TDD compliance metrics integrated into performance evaluation
 
 **MANDATORY TDD Integration Protocols**:
 1. **SYSTEM Integration**: EMBED TDD enforcement in ALL development systems and tools
@@ -1424,27 +1399,7 @@ tdd_integration_protocol:
 6. **REPORTING Integration**: COMPREHENSIVE reporting of TDD compliance metrics
 7. **AUTOMATION Integration**: COMPLETE automation of TDD enforcement across ALL processes
 
-**TDD Integration Architecture**:
-```yaml
-tdd_integration_architecture:
-  enforcement_layers:
-    ide_layer: "Real-time TDD feedback and enforcement at development time"
-    commit_layer: "Pre-commit hooks that validate TDD compliance"
-    ci_layer: "Continuous integration validation of TDD requirements"
-    deployment_layer: "Deployment gates that require TDD validation"
-    
-  feedback_systems:
-    real_time_feedback: "Immediate feedback on TDD compliance status"
-    automated_alerts: "Automated alerts for TDD compliance violations"
-    compliance_dashboards: "Real-time dashboards showing TDD compliance metrics"
-    performance_reporting: "Regular reporting on TDD compliance and effectiveness"
-    
-  integration_points:
-    requirement_systems: "Integration with requirement management systems"
-    project_management: "Integration with project management tools"
-    quality_assurance: "Integration with quality assurance processes"
-    documentation_systems: "Integration with documentation and knowledge management"
-```
+**TDD Integration Architecture**: Enforcement layers include IDE layer providing real-time TDD feedback and enforcement at development time, commit layer with pre-commit hooks validating TDD compliance, CI layer with continuous integration validation of TDD requirements, and deployment layer with deployment gates requiring TDD validation. Feedback systems provide immediate feedback on TDD compliance status, automated alerts for TDD compliance violations, real-time dashboards showing TDD compliance metrics, and regular reporting on TDD compliance and effectiveness. Integration points connect with requirement management systems, project management tools, quality assurance processes, and documentation and knowledge management systems.
 
 **TDD Integration Success Metrics**:
 - **System Integration**: 100% integration of TDD enforcement across all technical systems
