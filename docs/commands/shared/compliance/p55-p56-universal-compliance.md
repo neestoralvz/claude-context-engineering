@@ -39,7 +39,7 @@
 - **Web Operations**: 🚨 ALL search and fetch operations MUST use tool calls with retrieval evidence and execution confirmation
 
 **🚨 BLOCKING Actions with Zero Tolerance**:
-- **Simulation**: 🚨 NEVER simulate tool calls or describe what would happen - AUTOMATIC blocking enforced
+- **Simulation**: 🚨 NEVER simulate tool calls or describe what MUST happen - AUTOMATIC blocking enforced
 - **Assumption**: 🚨 NEVER assume tool call results without actual execution - MANDATORY verification required
 - **Description**: 🚨 NEVER describe tool call outcomes without real execution - BLOCKING of non-execution patterns
 - **Placeholders**: 🚨 NEVER use placeholder values instead of real calculations - AUTOMATIC detection and correction

@@ -426,7 +426,7 @@ end
 - `/planning-documentation` - DOCUMENT planning decisions (comprehensive recording)
 
 **REQUIRED Compatible Commands** (≥95% integration success):
-- `/model-selection` - CONSIDER conversation phase for model recommendations
+- `/model-selection` - EXECUTE conversation phase for model recommendations
 - `/objective-decomposition` - BREAK work into conversation-sized chunks
 - `/verification-loops` - VALIDATE objectives before closure (≥95% verification)
 - `/confidence-scoring` - ASSESS readiness for handoff (mathematical assessment)

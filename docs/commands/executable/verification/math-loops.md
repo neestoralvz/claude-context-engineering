@@ -137,7 +137,7 @@ mathematical_execution_flow:
 mathematical_task_agent_protocol:
   deployment_conditions:
     - complex_mathematical_computations: "Multi-dimensional mathematical problems requiring specialized agents"
-    - parallel_iterations: "Mathematical loops that can benefit from parallel computation"
+    - parallel_iterations: "Mathematical loops that REQUIRE parallel computation"
     - precision_intensive_calculations: "High-precision mathematical operations requiring dedicated agents"
     
   communication_flow:

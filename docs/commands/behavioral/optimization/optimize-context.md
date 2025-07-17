@@ -360,7 +360,7 @@ function validateContextSafety(optimized_context, original_requirements) {
 
 ### **Rollback Protocol**
 - **Context Expansion**: Add more context if effectiveness drops
-- **Strategy Adjustment**: Modify optimization approach if needed
+- **Strategy Adjustment**: EXECUTE optimization approach modifications when REQUIRED
 - **Safety Restoration**: Restore fuller context if functionality threatened
 - **Learning Integration**: Update optimization patterns based on outcomes
 

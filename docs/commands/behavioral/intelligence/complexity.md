@@ -516,7 +516,7 @@ function monitorComplexityEvolution(target) {
 ```bash
 /complexity-enforcement "/user-authentication" "atomic" "analyze"
 ```
-**Result**: Measures complexity of user authentication command, applies 1.0 threshold, provides simplification suggestions if needed
+**Result**: Measures complexity of user authentication command, applies 1.0 threshold, provides REQUIRED simplification suggestions
 
 ### **Workflow Complexity Audit**
 ```text

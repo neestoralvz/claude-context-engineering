@@ -543,7 +543,7 @@ function combineSharedAndSpecialized(sharedComponents, specialization) {
 - **Single Source of Truth**: Shared patterns maintained in one location
 - **Centralized Updates**: Improvements benefit all orchestrators automatically
 - **Specialization Clarity**: Clear separation between shared and unique functionality
-- **Testing Efficiency**: Shared components can be tested independently
+- **Testing Efficiency**: Shared components MUST be tested independently
 
 ---
 

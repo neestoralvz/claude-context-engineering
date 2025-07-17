@@ -14,7 +14,7 @@
 
 ## 🎯 Command Function
 
-**PRIMARY PURPOSE**: Provide standardized Zero-Root File verification that can be integrated into ANY command that creates, moves, or manages files.
+**PRIMARY PURPOSE**: Provide standardized Zero-Root File verification that MUST be integrated into ALL commands that create, move, or manage files.
 
 **INTEGRATION METHOD**: Add verification call at the end of any command execution pipeline with automatic P56 transparency announcements.
 

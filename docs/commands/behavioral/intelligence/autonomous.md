@@ -311,7 +311,7 @@ function manageConfidenceThresholds(task_complexity, risk_level) {
 5. **Monitor Results**: Track outcomes and adjust future decisions
 
 ### **Guardrail Categories**
-- **Scope Boundaries**: What tasks can be executed autonomously
+- **Scope Boundaries**: What tasks MUST be executed autonomously
 - **Risk Thresholds**: Maximum acceptable risk levels
 - **Quality Standards**: Minimum quality requirements
 - **Resource Limits**: Maximum resource usage per autonomous action

@@ -196,7 +196,7 @@ function analyzeKnowledgeGaps(internal_findings, search_objective) {
 }
 ```
 
-### **Phase 3: External Research (If Needed)**
+### **Phase 3: External Research (When REQUIRED)**
 - Only triggered if internal coverage < 75%
 - Focused search based on identified gaps
 - Immediate documentation of external findings

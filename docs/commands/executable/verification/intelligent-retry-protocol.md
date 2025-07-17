@@ -197,7 +197,7 @@ retry_execution_logic:
 strategy_selection:
   strategy_analysis:
     failure_type_matching: "Matching of retry strategy to failure type"
-    context_consideration: "Consideration of execution context in strategy selection"
+    context_consideration: "EVALUATION of execution context in strategy selection"
     resource_availability: "Analysis of available resources for retry strategies"
     success_probability: "Estimation of success probability for different strategies"
     
@@ -250,7 +250,7 @@ strategy_selection:
 # Monitor convergence and progress
 /monitor-retry-convergence --real-time=true --prediction=true
 
-# Validate progress and adjust if needed
+# Validate progress and adjust when required
 /validate-retry-progress --auto-adjust=true --escalate-if-needed=true
 ```
 
@@ -384,7 +384,7 @@ interface EscalationEngine {
 ### **Intelligent Escalation**
 - **Predictive Escalation**: Escalation based on predicted failure likelihood
 - **Context-Sensitive Escalation**: Escalation adapted to specific contexts
-- **User-Aware Escalation**: Escalation that considers user preferences and patterns
+- **User-Aware Escalation**: Escalation that EVALUATES user preferences and patterns
 - **Resource-Optimized Escalation**: Escalation that optimizes resource utilization
 
 ---

@@ -380,7 +380,7 @@ optimization: import clarity + module responsibility + testing compatibility
 examples:
   current: ["validation-system.js", "logging-config.js"]
   optimal: ["system-validator.js", "config-logger.js"]
-  reasoning: "Modules should be noun-like, describing what they ARE"
+  reasoning: "Modules MUST be noun-like, describing what they ARE"
 
 standards:
   - Module name as noun (what it is)

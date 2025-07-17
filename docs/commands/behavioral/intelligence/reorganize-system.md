@@ -355,7 +355,7 @@ find .claude/commands/ -name "*.md" | wc -l
 grep -c "\"name\":" .claude/config/command-registry.json
 
 # Validate paths
-# All paths in registry should exist on filesystem
+# All paths in registry MUST exist on filesystem
 ```
 
 ### **Phase 4: Quality Assurance**

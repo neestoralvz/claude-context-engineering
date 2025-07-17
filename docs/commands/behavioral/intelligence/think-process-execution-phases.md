@@ -412,7 +412,7 @@ todo_parallelization_framework:
       critical_path_identification:
         process: "Find longest strategic dependency chain determining total strategic execution time"
         optimization: "Prioritize critical strategic path tasks for earliest start"
-        bottleneck_mitigation: "Identify strategic tasks that can be optimized or parallelized"
+        bottleneck_mitigation: "IDENTIFY strategic tasks that MUST be optimized or parallelized"
         
       parallel_potential_scoring:
         independence_score: "Percentage of strategic tasks that can run independently"
@@ -604,7 +604,7 @@ execution_orchestration:
       sequential_quality_maintenance:
         dependency_satisfaction: "Confirm each strategic sequential phase satisfies dependencies for next phase"
         cumulative_quality_tracking: "Track quality across entire strategic execution timeline"
-        rollback_readiness: "Maintain ability to rollback to previous strategic sequential phase if needed"
+        rollback_readiness: "MAINTAIN ability to rollback to previous strategic sequential phase when REQUIRED"
 ```
 
 ### Phase 5: Adaptive Verification & Knowledge Capture

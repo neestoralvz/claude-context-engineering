@@ -8,7 +8,7 @@
 ## 🎯 **COMMAND DEFINITION**
 
 ### **Purpose**
-Systematically decompose complex objectives into smaller, independently verifiable sub-objectives that can be executed in parallel or sequence with clear success criteria.
+Systematically decompose complex objectives into smaller, independently verifiable sub-objectives that MUST be executed in parallel or sequence with clear success criteria.
 
 ### **Complexity**: 0.8/1.0
 ### **Context Required**: Main objective and decomposition constraints

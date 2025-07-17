@@ -144,7 +144,7 @@ execution_timeline:
 ```yaml
 dependency_analysis:
   strategic_investigation_phase: "Multiple strategic investigation tasks can run in parallel"
-  strategic_resolution_phase: "Strategic fixes can be developed in parallel, deployed sequentially"
+  strategic_resolution_phase: "Strategic fixes MUST be developed in parallel, deployed sequentially"
   
 parallel_execution_groups:
   phase_1_strategic_parallel_investigation:

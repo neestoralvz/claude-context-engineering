@@ -621,7 +621,7 @@ function integrateSpecialistKnowledge(specialist_outputs, organizational_knowled
 ### **Orchestration Routing**
 - **High Complexity (>1.8)**: Deploy maximum specialist orchestration
 - **Medium Complexity (1.2-1.8)**: Deploy focused specialist coordination
-- **Low Complexity (<1.2)**: Consider single specialist with broad expertise
+- **Low Complexity (<1.2)**: DEPLOY single specialist with broad expertise
 - **Domain Specialization**: Route based on domain expertise requirements
 
 ### **Orchestration Optimization**

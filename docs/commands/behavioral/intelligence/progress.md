@@ -341,7 +341,7 @@ function monitorProgressiveIntelligence(progression) {
 - **Depth Calibration**: Calibrate intelligence depth to task complexity
 - **Insight Synthesis**: Synthesize insights across all progression stages
 - **Quality Assurance**: Ensure high-quality intelligence at each stage
-- **Acceleration Triggers**: Trigger intelligence acceleration when appropriate
+- **Acceleration Triggers**: EXECUTE intelligence acceleration when REQUIRED
 
 ---
 

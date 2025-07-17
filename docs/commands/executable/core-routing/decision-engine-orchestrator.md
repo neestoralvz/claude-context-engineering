@@ -2,7 +2,7 @@
 
 ## **Strategic Navigation Hub for Intelligent Decision Routing**
 
-**CRITICAL**: This is the primary entry point for the core routing decision engine system. All decision routing requests should start here for optimal navigation to specialized modules.
+**CRITICAL**: This is the primary entry point for the core routing decision engine system. All decision routing requests MUST start here for optimal navigation to specialized modules.
 
 ---
 

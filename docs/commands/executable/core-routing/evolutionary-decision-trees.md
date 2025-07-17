@@ -39,6 +39,7 @@ evolutionary_decision_trees:
     pattern_crystallization: "Crystallization of effective decision patterns into reusable templates"
     wisdom_synthesis: "Synthesis of decision wisdom from large-scale execution data"
     predictive_intelligence: "Development of predictive intelligence for command orchestration"
+    token_optimization_intelligence: "🚨 CRITICAL: MANDATORY integration of token learning patterns for maximum efficiency ([Token Optimization Intelligence](../../../knowledge/technical/token-optimization-intelligence.md#continuous-learning-system))"
     
   continuous_optimization:
     performance_feedback: "Continuous feedback integration for decision optimization"
@@ -46,6 +47,7 @@ evolutionary_decision_trees:
     efficiency_enhancement: "Enhancement of decision efficiency through pattern optimization"
     user_satisfaction_optimization: "Optimization of decision outcomes for user satisfaction"
     ecosystem_utilization_monitoring: "🚨 MANDATORY: Sistema WILL monitor and optimize utilization of all 76 commands with AUTOMATIC blocking for subutilization and real-time correction protocols"
+    token_efficiency_optimization: "🚨 CRITICAL: MANDATORY continuous learning and application of token optimization strategies based on success patterns with ≥40% reduction targets and ≥95% quality preservation"
     
   command_ecosystem_integration:
     behavioral_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 38 behavioral commands with MANDATORY utilization verification"
@@ -79,12 +81,20 @@ pattern_recognition:
     timing_patterns: "Recognition of optimal timing patterns for command execution"
     context_patterns: "Identification of contextual factors that influence success"
     user_behavior_patterns: "Recognition of user behavior patterns and preferences"
+    token_optimization_patterns: "🚨 CRITICAL: Recognition of successful token optimization patterns for different contexts, objectives, and complexity levels"
+    compression_strategy_patterns: "Identification of effective context compression strategies based on success history"
+    budget_allocation_patterns: "Recognition of optimal token budget allocation patterns for different operation types"
+    learning_adaptation_patterns: "Detection of successful learning pattern adaptation across contexts"
     
   failure_pattern_detection:
     common_failure_modes: "Detection of common failure modes in command orchestration"
     anti_patterns: "Identification of anti-patterns that lead to poor outcomes"
     bottleneck_patterns: "Recognition of patterns that create bottlenecks or inefficiencies"
     deviation_patterns: "Detection of patterns that lead to objective deviation"
+    token_inefficiency_patterns: "🚨 CRITICAL: Detection of patterns that lead to token waste or poor compression ratios"
+    quality_degradation_patterns: "Identification of patterns that compromise information quality during optimization"
+    budget_overrun_patterns: "Recognition of patterns that lead to token budget violations"
+    learning_failure_patterns: "Detection of patterns where learning adaptation fails or regresses"
     
   pattern_categorization:
     effectiveness_scoring: "Scoring of pattern effectiveness based on success metrics"
@@ -278,7 +288,7 @@ evolution_engine:
 command_coordination:
   unique_function_routing:
     function_specialization_routing: "Routing based on unique command function specialization"
-    dependency_aware_routing: "Routing that considers command dependencies"
+    dependency_aware_routing: "Routing that EVALUATES command dependencies"
     capability_matching: "Matching of requirements to command capabilities"
     optimization_routing: "Routing optimized for overall workflow efficiency"
     

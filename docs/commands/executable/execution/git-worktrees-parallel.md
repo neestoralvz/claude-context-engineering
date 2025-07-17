@@ -317,7 +317,7 @@ git worktree add ../approach-5-[strategy_name] [base_branch]
 - **Single Viable Approach**: Skip parallel development, use traditional workflow
 
 ### **Resource Optimization**
-- **Available Approaches < 3**: Consider sequential exploration instead
+- **Available Approaches < 3**: EVALUATE sequential exploration instead
 - **Development Time < 2 hours**: Parallel overhead may exceed benefits
 - **Team Size = 1**: Focus on 2-3 most distinct approaches
 - **Complex Integration**: Factor merge complexity into approach selection

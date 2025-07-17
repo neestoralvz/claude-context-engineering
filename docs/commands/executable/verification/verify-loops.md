@@ -137,7 +137,7 @@ verification_execution_flow:
 verification_task_agent_protocol:
   deployment_conditions:
     - multi_dimensional_verification: "Complex verification requiring multiple specialized test agents"
-    - parallel_verification: "Verification cycles that can benefit from parallel execution"
+    - parallel_verification: "Verification cycles that REQUIRE parallel execution"
     - continuous_monitoring: "Real-time monitoring of verification progress and confidence"
     
   communication_flow:

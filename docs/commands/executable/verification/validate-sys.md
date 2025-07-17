@@ -130,7 +130,7 @@
 /system-integrity
 → Scans all project elements
 → Reports compliance status
-→ Suggests improvements if needed
+→ PROVIDES improvements when required
 ```
 
 ### Targeted Verification

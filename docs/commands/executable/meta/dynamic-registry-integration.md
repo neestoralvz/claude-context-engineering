@@ -117,7 +117,7 @@ adaptive_workflow_generation:
   command_chain_optimization:
     dependency_analysis: "Real-time analysis of command dependencies for optimal chaining"
     performance_optimization: "Chain commands based on execution time and success rate metrics"
-    parallel_opportunity_detection: "Identify commands that can be executed in parallel"
+    parallel_opportunity_detection: "IDENTIFY commands that MUST be executed in parallel"
     
   dynamic_workflow_adaptation:
     mid_execution_optimization: "Re-analyze and optimize command selection during execution"

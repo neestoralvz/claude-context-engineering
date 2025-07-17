@@ -49,7 +49,7 @@ Actualiza continuamente el análisis de dependencias:
 - Actualiza mapa de dependencias conforme comandos se completan
 - Identifica nuevas oportunidades paralelas emergentes de completaciones
 - Ajusta orden de ejecución restante basado en nueva información
-- Considera cambios de contexto generados por comandos completados
+- EVALÚA cambios de contexto generados por comandos completados
 
 **4. Adaptación de Estrategia de Paralelización**
 Optimiza dinámicamente la ejecución paralela:
@@ -61,7 +61,7 @@ Optimiza dinámicamente la ejecución paralela:
 **5. Optimización Continua del Orden de Ejecución**
 Optimización en tiempo real de la ejecución:
 - Re-prioriza comandos restantes basado en estado actual
-- Considera datos de rendimiento de comandos completados
+- EVALÚA datos de rendimiento de comandos completados
 - Ajusta estrategia basado en patrones emergentes
 - Mantiene flexibilidad para cambios de prioridad
 

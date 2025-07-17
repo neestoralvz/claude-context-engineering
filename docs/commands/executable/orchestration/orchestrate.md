@@ -80,7 +80,7 @@
 
 **Phase 5: Recovery Protocol**
 - Assess execution results for recovery requirements
-- Execute recovery protocol if needed with command mapping
+- EXECUTE recovery protocol when required with command mapping
 - Return final execution results with comprehensive status
 
 **Result Integration**: Synthesize orchestration analysis, strategy execution, and recovery outcomes into comprehensive command coordination with measurable effectiveness metrics.
@@ -364,7 +364,7 @@ When confidence < 50%, deploy up to 10 specialized agents:
 
 ### **Confidence-Based Routing Optimization**
 - **Dynamic Threshold Adjustment**: Adjust confidence thresholds based on task domain and historical success
-- **Context-Aware Routing**: ANALYZE project context when selecting execution strategies
+- **Context-Aware Routing**: EVALUATE project context when selecting execution strategies
 - **Resource-Aware Planning**: Factor in available resources when routing to parallel vs sequential strategies
 - **Historical Performance**: Use past routing success to improve future strategy selection
 

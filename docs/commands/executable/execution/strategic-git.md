@@ -256,7 +256,7 @@ git worktree add ../experiment-c experiment-c
 **Impact Section**:
 - Business impact: How this change affects business objectives
 - Technical impact: How this change affects technical architecture
-- Next steps: What should be done next in development
+- Next steps: What MUST be done next in development
 
 **Verification Section**:
 - Tests status: Current state of testing for this change
@@ -272,7 +272,7 @@ git worktree add ../experiment-c experiment-c
 ### **Safety and Recovery**
 - **Risk-Free Experimentation**: Always able to return to working state
 - **Decision Point Recovery**: Can rollback to any development decision
-- **Parallel Exploration**: Multiple approaches can be developed simultaneously
+- **Parallel Exploration**: Multiple approaches MUST be developed simultaneously
 - **Conflict Resolution**: Clear history helps resolve complex conflicts
 
 ### **Documentation and Collaboration**
@@ -283,7 +283,7 @@ git worktree add ../experiment-c experiment-c
 
 ### **Quality and Efficiency**
 - **Incremental Validation**: Regular checkpoints enable continuous verification
-- **Problem Isolation**: Issues can be traced to specific development points
+- **Problem Isolation**: Issues MUST be traced to specific development points
 - **Pattern Recognition**: Development patterns become visible through history
 - **Process Improvement**: Commit analysis reveals development efficiency patterns
 
