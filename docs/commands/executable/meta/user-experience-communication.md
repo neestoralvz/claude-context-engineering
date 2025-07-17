@@ -153,66 +153,28 @@ Ready for next user interaction.
 
 ### **Multi-Agent Communication Framework**
 
-```yaml
-enhanced_multi_agent_orchestration:
-  communication_mesh:
-    architecture: "Full bidirectional communication between Principal agent and all deployed Task agents"
-    capacity: "Up to 10 specialist Task agents with coordinated communication bridge"
-    message_types: ["INITIALIZATION", "PROGRESS_UPDATE", "MILESTONE_COMPLETED", "ERROR_REPORT", "COMPLETION", "HANDOFF_REQUEST"]
-    
-  specialist_deployment:
-    discovery_specialists:
-      - "Knowledge hierarchy specialist" 
-      - "Pattern recognition specialist"
-      - "Context optimization specialist"
-      
-    planning_specialists:
-      - "Strategic planning specialist"
-      - "Objective decomposition specialist" 
-      - "TDD specialist"
-      
-    execution_specialists:
-      - "Parallel execution coordinator"
-      - "Git strategy specialist"
-      - "Dependency analysis specialist"
-      
-    verification_specialists:
-      - "Mathematical verification specialist"
-      - "Confidence scoring specialist"
-      - "P55/P56 compliance validator"
-      
-    documentation_specialists:
-      - "Living documentation specialist"
-      - "Pattern crystallization specialist"
-      - "Registry synchronization specialist"
-      
-  coordination_features:
-    progress_aggregation:
-      - "Principal agent aggregates progress from all active Task agents"
-      - "Real-time synthesis of specialist outputs"
-      - "Coordinated milestone tracking across agents"
-      
-    communication_management:
-      - "Message queue coordination for up to 10 agents"
-      - "Status synchronization and conflict resolution"
-      - "Timeout handling and recovery for individual agents"
-      
-    result_synthesis:
-      - "Intelligent combination of specialist findings"
-      - "Cross-agent validation and consistency checking"
-      - "Comprehensive result compilation and handoff"
-      
-  user_experience:
-    visibility:
-      - "Users see progress from all deployed specialist agents"
-      - "Agent-specific status updates and milestone tracking"
-      - "Coordinated completion notifications"
-      
-    transparency:
-      - "Clear indication of which specialists are deployed"
-      - "Real-time updates on inter-agent coordination"
-      - "Comprehensive synthesis reporting"
-```
+**MANDATORY Enhanced Multi-Agent Orchestration Framework**:
+
+**Communication Mesh Architecture**:
+- **Architecture**: Full bidirectional communication between Principal agent and all deployed Task agents
+- **Capacity**: Up to 10 specialist Task agents with coordinated communication bridge
+- **Message Types**: INITIALIZATION, PROGRESS_UPDATE, MILESTONE_COMPLETED, ERROR_REPORT, COMPLETION, HANDOFF_REQUEST
+
+**Specialist Deployment Categories**:
+- **Discovery Specialists**: Knowledge hierarchy specialist, Pattern recognition specialist, Context optimization specialist
+- **Planning Specialists**: Strategic planning specialist, Objective decomposition specialist, TDD specialist
+- **Execution Specialists**: Parallel execution coordinator, Git strategy specialist, Dependency analysis specialist
+- **Verification Specialists**: Mathematical verification specialist, Confidence scoring specialist, P55/P56 compliance validator
+- **Documentation Specialists**: Living documentation specialist, Pattern crystallization specialist, Registry synchronization specialist
+
+**Coordination Features**:
+- **Progress Aggregation**: Principal agent aggregates progress from all active Task agents, Real-time synthesis of specialist outputs, Coordinated milestone tracking across agents
+- **Communication Management**: Message queue coordination for up to 10 agents, Status synchronization and conflict resolution, Timeout handling and recovery for individual agents
+- **Result Synthesis**: Intelligent combination of specialist findings, Cross-agent validation and consistency checking, Comprehensive result compilation and handoff
+
+**User Experience Standards**:
+- **Visibility**: Users see progress from all deployed specialist agents, Agent-specific status updates and milestone tracking, Coordinated completion notifications
+- **Transparency**: Clear indication of which specialists are deployed, Real-time updates on inter-agent coordination, Comprehensive synthesis reporting
 
 ---
 
@@ -248,61 +210,59 @@ When deploying Task agents, the LLM MUST:
 
 ### **Communication Message Types**
 
-```yaml
-communication_message_types:
-  initialization_messages:
-    PHASE_INITIALIZATION: "Phase startup with agent deployment announcement"
-    AGENT_DEPLOYMENT: "Individual Task agent deployment confirmation"
-    COMMUNICATION_BRIDGE_ACTIVE: "Bidirectional communication establishment"
-    
-  progress_messages:
-    PROGRESS_UPDATE: "Regular status updates (≤30 seconds frequency)"
-    MILESTONE_COMPLETED: "Major milestone achievement notification"
-    PHASE_TRANSITION: "Handoff between phases with status transfer"
-    
-  coordination_messages:
-    MULTI_AGENT_COORDINATION: "Cross-agent communication and synchronization"
-    RESOURCE_ALLOCATION: "Task agent resource and priority management"
-    DEPENDENCY_RESOLUTION: "Inter-agent dependency coordination"
-    
-  completion_messages:
-    TASK_COMPLETION: "Individual Task agent work completion"
-    PHASE_COMPLETION: "Complete phase finish with handoff data"
-    META_COMMAND_COMPLETION: "Full system completion with comprehensive results"
-    
-  error_messages:
-    ERROR_REPORT: "Task agent error with recovery action plan"
-    COMMUNICATION_FAILURE: "Bridge failure with reconnection protocol"
-    TIMEOUT_HANDLING: "Agent timeout with manual takeover procedures"
-```
+**MANDATORY Communication Message Types**:
+
+**Initialization Messages**:
+- **PHASE_INITIALIZATION**: Phase startup with agent deployment announcement
+- **AGENT_DEPLOYMENT**: Individual Task agent deployment confirmation
+- **COMMUNICATION_BRIDGE_ACTIVE**: Bidirectional communication establishment
+
+**Progress Messages**:
+- **PROGRESS_UPDATE**: Regular status updates (≤30 seconds frequency)
+- **MILESTONE_COMPLETED**: Major milestone achievement notification
+- **PHASE_TRANSITION**: Handoff between phases with status transfer
+
+**Coordination Messages**:
+- **MULTI_AGENT_COORDINATION**: Cross-agent communication and synchronization
+- **RESOURCE_ALLOCATION**: Task agent resource and priority management
+- **DEPENDENCY_RESOLUTION**: Inter-agent dependency coordination
+
+**Completion Messages**:
+- **TASK_COMPLETION**: Individual Task agent work completion
+- **PHASE_COMPLETION**: Complete phase finish with handoff data
+- **META_COMMAND_COMPLETION**: Full system completion with comprehensive results
+
+**Error Messages**:
+- **ERROR_REPORT**: Task agent error with recovery action plan
+- **COMMUNICATION_FAILURE**: Bridge failure with reconnection protocol
+- **TIMEOUT_HANDLING**: Agent timeout with manual takeover procedures
 
 ### **Progress Tracking Standards**
 
-```yaml
-progress_tracking_requirements:
-  update_frequency:
-    standard_operations: "Progress updates every ≤30 seconds"
-    complex_operations: "Progress updates every ≤15 seconds"
-    critical_operations: "Progress updates every ≤10 seconds"
-    
-  milestone_reporting:
-    discovery_milestones: "Knowledge mapping, pattern recognition, context optimization"
-    planning_milestones: "Strategy formation, model selection, objective decomposition"
-    execution_milestones: "Implementation progress, parallelization status, quality gates"
-    verification_milestones: "Confidence scoring, mathematical validation, compliance verification"
-    documentation_milestones: "Pattern crystallization, registry updates, handoff preparation"
-    
-  status_indicators:
-    active_status: "🔄 ACTIVE - Currently executing with progress percentage"
-    completed_status: "✅ COMPLETED - Finished with success confirmation"
-    queued_status: "⏳ QUEUED - Waiting for dependency completion"
-    error_status: "❌ ERROR - Failed with recovery action plan"
-    
-  communication_health:
-    bridge_status: "✅ HEALTHY / ⚠️ DEGRADED / ❌ FAILED"
-    message_latency: "Average message delivery time (target: <2 seconds)"
-    agent_connectivity: "Active agent count and connection quality"
-```
+**MANDATORY Progress Tracking Requirements**:
+
+**Update Frequency Standards**:
+- **Standard Operations**: Progress updates every ≤30 seconds
+- **Complex Operations**: Progress updates every ≤15 seconds
+- **Critical Operations**: Progress updates every ≤10 seconds
+
+**Milestone Reporting Categories**:
+- **Discovery Milestones**: Knowledge mapping, pattern recognition, context optimization
+- **Planning Milestones**: Strategy formation, model selection, objective decomposition
+- **Execution Milestones**: Implementation progress, parallelization status, quality gates
+- **Verification Milestones**: Confidence scoring, mathematical validation, compliance verification
+- **Documentation Milestones**: Pattern crystallization, registry updates, handoff preparation
+
+**Status Indicators**:
+- **Active Status**: 🔄 ACTIVE - Currently executing with progress percentage
+- **Completed Status**: ✅ COMPLETED - Finished with success confirmation
+- **Queued Status**: ⏳ QUEUED - Waiting for dependency completion
+- **Error Status**: ❌ ERROR - Failed with recovery action plan
+
+**Communication Health Monitoring**:
+- **Bridge Status**: ✅ HEALTHY / ⚠️ DEGRADED / ❌ FAILED
+- **Message Latency**: Average message delivery time (target: <2 seconds)
+- **Agent Connectivity**: Active agent count and connection quality
 
 ---
 
@@ -349,49 +309,47 @@ progress_tracking_requirements:
 
 ### **Communication Black Hole Prevention**
 
-```yaml
-communication_safeguards:
-  black_hole_prevention:
-    mandatory_updates: "All Task agents MUST report status every ≤30 seconds"
-    timeout_detection: "Automatic detection of silent agents after 45 seconds"
-    recovery_protocols: "Immediate manual takeover for non-responsive agents"
-    user_notification: "Clear communication when agents become non-responsive"
-    
-  bridge_maintenance:
-    connection_monitoring: "Continuous health checks for communication bridge"
-    redundancy_systems: "Backup communication channels for critical operations"
-    failure_recovery: "Automatic bridge restoration with status preservation"
-    manual_override: "Principal agent takeover when communication fails"
-    
-  transparency_enforcement:
-    mandatory_announcements: "All tool calls MUST have P56 visual announcements"
-    progress_visibility: "Users MUST see Task agent progress at all times"
-    handoff_transparency: "All phase transitions MUST be clearly communicated"
-    completion_reporting: "Comprehensive results MUST be displayed on completion"
-```
+**MANDATORY Communication Safeguards**:
+
+**Black Hole Prevention**:
+- **Mandatory Updates**: All Task agents MUST report status every ≤30 seconds
+- **Timeout Detection**: Automatic detection of silent agents after 45 seconds
+- **Recovery Protocols**: Immediate manual takeover for non-responsive agents
+- **User Notification**: Clear communication when agents become non-responsive
+
+**Bridge Maintenance**:
+- **Connection Monitoring**: Continuous health checks for communication bridge
+- **Redundancy Systems**: Backup communication channels for critical operations
+- **Failure Recovery**: Automatic bridge restoration with status preservation
+- **Manual Override**: Principal agent takeover when communication fails
+
+**Transparency Enforcement**:
+- **Mandatory Announcements**: All tool calls MUST have P56 visual announcements
+- **Progress Visibility**: Users MUST see Task agent progress at all times
+- **Handoff Transparency**: All phase transitions MUST be clearly communicated
+- **Completion Reporting**: Comprehensive results MUST be displayed on completion
 
 ### **Error Communication Protocols**
 
-```yaml
-error_communication_protocols:
-  error_detection:
-    agent_timeout: "Task agent stops responding for >45 seconds"
-    tool_call_failure: "Tool execution fails or returns error"
-    communication_failure: "Bridge connection lost or degraded"
-    compliance_violation: "P55/P56 standards not met"
-    
-  error_reporting:
-    immediate_notification: "Users informed immediately when errors occur"
-    recovery_action_display: "Clear explanation of recovery steps being taken"
-    impact_assessment: "Communication of error impact on overall progress"
-    alternative_approaches: "Display of fallback strategies being deployed"
-    
-  recovery_communication:
-    recovery_progress: "Real-time updates on error recovery efforts"
-    success_confirmation: "Clear notification when recovery is successful"
-    impact_mitigation: "Explanation of measures taken to prevent recurrence"
-    handoff_restoration: "Confirmation that communication bridge is restored"
-```
+**MANDATORY Error Communication Protocols**:
+
+**Error Detection**:
+- **Agent Timeout**: Task agent stops responding for >45 seconds
+- **Tool Call Failure**: Tool execution fails or returns error
+- **Communication Failure**: Bridge connection lost or degraded
+- **Compliance Violation**: P55/P56 standards not met
+
+**Error Reporting**:
+- **Immediate Notification**: Users informed immediately when errors occur
+- **Recovery Action Display**: Clear explanation of recovery steps being taken
+- **Impact Assessment**: Communication of error impact on overall progress
+- **Alternative Approaches**: Display of fallback strategies being deployed
+
+**Recovery Communication**:
+- **Recovery Progress**: Real-time updates on error recovery efforts
+- **Success Confirmation**: Clear notification when recovery is successful
+- **Impact Mitigation**: Explanation of measures taken to prevent recurrence
+- **Handoff Restoration**: Confirmation that communication bridge is restored
 
 ---
 
@@ -486,28 +444,27 @@ error_communication_protocols:
 ### **🔧 ENHANCED EVIDENCE COLLECTION PROTOCOL**
 
 **MANDATORY Evidence Documentation Standards**:
-```yaml
-evidence_collection_requirements:
-  communication_bridge_evidence:
-    - "Bidirectional communication flow validation with rate documentation"
-    - "Real-time progress tracking with 15-second update frequency"
-    - "Complete audit trail of all communication bridge operations"
-    
-  progress_tracking_evidence:
-    - "Real-time progress updates with timing verification"
-    - "Task agent communication logs with response time metrics"
-    - "User visibility measurements with satisfaction scoring"
-    
-  tool_execution_evidence:
-    - "Complete tool call log with timing and success validation"
-    - "Real vs simulation verification with 100% real execution proof"
-    - "Communication agent coordination with flow documentation"
-    
-  user_experience_evidence:
-    - "User satisfaction measurements with statistical precision"
-    - "Communication effectiveness analysis with before/after comparison"
-    - "Transparency validation with quantifiable visibility metrics"
-```
+**MANDATORY Evidence Collection Requirements**:
+
+**Communication Bridge Evidence**:
+- Bidirectional communication flow validation with rate documentation
+- Real-time progress tracking with 15-second update frequency
+- Complete audit trail of all communication bridge operations
+
+**Progress Tracking Evidence**:
+- Real-time progress updates with timing verification
+- Task agent communication logs with response time metrics
+- User visibility measurements with satisfaction scoring
+
+**Tool Execution Evidence**:
+- Complete tool call log with timing and success validation
+- Real vs simulation verification with 100% real execution proof
+- Communication agent coordination with flow documentation
+
+**User Experience Evidence**:
+- User satisfaction measurements with statistical precision
+- Communication effectiveness analysis with before/after comparison
+- Transparency validation with quantifiable visibility metrics
 
 **CRITICAL Performance Validation Requirements**:
 - **Communication Bridge Effectiveness**: Must achieve ≥98% with mathematical proof

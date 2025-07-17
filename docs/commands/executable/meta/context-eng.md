@@ -18,66 +18,64 @@
 
 **🚨 BLOCKING REQUIREMENT**: This command MUST auto-activate with ≥95% trigger accuracy and ≤150ms activation time when specific conditions are met. Sistema WILL block manual intervention and MUST enforce automatic activation protocols with ZERO tolerance for bypass attempts.
 
-```yaml
-auto_activation_triggers:
-  primary_trigger:
-    condition: "🚨 MANDATORY: User requests complete Context Engineering system activation"
-    threshold: "🚨 AUTOMATIC: Keywords: 'context-eng', 'complete system', 'full activation', 'meta-orchestrator'"
-    action: "🚨 BLOCKING: Auto-activate /context-eng with comprehensive ecosystem discovery and MANDATORY 76-command verification"
-    verification: "🚨 REQUIRED: Registry scan completion, command ecosystem size detection, and utilization threshold validation"
-    
-  complexity_trigger:
-    condition: "🚨 BLOCKING: Task complexity ≥ 1.5 OR multi-phase requirements detected"
-    threshold: "🚨 AUTOMATIC: Complexity score ≥ 1.5 OR user indicates 'complex', 'architecture', 'system-wide'"
-    action: "🚨 MANDATORY: Auto-activate /context-eng for full 5-phase orchestration with ecosystem utilization enforcement"
-    verification: "🚨 REQUIRED: Phase selection algorithm execution, specialist deployment confirmation, and ≥70% utilization validation"
-    
-  confidence_trigger:
-    condition: "🚨 BLOCKING: Confidence < 0.6 OR user indicates uncertainty"
-    threshold: "🚨 AUTOMATIC: Confidence score < 0.6 OR keywords: 'not sure', 'help me decide', 'what approach'"
-    action: "🚨 MANDATORY: Auto-activate /context-eng with enhanced discovery, planning phases, and ecosystem verification"
-    verification: "🚨 REQUIRED: Multi-agent deployment success, decision engine activation, and command utilization validation"
-    
-  ecosystem_trigger:
-    condition: "🚨 BLOCKING: Registry commands ≥ 76 OR system capabilities expansion needed"
-    threshold: "🚨 AUTOMATIC: Command registry size ≥ 76 OR user requests 'full capabilities', 'everything available'"
-    action: "🚨 MANDATORY: Auto-activate /context-eng with maximum ecosystem utilization and BLOCKING for insufficient activation"
-    verification: "🚨 REQUIRED: Complete registry integration, performance optimization protocols, and ≥70% utilization threshold enforcement"
-```
+**MANDATORY Auto-Activation Triggers**:
+
+**Primary Trigger**:
+- **Condition**: 🚨 MANDATORY: User requests complete Context Engineering system activation
+- **Threshold**: 🚨 AUTOMATIC: Keywords: 'context-eng', 'complete system', 'full activation', 'meta-orchestrator'
+- **Action**: 🚨 BLOCKING: Auto-activate /context-eng with comprehensive ecosystem discovery and MANDATORY 76-command verification
+- **Verification**: 🚨 REQUIRED: Registry scan completion, command ecosystem size detection, and utilization threshold validation
+
+**Complexity Trigger**:
+- **Condition**: 🚨 BLOCKING: Task complexity ≥ 1.5 OR multi-phase requirements detected
+- **Threshold**: 🚨 AUTOMATIC: Complexity score ≥ 1.5 OR user indicates 'complex', 'architecture', 'system-wide'
+- **Action**: 🚨 MANDATORY: Auto-activate /context-eng for full 5-phase orchestration with ecosystem utilization enforcement
+- **Verification**: 🚨 REQUIRED: Phase selection algorithm execution, specialist deployment confirmation, and ≥70% utilization validation
+
+**Confidence Trigger**:
+- **Condition**: 🚨 BLOCKING: Confidence < 0.6 OR user indicates uncertainty
+- **Threshold**: 🚨 AUTOMATIC: Confidence score < 0.6 OR keywords: 'not sure', 'help me decide', 'what approach'
+- **Action**: 🚨 MANDATORY: Auto-activate /context-eng with enhanced discovery, planning phases, and ecosystem verification
+- **Verification**: 🚨 REQUIRED: Multi-agent deployment success, decision engine activation, and command utilization validation
+
+**Ecosystem Trigger**:
+- **Condition**: 🚨 BLOCKING: Registry commands ≥ 76 OR system capabilities expansion needed
+- **Threshold**: 🚨 AUTOMATIC: Command registry size ≥ 76 OR user requests 'full capabilities', 'everything available'
+- **Action**: 🚨 MANDATORY: Auto-activate /context-eng with maximum ecosystem utilization and BLOCKING for insufficient activation
+- **Verification**: 🚨 REQUIRED: Complete registry integration, performance optimization protocols, and ≥70% utilization threshold enforcement
 
 ## ⚡ **Adaptive Intelligent Activation Protocol** (MANDATORY)
 
 **🚨 BLOCKING REQUIREMENT**: MANDATORY intelligent activation scaling with ≥92% trigger accuracy based on complexity measurement. Sistema WILL enforce activation protocols with AUTOMATIC blocking for manual override attempts and MANDATORY verification of ecosystem utilization thresholds.
 
-```yaml
-adaptive_activation:
-  simple_tasks:
-    complexity_threshold: "≤ 1.0"
-    confidence_threshold: "≥ 0.8"
-    activation_level: "2-phase execution: Enhanced Routing → Direct Implementation"
-    monitoring: "Standard performance tracking with real-time optimization"
-    time_savings: "70% reduction through overhead elimination"
-    
-  moderate_tasks:
-    complexity_threshold: "1.0-1.5"
-    confidence_threshold: "0.6-0.8"
-    activation_level: "3-phase execution: Routing → Strategic Planning → Coordinated Implementation"
-    monitoring: "Enhanced progress tracking with specialist coordination"
-    optimization: "50% time reduction with strategic planning integration"
-    
-  complex_tasks:
-    complexity_threshold: "≥ 1.5"
-    confidence_threshold: "< 0.6"
-    activation_level: "5-phase orchestration: Full discovery, planning, execution, verification, documentation"
-    monitoring: "Comprehensive tracking with up to 10 specialist Task agents and bidirectional communication"
-    optimization: "Maximum quality through complete orchestration protocols with MANDATORY ≥70% ecosystem utilization"
-    
-  enforcement_validation:
-    utilization_monitoring: "🚨 REAL-TIME: Monitor command ecosystem utilization during all activation phases"
-    blocking_mechanisms: "🚨 AUTOMATIC: Block execution when activation protocols bypassed or insufficient"
-    threshold_enforcement: "🚨 MANDATORY: Enforce ≥70% ecosystem utilization for complex objectives with correction protocols"
-    compliance_verification: "🚨 CONTINUOUS: Verify ongoing compliance with activation requirements until convergence"
-```
+**MANDATORY Adaptive Activation**:
+
+**Simple Tasks**:
+- **Complexity Threshold**: ≤ 1.0
+- **Confidence Threshold**: ≥ 0.8
+- **Activation Level**: 2-phase execution: Enhanced Routing → Direct Implementation
+- **Monitoring**: Standard performance tracking with real-time optimization
+- **Time Savings**: 70% reduction through overhead elimination
+
+**Moderate Tasks**:
+- **Complexity Threshold**: 1.0-1.5
+- **Confidence Threshold**: 0.6-0.8
+- **Activation Level**: 3-phase execution: Routing → Strategic Planning → Coordinated Implementation
+- **Monitoring**: Enhanced progress tracking with specialist coordination
+- **Optimization**: 50% time reduction with strategic planning integration
+
+**Complex Tasks**:
+- **Complexity Threshold**: ≥ 1.5
+- **Confidence Threshold**: < 0.6
+- **Activation Level**: 5-phase orchestration: Full discovery, planning, execution, verification, documentation
+- **Monitoring**: Comprehensive tracking with up to 10 specialist Task agents and bidirectional communication
+- **Optimization**: Maximum quality through complete orchestration protocols with MANDATORY ≥70% ecosystem utilization
+
+**Enforcement Validation**:
+- **Utilization Monitoring**: 🚨 REAL-TIME: Monitor command ecosystem utilization during all activation phases
+- **Blocking Mechanisms**: 🚨 AUTOMATIC: Block execution when activation protocols bypassed or insufficient
+- **Threshold Enforcement**: 🚨 MANDATORY: Enforce ≥70% ecosystem utilization for complex objectives with correction protocols
+- **Compliance Verification**: 🚨 CONTINUOUS: Verify ongoing compliance with activation requirements until convergence
 
 ## 🎯 **Command Specification Overview**
 
