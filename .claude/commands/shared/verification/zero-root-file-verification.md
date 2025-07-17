@@ -224,7 +224,7 @@ validation_checklist:
     
   compliance_validation:
     - [ ] Zero unauthorized files in project root
-    - [ ] All handoffs properly routed to /handoffs/
+    - [ ] All handoffs properly routed to /docs/operations/handoffs/
     - [ ] All reports properly placed in /docs/operations/reports/
     - [ ] All outputs organized in /docs/operations/outputs/
     - [ ] Documentation maintained in /docs/ hierarchy

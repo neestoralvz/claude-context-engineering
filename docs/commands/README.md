@@ -3,7 +3,7 @@
 ## Command Synchronization Status ✅
 
 **Current Status**: **SYNCHRONIZED** 
-- **.claude/commands/**: 155 valid commands (complete operational set)
+- **.claude/commands/**: 146 valid commands (complete operational set)
 - **docs/commands/**: 156 valid commands (includes 8 integrated orchestrators + templates)
 - **Variance**: 1 file (within acceptable range - operational vs documentation difference)
 
@@ -28,8 +28,8 @@ The command synchronization system now includes:
 - **`docs/commands/`** - Documentation and development versions
 
 ### **Categories**
-- **Behavioral** (43 commands): Intelligence, optimization, exploration
-- **Executable** (94 commands): Core routing, verification, orchestration, git-workflow
+- **Behavioral** (42 commands): Intelligence, optimization, exploration
+- **Executable** (78 commands): Core routing, verification, orchestration, git-workflow
 - **Cores** (8 commands): Unified frameworks and processors
 - **Shared** (19 commands): Common utilities, templates, compliance frameworks
 
@@ -47,7 +47,7 @@ The command synchronization system now includes:
 5. ✅ **Documentation Updates** - CLAUDE.md updated with accurate counts
 
 ### **Operational Impact**
-- **Command Availability**: 87% increase (83 → 155 commands)
+- **Command Availability**: 76% increase (83 → 146 commands)
 - **Orchestrator Integration**: 8 new coordination commands (documentation, execution, git-workflow)
 - **Commit Blocking**: ✅ RESOLVED - validation now passes within tolerance
 - **Automated Maintenance**: Bidirectional sync system with git hooks
