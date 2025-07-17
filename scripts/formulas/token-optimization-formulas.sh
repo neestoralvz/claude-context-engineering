@@ -13,12 +13,12 @@ get_threshold() {
     grep "\"$key\"" "$CONSTANTS_FILE" | grep -o '[0-9]\+\.[0-9]\+' || echo "0.5"
 }
 
-# Mathematical Constants
-readonly TOKEN_EFFICIENCY_MINIMUM=$(get_threshold "token_efficiency_minimum")
-readonly TOKEN_EFFICIENCY_TARGET=$(get_threshold "token_efficiency_target")
-readonly QUALITY_PRESERVATION_MINIMUM=$(get_threshold "quality_preservation_minimum")
-readonly BUDGET_UTILIZATION_MAXIMUM=$(get_threshold "budget_utilization_maximum")
-readonly COMBINED_EFFICIENCY_TARGET=$(get_threshold "combined_efficiency_target")
+# Mathematical Constants  
+readonly TOKEN_EFFICIENCY_MINIMUM=0.4
+readonly TOKEN_EFFICIENCY_TARGET=0.5
+readonly QUALITY_PRESERVATION_MINIMUM=0.95
+readonly BUDGET_UTILIZATION_MAXIMUM=0.8
+readonly COMBINED_EFFICIENCY_TARGET=0.55
 
 # Token Efficiency Calculation
 # Formula: TE = ((O-C)/O) × 100, where O=original tokens, C=compressed tokens
@@ -267,6 +267,165 @@ monitor_token_efficiency() {
     done
 }
 
+# Learning effectiveness calculation
+calculate_learning_effectiveness() {
+    local patterns_recognized=$1
+    local strategies_improved=$2
+    local predictions_accurate=$3
+    local adaptation_speed=$4
+    
+    # Weighted learning effectiveness score
+    local effectiveness=$(echo "scale=4; ($patterns_recognized * 0.3) + ($strategies_improved * 0.25) + ($predictions_accurate * 0.25) + ($adaptation_speed * 0.2)" | bc)
+    echo "$effectiveness"
+}
+
+# Pattern recognition accuracy calculation
+calculate_pattern_recognition_accuracy() {
+    local successful_recognitions=$1
+    local total_patterns_evaluated=$2
+    
+    if [[ $total_patterns_evaluated -eq 0 ]]; then
+        echo "0.0000"
+        return 1
+    fi
+    
+    local accuracy=$(echo "scale=4; $successful_recognitions / $total_patterns_evaluated" | bc)
+    echo "$accuracy"
+}
+
+# Strategy improvement rate calculation
+calculate_strategy_improvement_rate() {
+    local efficiency_before=$1
+    local efficiency_after=$2
+    local interactions_count=$3
+    
+    local improvement=$(echo "scale=4; ($efficiency_after - $efficiency_before) / $efficiency_before" | bc)
+    local improvement_per_interaction=$(echo "scale=4; $improvement / $interactions_count" | bc)
+    
+    echo "$improvement_per_interaction"
+}
+
+# Cross-context learning transfer effectiveness
+calculate_cross_context_effectiveness() {
+    local successful_transfers=$1
+    local attempted_transfers=$2
+    local transfer_accuracy=$3
+    
+    if [[ $attempted_transfers -eq 0 ]]; then
+        echo "0.0000"
+        return 1
+    fi
+    
+    local transfer_rate=$(echo "scale=4; $successful_transfers / $attempted_transfers" | bc)
+    local combined_effectiveness=$(echo "scale=4; ($transfer_rate + $transfer_accuracy) / 2" | bc)
+    
+    echo "$combined_effectiveness"
+}
+
+# Learning validation test cases
+test_learning_formulas() {
+    echo "=== Testing Token Learning Formulas ==="
+    echo ""
+    
+    # Test pattern recognition accuracy
+    echo "Test Case: Pattern Recognition Accuracy"
+    local recognition_accuracy
+    recognition_accuracy=$(calculate_pattern_recognition_accuracy 85 100)
+    echo "Pattern Recognition Accuracy: ${recognition_accuracy} (85/100 = 0.85)"
+    
+    # Test learning effectiveness
+    echo ""
+    echo "Test Case: Learning Effectiveness"
+    local learning_effectiveness
+    learning_effectiveness=$(calculate_learning_effectiveness 0.9 0.8 0.85 0.75)
+    echo "Learning Effectiveness: ${learning_effectiveness} (weighted score)"
+    
+    # Test strategy improvement rate
+    echo ""
+    echo "Test Case: Strategy Improvement Rate"
+    local improvement_rate
+    improvement_rate=$(calculate_strategy_improvement_rate 0.4 0.55 100)
+    echo "Strategy Improvement Rate: ${improvement_rate} per interaction"
+    
+    # Test cross-context learning
+    echo ""
+    echo "Test Case: Cross-Context Learning Effectiveness"
+    local cross_context_effectiveness
+    cross_context_effectiveness=$(calculate_cross_context_effectiveness 15 20 0.85)
+    echo "Cross-Context Effectiveness: ${cross_context_effectiveness}"
+    
+    echo ""
+    echo "=== Learning Formula Testing Complete ==="
+}
+
+# Comprehensive learning validation
+validate_learning_system() {
+    local pattern_accuracy=$1
+    local learning_effectiveness=$2
+    local improvement_rate=$3
+    local adaptation_speed=$4
+    local cross_context_effectiveness=$5
+    
+    echo "=== Learning System Validation ==="
+    echo "Pattern Recognition Accuracy: $pattern_accuracy"
+    echo "Learning Effectiveness: $learning_effectiveness"
+    echo "Strategy Improvement Rate: $improvement_rate"
+    echo "Adaptation Speed: $adaptation_speed"
+    echo "Cross-Context Effectiveness: $cross_context_effectiveness"
+    echo ""
+    
+    local validation_results=0
+    
+    # Validate pattern recognition (≥80% target)
+    if (( $(echo "$pattern_accuracy >= 0.8" | bc -l) )); then
+        echo "✓ Pattern recognition accuracy: ${pattern_accuracy} (≥0.8)"
+    else
+        echo "✗ Pattern recognition accuracy: ${pattern_accuracy} (below 0.8)"
+        ((validation_results++))
+    fi
+    
+    # Validate learning effectiveness (≥75% target)
+    if (( $(echo "$learning_effectiveness >= 0.75" | bc -l) )); then
+        echo "✓ Learning effectiveness: ${learning_effectiveness} (≥0.75)"
+    else
+        echo "✗ Learning effectiveness: ${learning_effectiveness} (below 0.75)"
+        ((validation_results++))
+    fi
+    
+    # Validate improvement rate (≥10% per 100 interactions)
+    if (( $(echo "$improvement_rate >= 0.001" | bc -l) )); then
+        echo "✓ Strategy improvement rate: ${improvement_rate} (≥0.001 per interaction)"
+    else
+        echo "✗ Strategy improvement rate: ${improvement_rate} (below 0.001)"
+        ((validation_results++))
+    fi
+    
+    # Validate adaptation speed (≤5 interactions target)
+    if (( $(echo "$adaptation_speed <= 5" | bc -l) )); then
+        echo "✓ Adaptation speed: ${adaptation_speed} interactions (≤5)"
+    else
+        echo "✗ Adaptation speed: ${adaptation_speed} interactions (above 5)"
+        ((validation_results++))
+    fi
+    
+    # Validate cross-context effectiveness (≥70% target)
+    if (( $(echo "$cross_context_effectiveness >= 0.7" | bc -l) )); then
+        echo "✓ Cross-context effectiveness: ${cross_context_effectiveness} (≥0.7)"
+    else
+        echo "✗ Cross-context effectiveness: ${cross_context_effectiveness} (below 0.7)"
+        ((validation_results++))
+    fi
+    
+    echo ""
+    if [[ $validation_results -eq 0 ]]; then
+        echo "✅ ALL LEARNING SYSTEM TARGETS MET"
+        return 0
+    else
+        echo "❌ ${validation_results} LEARNING VALIDATION FAILURES"
+        return 1
+    fi
+}
+
 # Test all formulas with sample data
 test_token_optimization_formulas() {
     echo "=== Testing Token Optimization Formulas ==="
@@ -285,6 +444,15 @@ test_token_optimization_formulas() {
     # Test case 3: Excellent optimization
     echo "Test Case 3: Excellent Optimization"
     validate_complete_optimization 1000 300 100 100 400 80
+    echo ""
+    
+    # Test learning formulas
+    test_learning_formulas
+    echo ""
+    
+    # Test comprehensive learning validation
+    echo "Test Case: Comprehensive Learning System"
+    validate_learning_system 0.85 0.82 0.0015 4 0.78
     echo ""
     
     echo "=== Formula Testing Complete ==="
@@ -316,8 +484,23 @@ main() {
         "budget")
             calculate_budget_utilization "$2" "$3"
             ;;
+        "learning")
+            calculate_learning_effectiveness "$2" "$3" "$4" "$5"
+            ;;
+        "pattern")
+            calculate_pattern_recognition_accuracy "$2" "$3"
+            ;;
+        "improvement")
+            calculate_strategy_improvement_rate "$2" "$3" "$4"
+            ;;
+        "cross-context")
+            calculate_cross_context_effectiveness "$2" "$3" "$4"
+            ;;
+        "validate-learning")
+            validate_learning_system "$2" "$3" "$4" "$5" "$6"
+            ;;
         *)
-            echo "Usage: $0 {test|monitor|validate|efficiency|ratio|quality|budget}"
+            echo "Usage: $0 {test|monitor|validate|efficiency|ratio|quality|budget|learning|pattern|improvement|cross-context|validate-learning}"
             echo ""
             echo "Commands:"
             echo "  test                     - Run formula tests with sample data"
@@ -327,6 +510,11 @@ main() {
             echo "  ratio [orig] [comp]      - Calculate compression ratio"
             echo "  quality [orig] [comp]    - Calculate quality coefficient"
             echo "  budget [used] [total]    - Calculate budget utilization"
+            echo "  learning [p] [s] [a] [sp] - Calculate learning effectiveness"
+            echo "  pattern [succ] [total]   - Calculate pattern recognition accuracy"
+            echo "  improvement [bef] [aft] [int] - Calculate strategy improvement rate"
+            echo "  cross-context [succ] [att] [acc] - Calculate cross-context effectiveness"
+            echo "  validate-learning [args...] - Validate complete learning system"
             exit 1
             ;;
     esac

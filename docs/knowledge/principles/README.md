@@ -2,7 +2,7 @@
 
 **Meta-Principle**: "SYSTEMATIC excellence through MANDATORY foundational principles"
 
-**Purpose**: MANDATORY navigation hub for the complete Context Engineering principles ecosystem, providing STRATEGIC access to 87 principles organized in 11 categories with REQUIRED ≤2.5 cognitive steps to any principle destination.
+**Purpose**: MANDATORY navigation hub for the complete Context Engineering principles ecosystem, providing STRATEGIC access to 91 principles organized in 11 categories with REQUIRED ≤2.5 cognitive steps to any principle destination.
 
 **Modularization Achievement**: ACHIEVED 100% compliance with modular architecture while maintaining REQUIRED complete philosophical and operational foundation coverage.
 
@@ -10,7 +10,7 @@
 
 ## 🎯 Principle Categories Overview
 
-### 🌟 [**Philosophical Foundations**](./philosophical-foundations.md) - 6 principles
+### 🌟 [**Philosophical Foundations**](./philosophical-foundations.md) - 7 principles
 - **#1** Meta-Principle - Central system philosophy
 - **#2** Intelligence as Natural Phenomenon - Intelligence nature philosophy  
 - **#3** Context > Commands > Prompts - AI communication philosophy
@@ -18,7 +18,7 @@
 - **#6** Natural Language Commands - Human communication philosophy
 - **#55** Tool Call Execution Bridging - Real execution vs simulation philosophy
 
-### ⚙️ [**Operational Excellence**](./operational-excellence.md) - 17 principles
+### ⚙️ [**Operational Excellence**](./operational-excellence.md) - 19 principles
 - **#7** Knowledge Discovery Hierarchy - Research methodology
 - **#8** Exploration-First Methodology - Execution methodology
 - **#9** Test-Driven Development (TDD) - Development methodology
@@ -35,8 +35,10 @@
 - **#83** Documentation as Living Context - Living context and handoff methodology
 - **#79** Reinforced Local-First Exploration - Parallel task local analysis methodology
 - **#82** Research Knowledge Crystallization - Systematic research documentation methodology
+- **#85** Mandatory TDD Enforcement - Systematic TDD enforcement methodology
+- **#87** Mandatory Documentation Standards - Comprehensive documentation methodology
 
-### 🔧 [**Technical Standards**](./technical-standards.md) - 23 principles
+### 🔧 [**Technical Standards**](./technical-standards.md) - 25 principles
 - **#17** Parallel > Sequential - Execution technique
 - **#18** Multi-Agent Orchestration - Coordination technique
 - **#19** Git Worktrees Parallel Development - Development technique
@@ -60,6 +62,8 @@
 - **#82** Compact Communication Standards - Visual density and comprehension optimization technique
 - **#83** Token-Saving Intelligence - 🚨 CRITICAL AI interaction token optimization and budget management technique
 - **#84** Mandatory Commit Operations - 🚨 CRITICAL operational traceability and recovery capability technique
+- **#58** Recursive Modularization Architecture - 🚨 CRITICAL modular system decomposition technique
+- **#86** TDD Integration Protocol - 🚨 CRITICAL TDD system integration technique
 
 ### 🧮 [**Mathematical Rigor**](./mathematical-rigor.md) - 9 principles
 - **#5** Mathematical Auto-Activation - Central mathematical principle
@@ -72,7 +76,7 @@
 - **#40** Threshold Enforcement - Mathematical threshold application
 - **#41** Mathematical Simplicity - Mathematical simplicity measurement
 
-### 🔍 [**Validation Protocols**](./validation-protocols.md) - 9 principles
+### 🔍 [**Validation Protocols**](./validation-protocols.md) - 10 principles
 - **#11** Verification as Liberation - Verification principle
 - **#12** Verification Loops - Verification process
 - **#31** Intelligent Fallback - Recovery system
@@ -82,6 +86,7 @@
 - **#59** Security by Design - Security integration principle
 - **#64** Principle Compliance Supervision - Automatic principle compliance monitoring
 - **#84** Evolutionary System Maintenance - System evolution and maintenance principle
+- **#88** Documentation Compliance Enforcement - 🚨 CRITICAL documentation validation and enforcement principle
 
 ### 🎯 [**Cognitive Optimization**](./cognitive-optimization.md) - 2 principles
 - **#42** Invisible Excellence - User experience principle

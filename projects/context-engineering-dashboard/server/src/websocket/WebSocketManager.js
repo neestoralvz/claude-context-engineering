@@ -308,6 +308,48 @@ class WebSocketManager {
     return this.broadcast(message, 'health');
   }
 
+  // Multi-Agent specific broadcast methods
+  broadcastAgentEvent(eventData) {
+    const message = {
+      type: 'agent_event',
+      payload: {
+        ...eventData,
+        timestamp: Date.now()
+      }
+    };
+
+    return this.broadcast(message, 'agents');
+  }
+
+  broadcastSessionEvent(eventData) {
+    const message = {
+      type: 'session_event', 
+      payload: {
+        ...eventData,
+        timestamp: Date.now()
+      }
+    };
+
+    return this.broadcast(message, 'sessions');
+  }
+
+  broadcastCommandEvent(eventData) {
+    const message = {
+      type: 'command_event',
+      payload: {
+        ...eventData,
+        timestamp: Date.now()
+      }
+    };
+
+    return this.broadcast(message, 'commands');
+  }
+
+  // Get connection count for health monitoring
+  getConnectionCount() {
+    return this.clients.size;
+  }
+
   // Heartbeat to detect dead connections
   startHeartbeat() {
     const interval = parseInt(process.env.WS_HEARTBEAT_INTERVAL) || 30000;

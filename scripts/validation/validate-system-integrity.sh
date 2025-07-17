@@ -280,6 +280,63 @@ validate_command_execution() {
     return 0
 }
 
+# Validate enforcement mechanisms
+validate_enforcement_mechanisms() {
+    echo -e "${CYAN}🚨 Validating enforcement mechanisms...${NC}"
+    
+    # Check for 🚨 BLOCKING enforcement language in key files
+    local enforcement_files=(
+        "$BASE_DIR/docs/commands/executable/core-routing/evolutionary-decision-trees.md"
+        "$BASE_DIR/docs/commands/executable/orchestration/orchestrate.md"
+        "$BASE_DIR/docs/commands/executable/meta/context-eng.md"
+        "$BASE_DIR/docs/knowledge/protocols/active-principle-reminder-system.md"
+        "$BASE_DIR/docs/knowledge/protocols/zero-root-file-verification-protocol.md"
+        "$BASE_DIR/docs/commands/shared/compliance/p55-p56-universal-compliance.md"
+    )
+    
+    local enforcement_count=0
+    local missing_enforcement=()
+    
+    for file in "${enforcement_files[@]}"; do
+        if [ -f "$file" ]; then
+            local blocking_count=$(grep -c "🚨 BLOCKING\|🚨 MANDATORY\|🚨 AUTOMATIC\|🚨 CRITICAL" "$file" 2>/dev/null || echo 0)
+            if [ "$blocking_count" -gt 0 ]; then
+                enforcement_count=$((enforcement_count + 1))
+                add_validation_result "ENFORCEMENT" "PASSED" "$(basename "$file"): $blocking_count enforcement mechanisms found" "SUCCESS"
+            else
+                missing_enforcement+=("$(basename "$file")")
+                add_validation_result "ENFORCEMENT" "WARNING" "$(basename "$file"): No enforcement mechanisms found" "WARNING"
+            fi
+        else
+            missing_enforcement+=("$(basename "$file")")
+            add_validation_result "ENFORCEMENT" "FAILED" "$(basename "$file"): File not found" "CRITICAL"
+        fi
+    done
+    
+    # Check for ecosystem utilization enforcement
+    if grep -q "≥70% command utilization" "$BASE_DIR/docs/commands/executable/orchestration/orchestrate.md" 2>/dev/null; then
+        add_validation_result "ENFORCEMENT" "PASSED" "Ecosystem utilization threshold enforcement detected" "SUCCESS"
+    else
+        add_validation_result "ENFORCEMENT" "WARNING" "Ecosystem utilization threshold not found" "WARNING"
+    fi
+    
+    # Check for real-time violation detection
+    if grep -q "real-time violation detection\|AUTOMATIC violation detection" "$BASE_DIR/docs/knowledge/protocols/active-principle-reminder-system.md" 2>/dev/null; then
+        add_validation_result "ENFORCEMENT" "PASSED" "Real-time violation detection mechanisms found" "SUCCESS"
+    else
+        add_validation_result "ENFORCEMENT" "WARNING" "Real-time violation detection not found" "WARNING"
+    fi
+    
+    # Summary
+    if [ ${#missing_enforcement[@]} -eq 0 ]; then
+        add_validation_result "ENFORCEMENT" "PASSED" "All enforcement mechanisms validated" "SUCCESS"
+    else
+        add_validation_result "ENFORCEMENT" "WARNING" "Missing enforcement in: ${missing_enforcement[*]}" "WARNING"
+    fi
+    
+    return 0
+}
+
 # Validate command synchronization
 validate_command_synchronization() {
     echo -e "${CYAN}🔄 Running command synchronization validation...${NC}"
@@ -417,6 +474,7 @@ generate_system_report() {
       "trigger_system": "$(echo "$validation_json" | jq -r '.[] | select(.phase == "TRIGGER_SYSTEM") | .status')",
       "navigation_system": "$(echo "$validation_json" | jq -r '.[] | select(.phase == "NAVIGATION") | .status')",
       "registry_metrics": "$(echo "$validation_json" | jq -r '.[] | select(.phase == "REGISTRY_METRICS") | .status')",
+      "enforcement_mechanisms": "$(echo "$validation_json" | jq -r '.[] | select(.phase == "ENFORCEMENT") | .status')",
       "command_execution": "$(echo "$validation_json" | jq -r '.[] | select(.phase == "COMMAND_EXECUTION") | .status')",
       "system_coherence": "$(echo "$validation_json" | jq -r '.[] | select(.phase == "SYSTEM_COHERENCE") | .status')"
     },
@@ -480,7 +538,11 @@ main() {
     show_phase_header "COMMAND SYNCHRONIZATION VALIDATION"
     validate_command_synchronization
     
-    # Phase 7: Command Execution & System Coherence
+    # Phase 7: Enforcement Mechanisms
+    show_phase_header "ENFORCEMENT MECHANISM VALIDATION"
+    validate_enforcement_mechanisms
+    
+    # Phase 8: Command Execution & System Coherence
     show_phase_header "SYSTEM COHERENCE VALIDATION"
     validate_command_execution
     validate_system_coherence

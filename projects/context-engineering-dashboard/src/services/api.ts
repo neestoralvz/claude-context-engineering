@@ -271,6 +271,67 @@ class ApiService {
     };
   }
 
+  // Multi-Agent API Methods
+  async getActiveAgents() {
+    return this.request('/agents/active');
+  }
+
+  async getAgentCoordination(timeRange: string = '24h') {
+    return this.request(`/agents/coordination?timeRange=${timeRange}`);
+  }
+
+  async getAgentResources(agentId?: string, timeRange: string = '24h', resourceType?: string) {
+    const params = new URLSearchParams();
+    if (agentId) params.set('agentId', agentId);
+    params.set('timeRange', timeRange);
+    if (resourceType) params.set('resourceType', resourceType);
+    
+    return this.request(`/agents/resources?${params.toString()}`);
+  }
+
+  async getAgentPerformance(timeRange: string = '24h') {
+    return this.request(`/agents/performance?timeRange=${timeRange}`);
+  }
+
+  async getAgentDetails(agentId: string, timeRange: string = '24h') {
+    return this.request(`/agents/${agentId}?timeRange=${timeRange}`);
+  }
+
+  async createAgentSession(agentData: any) {
+    return this.request('/agents/session', {
+      method: 'POST',
+      body: JSON.stringify(agentData)
+    });
+  }
+
+  async logCoordinationEvent(coordinationData: any) {
+    return this.request('/agents/coordination', {
+      method: 'POST',
+      body: JSON.stringify(coordinationData)
+    });
+  }
+
+  async logResourceUtilization(resourceData: any) {
+    return this.request('/agents/resources', {
+      method: 'POST',
+      body: JSON.stringify(resourceData)
+    });
+  }
+
+  async logAgentPerformance(performanceData: any) {
+    return this.request('/agents/performance', {
+      method: 'POST',
+      body: JSON.stringify(performanceData)
+    });
+  }
+
+  async updateAgentSession(agentId: string, updates: any) {
+    return this.request(`/agents/${agentId}`, {
+      method: 'PUT',
+      body: JSON.stringify(updates)
+    });
+  }
+
   // Health check for API availability
   async isApiAvailable(): Promise<boolean> {
     try {

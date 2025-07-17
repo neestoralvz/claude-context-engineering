@@ -120,8 +120,39 @@
 - **Strategic Plan Optimization**: Learns which frameworks produce better results
 - **Strategic Planning Evolution**: Refines request-type → strategy mappings
 - **Decision Engine Feedback Loop**: Feeds system evolution
+- **Token Optimization Learning**: Continuous learning for token efficiency improvement ([Token Optimization Intelligence](../technical/token-optimization-intelligence.md#continuous-learning-system))
 
-**Differential Value**: **Self-evolving system** automatically improving based on success patterns.
+**Token Learning Integration**:
+```yaml
+token_optimization_learning:
+  pattern_extraction:
+    context_complexity_patterns: "Learn optimal compression strategies by complexity level"
+    objective_type_patterns: "Discover token-efficient approaches for different objectives"
+    agent_coordination_patterns: "Optimize multi-agent token usage through learning"
+    
+  strategy_evolution:
+    budget_allocation_learning: "Evolve budget allocation based on success patterns"
+    compression_strategy_optimization: "Refine compression techniques through feedback"
+    context_selection_improvement: "Learn optimal context selection for token efficiency"
+    
+  effectiveness_tracking:
+    efficiency_pattern_analysis: "Track which patterns achieve ≥40% token reduction"
+    quality_preservation_learning: "Learn to maintain ≥95% quality while optimizing"
+    success_prediction: "Predict optimization success based on historical patterns"
+    
+  continuous_improvement:
+    real_time_adaptation: "Immediate application of learned optimization patterns"
+    cross_context_transfer: "Apply successful patterns across different contexts"
+    predictive_optimization: "Proactively optimize based on learned success indicators"
+```
+
+**Learning Effectiveness Metrics**:
+- **Pattern Recognition Rate**: ≥80% accuracy in identifying successful token optimization patterns
+- **Strategy Improvement**: ≥10% efficiency improvement per 100 token optimization interactions
+- **Prediction Accuracy**: ≥75% accuracy in predicting optimal token strategies
+- **Adaptation Speed**: ≤5 interactions to adapt to new token optimization patterns
+
+**Differential Value**: **Self-evolving system** automatically improving based on success patterns, **now including comprehensive token optimization learning** for maximum AI interaction efficiency.
 
 ### 54. Automated Exploration Orchestration
 **Definition**: System orchestrating multiple exploration types (codebase, patterns, git, external) intelligently based on request type and triggers.
