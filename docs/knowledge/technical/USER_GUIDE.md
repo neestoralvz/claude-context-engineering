@@ -494,25 +494,15 @@ The system includes advanced mathematical formulas for optimization and analysis
 **Efficiency Formula**
 ```latex
 E = \frac{R \cdot Q}{C \cdot T}
-```yaml
-Where: E = Efficiency, R = Results, Q = Quality, C = Cost, T = Time
-
-**Context Reduction Formula**
-```latex
+- **Where**: E = Efficiency, R = Results, Q = Quality, C = Cost, T = Time
+- **Context Reduction Formula**latex
 CR = 1 - \frac{C_{optimized}}{C_{original}}
-```yaml
-Where: CR = Context Reduction ratio, C = Context size
-
-**Navigation Optimization Formula**
-```latex
+- **Where**: CR = Context Reduction ratio, C = Context size
+- **Navigation Optimization Formula**latex
 NO = \frac{1}{avg(steps)} \cdot \sum_{i=1}^{n} \frac{1}{distance_i}
-```yaml
-Where: NO = Navigation Optimization score
-
-**Performance Metrics Formulas**
-
-**Success Rate Calculation**
-```latex
+- **Where**: NO = Navigation Optimization score
+- **Performance Metrics Formulas**
+- **Success Rate Calculation**latex
 SR = \frac{successful\_executions}{total\_executions} \times 100\%
 ```
 

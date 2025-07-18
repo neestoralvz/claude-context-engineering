@@ -467,29 +467,23 @@ function validateCognitiveSafety(optimized_organization, original_content) {
 ## 💡 **COGNITIVE ORGANIZATION COMMUNICATION**
 
 ### **Cognitive Optimization Report**
-```yaml
-🧠 **Cognitive Organization Results**
-
-**Friction Reduction**: 75% cognitive friction reduction achieved
-**Comprehension Efficiency**: 88% improvement in understanding speed
-**Accessibility**: 100% information accessibility maintained
-**Cognitive Load**: 65% reduction in processing requirements
-
-**Organization Applied**: Logical flow with thematic grouping
-**Key Optimizations**: 
+- 🧠 **Cognitive Organization Results**
+- ****Friction Reduction****: 75% cognitive friction reduction achieved
+- ****Comprehension Efficiency****: 88% improvement in understanding speed
+- ****Accessibility****: 100% information accessibility maintained
+- ****Cognitive Load****: 65% reduction in processing requirements
+- ****Organization Applied****: Logical flow with thematic grouping
+****Key Optimizations****:
 - Sequential numbering without gaps
 - Related concepts grouped together
 - Clear navigation structure implemented
 - Cognitive load distributed optimally
-
-**Cognitive Principles Applied**:
+****Cognitive Principles Applied****:
 - Claridad > Completitud (Understanding prioritized)
 - Flujo > Categorización (Natural workflow followed)
 - Accesibilidad > Sofisticación (Simple access methods)
 - Coherencia > Flexibilidad (Consistent structure maintained)
-
-**Recommendation**: Cognitive organization validated for similar content
-```
+- ****Recommendation****: Cognitive organization validated for similar content
 
 ### **Cognitive Optimization Insights**
 - Information organization patterns that maximize comprehension

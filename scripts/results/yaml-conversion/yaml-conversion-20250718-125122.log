@@ -1,0 +1,12 @@
+[0;34m[INFO][0m Starting YAML to Markdown conversion session: 20250718-125122
+[0;34m[INFO][0m Target directory: docs/
+[0;34m[INFO][0m Backup directory: /Users/nalve/claude-context-engineering/scripts/backups/yaml-conversion-20250718-125122
+[0;34m[INFO][0m Log file: /Users/nalve/claude-context-engineering/scripts/results/yaml-conversion/yaml-conversion-20250718-125122.log
+[0;34m[INFO][0m Validation report: /Users/nalve/claude-context-engineering/scripts/results/yaml-conversion/validation-report-20250718-125122.md
+[0;34m[INFO][0m Full conversion mode enabled
+[0;34m[INFO][0m Processing directory: docs/
+[0;34m[INFO][0m Found 470 markdown files in docs/
+[0;34m[INFO][0m Processing file 1/470: docs/analysis/cellular-architecture-coordination-summary.md
+[0;34m[INFO][0m Processing file: docs/analysis/cellular-architecture-coordination-summary.md
+[0;34m[INFO][0m Found 0
+0 YAML blocks in docs/analysis/cellular-architecture-coordination-summary.md

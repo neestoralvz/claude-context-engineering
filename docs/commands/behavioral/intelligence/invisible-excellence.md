@@ -184,28 +184,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-invisible_excellence_transparency:
-  balance_assessment:
-    announcement: "🔍 TRANSPARENCY: Excellence balance - Magic [X]/10, Debug [Y]/10 - [BALANCED/OPTIMIZATION_REQUIRED]"
-    evidence: "Mathematical balance calculation with component scores"
-    
-  experience_optimization:
-    announcement: "✨ TRANSPARENCY: Magic experience [ENHANCED/ACHIEVED] - [X] user delight metrics"
-    evidence: "User experience enhancement with seamlessness measurements"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [excellence_operation]"
-    evidence: "Tool selection matrix with excellence-specific reasoning"
-    
-  debug_enhancement:
-    announcement: "🔍 TRANSPARENCY: Debug capability [ENHANCED/ACHIEVED] - [X] transparency metrics"
-    evidence: "Debugging enhancement with traceability improvements"
-    
-  pattern_consistency:
-    announcement: "📊 TRANSPARENCY: Pattern consistency [X]% - [ACHIEVED/REFINEMENT_REQUIRED]"
-    evidence: "Pattern consistency analysis with architectural quality metrics"
-```
+**Invisible Excellence Transparency**:
+  **Balance Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Excellence balance - Magic [X]/10, Debug [Y]/10 - [BALANCED/OPTIMIZATION_REQUIRED]
+    - **Evidence**: Mathematical balance calculation with component scores
+  **Experience Optimization**:
+    - **Announcement**: ✨ TRANSPARENCY: Magic experience [ENHANCED/ACHIEVED] - [X] user delight metrics
+    - **Evidence**: User experience enhancement with seamlessness measurements
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [excellence_operation]
+    - **Evidence**: Tool selection matrix with excellence-specific reasoning
+  **Debug Enhancement**:
+    - **Announcement**: 🔍 TRANSPARENCY: Debug capability [ENHANCED/ACHIEVED] - [X] transparency metrics
+    - **Evidence**: Debugging enhancement with traceability improvements
+  **Pattern Consistency**:
+    - **Announcement**: 📊 TRANSPARENCY: Pattern consistency [X]% - [ACHIEVED/REFINEMENT_REQUIRED]
+    - **Evidence**: Pattern consistency analysis with architectural quality metrics
 
 ---
 
@@ -238,25 +232,21 @@ invisible_excellence_transparency:
 ### **MANDATORY Tool Selection Matrix**
 
 **Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    file_count: "≤3 files for direct analysis"
-    complexity: "<0.7000 (straightforward operations)"
-    scope: "Well-defined, single-purpose operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    file_count: "≥4 files or unknown scope"
-    complexity: "≥0.7000 (complex operations)"
-    scope: "Multi-step, exploratory, or research operations"
-    time_constraint: ">300 seconds or open-ended analysis"
-    
-  other_tools:
-    GREP: "Pattern search across multiple files"
-    GLOB: "File pattern matching and discovery"
-    BASH: "System operations and automation"
-```
+**Tool Selection Criteria**:
+  **Read Tool Usage**:
+    - **File Count**: ≤3 files for direct analysis
+    - **Complexity**: <0.7000 (straightforward operations)
+    - **Scope**: Well-defined, single-purpose operations
+    - **Time Constraint**: ≤300 seconds execution window
+  **Task Tool Usage**:
+    - **File Count**: ≥4 files or unknown scope
+    - **Complexity**: ≥0.7000 (complex operations)
+    - **Scope**: Multi-step, exploratory, or research operations
+    - **Time Constraint**: >300 seconds or open-ended analysis
+  **Other Tools**:
+    - **Grep**: Pattern search across multiple files
+    - **Glob**: File pattern matching and discovery
+    - **Bash**: System operations and automation
 
 ### **CRITICAL Tool Selection Logic**
 

@@ -119,56 +119,48 @@ git status --porcelain | wc -l | awk '{print "Changed files:", $1}'
 ## 🔄 Migration Templates by Script Type
 
 ### **Template A: Validation → Native Tools**
-```yaml
-migration_pattern_validation:
-  from: "./scripts/validation/[script-name].sh"
-  to: "Bash tool execution with native validation commands"
-  replacement_structure:
-    pre_execution: "Validation initialization using standard tools"
-    execution_protocol: "Execute validation using [git|find|grep|test] commands"
-    status_updates: "Progress monitoring via standard command output"
-    completion: "Validation results via tool output analysis"
-  p56_transparency: "Execute [validation-type] using standard system tools"
-```
+**Migration Pattern Validation**:
+  - **From**: ./scripts/validation/[script-name].sh
+  - **To**: Bash tool execution with native validation commands
+  **Replacement Structure**:
+    - **Pre Execution**: Validation initialization using standard tools
+    - **Execution Protocol**: Execute validation using [git|find|grep|test] commands
+    - **Status Updates**: Progress monitoring via standard command output
+    - **Completion**: Validation results via tool output analysis
+  - **P56 Transparency**: Execute [validation-type] using standard system tools
 
 ### **Template B: Mathematical → Calculation Tools**
-```yaml
-migration_pattern_mathematical:
-  from: "./scripts/formulas/[formula-script].sh"
-  to: "Bash tool execution with calculation utilities"
-  replacement_structure:
-    mathematical_foundation: "Load calculation environment using bc/awk"
-    formula_execution: "Execute calculations using standard math tools"
-    precision_validation: "Validate results using comparison operators"
-    convergence_verification: "Verify mathematical results via output analysis"
-  p56_transparency: "Calculate [formula-type] using standard mathematical utilities"
-```
+**Migration Pattern Mathematical**:
+  - **From**: ./scripts/formulas/[formula-script].sh
+  - **To**: Bash tool execution with calculation utilities
+  **Replacement Structure**:
+    - **Mathematical Foundation**: Load calculation environment using bc/awk
+    - **Formula Execution**: Execute calculations using standard math tools
+    - **Precision Validation**: Validate results using comparison operators
+    - **Convergence Verification**: Verify mathematical results via output analysis
+  - **P56 Transparency**: Calculate [formula-type] using standard mathematical utilities
 
 ### **Template C: Monitoring → Analysis Tools**
-```yaml
-migration_pattern_monitoring:
-  from: "./scripts/monitoring/[monitor-script].sh"
-  to: "Bash tool execution with system analysis commands"
-  replacement_structure:
-    data_collection: "Gather metrics using standard system commands"
-    pattern_analysis: "Analyze patterns using grep/awk/sort tools"
-    trend_calculation: "Calculate trends using standard text processing"
-    alert_generation: "Generate alerts via conditional output logic"
-  p56_transparency: "Monitor [system-aspect] using standard analysis tools"
-```
+**Migration Pattern Monitoring**:
+  - **From**: ./scripts/monitoring/[monitor-script].sh
+  - **To**: Bash tool execution with system analysis commands
+  **Replacement Structure**:
+    - **Data Collection**: Gather metrics using standard system commands
+    - **Pattern Analysis**: Analyze patterns using grep/awk/sort tools
+    - **Trend Calculation**: Calculate trends using standard text processing
+    - **Alert Generation**: Generate alerts via conditional output logic
+  - **P56 Transparency**: Monitor [system-aspect] using standard analysis tools
 
 ### **Template D: Compliance → Pattern Matching**
-```yaml
-migration_pattern_compliance:
-  from: "./scripts/compliance/[compliance-script].sh"
-  to: "Bash tool execution with pattern matching tools"
-  replacement_structure:
-    compliance_scanning: "Scan for compliance patterns using grep/find"
-    metric_calculation: "Calculate compliance metrics using standard tools"
-    threshold_validation: "Validate thresholds using comparison operations"
-    reporting: "Generate reports via formatted output"
-  p56_transparency: "Validate [compliance-type] using pattern matching and analysis tools"
-```
+**Migration Pattern Compliance**:
+  - **From**: ./scripts/compliance/[compliance-script].sh
+  - **To**: Bash tool execution with pattern matching tools
+  **Replacement Structure**:
+    - **Compliance Scanning**: Scan for compliance patterns using grep/find
+    - **Metric Calculation**: Calculate compliance metrics using standard tools
+    - **Threshold Validation**: Validate thresholds using comparison operations
+    - **Reporting**: Generate reports via formatted output
+  - **P56 Transparency**: Validate [compliance-type] using pattern matching and analysis tools
 
 ---
 

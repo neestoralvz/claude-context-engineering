@@ -176,18 +176,15 @@ Principal Agent → Deploy Task Agent → Status Updates → Progress Reports �
 ```
 
 ### **Progress Updates Display**
-```yaml
-📊 COMMAND PROGRESS: /sync-claude-md
-├─ ✅ Registry analysis (45% complete)
-├─ ✅ Pattern identification 
-├─ 🔄 Documentation generation (in progress...)
-├─ ⏳ Validation and final sync
-└─ ⏳ Completion handoff
-
-⚡ Active Tools: Read, Grep
-🎯 Current Action: Reading command registry files
-⏱️  Elapsed: 1m 30s | Estimated: 3-4m remaining
-```
+- **📊 Command Progress**: /sync-claude-md
+- ├─ ✅ Registry analysis (45% complete)
+- ├─ ✅ Pattern identification
+- ├─ 🔄 Documentation generation (in progress...)
+- ├─ ⏳ Validation and final sync
+- └─ ⏳ Completion handoff
+- **⚡ Active Tools**: Read, Grep
+- **🎯 Current Action**: Reading command registry files
+- **⏱️  Elapsed**: 1m 30s | Estimated: 3-4m remaining
 
 ### **Completion Display**
 ```text

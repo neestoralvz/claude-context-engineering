@@ -64,12 +64,10 @@
 ### **Standard Conversion Patterns**:
 
 #### YAML Configuration Block:
-```yaml
-system_config:
-  activation: "MANDATORY"
-  threshold: "≥0.7"
-  enforcement: "AUTOMATIC"
-```
+**System Config**:
+  - **Activation**: MANDATORY
+  - **Threshold**: ≥0.7
+  - **Enforcement**: AUTOMATIC
 
 #### Natural Language Equivalent:
 ```
@@ -80,12 +78,10 @@ system_config:
 ```
 
 #### YAML Process Flow:
-```yaml
-workflow:
-  step_1: "Analysis phase"
-  step_2: "Validation phase"
-  step_3: "Implementation phase"
-```
+**Workflow**:
+  - **Step 1**: Analysis phase
+  - **Step 2**: Validation phase
+  - **Step 3**: Implementation phase
 
 #### Natural Language Equivalent:
 ```

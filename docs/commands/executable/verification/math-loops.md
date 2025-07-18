@@ -80,98 +80,98 @@ IMPLEMENT **CRITICAL** specialized iterative mathematical operations with precis
 ```
 
 ### **Tool Selection Matrix for Mathematical Loops**
-```yaml
-mathematical_loops_tool_execution:
-  read_tool:
-    usage: "Load mathematical objectives, read convergence criteria, analyze iteration requirements"
-    announcement: "📖 Reading mathematical objectives and iteration parameters"
-    evidence: "Display loaded objectives, convergence criteria, iteration specifications"
-    
-  edit_tool:
-    usage: "Document iteration results, update convergence tracking, record mathematical progress"
-    announcement: "✏️ Documenting mathematical iterations and convergence analysis"
-    evidence: "Show iteration logs, convergence tracking, mathematical documentation"
-    
-  bash_tool:
-    usage: "Execute mathematical calculations, precision validation, convergence testing"
-    announcement: "⚡ Executing mathematical calculations and precision validation"
-    evidence: "Display calculation results, precision metrics, convergence data"
-    
-  task_tool:
-    usage: "Deploy mathematical computation agents, coordinate complex iterations"
-    announcement: "🤖 Deploying Task agents for mathematical computation coordination"
-    evidence: "Real-time mathematical agent progress and iteration results"
-```
+**Mathematical Loops Tool Execution**:
+  **Read Tool**:
+    - **Usage**: Load mathematical objectives, read convergence criteria, analyze iteration requirements
+    - **Announcement**: 📖 Reading mathematical objectives and iteration parameters
+    - **Evidence**: Display loaded objectives, convergence criteria, iteration specifications
+  **Edit Tool**:
+    - **Usage**: Document iteration results, update convergence tracking, record mathematical progress
+    - **Announcement**: ✏️ Documenting mathematical iterations and convergence analysis
+    - **Evidence**: Show iteration logs, convergence tracking, mathematical documentation
+  **Bash Tool**:
+    - **Usage**: Execute mathematical calculations, precision validation, convergence testing
+    - **Announcement**: ⚡ Executing mathematical calculations and precision validation
+    - **Evidence**: Display calculation results, precision metrics, convergence data
+  **Task Tool**:
+    - **Usage**: Deploy mathematical computation agents, coordinate complex iterations
+    - **Announcement**: 🤖 Deploying Task agents for mathematical computation coordination
+    - **Evidence**: Real-time mathematical agent progress and iteration results
 
 ### **Mathematical Loop Execution Protocol**
-```yaml
-mathematical_execution_flow:
-  phase_1_objective_analysis:
-    tool_calls: ["Read mathematical objectives", "Read convergence criteria", "Bash mathematical validation"]
-    announcement: "🎯 OBJECTIVE ANALYSIS: Loading mathematical objectives and validation criteria"
-    evidence: "Display mathematical objectives, convergence parameters, validation requirements"
-    
-  phase_2_iteration_initialization:
-    tool_calls: ["Edit iteration setup", "Bash precision configuration", "Mathematical parameter calculation"]
-    announcement: "⚙️ ITERATION INITIALIZATION: Setting up mathematical iteration parameters"
-    evidence: "Show iteration configuration, precision settings, mathematical parameters"
-    
-  phase_3_mathematical_execution:
-    tool_calls: ["Bash iterative calculations", "Edit progress tracking", "Mathematical convergence monitoring"]
-    announcement: "🔢 MATHEMATICAL EXECUTION: Executing iterative calculations with precision monitoring"
-    evidence: "Display real calculations, iteration progress, convergence measurements"
-    
-  phase_4_convergence_validation:
-    tool_calls: ["Bash convergence testing", "Edit validation documentation", "Mathematical precision verification"]
-    announcement: "✅ CONVERGENCE VALIDATION: Validating mathematical convergence and precision"
-    evidence: "Show convergence tests, validation results, precision verification"
-    
-  phase_5_result_synthesis:
-    tool_calls: ["Mathematical result compilation", "Edit final documentation", "Bash verification calculation"]
-    announcement: "📊 RESULT SYNTHESIS: Compiling mathematical results and final validation"
-    evidence: "Display final results, mathematical verification, iteration summary"
-```
+**Mathematical Execution Flow**:
+  **Phase 1 Objective Analysis**:
+    **Tool Calls**:
+    - Read mathematical objectives
+    - Read convergence criteria
+    - Bash mathematical validation
+    - **Announcement**: 🎯 OBJECTIVE ANALYSIS: Loading mathematical objectives and validation criteria
+    - **Evidence**: Display mathematical objectives, convergence parameters, validation requirements
+  **Phase 2 Iteration Initialization**:
+    **Tool Calls**:
+    - Edit iteration setup
+    - Bash precision configuration
+    - Mathematical parameter calculation
+    - **Announcement**: ⚙️ ITERATION INITIALIZATION: Setting up mathematical iteration parameters
+    - **Evidence**: Show iteration configuration, precision settings, mathematical parameters
+  **Phase 3 Mathematical Execution**:
+    **Tool Calls**:
+    - Bash iterative calculations
+    - Edit progress tracking
+    - Mathematical convergence monitoring
+    - **Announcement**: 🔢 MATHEMATICAL EXECUTION: Executing iterative calculations with precision monitoring
+    - **Evidence**: Display real calculations, iteration progress, convergence measurements
+  **Phase 4 Convergence Validation**:
+    **Tool Calls**:
+    - Bash convergence testing
+    - Edit validation documentation
+    - Mathematical precision verification
+    - **Announcement**: ✅ CONVERGENCE VALIDATION: Validating mathematical convergence and precision
+    - **Evidence**: Show convergence tests, validation results, precision verification
+  **Phase 5 Result Synthesis**:
+    **Tool Calls**:
+    - Mathematical result compilation
+    - Edit final documentation
+    - Bash verification calculation
+    - **Announcement**: 📊 RESULT SYNTHESIS: Compiling mathematical results and final validation
+    - **Evidence**: Display final results, mathematical verification, iteration summary
 
 ### **Mathematical Task Agent Communication Bridge**
-```yaml
-mathematical_task_agent_protocol:
-  deployment_conditions:
-    - complex_mathematical_computations: "Multi-dimensional mathematical problems requiring specialized agents"
-    - parallel_iterations: "Mathematical loops that REQUIRE parallel computation"
-    - precision_intensive_calculations: "High-precision mathematical operations requiring dedicated agents"
-    
-  communication_flow:
-    initialization:
-      message: "INITIALIZATION: Mathematical computation coordination for [objective]"
-      context: "Objective: [mathematical_goal], Precision: [precision_level], Iterations: [max_count]"
-      tools: ["Read", "Edit", "Bash", "Mathematical computation tools"]
-      
-    iteration_updates:
-      calculation_progress: "ITERATION [X]: Calculated value [Y] with precision [Z], convergence: [status]"
-      convergence_monitoring: "CONVERGENCE: Iteration [X], Error: [value], Precision: [current], Status: [approaching/achieved]"
-      precision_tracking: "PRECISION: Current: [value], Target: [threshold], Stability: [assessment]"
-      
-    completion_handoff:
-      message: "COMPLETION: Mathematical loop computation successful"
-      results: "Iterations: [count], Final value: [result], Precision: [achieved], Convergence: [status]"
-      evidence: "Calculation logs, convergence data, precision verification"
-```
+**Mathematical Task Agent Protocol**:
+  **Deployment Conditions**:
+  - {'complex_mathematical_computations': 'Multi-dimensional mathematical problems requiring specialized agents'}
+  - {'parallel_iterations': 'Mathematical loops that REQUIRE parallel computation'}
+  - {'precision_intensive_calculations': 'High-precision mathematical operations requiring dedicated agents'}
+  **Communication Flow**:
+    **Initialization**:
+      - **Message**: INITIALIZATION: Mathematical computation coordination for [objective]
+      - **Context**: Objective: [mathematical_goal], Precision: [precision_level], Iterations: [max_count]
+      **Tools**:
+      - Read
+      - Edit
+      - Bash
+      - Mathematical computation tools
+    **Iteration Updates**:
+      - **Calculation Progress**: ITERATION [X]: Calculated value [Y] with precision [Z], convergence: [status]
+      - **Convergence Monitoring**: CONVERGENCE: Iteration [X], Error: [value], Precision: [current], Status: [approaching/achieved]
+      - **Precision Tracking**: PRECISION: Current: [value], Target: [threshold], Stability: [assessment]
+    **Completion Handoff**:
+      - **Message**: COMPLETION: Mathematical loop computation successful
+      - **Results**: Iterations: [count], Final value: [result], Precision: [achieved], Convergence: [status]
+      - **Evidence**: Calculation logs, convergence data, precision verification
 
 ### **Mathematical Evidence and Transparency Requirements**
-```yaml
-p55_mathematical_evidence:
-  real_calculation_only: "NO SIMULATION - All mathematical operations must be actually computed"
-  complete_visibility: "Users see all calculations, iterations, convergence measurements"
-  mathematical_precision: "All calculations maintained with specified precision levels"
-  iterative_transparency: "Real-time visibility into mathematical iteration progress"
-  
-p56_mathematical_transparency:
-  pre_execution_announcements: "Enhanced visual announcements before mathematical computation phases"
-  iteration_progress: "Real-time updates on mathematical iterations and convergence"
-  calculation_transparency: "Complete visibility into mathematical calculations and precision"
-  completion_confirmation: "Detailed completion status with mathematical evidence and results"
-  error_transparency: "Immediate mathematical error visibility with precision recovery actions"
-```
+**P55 Mathematical Evidence**:
+  - **Real Calculation Only**: NO SIMULATION - All mathematical operations must be actually computed
+  - **Complete Visibility**: Users see all calculations, iterations, convergence measurements
+  - **Mathematical Precision**: All calculations maintained with specified precision levels
+  - **Iterative Transparency**: Real-time visibility into mathematical iteration progress
+**P56 Mathematical Transparency**:
+  - **Pre Execution Announcements**: Enhanced visual announcements before mathematical computation phases
+  - **Iteration Progress**: Real-time updates on mathematical iterations and convergence
+  - **Calculation Transparency**: Complete visibility into mathematical calculations and precision
+  - **Completion Confirmation**: Detailed completion status with mathematical evidence and results
+  - **Error Transparency**: Immediate mathematical error visibility with precision recovery actions
 
 ---
 

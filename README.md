@@ -438,7 +438,7 @@ Formulas are documented with:
 
 ```bash
 # Universal entry points
-/ce              # Activates all 152 commands + 107 principles
+/ce              # Activates all 152 commands + 109 principles
 /decision        # Intelligent routing with auto-triggers
 /thinking        # Deep strategic analysis + breakthrough insights
 
@@ -522,7 +522,7 @@ npm run clean && npm run build
 ### Documentation Structure
 ```
 docs/
-├── principles/          # 107 principles across 11 categories
+├── principles/          # 109 principles across 11 categories
 ├── automation/         # LLM automation patterns
 ├── technical/          # Implementation details
 ├── patterns/           # Design patterns and best practices

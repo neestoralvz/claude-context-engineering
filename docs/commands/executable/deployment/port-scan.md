@@ -107,16 +107,13 @@ docker network ls → Network configuration review
 
 ### **Automatic Configuration Updates**
 **DOCKER COMPOSE MODIFICATION**:
-```yaml
-# Automatic port configuration:
-services:
-  app:
-    ports:
-      - "${DETECTED_PORT}:3000"  # External:Internal mapping
-    environment:
-      - PORT=${DETECTED_PORT}
-      - PUBLIC_URL=http://localhost:${DETECTED_PORT}
-```
+**Services**:
+  **App**:
+    **Ports**:
+    - ${DETECTED_PORT}:3000
+    **Environment**:
+    - PORT=${DETECTED_PORT}
+    - PUBLIC_URL=http://localhost:${DETECTED_PORT}
 
 ### **Environment Variable Management**
 **CONFIGURATION INJECTION**:
@@ -130,14 +127,15 @@ HEALTH_URL=http://localhost:${DETECTED_PORT}/api/health
 
 ### **Health Check Reconfiguration**
 **ENDPOINT ADAPTATION**:
-```yaml
-# Health check port adaptation:
-healthcheck:
-  test: ["CMD", "curl", "-f", "http://localhost:${DETECTED_PORT}/api/health"]
-  interval: 30s
-  timeout: 10s
-  retries: 3
-```
+**Healthcheck**:
+  **Test**:
+  - CMD
+  - curl
+  - -f
+  - http://localhost:${DETECTED_PORT}/api/health
+  - **Interval**: 30s
+  - **Timeout**: 10s
+  - **Retries**: 3
 
 ## 🚨 macOS-Specific Solutions
 

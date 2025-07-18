@@ -14,25 +14,21 @@
 
 ### **MANDATORY Integration Requirements**
 
-```yaml
-principle_command_integration:
-  explicit_references:
-    format: "[Principle #X: Name](../principles/category.md#x-name)"
-    placement: "Early in command documentation with clear context"
-    bidirectional: "REQUIRED: Principle documents must reference implementing commands"
-    
-  connection_types:
-    foundational: "Principles that provide conceptual foundation for command"
-    implementation: "Principles that command directly implements"
-    validation: "Principles that command helps validate or enforce"
-    complementary: "Principles that work synergistically with command"
-    
-  integration_standards:
-    minimum_references: "≥3 principle references per command"
-    maximum_references: "≤8 principle references per command"
-    relevance_threshold: "≥90% functional alignment required"
-    cross_linking_completeness: "100% bidirectional linking required"
-```
+**Principle Command Integration**:
+  **Explicit References**:
+    - **Format**: [Principle #X: Name](../principles/category.md#x-name)
+    - **Placement**: Early in command documentation with clear context
+    - **Bidirectional**: REQUIRED: Principle documents must reference implementing commands
+  **Connection Types**:
+    - **Foundational**: Principles that provide conceptual foundation for command
+    - **Implementation**: Principles that command directly implements
+    - **Validation**: Principles that command helps validate or enforce
+    - **Complementary**: Principles that work synergistically with command
+  **Integration Standards**:
+    - **Minimum References**: ≥3 principle references per command
+    - **Maximum References**: ≤8 principle references per command
+    - **Relevance Threshold**: ≥90% functional alignment required
+    - **Cross Linking Completeness**: 100% bidirectional linking required
 
 ### **Command-Principle Alignment Matrix**
 

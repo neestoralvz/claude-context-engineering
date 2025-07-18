@@ -164,28 +164,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-modular_composition_transparency:
-  composition_analysis:
-    announcement: "🔍 TRANSPARENCY: Composition analysis - [SYSTEM/COMPONENT] scope, [X] components analyzed"
-    evidence: "Complete composition analysis with dependency mapping"
-    
-  violation_detection:
-    announcement: "🚨 TRANSPARENCY: Violations detected - [BOUNDARY/DUPLICATION/CAPABILITY] type, [X] count"
-    evidence: "Detailed violation analysis with severity and impact assessment"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [composition_operation]"
-    evidence: "Tool selection matrix with composition-specific reasoning"
-    
-  refactoring_strategy:
-    announcement: "🔄 TRANSPARENCY: Refactoring strategy - [EXTRACTION/SPLIT/CONSOLIDATION] approach"
-    evidence: "Complete refactoring plan with implementation steps"
-    
-  composition_quality:
-    announcement: "📊 TRANSPARENCY: Composition quality [X]/10 - [COMPLIANT/IMPROVEMENT_REQUIRED]"
-    evidence: "Mathematical composition score with quality metrics"
-```
+**Modular Composition Transparency**:
+  **Composition Analysis**:
+    - **Announcement**: 🔍 TRANSPARENCY: Composition analysis - [SYSTEM/COMPONENT] scope, [X] components analyzed
+    - **Evidence**: Complete composition analysis with dependency mapping
+  **Violation Detection**:
+    - **Announcement**: 🚨 TRANSPARENCY: Violations detected - [BOUNDARY/DUPLICATION/CAPABILITY] type, [X] count
+    - **Evidence**: Detailed violation analysis with severity and impact assessment
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [composition_operation]
+    - **Evidence**: Tool selection matrix with composition-specific reasoning
+  **Refactoring Strategy**:
+    - **Announcement**: 🔄 TRANSPARENCY: Refactoring strategy - [EXTRACTION/SPLIT/CONSOLIDATION] approach
+    - **Evidence**: Complete refactoring plan with implementation steps
+  **Composition Quality**:
+    - **Announcement**: 📊 TRANSPARENCY: Composition quality [X]/10 - [COMPLIANT/IMPROVEMENT_REQUIRED]
+    - **Evidence**: Mathematical composition score with quality metrics
 
 ---
 

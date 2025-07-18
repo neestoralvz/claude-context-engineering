@@ -1,0 +1,105 @@
+{
+  "timestamp": "2025-07-18T13:34:30.445108",
+  "system_health": {},
+  "performance_metrics": {
+    "p55_p56_compliance": {
+      "value": 0.88,
+      "unit": "ratio",
+      "target": 1.0,
+      "status": "critical",
+      "trend": "stable"
+    },
+    "threshold_coverage": {
+      "value": 1.0,
+      "unit": "ratio",
+      "target": 1.0,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "governance_rule_compliance": {
+      "value": 0.99,
+      "unit": "ratio",
+      "target": 1.0,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "cognitive_steps": {
+      "value": 2.3,
+      "unit": "steps",
+      "target": 2.5,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "navigation_efficiency": {
+      "value": 0.92,
+      "unit": "ratio",
+      "target": 0.9,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "file_size_compliance": {
+      "value": 0.95,
+      "unit": "ratio",
+      "target": 1.0,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "duplication_level": {
+      "value": 0.15,
+      "unit": "ratio",
+      "target": 0.2,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "technical_debt_level": {
+      "value": 12.0,
+      "unit": "count",
+      "target": 19.0,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "governance_effectiveness": {
+      "value": 0.85,
+      "unit": "ratio",
+      "target": 0.95,
+      "status": "warning",
+      "trend": "stable"
+    },
+    "prevention_success_rate": {
+      "value": 0.95,
+      "unit": "ratio",
+      "target": 0.95,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "detection_accuracy": {
+      "value": 0.92,
+      "unit": "ratio",
+      "target": 0.9,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "average_response_time": {
+      "value": 120.0,
+      "unit": "seconds",
+      "target": 300.0,
+      "status": "normal",
+      "trend": "stable"
+    },
+    "system_reliability": {
+      "value": 0.998,
+      "unit": "ratio",
+      "target": 0.995,
+      "status": "normal",
+      "trend": "stable"
+    }
+  },
+  "sla_status": {},
+  "trends": {},
+  "governance_status": {
+    "status": "active",
+    "uptime": "99.8%",
+    "version": "1.0.0",
+    "last_check": "2025-07-18T13:34:30.458962"
+  }
+}

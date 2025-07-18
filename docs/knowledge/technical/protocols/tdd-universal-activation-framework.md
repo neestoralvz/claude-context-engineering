@@ -12,13 +12,11 @@
 
 ### **TDD Universal Activation Phases**
 
-```yaml
-Phase 1: Test Definition     → Define verification criteria for each activation phase
-Phase 2: Test Creation       → Build automated tests for universal activation components  
-Phase 3: Minimal Implementation → Implement minimal universal activation that passes tests
-Phase 4: Verification Loops  → Continuous validation against defined criteria
-Phase 5: Quality Gates       → Automated quality enforcement and progression gates
-```
+- **Phase 1**: Test Definition     → Define verification criteria for each activation phase
+- **Phase 2**: Test Creation       → Build automated tests for universal activation components
+- **Phase 3**: Minimal Implementation → Implement minimal universal activation that passes tests
+- **Phase 4**: Verification Loops  → Continuous validation against defined criteria
+- **Phase 5**: Quality Gates       → Automated quality enforcement and progression gates
 
 ---
 
@@ -422,37 +420,29 @@ quality_gate_remediation() {
 ### **6.1 CI/CD Integration Framework**
 
 ****Continuous Testing Pipeline****
-```yaml
-# TDD Universal Activation Pipeline
-universal_activation_testing_pipeline:
-  stages:
-    - test_definition_validation
-    - unit_test_execution
-    - integration_test_validation
-    - performance_test_verification
-    - quality_gate_enforcement
-    - deployment_readiness_check
-  
-  test_definition_validation:
-    script: ./scripts/tdd/validate-test-definitions.sh
-    threshold: 100%
-    
-  unit_test_execution:
-    script: ./scripts/tdd/run-unit-tests.sh
-    threshold: 95%
-    
-  integration_test_validation:
-    script: ./scripts/tdd/run-integration-tests.sh  
-    threshold: 90%
-    
-  performance_test_verification:
-    script: ./scripts/tdd/run-performance-tests.sh
-    threshold: 85%
-    
-  quality_gate_enforcement:
-    script: ./scripts/tdd/enforce-quality-gates.sh
-    threshold: 98%
-```
+**Universal Activation Testing Pipeline**:
+  **Stages**:
+  - test_definition_validation
+  - unit_test_execution
+  - integration_test_validation
+  - performance_test_verification
+  - quality_gate_enforcement
+  - deployment_readiness_check
+  **Test Definition Validation**:
+    - **Script**: ./scripts/tdd/validate-test-definitions.sh
+    - **Threshold**: 100%
+  **Unit Test Execution**:
+    - **Script**: ./scripts/tdd/run-unit-tests.sh
+    - **Threshold**: 95%
+  **Integration Test Validation**:
+    - **Script**: ./scripts/tdd/run-integration-tests.sh
+    - **Threshold**: 90%
+  **Performance Test Verification**:
+    - **Script**: ./scripts/tdd/run-performance-tests.sh
+    - **Threshold**: 85%
+  **Quality Gate Enforcement**:
+    - **Script**: ./scripts/tdd/enforce-quality-gates.sh
+    - **Threshold**: 98%
 
 ### **6.2 Real-Time Monitoring Integration**
 
@@ -538,32 +528,11 @@ REAL_TIME_MONITORING_ACCURACY_TARGET: ≥ 90%
 ## 🎯 Implementation Roadmap
 
 ### **Phase Implementation Timeline**
-```yaml
-Week 1: Phase 1-2 (Test Definition & Creation)
-  - Define comprehensive test criteria for all universal activation phases
-  - Create automated test suite extensions
-  - Integrate with existing 22 mathematical trigger tests
-  
-Week 2: Phase 3 (Minimal Implementation)
-  - Implement minimal universal activation components
-  - Follow red-green-refactor TDD cycles
-  - Ensure all tests pass with minimal code
-  
-Week 3: Phase 4 (Verification Loops)
-  - Implement continuous verification protocols
-  - Establish 30-second progress reporting
-  - Integrate adaptive verification thresholds
-  
-Week 4: Phase 5 (Quality Gates)
-  - Deploy automated quality gate system
-  - Implement remediation protocols
-  - Establish escalation procedures
-  
-Week 5: Integration & Optimization
-  - Full CI/CD pipeline integration
-  - Real-time monitoring dashboard deployment
-  - Performance optimization and final validation
-```
+- **Week 1**: Phase 1-2 (Test Definition & Creation) - Define comprehensive test criteria for all universal activation phases - Create automated test suite extensions - Integrate with existing 22 mathematical trigger tests
+- **Week 2**: Phase 3 (Minimal Implementation) - Implement minimal universal activation components - Follow red-green-refactor TDD cycles - Ensure all tests pass with minimal code
+- **Week 3**: Phase 4 (Verification Loops) - Implement continuous verification protocols - Establish 30-second progress reporting - Integrate adaptive verification thresholds
+- **Week 4**: Phase 5 (Quality Gates) - Deploy automated quality gate system - Implement remediation protocols - Establish escalation procedures
+- **Week 5**: Integration & Optimization - Full CI/CD pipeline integration - Real-time monitoring dashboard deployment - Performance optimization and final validation
 
 ---
 

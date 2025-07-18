@@ -1,0 +1,7 @@
+2025-07-18 13:48:55,613 - predictive_analytics - INFO - 🔮 Starting Predictive Analytics Framework
+2025-07-18 13:48:55,614 - predictive_analytics - INFO - 🧠 Training predictive models
+2025-07-18 13:48:55,614 - predictive_analytics - ERROR - Error getting training data: no such column: metric_name
+2025-07-18 13:48:55,614 - predictive_analytics - INFO - 🔮 Generating predictions
+2025-07-18 13:48:55,614 - predictive_analytics - INFO - 📈 Generating trend forecasts
+2025-07-18 13:48:55,615 - predictive_analytics - INFO - ⚠️ Checking for early warning conditions
+2025-07-18 13:48:55,615 - predictive_analytics - INFO - ✅ Validating prediction accuracy

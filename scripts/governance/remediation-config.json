@@ -1,0 +1,29 @@
+{
+  "thresholds": {
+    "file_size_max_lines": 1500,
+    "duplication_threshold": 0.2,
+    "technical_debt_max": 19,
+    "cognitive_steps_max": 2.5,
+    "yaml_compliance_min": 0.95,
+    "confidence_threshold": 0.8,
+    "backup_retention_days": 30
+  },
+  "strategies": {
+    "file_size": "modularization",
+    "duplication": "consolidation",
+    "technical_debt": "automated_resolution",
+    "performance": "structure_optimization",
+    "compliance": "format_conversion"
+  },
+  "safety": {
+    "backup_before_action": true,
+    "confidence_threshold": 0.8,
+    "rollback_on_failure": true,
+    "test_after_remediation": true
+  },
+  "settings": {
+    "max_concurrent_actions": 3,
+    "timeout_per_action": 300,
+    "backup_retention_days": 30
+  }
+}

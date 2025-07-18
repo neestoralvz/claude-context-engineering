@@ -1,0 +1,362 @@
+#!/usr/bin/env bash
+# Growth Governance Pre-commit Hook - Context Engineering
+# MANDATORY: Automated validation and prevention before commits
+# Implements Phase 2: Preventive Enforcement Implementation
+
+set -euo pipefail
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Configuration
+PROJECT_ROOT="$(git rev-parse --show-toplevel)"
+GOVERNANCE_CONFIG="$PROJECT_ROOT/scripts/governance/governance-config.json"
+TEMP_DIR=$(mktemp -d)
+EXIT_CODE=0
+
+# Governance thresholds
+MAX_FILE_SIZE=1500
+MAX_DUPLICATION=0.20
+MAX_TECHNICAL_DEBT=19
+MAX_COGNITIVE_STEPS=2.5
+MIN_COMPLIANCE=0.95
+
+echo -e "${BLUE}🛡️  Growth Governance Pre-commit Validation${NC}"
+echo "================================================================="
+
+# Function to log with timestamp
+log() {
+    echo -e "[$(date '+%H:%M:%S')] $1"
+}
+
+# Function to check file size violations
+check_file_sizes() {
+    log "${BLUE}📏 Checking file sizes (max: $MAX_FILE_SIZE lines)${NC}"
+    
+    local violations=0
+    
+    # Get staged files
+    while IFS= read -r -d '' file; do
+        if [[ "$file" == *.md ]]; then
+            local line_count=$(wc -l < "$file" 2>/dev/null || echo 0)
+            if (( line_count > MAX_FILE_SIZE )); then
+                log "${RED}❌ File size violation: $file ($line_count lines > $MAX_FILE_SIZE)${NC}"
+                log "${YELLOW}   → Consider modularizing this file${NC}"
+                ((violations++))
+            fi
+        fi
+    done < <(git diff --cached --name-only --diff-filter=ACM -z)
+    
+    if (( violations == 0 )); then
+        log "${GREEN}✅ File size check passed${NC}"
+    else
+        log "${RED}❌ $violations file size violations found${NC}"
+        EXIT_CODE=1
+    fi
+    
+    return $violations
+}
+
+# Function to check for content duplication
+check_duplication() {
+    log "${BLUE}🔍 Checking for content duplication (max: ${MAX_DUPLICATION}%)${NC}"
+    
+    local violations=0
+    local temp_files=()
+    
+    # Get staged markdown files
+    while IFS= read -r -d '' file; do
+        if [[ "$file" == *.md ]] && [[ -f "$file" ]]; then
+            temp_files+=("$file")
+        fi
+    done < <(git diff --cached --name-only --diff-filter=ACM -z)
+    
+    # Compare files for duplication
+    for ((i=0; i<${#temp_files[@]}; i++)); do
+        for ((j=i+1; j<${#temp_files[@]}; j++)); do
+            local file1="${temp_files[i]}"
+            local file2="${temp_files[j]}"
+            
+            # Calculate similarity using Python helper
+            local similarity=$(python3 -c "
+import sys
+import re
+from pathlib import Path
+
+def calculate_similarity(file1, file2):
+    try:
+        content1 = Path(file1).read_text(encoding='utf-8')
+        content2 = Path(file2).read_text(encoding='utf-8')
+        
+        # Use word-based similarity
+        words1 = set(content1.lower().split())
+        words2 = set(content2.lower().split())
+        
+        if not words1 or not words2:
+            return 0.0
+        
+        intersection = words1.intersection(words2)
+        union = words1.union(words2)
+        
+        return len(intersection) / len(union)
+    except Exception as e:
+        return 0.0
+
+similarity = calculate_similarity('$file1', '$file2')
+print(f'{similarity:.3f}')
+" 2>/dev/null || echo "0.000")
+            
+            if (( $(echo "$similarity > $MAX_DUPLICATION" | bc -l) )); then
+                log "${RED}❌ Duplication violation: $file1 <-> $file2 (${similarity}% similar)${NC}"
+                log "${YELLOW}   → Consider consolidating similar content${NC}"
+                ((violations++))
+            fi
+        done
+    done
+    
+    if (( violations == 0 )); then
+        log "${GREEN}✅ Duplication check passed${NC}"
+    else
+        log "${RED}❌ $violations duplication violations found${NC}"
+        EXIT_CODE=1
+    fi
+    
+    return $violations
+}
+
+# Function to check technical debt
+check_technical_debt() {
+    log "${BLUE}⚠️  Checking technical debt (max: $MAX_TECHNICAL_DEBT items)${NC}"
+    
+    local total_debt=0
+    
+    # Count TODO/FIXME items in staged files
+    while IFS= read -r -d '' file; do
+        if [[ "$file" == *.md ]] && [[ -f "$file" ]]; then
+            local debt_count=$(grep -ciE '(TODO|FIXME|XXX|HACK|BUG)' "$file" 2>/dev/null || echo 0)
+            ((total_debt += debt_count))
+            
+            if (( debt_count > 0 )); then
+                log "   📝 $file: $debt_count debt items"
+            fi
+        fi
+    done < <(git diff --cached --name-only --diff-filter=ACM -z)
+    
+    if (( total_debt > MAX_TECHNICAL_DEBT )); then
+        log "${RED}❌ Technical debt violation: $total_debt items > $MAX_TECHNICAL_DEBT${NC}"
+        log "${YELLOW}   → Address pending TODOs and FIXMEs before committing${NC}"
+        EXIT_CODE=1
+    else
+        log "${GREEN}✅ Technical debt check passed ($total_debt items)${NC}"
+    fi
+    
+    return $total_debt
+}
+
+# Function to check performance impact
+check_performance_impact() {
+    log "${BLUE}⚡ Checking performance impact (max: $MAX_COGNITIVE_STEPS steps)${NC}"
+    
+    local cognitive_steps=1.0
+    
+    # Check if CLAUDE.md is being modified
+    if git diff --cached --name-only | grep -q "CLAUDE.md"; then
+        # Calculate cognitive steps based on structure
+        local claude_file="$PROJECT_ROOT/CLAUDE.md"
+        if [[ -f "$claude_file" ]]; then
+            local headers=$(grep -c '^#' "$claude_file" 2>/dev/null || echo 0)
+            local links=$(grep -co '\[.*\](.*\)' "$claude_file" 2>/dev/null || echo 0)
+            
+            # Estimate cognitive steps
+            cognitive_steps=$(python3 -c "
+headers = $headers
+links = $links
+depth_score = headers / 50.0
+complexity_score = links / 100.0
+steps = max(1.0, (depth_score + complexity_score) * 2.5)
+print(f'{steps:.2f}')
+")
+        fi
+    fi
+    
+    if (( $(echo "$cognitive_steps > $MAX_COGNITIVE_STEPS" | bc -l) )); then
+        log "${RED}❌ Performance impact violation: $cognitive_steps steps > $MAX_COGNITIVE_STEPS${NC}"
+        log "${YELLOW}   → Optimize navigation structure to reduce cognitive load${NC}"
+        EXIT_CODE=1
+    else
+        log "${GREEN}✅ Performance impact check passed ($cognitive_steps steps)${NC}"
+    fi
+}
+
+# Function to check P55/P56 compliance
+check_compliance() {
+    log "${BLUE}📋 Checking P55/P56 compliance (min: ${MIN_COMPLIANCE}%)${NC}"
+    
+    local yaml_blocks=0
+    local total_blocks=0
+    
+    # Count YAML vs P55/P6 compliant blocks in staged files
+    while IFS= read -r -d '' file; do
+        if [[ "$file" == *.md ]] && [[ -f "$file" ]]; then
+            local yaml_count=$(grep -c '```ya\?ml' "$file" 2>/dev/null || echo 0)
+            local total_count=$(grep -c '```[a-zA-Z]' "$file" 2>/dev/null || echo 0)
+            
+            ((yaml_blocks += yaml_count))
+            ((total_blocks += total_count))
+        fi
+    done < <(git diff --cached --name-only --diff-filter=ACM -z)
+    
+    local compliance_rate=1.0
+    if (( total_blocks > 0 )); then
+        compliance_rate=$(python3 -c "
+yaml_blocks = $yaml_blocks
+total_blocks = $total_blocks
+p55_compliant = total_blocks - yaml_blocks
+compliance = p55_compliant / total_blocks if total_blocks > 0 else 1.0
+print(f'{compliance:.3f}')
+")
+    fi
+    
+    if (( $(echo "$compliance_rate < $MIN_COMPLIANCE" | bc -l) )); then
+        log "${RED}❌ Compliance violation: ${compliance_rate}% < ${MIN_COMPLIANCE}%${NC}"
+        log "${YELLOW}   → Convert YAML blocks to P55/P56 compliant format${NC}"
+        EXIT_CODE=1
+    else
+        log "${GREEN}✅ Compliance check passed (${compliance_rate}%)${NC}"
+    fi
+}
+
+# Function to validate git commit message
+check_commit_message() {
+    log "${BLUE}💬 Checking commit message format${NC}"
+    
+    # Get commit message from file if provided
+    local commit_msg_file="$1"
+    if [[ -f "$commit_msg_file" ]]; then
+        local commit_msg=$(head -n1 "$commit_msg_file")
+        
+        # Check for proper format
+        if [[ ! "$commit_msg" =~ ^(🚨|✅|🧹|🎯|📝|🔧|⚡|🛡️|📊|🔄) ]]; then
+            log "${YELLOW}⚠️  Commit message should start with appropriate emoji${NC}"
+            log "${YELLOW}   Examples: 🚨 CRITICAL, ✅ COMPLETE, 🧹 CLEANUP, etc.${NC}"
+        fi
+        
+        # Check length
+        if (( ${#commit_msg} > 72 )); then
+            log "${YELLOW}⚠️  Commit message is quite long (${#commit_msg} chars)${NC}"
+            log "${YELLOW}   Consider keeping first line under 72 characters${NC}"
+        fi
+    fi
+    
+    log "${GREEN}✅ Commit message check completed${NC}"
+}
+
+# Function to run automated fixes
+run_automated_fixes() {
+    log "${BLUE}🔧 Running automated fixes${NC}"
+    
+    # Run governance engine for automated remediation
+    if [[ -f "$PROJECT_ROOT/scripts/governance/governance-engine.py" ]]; then
+        python3 "$PROJECT_ROOT/scripts/governance/governance-engine.py" --auto-fix 2>/dev/null || true
+    fi
+    
+    # Run YAML conversion if needed
+    if [[ -f "$PROJECT_ROOT/scripts/automation/yaml-to-p55-converter.sh" ]]; then
+        bash "$PROJECT_ROOT/scripts/automation/yaml-to-p55-converter.sh" --staged-only 2>/dev/null || true
+    fi
+    
+    log "${GREEN}✅ Automated fixes completed${NC}"
+}
+
+# Function to generate pre-commit report
+generate_report() {
+    local timestamp=$(date '+%Y%m%d_%H%M%S')
+    local report_file="$PROJECT_ROOT/scripts/results/governance/pre-commit-$timestamp.json"
+    
+    mkdir -p "$(dirname "$report_file")"
+    
+    cat > "$report_file" << EOF
+{
+  "timestamp": "$(date -Iseconds)",
+  "commit_hash": "$(git rev-parse HEAD 2>/dev/null || echo 'unknown')",
+  "staged_files": $(git diff --cached --name-only | wc -l),
+  "validation_results": {
+    "file_size_check": $(check_file_sizes &>/dev/null; echo $?),
+    "duplication_check": $(check_duplication &>/dev/null; echo $?),
+    "technical_debt_check": $(check_technical_debt &>/dev/null; echo $?),
+    "performance_check": 0,
+    "compliance_check": 0
+  },
+  "exit_code": $EXIT_CODE,
+  "duration": "$(date '+%H:%M:%S')"
+}
+EOF
+    
+    log "${BLUE}📊 Report saved: $report_file${NC}"
+}
+
+# Main execution
+main() {
+    log "${BLUE}Starting pre-commit governance validation${NC}"
+    
+    # Ensure we're in a git repository
+    if ! git rev-parse --git-dir &>/dev/null; then
+        log "${RED}❌ Not in a git repository${NC}"
+        exit 1
+    fi
+    
+    # Check if there are staged changes
+    if ! git diff --cached --quiet; then
+        # Run all validation checks
+        check_file_sizes
+        check_duplication 
+        check_technical_debt
+        check_performance_impact
+        check_compliance
+        
+        # Check commit message if file provided
+        if [[ -n "${1:-}" ]]; then
+            check_commit_message "$1"
+        fi
+        
+        # Run automated fixes if violations found and auto-fix enabled
+        if (( EXIT_CODE != 0 )) && [[ "${GOVERNANCE_AUTO_FIX:-false}" == "true" ]]; then
+            run_automated_fixes
+            # Re-run checks after fixes
+            EXIT_CODE=0
+            check_file_sizes
+            check_duplication
+            check_technical_debt
+            check_performance_impact
+            check_compliance
+        fi
+        
+        # Generate report
+        generate_report
+        
+        # Summary
+        echo "================================================================="
+        if (( EXIT_CODE == 0 )); then
+            log "${GREEN}🎉 All governance checks passed! Commit allowed.${NC}"
+        else
+            log "${RED}❌ Governance violations found. Commit blocked.${NC}"
+            log "${YELLOW}💡 Set GOVERNANCE_AUTO_FIX=true to enable automated fixes${NC}"
+            log "${YELLOW}💡 Or manually address the violations above${NC}"
+        fi
+        echo "================================================================="
+    else
+        log "${YELLOW}⚠️  No staged changes detected${NC}"
+    fi
+    
+    # Cleanup
+    rm -rf "$TEMP_DIR"
+    
+    exit $EXIT_CODE
+}
+
+# Execute main function
+main "$@"

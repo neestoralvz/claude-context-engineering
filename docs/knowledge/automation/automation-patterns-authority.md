@@ -26,23 +26,19 @@
 
 **Implementation**: Specific mathematical thresholds with automatic command activation
 
-```yaml
-mathematical_trigger_system:
-  confidence_trigger:
-    condition: "confidence_score < 0.7"
-    action: "auto_activate_exploration_first"
-    validation: "Mathematical formula verification"
-    
-  complexity_trigger:
-    condition: "complexity >= 1.0" 
-    action: "auto_activate_decision_engine_orchestration"
-    validation: "Objective complexity measurement"
-    
-  parallel_benefit_trigger:
-    condition: "parallel_benefit >= 0.3"
-    action: "auto_activate_multi_agent_orchestration"
-    validation: "Quantified parallelization benefit"
-```
+**Mathematical Trigger System**:
+  **Confidence Trigger**:
+    - **Condition**: confidence_score < 0.7
+    - **Action**: auto_activate_exploration_first
+    - **Validation**: Mathematical formula verification
+  **Complexity Trigger**:
+    - **Condition**: complexity >= 1.0
+    - **Action**: auto_activate_decision_engine_orchestration
+    - **Validation**: Objective complexity measurement
+  **Parallel Benefit Trigger**:
+    - **Condition**: parallel_benefit >= 0.3
+    - **Action**: auto_activate_multi_agent_orchestration
+    - **Validation**: Quantified parallelization benefit
 
 **MANDATORY BEHAVIOR**: LLM MUST automatically evaluate all triggers and execute corresponding actions with mathematical precision validation.
 
@@ -50,27 +46,22 @@ mathematical_trigger_system:
 
 **Implementation**: Mandatory sequential command execution with validation checkpoints
 
-```yaml
-pipeline_automation_protocol:
-  sequence: "decision-engine → confidence-scoring → trigger-monitor"
-  enforcement: "MANDATORY - blocking execution without validation"
-  validation: "Each phase validates the previous phase output"
-  
-  phase_requirements:
-    decision_engine:
-      output: "routing_decision with confidence metrics"
-      validation: "routing_accuracy >= 0.85"
-      
-    confidence_scoring:
-      input: "validated routing_decision"
-      output: "confidence_validation with threshold verification"
-      validation: "confidence_improvement >= 0.1"
-      
-    trigger_monitor:
-      input: "validated confidence metrics"
-      output: "continuous_monitoring with dashboard"
-      validation: "monitoring_active = true"
-```
+**Pipeline Automation Protocol**:
+  - **Sequence**: decision-engine → confidence-scoring → trigger-monitor
+  - **Enforcement**: MANDATORY - blocking execution without validation
+  - **Validation**: Each phase validates the previous phase output
+  **Phase Requirements**:
+    **Decision Engine**:
+      - **Output**: routing_decision with confidence metrics
+      - **Validation**: routing_accuracy >= 0.85
+    **Confidence Scoring**:
+      - **Input**: validated routing_decision
+      - **Output**: confidence_validation with threshold verification
+      - **Validation**: confidence_improvement >= 0.1
+    **Trigger Monitor**:
+      - **Input**: validated confidence metrics
+      - **Output**: continuous_monitoring with dashboard
+      - **Validation**: monitoring_active = true
 
 **CRITICAL BEHAVIOR**: LLM MUST execute complete pipeline automatically with blocking validation preventing incomplete execution.
 
@@ -78,23 +69,19 @@ pipeline_automation_protocol:
 
 **Implementation**: Self-correcting loops with guaranteed convergence or escalation
 
-```yaml
-auto_restart_protocol:
-  convergence_criteria:
-    routing_accuracy: ">= 0.95"
-    confidence_improvement: ">= 0.1 per iteration"
-    max_iterations: "3 (prevents infinite loops)"
-    
-  escalation_conditions:
-    failure_after_3_attempts: "manual_intervention_required"
-    degrading_confidence: "immediate_escalation"
-    system_errors: "automatic_recovery_protocols"
-    
-  success_validation:
-    convergence_achieved: "criteria met within iteration limits"
-    improvement_measured: "quantifiable enhancement documented"
-    system_stability: "stable operation post-convergence"
-```
+**Auto Restart Protocol**:
+  **Convergence Criteria**:
+    - **Routing Accuracy**: >= 0.95
+    - **Confidence Improvement**: >= 0.1 per iteration
+    - **Max Iterations**: 3 (prevents infinite loops)
+  **Escalation Conditions**:
+    - **Failure After 3 Attempts**: manual_intervention_required
+    - **Degrading Confidence**: immediate_escalation
+    - **System Errors**: automatic_recovery_protocols
+  **Success Validation**:
+    - **Convergence Achieved**: criteria met within iteration limits
+    - **Improvement Measured**: quantifiable enhancement documented
+    - **System Stability**: stable operation post-convergence
 
 **MANDATORY BEHAVIOR**: LLM MUST execute auto-restart with mathematical monitoring and guaranteed convergence or escalation.
 
@@ -102,27 +89,22 @@ auto_restart_protocol:
 
 **Implementation**: LLM response patterns that generate dashboard simulation
 
-```yaml
-dashboard_simulation_pattern:
-  trigger: "Any automation pattern activation"
-  
-  mandatory_display:
-    header: "⚡ AUTOMATION SYSTEM ACTIVE"
-    timestamp: "[current_datetime]"
-    system_status: "[ACTIVE/MONITORING/OPTIMIZING]"
-    pipeline_status: "[RUNNING/COMPLETED/FAILED]"
-    
-  automation_metrics:
-    trigger_evaluation: "[confidence, complexity, parallel_benefit scores]"
-    pipeline_progress: "[phase_completion_percentages]"
-    auto_restart_status: "[iteration_count, convergence_status]"
-    performance_metrics: "[execution_time, success_rate, optimization_level]"
-    
-  real_time_updates:
-    frequency: "Every automation action"
-    format: "Structured metrics display in LLM response"
-    validation: "User-visible automation confirmation"
-```
+**Dashboard Simulation Pattern**:
+  - **Trigger**: Any automation pattern activation
+  **Mandatory Display**:
+    - **Header**: ⚡ AUTOMATION SYSTEM ACTIVE
+    - **Timestamp**: [current_datetime]
+    - **System Status**: [ACTIVE/MONITORING/OPTIMIZING]
+    - **Pipeline Status**: [RUNNING/COMPLETED/FAILED]
+  **Automation Metrics**:
+    - **Trigger Evaluation**: [confidence, complexity, parallel_benefit scores]
+    - **Pipeline Progress**: [phase_completion_percentages]
+    - **Auto Restart Status**: [iteration_count, convergence_status]
+    - **Performance Metrics**: [execution_time, success_rate, optimization_level]
+  **Real Time Updates**:
+    - **Frequency**: Every automation action
+    - **Format**: Structured metrics display in LLM response
+    - **Validation**: User-visible automation confirmation
 
 **VISUAL AUTOMATION REQUIREMENT**: Every automation execution MUST include dashboard display confirming autonomous operation.
 
@@ -138,67 +120,55 @@ dashboard_simulation_pattern:
 
 **Pattern**: Objective measurable conditions that activate automatically
 
-```yaml
-specificity_standards:
-  trigger_conditions:
-    format: "[metric] [operator] [threshold] → [action]"
-    precision: "4 decimal places mathematical accuracy"
-    validation: "Real-time calculation verification"
-    
-  examples:
-    confidence_trigger: "confidence_score < 0.7000 → exploration_first"
-    complexity_trigger: "complexity_value >= 1.0000 → decision_engine" 
-    parallel_trigger: "parallel_benefit >= 0.3000 → multi_agent_orchestration"
-    
-  enforcement:
-    automatic_evaluation: "No manual trigger checking required"
-    blocking_validation: "Cannot proceed without trigger compliance"
-    mathematical_precision: "±0.0001 tolerance for calculations"
-```
+**Specificity Standards**:
+  **Trigger Conditions**:
+    - **Format**: [metric] [operator] [threshold] → [action]
+    - **Precision**: 4 decimal places mathematical accuracy
+    - **Validation**: Real-time calculation verification
+  **Examples**:
+    - **Confidence Trigger**: confidence_score < 0.7000 → exploration_first
+    - **Complexity Trigger**: complexity_value >= 1.0000 → decision_engine
+    - **Parallel Trigger**: parallel_benefit >= 0.3000 → multi_agent_orchestration
+  **Enforcement**:
+    - **Automatic Evaluation**: No manual trigger checking required
+    - **Blocking Validation**: Cannot proceed without trigger compliance
+    - **Mathematical Precision**: ±0.0001 tolerance for calculations
 
 ### **Mandatory Validation Framework**
 
 **Pattern**: Automatic prerequisite enforcement before command execution
 
-```yaml
-mandatory_validation_system:
-  enforcement_protocol:
-    orchestrator_commands: "MUST invoke decision-engine first"
-    validation_sequence: "invoke → validate → proceed OR abort"
-    blocking_mechanism: "Execution impossible without validation"
-    
-  validation_criteria:
-    routing_accuracy: ">= 0.85 for proceeding"
-    confidence_threshold: ">= 0.7 for continuation"
-    mathematical_precision: "All calculations within ±0.0001 tolerance"
-    
-  automation_characteristics:
-    no_manual_intervention: "Validation occurs automatically"
-    clear_pass_fail: "Objective criteria with transparent results"
-    feedback_provision: "Specific guidance for correction"
-```
+**Mandatory Validation System**:
+  **Enforcement Protocol**:
+    - **Orchestrator Commands**: MUST invoke decision-engine first
+    - **Validation Sequence**: invoke → validate → proceed OR abort
+    - **Blocking Mechanism**: Execution impossible without validation
+  **Validation Criteria**:
+    - **Routing Accuracy**: >= 0.85 for proceeding
+    - **Confidence Threshold**: >= 0.7 for continuation
+    - **Mathematical Precision**: All calculations within ±0.0001 tolerance
+  **Automation Characteristics**:
+    - **No Manual Intervention**: Validation occurs automatically
+    - **Clear Pass Fail**: Objective criteria with transparent results
+    - **Feedback Provision**: Specific guidance for correction
 
 ### **Convergence Guarantee Protocol**
 
 **Pattern**: Systematic progression to solution or escalation with limits
 
-```yaml
-convergence_guarantee:
-  iteration_management:
-    maximum_attempts: "3 iterations prevents infinite loops"
-    convergence_criteria: "Specific mathematical objectives"
-    escalation_trigger: "Manual intervention after failure"
-    
-  progressive_improvement:
-    iteration_1: "Initial calculation and validation"
-    iteration_2: "Refinement with improvement measurement"
-    iteration_3: "Final optimization or escalation"
-    
-  success_validation:
-    convergence_achieved: "Mathematical criteria satisfied"
-    improvement_documented: "Quantifiable enhancement measured"
-    system_stability: "Stable operation confirmed"
-```
+**Convergence Guarantee**:
+  **Iteration Management**:
+    - **Maximum Attempts**: 3 iterations prevents infinite loops
+    - **Convergence Criteria**: Specific mathematical objectives
+    - **Escalation Trigger**: Manual intervention after failure
+  **Progressive Improvement**:
+    - **Iteration 1**: Initial calculation and validation
+    - **Iteration 2**: Refinement with improvement measurement
+    - **Iteration 3**: Final optimization or escalation
+  **Success Validation**:
+    - **Convergence Achieved**: Mathematical criteria satisfied
+    - **Improvement Documented**: Quantifiable enhancement measured
+    - **System Stability**: Stable operation confirmed
 
 ---
 

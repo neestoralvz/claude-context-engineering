@@ -242,7 +242,7 @@ The monitoring script automatically:
 ./scripts/validation/validate-navigation.sh                    # Must pass 33/33 checks
 ./scripts/validation/validate-system-integrity.sh           # Must show HIGH confidence
 ./scripts/validation/yaml-cleanup-monitoring.sh "FINAL"     # Must show 0 critical issues
-grep -r "```yaml\|```yml" docs/ | wc -l                     # Should show significant reduction
+grep -r "\`\`\`yaml\|\`\`\`yml" docs/ | wc -l                     # Should show significant reduction
 ```
 
 **Expected Results**: All validations pass, minimal/zero YAML content remaining, complete system functionality preserved.
@@ -272,7 +272,7 @@ grep -r "```yaml\|```yml" docs/ | wc -l                     # Should show signif
 ./scripts/validation/validate-navigation.sh
 
 # Count remaining YAML blocks
-find docs/ -name "*.md" -exec grep -l "```yaml\|```yml" {} \; | wc -l
+find docs/ -name "*.md" -exec grep -l "\`\`\`yaml\|\`\`\`yml" {} \; | wc -l
 
 # View latest monitoring report
 ls -la scripts/results/yaml-cleanup/checkpoint_*.json | tail -1

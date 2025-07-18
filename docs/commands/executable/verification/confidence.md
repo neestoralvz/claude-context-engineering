@@ -106,21 +106,15 @@
 ## 📋 Usage Examples
 
 ### **API Endpoint Confidence Scoring**
-```yaml
-/confidence-scoring {functional: 0.95, visual: 0.0, performance: 0.88, behavioral: 0.82} "backend_api" "production"
-```
+- **/Confidence-Scoring {Functional**: 0.95, visual: 0.0, performance: 0.88, behavioral: 0.82} "backend_api" "production
 **Result**: Overall confidence 9.1/10, exceeds production threshold (9.0), ready for deployment
 
 ### **UI Component Confidence Scoring**
-```yaml
-/confidence-scoring {functional: 0.85, visual: 0.92, performance: 0.78, behavioral: 0.88} "ui_component" "development"
-```
+- **/Confidence-Scoring {Functional**: 0.85, visual: 0.92, performance: 0.78, behavioral: 0.88} "ui_component" "development
 **Result**: Overall confidence 8.7/10, meets development threshold (8.0), proceed with testing
 
 ### **Performance Critical Feature**
-```yaml
-/confidence-scoring {functional: 0.90, visual: 0.70, performance: 0.95, behavioral: 0.85} "performance_critical" "production"
-```
+- **/Confidence-Scoring {Functional**: 0.90, visual: 0.70, performance: 0.95, behavioral: 0.85} "performance_critical" "production
 **Result**: Overall confidence 9.2/10, exceeds high-performance threshold (9.0), deployment approved
 
 ### **Specialized Auto-Restart Integration**

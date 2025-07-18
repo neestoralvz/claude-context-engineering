@@ -1,0 +1,143 @@
+{
+  "self_healing_configuration": {
+    "description": "Self-Healing Corrector Configuration",
+    "version": "1.0.0",
+    "component": "automated_correction_systems"
+  },
+  
+  "detection_settings": {
+    "detection_interval": 30,
+    "auto_correction_enabled": true,
+    "max_correction_attempts": 3,
+    "rollback_on_failure": true,
+    "learning_enabled": true
+  },
+  
+  "severity_thresholds": {
+    "critical": 0.9,
+    "high": 0.7,
+    "medium": 0.5,
+    "low": 0.3
+  },
+  
+  "error_patterns": {
+    "file_size_violation": {
+      "threshold": 1500,
+      "severity": "high",
+      "auto_fix": true,
+      "strategies": ["modularization", "component_extraction"]
+    },
+    "duplication_violation": {
+      "threshold": 0.20,
+      "severity": "medium", 
+      "auto_fix": true,
+      "strategies": ["content_consolidation", "reference_extraction"]
+    },
+    "technical_debt_accumulation": {
+      "threshold": 19,
+      "severity": "medium",
+      "auto_fix": true,
+      "strategies": ["systematic_cleanup", "documentation_update"]
+    },
+    "performance_degradation": {
+      "threshold": 2.5,
+      "severity": "high",
+      "auto_fix": true,
+      "strategies": ["navigation_optimization", "structure_improvement"]
+    },
+    "yaml_compliance_violation": {
+      "threshold": 0.95,
+      "severity": "low",
+      "auto_fix": true,
+      "strategies": ["p55_conversion", "yaml_elimination"]
+    },
+    "circular_dependency": {
+      "threshold": 1,
+      "severity": "critical",
+      "auto_fix": false,
+      "strategies": ["dependency_analysis", "architecture_refactor"]
+    },
+    "memory_leak_pattern": {
+      "threshold": 100,
+      "severity": "critical",
+      "auto_fix": true,
+      "strategies": ["resource_cleanup", "cache_optimization"]
+    },
+    "infinite_loop_risk": {
+      "threshold": 1,
+      "severity": "critical",
+      "auto_fix": false,
+      "strategies": ["loop_analysis", "termination_conditions"]
+    }
+  },
+  
+  "correction_strategies": {
+    "modularization": {
+      "description": "Break large files into modular components",
+      "success_rate": 0.85,
+      "average_time": 30,
+      "complexity": "medium"
+    },
+    "component_extraction": {
+      "description": "Extract reusable components",
+      "success_rate": 0.80,
+      "average_time": 25,
+      "complexity": "medium"
+    },
+    "content_consolidation": {
+      "description": "Consolidate duplicate content",
+      "success_rate": 0.90,
+      "average_time": 15,
+      "complexity": "low"
+    },
+    "systematic_cleanup": {
+      "description": "Clean up technical debt systematically",
+      "success_rate": 0.75,
+      "average_time": 20,
+      "complexity": "low"
+    },
+    "navigation_optimization": {
+      "description": "Optimize navigation structure",
+      "success_rate": 0.70,
+      "average_time": 45,
+      "complexity": "high"
+    },
+    "p55_conversion": {
+      "description": "Convert YAML to P55 format",
+      "success_rate": 0.95,
+      "average_time": 10,
+      "complexity": "low"
+    }
+  },
+  
+  "learning_configuration": {
+    "pattern_memory_size": 1000,
+    "success_rate_tracking": true,
+    "strategy_optimization": true,
+    "threshold_adaptation": true,
+    "feedback_integration": true
+  },
+  
+  "backup_settings": {
+    "automatic_backup": true,
+    "backup_before_correction": true,
+    "retention_days": 30,
+    "compression_enabled": true
+  },
+  
+  "validation_criteria": {
+    "file_size_validation": true,
+    "syntax_validation": true,
+    "functionality_validation": true,
+    "performance_validation": true,
+    "rollback_validation": true
+  },
+  
+  "monitoring_settings": {
+    "real_time_monitoring": true,
+    "performance_tracking": true,
+    "success_rate_monitoring": true,
+    "error_rate_monitoring": true,
+    "trend_analysis": true
+  }
+}

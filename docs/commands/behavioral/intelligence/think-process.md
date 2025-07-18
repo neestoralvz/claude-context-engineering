@@ -249,25 +249,21 @@ graph TD
 ### **MANDATORY Tool Selection Matrix for Meta Orchestration**
 
 **Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    module_count: "≤1 module for direct analysis"
-    complexity: "<0.7000 (straightforward orchestration)"
-    scope: "Single-module, focused operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    module_count: "≥2 modules or cross-module coordination"
-    complexity: "≥0.7000 (complex orchestration)"
-    scope: "Multi-module, strategic intelligence operations"
-    time_constraint: ">300 seconds or comprehensive analysis"
-    
-  other_tools:
-    EDIT: "Module configuration and strategic documentation"
-    BASH: "Cross-module validation and coordination scripts"
-    MIXED: "Hybrid orchestration with progressive loading"
-```
+**Tool Selection Criteria**:
+  **Read Tool Usage**:
+    - **Module Count**: ≤1 module for direct analysis
+    - **Complexity**: <0.7000 (straightforward orchestration)
+    - **Scope**: Single-module, focused operations
+    - **Time Constraint**: ≤300 seconds execution window
+  **Task Tool Usage**:
+    - **Module Count**: ≥2 modules or cross-module coordination
+    - **Complexity**: ≥0.7000 (complex orchestration)
+    - **Scope**: Multi-module, strategic intelligence operations
+    - **Time Constraint**: >300 seconds or comprehensive analysis
+  **Other Tools**:
+    - **Edit**: Module configuration and strategic documentation
+    - **Bash**: Cross-module validation and coordination scripts
+    - **Mixed**: Hybrid orchestration with progressive loading
 
 ### **CRITICAL Tool Selection Logic for Strategic Intelligence**
 

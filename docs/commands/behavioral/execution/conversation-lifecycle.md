@@ -465,21 +465,16 @@ end
 /conversation-lifecycle close
 ```
 **Result**: 
-```yaml
-📍 **Conversation Closure Point Reached**
-
-✅ Objectives Completed: 3/4 (75%)
-📄 Handoff Document: `handoff-2024-01-15-auth-system.md`
-💾 State Saved: All progress documented
-
-**Next Steps**:
-1. Close this conversation
-2. Start new conversation with: `/conversation-lifecycle start "Complete OAuth2 integration testing"`
-3. Reference handoff document for context
-
-Thank you for managing work in clear conversation units! 
-This enables perfect continuity and progress tracking.
-```
+- 📍 **Conversation Closure Point Reached**
+- **✅ Objectives Completed**: 3/4 (75%)
+- **📄 Handoff Document**: `handoff-2024-01-15-auth-system.md`
+- **💾 State Saved**: All progress documented
+****Next Steps****:
+- 1. Close this conversation
+- **2. Start New Conversation With**: `/conversation-lifecycle start "Complete OAuth2 integration testing"`
+- 3. Reference handoff document for context
+- Thank you for managing work in clear conversation units!
+- This enables perfect continuity and progress tracking.
 
 ---
 
@@ -545,34 +540,25 @@ function routeWithConversationAwareness(command, conversation_state) {
 ## 💬 **USER COMMUNICATION TEMPLATES**
 
 ### **Natural Closure Point Reached**
-```yaml
-🎯 **Natural Conversation Closure Point**
-
-You've reached an excellent stopping point:
+- 🎯 **Natural Conversation Closure Point**
+**You'Ve Reached An Excellent Stopping Point**:
 - ✅ Main objectives completed
 - 📋 Clear next steps identified
 - 📦 Context fully documented
-
-**Recommended Action**:
-1. Run `/conversation-lifecycle prepare-close` to generate handoff
-2. Review the handoff document
-3. Close this conversation
-4. Start fresh with clear context
-
-This ensures perfect continuity and prevents context overflow.
-```
+****Recommended Action****:
+- 1. Run `/conversation-lifecycle prepare-close` to generate handoff
+- 2. Review the handoff document
+- 3. Close this conversation
+- 4. Start fresh with clear context
+- This ensures perfect continuity and prevents context overflow.
 
 ### **Checkpoint Recommendation**
-```yaml
-💾 **Checkpoint Recommended**
-
-You've made significant progress. CREATE a checkpoint:
+- 💾 **Checkpoint Recommended**
+**You'Ve Made Significant Progress. Create A Checkpoint**:
 - 🕐 Been working for [duration]
 - 📊 Completed [X/Y] objectives
 - 🔄 Good point for state capture
-
-Run `/conversation-lifecycle checkpoint` to save progress.
-```
+- Run `/conversation-lifecycle checkpoint` to save progress.
 
 ---
 

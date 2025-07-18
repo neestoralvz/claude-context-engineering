@@ -16,42 +16,41 @@
 ### **5-Phase Architecture**
 **CRITICAL Implementation Requirements**: Each command MUST EXECUTE all 5 phases with mathematical precision ±0.0001 and 100% script availability validation (ENFORCED).
 
-```yaml
-universal_script_integration:
-  phase_0_script_system_validation:
-    purpose: "Validate script availability and mathematical foundation"
-    scripts: ["formulas/", "core/calculate-real-metrics.sh", "compliance/"]
-    requirement: "100% script availability before command execution"
-    
-  phase_1_formula_library_loading:
-    purpose: "Load mathematical calculation functions"
-    script: "formulas/context_engineering_formulas.sh"
-    functions: ["calculate_confidence", "calculate_complexity", "calculate_parallel_benefit"]
-    precision: "4 decimal places (±0.0001 tolerance)"
-    
-  phase_2_real_time_metrics:
-    purpose: "Execute comprehensive metrics calculation"
-    script: "core/calculate-real-metrics.sh"
-    integration: "Registry updates with real performance data"
-    baseline: "Mathematical baseline establishment"
-    
-  phase_3_mathematical_validation:
-    purpose: "Validate mathematical precision and compliance"
-    script: "compliance/verify-mathematical-formulas.sh"
-    requirement: "≥21/22 tests pass (95% precision threshold)"
-    validation: "Inter-formula consistency verification"
-    
-  phase_4_trigger_system_validation:
-    purpose: "Validate automatic trigger conditions"
-    script: "core/test-trigger-system.sh"
-    tests: "22 trigger validation tests"
-    routing: "Mathematical threshold-based command routing"
-    
-  phase_5_command_specific_integration:
-    purpose: "Apply mathematical foundation to command functionality"
-    application: "Script-validated metrics for command execution"
-    optimization: "Data-driven execution strategy determination"
-```
+**Universal Script Integration**:
+  **Phase 0 Script System Validation**:
+    - **Purpose**: Validate script availability and mathematical foundation
+    **Scripts**:
+    - formulas/
+    - core/calculate-real-metrics.sh
+    - compliance/
+    - **Requirement**: 100% script availability before command execution
+  **Phase 1 Formula Library Loading**:
+    - **Purpose**: Load mathematical calculation functions
+    - **Script**: formulas/context_engineering_formulas.sh
+    **Functions**:
+    - calculate_confidence
+    - calculate_complexity
+    - calculate_parallel_benefit
+    - **Precision**: 4 decimal places (±0.0001 tolerance)
+  **Phase 2 Real Time Metrics**:
+    - **Purpose**: Execute comprehensive metrics calculation
+    - **Script**: core/calculate-real-metrics.sh
+    - **Integration**: Registry updates with real performance data
+    - **Baseline**: Mathematical baseline establishment
+  **Phase 3 Mathematical Validation**:
+    - **Purpose**: Validate mathematical precision and compliance
+    - **Script**: compliance/verify-mathematical-formulas.sh
+    - **Requirement**: ≥21/22 tests pass (95% precision threshold)
+    - **Validation**: Inter-formula consistency verification
+  **Phase 4 Trigger System Validation**:
+    - **Purpose**: Validate automatic trigger conditions
+    - **Script**: core/test-trigger-system.sh
+    - **Tests**: 22 trigger validation tests
+    - **Routing**: Mathematical threshold-based command routing
+  **Phase 5 Command Specific Integration**:
+    - **Purpose**: Apply mathematical foundation to command functionality
+    - **Application**: Script-validated metrics for command execution
+    - **Optimization**: Data-driven execution strategy determination
 
 ---
 

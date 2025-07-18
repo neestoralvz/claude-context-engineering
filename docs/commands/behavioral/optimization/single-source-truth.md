@@ -237,9 +237,7 @@ function monitorSingleSource(domain) {
 **Result**: Establish single authoritative source for all command documentation
 
 ### **Configuration Consolidation**
-```yaml
-/single-source-truth "system-configuration" consolidation_scope=all_configs validation_level=strict
-```
+**Value**: /single-source-truth "system-configuration" consolidation_scope=all_configs validation_level=strict
 **Result**: Consolidate all system configurations into single authoritative source
 
 ---

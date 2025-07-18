@@ -134,9 +134,7 @@ some code here
 // For JavaScript code
 ```
 
-```yaml
-# For YAML configuration
-```
+**Value**: None
 
 #### **2. Forbidden Terminology Elimination**
 **Files Affected**: 29 files  

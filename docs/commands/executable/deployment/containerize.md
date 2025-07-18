@@ -5,6 +5,8 @@
 **ACTIVATION**: `/containerize [project] [type] [port] [entry_point]`  
 **INTEGRATION**: P55/P56 compliance, Docker Authority standards, Principle #101-104 enforcement
 
+**🚨 MANDATORY Compact Communication**: Auto-enforcement of Principle #82 with format `⟳ /comando → resultado 🎯 [tiempo]` and immediate blocking of verbose patterns.
+
 ## 🎯 Core Function
 
 **AUTOMATED CONTAINERIZATION**: Transform any project into production-ready containerized application using Context Engineering templates and 2024-2025 Docker best practices.

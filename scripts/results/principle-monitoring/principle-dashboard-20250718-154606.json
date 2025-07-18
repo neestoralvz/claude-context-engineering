@@ -1,0 +1,32 @@
+{
+  "principleMonitoringDashboard": {
+    "timestamp": "2025-07-18T15:46:07-06:00",
+    "analysis": {
+      "totalPrinciples":       31,
+      "commandIntegrations":      161,
+      "scriptEnforcements":       75,
+      "complianceIssues": 4
+    },
+    "systemHealth": {
+      "status": "needs_improvement",
+      "complianceScore": 60,
+      "integrationLevel": 211.00
+    },
+    "enforcement": {
+      "activePrincipleReminders": true,
+      "priorityEnforcement": true,
+      "decisionTreeIntegration": false,
+      "crossReferenceNetwork": true
+    },
+    "recommendations": {
+      "priority": "urgent",
+      "focus": "optimization",
+      "nextSteps": [
+        
+        
+        "Enhance command-principle integration",
+        "Expand monitoring automation"
+      ]
+    }
+  }
+}

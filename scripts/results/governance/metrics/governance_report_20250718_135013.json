@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-18T13:50:13.027443",
+  "cycle_time": 417.27999687194824,
+  "total_violations": 20392,
+  "violations_by_type": {
+    "file_size": 14,
+    "duplication": 20375,
+    "technical_debt": 1,
+    "performance": 1,
+    "compliance": 1
+  },
+  "violations_by_severity": {
+    "high": 16,
+    "medium": 20375,
+    "critical": 1
+  },
+  "system_health": 0.0,
+  "governance_effectiveness": 0.0
+}

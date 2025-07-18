@@ -87,23 +87,15 @@ find docs -name "*.md" -exec grep -c "complexity.*threshold" {} \; | awk '{sum+=
 source ../../../../scripts/core/path-helper.sh && source_script "scripts/formulas/context_engineering_formulas.sh"
 # Execute complexity calculation
 complexity_score=$(calculate_complexity $objective_count $dependency_factor $integration_complexity)
-```yaml
-2. **Apply Script-Based Thresholds**: 
-   - **Atomic Commands**: Complexity ≤ 1.0 (script-validated via tool calls)
-   - **Orchestrators**: Complexity ≤ 1.5 (script-validated via tool calls)
-   - **Meta Commands**: Complexity ≤ 2.0 (script-validated via tool calls)
-3. **Tool Call Execution Blocking**: Prevent execution using threshold compliance validation
-4. **Formula-Based Recommendations**: Generate suggestions using mathematical analysis
-5. **Script-Monitored Decomposition**: Force breakdown based on complexity calculations
-6. **Real-Time Script Monitoring**: Re-calculate via continuous tool call execution
-
----
-
-## 🧠 **COMPLEXITY ENFORCEMENT DECISION TREE**
-
-### **CRITICAL Cognitive Flow for Complexity Analysis**
-
-```mermaid
+**2. **Apply Script-Based Thresholds****:
+- **Atomic Commands**: Complexity ≤ 1.0 (script-validated via tool calls)
+- **Orchestrators**: Complexity ≤ 1.5 (script-validated via tool calls)
+- **Meta Commands**: Complexity ≤ 2.0 (script-validated via tool calls)
+- **3. **Tool Call Execution Blocking****: Prevent execution using threshold compliance validation
+- **4. **Formula-Based Recommendations****: Generate suggestions using mathematical analysis
+- **5. **Script-Monitored Decomposition****: Force breakdown based on complexity calculations
+- **6. **Real-Time Script Monitoring****: Re-calculate via continuous tool call execution
+- --mermaid
 graph TD
     A[Complexity Analysis Request] --> B{Complexity ≥ 0.9?}
     B -->|Yes| C[CRITICAL: Advanced Complexity Processing]
@@ -185,28 +177,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-complexity_decision_transparency:
-  complexity_assessment:
-    announcement: "🔍 TRANSPARENCY: Complexity assessed at [X]/1.0 - [THRESHOLD_TYPE] threshold applied"
-    evidence: "Mathematical complexity calculation with formula breakdown"
-    
-  threshold_determination:
-    announcement: "📊 TRANSPARENCY: Target classified as [ATOMIC/ORCHESTRATOR/META] - threshold [X] applied"
-    evidence: "Target classification logic with threshold reasoning"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [complexity_operation]"
-    evidence: "Script-based tool call execution with mathematical validation"
-    
-  blocking_decision:
-    announcement: "🚫 TRANSPARENCY: Complexity [X] [EXCEEDS/WITHIN] threshold [Y] - [BLOCKED/APPROVED]"
-    evidence: "Threshold compliance calculation with enforcement action"
-    
-  simplification_guidance:
-    announcement: "💡 TRANSPARENCY: Simplification required - [X] recommendations generated"
-    evidence: "Automated simplification suggestions with implementation guidance"
-```
+**Complexity Decision Transparency**:
+  **Complexity Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Complexity assessed at [X]/1.0 - [THRESHOLD_TYPE] threshold applied
+    - **Evidence**: Mathematical complexity calculation with formula breakdown
+  **Threshold Determination**:
+    - **Announcement**: 📊 TRANSPARENCY: Target classified as [ATOMIC/ORCHESTRATOR/META] - threshold [X] applied
+    - **Evidence**: Target classification logic with threshold reasoning
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [complexity_operation]
+    - **Evidence**: Script-based tool call execution with mathematical validation
+  **Blocking Decision**:
+    - **Announcement**: 🚫 TRANSPARENCY: Complexity [X] [EXCEEDS/WITHIN] threshold [Y] - [BLOCKED/APPROVED]
+    - **Evidence**: Threshold compliance calculation with enforcement action
+  **Simplification Guidance**:
+    - **Announcement**: 💡 TRANSPARENCY: Simplification required - [X] recommendations generated
+    - **Evidence**: Automated simplification suggestions with implementation guidance
 
 ---
 
@@ -393,25 +379,21 @@ function generateSimplificationSuggestions(target, complexity_score) {
 ### **MANDATORY Tool Selection Matrix**
 
 **Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    file_count: "≤3 files for direct analysis"
-    complexity: "<0.7000 (straightforward operations)"
-    scope: "Well-defined, single-purpose operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    file_count: "≥4 files or unknown scope"
-    complexity: "≥0.7000 (complex operations)"
-    scope: "Multi-step, exploratory, or research operations"
-    time_constraint: ">300 seconds or open-ended analysis"
-    
-  other_tools:
-    GREP: "Pattern search across multiple files"
-    GLOB: "File pattern matching and discovery"
-    BASH: "System operations and automation"
-```
+**Tool Selection Criteria**:
+  **Read Tool Usage**:
+    - **File Count**: ≤3 files for direct analysis
+    - **Complexity**: <0.7000 (straightforward operations)
+    - **Scope**: Well-defined, single-purpose operations
+    - **Time Constraint**: ≤300 seconds execution window
+  **Task Tool Usage**:
+    - **File Count**: ≥4 files or unknown scope
+    - **Complexity**: ≥0.7000 (complex operations)
+    - **Scope**: Multi-step, exploratory, or research operations
+    - **Time Constraint**: >300 seconds or open-ended analysis
+  **Other Tools**:
+    - **Grep**: Pattern search across multiple files
+    - **Glob**: File pattern matching and discovery
+    - **Bash**: System operations and automation
 
 ### **CRITICAL Tool Selection Logic**
 

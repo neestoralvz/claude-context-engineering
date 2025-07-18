@@ -617,20 +617,17 @@ end
 This command implements the **decision-engine script integration pattern** with the following enhancements:
 
 ### **Multi-Script Mathematical Coordination**
-```yaml
-enhanced_script_architecture:
-  parallelization_analyzer: "parallelization-analyzer.js - Advanced dependency analysis"
-  formula_library: "context_engineering_formulas.sh - Real-time mathematical calculations"
-  metrics_system: "calculate-real-metrics.sh - Performance monitoring and optimization"
-  trigger_validation: "test-trigger-system.sh - Threshold enforcement and validation"
-  
-coordination_enhancements:
-  mathematical_validation: "Formula-calculated parallel benefit with ≥0.3 threshold"
-  dependency_analysis: "Advanced dependency matrix with script-powered precision"
-  agent_optimization: "Script-validated optimal agent count and resource allocation"
-  communication_protocols: "Enhanced multi-agent coordination and synchronization"
-  performance_monitoring: "Real-time script integration for continuous optimization"
-```
+**Enhanced Script Architecture**:
+  - **Parallelization Analyzer**: parallelization-analyzer.js - Advanced dependency analysis
+  - **Formula Library**: context_engineering_formulas.sh - Real-time mathematical calculations
+  - **Metrics System**: calculate-real-metrics.sh - Performance monitoring and optimization
+  - **Trigger Validation**: test-trigger-system.sh - Threshold enforcement and validation
+**Coordination Enhancements**:
+  - **Mathematical Validation**: Formula-calculated parallel benefit with ≥0.3 threshold
+  - **Dependency Analysis**: Advanced dependency matrix with script-powered precision
+  - **Agent Optimization**: Script-validated optimal agent count and resource allocation
+  - **Communication Protocols**: Enhanced multi-agent coordination and synchronization
+  - **Performance Monitoring**: Real-time script integration for continuous optimization
 
 ****Mathematical Precision Enhancement****
 - **Real Parallel Benefit Calculation**: Formula-calculated with context_engineering_formulas.sh

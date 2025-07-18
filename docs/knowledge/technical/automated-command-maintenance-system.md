@@ -84,15 +84,8 @@ ln -sf ../../scripts/hooks/pre-commit-reference-check.sh .git/hooks/pre-commit
 - **Notification System**: Integrated alerting for failures
 
 **Example Workflow Run**:
-```yaml
-name: Command Synchronization Validation
-on:
-  push:
-    branches: [ main, develop ]
-    paths: ['docs/commands/**', '~/.claude/commands/**']
-  schedule:
-    - cron: '0 2 * * *'  # Daily at 2 AM UTC
-```
+**Configuration Block 1**:
+
 
 ### **3. Automated Registry Updates**
 

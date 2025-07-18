@@ -206,28 +206,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-progressive_intelligence_transparency:
-  depth_assessment:
-    announcement: "🔍 TRANSPARENCY: Intelligence depth [COMPREHENSIVE/DEEP/STRATEGIC] - [X] stages planned"
-    evidence: "Intelligence depth analysis with progression strategy"
-    
-  stage_progression:
-    announcement: "📈 TRANSPARENCY: Stage [X] progress - [CONTEXTUAL/STRATEGIC/IMPLEMENTATION/VERIFICATION] focus"
-    evidence: "Stage completion status with quality metrics"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [progressive_operation]"
-    evidence: "Tool selection matrix with progressive-specific reasoning"
-    
-  quality_validation:
-    announcement: "✅ TRANSPARENCY: Stage quality [X]/1.0 - [PASSED/ENHANCEMENT_REQUIRED]"
-    evidence: "Stage quality assessment with enhancement requirements"
-    
-  intelligence_evolution:
-    announcement: "🧠 TRANSPARENCY: Intelligence evolution [X]% improvement - [insights_generated]"
-    evidence: "Quantified intelligence growth with insight quality metrics"
-```
+**Progressive Intelligence Transparency**:
+  **Depth Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Intelligence depth [COMPREHENSIVE/DEEP/STRATEGIC] - [X] stages planned
+    - **Evidence**: Intelligence depth analysis with progression strategy
+  **Stage Progression**:
+    - **Announcement**: 📈 TRANSPARENCY: Stage [X] progress - [CONTEXTUAL/STRATEGIC/IMPLEMENTATION/VERIFICATION] focus
+    - **Evidence**: Stage completion status with quality metrics
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [progressive_operation]
+    - **Evidence**: Tool selection matrix with progressive-specific reasoning
+  **Quality Validation**:
+    - **Announcement**: ✅ TRANSPARENCY: Stage quality [X]/1.0 - [PASSED/ENHANCEMENT_REQUIRED]
+    - **Evidence**: Stage quality assessment with enhancement requirements
+  **Intelligence Evolution**:
+    - **Announcement**: 🧠 TRANSPARENCY: Intelligence evolution [X]% improvement - [insights_generated]
+    - **Evidence**: Quantified intelligence growth with insight quality metrics
 
 ---
 

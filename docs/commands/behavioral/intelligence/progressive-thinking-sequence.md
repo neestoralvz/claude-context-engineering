@@ -110,46 +110,38 @@ breakthrough_threshold = intelligence_score ≥ 0.90 AND breakthrough_insights �
 ## 🧠 **PROGRESSIVE THINKING SEQUENCE**
 
 ### **Stage 1: Contextual Think** (30 seconds)
-```yaml
-contextual_operations:
-  - context_integration: "Comprehensive context analysis and understanding"
-  - perspective_establishment: "Initial viewpoint and analytical framework"
-  - foundation_building: "Core understanding and knowledge base"
-  - clarity_assessment: "Context clarity and completeness evaluation"
-```
+**Contextual Operations**:
+- {'context_integration': 'Comprehensive context analysis and understanding'}
+- {'perspective_establishment': 'Initial viewpoint and analytical framework'}
+- {'foundation_building': 'Core understanding and knowledge base'}
+- {'clarity_assessment': 'Context clarity and completeness evaluation'}
 
 **Output**: Context-enriched strategic understanding with analytical foundation
 
 ### **Stage 2: Analytical Think** (45 seconds)
-```yaml
-analytical_operations:
-  - deep_analysis: "Systematic analysis and strategic implications"
-  - pattern_recognition: "Relationship mapping and pattern identification"
-  - evaluation_framework: "Assessment criteria and validation protocols"
-  - implications_mapping: "Consequence analysis and impact assessment"
-```
+**Analytical Operations**:
+- {'deep_analysis': 'Systematic analysis and strategic implications'}
+- {'pattern_recognition': 'Relationship mapping and pattern identification'}
+- {'evaluation_framework': 'Assessment criteria and validation protocols'}
+- {'implications_mapping': 'Consequence analysis and impact assessment'}
 
 **Output**: Strategic analysis with optimization opportunities and risk assessment
 
 ### **Stage 3: Strategic Think** (60 seconds)
-```yaml
-strategic_operations:
-  - implementation_planning: "Practical execution design and coordination"
-  - optimization_identification: "Efficiency opportunities and resource planning"
-  - coordination_strategy: "Integration protocols and system alignment"
-  - execution_framework: "Implementation roadmap and success metrics"
-```
+**Strategic Operations**:
+- {'implementation_planning': 'Practical execution design and coordination'}
+- {'optimization_identification': 'Efficiency opportunities and resource planning'}
+- {'coordination_strategy': 'Integration protocols and system alignment'}
+- {'execution_framework': 'Implementation roadmap and success metrics'}
 
 **Output**: Executable strategic implementation plan with coordination protocols
 
 ### **Stage 4: Breakthrough Think** (45 seconds)
-```yaml
-breakthrough_operations:
-  - revolutionary_insights: "Paradigm-shifting perspectives and innovations"
-  - creative_breakthroughs: "Novel solutions and transformative approaches"
-  - innovation_synthesis: "Creative integration and unique combinations"
-  - transformative_perspectives: "Game-changing viewpoints and methodologies"
-```
+**Breakthrough Operations**:
+- {'revolutionary_insights': 'Paradigm-shifting perspectives and innovations'}
+- {'creative_breakthroughs': 'Novel solutions and transformative approaches'}
+- {'innovation_synthesis': 'Creative integration and unique combinations'}
+- {'transformative_perspectives': 'Game-changing viewpoints and methodologies'}
 
 **Output**: Revolutionary insights with transformative potential and actionable innovation
 

@@ -13,7 +13,8 @@ NC='\033[0m' # No Color
 
 # Configuration
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DEFAULT_PORT=8080
+DEFAULT_DASHBOARD_PORT=8080
+DEFAULT_REDIS_PORT=6380
 DEFAULT_HOST="127.0.0.1"
 COMPOSE_FILE="$SCRIPT_DIR/docker-compose.yml"
 ENV_FILE="$SCRIPT_DIR/.env"
@@ -53,40 +54,86 @@ check_docker_compose() {
     print_success "Docker Compose is available"
 }
 
-# Scan for available ports
+# Scan for available ports using dual-service allocation
 scan_ports() {
-    print_status "Scanning for available ports..."
+    print_status "Scanning for available ports (Dashboard + Redis)..."
     
     local port_scan_result
-    if port_scan_result=$(python3 "$SCRIPT_DIR/scripts/port-scanner.py" --port "$DEFAULT_PORT" --json); then
-        local available_port
-        available_port=$(echo "$port_scan_result" | python3 -c "import sys, json; data=json.load(sys.stdin); print(data.get('available_port', ''))")
+    if port_scan_result=$(python3 "$SCRIPT_DIR/scripts/port-scanner.py" --dual-service --port "$DEFAULT_DASHBOARD_PORT" --redis-port "$DEFAULT_REDIS_PORT" --json); then
+        local dashboard_port redis_port
+        dashboard_port=$(echo "$port_scan_result" | python3 -c "import sys, json; data=json.load(sys.stdin); print(data.get('dashboard', {}).get('available_port', ''))")
+        redis_port=$(echo "$port_scan_result" | python3 -c "import sys, json; data=json.load(sys.stdin); print(data.get('redis', {}).get('available_port', ''))")
         
-        if [[ -n "$available_port" ]]; then
-            export DASHBOARD_PORT="$available_port"
-            export DASHBOARD_INTERNAL_PORT="$available_port"
+        if [[ -n "$dashboard_port" && -n "$redis_port" ]]; then
+            export DASHBOARD_PORT="$dashboard_port"
+            export DASHBOARD_INTERNAL_PORT="$dashboard_port"
+            export REDIS_PORT="$redis_port"
             
-            # Save to .env file
+            # Save to .env file with enhanced configuration
             cat > "$ENV_FILE" << EOF
 # Personal Dashboard Environment Configuration
-# Generated on $(date)
+# Generated on $(date) with smart port allocation
 
-DASHBOARD_PORT=$available_port
-DASHBOARD_INTERNAL_PORT=$available_port
+# Dashboard Configuration
+DASHBOARD_PORT=$dashboard_port
+DASHBOARD_INTERNAL_PORT=$dashboard_port
 DASHBOARD_HOST=$DEFAULT_HOST
-REDIS_PORT=6380
+
+# Redis Configuration
+REDIS_PORT=$redis_port
+
+# Application Environment
 FLASK_ENV=development
+PYTHONUNBUFFERED=1
+
+# Port Allocation Summary
+# Dashboard: $dashboard_port ($([ "$dashboard_port" -eq "$DEFAULT_DASHBOARD_PORT" ] && echo "preferred" || echo "alternative"))
+# Redis: $redis_port ($([ "$redis_port" -eq "$DEFAULT_REDIS_PORT" ] && echo "preferred" || echo "alternative"))
 EOF
             
-            print_success "Port $available_port is available"
+            print_success "Port allocation completed successfully"
+            print_status "Dashboard: $dashboard_port | Redis: $redis_port"
+            
+            # Show conflict resolution summary if applicable
+            local conflicts
+            conflicts=$(echo "$port_scan_result" | python3 -c "import sys, json; data=json.load(sys.stdin); print(data.get('allocation_summary', {}).get('total_conflicts', 0))")
+            if [[ "$conflicts" -gt 0 ]]; then
+                print_warning "Resolved $conflicts port conflict(s) automatically"
+            fi
+            
             return 0
         else
-            print_error "No available ports found"
+            print_error "Port allocation failed"
+            if [[ -z "$dashboard_port" ]]; then
+                print_error "  Dashboard: No available ports found"
+            fi
+            if [[ -z "$redis_port" ]]; then
+                print_error "  Redis: No available ports found"
+            fi
             return 1
         fi
     else
         print_error "Port scanning failed"
-        return 1
+        print_error "Falling back to default ports (may cause conflicts)"
+        
+        # Fallback to defaults
+        export DASHBOARD_PORT="$DEFAULT_DASHBOARD_PORT"
+        export DASHBOARD_INTERNAL_PORT="$DEFAULT_DASHBOARD_PORT"
+        export REDIS_PORT="$DEFAULT_REDIS_PORT"
+        
+        cat > "$ENV_FILE" << EOF
+# Personal Dashboard Environment Configuration (Fallback)
+# Generated on $(date) - Port scanning failed, using defaults
+
+DASHBOARD_PORT=$DEFAULT_DASHBOARD_PORT
+DASHBOARD_INTERNAL_PORT=$DEFAULT_DASHBOARD_PORT
+DASHBOARD_HOST=$DEFAULT_HOST
+REDIS_PORT=$DEFAULT_REDIS_PORT
+FLASK_ENV=development
+EOF
+        
+        print_warning "Using default ports - conflicts may occur"
+        return 0
     fi
 }
 
@@ -118,7 +165,8 @@ start_services() {
         sleep 5
         
         # Check service health
-        local dashboard_port="${DASHBOARD_PORT:-$DEFAULT_PORT}"
+        local dashboard_port="${DASHBOARD_PORT:-$DEFAULT_DASHBOARD_PORT}"
+        local redis_port="${REDIS_PORT:-$DEFAULT_REDIS_PORT}"
         local max_attempts=30
         local attempt=1
         
@@ -136,13 +184,18 @@ start_services() {
             ((attempt++))
         done
         
-        # Show access information
+        # Show access information with enhanced details
         echo ""
         echo "🎉 Personal Usage Dashboard is now running!"
+        echo "=" * 50
         echo ""
         echo "📊 Dashboard:  http://localhost:$dashboard_port"
         echo "📈 Health:     http://localhost:$dashboard_port/api/health"
-        echo "🔧 Redis:      localhost:${REDIS_PORT:-6380}"
+        echo "🔴 Redis:      localhost:$redis_port"
+        echo ""
+        echo "Port Allocation Summary:"
+        echo "  Dashboard: $dashboard_port $([ "$dashboard_port" -eq "$DEFAULT_DASHBOARD_PORT" ] && echo "(preferred)" || echo "(alternative)")"
+        echo "  Redis:     $redis_port $([ "$redis_port" -eq "$DEFAULT_REDIS_PORT" ] && echo "(preferred)" || echo "(alternative)")"
         echo ""
         echo "Commands:"
         echo "  View logs:   $compose_cmd logs -f dashboard"
@@ -166,7 +219,11 @@ main() {
     while [[ $# -gt 0 ]]; do
         case $1 in
             --port)
-                DEFAULT_PORT="$2"
+                DEFAULT_DASHBOARD_PORT="$2"
+                shift 2
+                ;;
+            --redis-port)
+                DEFAULT_REDIS_PORT="$2"
                 shift 2
                 ;;
             --host)
@@ -174,12 +231,22 @@ main() {
                 shift 2
                 ;;
             --help)
-                echo "Usage: $0 [--port PORT] [--host HOST]"
+                echo "Usage: $0 [--port PORT] [--redis-port PORT] [--host HOST]"
+                echo ""
+                echo "Advanced Docker Dashboard with Smart Port Allocation"
                 echo ""
                 echo "Options:"
-                echo "  --port PORT    Preferred port (default: 8080)"
-                echo "  --host HOST    Host to bind to (default: 127.0.0.1)"
-                echo "  --help         Show this help message"
+                echo "  --port PORT        Preferred dashboard port (default: 8080)"
+                echo "  --redis-port PORT  Preferred Redis port (default: 6380)"
+                echo "  --host HOST        Host to bind to (default: 127.0.0.1)"
+                echo "  --help             Show this help message"
+                echo ""
+                echo "Features:"
+                echo "  • Automatic port conflict detection and resolution"
+                echo "  • Dual-service port allocation (Dashboard + Redis)"
+                echo "  • Intelligent fallback strategies"
+                echo "  • Cross-platform system port usage detection"
+                echo "  • Enterprise-grade port range support"
                 exit 0
                 ;;
             *)

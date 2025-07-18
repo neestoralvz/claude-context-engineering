@@ -144,28 +144,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-evolution_decision_transparency:
-  readiness_assessment:
-    announcement: "🔍 TRANSPARENCY: Evolution readiness assessed at [X]/1.0 - [READY/ENHANCEMENT_REQUIRED]"
-    evidence: "Mathematical readiness calculation with component breakdown"
-    
-  discovery_implementation:
-    announcement: "🔄 TRANSPARENCY: Dynamic discovery [IMPLEMENTED/DEVELOPED] - [X]% capability achieved"
-    evidence: "Discovery system implementation with capability metrics"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [evolution_operation]"
-    evidence: "Tool selection matrix with evolution-specific reasoning"
-    
-  compatibility_validation:
-    announcement: "🔗 TRANSPARENCY: Compatibility level [X]/1.0 - [ASSURED/LAYER_REQUIRED]"
-    evidence: "Backward compatibility analysis with assurance metrics"
-    
-  evolution_completion:
-    announcement: "🚀 TRANSPARENCY: Evolution architecture [SUCCESS/FAILED] - [performance_impact]"
-    evidence: "Complete evolution results with performance scaling metrics"
-```
+**Evolution Decision Transparency**:
+  **Readiness Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Evolution readiness assessed at [X]/1.0 - [READY/ENHANCEMENT_REQUIRED]
+    - **Evidence**: Mathematical readiness calculation with component breakdown
+  **Discovery Implementation**:
+    - **Announcement**: 🔄 TRANSPARENCY: Dynamic discovery [IMPLEMENTED/DEVELOPED] - [X]% capability achieved
+    - **Evidence**: Discovery system implementation with capability metrics
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [evolution_operation]
+    - **Evidence**: Tool selection matrix with evolution-specific reasoning
+  **Compatibility Validation**:
+    - **Announcement**: 🔗 TRANSPARENCY: Compatibility level [X]/1.0 - [ASSURED/LAYER_REQUIRED]
+    - **Evidence**: Backward compatibility analysis with assurance metrics
+  **Evolution Completion**:
+    - **Announcement**: 🚀 TRANSPARENCY: Evolution architecture [SUCCESS/FAILED] - [performance_impact]
+    - **Evidence**: Complete evolution results with performance scaling metrics
 
 ---
 
@@ -234,25 +228,21 @@ function assessGrowthSustainability(architecture, growth_projection) {
 ### **MANDATORY Tool Selection Matrix**
 
 **Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    file_count: "≤3 files for direct analysis"
-    complexity: "<0.7000 (straightforward operations)"
-    scope: "Well-defined, single-purpose operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    file_count: "≥4 files or unknown scope"
-    complexity: "≥0.7000 (complex operations)"
-    scope: "Multi-step, exploratory, or research operations"
-    time_constraint: ">300 seconds or open-ended analysis"
-    
-  other_tools:
-    GREP: "Pattern search across multiple files"
-    GLOB: "File pattern matching and discovery"
-    BASH: "System operations and automation"
-```
+**Tool Selection Criteria**:
+  **Read Tool Usage**:
+    - **File Count**: ≤3 files for direct analysis
+    - **Complexity**: <0.7000 (straightforward operations)
+    - **Scope**: Well-defined, single-purpose operations
+    - **Time Constraint**: ≤300 seconds execution window
+  **Task Tool Usage**:
+    - **File Count**: ≥4 files or unknown scope
+    - **Complexity**: ≥0.7000 (complex operations)
+    - **Scope**: Multi-step, exploratory, or research operations
+    - **Time Constraint**: >300 seconds or open-ended analysis
+  **Other Tools**:
+    - **Grep**: Pattern search across multiple files
+    - **Glob**: File pattern matching and discovery
+    - **Bash**: System operations and automation
 
 ### **CRITICAL Tool Selection Logic**
 

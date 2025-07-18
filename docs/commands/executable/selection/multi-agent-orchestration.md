@@ -398,20 +398,17 @@ Deploy and coordinate up to 10 specialized agents for complex problem solving wi
 This command implements the **decision-engine script integration pattern** with the following enhancements:
 
 ### **Multi-Agent Script Coordination Architecture**
-```yaml
-advanced_coordination_architecture:
-  formula_integration: "context_engineering_formulas.sh - Mathematical agent optimization"
-  metrics_coordination: "calculate-real-metrics.sh - Multi-agent performance monitoring"
-  trigger_validation: "test-trigger-system.sh - Agent threshold and compliance validation"
-  communication_protocols: "Enhanced multi-agent coordination and synchronization"
-  
-agent_enhancements:
-  mathematical_specialization: "Formula-calculated agent capabilities and context distribution"
-  coordination_optimization: "Script-powered agent communication and performance enhancement"
-  validation_integration: "Continuous script validation throughout agent lifecycle"
-  performance_monitoring: "Real-time metrics for multi-agent coordination efficiency"
-  communication_enhancement: "Advanced protocols for superior agent collaboration"
-```
+**Advanced Coordination Architecture**:
+  - **Formula Integration**: context_engineering_formulas.sh - Mathematical agent optimization
+  - **Metrics Coordination**: calculate-real-metrics.sh - Multi-agent performance monitoring
+  - **Trigger Validation**: test-trigger-system.sh - Agent threshold and compliance validation
+  - **Communication Protocols**: Enhanced multi-agent coordination and synchronization
+**Agent Enhancements**:
+  - **Mathematical Specialization**: Formula-calculated agent capabilities and context distribution
+  - **Coordination Optimization**: Script-powered agent communication and performance enhancement
+  - **Validation Integration**: Continuous script validation throughout agent lifecycle
+  - **Performance Monitoring**: Real-time metrics for multi-agent coordination efficiency
+  - **Communication Enhancement**: Advanced protocols for superior agent collaboration
 
 ### **Communication Protocol Enhancement**
 - **Advanced Agent Communication**: Enhanced protocols for complex multi-agent coordination

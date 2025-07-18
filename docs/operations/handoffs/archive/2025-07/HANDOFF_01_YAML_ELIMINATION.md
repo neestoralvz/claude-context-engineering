@@ -46,18 +46,14 @@
 ### **Evidencia de Violaciones P55/P56**
 ```
 PROHIBITED EXAMPLES FOUND:
-```yaml
-FOR each threshold IN system_thresholds:
-  current_value = measure_metric(threshold.metric)
-  IF current_value violates threshold.limit:
-    trigger_enforcement_action(threshold.action)
-```
+**For Each Threshold In System Thresholds**:
+- current_value = measure_metric(threshold.metric)
+**If Current Value Violates Threshold.Limit**:
+- trigger_enforcement_action(threshold.action)
 
-```yaml
-zero_trust_architecture:
-  identity_verification:
-    continuous_authentication: "Multi-factor authentication"
-```
+**Zero Trust Architecture**:
+  **Identity Verification**:
+    - **Continuous Authentication**: Multi-factor authentication
 
 **CRITICAL**: Estos ejemplos son instrucciones LLM disfrazadas de configuración YAML, violando directamente P55/P56.
 
@@ -102,11 +98,9 @@ zero_trust_architecture:
 **PATTERNS REQUIRED**:
 
 **YAML ORIGINAL**:
-```yaml
-zero_trust_architecture:
-  identity_verification:
-    continuous_authentication: "Multi-factor authentication"
-```
+**Zero Trust Architecture**:
+  **Identity Verification**:
+    - **Continuous Authentication**: Multi-factor authentication
 
 **CONVERTED TO**:
 ```
@@ -116,10 +110,7 @@ zero_trust_architecture:
 ```
 
 **YAML ORIGINAL**:
-```yaml
-FOR each threshold IN system_thresholds:
-  current_value = measure_metric(threshold.metric)
-```
+- **For Each Threshold In System Thresholds**: current_value = measure_metric(threshold.metric)
 
 **CONVERTED TO**:
 ```

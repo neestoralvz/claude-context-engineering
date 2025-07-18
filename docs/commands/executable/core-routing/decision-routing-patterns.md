@@ -139,41 +139,35 @@ Sugiere secuencias naturales de comandos:
 ## 🔄 **SCRIPT-INTEGRATED AUTO-RESTART Y VERIFICACIÓN AUTOMÁTICA**
 
 ### **Script-Powered Auto-Restart Protocol**
-```yaml
-auto_restart_protocol:
-  script_integration:
-    validation_script: "test-trigger-system.sh"
-    execution_script: "execute-commands.sh"
-    formula_library: "context_engineering_formulas.sh"
-    progressive_thinking: "progressive-thinking.md"
-  
-  trigger_conditions_script_validated:
-    - routing_accuracy < 0.85 (validated by test_success_rate_trigger)
-    - confidence_score < adaptive_threshold (validated by test_adaptive_trigger)
-    - complexity_score > 2.0 (validated by test_complexity_decomposition_trigger)
-    - execution_failure_detected (monitored by execute-commands.sh)
-    - script_validation_failure (22 tests < 95% pass rate)
-  
-  restart_algorithm_with_scripts:
-    max_iterations: 3
-    iteration_1: "refined_analysis_with_progressive_thinking_stages_1_2"
-    iteration_2: "alternative_routing_with_script_validation_and_progressive_thinking_stages_3_4"
-    iteration_3: "simplified_approach_with_execute_commands_fallback_and_manual_escalation"
-  
-  convergence_guarantee_script_enforced:
-    success_criteria:
-      - routing_accuracy >= 0.95 (script-validated)
-      - confidence_improvement >= 0.1 (calculate_confidence)
-      - complexity_reduction >= 0.2 (calculate_complexity)
-      - script_tests_passed >= 21/22 (95% threshold)
-      - progressive_thinking_complete (if activated)
-    
-    escalation_after_failure:
-      - execute test-trigger-system.sh for failure analysis
-      - document_failure_pattern_in_results_dir
-      - escalate_to_manual_intervention_with_script_diagnostics
-      - update_learning_patterns_and_registry_metrics
-```
+**Auto Restart Protocol**:
+  **Script Integration**:
+    - **Validation Script**: test-trigger-system.sh
+    - **Execution Script**: execute-commands.sh
+    - **Formula Library**: context_engineering_formulas.sh
+    - **Progressive Thinking**: progressive-thinking.md
+  **Trigger Conditions Script Validated**:
+  - routing_accuracy < 0.85 (validated by test_success_rate_trigger)
+  - confidence_score < adaptive_threshold (validated by test_adaptive_trigger)
+  - complexity_score > 2.0 (validated by test_complexity_decomposition_trigger)
+  - execution_failure_detected (monitored by execute-commands.sh)
+  - script_validation_failure (22 tests < 95% pass rate)
+  **Restart Algorithm With Scripts**:
+    - **Max Iterations**: 3
+    - **Iteration 1**: refined_analysis_with_progressive_thinking_stages_1_2
+    - **Iteration 2**: alternative_routing_with_script_validation_and_progressive_thinking_stages_3_4
+    - **Iteration 3**: simplified_approach_with_execute_commands_fallback_and_manual_escalation
+  **Convergence Guarantee Script Enforced**:
+    **Success Criteria**:
+    - routing_accuracy >= 0.95 (script-validated)
+    - confidence_improvement >= 0.1 (calculate_confidence)
+    - complexity_reduction >= 0.2 (calculate_complexity)
+    - script_tests_passed >= 21/22 (95% threshold)
+    - progressive_thinking_complete (if activated)
+    **Escalation After Failure**:
+    - execute test-trigger-system.sh for failure analysis
+    - document_failure_pattern_in_results_dir
+    - escalate_to_manual_intervention_with_script_diagnostics
+    - update_learning_patterns_and_registry_metrics
 
 ### **Verificación Automática Continua**
 ```javascript

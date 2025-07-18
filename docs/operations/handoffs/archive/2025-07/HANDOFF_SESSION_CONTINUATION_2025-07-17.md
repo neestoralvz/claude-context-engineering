@@ -178,23 +178,16 @@ scripts/utilities/count-commands.sh --verify
 ```
 
 ### **YAML Conversion Standards**
-```yaml
-# Proven pattern for P55/P56 conversion:
-behavioral_requirements:
-  old_format: |
-    ```yaml
-    p55_compliance:
-      execution_bridge: "MANDATORY"
-    ```
-  
-  new_format: |
-    **P55 Compliance**: MANDATORY execution bridge with tool call transparency
-    
-    **Tool Call Execution Protocol**:
-    - ALWAYS execute real tool calls (never simulate)
-    - DISPLAY visual announcements before execution
-    - CAPTURE actual results and provide transparency
-```
+**Behavioral Requirements**:
+  - **Old Format**: **P55 Compliance**:
+  - **Execution Bridge**: MANDATORY
+
+  - **New Format**: **P55 Compliance**: MANDATORY execution bridge with tool call transparency
+
+**Tool Call Execution Protocol**:
+- ALWAYS execute real tool calls (never simulate)
+- DISPLAY visual announcements before execution
+- CAPTURE actual results and provide transparency
 
 ### **P55/P56 Integration Template**
 ```markdown

@@ -124,6 +124,34 @@ claude-conversation-extractor  # Extracción de conversaciones
 - **Servidores de memoria personalizados**: Memoria persistente entre conversaciones
 - **Análisis programático**: Parseo directo de archivos JSONL
 
+### **🧠 Integración con Historical Intelligence** (Principio #110)
+
+**Aprovechamiento Inteligente de Conversaciones**:
+- **[/system-update](../../commands/executable/maintenance/system-update.md)** - Análisis automático de conversaciones para actualizaciones del sistema
+- **[/intelligent-reorganization](../../commands/executable/maintenance/intelligent-reorganization.md)** - Reorganización basada en patrones de conversación
+- **[Principle #110](../principles/historical-intelligence.md)** - Arquitectura de inteligencia histórica que aprovecha conversaciones
+
+**Capacidades de Análisis Avanzado**:
+- **Pattern Recognition**: Identificación automática de patrones de decisión y resolución de problemas
+- **Context Correlation**: Correlación entre temas de conversación y cambios en el código
+- **Workflow Optimization**: Optimización de flujos de trabajo basada en patrones de conversación exitosos
+- **Knowledge Gap Detection**: Detección de gaps de conocimiento basada en preguntas frecuentes
+
+**Casos de Uso Prácticos**:
+```bash
+# Análisis de patrones de conversación para optimización del sistema
+/system-update session 30days efficiency
+# Utiliza conversaciones de los últimos 30 días para optimizar eficiencia
+
+# Reorganización basada en temas recurrentes de conversación  
+/intelligent-reorganization usage-patterns conversation-driven
+# Reorganiza estructura basada en patrones de acceso en conversaciones
+
+# Actualización de documentación basada en resolución de problemas
+/knowledge-sync conversation-insights problem-solving
+# Actualiza knowledge base con insights de resolución de problemas
+```
+
 ## ⚖️ Consideraciones Legales y Compliance
 
 ### **Responsabilidades del Usuario**

@@ -122,13 +122,11 @@
 ### **YAML Configuration → Natural Language**
 ```markdown
 # BEFORE (YAML violation)
-```yaml
-priority: critical
-enforcement: mandatory
-triggers:
-  - complexity >= 0.9
-  - confidence < 0.7
-```
+- **Priority**: critical
+- **Enforcement**: mandatory
+**Triggers**:
+- complexity >= 0.9
+- confidence < 0.7
 
 # AFTER (P55/P6 compliant)
 **Priority**: CRITICAL enforcement with MANDATORY activation
@@ -138,14 +136,12 @@ triggers:
 ### **YAML Metadata → Structured Content**
 ```markdown
 # BEFORE (YAML violation)
-```yaml
-categories:
-  - technical
-  - behavioral
-cross_refs:
-  - principle-55
-  - principle-81
-```
+**Categories**:
+- technical
+- behavioral
+**Cross Refs**:
+- principle-55
+- principle-81
 
 # AFTER (P55/P6 compliant)
 **Categories**: Technical, Behavioral

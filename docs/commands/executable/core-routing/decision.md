@@ -4,6 +4,8 @@
 
 **CRITICAL**: This core routing decision engine has been strategically modularized for enhanced navigation and maintainability. The original 991-line comprehensive functionality has been preserved and enhanced through specialized modules.
 
+**🚨 MANDATORY Compact Communication**: Auto-enforcement of Principle #82 with format `⟳ /comando → resultado 🎯 [tiempo]` and immediate blocking of verbose patterns.
+
 **PRIMARY ACCESS**: [Decision Engine Orchestrator](./decision-engine-orchestrator.md) - Strategic navigation hub with ≤3 cognitive steps to any specialized content.
 
 ---

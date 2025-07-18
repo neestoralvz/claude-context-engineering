@@ -38,15 +38,12 @@
 **Consolidated Authority**: [Metrics & Pattern Crystallization System](../metrics-and-pattern-crystallization.md) | **Navigation Hub**: [Technical Hub](../TECHNICAL_DOCS.md)
 
 ### **Success Rate Calculation**
-```yaml
-Success Rate = (Successful Executions / Total Executions)
-
-Success Criteria:
+- Success Rate = (Successful Executions / Total Executions)
+**Success Criteria**:
 - Objective achieved ≥95% confidence
 - No critical errors
 - Expected outcomes delivered
 - User satisfaction confirmed
-```
 
 ### **Pattern Crystallization**
 When pattern meets criteria:

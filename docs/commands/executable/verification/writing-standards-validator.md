@@ -52,44 +52,44 @@ This system adapts execution based on document complexity and validation scope, 
 
 **Intelligent Scaling** reduces overhead by 40% for simple documents:
 
-```yaml
-adaptive_validation_selection:
-  simple_documents_complexity_≤_0.3:
-    strategy: ["Quick Standards Check", "Basic Compliance Scan"] 
-    duration: "30-60 seconds (40% faster)"
-    criteria: 
-      - Single file validation
-      - Standard format compliance
-      - Basic terminology audit
-    optimization: "Fast compliance verification with core standards only"
-    
-  medium_documents_complexity_0.3-0.7:
-    strategy: ["Comprehensive Standards Validation", "Multi-Dimensional Analysis", "Auto-Remediation"]
-    duration: "2-4 minutes (25% faster)" 
-    criteria:
-      - Multi-section documentation
-      - Cross-reference validation required
-      - Evidence specification analysis needed
-    optimization: "Full validation with selective deep analysis"
-    
-  complex_documents_complexity_≥_0.7:
-    strategy: ["Complete Writing Standards Validation"]
-    duration: "5-8 minutes (full power)"
-    criteria:
-      - Large documentation systems
-      - Multiple file coordination required
-      - Pattern enforcement across ecosystem
-    optimization: "Comprehensive validation with ecosystem integration"
-
-adaptive_triggers:
-  complexity_escalation:
-    condition: "Document complexity exceeds current validation scope"
-    action: "Automatically upgrade to higher validation tier"
-    
-  quality_optimization:
-    condition: "Quality metrics below threshold during validation"
-    action: "Activate enhanced remediation protocols"
-```
+**Adaptive Validation Selection**:
+  **Simple Documents Complexity ≤ 0.3**:
+    **Strategy**:
+    - Quick Standards Check
+    - Basic Compliance Scan
+    - **Duration**: 30-60 seconds (40% faster)
+    **Criteria**:
+    - Single file validation
+    - Standard format compliance
+    - Basic terminology audit
+    - **Optimization**: Fast compliance verification with core standards only
+  **Medium Documents Complexity 0.3-0.7**:
+    **Strategy**:
+    - Comprehensive Standards Validation
+    - Multi-Dimensional Analysis
+    - Auto-Remediation
+    - **Duration**: 2-4 minutes (25% faster)
+    **Criteria**:
+    - Multi-section documentation
+    - Cross-reference validation required
+    - Evidence specification analysis needed
+    - **Optimization**: Full validation with selective deep analysis
+  **Complex Documents Complexity ≥ 0.7**:
+    **Strategy**:
+    - Complete Writing Standards Validation
+    - **Duration**: 5-8 minutes (full power)
+    **Criteria**:
+    - Large documentation systems
+    - Multiple file coordination required
+    - Pattern enforcement across ecosystem
+    - **Optimization**: Comprehensive validation with ecosystem integration
+**Adaptive Triggers**:
+  **Complexity Escalation**:
+    - **Condition**: Document complexity exceeds current validation scope
+    - **Action**: Automatically upgrade to higher validation tier
+  **Quality Optimization**:
+    - **Condition**: Quality metrics below threshold during validation
+    - **Action**: Activate enhanced remediation protocols
 
 ### **🔍 Analysis Detection**
 
@@ -132,24 +132,20 @@ adaptive_triggers:
 
 This command features intelligent validation scope detection that analyzes the current documentation ecosystem:
 
-```yaml
-dynamic_ecosystem_detection:
-  auto_discovery:
-    registry_scan: "Real-time scan of documentation structure to detect validation scope"
-    file_counting: "SELECT COUNT(*) FROM target_documents for dynamic sizing"
-    adaptive_scaling: "Automatically adjust validation thresholds based on detected documentation size"
-    
-  ecosystem_categories:
-    command_docs: "SELECT COUNT(*) FROM .claude/commands/"
-    principle_docs: "SELECT COUNT(*) FROM docs/principles/"
-    technical_docs: "SELECT COUNT(*) FROM docs/technical/"
-    total_ecosystem_size: "SUM(documentation_categories) = DYNAMIC_TOTAL"
-    
-  adaptive_thresholds:
-    compliance_threshold: "MIN(95%, 85% + (ecosystem_size * 0.1))"
-    quality_threshold: "90% * scaling_factor based on documentation_complexity"
-    evidence_threshold: "AUTO-ADJUST based on available validation capabilities"
-```
+**Dynamic Ecosystem Detection**:
+  **Auto Discovery**:
+    - **Registry Scan**: Real-time scan of documentation structure to detect validation scope
+    - **File Counting**: SELECT COUNT(*) FROM target_documents for dynamic sizing
+    - **Adaptive Scaling**: Automatically adjust validation thresholds based on detected documentation size
+  **Ecosystem Categories**:
+    - **Command Docs**: SELECT COUNT(*) FROM .claude/commands/
+    - **Principle Docs**: SELECT COUNT(*) FROM docs/principles/
+    - **Technical Docs**: SELECT COUNT(*) FROM docs/technical/
+    - **Total Ecosystem Size**: SUM(documentation_categories) = DYNAMIC_TOTAL
+  **Adaptive Thresholds**:
+    - **Compliance Threshold**: MIN(95%, 85% + (ecosystem_size * 0.1))
+    - **Quality Threshold**: 90% * scaling_factor based on documentation_complexity
+    - **Evidence Threshold**: AUTO-ADJUST based on available validation capabilities
 
 ---
 
@@ -158,58 +154,74 @@ dynamic_ecosystem_detection:
 ### **⚡ Simple Validation**
 **Optimal for**: Single documents, standard format compliance, basic terminology audit
 
-```yaml
-simple_validation_execution:
-  quick_standards_check: 
-    duration: "15-30 seconds"
-    actions: ["Terminology Scan", "Format Verification"]
-    optimization: "Fast compliance verification with essential standards only"
-    
-  basic_compliance_scan:
-    duration: "15-30 seconds" 
-    actions: ["Evidence Specification Check", "Anti-Pattern Detection"]
-    optimization: "Core compliance requirements validation"
-    
-  total_time_savings: "40% faster than comprehensive validation"
-  success_rate_maintained: "≥90% (quality preserved for standard documents)"
-  use_cases: ["Single file validation", "Quick compliance check", "Standard document review"]
-```
+**Simple Validation Execution**:
+  **Quick Standards Check**:
+    - **Duration**: 15-30 seconds
+    **Actions**:
+    - Terminology Scan
+    - Format Verification
+    - **Optimization**: Fast compliance verification with essential standards only
+  **Basic Compliance Scan**:
+    - **Duration**: 15-30 seconds
+    **Actions**:
+    - Evidence Specification Check
+    - Anti-Pattern Detection
+    - **Optimization**: Core compliance requirements validation
+  - **Total Time Savings**: 40% faster than comprehensive validation
+  - **Success Rate Maintained**: ≥90% (quality preserved for standard documents)
+  **Use Cases**:
+  - Single file validation
+  - Quick compliance check
+  - Standard document review
 
 ### **🎯 Medium Validation** 
 **Optimal for**: Multi-section documents, cross-reference validation, evidence specification analysis
 
-```yaml
-medium_validation_execution:
-  comprehensive_standards_validation:
-    duration: "60-90 seconds"
-    actions: ["Full Standards Check", "Structure Analysis"]
-    
-  multi_dimensional_analysis:
-    duration: "60-90 seconds"
-    actions: ["Quality Metrics", "Cross-Reference Validation", "Hierarchical Structure"]
-    optimization: "Targeted deep analysis for complex documents"
-    
-  auto_remediation:
-    duration: "30-60 seconds"
-    actions: ["Issue Identification", "Compliance Corrections", "Quality Enhancement"]
-    optimization: "Automated improvement implementation"
-    
-  total_time_savings: "25% faster than full validation"
-  success_rate_maintained: "≥95% (enhanced by targeted analysis)"
-  use_cases: ["Multi-section documentation", "Cross-reference validation", "Quality improvement workflows"]
-```
+**Medium Validation Execution**:
+  **Comprehensive Standards Validation**:
+    - **Duration**: 60-90 seconds
+    **Actions**:
+    - Full Standards Check
+    - Structure Analysis
+  **Multi Dimensional Analysis**:
+    - **Duration**: 60-90 seconds
+    **Actions**:
+    - Quality Metrics
+    - Cross-Reference Validation
+    - Hierarchical Structure
+    - **Optimization**: Targeted deep analysis for complex documents
+  **Auto Remediation**:
+    - **Duration**: 30-60 seconds
+    **Actions**:
+    - Issue Identification
+    - Compliance Corrections
+    - Quality Enhancement
+    - **Optimization**: Automated improvement implementation
+  - **Total Time Savings**: 25% faster than full validation
+  - **Success Rate Maintained**: ≥95% (enhanced by targeted analysis)
+  **Use Cases**:
+  - Multi-section documentation
+  - Cross-reference validation
+  - Quality improvement workflows
 
 ### **🌟 Complex Validation**
 **Optimal for**: Large documentation systems, ecosystem integration, pattern enforcement
 
-```yaml
-complex_validation_execution:
-  all_validation_phases_active: ["Standards Validation", "Quality Analysis", "Structure Verification", "Evidence Assessment", "Compliance Enforcement", "Pattern Recognition"]
-  duration: "5-8 minutes (comprehensive analysis)"
-  optimization: "complete validation for maximum quality and compliance"
-  success_rate: "≥98% (maximum quality and thoroughness)"
-  use_cases: ["Large documentation systems", "Ecosystem-wide validation", "Pattern enforcement across multiple files"]
-```
+**Complex Validation Execution**:
+  **All Validation Phases Active**:
+  - Standards Validation
+  - Quality Analysis
+  - Structure Verification
+  - Evidence Assessment
+  - Compliance Enforcement
+  - Pattern Recognition
+  - **Duration**: 5-8 minutes (comprehensive analysis)
+  - **Optimization**: complete validation for maximum quality and compliance
+  - **Success Rate**: ≥98% (maximum quality and thoroughness)
+  **Use Cases**:
+  - Large documentation systems
+  - Ecosystem-wide validation
+  - Pattern enforcement across multiple files
 
 ---
 
@@ -219,62 +231,63 @@ complex_validation_execution:
 
 **Execution Protocol**:
 
-```yaml
-step_1_protocol:
-  initialization:
-    communication: "Send WRITING_STANDARDS_VALIDATION_INITIALIZATION to Principal agent"
-    input_dependencies: ["Target document path", "Validation scope", "Quality thresholds"]
-    milestones: ["Standards loading", "Mathematical foundation", "Validation environment setup"]
-    estimated_duration: "30-60 seconds depending on document complexity"
-    
-  step_1_environment_setup:
-    action: "Environment Setup: Load writing standards framework and establish validation baseline"
-    input: "Target document path and validation parameters"
-    mathematical_foundation: "Source context engineering formulas for quantitative validation"
-    communication: "WRITING_STANDARDS_FRAMEWORK_LOADING"
-    tool_call_requirement: "MANDATORY Bash tool execution for mathematical foundation setup"
-    
-  step_2_standards_loading:
-    action: "BASH TOOL EXECUTION REQUIRED: Load writing standards framework"
-    tool_call_requirement: "Execute validation environment setup scripts"
-    script_based_deployment:
-      mathematical_foundation:
-        approach: "Load mathematical formula library for quantitative validation"
-        tools_required: "Bash tool for script execution"
-        command_selection_algorithm: "Source context_engineering_formulas.sh"
-        dynamic_commands: ["echo 'scale=4; formula_count=42; validation_rate=95.5; formula_count * validation_rate / 100' | bc -l"]
-        mathematical_integration: "Establish quantitative baseline for all validation metrics"
-        execution_pattern: "Script-first foundation with command integration"
-        communication: "MATHEMATICAL_FOUNDATION_ESTABLISHED"
-        
-      validation_environment:
-        approach: "Setup comprehensive validation environment with standards framework"
-        tools_required: "Bash tool for environment initialization"
-        command_selection_algorithm: "Execute validation setup scripts"
-        dynamic_commands: ["git status && echo 'Environment ready'", "find docs -name '*.md' | wc -l && echo 'integrity validated'"]
-        environment_integration: "Prepare validation infrastructure with writing standards"
-        execution_pattern: "Real script execution with evidence collection"
-        communication: "VALIDATION_ENVIRONMENT_READY"
-        
-  step_3_standards_framework_loading:
-    action: "READ TOOL EXECUTION REQUIRED: Load writing standards documentation"
-    tool_call_requirement: "Load comprehensive writing standards framework"
-    communication: "STANDARDS_FRAMEWORK_LOADING"
-    read_requirements: "Load docs/writing-standards.md for validation criteria"
-    integration: "Combine mathematical foundation with standards framework"
-    evidence_required: "User must see actual standards loading and framework establishment"
-    
-  step_4_validation_baseline:
-    action: "Establish Validation Baseline: Configure validation parameters with mathematical precision"
-    communication: "VALIDATION_BASELINE_ESTABLISHED"
-    baseline_requirements: "Mathematical foundation + Standards framework + Environment setup"
-    coordination: "Integrate all foundation components for validation execution"
-    input: "Target document ready for validation analysis"
-    
-  phase_completion:
-    communication: "STEP_1_FOUNDATION_COMPLETE - Handoff to validation execution"
-    handoff_data: "Mathematical foundation, standards framework, validation environment ready"
-```
+**Step 1 Protocol**:
+  **Initialization**:
+    - **Communication**: Send WRITING_STANDARDS_VALIDATION_INITIALIZATION to Principal agent
+    **Input Dependencies**:
+    - Target document path
+    - Validation scope
+    - Quality thresholds
+    **Milestones**:
+    - Standards loading
+    - Mathematical foundation
+    - Validation environment setup
+    - **Estimated Duration**: 30-60 seconds depending on document complexity
+  **Step 1 Environment Setup**:
+    - **Action**: Environment Setup: Load writing standards framework and establish validation baseline
+    - **Input**: Target document path and validation parameters
+    - **Mathematical Foundation**: Source context engineering formulas for quantitative validation
+    - **Communication**: WRITING_STANDARDS_FRAMEWORK_LOADING
+    - **Tool Call Requirement**: MANDATORY Bash tool execution for mathematical foundation setup
+  **Step 2 Standards Loading**:
+    - **Action**: BASH TOOL EXECUTION REQUIRED: Load writing standards framework
+    - **Tool Call Requirement**: Execute validation environment setup scripts
+    **Script Based Deployment**:
+      **Mathematical Foundation**:
+        - **Approach**: Load mathematical formula library for quantitative validation
+        - **Tools Required**: Bash tool for script execution
+        - **Command Selection Algorithm**: Source context_engineering_formulas.sh
+        **Dynamic Commands**:
+        - echo 'scale=4; formula_count=42; validation_rate=95.5; formula_count * validation_rate / 100' | bc -l
+        - **Mathematical Integration**: Establish quantitative baseline for all validation metrics
+        - **Execution Pattern**: Script-first foundation with command integration
+        - **Communication**: MATHEMATICAL_FOUNDATION_ESTABLISHED
+      **Validation Environment**:
+        - **Approach**: Setup comprehensive validation environment with standards framework
+        - **Tools Required**: Bash tool for environment initialization
+        - **Command Selection Algorithm**: Execute validation setup scripts
+        **Dynamic Commands**:
+        - git status && echo 'Environment ready'
+        - find docs -name '*.md' | wc -l && echo 'integrity validated'
+        - **Environment Integration**: Prepare validation infrastructure with writing standards
+        - **Execution Pattern**: Real script execution with evidence collection
+        - **Communication**: VALIDATION_ENVIRONMENT_READY
+  **Step 3 Standards Framework Loading**:
+    - **Action**: READ TOOL EXECUTION REQUIRED: Load writing standards documentation
+    - **Tool Call Requirement**: Load comprehensive writing standards framework
+    - **Communication**: STANDARDS_FRAMEWORK_LOADING
+    - **Read Requirements**: Load docs/writing-standards.md for validation criteria
+    - **Integration**: Combine mathematical foundation with standards framework
+    - **Evidence Required**: User must see actual standards loading and framework establishment
+  **Step 4 Validation Baseline**:
+    - **Action**: Establish Validation Baseline: Configure validation parameters with mathematical precision
+    - **Communication**: VALIDATION_BASELINE_ESTABLISHED
+    - **Baseline Requirements**: Mathematical foundation + Standards framework + Environment setup
+    - **Coordination**: Integrate all foundation components for validation execution
+    - **Input**: Target document ready for validation analysis
+  **Phase Completion**:
+    - **Communication**: STEP_1_FOUNDATION_COMPLETE - Handoff to validation execution
+    - **Handoff Data**: Mathematical foundation, standards framework, validation environment ready
 
 **Communication Features**:
 - **Mathematical Foundation Integration**: Real script execution for quantitative validation baseline

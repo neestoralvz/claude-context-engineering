@@ -23,21 +23,18 @@
 ## 📋 Command Specification
 
 ### **Core Verification Function**
-```yaml
-zero_root_file_verification:
-  command_name: "zero-root-verify"
-  priority: "MAXIMUM"
-  execution_phase: "post-action"
-  integration_type: "shared_component"
-  
-  verification_steps:
-    1_root_scan: "Scan project root directory for unauthorized files"
-    2_exception_check: "Verify only CLAUDE.md and README.md present in root"
-    3_violation_detection: "Identify any files violating Zero-Root Policy"
-    4_automatic_resolution: "Auto-relocate violations to appropriate folders"
-    5_compliance_confirmation: "Confirm complete Zero-Root Policy compliance"
-    6_transparency_announcement: "P56 announcement of verification results"
-```
+**Zero Root File Verification**:
+  - **Command Name**: zero-root-verify
+  - **Priority**: MAXIMUM
+  - **Execution Phase**: post-action
+  - **Integration Type**: shared_component
+  **Verification Steps**:
+    - **1 Root Scan**: Scan project root directory for unauthorized files
+    - **2 Exception Check**: Verify only CLAUDE.md and README.md present in root
+    - **3 Violation Detection**: Identify any files violating Zero-Root Policy
+    - **4 Automatic Resolution**: Auto-relocate violations to appropriate folders
+    - **5 Compliance Confirmation**: Confirm complete Zero-Root Policy compliance
+    - **6 Transparency Announcement**: P56 announcement of verification results
 
 ### **Integration Pattern**
 ```markdown
@@ -61,70 +58,60 @@ zero-root-verify --post-action --transparency
 ## 🛡️ Verification Algorithm
 
 ### **Detection Logic**
-```yaml
-verification_algorithm:
-  root_directory_scan:
-    target: "project_root_directory"
-    permitted_files: ["CLAUDE.md", "README.md"]
-    scan_method: "comprehensive_file_enumeration"
-    hidden_files: "include_in_scan"
-    
-  violation_classification:
-    handoff_files: "HANDOFF_*.md → relocate to docs/operations/handoffs/"
-    report_files: "*_REPORT.md, *_ANALYSIS.md → relocate to docs/operations/reports/"
-    output_files: "temporary results → relocate to docs/operations/outputs/"
-    script_files: "*.py, *.sh, *.js → relocate to /scripts/"
-    documentation: "*.md docs → relocate to appropriate /docs/ subfolder"
-    
-  automatic_resolution:
-    folder_creation: "Create target folders if they don't exist"
-    file_relocation: "Move files to appropriate locations"
-    reference_updates: "Update any broken references after moves"
-    compliance_validation: "Re-verify zero violations after resolution"
-```
+**Verification Algorithm**:
+  **Root Directory Scan**:
+    - **Target**: project_root_directory
+    **Permitted Files**:
+    - CLAUDE.md
+    - README.md
+    - **Scan Method**: comprehensive_file_enumeration
+    - **Hidden Files**: include_in_scan
+  **Violation Classification**:
+    - **Handoff Files**: HANDOFF_*.md → relocate to docs/operations/handoffs/
+    - **Report Files**: *_REPORT.md, *_ANALYSIS.md → relocate to docs/operations/reports/
+    - **Output Files**: temporary results → relocate to docs/operations/outputs/
+    - **Script Files**: *.py, *.sh, *.js → relocate to /scripts/
+    - **Documentation**: *.md docs → relocate to appropriate /docs/ subfolder
+  **Automatic Resolution**:
+    - **Folder Creation**: Create target folders if they don't exist
+    - **File Relocation**: Move files to appropriate locations
+    - **Reference Updates**: Update any broken references after moves
+    - **Compliance Validation**: Re-verify zero violations after resolution
 
 ### **P56 Transparency Framework**
-```yaml
-transparency_announcements:
-  verification_start:
-    message: "🚨 ZERO-ROOT VERIFICATION: Analyzing project structure for compliance..."
-    detail_level: "high"
-    timing: "immediate"
-    
-  scan_results:
-    compliant: "✅ COMPLIANCE VERIFIED: Zero-Root File Policy maintained"
-    violations_found: "⚠️ VIOLATIONS DETECTED: [count] files require relocation"
-    processing: "🔄 AUTO-RELOCATING: Moving files to appropriate locations"
-    
-  resolution_complete:
-    success: "✅ COMPLIANCE RESTORED: All files properly organized"
-    locations: "📁 FILES RELOCATED: [file] → [destination]"
-    final_status: "🛡️ ZERO-ROOT POLICY: 100% compliance achieved"
-```
+**Transparency Announcements**:
+  **Verification Start**:
+    - **Message**: 🚨 ZERO-ROOT VERIFICATION: Analyzing project structure for compliance...
+    - **Detail Level**: high
+    - **Timing**: immediate
+  **Scan Results**:
+    - **Compliant**: ✅ COMPLIANCE VERIFIED: Zero-Root File Policy maintained
+    - **Violations Found**: ⚠️ VIOLATIONS DETECTED: [count] files require relocation
+    - **Processing**: 🔄 AUTO-RELOCATING: Moving files to appropriate locations
+  **Resolution Complete**:
+    - **Success**: ✅ COMPLIANCE RESTORED: All files properly organized
+    - **Locations**: 📁 FILES RELOCATED: [file] → [destination]
+    - **Final Status**: 🛡️ ZERO-ROOT POLICY: 100% compliance achieved
 
 ---
 
 ## 🔄 Command Integration Targets
 
 ### **High-Priority Commands (MANDATORY Integration)**
-```yaml
-critical_integration:
-  documentation_commands:
-    - "/sync-docs": "Verify no temp files in root after documentation sync"
-    - "/update-living-docs": "Ensure living docs properly placed in /docs/"
-    - "/handoff": "Force HANDOFF_*.md to docs/operations/handoffs/ directory"
-    
-  analysis_commands:
-    - "/verify-flow": "Output validation reports to docs/operations/reports/"
-    - "/mathematical-verification": "Results to docs/operations/outputs/ or docs/operations/reports/"
-    - "/validate-system": "Compliance reports to docs/operations/reports/"
-    - "/orchestrate": "Verify all generated orchestration files"
-    
-  file_generation:
-    - "Write tool usage": "Pre-validate target path compliance"
-    - "TodoWrite completion": "Trigger verification on task completion"
-    - "Any file creation": "Post-execution verification mandatory"
-```
+**Critical Integration**:
+  **Documentation Commands**:
+  - {'/sync-docs': 'Verify no temp files in root after documentation sync'}
+  - {'/update-living-docs': 'Ensure living docs properly placed in /docs/'}
+  - {'/handoff': 'Force HANDOFF_*.md to docs/operations/handoffs/ directory'}
+  **Analysis Commands**:
+  - {'/verify-flow': 'Output validation reports to docs/operations/reports/'}
+  - {'/mathematical-verification': 'Results to docs/operations/outputs/ or docs/operations/reports/'}
+  - {'/validate-system': 'Compliance reports to docs/operations/reports/'}
+  - {'/orchestrate': 'Verify all generated orchestration files'}
+  **File Generation**:
+  - {'Write tool usage': 'Pre-validate target path compliance'}
+  - {'TodoWrite completion': 'Trigger verification on task completion'}
+  - {'Any file creation': 'Post-execution verification mandatory'}
 
 ### **Integration Implementation**
 ```bash
@@ -147,43 +134,44 @@ critical_integration:
 ## 📊 Command Parameters
 
 ### **Execution Modes**
-```yaml
-command_parameters:
-  --post-action:
-    description: "Execute as post-action verification (standard mode)"
-    usage: "zero-root-verify --post-action"
-    transparency: "enabled"
-    
-  --pre-creation:
-    description: "Execute before file creation to validate target path"
-    usage: "zero-root-verify --pre-creation --target=/path/to/file"
-    prevention: "enabled"
-    
-  --continuous:
-    description: "Background monitoring mode for real-time detection"
-    usage: "zero-root-verify --continuous --interval=30s"
-    monitoring: "enabled"
-    
-  --transparency:
-    description: "Enable P56 transparency announcements"
-    usage: "zero-root-verify --transparency"
-    announcements: "detailed"
-    
-  --auto-resolve:
-    description: "Automatically resolve violations without user intervention"
-    usage: "zero-root-verify --auto-resolve"
-    resolution: "automatic"
-```
+**Command Parameters**:
+  **--Post-Action**:
+    - **Description**: Execute as post-action verification (standard mode)
+    - **Usage**: zero-root-verify --post-action
+    - **Transparency**: enabled
+  **--Pre-Creation**:
+    - **Description**: Execute before file creation to validate target path
+    - **Usage**: zero-root-verify --pre-creation --target=/path/to/file
+    - **Prevention**: enabled
+  **--Continuous**:
+    - **Description**: Background monitoring mode for real-time detection
+    - **Usage**: zero-root-verify --continuous --interval=30s
+    - **Monitoring**: enabled
+  **--Transparency**:
+    - **Description**: Enable P56 transparency announcements
+    - **Usage**: zero-root-verify --transparency
+    - **Announcements**: detailed
+  **--Auto-Resolve**:
+    - **Description**: Automatically resolve violations without user intervention
+    - **Usage**: zero-root-verify --auto-resolve
+    - **Resolution**: automatic
 
 ### **Response Codes**
-```yaml
-exit_codes:
-  0: "SUCCESS: Zero-Root Policy compliance verified"
-  1: "VIOLATIONS_DETECTED: Files found in root requiring relocation"
-  2: "VIOLATIONS_RESOLVED: Auto-relocation completed successfully"
-  3: "MANUAL_INTERVENTION: Complex violations require user decision"
-  4: "ERROR: Verification process encountered technical issues"
-```
+
+**CRITICAL Response Classification Protocol** (MANDATORY Status Communication):
+
+**SUCCESS Responses**:
+- **Code 0**: Complete compliance - Zero violations detected (OPTIMAL status)
+- **Code 1**: Minor violations - Automatically resolved (ACCEPTABLE status)
+
+**WARNING Responses**:
+- **Code 2**: Manual intervention required - Multiple violations (ATTENTION needed)
+- **Code 3**: Path validation failed - Invalid target location (CORRECTION required)
+
+**ERROR Responses**:
+- **Code 4**: Critical violations - System integrity compromised (IMMEDIATE action)
+- **Code 5**: Verification system failure - Internal error detected (TECHNICAL support)
+
 
 ---
 
@@ -206,29 +194,25 @@ exit_codes:
 ## 🔧 Implementation Validation
 
 ### **Integration Checklist**
-```yaml
-validation_checklist:
-  command_integration:
-    - [ ] All documentation commands include zero-root-verify call
-    - [ ] All analysis commands integrated with verification
-    - [ ] TodoWrite triggers automatic verification
-    - [ ] Write tool usage includes path validation
-    - [ ] Orchestration commands verify file placement
-    
-  functionality_testing:
-    - [ ] Violation detection working correctly
-    - [ ] Automatic relocation functioning
-    - [ ] P56 transparency announcements clear
-    - [ ] No false positives in detection
-    - [ ] Performance impact minimal (≤2 seconds)
-    
-  compliance_validation:
-    - [ ] Zero unauthorized files in project root
-    - [ ] All handoffs properly routed to docs/operations/handoffs/
-    - [ ] All reports properly placed in docs/operations/reports/
-    - [ ] All outputs organized in docs/operations/outputs/
-    - [ ] Documentation maintained in /docs/ hierarchy
-```
+**Validation Checklist**:
+**Command Integration**:
+- [ ] All documentation commands include zero-root-verify call
+- [ ] All analysis commands integrated with verification
+- [ ] TodoWrite triggers automatic verification
+- [ ] Write tool usage includes path validation
+- [ ] Orchestration commands verify file placement
+**Functionality Testing**:
+- [ ] Violation detection working correctly
+- [ ] Automatic relocation functioning
+- [ ] P56 transparency announcements clear
+- [ ] No false positives in detection
+- [ ] Performance impact minimal (≤2 seconds)
+**Compliance Validation**:
+- [ ] Zero unauthorized files in project root
+- [ ] All handoffs properly routed to docs/operations/handoffs/
+- [ ] All reports properly placed in docs/operations/reports/
+- [ ] All outputs organized in docs/operations/outputs/
+- [ ] Documentation maintained in /docs/ hierarchy
 
 ---
 

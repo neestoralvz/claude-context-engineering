@@ -215,33 +215,17 @@ function coordinateVerificationCommands(verificationPlan) {
 ## 🎯 **VERIFICATION HIERARCHY SPECIFICATIONS**
 
 ### **Sub-Command Relationships**
-```yaml
-mathematical_verification:
-  orchestrates:
-    - threshold_enforcement:
-        purpose: "System compliance and threshold validation"
-        triggers: "Always for comprehensive verification"
-        output: "Threshold compliance status and violation reports"
-        thresholds: "Net Parallel Benefit ≥0.3, Domain Separation ≥2.5, Verification ROI ≥2.0"
-        source: "Consolidated from behavioral/verification/thresholds.md"
-        
-    - confidence_scoring:
-        purpose: "Multi-dimensional quality assessment"
-        triggers: "When quality assessment needed"
-        output: "Confidence scores and dimensional analysis"
-        
-    - verify_mathematics_loops:
-        purpose: "Recursive precision and convergence guarantee"
-        triggers: "When iterative validation required"
-        output: "Convergence status and precision metrics"
-
-  coordination_protocols:
-    - shared_mathematical_foundation: "Common script integration"
-    - unified_p55_p56_compliance: "Consistent tool call execution"
-    - integrated_result_synthesis: "Comprehensive verification assessment"
-    - hierarchical_quality_assurance: "Multi-level validation standards"
-    - automatic_threshold_enforcement: "Real-time threshold compliance blocking"
-```
+**Mathematical Verification**:
+  **Orchestrates**:
+  - {'threshold_enforcement': {'purpose': 'System compliance and threshold validation', 'triggers': 'Always for comprehensive verification', 'output': 'Threshold compliance status and violation reports', 'thresholds': 'Net Parallel Benefit ≥0.3, Domain Separation ≥2.5, Verification ROI ≥2.0', 'source': 'Consolidated from behavioral/verification/thresholds.md'}}
+  - {'confidence_scoring': {'purpose': 'Multi-dimensional quality assessment', 'triggers': 'When quality assessment needed', 'output': 'Confidence scores and dimensional analysis'}}
+  - {'verify_mathematics_loops': {'purpose': 'Recursive precision and convergence guarantee', 'triggers': 'When iterative validation required', 'output': 'Convergence status and precision metrics'}}
+  **Coordination Protocols**:
+  - {'shared_mathematical_foundation': 'Common script integration'}
+  - {'unified_p55_p56_compliance': 'Consistent tool call execution'}
+  - {'integrated_result_synthesis': 'Comprehensive verification assessment'}
+  - {'hierarchical_quality_assurance': 'Multi-level validation standards'}
+  - {'automatic_threshold_enforcement': 'Real-time threshold compliance blocking'}
 
 ### **Command Execution Matrix**
 

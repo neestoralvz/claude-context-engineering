@@ -173,28 +173,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-meta_core_transparency:
-  context_assessment:
-    announcement: "🔍 TRANSPARENCY: Context richness [X]% - [SUFFICIENT/ENRICHMENT_REQUIRED]"
-    evidence: "Context richness calculation with enablement readiness"
-    
-  objective_analysis:
-    announcement: "🎯 TRANSPARENCY: Objectives [MEASURABLE/NON_MEASURABLE] - [X] clarity score"
-    evidence: "Objective clarity assessment with measurability validation"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [meta_operation]"
-    evidence: "Tool selection matrix with meta-principle reasoning"
-    
-  paradigm_shift:
-    announcement: "🔄 TRANSPARENCY: Paradigm shift [REQUIRED/ACTIVE] - [CONTROL/ENABLEMENT] mode"
-    evidence: "Paradigm assessment with shift requirements and autonomy preparation"
-    
-  meta_activation:
-    announcement: "⚡ TRANSPARENCY: Meta-principle [ACTIVATED/FAILED] - [X]% autonomy level achieved"
-    evidence: "Complete meta-principle activation with autonomy metrics"
-```
+**Meta Core Transparency**:
+  **Context Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Context richness [X]% - [SUFFICIENT/ENRICHMENT_REQUIRED]
+    - **Evidence**: Context richness calculation with enablement readiness
+  **Objective Analysis**:
+    - **Announcement**: 🎯 TRANSPARENCY: Objectives [MEASURABLE/NON_MEASURABLE] - [X] clarity score
+    - **Evidence**: Objective clarity assessment with measurability validation
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [meta_operation]
+    - **Evidence**: Tool selection matrix with meta-principle reasoning
+  **Paradigm Shift**:
+    - **Announcement**: 🔄 TRANSPARENCY: Paradigm shift [REQUIRED/ACTIVE] - [CONTROL/ENABLEMENT] mode
+    - **Evidence**: Paradigm assessment with shift requirements and autonomy preparation
+  **Meta Activation**:
+    - **Announcement**: ⚡ TRANSPARENCY: Meta-principle [ACTIVATED/FAILED] - [X]% autonomy level achieved
+    - **Evidence**: Complete meta-principle activation with autonomy metrics
 
 ---
 

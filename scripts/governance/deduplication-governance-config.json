@@ -1,0 +1,102 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-07-18T00:00:00Z",
+  "framework_config": {
+    "detection_engine": {
+      "similarity_thresholds": {
+        "CRITICAL": 0.90,
+        "HIGH": 0.75,
+        "MEDIUM": 0.60,
+        "LOW": 0.45
+      },
+      "analysis_weights": {
+        "content_similarity": 0.40,
+        "function_similarity": 0.25,
+        "purpose_similarity": 0.20,
+        "description_similarity": 0.10,
+        "trigger_similarity": 0.05
+      },
+      "functional_keywords": [
+        "execute", "verify", "validate", "orchestrate", "deploy", "monitor",
+        "analyze", "optimize", "transform", "synchronize", "coordinate",
+        "thinking", "decision", "parallel", "automation", "compliance"
+      ]
+    },
+    "prevention_system": {
+      "enforcement_rules": {
+        "similarity_threshold": 0.60,
+        "function_overlap_threshold": 0.75,
+        "naming_similarity_threshold": 0.80,
+        "auto_fix_threshold": 0.90,
+        "warning_threshold": 0.45
+      },
+      "whitelist_exceptions": [
+        "template",
+        "example",
+        "demo"
+      ],
+      "blocking_enabled": true,
+      "auto_correction_enabled": true
+    },
+    "governance_integration": {
+      "enforcement_level": "STRICT",
+      "auto_fix_enabled": true,
+      "reporting_enabled": true,
+      "notifications_enabled": true,
+      "quarantine_enabled": true,
+      "admin_override_enabled": true,
+      "compliance_requirements": {
+        "p55_p56_compliance": true,
+        "zero_duplication_tolerance": true,
+        "mathematical_precision": true,
+        "evidence_collection": true
+      }
+    },
+    "monitoring_system": {
+      "scan_interval_minutes": 30,
+      "alert_email_enabled": false,
+      "dashboard_enabled": true,
+      "metrics_retention_days": 90,
+      "real_time_alerts": true,
+      "alert_thresholds": {
+        "new_duplicates_per_day": 5,
+        "similarity_trend_increase": 0.10,
+        "critical_issues_threshold": 3,
+        "system_health_threshold": 0.95
+      }
+    }
+  },
+  "integration_points": {
+    "command_registry": {
+      "path": ".claude/config/command-registry.json",
+      "sync_enabled": true,
+      "validation_required": true
+    },
+    "git_hooks": {
+      "pre_commit_validation": true,
+      "pre_push_validation": true,
+      "automated_prevention": true
+    },
+    "ci_cd_integration": {
+      "github_actions_enabled": false,
+      "automated_testing": true,
+      "deployment_blocking": true
+    }
+  },
+  "reporting_config": {
+    "output_directory": "docs/operations/reports",
+    "report_formats": ["markdown", "json"],
+    "automated_generation": true,
+    "retention_policy": {
+      "daily_reports": 30,
+      "weekly_reports": 12,
+      "monthly_reports": 12
+    }
+  },
+  "maintenance_schedule": {
+    "full_system_scan": "weekly",
+    "incremental_scan": "daily",
+    "governance_review": "monthly",
+    "threshold_calibration": "quarterly"
+  }
+}

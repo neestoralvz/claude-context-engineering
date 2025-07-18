@@ -51,25 +51,21 @@ El análisis profundo revela convergencias técnicas extraordinarias en sistemas
 ### 4. **Arquitecturas de Auto-Activación Inteligente**
 
 #### SuperClaude Auto-Activation System:
-```yaml
-wave_auto_activation:
-  complexity_threshold: 0.7
-  file_threshold: 20
-  operation_threshold: 2
-  delegation_triggers:
-    - directory_count > 7
-    - file_count > 50
-    - multi_domain > 3
-```
+**Wave Auto Activation**:
+  - **Complexity Threshold**: 0.7
+  - **File Threshold**: 20
+  - **Operation Threshold**: 2
+  **Delegation Triggers**:
+  - directory_count > 7
+  - file_count > 50
+  - multi_domain > 3
 
 #### Context Engineering Auto-Activation:
-```yaml
-decision_engine_triggers:
-  complexity_trigger: ≥ 1.0
-  confidence_trigger: < 0.7
-  parallel_trigger: ≥ 0.3 benefit
-  ecosystem_trigger: ≥ 5 commands
-```
+**Decision Engine Triggers**:
+  - **Complexity Trigger**: ≥ 1.0
+  - **Confidence Trigger**: < 0.7
+  - **Parallel Trigger**: ≥ 0.3 benefit
+  - **Ecosystem Trigger**: ≥ 5 commands
 
 **Identidad Técnica**: Ambos sistemas usan **análisis matemático automático** para determinar el nivel de sofisticación requerido, eliminando completamente la necesidad de configuración manual.
 
@@ -186,20 +182,16 @@ AGNÓSTICO A HERRAMIENTAS/PLATAFORMAS
 ### 2. **Routing Inteligente Convergente**
 
 #### SuperClaude Intelligent Routing:
-```yaml
-routing_logic:
-  confidence_based: Auto-persona activation based on confidence levels
-  pattern_recognition: Master routing table with 95% confidence patterns
-  complexity_analysis: Auto-wave activation based on complexity ≥0.7
-```
+**Routing Logic**:
+  - **Confidence Based**: Auto-persona activation based on confidence levels
+  - **Pattern Recognition**: Master routing table with 95% confidence patterns
+  - **Complexity Analysis**: Auto-wave activation based on complexity ≥0.7
 
 #### Context Engineering Intelligent Routing:
-```yaml
-decision_engine:
-  confidence_routing: "#29 Confidence-Based Routing"
-  intelligent_classification: "#50 Intelligent Request Classification"  
-  complexity_enforcement: Automatic blocking via complexity thresholds
-```
+**Decision Engine**:
+  - **Confidence Routing**: #29 Confidence-Based Routing
+  - **Intelligent Classification**: #50 Intelligent Request Classification
+  - **Complexity Enforcement**: Automatic blocking via complexity thresholds
 
 **Identidad Conceptual**: Ambos usan **análisis de confianza y complejidad** para rutear automáticamente sin intervención manual, con lógica de decisión virtualmente idéntica.
 
@@ -242,22 +234,39 @@ decision_engine:
 ### 1. **Comparación de Arquitecturas de Comandos**
 
 #### SuperClaude Command Structure:
-```yaml
-command_architecture:
-  categories: ["Development", "Analysis", "Quality", "Testing", "Documentation", "Planning", "Meta"]
-  wave_enabled: ["/analyze", "/build", "/design", "/implement", "/improve", "/task"]
-  personas: 11 specialized behaviors with auto-activation
-  mcp_integration: Native integration with 4 MCP servers
-```
+**Command Architecture**:
+  **Categories**:
+  - Development
+  - Analysis
+  - Quality
+  - Testing
+  - Documentation
+  - Planning
+  - Meta
+  **Wave Enabled**:
+  - /analyze
+  - /build
+  - /design
+  - /implement
+  - /improve
+  - /task
+  - **Personas**: 11 specialized behaviors with auto-activation
+  - **Mcp Integration**: Native integration with 4 MCP servers
 
 #### Context Engineering Command Structure:
-```yaml
-command_architecture:
-  categories: ["Core Intelligence", "Mathematical Verification", "Discovery", "Orchestration", "Context Optimization", "System Architecture", "Development Methodology", "Automation Tools"]
-  commands: 62 modular commands with auto-orchestration
-  principles: 43 universal principles guiding behavior
-  methodology: 5-phase workflow (Discover → Plan → Execute → Verify → Document)
-```
+**Command Architecture**:
+  **Categories**:
+  - Core Intelligence
+  - Mathematical Verification
+  - Discovery
+  - Orchestration
+  - Context Optimization
+  - System Architecture
+  - Development Methodology
+  - Automation Tools
+  - **Commands**: 62 modular commands with auto-orchestration
+  - **Principles**: 43 universal principles guiding behavior
+  - **Methodology**: 5-phase workflow (Discover → Plan → Execute → Verify → Document)
 
 ### 2. **Análisis de Patterns de Ejecución**
 
@@ -626,24 +635,31 @@ El **framework híbrido resultante** podría establecer los **estándares defini
 ### Anexo C: Framework Híbrido - Especificación Técnica
 
 #### Component Integration Map:
-```yaml
-hybrid_framework:
-  foundation_layer:
-    source: Context Engineering
-    components: [43_principles, 5_phase_methodology, mathematical_triggers]
-    
-  specialization_layer:
-    source: SuperClaude
-    components: [11_personas, domain_expertise, mcp_patterns]
-    
-  orchestration_layer:
-    hybrid: true
-    components: [wave_system + multi_agent, intelligent_routing, context_optimization]
-    
-  execution_layer:
-    universal: true
-    components: [tool_agnostic_execution, natural_language_commands, living_documentation]
-```
+**Hybrid Framework**:
+  **Foundation Layer**:
+    - **Source**: Context Engineering
+    **Components**:
+    - 43_principles
+    - 5_phase_methodology
+    - mathematical_triggers
+  **Specialization Layer**:
+    - **Source**: SuperClaude
+    **Components**:
+    - 11_personas
+    - domain_expertise
+    - mcp_patterns
+  **Orchestration Layer**:
+    - **Hybrid**: True
+    **Components**:
+    - wave_system + multi_agent
+    - intelligent_routing
+    - context_optimization
+  **Execution Layer**:
+    - **Universal**: True
+    **Components**:
+    - tool_agnostic_execution
+    - natural_language_commands
+    - living_documentation
 
 ---
 

@@ -159,28 +159,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-autonomous_decision_transparency:
-  complexity_assessment:
-    announcement: "🔍 TRANSPARENCY: Complexity assessed at [X]/1.0 - [STANDARD/ADVANCED] processing required"
-    evidence: "Mathematical complexity calculation with breakdown factors"
-    
-  confidence_evaluation:
-    announcement: "📊 TRANSPARENCY: Confidence level [X]/1.0 - [DIRECT/DELEGATED] execution path selected"
-    evidence: "Confidence scoring with decision rationale"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [specific_reason]"
-    evidence: "Tool selection matrix with autonomous decision logic"
-    
-  guardrail_enforcement:
-    announcement: "🛡️ TRANSPARENCY: Guardrail status - [SATISFIED/VIOLATED] - [action_taken]"
-    evidence: "Boundary checking results with enforcement actions"
-    
-  execution_completion:
-    announcement: "✅ TRANSPARENCY: Autonomous execution [SUCCESS/FAILED] - [outcome_details]"
-    evidence: "Complete execution results with autonomy metrics"
-```
+**Autonomous Decision Transparency**:
+  **Complexity Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Complexity assessed at [X]/1.0 - [STANDARD/ADVANCED] processing required
+    - **Evidence**: Mathematical complexity calculation with breakdown factors
+  **Confidence Evaluation**:
+    - **Announcement**: 📊 TRANSPARENCY: Confidence level [X]/1.0 - [DIRECT/DELEGATED] execution path selected
+    - **Evidence**: Confidence scoring with decision rationale
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [specific_reason]
+    - **Evidence**: Tool selection matrix with autonomous decision logic
+  **Guardrail Enforcement**:
+    - **Announcement**: 🛡️ TRANSPARENCY: Guardrail status - [SATISFIED/VIOLATED] - [action_taken]
+    - **Evidence**: Boundary checking results with enforcement actions
+  **Execution Completion**:
+    - **Announcement**: ✅ TRANSPARENCY: Autonomous execution [SUCCESS/FAILED] - [outcome_details]
+    - **Evidence**: Complete execution results with autonomy metrics
 
 ---
 
@@ -215,98 +209,98 @@ autonomous_decision_transparency:
 ```
 
 ### **Tool Selection Matrix for Autonomous Execution**
-```yaml
-autonomous_tool_execution:
-  read_tool:
-    usage: "Load autonomous frameworks, read configuration boundaries, analyze scope requirements"
-    announcement: "📖 Reading autonomous execution frameworks and scope definitions"
-    evidence: "Display loaded frameworks, scope boundaries, configuration settings"
-    
-  edit_tool:
-    usage: "Configure autonomous parameters, update guardrails, document autonomous decisions"
-    announcement: "✏️ Configuring autonomous execution parameters and decision frameworks"
-    evidence: "Show configuration changes, guardrail updates, decision documentation"
-    
-  bash_tool:
-    usage: "Execute autonomous validation, mathematical confidence calculations, monitoring scripts"
-    announcement: "⚡ Executing autonomous validation and confidence monitoring systems"
-    evidence: "Display validation results, confidence scores, monitoring metrics"
-    
-  task_tool:
-    usage: "Deploy autonomous execution agents, coordinate complex autonomous workflows"
-    announcement: "🤖 Deploying Task agents for autonomous execution coordination"
-    evidence: "Real-time autonomous agent progress and execution results"
-```
+**Autonomous Tool Execution**:
+  **Read Tool**:
+    - **Usage**: Load autonomous frameworks, read configuration boundaries, analyze scope requirements
+    - **Announcement**: 📖 Reading autonomous execution frameworks and scope definitions
+    - **Evidence**: Display loaded frameworks, scope boundaries, configuration settings
+  **Edit Tool**:
+    - **Usage**: Configure autonomous parameters, update guardrails, document autonomous decisions
+    - **Announcement**: ✏️ Configuring autonomous execution parameters and decision frameworks
+    - **Evidence**: Show configuration changes, guardrail updates, decision documentation
+  **Bash Tool**:
+    - **Usage**: Execute autonomous validation, mathematical confidence calculations, monitoring scripts
+    - **Announcement**: ⚡ Executing autonomous validation and confidence monitoring systems
+    - **Evidence**: Display validation results, confidence scores, monitoring metrics
+  **Task Tool**:
+    - **Usage**: Deploy autonomous execution agents, coordinate complex autonomous workflows
+    - **Announcement**: 🤖 Deploying Task agents for autonomous execution coordination
+    - **Evidence**: Real-time autonomous agent progress and execution results
 
 ### **Autonomous Execution Protocol**
-```yaml
-autonomous_execution_flow:
-  phase_1_framework_activation:
-    tool_calls: ["Read autonomous frameworks", "Read scope definitions", "Read guardrail configurations"]
-    announcement: "🔧 FRAMEWORK ACTIVATION: Loading autonomous execution frameworks and boundaries"
-    evidence: "Display loaded frameworks, scope parameters, guardrail configurations"
-    
-  phase_2_threshold_configuration:
-    tool_calls: ["Edit confidence thresholds", "Bash confidence calculations", "Mathematical validation"]
-    announcement: "🎯 THRESHOLD CONFIGURATION: Setting confidence thresholds and validation parameters"
-    evidence: "Show confidence calculations, threshold settings, validation metrics"
-    
-  phase_3_autonomous_deployment:
-    tool_calls: ["Task autonomous agent deployment", "Edit autonomous coordination", "Bash monitoring activation"]
-    announcement: "🚀 AUTONOMOUS DEPLOYMENT: Activating autonomous execution agents and monitoring"
-    evidence: "Display agent deployment, coordination protocols, monitoring systems"
-    
-  phase_4_execution_monitoring:
-    tool_calls: ["Bash real-time monitoring", "Edit decision logging", "Mathematical quality assessment"]
-    announcement: "📊 EXECUTION MONITORING: Real-time autonomous execution monitoring and quality assessment"
-    evidence: "Show monitoring data, decision logs, quality metrics"
-    
-  phase_5_adaptive_optimization:
-    tool_calls: ["Mathematical threshold adjustment", "Edit framework optimization", "Bash performance calculation"]
-    announcement: "🔄 ADAPTIVE OPTIMIZATION: Optimizing autonomous frameworks based on execution data"
-    evidence: "Display optimization results, framework adjustments, performance improvements"
-```
+**Autonomous Execution Flow**:
+  **Phase 1 Framework Activation**:
+    **Tool Calls**:
+    - Read autonomous frameworks
+    - Read scope definitions
+    - Read guardrail configurations
+    - **Announcement**: 🔧 FRAMEWORK ACTIVATION: Loading autonomous execution frameworks and boundaries
+    - **Evidence**: Display loaded frameworks, scope parameters, guardrail configurations
+  **Phase 2 Threshold Configuration**:
+    **Tool Calls**:
+    - Edit confidence thresholds
+    - Bash confidence calculations
+    - Mathematical validation
+    - **Announcement**: 🎯 THRESHOLD CONFIGURATION: Setting confidence thresholds and validation parameters
+    - **Evidence**: Show confidence calculations, threshold settings, validation metrics
+  **Phase 3 Autonomous Deployment**:
+    **Tool Calls**:
+    - Task autonomous agent deployment
+    - Edit autonomous coordination
+    - Bash monitoring activation
+    - **Announcement**: 🚀 AUTONOMOUS DEPLOYMENT: Activating autonomous execution agents and monitoring
+    - **Evidence**: Display agent deployment, coordination protocols, monitoring systems
+  **Phase 4 Execution Monitoring**:
+    **Tool Calls**:
+    - Bash real-time monitoring
+    - Edit decision logging
+    - Mathematical quality assessment
+    - **Announcement**: 📊 EXECUTION MONITORING: Real-time autonomous execution monitoring and quality assessment
+    - **Evidence**: Show monitoring data, decision logs, quality metrics
+  **Phase 5 Adaptive Optimization**:
+    **Tool Calls**:
+    - Mathematical threshold adjustment
+    - Edit framework optimization
+    - Bash performance calculation
+    - **Announcement**: 🔄 ADAPTIVE OPTIMIZATION: Optimizing autonomous frameworks based on execution data
+    - **Evidence**: Display optimization results, framework adjustments, performance improvements
 
 ### **Autonomous Task Agent Communication Bridge**
-```yaml
-autonomous_task_agent_protocol:
-  deployment_conditions:
-    - complex_autonomous_workflows: "Multi-step autonomous processes requiring coordination"
-    - continuous_monitoring: "Real-time monitoring of autonomous execution quality"
-    - adaptive_optimization: "Dynamic adjustment of autonomous parameters"
-    
-  communication_flow:
-    initialization:
-      message: "INITIALIZATION: Autonomous execution coordination for [scope]"
-      context: "Scope: [boundaries], Thresholds: [confidence_levels], Guardrails: [safety_measures]"
-      tools: ["Read", "Edit", "Bash", "Mathematical monitoring tools"]
-      
-    autonomous_updates:
-      decision_execution: "AUTONOMOUS: Executed decision [X] with confidence [Y%], outcome: [result]"
-      threshold_monitoring: "MONITORING: Confidence levels: [current], Guardrails: [status], Quality: [metrics]"
-      adaptive_adjustment: "ADAPTIVE: Adjusted threshold from [X] to [Y] based on performance data"
-      
-    completion_handoff:
-      message: "COMPLETION: Autonomous execution frameworks successfully activated"
-      results: "Decisions executed: [X], Success rate: [Y%], Optimization cycles: [Z]"
-      evidence: "Framework configuration, decision logs, performance metrics"
-```
+**Autonomous Task Agent Protocol**:
+  **Deployment Conditions**:
+  - {'complex_autonomous_workflows': 'Multi-step autonomous processes requiring coordination'}
+  - {'continuous_monitoring': 'Real-time monitoring of autonomous execution quality'}
+  - {'adaptive_optimization': 'Dynamic adjustment of autonomous parameters'}
+  **Communication Flow**:
+    **Initialization**:
+      - **Message**: INITIALIZATION: Autonomous execution coordination for [scope]
+      - **Context**: Scope: [boundaries], Thresholds: [confidence_levels], Guardrails: [safety_measures]
+      **Tools**:
+      - Read
+      - Edit
+      - Bash
+      - Mathematical monitoring tools
+    **Autonomous Updates**:
+      - **Decision Execution**: AUTONOMOUS: Executed decision [X] with confidence [Y%], outcome: [result]
+      - **Threshold Monitoring**: MONITORING: Confidence levels: [current], Guardrails: [status], Quality: [metrics]
+      - **Adaptive Adjustment**: ADAPTIVE: Adjusted threshold from [X] to [Y] based on performance data
+    **Completion Handoff**:
+      - **Message**: COMPLETION: Autonomous execution frameworks successfully activated
+      - **Results**: Decisions executed: [X], Success rate: [Y%], Optimization cycles: [Z]
+      - **Evidence**: Framework configuration, decision logs, performance metrics
 
 ### **Evidence and Transparency Requirements**
-```yaml
-p55_autonomous_evidence:
-  real_execution_only: "NO SIMULATION - All autonomous frameworks must be actually activated"
-  complete_visibility: "Users see all autonomous decisions, confidence calculations, guardrail enforcement"
-  mathematical_precision: "Confidence thresholds calculated with 4 decimal precision"
-  continuous_monitoring: "Real-time visibility into autonomous execution quality"
-  
-p56_autonomous_transparency:
-  pre_execution_announcements: "Enhanced visual announcements before autonomous framework activation"
-  continuous_progress: "Real-time updates on autonomous execution and decision quality"
-  decision_transparency: "Complete visibility into autonomous decision-making processes"
-  completion_confirmation: "Detailed activation status with autonomous framework evidence"
-  error_transparency: "Immediate error visibility with autonomous recovery actions"
-```
+**P55 Autonomous Evidence**:
+  - **Real Execution Only**: NO SIMULATION - All autonomous frameworks must be actually activated
+  - **Complete Visibility**: Users see all autonomous decisions, confidence calculations, guardrail enforcement
+  - **Mathematical Precision**: Confidence thresholds calculated with 4 decimal precision
+  - **Continuous Monitoring**: Real-time visibility into autonomous execution quality
+**P56 Autonomous Transparency**:
+  - **Pre Execution Announcements**: Enhanced visual announcements before autonomous framework activation
+  - **Continuous Progress**: Real-time updates on autonomous execution and decision quality
+  - **Decision Transparency**: Complete visibility into autonomous decision-making processes
+  - **Completion Confirmation**: Detailed activation status with autonomous framework evidence
+  - **Error Transparency**: Immediate error visibility with autonomous recovery actions
 
 ---
 

@@ -245,44 +245,35 @@
 
 ### **Rule Categories by Function**
 
-```yaml
-rule_ecosystem:
-  core_writing:
-    primary: "writing-standards-rules.md"
-    purpose: "Language, terminology, and style optimization for LLM effectiveness"
-    
-  structure_architecture:
-    primary: "command-structure-rules.md"
-    purpose: "Mandatory architectural patterns and structural requirements"
-    
-  modularization:
-    primary: "llm-modularization-rules.md"
-    purpose: "LLM-to-LLM delegation and specialist coordination protocols"
-    
-  decision_coordination:
-    primary: "decision-coordination-rules.md"
-    purpose: "Visual decision trees and systematic coordination patterns"
-    
-  philosophy_optimization:
-    primary: "philosophy-optimization-rules.md"
-    purpose: "Philosophical foundations and continuous optimization strategies"
-    
-  validation_metrics:
-    primary: "validation-metrics-rules.md"
-    purpose: "Quality assurance, mathematical validation, and performance measurement"
-    
-  compliance_execution:
-    primary: "p55-p56-compliance.md + tool-call-rules.md"
-    authority: "../technical/enhanced-command-execution.md"
-    purpose: "Unified compliance and execution standards"
-    
-  specialized_domains:
-    execution_protocols: "execution-rules.md"
-    meta_orchestration: "meta-command-rules.md"
-    content_optimization: "content-deduplication-rules.md"
-    script_integration: "script-integration-rules.md"
-    visual_communication: "visual-announcement-rules.md"
-```
+**Rule Ecosystem**:
+  **Core Writing**:
+    - **Primary**: writing-standards-rules.md
+    - **Purpose**: Language, terminology, and style optimization for LLM effectiveness
+  **Structure Architecture**:
+    - **Primary**: command-structure-rules.md
+    - **Purpose**: Mandatory architectural patterns and structural requirements
+  **Modularization**:
+    - **Primary**: llm-modularization-rules.md
+    - **Purpose**: LLM-to-LLM delegation and specialist coordination protocols
+  **Decision Coordination**:
+    - **Primary**: decision-coordination-rules.md
+    - **Purpose**: Visual decision trees and systematic coordination patterns
+  **Philosophy Optimization**:
+    - **Primary**: philosophy-optimization-rules.md
+    - **Purpose**: Philosophical foundations and continuous optimization strategies
+  **Validation Metrics**:
+    - **Primary**: validation-metrics-rules.md
+    - **Purpose**: Quality assurance, mathematical validation, and performance measurement
+  **Compliance Execution**:
+    - **Primary**: p55-p56-compliance.md + tool-call-rules.md
+    - **Authority**: ../technical/enhanced-command-execution.md
+    - **Purpose**: Unified compliance and execution standards
+  **Specialized Domains**:
+    - **Execution Protocols**: execution-rules.md
+    - **Meta Orchestration**: meta-command-rules.md
+    - **Content Optimization**: content-deduplication-rules.md
+    - **Script Integration**: script-integration-rules.md
+    - **Visual Communication**: visual-announcement-rules.md
 
 ### **Navigation Efficiency Standards** (Mathematical Validation)
 

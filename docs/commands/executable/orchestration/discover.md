@@ -3,6 +3,8 @@
 ## **🚨 BLOCKING Workflow Orchestrator: Knowledge Discovery Phase**
 **🚨 MANDATORY: Sistema WILL enforce complete knowledge discovery process with AUTOMATIC blocking of implementation-first approaches and REQUIRED exploration verification before any execution begins**
 
+**🚨 MANDATORY Compact Communication**: Auto-enforcement of Principle #82 with format `⟳ /comando → resultado 🎯 [tiempo]` and immediate blocking of verbose patterns.
+
 ---
 
 ## 🔧 P55 Script Execution Protocol

@@ -1,0 +1,76 @@
+{
+  "enhanced_p55_p56_compliance_report": {
+    "timestamp": "2025-07-18T12:51:08",
+    "version": "enhanced_v2.0",
+    "validation_type": "COMPREHENSIVE_STATISTICAL_ANALYSIS",
+    "recovery_mode": false,
+    "data_collection": {
+      "basic_tool_calls": {
+        "bash_tool_calls":        6,
+        "read_tool_calls":       29,
+        "write_tool_calls":        6,
+        "edit_tool_calls":        6,
+        "total_tool_calls": 47
+      },
+      "script_analysis": {
+        "documented_script_references": 673,
+        "mandatory_script_requirements": 101,
+        "actual_script_executions": 0,
+        "available_scripts":       80,
+        "command_script_bridges": 269
+      },
+      "transparency_analysis": {
+        "visual_announcements": 6,
+        "command_transparency_instances": 0,
+        "simulation_language_detected": 0
+      }
+    },
+    "calculated_metrics": {
+      "core_p55_p56": {
+        "tool_call_execution_ratio": 1.0000,
+        "simulation_ratio": 0,
+        "real_work_ratio": 1.0000,
+        "tool_call_percentage": "100.0000%",
+        "real_work_percentage": "100.0000%"
+      },
+      "enhanced_script_metrics": {
+        "script_execution_ratio": 0,
+        "mandatory_script_compliance": 0,
+        "command_integration_ratio": 3.3625,
+        "script_execution_percentage": "0%",
+        "mandatory_script_percentage": "0%",
+        "command_integration_percentage": "336.2500%"
+      },
+      "transparency_metrics": {
+        "transparency_ratio": .1276,
+        "command_transparency_ratio": 0,
+        "transparency_percentage": "12.7600%"
+      },
+      "overall_compliance": {
+        "compliance_factors_total": 6,
+        "compliance_factors_passed": 3,
+        "overall_compliance_ratio": .5000,
+        "overall_compliance_percentage": "50.0000%"
+      }
+    },
+    "compliance_thresholds": {
+      "tool_call_execution_minimum": "80%",
+      "real_work_minimum": "70%",
+      "script_execution_minimum": "95%",
+      "mandatory_script_minimum": "95%",
+      "command_integration_minimum": "80%",
+      "transparency_minimum": "90%"
+    },
+    "compliance_results": {
+      "tool_call_compliant": true,
+      "real_work_compliant": true,
+      "script_execution_compliant": false,
+      "mandatory_script_compliant": false,
+      "command_integration_compliant": true,
+      "transparency_compliant": false,
+      "overall_compliance": "FAILED"
+    },
+    "statistical_confidence": "95%",
+    "validation_method": "ENHANCED_PATTERN_ANALYSIS_WITH_MATHEMATICAL_THRESHOLDS"
+  }
+}

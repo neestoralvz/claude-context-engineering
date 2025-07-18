@@ -187,9 +187,10 @@ find . -name "*.md" -exec wc -l {} + |
 ```
 
 #### **YAML Conversion Pipeline**
+**YAML Conversion Command**:
 ```bash
 # Systematic YAML → P55/P56 conversion
-find . -name "*.md" -exec grep -l "```yaml" {} \; | 
+find . -name "*.md" -exec grep -l "\`\`\`yaml" {} \; | 
   xargs ./scripts/automation/yaml-to-p55.sh
 ```
 
@@ -209,9 +210,10 @@ find . -name "*.md" -exec basename {} \; |
 - **Action**: Automatic modularization suggestion
 
 #### **YAML Blocker**
-- **Trigger**: Pre-commit hook
-- **Detection**: ```yaml pattern
-- **Action**: Block commit + P55/P56 suggestion
+**Prevention Framework**:
+- **Trigger**: Pre-commit hook activation
+- **Detection**: YAML pattern identification
+- **Action**: Block commit + P55/P56 suggestion with automated conversion
 
 #### **Duplicate Preventer**
 - **Trigger**: File creation

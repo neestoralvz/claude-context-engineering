@@ -41,51 +41,12 @@ Execute the complete progressive thinking sequence (Think → Think More → Thi
 ## 📊 **PROGRESSIVE THINKING ENGINE**
 
 ### **4-Stage Thinking Architecture**
-```yaml
-progressive_thinking_framework:
-  stage_1_contextual_think:
-    focus: "Strategic understanding enriched by comprehensive context"
-    process: "Synthesize available context with initial analysis for deep comprehension"
-    input: "Provided context + Available intelligence"
-    output: "Context-enriched strategic understanding and approach options"
-    
-  stage_2_analytical_think:
-    focus: "Strategic implications leveraging full intelligence gathering" 
-    process: "Analyze strategic trade-offs, dependencies, and optimization opportunities"
-    input: "Contextual understanding + Intelligence insights + Pattern recognition"
-    output: "Strategic analysis with optimized approach recommendations"
-    
-  stage_3_strategic_think:
-    focus: "Strategic execution planning with practical implementation details"
-    process: "Design concrete strategic implementation with specific coordination"
-    input: "Strategic analysis + Available tools/commands + Context constraints"
-    output: "Executable strategic implementation plan with coordination strategy"
-    
-  stage_4_breakthrough_think:
-    focus: "Revolutionary insights and comprehensive verification strategy"
-    process: "Generate breakthrough insights and define verification approach"
-    input: "Implementation plan + Strategic objectives + Innovation requirements"
-    output: "Breakthrough insights + Comprehensive verification framework"
-```
+**Configuration Block 1**:
+
 
 ### **Thinking Integration Engine**
-```yaml
-integration_synthesis:
-  context_optimization:
-    process: "Optimize context utilization across all thinking stages"
-    validation: "Ensure context informs each progressive thinking stage effectively"
-    output: "Context-optimized thinking progression"
-    
-  insight_synthesis:
-    process: "Combine insights across thinking stages for breakthrough solutions"
-    criteria: "Strategic effectiveness, innovation potential, implementation feasibility"
-    output: "Synthesized strategic intelligence with breakthrough insights"
-    
-  strategic_coordination:
-    process: "Design optimal coordination strategy based on thinking progression"
-    optimization: "Maximize strategic efficiency while maintaining quality"
-    output: "Coordinated strategic execution framework"
-```
+**Configuration Block 2**:
+
 
 ---
 
@@ -248,24 +209,8 @@ function monitorProgressiveThinking(thinking_stages) {
 ## 🔄 **ERROR HANDLING & RECOVERY**
 
 ### **Thinking Stage Failures**
-```yaml
-failure_recovery:
-  contextual_thinking_failure:
-    strategy: "restart_with_enhanced_context_analysis"
-    adjust: "improve_context_synthesis_and_comprehension"
-    
-  analytical_thinking_failure:
-    strategy: "retry_with_simplified_analytical_approach"
-    fallback: "focus_on_core_strategic_elements"
-    
-  strategic_thinking_failure:
-    strategy: "implement_conservative_strategic_approach"
-    iterate: "up_to_2_times_before_escalation"
-    
-  breakthrough_thinking_failure:
-    strategy: "focus_on_practical_innovations_and_proven_approaches"
-    escalate: "to_strategic_thinking_completion_without_breakthrough"
-```
+**Configuration Block 3**:
+
 
 ### **Quality Recovery Protocol**
 - **Stage Quality < 80%**: Retry stage with enhanced approach

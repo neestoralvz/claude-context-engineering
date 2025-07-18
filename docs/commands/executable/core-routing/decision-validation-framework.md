@@ -120,139 +120,107 @@ When progressive-thinking is activated, display:
 ### **Quantifiable Success Criteria**
 
 **ROUTING ACCURACY VALIDATION**:
-```yaml
-routing_accuracy_metrics:
-  target_threshold: 0.95 # 95% minimum accuracy
-  measurement_method: "script_validation_via_test_trigger_system"
-  validation_frequency: "per_routing_decision"
-  success_criteria:
-    - mathematical_accuracy >= 0.95
-    - script_tests_passed >= 21/22 (95% pass rate)
-    - confidence_calibration_accuracy >= 0.90
-    - complexity_assessment_accuracy >= 0.90
-```
+**Routing Accuracy Metrics**:
+  - **Target Threshold**: 0.95
+  - **Measurement Method**: script_validation_via_test_trigger_system
+  - **Validation Frequency**: per_routing_decision
+  **Success Criteria**:
+  - mathematical_accuracy >= 0.95
+  - script_tests_passed >= 21/22 (95% pass rate)
+  - confidence_calibration_accuracy >= 0.90
+  - complexity_assessment_accuracy >= 0.90
 
 **CONFIDENCE SCORING VALIDATION**:
-```yaml
-confidence_validation:
-  calculation_method: "calculate_confidence(domain, clarity, resources)"
-  precision_requirement: 4_decimal_places
-  validation_protocol:
-    - domain_familiarity: 0.0-1.0 validated
-    - requirement_clarity: 0.0-1.0 validated  
-    - resource_availability: 0.0-1.0 validated
-    - final_score: weighted_formula_validated
-  accuracy_threshold: 0.95
-```
+**Confidence Validation**:
+  - **Calculation Method**: calculate_confidence(domain, clarity, resources)
+  - **Precision Requirement**: 4_decimal_places
+  **Validation Protocol**:
+  - {'domain_familiarity': '0.0-1.0 validated'}
+  - {'requirement_clarity': '0.0-1.0 validated'}
+  - {'resource_availability': '0.0-1.0 validated'}
+  - {'final_score': 'weighted_formula_validated'}
+  - **Accuracy Threshold**: 0.95
 
 **COMPLEXITY ASSESSMENT VALIDATION**:
-```yaml
-complexity_validation:
-  calculation_method: "calculate_complexity(objectives, dependencies, integration)"
-  max_score: 3.0
-  validation_protocol:
-    - objective_count: raw_count_validated
-    - dependency_factor: 1.0-3.0_range_validated
-    - integration_complexity: 1.0-2.0_range_validated
-    - logarithmic_calculation: mathematical_accuracy_verified
-  threshold_accuracy: 0.95
-```
+**Complexity Validation**:
+  - **Calculation Method**: calculate_complexity(objectives, dependencies, integration)
+  - **Max Score**: 3.0
+  **Validation Protocol**:
+  - {'objective_count': 'raw_count_validated'}
+  - {'dependency_factor': '1.0-3.0_range_validated'}
+  - {'integration_complexity': '1.0-2.0_range_validated'}
+  - {'logarithmic_calculation': 'mathematical_accuracy_verified'}
+  - **Threshold Accuracy**: 0.95
 
 ### **Error Handling and Recovery Protocols**
 
 **SCRIPT FAILURE RECOVERY**:
-```yaml
-script_failure_protocol:
-  detection_method: "real_time_script_monitoring"
-  immediate_actions:
-    - surface_error_immediately
-    - display_failure_context
-    - attempt_script_recovery
-    - escalate_if_recovery_fails
-  
-  recovery_sequence:
-    1. validate_script_availability
-    2. check_script_permissions
-    3. verify_formula_library_integrity
-    4. attempt_alternative_calculation_method
-    5. escalate_to_manual_intervention_if_needed
-  
-  transparency_requirements:
-    - NEVER_hide_script_failures
-    - ALWAYS_show_recovery_attempts
-    - DISPLAY_fallback_calculation_methods
-    - REPORT_escalation_triggers
-```
+**Script Failure Protocol**:
+  - **Detection Method**: real_time_script_monitoring
+  **Immediate Actions**:
+  - surface_error_immediately
+  - display_failure_context
+  - attempt_script_recovery
+  - escalate_if_recovery_fails
+  - **Recovery Sequence**: 1. validate_script_availability 2. check_script_permissions 3. verify_formula_library_integrity 4. attempt_alternative_calculation_method 5. escalate_to_manual_intervention_if_needed
+  **Transparency Requirements**:
+  - NEVER_hide_script_failures
+  - ALWAYS_show_recovery_attempts
+  - DISPLAY_fallback_calculation_methods
+  - REPORT_escalation_triggers
 
 **ROUTING DECISION VALIDATION**:
-```yaml
-routing_validation_protocol:
-  validation_stages:
-    1. mathematical_accuracy_check
-    2. script_integration_health_check
-    3. trigger_system_validation
-    4. confidence_threshold_verification
-    5. complexity_assessment_validation
-  
-  failure_conditions:
-    - routing_accuracy < 0.85
-    - script_validation_failure
-    - confidence_calculation_error
-    - complexity_assessment_failure
-    - trigger_system_malfunction
-  
-  auto_restart_protocol:
-    max_iterations: 3
-    restart_triggers:
-      - routing_accuracy_below_threshold
-      - script_integration_failure
-      - mathematical_calculation_error
-    escalation_after_failure: true
-```
+**Routing Validation Protocol**:
+  - **Validation Stages**: 1. mathematical_accuracy_check 2. script_integration_health_check 3. trigger_system_validation 4. confidence_threshold_verification 5. complexity_assessment_validation
+  **Failure Conditions**:
+  - routing_accuracy < 0.85
+  - script_validation_failure
+  - confidence_calculation_error
+  - complexity_assessment_failure
+  - trigger_system_malfunction
+  **Auto Restart Protocol**:
+    - **Max Iterations**: 3
+    **Restart Triggers**:
+    - routing_accuracy_below_threshold
+    - script_integration_failure
+    - mathematical_calculation_error
+    - **Escalation After Failure**: True
 
 ### **Testing and Quality Assurance**
 
 **MANDATORY TESTING REQUIREMENTS**:
-```yaml
-testing_requirements:
-  script_integration_tests:
-    - test_trigger_system: 22_tests_must_pass
-    - formula_library_tests: mathematical_accuracy_verified
-    - execution_engine_tests: real_calculation_verified
-  
-  behavioral_tests:
-    - announcement_protocol_compliance
-    - transparency_requirement_adherence
-    - script_execution_visualization
-    - error_handling_robustness
-  
-  performance_tests:
-    - routing_accuracy_measurement
-    - calculation_speed_benchmarks
-    - script_integration_reliability
-    - auto_restart_effectiveness
-```
+**Testing Requirements**:
+  **Script Integration Tests**:
+  - {'test_trigger_system': '22_tests_must_pass'}
+  - {'formula_library_tests': 'mathematical_accuracy_verified'}
+  - {'execution_engine_tests': 'real_calculation_verified'}
+  **Behavioral Tests**:
+  - announcement_protocol_compliance
+  - transparency_requirement_adherence
+  - script_execution_visualization
+  - error_handling_robustness
+  **Performance Tests**:
+  - routing_accuracy_measurement
+  - calculation_speed_benchmarks
+  - script_integration_reliability
+  - auto_restart_effectiveness
 
 **CONTINUOUS MONITORING**:
-```yaml
-monitoring_requirements:
-  real_time_metrics:
-    - routing_accuracy_tracking
-    - script_health_monitoring
-    - calculation_precision_tracking
-    - trigger_validation_success_rates
-  
-  alert_conditions:
-    - routing_accuracy_below_95%
-    - script_integration_failures
-    - calculation_precision_degradation
-    - trigger_system_malfunctions
-  
-  reporting_frequency:
-    - real_time: critical_failures
-    - continuous: performance_metrics
-    - periodic: trend_analysis_and_optimization
-```
+**Monitoring Requirements**:
+  **Real Time Metrics**:
+  - routing_accuracy_tracking
+  - script_health_monitoring
+  - calculation_precision_tracking
+  - trigger_validation_success_rates
+  **Alert Conditions**:
+  - routing_accuracy_below_95%
+  - script_integration_failures
+  - calculation_precision_degradation
+  - trigger_system_malfunctions
+  **Reporting Frequency**:
+  - {'real_time': 'critical_failures'}
+  - {'continuous': 'performance_metrics'}
+  - {'periodic': 'trend_analysis_and_optimization'}
 
 ---
 
@@ -275,26 +243,22 @@ monitoring_requirements:
 ### **System Integration Standards**
 
 **ECOSYSTEM INTEGRATION VALIDATION**:
-```yaml
-integration_standards:
-  decision_engine_ecosystem:
-    - confidence_scoring_integration: MANDATORY
-    - trigger_monitor_connection: REQUIRED
-    - progressive_thinking_coordination: CONDITIONAL
-    - script_system_health: CRITICAL
-  
-  cross_reference_integrity:
-    - command_relationship_mapping: VERIFIED
-    - workflow_orchestration_connections: VALIDATED
-    - behavioral_command_coordination: TESTED
-    - execution_command_integration: CONFIRMED
-  
-  backward_compatibility:
-    - existing_command_functionality: PRESERVED
-    - script_integration_continuity: MAINTAINED
-    - mathematical_formula_consistency: VERIFIED
-    - automation_protocol_compatibility: ENSURED
-```
+**Integration Standards**:
+  **Decision Engine Ecosystem**:
+  - {'confidence_scoring_integration': 'MANDATORY'}
+  - {'trigger_monitor_connection': 'REQUIRED'}
+  - {'progressive_thinking_coordination': 'CONDITIONAL'}
+  - {'script_system_health': 'CRITICAL'}
+  **Cross Reference Integrity**:
+  - {'command_relationship_mapping': 'VERIFIED'}
+  - {'workflow_orchestration_connections': 'VALIDATED'}
+  - {'behavioral_command_coordination': 'TESTED'}
+  - {'execution_command_integration': 'CONFIRMED'}
+  **Backward Compatibility**:
+  - {'existing_command_functionality': 'PRESERVED'}
+  - {'script_integration_continuity': 'MAINTAINED'}
+  - {'mathematical_formula_consistency': 'VERIFIED'}
+  - {'automation_protocol_compatibility': 'ENSURED'}
 
 ---
 

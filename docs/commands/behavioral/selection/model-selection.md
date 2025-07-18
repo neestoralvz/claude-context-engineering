@@ -246,20 +246,15 @@ function routeWithModelAwareness(command, current_model) {
 ## 💡 **USER COMMUNICATION TEMPLATES**
 
 ### **Opus Recommendation**
-```yaml
-🧠 **Deep Thinking Required**
-
-Your task involves [complexity_reason].
-
-**Recommendation**: Switch to Opus for optimal performance
-**Command**: `/model opus`
-
-This will enable:
+- 🧠 **Deep Thinking Required**
+- Your task involves [complexity_reason].
+- ****Recommendation****: Switch to Opus for optimal performance
+- ****Command****: `/model opus`
+**This Will Enable**:
 - Deeper strategic analysis
 - More comprehensive planning
 - Better handling of complexity
 - Superior problem-solving capability
-```
 
 ### **Sonnet Recommendation**
 ```text

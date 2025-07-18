@@ -1,0 +1,9 @@
+2025-07-18 13:34:30,444 - __main__ - INFO - Metrics database initialized successfully
+2025-07-18 13:34:30,444 - __main__ - INFO - Starting performance metrics monitoring
+2025-07-18 13:34:30,444 - __main__ - INFO - Started system_health collector thread
+2025-07-18 13:34:30,444 - __main__ - INFO - Started governance_metrics collector thread
+2025-07-18 13:34:30,444 - __main__ - INFO - Started performance_metrics collector thread
+2025-07-18 13:34:30,444 - __main__ - INFO - Started compliance_metrics collector thread
+2025-07-18 13:34:30,445 - __main__ - INFO - Started analysis thread
+2025-07-18 13:34:30,445 - __main__ - INFO - Started dashboard thread
+2025-07-18 13:34:30,445 - __main__ - INFO - Performance metrics monitoring started successfully

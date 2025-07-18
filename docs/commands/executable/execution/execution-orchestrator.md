@@ -101,46 +101,20 @@ function routeExecution(requirements) {
 ## 📊 **CROSS-CATEGORY COORDINATION PROTOCOLS**
 
 ### **Behavioral ↔ Executable Execution Bridge**
-```yaml
-execution_orchestrator:
-  behavioral_commands:
-    - parallel_thinking:
-        function: "Cognitive parallel strategy design"
-        triggers: "When strategic thinking needed"
-        output: "Parallel execution strategy and approach design"
-        
-    - conversation_lifecycle:
-        function: "Execution lifecycle cognitive management"
-        triggers: "When lifecycle planning needed"
-        output: "Execution lifecycle strategy and coordination plan"
-
-  executable_commands:
-    - parallel_tool_execution:
-        function: "Technical parallel tool coordination"
-        triggers: "When tool execution needed"
-        output: "Coordinated tool execution results"
-        
-    - parallel_multi_agent:
-        function: "Multi-agent deployment and coordination"
-        triggers: "When agent coordination needed"
-        output: "Coordinated multi-agent execution results"
-        
-    - strategic_git:
-        function: "Strategic git workflow execution"
-        triggers: "When git coordination needed"
-        output: "Git workflow execution and coordination"
-        
-    - git_worktrees_parallel:
-        function: "Parallel development workflow execution"
-        triggers: "When parallel development needed"
-        output: "Parallel development environment and coordination"
-
-  coordination_protocols:
-    - strategy_to_implementation_flow: "Cognitive strategy → Technical execution"
-    - implementation_to_strategy_feedback: "Technical results → Strategic refinement"
-    - bidirectional_execution_flow: "Continuous strategy-implementation optimization"
-    - unified_quality_standards: "Consistent execution quality across categories"
-```
+**Execution Orchestrator**:
+  **Behavioral Commands**:
+  - {'parallel_thinking': {'function': 'Cognitive parallel strategy design', 'triggers': 'When strategic thinking needed', 'output': 'Parallel execution strategy and approach design'}}
+  - {'conversation_lifecycle': {'function': 'Execution lifecycle cognitive management', 'triggers': 'When lifecycle planning needed', 'output': 'Execution lifecycle strategy and coordination plan'}}
+  **Executable Commands**:
+  - {'parallel_tool_execution': {'function': 'Technical parallel tool coordination', 'triggers': 'When tool execution needed', 'output': 'Coordinated tool execution results'}}
+  - {'parallel_multi_agent': {'function': 'Multi-agent deployment and coordination', 'triggers': 'When agent coordination needed', 'output': 'Coordinated multi-agent execution results'}}
+  - {'strategic_git': {'function': 'Strategic git workflow execution', 'triggers': 'When git coordination needed', 'output': 'Git workflow execution and coordination'}}
+  - {'git_worktrees_parallel': {'function': 'Parallel development workflow execution', 'triggers': 'When parallel development needed', 'output': 'Parallel development environment and coordination'}}
+  **Coordination Protocols**:
+  - {'strategy_to_implementation_flow': 'Cognitive strategy → Technical execution'}
+  - {'implementation_to_strategy_feedback': 'Technical results → Strategic refinement'}
+  - {'bidirectional_execution_flow': 'Continuous strategy-implementation optimization'}
+  - {'unified_quality_standards': 'Consistent execution quality across categories'}
 
 ---
 

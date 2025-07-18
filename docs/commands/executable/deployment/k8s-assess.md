@@ -132,31 +132,13 @@ External Dependencies: grep -c "external_links\|networks" docker-compose.yml
 **INTELLIGENT MIGRATION PLANNING**:
 
 #### **Phase 1: Foundation (2-3 weeks)**
-```yaml
-# Kubernetes Foundation Setup:
-1. Local Kubernetes environment (minikube/kind)
-2. Basic deployment manifests for 1-2 services
-3. ConfigMap and Secret management setup
-4. Basic monitoring and logging integration
-```
+**Value**: 1. Local Kubernetes environment (minikube/kind) 2. Basic deployment manifests for 1-2 services 3. ConfigMap and Secret management setup 4. Basic monitoring and logging integration
 
 #### **Phase 2: Core Services (3-4 weeks)**
-```yaml
-# Primary Application Migration:
-1. Main application services deployment
-2. Database integration with persistent volumes
-3. Service mesh implementation (if required)
-4. Load balancing and ingress configuration
-```
+**Value**: 1. Main application services deployment 2. Database integration with persistent volumes 3. Service mesh implementation (if required) 4. Load balancing and ingress configuration
 
 #### **Phase 3: Advanced Features (2-3 weeks)**
-```yaml
-# Production Optimization:
-1. Horizontal Pod Autoscaling (HPA)
-2. Advanced monitoring and alerting
-3. Backup and disaster recovery
-4. Security policies and network policies
-```
+**Value**: 1. Horizontal Pod Autoscaling (HPA) 2. Advanced monitoring and alerting 3. Backup and disaster recovery 4. Security policies and network policies
 
 ### **Cost-Benefit Analysis**
 **QUANTIFIED PROJECTIONS**:

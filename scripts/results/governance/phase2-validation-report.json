@@ -1,0 +1,387 @@
+{
+  "timestamp": "2025-07-18T13:10:05.302048",
+  "validation_time": 60.32500410079956,
+  "overall_status": "failed",
+  "overall_success_rate": 0.25,
+  "total_tests": 8,
+  "successful_tests": 2,
+  "threshold_compliance": {
+    "pre_commit_coverage": false,
+    "cicd_check_time": false,
+    "alert_delivery_time": true,
+    "remediation_success_rate": false,
+    "performance_automation": true
+  },
+  "validation_results": {
+    "component_existence": {
+      "status": "success",
+      "missing_components": [],
+      "component_status": {
+        "pre_commit_hook": {
+          "exists": true,
+          "path": "/Users/nalve/claude-context-engineering/scripts/hooks/pre-commit-governance",
+          "executable": true
+        },
+        "cicd_workflow": {
+          "exists": true,
+          "path": "/Users/nalve/claude-context-engineering/.github/workflows/governance-enforcement.yml",
+          "executable": false
+        },
+        "alert_system": {
+          "exists": true,
+          "path": "/Users/nalve/claude-context-engineering/scripts/monitoring/real-time-governance-alerts.py",
+          "executable": true
+        },
+        "remediation_framework": {
+          "exists": true,
+          "path": "/Users/nalve/claude-context-engineering/scripts/monitoring/automated-remediation-framework.py",
+          "executable": true
+        },
+        "performance_optimizer": {
+          "exists": true,
+          "path": "/Users/nalve/claude-context-engineering/scripts/monitoring/continuous-performance-optimization.py",
+          "executable": true
+        },
+        "governance_engine": {
+          "exists": true,
+          "path": "/Users/nalve/claude-context-engineering/scripts/governance/governance-engine.py",
+          "executable": false
+        }
+      },
+      "coverage": 1.0
+    },
+    "pre_commit_hooks": {
+      "status": "failed",
+      "test_results": [
+        {
+          "test": "hook_execution",
+          "status": "success",
+          "execution_time": 0.02512812614440918,
+          "output": "\u001b[0;34m\ud83d\udee1\ufe0f  Growth Governance Pre-commit Validation\u001b[0m\n=================================================================\n[13:09:04] \u001b[0;34mStarting pre-commit governance validation\u001b[0m\n[13:09:05] \u001b[1;33m\u26a0\ufe0f  No staged changes detected\u001b[0m\n",
+          "error": ""
+        },
+        {
+          "test": "file_size_validation",
+          "status": "failed",
+          "execution_time": 0.020299196243286133,
+          "violation_detected": false,
+          "output": "\u001b[0;34m\ud83d\udee1\ufe0f  Growth Governance Pre-commit Validation\u001b[0m\n=================================================================\n[13:09:05] \u001b[0;34mStarting pre-commit governance validation\u001b[0m\n[13:09:05] \u001b[1;33m\u26a0\ufe0f  No staged changes detected\u001b[0m\n"
+        },
+        {
+          "test": "technical_debt_detection",
+          "status": "failed",
+          "execution_time": 0.02165079116821289,
+          "debt_detected": false,
+          "output": "\u001b[0;34m\ud83d\udee1\ufe0f  Growth Governance Pre-commit Validation\u001b[0m\n=================================================================\n[13:09:05] \u001b[0;34mStarting pre-commit governance validation\u001b[0m\n[13:09:05] \u001b[1;33m\u26a0\ufe0f  No staged changes detected\u001b[0m\n"
+        }
+      ],
+      "coverage": 0.3333333333333333,
+      "avg_execution_time": 0.022359371185302734,
+      "meets_threshold": false
+    },
+    "cicd_integration": {
+      "status": "failed",
+      "job_coverage": 1.0,
+      "step_coverage": 0.3333333333333333,
+      "found_jobs": [
+        "governance-validation",
+        "automated-remediation",
+        "performance-monitoring"
+      ],
+      "found_steps": [
+        "governance-check"
+      ],
+      "triggers": {
+        "push": true,
+        "pull_request": true,
+        "schedule": true
+      },
+      "estimated_execution_time": 300,
+      "meets_time_threshold": false
+    },
+    "realtime_alerts": {
+      "status": "failed",
+      "test_results": [
+        {
+          "test": "startup",
+          "status": "failed",
+          "startup_time": 0.07827901840209961,
+          "output": "",
+          "error": "Traceback (most recent call last):\n  File \"/Users/nalve/claude-context-engineering/scripts/monitoring/real-time-governance-alerts.py\", line 34, in <module>\n    from email.mime.text import MimeText\nImportError: cannot import name 'MimeText' from 'email.mime.text' (/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/text.py)\n"
+        },
+        {
+          "test": "alert_delivery_performance",
+          "status": "success",
+          "delivery_time": 0.1064300537109375,
+          "alert_data": {
+            "alert_type": "governance_violation",
+            "severity": "high",
+            "title": "Test Alert",
+            "message": "Performance validation test alert",
+            "source": "validation_system"
+          },
+          "meets_threshold": true
+        },
+        {
+          "test": "multichannel_alerts",
+          "status": "success",
+          "channel_coverage": 1.0,
+          "found_channels": [
+            "console",
+            "file",
+            "dashboard",
+            "email"
+          ],
+          "required_channels": [
+            "console",
+            "file",
+            "dashboard",
+            "email"
+          ]
+        }
+      ],
+      "success_rate": 0.6666666666666666,
+      "avg_delivery_time": 0.1064300537109375,
+      "meets_delivery_threshold": true,
+      "delivery_requirement": 30.0
+    },
+    "automated_remediation": {
+      "status": "failed",
+      "test_results": [
+        {
+          "test": "framework_initialization",
+          "status": "success",
+          "init_time": 0.06085205078125,
+          "output": "\n================================================================================\nAUTOMATED REMEDIATION RESULTS\n================================================================================\nStatus: failed\nSuccess Rate: 0.0%\nExecution Time: 0.0s\n================================================================================\n",
+          "error": "2025-07-18 13:09:05,286 - __main__ - INFO - Remediation database initialized successfully\n2025-07-18 13:09:05,286 - __main__ - INFO - Default remediation configuration created\n2025-07-18 13:09:05,287 - __main__ - INFO - Analyzing 1 violations for remediation plan plan_1752865745287\n2025-07-18 13:09:05,287 - __main__ - ERROR - Failed to store remediation plan: asdict() should be called on dataclass instances\n2025-07-18 13:09:05,287 - __main__ - INFO - Remediation plan plan_1752865745287 created: 1 actions, 83.33% confidence, 180.0s estimated\n2025-07-18 13:09:05,287 - __main__ - INFO - Executing remediation plan plan_1752865745287 with 1 actions\n2025-07-18 13:09:05,287 - __main__ - INFO - Backup created for action action_1752865745287_5059: /Users/nalve/claude-context-engineering/scripts/results/governance/remediation-backups/backup_action_1752865745287_5059_20250718_130905\n2025-07-18 13:09:05,287 - __main__ - INFO - Executing action action_1752865745287_5059: modularization for file_size\n2025-07-18 13:09:05,288 - __main__ - ERROR - Action action_1752865745287_5059 failed: Source file not found\n2025-07-18 13:09:05,288 - __main__ - INFO - Remediation plan plan_1752865745287 completed: failed (0.0% success rate in 0.0s)\n"
+        },
+        {
+          "test": "remediation_strategies",
+          "status": "success",
+          "strategy_coverage": 1.0,
+          "found_strategies": [
+            "modularization",
+            "consolidation",
+            "automated_resolution",
+            "structure_optimization",
+            "format_conversion"
+          ],
+          "required_strategies": [
+            "modularization",
+            "consolidation",
+            "automated_resolution",
+            "structure_optimization",
+            "format_conversion"
+          ]
+        },
+        {
+          "test": "remediation_success_rate",
+          "status": "failed",
+          "simulated_success_rate": 0.8,
+          "successful_scenarios": 4,
+          "total_scenarios": 5,
+          "scenarios": [
+            {
+              "type": "file_size",
+              "confidence": 0.95,
+              "expected_success": true
+            },
+            {
+              "type": "duplication",
+              "confidence": 0.85,
+              "expected_success": true
+            },
+            {
+              "type": "technical_debt",
+              "confidence": 0.9,
+              "expected_success": true
+            },
+            {
+              "type": "performance",
+              "confidence": 0.75,
+              "expected_success": true
+            },
+            {
+              "type": "compliance",
+              "confidence": 0.95,
+              "expected_success": true
+            }
+          ]
+        }
+      ],
+      "success_rate": 0.6666666666666666,
+      "simulated_success_rate": 0.8,
+      "meets_success_threshold": false,
+      "success_requirement": 0.9
+    },
+    "performance_optimization": {
+      "status": "failed",
+      "test_results": [
+        {
+          "test": "optimizer_startup",
+          "status": "failed",
+          "error": "Startup timeout",
+          "startup_time": 60
+        },
+        {
+          "test": "optimization_strategies",
+          "status": "success",
+          "strategy_coverage": 1.0,
+          "found_strategies": [
+            "structure_optimization",
+            "index_creation",
+            "modularization",
+            "link_optimization"
+          ],
+          "required_strategies": [
+            "structure_optimization",
+            "index_creation",
+            "modularization",
+            "link_optimization"
+          ]
+        },
+        {
+          "test": "optimization_automation",
+          "status": "success",
+          "automation_coverage": 1.0,
+          "found_features": [
+            "continuous_monitoring",
+            "automated_optimization",
+            "real_time_metrics",
+            "self_healing"
+          ],
+          "required_features": [
+            "continuous_monitoring",
+            "automated_optimization",
+            "real_time_metrics",
+            "self_healing"
+          ]
+        }
+      ],
+      "success_rate": 0.6666666666666666,
+      "automation_coverage": 1.0,
+      "meets_automation_threshold": true,
+      "automation_requirement": 1.0
+    },
+    "system_integration": {
+      "status": "failed",
+      "integration_tests": [
+        {
+          "test": "database_integration",
+          "status": "failed",
+          "error": "Governance database not found",
+          "database_exists": false
+        },
+        {
+          "test": "configuration_consistency",
+          "status": "success",
+          "config_coverage": 0.6666666666666666,
+          "existing_configs": [
+            "scripts/governance/governance-config.json",
+            "scripts/governance/performance-config.json"
+          ],
+          "required_configs": [
+            "scripts/governance/governance-config.json",
+            "scripts/governance/alerts-config.json",
+            "scripts/governance/performance-config.json"
+          ]
+        },
+        {
+          "test": "communication_pathways",
+          "status": "success",
+          "pathway_coverage": 1.0,
+          "existing_paths": [
+            "scripts/results/governance",
+            "scripts/governance",
+            "scripts/monitoring"
+          ],
+          "required_paths": [
+            "scripts/results/governance",
+            "scripts/governance",
+            "scripts/monitoring"
+          ]
+        },
+        {
+          "test": "resource_sharing",
+          "status": "success",
+          "resource_coverage": 1.0,
+          "accessible_resources": [
+            "scripts/results/governance/governance.log",
+            "scripts/results/governance/alerts.log",
+            "scripts/results/governance/performance.log"
+          ],
+          "required_resources": [
+            "scripts/results/governance/governance.log",
+            "scripts/results/governance/alerts.log",
+            "scripts/results/governance/performance.log"
+          ]
+        }
+      ],
+      "integration_score": 0.75,
+      "successful_tests": 3,
+      "total_tests": 4
+    },
+    "end_to_end_workflow": {
+      "status": "success",
+      "workflow_results": [
+        {
+          "status": "success",
+          "violations_detected": 1,
+          "detection_method": "governance_engine",
+          "step": "violation_detection",
+          "execution_time": 2.002716064453125e-05
+        },
+        {
+          "status": "success",
+          "alerts_generated": 1,
+          "channels_used": [
+            "console",
+            "file"
+          ],
+          "step": "alert_generation",
+          "execution_time": 1.0967254638671875e-05
+        },
+        {
+          "status": "success",
+          "plans_created": 1,
+          "confidence_level": 0.85,
+          "step": "remediation_planning",
+          "execution_time": 1.0967254638671875e-05
+        },
+        {
+          "status": "success",
+          "actions_executed": 1,
+          "success_rate": 0.9,
+          "step": "automated_execution",
+          "execution_time": 1.1920928955078125e-06
+        },
+        {
+          "status": "success",
+          "metrics_collected": 5,
+          "optimization_opportunities": 1,
+          "step": "performance_monitoring",
+          "execution_time": 1.5974044799804688e-05
+        }
+      ],
+      "workflow_success_rate": 1.0,
+      "overall_execution_time": 5.91278076171875e-05,
+      "successful_steps": 5,
+      "total_steps": 5
+    }
+  },
+  "summary": {
+    "phase": "Phase 2: Preventive Enforcement Implementation",
+    "components_validated": 6,
+    "integration_validated": true,
+    "end_to_end_validated": true,
+    "requirements_met": false
+  },
+  "recommendations": [
+    "Improve pre-commit hook coverage and functionality",
+    "Enhance CI/CD workflow with missing governance steps",
+    "Optimize alert delivery performance and multi-channel support",
+    "Improve automated remediation success rate and strategy coverage",
+    "Enhance performance optimization automation and strategy implementation",
+    "Improve component integration and communication pathways"
+  ]
+}

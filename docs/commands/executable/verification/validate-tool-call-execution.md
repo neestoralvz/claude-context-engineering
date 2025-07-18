@@ -134,21 +134,15 @@ Compliance Health: [HEALTHY/DEGRADED/CRITICAL]
 📋 Usage Examples
 
 ### **System Integrity Validation**
-```yaml
-/validate-tool-call-execution "recent_execution_data" "standard_thresholds" "95_percent_confidence"
-```
+**Value**: /validate-tool-call-execution "recent_execution_data" "standard_thresholds" "95_percent_confidence"
 **Result**: P55 compliance validated, tool call execution rate 87%, zero simulation detected
 
 ### **Command Pattern Analysis**
-```yaml
-/validate-tool-call-execution "command_execution_history" "strict_thresholds" "statistical_analysis"
-```
+**Value**: /validate-tool-call-execution "command_execution_history" "strict_thresholds" "statistical_analysis"
 **Result**: Script execution rate 98%, real work ratio 85%, compliance status PASSED
 
 ### **Real-time Compliance Monitoring**
-```yaml
-/validate-tool-call-execution "live_monitoring_data" "zero_tolerance" "immediate_enforcement"
-```
+**Value**: /validate-tool-call-execution "live_monitoring_data" "zero_tolerance" "immediate_enforcement"
 **Result**: Zero tolerance enforcement active, compliance health HEALTHY, no violations detected
 
 ## 🔗 **Natural Connections**

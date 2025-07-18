@@ -190,13 +190,11 @@ function shouldUseQuickExplore(objective, context) {
 - Confidence: 0.7
 
 ### **Escalation Protocol**
-```yaml
-escalation_triggers:
-  if_complexity_exceeds_1.5: "auto-suggest /context-eng"
-  if_multiple_objectives_detected: "auto-suggest /smart-workflow"
-  if_implementation_scope_large: "auto-suggest /planning-workflow"
-  if_exploration_insufficient: "auto-trigger second round with /explore"
-```
+**Escalation Triggers**:
+  - **If Complexity Exceeds 1.5**: auto-suggest /context-eng
+  - **If Multiple Objectives Detected**: auto-suggest /smart-workflow
+  - **If Implementation Scope Large**: auto-suggest /planning-workflow
+  - **If Exploration Insufficient**: auto-trigger second round with /explore
 
 ---
 

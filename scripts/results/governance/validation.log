@@ -1,0 +1,34 @@
+2025-07-18 12:53:44,954 - __main__ - INFO - Starting complete governance system validation
+2025-07-18 12:53:44,954 - __main__ - INFO - Validating governance engine
+2025-07-18 12:53:44,979 - __main__ - INFO - Governance engine validation: 97.4%
+2025-07-18 12:53:44,979 - __main__ - INFO - Validating real-time monitor
+2025-07-18 12:53:45,002 - __main__ - INFO - Real-time monitor validation: 94.8%
+2025-07-18 12:53:45,002 - __main__ - INFO - Validating detection algorithms
+2025-07-18 12:53:45,026 - __main__ - INFO - Detection algorithms validation: 92.8%
+2025-07-18 12:53:45,026 - __main__ - INFO - Validating response protocols
+2025-07-18 12:53:45,049 - __main__ - INFO - Response protocols validation: 92.8%
+2025-07-18 12:53:45,049 - __main__ - INFO - Validating performance metrics
+2025-07-18 12:53:45,072 - __main__ - INFO - Performance metrics validation: 93.6%
+2025-07-18 12:53:45,072 - __main__ - INFO - Validating orchestration integration
+2025-07-18 12:53:45,095 - __main__ - INFO - Orchestration integration validation: 91.6%
+2025-07-18 12:53:45,095 - __main__ - INFO - Validating Principle #108 compliance
+2025-07-18 12:53:45,095 - __main__ - INFO - Principle #108 compliance validation: 91.0%
+2025-07-18 12:53:45,096 - __main__ - INFO - Validation results saved: /Users/nalve/claude-context-engineering/scripts/results/governance/validation_results.json
+2025-07-18 12:53:45,096 - __main__ - INFO - Governance validation completed in 0.14s: 93.4% overall score
+2025-07-18 13:34:02,706 - __main__ - INFO - Starting complete governance system validation
+2025-07-18 13:34:02,706 - __main__ - INFO - Validating governance engine
+2025-07-18 13:34:02,729 - __main__ - INFO - Governance engine validation: 97.4%
+2025-07-18 13:34:02,729 - __main__ - INFO - Validating real-time monitor
+2025-07-18 13:34:02,750 - __main__ - INFO - Real-time monitor validation: 94.8%
+2025-07-18 13:34:02,750 - __main__ - INFO - Validating detection algorithms
+2025-07-18 13:34:02,772 - __main__ - INFO - Detection algorithms validation: 92.8%
+2025-07-18 13:34:02,772 - __main__ - INFO - Validating response protocols
+2025-07-18 13:34:02,794 - __main__ - INFO - Response protocols validation: 92.8%
+2025-07-18 13:34:02,795 - __main__ - INFO - Validating performance metrics
+2025-07-18 13:34:02,817 - __main__ - INFO - Performance metrics validation: 93.6%
+2025-07-18 13:34:02,817 - __main__ - INFO - Validating orchestration integration
+2025-07-18 13:34:02,839 - __main__ - INFO - Orchestration integration validation: 91.6%
+2025-07-18 13:34:02,839 - __main__ - INFO - Validating Principle #108 compliance
+2025-07-18 13:34:02,839 - __main__ - INFO - Principle #108 compliance validation: 91.0%
+2025-07-18 13:34:02,840 - __main__ - INFO - Validation results saved: /Users/nalve/claude-context-engineering/scripts/results/governance/validation_results.json
+2025-07-18 13:34:02,840 - __main__ - INFO - Governance validation completed in 0.13s: 93.4% overall score

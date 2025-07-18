@@ -21,83 +21,94 @@
 ### **Command Personality Specifications**
 
 #### `/thinking` Personality Profile
-```yaml
-Behavioral_Pattern: "Deep strategic analysis with systematic decomposition"
-Decision_Framework: "Complexity threshold ≥0.9, confidence <0.7 triggers"
-Communication_Style: "Analytical, methodical, evidence-based reasoning"
-Core_Capabilities:
-  - Complex problem decomposition
-  - Strategic pattern recognition
-  - Multi-dimensional analysis
-  - Convergence validation
-Adoption_Triggers:
-  - Analysis requirements detected
-  - Strategic planning needed
-  - Complex decision points
-```
+
+**Behavioral Specifications**:
+- **Behavioral Pattern**: Deep strategic analysis with systematic decomposition
+- **Decision Framework**: Complexity threshold ≥0.9, confidence <0.7 triggers
+- **Communication Style**: Analytical, methodical, evidence-based reasoning
+
+**Core Capabilities**:
+- Complex problem decomposition
+- Strategic pattern recognition
+- Multi-dimensional analysis
+- Convergence validation
+
+**Adoption Triggers**:
+- Analysis requirements detected
+- Strategic planning needed
+- Complex decision points
 
 #### `/execute` Personality Profile
-```yaml
-Behavioral_Pattern: "Implementation-focused with P55/P56 compliance priority"
-Decision_Framework: "Action-oriented, tool execution excellence"
-Communication_Style: "Direct, systematic, results-oriented"
-Core_Capabilities:
-  - Tool execution mastery
-  - Implementation planning
-  - Progress tracking
-  - Quality validation
-Adoption_Triggers:
-  - Implementation phase detected
-  - Tool execution required
-  - Progress validation needed
-```
+
+**Behavioral Specifications**:
+- **Behavioral Pattern**: Implementation-focused with P55/P56 compliance priority
+- **Decision Framework**: Action-oriented, tool execution excellence
+- **Communication Style**: Direct, systematic, results-oriented
+
+**Core Capabilities**:
+- Tool execution mastery
+- Implementation planning
+- Progress tracking
+- Quality validation
+
+**Adoption Triggers**:
+- Implementation phase detected
+- Tool execution required
+- Progress validation needed
 
 #### `/validate` Personality Profile
-```yaml
-Behavioral_Pattern: "Mathematical precision with quality assurance focus"
-Decision_Framework: "Convergence verification, accuracy validation"
-Communication_Style: "Precise, systematic, evidence-based verification"
-Core_Capabilities:
-  - Mathematical validation
-  - Quality assurance protocols
-  - Convergence verification
-  - Accuracy measurement
-Adoption_Triggers:
-  - Validation requirements detected
-  - Quality assurance needed
-  - Mathematical verification required
-```
+
+**Behavioral Specifications**:
+- **Behavioral Pattern**: Mathematical precision with quality assurance focus
+- **Decision Framework**: Convergence verification, accuracy validation
+- **Communication Style**: Precise, systematic, evidence-based verification
+
+**Core Capabilities**:
+- Mathematical validation
+- Quality assurance protocols
+- Convergence verification
+- Accuracy measurement
+
+**Adoption Triggers**:
+- Validation requirements detected
+- Quality assurance needed
+- Mathematical verification required
 
 #### `/orchestrate` Personality Profile
-```yaml
-Behavioral_Pattern: "Coordination excellence with workflow optimization"
-Decision_Framework: "Multi-agent coordination, resource optimization"
-Communication_Style: "Coordinated, systematic, efficiency-focused"
-Core_Capabilities:
-  - Multi-agent coordination
-  - Workflow optimization
-  - Resource allocation
-  - Parallel execution management
-Adoption_Triggers:
-  - Coordination requirements detected
-  - Multi-agent orchestration needed
-  - Complex workflow management required
-```
+
+**Behavioral Specifications**:
+- **Behavioral Pattern**: Coordination excellence with workflow optimization
+- **Decision Framework**: Multi-agent coordination, resource optimization
+- **Communication Style**: Coordinated, systematic, efficiency-focused
+
+**Core Capabilities**:
+- Multi-agent coordination
+- Workflow optimization
+- Resource allocation
+- Parallel execution management
+
+**Adoption Triggers**:
+- Coordination requirements detected
+- Multi-agent orchestration needed
+- Complex workflow management required
 
 #### `/parallel-tool-execution` Personality Profile
-```yaml
-Behavioral_Pattern: "Multi-agent deployment with parallel optimization"
-Decision_Framework: "≥3 simultaneous agents, resource efficiency ≥90%"
-Communication_Style: "Parallel-focused, coordination-oriented, systematic"
-Core_Capabilities:
-  - Multi-agent spawning
-  - Parallel resource management
-  - Load balancing optimization
-  - Synthesis coordination
-Adoption_Triggers:
-  - Parallel execution detected
-  - Multi-agent requirements
-  - Complex coordination needs
+
+**Behavioral Specifications**:
+- **Behavioral Pattern**: Multi-agent deployment with parallel optimization
+- **Decision Framework**: ≥3 simultaneous agents, resource efficiency ≥90%
+- **Communication Style**: Parallel-focused, coordination-oriented, systematic
+
+**Core Capabilities**:
+- Multi-agent spawning
+- Parallel resource management
+- Load balancing optimization
+- Synthesis coordination
+
+**Adoption Triggers**:
+- Parallel execution detected
+- Multi-agent requirements
+- Complex coordination needs
 ```
 
 ---
@@ -159,48 +170,45 @@ Capabilities: "Validation tool execution, systematic testing"
 
 #### **Simple Tasks (Complexity <0.7)**
 **Mode**: Read Tool Personality Adoption
-```yaml
-Criteria:
-  - Single command capability sufficient
-  - Low complexity analysis required
-  - Direct implementation possible
-  - Minimal coordination needed
 
-Example_Usage:
-  - /thinking for strategic analysis personality adoption
-  - /execute for implementation-focused personality adoption  
-  - /validate for mathematical precision personality adoption
-```
+**Selection Criteria**:
+- Single command capability sufficient
+- Low complexity analysis required
+- Direct implementation possible
+- Minimal coordination needed
+
+**Example Usage**:
+- `/thinking` for strategic analysis personality adoption
+- `/execute` for implementation-focused personality adoption  
+- `/validate` for mathematical precision personality adoption
 
 #### **Complex Objectives (Complexity ≥0.9)**
 **Mode**: ≥3 Task Tools Multi-Agent Deployment
-```yaml
-Criteria:
-  - Multiple specialized capabilities required
-  - High complexity coordination needed
-  - Parallel execution beneficial
-  - Multi-dimensional analysis required
 
-Example_Usage:
-  - Task deployment of 3+ specialized agents
-  - Parallel analysis and implementation
-  - Multi-agent coordination and synthesis
-```
+**Selection Criteria**:
+- Multiple specialized capabilities required
+- High complexity coordination needed
+- Parallel execution beneficial
+- Multi-dimensional analysis required
+
+**Example Usage**:
+- Task deployment of 3+ specialized agents
+- Parallel analysis and implementation
+- Multi-agent coordination and synthesis
 
 #### **Hybrid Workflows (Mixed Complexity)**
 **Mode**: Read Adoption + Task Deployment Combination
-```yaml
-Criteria:
-  - Base personality adoption beneficial
-  - Specialized agent deployment also needed
-  - Sequential and parallel execution required
-  - Compound intelligence optimization
 
-Example_Usage:
-  - /orchestrate for coordination personality adoption
-  - Task deployment of specialized implementation agents
-  - Hybrid synthesis of results
-```
+**Selection Criteria**:
+- Base personality adoption beneficial
+- Specialized agent deployment also needed
+- Sequential and parallel execution required
+- Compound intelligence optimization
+
+**Example Usage**:
+- `/orchestrate` for coordination personality adoption
+- Task deployment of specialized implementation agents
+- Hybrid synthesis of results
 
 ---
 
@@ -259,33 +267,31 @@ graph TD
 ### **Resource Allocation Strategies**
 
 #### **Agent Load Balancing**
-```yaml
-Criteria:
-  - ≥90% efficiency in resource utilization
-  - Optimal agent specialization distribution
-  - Minimal context switching overhead
-  - Maximum parallel execution benefit
 
-Optimization_Patterns:
-  - Dynamic agent allocation based on task complexity
-  - Specialization matching for optimal performance
-  - Resource monitoring and automatic rebalancing
-```
+**Performance Criteria**:
+- ≥90% efficiency in resource utilization
+- Optimal agent specialization distribution
+- Minimal context switching overhead
+- Maximum parallel execution benefit
+
+**Optimization Patterns**:
+- Dynamic agent allocation based on task complexity
+- Specialization matching for optimal performance
+- Resource monitoring and automatic rebalancing
 
 #### **Context Isolation Management**
-```yaml
-Requirements:
-  - Zero cross-contamination between agent instances
-  - Complete independence of Task-spawned agents
-  - Clean personality adoption via Read tool
-  - Autonomous context management per agent
 
-Isolation_Protocols:
-  - Dedicated context per Task agent
-  - Independent execution environments
-  - Separate memory and state management
-  - Autonomous decision-making per agent
-```
+**Requirements**:
+- Zero cross-contamination between agent instances
+- Complete independence of Task-spawned agents
+- Clean personality adoption via Read tool
+- Autonomous context management per agent
+
+**Isolation Protocols**:
+- Dedicated context per Task agent
+- Independent execution environments
+- Separate memory and state management
+- Autonomous decision-making per agent
 
 ---
 

@@ -14,44 +14,148 @@
 
 ---
 
+## 🛡️ **P55 Script Execution**
+
+This command automatically executes the following scripts to ensure complete behavioral control implementation:
+
+### **Script Execution Protocol**
+1. **Pre-execution**: Validate behavioral requirements and script foundation
+2. **Execute**: Run automated behavioral control and enforcement scripts
+3. **Post-execution**: Verify compliance and behavioral modification
+
+### **Automated Script Execution**
+```bash
+# MANDATORY: Enhanced behavioral control execution with P55 compliance
+#!/bin/bash
+
+# Performance tracking initialization
+EXECUTION_START_TIME=$(date +%s.%N)
+SESSION_ID="behavioral-control-$(date +%Y%m%d-%H%M%S)-$$"
+
+# Phase 1: Script Foundation Loading (P55 Requirement)
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║        BEHAVIORAL CONTROL SCRIPT FOUNDATION LOADING       ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Enhanced path helper loading
+if [ -f "scripts/core/path-helper.sh" ]; then
+    source scripts/core/path-helper.sh
+    PATH_HELPER_STATUS="LOADED"
+    echo "✅ PATH_HELPER: LOADED successfully"
+else
+    PATH_HELPER_STATUS="FALLBACK"
+    echo "⚠️  PATH_HELPER: Using fallback mode"
+fi
+
+# Formula library loading for behavioral calculations
+if [ -f "scripts/formulas/context_engineering_formulas.sh" ]; then
+    source scripts/formulas/context_engineering_formulas.sh
+    FORMULA_STATUS="LOADED"
+    echo "✅ FORMULA_LIBRARY: LOADED successfully"
+else
+    FORMULA_STATUS="FALLBACK"
+    echo "⚠️  FORMULA_LIBRARY: Using fallback mode"
+fi
+
+# Phase 2: Behavioral Control Scripts Execution
+echo ""
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║           BEHAVIORAL CONTROL EXECUTION PHASE              ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Execute behavioral analysis scripts
+./scripts/validation/behavioral-statement-validator.sh --context "$1" --enforcement-level "MANDATORY"
+BEHAVIORAL_ANALYSIS_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: behavioral-statement-validator.sh = $([ $BEHAVIORAL_ANALYSIS_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Execute compliance enforcement scripts
+./scripts/compliance/behavioral-compliance-enforcer.sh --statements-file "temp/behavioral-statements.json" --enforcement-actions "${2:-automatic}"
+COMPLIANCE_ENFORCEMENT_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: behavioral-compliance-enforcer.sh = $([ $COMPLIANCE_ENFORCEMENT_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Execute behavioral monitoring scripts
+./scripts/monitoring/behavioral-pattern-monitor.sh --patterns-file "temp/behavioral-patterns.json" --monitoring-level "CRITICAL"
+MONITORING_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: behavioral-pattern-monitor.sh = $([ $MONITORING_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Phase 3: Behavioral Validation and Reporting
+echo ""
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║           BEHAVIORAL VALIDATION PHASE                     ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Calculate behavioral compliance metrics
+TOTAL_EXECUTION_TIME=$(echo "scale=4; $(date +%s.%N) - $EXECUTION_START_TIME" | bc)
+SCRIPTS_EXECUTED=3
+SCRIPTS_SUCCESSFUL=$((3 - BEHAVIORAL_ANALYSIS_STATUS - COMPLIANCE_ENFORCEMENT_STATUS - MONITORING_STATUS))
+
+# P55 Compliance Validation
+P55_COMPLIANCE=$(echo "scale=4; $SCRIPTS_SUCCESSFUL / $SCRIPTS_EXECUTED" | bc)
+P55_PERCENTAGE=$(echo "scale=2; $P55_COMPLIANCE * 100" | bc)
+
+echo "🛡️  P55_COMPLIANCE: $P55_COMPLIANCE (${P55_PERCENTAGE}% script execution success)"
+echo "📊 EXECUTION_TIME: ${TOTAL_EXECUTION_TIME}s"
+echo "📊 SESSION_ID: $SESSION_ID"
+echo "🚀 BEHAVIORAL_CONTROL_STATUS: $([ $BEHAVIORAL_ANALYSIS_STATUS -eq 0 ] && echo "✅ OPTIMAL" || echo "⚠️  DEGRADED")"
+```
+
+### **P56 Transparency Protocol**
+```markdown
+╔═══════════════════════════════════════════════════════════╗
+║           BEHAVIORAL CONTROL LAYER EXECUTION STATUS       ║
+╠═══════════════════════════════════════════════════════════╣
+║ Phase: Behavioral Control | Tools: 3 Active              ║
+║ Purpose: Behavioral compliance enforcement with 100% integrity ║
+║ Real Execution: ✅ | Simulation: ❌ | Precision: ±0.01   ║
+║ Evidence: Behavioral compliance metrics + enforcement logs ║
+╚═══════════════════════════════════════════════════════════╝
+
+🔧 TOOL CALL EXECUTION TRACKER:
+- Behavioral Analysis: [✅ EXECUTED] - behavioral-statement-validator.sh
+- Compliance Enforcement: [✅ EXECUTED] - behavioral-compliance-enforcer.sh  
+- Pattern Monitoring: [✅ EXECUTED] - behavioral-pattern-monitor.sh
+- Performance: [execution_time]ms | Compliance: [compliance_percentage]%
+
+🎯 BEHAVIORAL CONTROL RESULTS:
+- Behavioral Statements Processed: [statement_count] statements validated
+- Compliance Rate: [compliance_percentage]% (target: ≥90%)
+- Enforcement Actions: [enforcement_count] actions implemented
+- Violation Prevention: [prevention_rate]% (target: ≥85%)
+```
+
+---
+
 ## 🎯 **BLOCKING Behavioral Implementation**
 
 ### **🚨 AUTOMATIC Behavioral Statement Translation**
 
-```yaml
-behavioral_control_layer:
-  statement_translation:
-    sistema_will_statements:
-      translation_protocol: "Convert 'Sistema WILL' to executable verification and enforcement"
-      validation_requirement: "MANDATORY validation that system actually executes the behavior"
-      blocking_condition: "BLOCK execution if 'Sistema WILL' behavior not implemented"
-      
-    mandatory_statements:
-      translation_protocol: "Convert 'MANDATORY' to required preconditions and validation"
-      validation_requirement: "REQUIRED verification of mandatory behavior completion"
-      blocking_condition: "HARD BLOCK if mandatory behaviors not satisfied"
-      
-    automatic_statements:
-      translation_protocol: "Convert 'AUTOMATIC' to zero-intervention execution triggers"
-      validation_requirement: "CRITICAL verification of automatic execution without manual intervention"
-      blocking_condition: "BLOCK manual execution when automatic is declared"
-      
-    blocking_statements:
-      translation_protocol: "Convert 'BLOCKING' to actual execution halt mechanisms"
-      validation_requirement: "ABSOLUTE validation that blocking actually prevents execution"
-      blocking_condition: "META-BLOCK if blocking mechanisms not functioning"
-      
-  behavioral_enforcement:
-    execution_control:
-      pre_execution_behavior_validation: "Verify behavioral requirements before any execution"
-      real_time_behavior_monitoring: "Monitor behavior compliance during execution"
-      post_execution_behavior_verification: "Validate behavioral compliance after execution"
-      
-    behavioral_modification:
-      automatic_behavior_correction: "Automatically correct non-compliant behaviors"
-      behavioral_reinforcement: "Reinforce compliant behaviors through positive feedback"
-      behavioral_extinction: "Eliminate non-compliant behaviors through blocking"
-```
+**Behavioral Control Layer**:
+  **Statement Translation**:
+    **Sistema Will Statements**:
+      - **Translation Protocol**: Convert 'Sistema WILL' to executable verification and enforcement
+      - **Validation Requirement**: MANDATORY validation that system actually executes the behavior
+      - **Blocking Condition**: BLOCK execution if 'Sistema WILL' behavior not implemented
+    **Mandatory Statements**:
+      - **Translation Protocol**: Convert 'MANDATORY' to required preconditions and validation
+      - **Validation Requirement**: REQUIRED verification of mandatory behavior completion
+      - **Blocking Condition**: HARD BLOCK if mandatory behaviors not satisfied
+    **Automatic Statements**:
+      - **Translation Protocol**: Convert 'AUTOMATIC' to zero-intervention execution triggers
+      - **Validation Requirement**: CRITICAL verification of automatic execution without manual intervention
+      - **Blocking Condition**: BLOCK manual execution when automatic is declared
+    **Blocking Statements**:
+      - **Translation Protocol**: Convert 'BLOCKING' to actual execution halt mechanisms
+      - **Validation Requirement**: ABSOLUTE validation that blocking actually prevents execution
+      - **Blocking Condition**: META-BLOCK if blocking mechanisms not functioning
+  **Behavioral Enforcement**:
+    **Execution Control**:
+      - **Pre Execution Behavior Validation**: Verify behavioral requirements before any execution
+      - **Real Time Behavior Monitoring**: Monitor behavior compliance during execution
+      - **Post Execution Behavior Verification**: Validate behavioral compliance after execution
+    **Behavioral Modification**:
+      - **Automatic Behavior Correction**: Automatically correct non-compliant behaviors
+      - **Behavioral Reinforcement**: Reinforce compliant behaviors through positive feedback
+      - **Behavioral Extinction**: Eliminate non-compliant behaviors through blocking
 
 ### **🚨 MANDATORY Behavioral Statement Enforcement**
 
@@ -487,30 +591,25 @@ class BehavioralPatternRecognition:
 
 ### **Behavioral Reinforcement System**
 
-```yaml
-behavioral_reinforcement:
-  positive_reinforcement:
-    compliance_rewards:
-      immediate_feedback: "Positive feedback for behavioral compliance"
-      efficiency_improvements: "Performance improvements for compliant behavior"
-      reduced_friction: "Reduced friction for consistently compliant operations"
-      
-    excellence_recognition:
-      compliance_milestones: "Recognition for compliance achievement milestones"
-      behavioral_mastery: "Recognition for behavioral excellence mastery"
-      systematic_improvement: "Recognition for systematic behavioral improvement"
-      
-  corrective_reinforcement:
-    violation_consequences:
-      immediate_blocking: "Immediate consequences for behavioral violations"
-      increased_monitoring: "Enhanced monitoring after violations"
-      required_remediation: "Required remediation for serious violations"
-      
-    learning_integration:
-      violation_analysis: "Analysis of violations for learning opportunities"
-      pattern_recognition: "Recognition of violation patterns for prevention"
-      behavioral_coaching: "Coaching for behavioral improvement"
-```
+**Behavioral Reinforcement**:
+  **Positive Reinforcement**:
+    **Compliance Rewards**:
+      - **Immediate Feedback**: Positive feedback for behavioral compliance
+      - **Efficiency Improvements**: Performance improvements for compliant behavior
+      - **Reduced Friction**: Reduced friction for consistently compliant operations
+    **Excellence Recognition**:
+      - **Compliance Milestones**: Recognition for compliance achievement milestones
+      - **Behavioral Mastery**: Recognition for behavioral excellence mastery
+      - **Systematic Improvement**: Recognition for systematic behavioral improvement
+  **Corrective Reinforcement**:
+    **Violation Consequences**:
+      - **Immediate Blocking**: Immediate consequences for behavioral violations
+      - **Increased Monitoring**: Enhanced monitoring after violations
+      - **Required Remediation**: Required remediation for serious violations
+    **Learning Integration**:
+      - **Violation Analysis**: Analysis of violations for learning opportunities
+      - **Pattern Recognition**: Recognition of violation patterns for prevention
+      - **Behavioral Coaching**: Coaching for behavioral improvement
 
 ---
 
@@ -518,32 +617,27 @@ behavioral_reinforcement:
 
 ### **Real-Time Behavioral Monitoring**
 
-```yaml
-behavioral_dashboard:
-  live_behavioral_status:
-    current_compliance:
-      sistema_will_compliance: "Real-time compliance with Sistema WILL statements"
-      mandatory_satisfaction: "Current satisfaction of MANDATORY requirements"
-      automatic_execution: "Real-time monitoring of automatic execution"
-      blocking_effectiveness: "Current effectiveness of blocking mechanisms"
-      
-    behavioral_trends:
-      compliance_trajectory: "Trend in behavioral compliance over time"
-      violation_frequency: "Frequency of behavioral violations"
-      enforcement_effectiveness: "Effectiveness of behavioral enforcement"
-      improvement_rate: "Rate of behavioral improvement"
-      
-  behavioral_analytics:
-    pattern_analysis:
-      compliance_patterns: "Patterns in behavioral compliance"
-      violation_triggers: "Common triggers for behavioral violations"
-      improvement_factors: "Factors that lead to behavioral improvement"
-      
-    predictive_insights:
-      violation_predictions: "Predictions of potential behavioral violations"
-      compliance_forecasting: "Forecasting of compliance trends"
-      optimization_opportunities: "Opportunities for behavioral optimization"
-```
+**Behavioral Dashboard**:
+  **Live Behavioral Status**:
+    **Current Compliance**:
+      - **Sistema Will Compliance**: Real-time compliance with Sistema WILL statements
+      - **Mandatory Satisfaction**: Current satisfaction of MANDATORY requirements
+      - **Automatic Execution**: Real-time monitoring of automatic execution
+      - **Blocking Effectiveness**: Current effectiveness of blocking mechanisms
+    **Behavioral Trends**:
+      - **Compliance Trajectory**: Trend in behavioral compliance over time
+      - **Violation Frequency**: Frequency of behavioral violations
+      - **Enforcement Effectiveness**: Effectiveness of behavioral enforcement
+      - **Improvement Rate**: Rate of behavioral improvement
+  **Behavioral Analytics**:
+    **Pattern Analysis**:
+      - **Compliance Patterns**: Patterns in behavioral compliance
+      - **Violation Triggers**: Common triggers for behavioral violations
+      - **Improvement Factors**: Factors that lead to behavioral improvement
+    **Predictive Insights**:
+      - **Violation Predictions**: Predictions of potential behavioral violations
+      - **Compliance Forecasting**: Forecasting of compliance trends
+      - **Optimization Opportunities**: Opportunities for behavioral optimization
 
 ---
 

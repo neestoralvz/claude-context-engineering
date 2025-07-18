@@ -148,42 +148,36 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 **CRITICAL ENFORCEMENT**: ALL substantial Context Engineering operations REQUIRE systematic git commit documentation for 100% operational traceability and recovery capability (Authority: [Principle #84: Mandatory Commit Operations](../principles/technical-standards.md#84-mandatory-commit-operations)).
 
 **Operational Commit Requirements**:
-```yaml
-mandatory_operational_commits:
-  substantial_operation_triggers:
-    - "Operations modifying >2 files or lasting >30 minutes"
-    - "Meta-command executions (/context-eng, /orchestrate)"
-    - "System modifications (principles, commands, architecture)"
-    - "Objective completion and milestone achievements"
-    
-  triple_commit_pattern:
-    pre_operation:
-      format: "🚀 PRE-OP: [operation_name] - Starting [objective]"
-      timing: "MANDATORY before operation initiation"
-      content: |
-        Context: [current_state_description]
-        Objective: [what_will_be_accomplished]  
-        Scope: [files/systems_to_be_modified]
-        Recovery: [how_to_rollback_if_needed]
-        
-    progress_checkpoints:
-      format: "⚡ PROGRESS: [milestone] - [achievement] ([percentage]% complete)"
-      timing: "REQUIRED every 30 minutes or logical checkpoint"
-      content: |
-        Progress: [percentage_complete]% of [operation_name]
-        Completed: [specific_accomplishments]
-        Next: [next_steps_planned]
-        Status: [current_operational_status]
-        
-    post_operation:
-      format: "✅ COMPLETE: [operation_name] - [outcome_summary]"
-      timing: "MANDATORY immediately after completion"
-      content: |
-        Objective: [original_objective] → ACHIEVED
-        Changes: [summary_of_changes_made]
-        Impact: [operational_impact_and_metrics]
-        Validation: [success_criteria_met]
-```
+**Mandatory Operational Commits**:
+  **Substantial Operation Triggers**:
+  - Operations modifying >2 files or lasting >30 minutes
+  - Meta-command executions (/context-eng, /orchestrate)
+  - System modifications (principles, commands, architecture)
+  - Objective completion and milestone achievements
+  **Triple Commit Pattern**:
+    **Pre Operation**:
+      - **Format**: 🚀 PRE-OP: [operation_name] - Starting [objective]
+      - **Timing**: MANDATORY before operation initiation
+      - **Content**: Context: [current_state_description]
+Objective: [what_will_be_accomplished]  
+Scope: [files/systems_to_be_modified]
+Recovery: [how_to_rollback_if_needed]
+
+    **Progress Checkpoints**:
+      - **Format**: ⚡ PROGRESS: [milestone] - [achievement] ([percentage]% complete)
+      - **Timing**: REQUIRED every 30 minutes or logical checkpoint
+      - **Content**: Progress: [percentage_complete]% of [operation_name]
+Completed: [specific_accomplishments]
+Next: [next_steps_planned]
+Status: [current_operational_status]
+
+    **Post Operation**:
+      - **Format**: ✅ COMPLETE: [operation_name] - [outcome_summary]
+      - **Timing**: MANDATORY immediately after completion
+      - **Content**: Objective: [original_objective] → ACHIEVED
+Changes: [summary_of_changes_made]
+Impact: [operational_impact_and_metrics]
+Validation: [success_criteria_met]
 
 **Operational Commit Integration Examples**:
 

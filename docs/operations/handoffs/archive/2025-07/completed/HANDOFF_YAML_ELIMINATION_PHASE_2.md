@@ -71,11 +71,9 @@ grep -n "```yaml" docs/knowledge/principles/principle-cross-reference-network.md
 Basado en conversiones exitosas anteriores:
 ```markdown
 # ANTES (YAML)
-```yaml
-categories:
-  - technical
-  - behavioral
-```
+**Categories**:
+- technical
+- behavioral
 
 # DESPUÉS (Markdown)
 **Categories**: technical, behavioral

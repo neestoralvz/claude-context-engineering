@@ -262,13 +262,11 @@ find docs/commands/ -name "*.md" -exec bash -c 'enhance_terminology "$0"' {} \;
 ## 📊 Mathematical Validation Framework
 
 ### **Auto-Activation Triggers** (Principle #5)
-```yaml
-activation_conditions:
-  complexity_threshold: ≥0.7
-  confidence_threshold: <0.8
-  evidence_requirement: "Observable outcomes required"
-  validation_protocol: "Mathematical verification"
-```
+**Activation Conditions**:
+  - **Complexity Threshold**: ≥0.7
+  - **Confidence Threshold**: <0.8
+  - **Evidence Requirement**: Observable outcomes required
+  - **Validation Protocol**: Mathematical verification
 
 ### **Success Metrics** (Quantifiable)
 - **Performance**: [Specific measurement ±precision]
@@ -439,15 +437,13 @@ execute_with_transparency() {
 - **[Principle #82: Compact Communication Standards](../knowledge/principles/technical-standards.md#82-compact-communication-standards)** - Information density optimization
 
 ### **Principle Validation Framework**
-```yaml
-principle_compliance:
-  mathematical_activation: "Complexity ≥0.7 triggers automatic activation"
-  tool_execution: "P55 compliance with real tool usage"
-  file_organization: "Zero-Root policy with outputs/ directory structure"
-  decision_trees: "Explicit mathematical decision frameworks"
-  transparency: "P56 visual announcements and progress reporting"
-  communication: "Compact notation with maximum information density"
-```
+**Principle Compliance**:
+  - **Mathematical Activation**: Complexity ≥0.7 triggers automatic activation
+  - **Tool Execution**: P55 compliance with real tool usage
+  - **File Organization**: Zero-Root policy with outputs/ directory structure
+  - **Decision Trees**: Explicit mathematical decision frameworks
+  - **Transparency**: P56 visual announcements and progress reporting
+  - **Communication**: Compact notation with maximum information density
 ```
 
 #### **Automated Principle Integration Script**
@@ -500,29 +496,24 @@ EOF
 ## 📊 Mathematical Validation Framework
 
 ### **Precision Requirements** (4+ Decimal Places)
-```yaml
-mathematical_specifications:
-  complexity_threshold: 0.7000 ± 0.0001
-  confidence_minimum: 0.8000 ± 0.0001
-  success_rate_target: 0.9500 ± 0.0005
-  performance_optimization: 0.1500 ± 0.0010 (15% improvement minimum)
-  quality_score_minimum: 0.9800 ± 0.0002
-  
-validation_formulas:
-  effectiveness: "E = (Achieved/Target) × Weight, where Target ≥ 0.9500"
-  efficiency: "Eff = (Output/Input) × Time_Factor, target ≥ 0.8500"
-  quality: "Q = √(Accuracy² + Precision² + Completeness²), target ≥ 0.9500"
-  optimization: "O = (Current - Baseline) / Baseline, target ≥ 0.1500"
-```
+**Mathematical Specifications**:
+  - **Complexity Threshold**: 0.7000 ± 0.0001
+  - **Confidence Minimum**: 0.8000 ± 0.0001
+  - **Success Rate Target**: 0.9500 ± 0.0005
+  - **Performance Optimization**: 0.1500 ± 0.0010 (15% improvement minimum)
+  - **Quality Score Minimum**: 0.9800 ± 0.0002
+**Validation Formulas**:
+  - **Effectiveness**: E = (Achieved/Target) × Weight, where Target ≥ 0.9500
+  - **Efficiency**: Eff = (Output/Input) × Time_Factor, target ≥ 0.8500
+  - **Quality**: Q = √(Accuracy² + Precision² + Completeness²), target ≥ 0.9500
+  - **Optimization**: O = (Current - Baseline) / Baseline, target ≥ 0.1500
 
 ### **Auto-Activation Triggers** (Principle #5 Integration)
-```yaml
-activation_conditions:
-  complexity_calculation: "C = Σ(TaskComplexity × Uncertainty × Dependencies)"
-  confidence_measurement: "Conf = Experience × Validation × Evidence_Quality"
-  trigger_formula: "Activate IF C ≥ 0.7000 OR Conf < 0.8000"
-  escalation_protocol: "Auto-escalate IF C > 1.2000 OR multiple failures"
-```
+**Activation Conditions**:
+  - **Complexity Calculation**: C = Σ(TaskComplexity × Uncertainty × Dependencies)
+  - **Confidence Measurement**: Conf = Experience × Validation × Evidence_Quality
+  - **Trigger Formula**: Activate IF C ≥ 0.7000 OR Conf < 0.8000
+  - **Escalation Protocol**: Auto-escalate IF C > 1.2000 OR multiple failures
 
 ### **Evidence-Based Validation** (Quantifiable Outcomes)
 ```markdown

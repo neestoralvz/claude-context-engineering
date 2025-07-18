@@ -218,28 +218,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-quality_improvement_transparency:
-  quality_assessment:
-    announcement: "🔍 TRANSPARENCY: Quality assessed at [X]% - [FULL/TARGETED] improvement approach"
-    evidence: "Complete quality analysis with improvement strategy"
-    
-  stage_progression:
-    announcement: "📈 TRANSPARENCY: Stage [X] [DISCOVERY/PLANNING/EXECUTION/VERIFICATION] - [COMPLETE/ENHANCED]"
-    evidence: "Stage completion status with quality metrics"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [quality_operation]"
-    evidence: "Tool selection matrix with quality-specific reasoning"
-    
-  execution_validation:
-    announcement: "⚙️ TRANSPARENCY: Execution quality [X]% - [PARALLEL/SEQUENTIAL] implementation"
-    evidence: "Execution validation with implementation approach"
-    
-  verification_results:
-    announcement: "✅ TRANSPARENCY: Verification [SUCCESS/FAILURE] - [X]% improvement achieved"
-    evidence: "Mathematical verification with improvement metrics"
-```
+**Quality Improvement Transparency**:
+  **Quality Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Quality assessed at [X]% - [FULL/TARGETED] improvement approach
+    - **Evidence**: Complete quality analysis with improvement strategy
+  **Stage Progression**:
+    - **Announcement**: 📈 TRANSPARENCY: Stage [X] [DISCOVERY/PLANNING/EXECUTION/VERIFICATION] - [COMPLETE/ENHANCED]
+    - **Evidence**: Stage completion status with quality metrics
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [quality_operation]
+    - **Evidence**: Tool selection matrix with quality-specific reasoning
+  **Execution Validation**:
+    - **Announcement**: ⚙️ TRANSPARENCY: Execution quality [X]% - [PARALLEL/SEQUENTIAL] implementation
+    - **Evidence**: Execution validation with implementation approach
+  **Verification Results**:
+    - **Announcement**: ✅ TRANSPARENCY: Verification [SUCCESS/FAILURE] - [X]% improvement achieved
+    - **Evidence**: Mathematical verification with improvement metrics
 
 ---
 
@@ -408,11 +402,7 @@ Overall_Quality = (Density + Compliance + Accuracy) / 3 ≥ 0.90
 ```
 
 **Success Validation**:
-```yaml
-Improvement_Rate = (Post_Quality - Pre_Quality) / Pre_Quality ≥ 0.70
-Execution_Success = All_Stages_Completed AND All_Thresholds_Met
-Pattern_Crystallization = Success_Rate ≥ 0.85 AND Usage_Count ≥ 3
-```
+**Value**: Improvement_Rate = (Post_Quality - Pre_Quality) / Pre_Quality ≥ 0.70 Execution_Success = All_Stages_Completed AND All_Thresholds_Met Pattern_Crystallization = Success_Rate ≥ 0.85 AND Usage_Count ≥ 3
 
 ## Command History
 

@@ -1,0 +1,33 @@
+{
+  "thresholds": {
+    "cognitive_steps_max": 2.5,
+    "access_time_max": 30.0,
+    "memory_usage_max": 100.0,
+    "file_size_optimal": 800,
+    "link_density_max": 0.15,
+    "navigation_depth_max": 3,
+    "optimization_interval": 300,
+    "monitoring_interval": 60,
+    "alert_threshold": 0.1
+  },
+  "strategies": {
+    "navigation": "structure_optimization",
+    "memory": "content_consolidation",
+    "access": "index_creation",
+    "file_size": "modularization",
+    "cross_reference": "link_optimization"
+  },
+  "monitoring": {
+    "enabled": true,
+    "interval": 60,
+    "optimization_interval": 300,
+    "auto_optimize": true,
+    "alert_on_degradation": true
+  },
+  "optimization": {
+    "enabled": true,
+    "aggressive_mode": false,
+    "backup_before_optimization": true,
+    "validate_improvements": true
+  }
+}

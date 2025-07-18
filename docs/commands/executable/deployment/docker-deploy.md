@@ -72,59 +72,54 @@ Load-based scaling: CPU/Memory thresholds → automatic adjustment
 
 ### **Local Development Deployment**
 **DEVELOPER-OPTIMIZED CONFIGURATION**:
-```yaml
-# Development overrides:
-version: '3.8'
-services:
-  app:
-    build: .
-    volumes:
-      - .:/app  # Hot reload support
-    environment:
-      - DEBUG=true
-      - LOG_LEVEL=debug
-    ports:
-      - "${PORT:-3000}:3000"
-```
+- **Version**: 3.8
+**Services**:
+  **App**:
+    - **Build**: .
+    **Volumes**:
+    - .:/app
+    **Environment**:
+    - DEBUG=true
+    - LOG_LEVEL=debug
+    **Ports**:
+    - ${PORT:-3000}:3000
 
 ### **Staging Environment Deployment**
 **PRODUCTION-LIKE TESTING**:
-```yaml
-# Staging configuration:
-services:
-  app:
-    image: ${APP_NAME}:${VERSION}
-    replicas: 2
-    environment:
-      - NODE_ENV=staging
-      - MONITORING=enabled
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-```
+**Services**:
+  **App**:
+    - **Image**: ${APP_NAME}:${VERSION}
+    - **Replicas**: 2
+    **Environment**:
+    - NODE_ENV=staging
+    - MONITORING=enabled
+    **Healthcheck**:
+      **Test**:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:3000/api/health
+      - **Interval**: 30s
+      - **Timeout**: 10s
+      - **Retries**: 3
 
 ### **Production Environment Deployment**
 **HIGH-AVAILABILITY CONFIGURATION**:
-```yaml
-# Production configuration:
-services:
-  app:
-    image: ${APP_NAME}:${VERSION}
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-        max_attempts: 3
-      resources:
-        limits:
-          memory: 512M
-          cpus: '0.5'
-    environment:
-      - NODE_ENV=production
-      - SECURITY_HARDENING=enabled
-```
+**Services**:
+  **App**:
+    - **Image**: ${APP_NAME}:${VERSION}
+    **Deploy**:
+      - **Replicas**: 3
+      **Restart Policy**:
+        - **Condition**: on-failure
+        - **Max Attempts**: 3
+      **Resources**:
+        **Limits**:
+          - **Memory**: 512M
+          - **Cpus**: 0.5
+    **Environment**:
+    - NODE_ENV=production
+    - SECURITY_HARDENING=enabled
 
 ## 🔍 Deployment Validation Framework
 
@@ -196,17 +191,14 @@ Security vulnerabilities → Emergency container updates
 
 ### **Load Balancing Configuration**
 **AUTOMATIC LOAD DISTRIBUTION**:
-```yaml
-# Nginx load balancer integration:
-nginx:
-  image: nginx:alpine
-  ports:
-    - "80:80"
-  volumes:
-    - ./nginx.conf:/etc/nginx/nginx.conf
-  depends_on:
-    - app
-```
+**Nginx**:
+  - **Image**: nginx:alpine
+  **Ports**:
+  - 80:80
+  **Volumes**:
+  - ./nginx.conf:/etc/nginx/nginx.conf
+  **Depends On**:
+  - app
 
 ### **Database Integration**
 **MULTI-DATABASE SUPPORT**:
@@ -217,17 +209,14 @@ nginx:
 
 ### **Monitoring and Observability**
 **COMPREHENSIVE MONITORING**:
-```yaml
-# Monitoring stack:
-prometheus:
-  image: prom/prometheus
-  ports:
-    - "9090:9090"
-grafana:
-  image: grafana/grafana
-  ports:
-    - "3001:3000"
-```
+**Prometheus**:
+  - **Image**: prom/prometheus
+  **Ports**:
+  - 9090:9090
+**Grafana**:
+  - **Image**: grafana/grafana
+  **Ports**:
+  - 3001:3000
 
 ## 📈 Integration Ecosystem
 

@@ -153,12 +153,15 @@ find docs -name "*.md" -exec grep -c "reference.*integrity" {} \; | awk '{sum+=$
 ### **Input Format**
 ```markdown
 /sync-claude-md [sync_scope?] [metrics_update?] [force_manual?]
+/update-living-docs [deprecated - use /sync-claude-md with force_manual=true]
 ```
 
 **Enhanced Parameters**:
 - `sync_scope`: Automatic detection or manual specification ("full", "incremental", "metrics_only")
 - `metrics_update`: Automatic or manual metrics refresh ("auto", "force", "validate_only")
 - `force_manual`: Manual override for forced synchronization ("true" triggers complete manual validation)
+
+**Consolidated Manual Trigger**: The `/update-living-docs` functionality is now integrated as `/sync-claude-md` with `force_manual=true` for simplified manual documentation synchronization.
 
 ### **MANDATORY Unified CLAUDE.md Sync Process** (Consolidated from update-living-docs)
 1. **Registry Validation**: Validate `.claude/config/command-registry.json` for data consistency and completeness
@@ -245,7 +248,7 @@ find docs -name "*.md" -exec grep -c "reference.*integrity" {} \; | awk '{sum+=$
 
 **Report Output**: Complete synchronization report with all verification results
 
-### **4. Manual Sync Success Report**
+### **4. Manual Sync Success Report** (Enhanced from update-living-docs)
 ```text
 ╔═══════════════════════════════════════════════════════════╗
 ║               ✅ MANUAL SYNC COMPLETED                   ║
@@ -254,7 +257,20 @@ find docs -name "*.md" -exec grep -c "reference.*integrity" {} \; | awk '{sum+=$
 ║ Metrics: [✅ validated] | Cross-refs: [✅ current]       ║
 ║ Quality: [XX]% density | [XX]% clarity | [XX]% ROI      ║
 ║ Success Rate: [XX]% | Last Updated: [timestamp]         ║
+║ Crystallization: [X] candidates | Integrity: ✅ verified ║
 ╚═══════════════════════════════════════════════════════════╝
+```
+
+**Detailed Success Summary** (Inherited from update-living-docs):
+```text
+✅ CLAUDE.md synchronized successfully
+✅ [X] commands with updated metrics  
+✅ [X] pattern crystallization candidates
+✅ Success rate: [XX]% (from [X] executions)
+✅ Last updated: [timestamp]
+✅ Writing optimization applied: [XX]% density, [XX]% clarity, [XX]% ROI
+✅ No data inconsistencies detected
+✅ All cross-references aligned properly
 ```
 
 ## 📋 Project Structure Integration (Always Available)
@@ -401,4 +417,46 @@ zero-root-verify --post-action --command="sync-docs" --transparency --auto-resol
 
 ---
 
-**Unique Value**: This command provides **intelligent CLAUDE.md-specific context map optimization** with lazy loading engine, permanent philosophical core loading, specialized navigation efficiency algorithms, and **automatic Zero-Root File Policy compliance** - functionality specifically designed for maintaining ultra-efficient context maps with perfect file organization that no other command provides.
+## 📋 Manual Documentation Sync Usage (Consolidated from update-living-docs)
+
+### **Simple Manual Trigger**
+```markdown
+/sync-claude-md force_manual=true
+```
+
+**When to Use Manual Sync**:
+- After major system changes or command updates
+- Before important presentations or reviews  
+- When debugging metric discrepancies in CLAUDE.md
+- To verify system consistency during development
+- During command testing and validation
+
+### **Manual Sync Validation Rules** (Inherited)
+Ensure updated documentation meets:
+- **Accuracy**: All numbers match registry exactly
+- **Currency**: Timestamps are current  
+- **Completeness**: No missing required metrics
+- **Consistency**: Cross-references align properly
+- **Quality**: ≥95% density, ≥90% clarity, ≥85% ROI
+
+### **Manual Sync Success Criteria** (Enhanced)
+- CLAUDE.md reflects current registry state
+- All living documentation is synchronized
+- No data inconsistencies detected
+- User receives clear confirmation of updates
+- Writing quality targets achieved
+- All cross-references validated and current
+- Zero-Root File Policy compliance maintained
+
+### **Integration Support** (From update-living-docs)
+This command consolidates support for:
+- **Principle #19**: Living Documentation maintenance
+- **Principle #16**: Mathematical Verification of accuracy  
+- **Principle #15**: Verification as Liberation (user can "see" system state)
+- **Principle #81**: Zero-Root File Policy compliance
+
+**Provides manual control when automatic updates need verification or troubleshooting.**
+
+---
+
+**Unique Value**: This command provides **intelligent CLAUDE.md-specific context map optimization** with lazy loading engine, permanent philosophical core loading, specialized navigation efficiency algorithms, **consolidated manual documentation sync capabilities** (merged from update-living-docs), and **automatic Zero-Root File Policy compliance** - functionality specifically designed for maintaining ultra-efficient context maps with perfect file organization that no other command provides.

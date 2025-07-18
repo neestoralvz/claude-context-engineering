@@ -7,6 +7,8 @@
 - **[#77 Universal Integration Protocol](../../../knowledge/principles/integration-ecosystem.md#77-universal-integration-protocol)** - Standardized command orchestration and workflow integration protocols
 - **[#78 API-First Architecture](../../../knowledge/principles/integration-ecosystem.md#78-api-first-architecture)** - Programmatic orchestration and command coordination framework
 
+**🚨 MANDATORY Compact Communication**: Auto-enforcement of Principle #82 with format `⟳ /comando → resultado 🎯 [tiempo]` and immediate blocking of verbose patterns.
+
 **Related Advanced Automation Principles**:
 - **[#73 Autonomous Workflow Orchestration](../../../knowledge/principles/advanced-automation.md#73-autonomous-workflow-orchestration)** - Self-managing orchestration with intelligent command coordination
 
@@ -505,32 +507,27 @@ When confidence < 50%, deploy up to 10 specialized agents:
 
 ### **MANDATORY Command Utilization Enforcement**
 
-```yaml
-ecosystem_enforcement_protocol:
-  utilization_threshold_monitoring:
-    minimum_threshold: "🚨 BLOCKING: ≥70% command utilization required for complex objectives (≥0.7 complexity)"
-    real_time_monitoring: "🚨 CONTINUOUS: Monitor ecosystem utilization in real-time with immediate alerts"
-    violation_detection: "🚨 AUTOMATIC: Detect single-command execution when orchestration required"
-    blocking_mechanisms: "🚨 MANDATORY: Block execution if utilization threshold not met"
-    
-  automatic_correction_protocols:
-    subutilization_detection: "🚨 IMMEDIATE: Alert when ecosystem subutilization patterns detected"
-    correction_activation: "🚨 AUTOMATIC: Activate additional commands to meet utilization threshold"
-    ecosystem_expansion: "🚨 MANDATORY: Expand command activation until threshold compliance achieved"
-    validation_loops: "🚨 CONTINUOUS: Validate compliance until convergence with utilization requirements"
-    
-  command_ecosystem_verification:
-    behavioral_commands: "🚨 REQUIRED: Verify activation of relevant behavioral commands (38 total)"
-    executable_commands: "🚨 REQUIRED: Verify activation of relevant executable commands (30 total)"
-    core_commands: "🚨 REQUIRED: Verify activation of relevant core commands (6 total)"
-    shared_commands: "🚨 REQUIRED: Verify activation of relevant shared commands (2 total)"
-    
-  enforcement_compliance_metrics:
-    utilization_rate_tracking: "REAL-TIME: Track actual vs required command utilization percentages"
-    blocking_event_logging: "AUTOMATIC: Log all blocking events with context and resolution details"
-    correction_success_measurement: "QUANTIFIED: Measure success rate of automatic correction protocols"
-    ecosystem_health_monitoring: "CONTINUOUS: Monitor overall ecosystem health and utilization patterns"
-```
+**Ecosystem Enforcement Protocol**:
+  **Utilization Threshold Monitoring**:
+    - **Minimum Threshold**: 🚨 BLOCKING: ≥70% command utilization required for complex objectives (≥0.7 complexity)
+    - **Real Time Monitoring**: 🚨 CONTINUOUS: Monitor ecosystem utilization in real-time with immediate alerts
+    - **Violation Detection**: 🚨 AUTOMATIC: Detect single-command execution when orchestration required
+    - **Blocking Mechanisms**: 🚨 MANDATORY: Block execution if utilization threshold not met
+  **Automatic Correction Protocols**:
+    - **Subutilization Detection**: 🚨 IMMEDIATE: Alert when ecosystem subutilization patterns detected
+    - **Correction Activation**: 🚨 AUTOMATIC: Activate additional commands to meet utilization threshold
+    - **Ecosystem Expansion**: 🚨 MANDATORY: Expand command activation until threshold compliance achieved
+    - **Validation Loops**: 🚨 CONTINUOUS: Validate compliance until convergence with utilization requirements
+  **Command Ecosystem Verification**:
+    - **Behavioral Commands**: 🚨 REQUIRED: Verify activation of relevant behavioral commands (38 total)
+    - **Executable Commands**: 🚨 REQUIRED: Verify activation of relevant executable commands (30 total)
+    - **Core Commands**: 🚨 REQUIRED: Verify activation of relevant core commands (6 total)
+    - **Shared Commands**: 🚨 REQUIRED: Verify activation of relevant shared commands (2 total)
+  **Enforcement Compliance Metrics**:
+    - **Utilization Rate Tracking**: REAL-TIME: Track actual vs required command utilization percentages
+    - **Blocking Event Logging**: AUTOMATIC: Log all blocking events with context and resolution details
+    - **Correction Success Measurement**: QUANTIFIED: Measure success rate of automatic correction protocols
+    - **Ecosystem Health Monitoring**: CONTINUOUS: Monitor overall ecosystem health and utilization patterns
 
 ### **🚨 BLOCKING Enforcement Mechanisms**
 

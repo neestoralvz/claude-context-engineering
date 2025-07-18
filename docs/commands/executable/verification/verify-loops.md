@@ -116,98 +116,98 @@ find docs -name "*.md" -exec grep -c "loop.*confidence" {} \; | awk '{sum+=$1} E
 ```
 
 ### **Tool Selection Matrix for Verification Loops**
-```yaml
-verification_loops_tool_execution:
-  read_tool:
-    usage: "Load verification targets, read confidence criteria, analyze test requirements"
-    announcement: "📖 Reading verification targets and confidence requirements"
-    evidence: "Display loaded targets, confidence criteria, verification specifications"
-    
-  edit_tool:
-    usage: "Document verification results, update confidence tracking, record improvements"
-    announcement: "✏️ Documenting verification iterations and confidence progression"
-    evidence: "Show verification logs, confidence tracking, improvement documentation"
-    
-  bash_tool:
-    usage: "Execute verification tests, confidence calculations, quality assessments"
-    announcement: "⚡ Executing verification tests and confidence calculations"
-    evidence: "Display test results, confidence metrics, quality assessment data"
-    
-  task_tool:
-    usage: "Deploy verification agents, coordinate complex verification workflows"
-    announcement: "🤖 Deploying Task agents for verification coordination"
-    evidence: "Real-time verification agent progress and test results"
-```
+**Verification Loops Tool Execution**:
+  **Read Tool**:
+    - **Usage**: Load verification targets, read confidence criteria, analyze test requirements
+    - **Announcement**: 📖 Reading verification targets and confidence requirements
+    - **Evidence**: Display loaded targets, confidence criteria, verification specifications
+  **Edit Tool**:
+    - **Usage**: Document verification results, update confidence tracking, record improvements
+    - **Announcement**: ✏️ Documenting verification iterations and confidence progression
+    - **Evidence**: Show verification logs, confidence tracking, improvement documentation
+  **Bash Tool**:
+    - **Usage**: Execute verification tests, confidence calculations, quality assessments
+    - **Announcement**: ⚡ Executing verification tests and confidence calculations
+    - **Evidence**: Display test results, confidence metrics, quality assessment data
+  **Task Tool**:
+    - **Usage**: Deploy verification agents, coordinate complex verification workflows
+    - **Announcement**: 🤖 Deploying Task agents for verification coordination
+    - **Evidence**: Real-time verification agent progress and test results
 
 ### **Verification Loop Execution Protocol**
-```yaml
-verification_execution_flow:
-  phase_1_criteria_establishment:
-    tool_calls: ["Read verification targets", "Read confidence criteria", "Bash validation setup"]
-    announcement: "🎯 CRITERIA ESTABLISHMENT: Loading verification targets and confidence requirements"
-    evidence: "Display verification targets, confidence criteria, validation setup"
-    
-  phase_2_initial_verification:
-    tool_calls: ["Bash initial tests", "Edit baseline documentation", "Mathematical confidence calculation"]
-    announcement: "🔍 INITIAL VERIFICATION: Executing baseline verification and confidence assessment"
-    evidence: "Show initial test results, baseline confidence score, verification status"
-    
-  phase_3_iterative_verification:
-    tool_calls: ["Bash verification cycles", "Edit progress tracking", "Mathematical confidence monitoring"]
-    announcement: "🔄 ITERATIVE VERIFICATION: Executing verification loops with confidence monitoring"
-    evidence: "Display verification cycles, confidence progression, improvement tracking"
-    
-  phase_4_improvement_application:
-    tool_calls: ["Edit improvement implementation", "Bash improvement validation", "Mathematical quality assessment"]
-    announcement: "⚡ IMPROVEMENT APPLICATION: Implementing improvements and validating effectiveness"
-    evidence: "Show improvement implementations, validation results, quality improvements"
-    
-  phase_5_threshold_validation:
-    tool_calls: ["Bash final verification", "Edit completion documentation", "Mathematical threshold confirmation"]
-    announcement: "✅ THRESHOLD VALIDATION: Confirming confidence threshold achievement"
-    evidence: "Display final verification results, threshold confirmation, completion evidence"
-```
+**Verification Execution Flow**:
+  **Phase 1 Criteria Establishment**:
+    **Tool Calls**:
+    - Read verification targets
+    - Read confidence criteria
+    - Bash validation setup
+    - **Announcement**: 🎯 CRITERIA ESTABLISHMENT: Loading verification targets and confidence requirements
+    - **Evidence**: Display verification targets, confidence criteria, validation setup
+  **Phase 2 Initial Verification**:
+    **Tool Calls**:
+    - Bash initial tests
+    - Edit baseline documentation
+    - Mathematical confidence calculation
+    - **Announcement**: 🔍 INITIAL VERIFICATION: Executing baseline verification and confidence assessment
+    - **Evidence**: Show initial test results, baseline confidence score, verification status
+  **Phase 3 Iterative Verification**:
+    **Tool Calls**:
+    - Bash verification cycles
+    - Edit progress tracking
+    - Mathematical confidence monitoring
+    - **Announcement**: 🔄 ITERATIVE VERIFICATION: Executing verification loops with confidence monitoring
+    - **Evidence**: Display verification cycles, confidence progression, improvement tracking
+  **Phase 4 Improvement Application**:
+    **Tool Calls**:
+    - Edit improvement implementation
+    - Bash improvement validation
+    - Mathematical quality assessment
+    - **Announcement**: ⚡ IMPROVEMENT APPLICATION: Implementing improvements and validating effectiveness
+    - **Evidence**: Show improvement implementations, validation results, quality improvements
+  **Phase 5 Threshold Validation**:
+    **Tool Calls**:
+    - Bash final verification
+    - Edit completion documentation
+    - Mathematical threshold confirmation
+    - **Announcement**: ✅ THRESHOLD VALIDATION: Confirming confidence threshold achievement
+    - **Evidence**: Display final verification results, threshold confirmation, completion evidence
 
 ### **Verification Task Agent Communication Bridge**
-```yaml
-verification_task_agent_protocol:
-  deployment_conditions:
-    - multi_dimensional_verification: "Complex verification requiring multiple specialized test agents"
-    - parallel_verification: "Verification cycles that REQUIRE parallel execution"
-    - continuous_monitoring: "Real-time monitoring of verification progress and confidence"
-    
-  communication_flow:
-    initialization:
-      message: "INITIALIZATION: Verification loop coordination for [target]"
-      context: "Target: [verification_target], Threshold: [confidence_level], Max Iterations: [count]"
-      tools: ["Read", "Edit", "Bash", "Verification testing tools"]
-      
-    verification_updates:
-      cycle_progress: "CYCLE [X]: Confidence: [score], Target: [threshold], Status: [progress/threshold_met]"
-      improvement_tracking: "IMPROVEMENT: Previous: [old_score], Current: [new_score], Delta: [improvement]"
-      threshold_monitoring: "THRESHOLD: Current: [confidence], Target: [threshold], Gap: [remaining]"
-      
-    completion_handoff:
-      message: "COMPLETION: Verification loops successful"
-      results: "Cycles: [count], Final confidence: [score], Threshold: [met/not_met], Evidence: [verification_data]"
-      evidence: "Verification logs, confidence progression, test results"
-```
+**Verification Task Agent Protocol**:
+  **Deployment Conditions**:
+  - {'multi_dimensional_verification': 'Complex verification requiring multiple specialized test agents'}
+  - {'parallel_verification': 'Verification cycles that REQUIRE parallel execution'}
+  - {'continuous_monitoring': 'Real-time monitoring of verification progress and confidence'}
+  **Communication Flow**:
+    **Initialization**:
+      - **Message**: INITIALIZATION: Verification loop coordination for [target]
+      - **Context**: Target: [verification_target], Threshold: [confidence_level], Max Iterations: [count]
+      **Tools**:
+      - Read
+      - Edit
+      - Bash
+      - Verification testing tools
+    **Verification Updates**:
+      - **Cycle Progress**: CYCLE [X]: Confidence: [score], Target: [threshold], Status: [progress/threshold_met]
+      - **Improvement Tracking**: IMPROVEMENT: Previous: [old_score], Current: [new_score], Delta: [improvement]
+      - **Threshold Monitoring**: THRESHOLD: Current: [confidence], Target: [threshold], Gap: [remaining]
+    **Completion Handoff**:
+      - **Message**: COMPLETION: Verification loops successful
+      - **Results**: Cycles: [count], Final confidence: [score], Threshold: [met/not_met], Evidence: [verification_data]
+      - **Evidence**: Verification logs, confidence progression, test results
 
 ### **Verification Evidence and Transparency Requirements**
-```yaml
-p55_verification_evidence:
-  real_testing_only: "NO SIMULATION - All verification tests must be actually executed"
-  complete_visibility: "Users see all test results, confidence calculations, improvement implementations"
-  mathematical_precision: "Confidence scores calculated with mathematical rigor and precision"
-  iterative_transparency: "Real-time visibility into verification cycles and improvements"
-  
-p56_verification_transparency:
-  pre_execution_announcements: "Enhanced visual announcements before verification execution phases"
-  cycle_progress: "Real-time updates on verification cycles and confidence progression"
-  test_transparency: "Complete visibility into verification tests and quality assessments"
-  completion_confirmation: "Detailed completion status with verification evidence and confidence metrics"
-  error_transparency: "Immediate verification failure visibility with improvement recovery actions"
-```
+**P55 Verification Evidence**:
+  - **Real Testing Only**: NO SIMULATION - All verification tests must be actually executed
+  - **Complete Visibility**: Users see all test results, confidence calculations, improvement implementations
+  - **Mathematical Precision**: Confidence scores calculated with mathematical rigor and precision
+  - **Iterative Transparency**: Real-time visibility into verification cycles and improvements
+**P56 Verification Transparency**:
+  - **Pre Execution Announcements**: Enhanced visual announcements before verification execution phases
+  - **Cycle Progress**: Real-time updates on verification cycles and confidence progression
+  - **Test Transparency**: Complete visibility into verification tests and quality assessments
+  - **Completion Confirmation**: Detailed completion status with verification evidence and confidence metrics
+  - **Error Transparency**: Immediate verification failure visibility with improvement recovery actions
 
 ---
 

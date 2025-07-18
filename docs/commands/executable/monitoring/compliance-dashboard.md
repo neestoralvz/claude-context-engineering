@@ -18,29 +18,30 @@
 
 ### **🚨 AUTOMATIC Dashboard Activation**
 
-```yaml
-compliance_dashboard_activation:
-  command_trigger: "/compliance-dashboard"
-  execution_mode: "immediate_activation"
-  
-  dashboard_initialization:
-    real_time_monitoring: "Activate principle activation status monitoring"
-    compliance_tracking: "Initialize compliance score tracking (target: ≥95%)"
-    enforcement_monitoring: "Enable blocking success rate monitoring"
-    alert_systems: "Activate critical alert and trend monitoring"
-    
-  monitoring_components:
-    principle_activation_panel: "Real-time activation status and latency tracking"
-    compliance_monitoring_panel: "Tier-based compliance monitoring with violation tracking"
-    enforcement_effectiveness_panel: "Blocking and correction success rate monitoring"
-    predictive_analytics_panel: "Trend analysis and optimization recommendations"
-    
-  performance_requirements:
-    update_frequency: "≤100ms real-time updates"
-    alert_response: "≤30 second critical alert response"
-    performance_overhead: "≤5% system performance impact"
-    dashboard_availability: "99.9% uptime requirement"
-```
+**Compliance Dashboard Configuration**:
+
+| Configuration | Value | Description |
+|---------------|--------|-------------|
+| **Command Trigger** | `/compliance-dashboard` | Dashboard activation command |
+| **Execution Mode** | `immediate_activation` | Immediate activation mode |
+
+**Dashboard Initialization**:
+- **Real-time Monitoring**: Activate principle activation status monitoring
+- **Compliance Tracking**: Initialize compliance score tracking (target: ≥95%)
+- **Enforcement Monitoring**: Enable blocking success rate monitoring
+- **Alert Systems**: Activate critical alert and trend monitoring
+
+**Monitoring Components**:
+- **Principle Activation Panel**: Real-time activation status and latency tracking
+- **Compliance Monitoring Panel**: Tier-based compliance monitoring with violation tracking
+- **Enforcement Effectiveness Panel**: Blocking and correction success rate monitoring
+- **Predictive Analytics Panel**: Trend analysis and optimization recommendations
+
+**Performance Requirements**:
+- **Update Frequency**: ≤100ms real-time updates
+- **Alert Response**: ≤30 second critical alert response
+- **Performance Overhead**: ≤5% system performance impact
+- **Dashboard Availability**: 99.9% uptime requirement
 
 ### **Real-Time Monitoring Interface**
 
@@ -72,17 +73,16 @@ The dashboard provides comprehensive monitoring of:
 
 ### **Alert System Integration**
 
-```yaml
-alert_configuration:
-  critical_alerts:
-    tier_1_violations: "Immediate blocking with system alerts"
-    enforcement_failures: "System integrity alerts with automatic recovery"
-    activation_failures: "Principle activation system failure alerts"
-    
-  warning_alerts:
-    compliance_degradation: "Trend alerts for declining compliance"
-    performance_impact: "Performance degradation alerts"
-    optimization_opportunities: "Proactive optimization recommendations"
+**Alert Configuration**:
+
+| Alert Type | Alert Category | Description |
+|------------|----------------|-------------|
+| **Critical Alerts** | Tier 1 Violations | Immediate blocking with system alerts |
+| **Critical Alerts** | Enforcement Failures | System integrity alerts with automatic recovery |
+| **Critical Alerts** | Activation Failures | Principle activation system failure alerts |
+| **Warning Alerts** | Compliance Degradation | Trend alerts for declining compliance |
+| **Warning Alerts** | Performance Impact | Performance degradation alerts |
+| **Warning Alerts** | Optimization Opportunities | Proactive optimization recommendations |
     
   notification_channels:
     dashboard_display: "Visual alerts on monitoring interface"

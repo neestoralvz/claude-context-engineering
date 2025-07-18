@@ -3,6 +3,8 @@
 ## **Principle #10b: Parallel Tool Call Execution**
 **"Execute multiple independent tool calls simultaneously in a single message for maximum efficiency and speed."**
 
+**🚨 MANDATORY Compact Communication**: Auto-enforcement of Principle #82 with format `⟳ /comando → resultado 🎯 [tiempo]` and immediate blocking of verbose patterns.
+
 **Related Performance Intelligence Principles**:
 - **[#75 Intelligent Performance Optimization](../../../knowledge/principles/performance-intelligence.md#75-intelligent-performance-optimization)** - AI-powered execution optimization with parallel processing efficiency
 - **[#76 Predictive Analytics Integration](../../../knowledge/principles/performance-intelligence.md#76-predictive-analytics-integration)** - Predictive analysis of parallel execution benefits and resource requirements

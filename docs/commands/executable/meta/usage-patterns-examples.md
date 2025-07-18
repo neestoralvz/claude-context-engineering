@@ -362,57 +362,48 @@ chmod +x /sw                 # ❌ WRONG: Not a file
 
 ### **Execution Time Comparisons**
 
-```yaml
-performance_patterns:
-  simple_tasks_2_phase:
-    example: "Add logging to existing function"
-    standard_time: "8-12 minutes (full orchestration)"
-    optimized_time: "3-6 minutes (2-phase)"
-    time_savings: "70% faster execution"
-    success_rate: "≥85% (quality preserved)"
-    
-  medium_tasks_3_phase:
-    example: "Implement user notification system"
-    standard_time: "15-20 minutes (full orchestration)"
-    optimized_time: "8-12 minutes (3-phase)"
-    time_savings: "50% faster execution"
-    success_rate: "≥90% (enhanced by strategic planning)"
-    
-  complex_tasks_5_phase:
-    example: "Architect microservices infrastructure"
-    execution_time: "20-35 minutes (full orchestration)"
-    time_savings: "Optimization through parallelization and registry integration"
-    success_rate: "≥95% (maximum quality and thoroughness)"
-    
-  learning_mode_optimization:
-    pattern_recognition_time: "Additional 30-60 seconds for analysis"
-    execution_acceleration: "10-25% faster for known patterns"
-    adaptation_benefit: "Continuous improvement over time"
-    user_experience: "Reduced decision fatigue through intelligent automation"
-```
+**Performance Patterns**:
+  **Simple Tasks 2 Phase**:
+    - **Example**: Add logging to existing function
+    - **Standard Time**: 8-12 minutes (full orchestration)
+    - **Optimized Time**: 3-6 minutes (2-phase)
+    - **Time Savings**: 70% faster execution
+    - **Success Rate**: ≥85% (quality preserved)
+  **Medium Tasks 3 Phase**:
+    - **Example**: Implement user notification system
+    - **Standard Time**: 15-20 minutes (full orchestration)
+    - **Optimized Time**: 8-12 minutes (3-phase)
+    - **Time Savings**: 50% faster execution
+    - **Success Rate**: ≥90% (enhanced by strategic planning)
+  **Complex Tasks 5 Phase**:
+    - **Example**: Architect microservices infrastructure
+    - **Execution Time**: 20-35 minutes (full orchestration)
+    - **Time Savings**: Optimization through parallelization and registry integration
+    - **Success Rate**: ≥95% (maximum quality and thoroughness)
+  **Learning Mode Optimization**:
+    - **Pattern Recognition Time**: Additional 30-60 seconds for analysis
+    - **Execution Acceleration**: 10-25% faster for known patterns
+    - **Adaptation Benefit**: Continuous improvement over time
+    - **User Experience**: Reduced decision fatigue through intelligent automation
 
 ### **Registry Integration Benefits**
 
-```yaml
-registry_optimization_results:
-  command_utilization:
-    coverage_increase: "From subset utilization to 100% ecosystem coverage"
-    selection_accuracy: "87.69% average success rate integration"
-    performance_correlation: "15-35% execution speed improvement"
-    ecosystem_scaling: "Automatic adaptation to ecosystem growth"
-    
-  workflow_efficiency:
-    dynamic_workflows: "25-50% improvement through registry-based optimization"
-    pattern_acceleration: "60-75% faster for crystallized patterns"
-    fallback_intelligence: "Intelligent alternatives for failed primary choices"
-    continuous_improvement: "Registry evolution drives system-wide enhancements"
-    
-  user_experience_enhancements:
-    cognitive_load_reduction: "Automatic optimal command selection"
-    outcome_optimization: "Best-performing command combinations"
-    adaptive_learning: "System improves based on user patterns"
-    transparent_optimization: "Clear visibility into optimization benefits"
-```
+**Registry Optimization Results**:
+  **Command Utilization**:
+    - **Coverage Increase**: From subset utilization to 100% ecosystem coverage
+    - **Selection Accuracy**: 87.69% average success rate integration
+    - **Performance Correlation**: 15-35% execution speed improvement
+    - **Ecosystem Scaling**: Automatic adaptation to ecosystem growth
+  **Workflow Efficiency**:
+    - **Dynamic Workflows**: 25-50% improvement through registry-based optimization
+    - **Pattern Acceleration**: 60-75% faster for crystallized patterns
+    - **Fallback Intelligence**: Intelligent alternatives for failed primary choices
+    - **Continuous Improvement**: Registry evolution drives system-wide enhancements
+  **User Experience Enhancements**:
+    - **Cognitive Load Reduction**: Automatic optimal command selection
+    - **Outcome Optimization**: Best-performing command combinations
+    - **Adaptive Learning**: System improves based on user patterns
+    - **Transparent Optimization**: Clear visibility into optimization benefits
 
 ---
 
@@ -500,49 +491,39 @@ registry_optimization_results:
 
 ### **Optimal Usage Patterns**
 
-```yaml
-best_practices:
-  objective_clarity:
-    specific_objectives: "Clear, specific goals yield better results"
-    context_inclusion: "Include relevant context for better analysis"
-    constraint_specification: "Specify constraints, deadlines, or preferences"
-    
-  complexity_guidance:
-    hint_when_known: "Provide complexity hints for better phase selection"
-    model_preference: "Specify model preference for strategic vs implementation tasks"
-    parallel_indication: "Enable parallel approaches for exploration and comparison"
-    
-  learning_optimization:
-    consistent_terminology: "Use consistent terminology for pattern learning"
-    feedback_integration: "Learning system improves with usage patterns"
-    language_consistency: "Maintain language consistency for better pattern recognition"
-    
-  registry_utilization:
-    ecosystem_awareness: "System automatically optimizes based on available commands"
-    performance_tracking: "Registry integration provides continuous performance improvement"
-    adaptive_scaling: "System grows and improves with ecosystem evolution"
-```
+**Best Practices**:
+  **Objective Clarity**:
+    - **Specific Objectives**: Clear, specific goals yield better results
+    - **Context Inclusion**: Include relevant context for better analysis
+    - **Constraint Specification**: Specify constraints, deadlines, or preferences
+  **Complexity Guidance**:
+    - **Hint When Known**: Provide complexity hints for better phase selection
+    - **Model Preference**: Specify model preference for strategic vs implementation tasks
+    - **Parallel Indication**: Enable parallel approaches for exploration and comparison
+  **Learning Optimization**:
+    - **Consistent Terminology**: Use consistent terminology for pattern learning
+    - **Feedback Integration**: Learning system improves with usage patterns
+    - **Language Consistency**: Maintain language consistency for better pattern recognition
+  **Registry Utilization**:
+    - **Ecosystem Awareness**: System automatically optimizes based on available commands
+    - **Performance Tracking**: Registry integration provides continuous performance improvement
+    - **Adaptive Scaling**: System grows and improves with ecosystem evolution
 
 ### **Common Anti-Patterns to Avoid**
 
-```yaml
-anti_patterns:
-  vague_objectives:
-    problem: "Unclear or overly broad objectives"
-    solution: "Provide specific, actionable objectives with clear scope"
-    
-  unnecessary_complexity_hints:
-    problem: "Over-specifying complexity when system can auto-detect"
-    solution: "Let system analyze complexity unless specific guidance needed"
-    
-  inappropriate_model_selection:
-    problem: "Forcing specific models for inappropriate tasks"
-    solution: "Trust registry-based model selection or provide clear reasoning"
-    
-  parallel_overuse:
-    problem: "Enabling parallel approaches for simple tasks"
-    solution: "Reserve parallel approaches for complex exploration scenarios"
-```
+**Anti Patterns**:
+  **Vague Objectives**:
+    - **Problem**: Unclear or overly broad objectives
+    - **Solution**: Provide specific, actionable objectives with clear scope
+  **Unnecessary Complexity Hints**:
+    - **Problem**: Over-specifying complexity when system can auto-detect
+    - **Solution**: Let system analyze complexity unless specific guidance needed
+  **Inappropriate Model Selection**:
+    - **Problem**: Forcing specific models for inappropriate tasks
+    - **Solution**: Trust registry-based model selection or provide clear reasoning
+  **Parallel Overuse**:
+    - **Problem**: Enabling parallel approaches for simple tasks
+    - **Solution**: Reserve parallel approaches for complex exploration scenarios
 
 ---
 

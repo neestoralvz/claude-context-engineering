@@ -167,28 +167,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-organizational_architecture_transparency:
-  structure_analysis:
-    announcement: "🔍 TRANSPARENCY: Structure type [HIERARCHICAL/CATEGORICAL/TOPIC] - [WELL/POORLY] organized"
-    evidence: "Current structure assessment with organization quality metrics"
-    
-  architecture_design:
-    announcement: "🏗️ TRANSPARENCY: Architecture design [ENHANCEMENT/RESTRUCTURE] - [X] components organized"
-    evidence: "Complete architecture design with organizational patterns"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [architecture_operation]"
-    evidence: "Tool selection matrix with architecture-specific reasoning"
-    
-  scalability_assessment:
-    announcement: "📈 TRANSPARENCY: Scalability factor [X] - [SUFFICIENT/ENHANCEMENT_REQUIRED]"
-    evidence: "Scalability analysis with growth projection validation"
-    
-  compliance_validation:
-    announcement: "✅ TRANSPARENCY: Compliance [X]% - [COMPLIANT/REFINEMENT_REQUIRED]"
-    evidence: "Organizational compliance metrics with standard adherence"
-```
+**Organizational Architecture Transparency**:
+  **Structure Analysis**:
+    - **Announcement**: 🔍 TRANSPARENCY: Structure type [HIERARCHICAL/CATEGORICAL/TOPIC] - [WELL/POORLY] organized
+    - **Evidence**: Current structure assessment with organization quality metrics
+  **Architecture Design**:
+    - **Announcement**: 🏗️ TRANSPARENCY: Architecture design [ENHANCEMENT/RESTRUCTURE] - [X] components organized
+    - **Evidence**: Complete architecture design with organizational patterns
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [architecture_operation]
+    - **Evidence**: Tool selection matrix with architecture-specific reasoning
+  **Scalability Assessment**:
+    - **Announcement**: 📈 TRANSPARENCY: Scalability factor [X] - [SUFFICIENT/ENHANCEMENT_REQUIRED]
+    - **Evidence**: Scalability analysis with growth projection validation
+  **Compliance Validation**:
+    - **Announcement**: ✅ TRANSPARENCY: Compliance [X]% - [COMPLIANT/REFINEMENT_REQUIRED]
+    - **Evidence**: Organizational compliance metrics with standard adherence
 
 ---
 

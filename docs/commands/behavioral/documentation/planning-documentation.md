@@ -203,30 +203,27 @@ function documentDecisionPoint(node, decision) {
 ## 📝 **DOCUMENTATION FORMATS**
 
 ### **Planning Tree Visualization**
-```yaml
-Objective: Implement Authentication System
-│
-├─[✓] Research authentication methods (confidence: 0.92)
-│  ├─[✓] OAuth2 exploration (chosen)
-│  │  ├─[✓] Provider evaluation
-│  │  └─[✓] Implementation planning
-│  ├─[✗] JWT-only approach (rejected: limited SSO)
-│  └─[○] SAML investigation (not explored)
-│
-├─[▶] Implementation approach (current)
-│  ├─[▶] Parallel development strategy
-│  │  ├─[ ] Frontend auth flow
-│  │  ├─[ ] Backend OAuth2 integration
-│  │  └─[ ] Database schema design
-│  └─[ ] Sequential approach (alternative)
-│
-└─[ ] Testing strategy (pending)
-   ├─[ ] Unit test approach
-   ├─[ ] Integration test design
-   └─[ ] E2E test planning
-
-Legend: [✓] Executed [✗] Rejected [▶] Current [○] Not explored [ ] Pending
-```
+- **Objective**: Implement Authentication System
+- │
+- **├─[✓] Research Authentication Methods (Confidence**: 0.92)
+- │  ├─[✓] OAuth2 exploration (chosen)
+- │  │  ├─[✓] Provider evaluation
+- │  │  └─[✓] Implementation planning
+- **│  ├─[✗] Jwt-Only Approach (Rejected**: limited SSO)
+- │  └─[○] SAML investigation (not explored)
+- │
+- ├─[▶] Implementation approach (current)
+- │  ├─[▶] Parallel development strategy
+- │  │  ├─[ ] Frontend auth flow
+- │  │  ├─[ ] Backend OAuth2 integration
+- │  │  └─[ ] Database schema design
+- │  └─[ ] Sequential approach (alternative)
+- │
+- └─[ ] Testing strategy (pending)
+- ├─[ ] Unit test approach
+- ├─[ ] Integration test design
+- └─[ ] E2E test planning
+- **Legend**: [✓] Executed [✗] Rejected [▶] Current [○] Not explored [ ] Pending
 
 ### **Decision Documentation Format**
 ```markdown

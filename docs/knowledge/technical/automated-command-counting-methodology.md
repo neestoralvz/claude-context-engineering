@@ -264,18 +264,8 @@ For each directory (`docs/commands/` and `~/.claude/commands/`):
 
 ### **CI/CD Integration**
 
-```yaml
-# GitHub Actions example
-- name: Validate Command Synchronization
-  run: ./scripts/validation/automated-command-counter-v2.sh --quiet
-  continue-on-error: false
-
-- name: Upload Command Count Report
-  uses: actions/upload-artifact@v3
-  with:
-    name: command-count-report
-    path: scripts/results/command-counts/
-```
+- {'name': 'Validate Command Synchronization', 'run': './scripts/validation/automated-command-counter-v2.sh --quiet', 'continue-on-error': False}
+- {'name': 'Upload Command Count Report', 'uses': 'actions/upload-artifact@v3', 'with': {'name': 'command-count-report', 'path': 'scripts/results/command-counts/'}}
 
 ---
 

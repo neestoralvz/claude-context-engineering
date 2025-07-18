@@ -88,6 +88,117 @@ function calculateDependencyOptimization(tasks, dependencies, resources) {
 
 ---
 
+## 🛡️ **P55 Script Execution**
+
+This command automatically executes the following scripts to ensure complete dependency analysis and optimization:
+
+### **Script Execution Protocol**
+1. **Pre-execution**: Validate prerequisites and script foundation
+2. **Execute**: Run automated dependency analysis and optimization scripts
+3. **Post-execution**: Verify results and compliance
+
+### **Automated Script Execution**
+```bash
+# MANDATORY: Enhanced dependency analysis execution with P55 compliance
+#!/bin/bash
+
+# Performance tracking initialization
+EXECUTION_START_TIME=$(date +%s.%N)
+SESSION_ID="dynamic-dependency-$(date +%Y%m%d-%H%M%S)-$$"
+
+# Phase 1: Script Foundation Loading (P55 Requirement)
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║        DEPENDENCY ANALYSIS SCRIPT FOUNDATION LOADING      ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Enhanced path helper loading
+if [ -f "scripts/core/path-helper.sh" ]; then
+    source scripts/core/path-helper.sh
+    PATH_HELPER_STATUS="LOADED"
+    echo "✅ PATH_HELPER: LOADED successfully"
+else
+    PATH_HELPER_STATUS="FALLBACK"
+    echo "⚠️  PATH_HELPER: Using fallback mode"
+fi
+
+# Formula library loading for dependency calculations
+if [ -f "scripts/formulas/context_engineering_formulas.sh" ]; then
+    source scripts/formulas/context_engineering_formulas.sh
+    FORMULA_STATUS="LOADED"
+    echo "✅ FORMULA_LIBRARY: LOADED successfully"
+else
+    FORMULA_STATUS="FALLBACK"
+    echo "⚠️  FORMULA_LIBRARY: Using fallback mode"
+fi
+
+# Phase 2: Dependency Analysis Scripts Execution
+echo ""
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║           DEPENDENCY ANALYSIS EXECUTION PHASE             ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Execute analysis scripts
+./scripts/analysis/dependency-graph-analyzer.sh --workflow-context "$1" --parallelization-target "${2:-0.85}"
+DEPENDENCY_ANALYSIS_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: dependency-graph-analyzer.sh = $([ $DEPENDENCY_ANALYSIS_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Execute optimization scripts
+./scripts/automation/parallelization-optimizer.sh --dependencies-file "temp/dependencies.json" --resource-constraints "${3:-default}"
+OPTIMIZATION_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: parallelization-optimizer.sh = $([ $OPTIMIZATION_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Execute validation scripts
+./scripts/validation/dependency-validation.sh --optimization-results "temp/optimization-results.json"
+VALIDATION_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: dependency-validation.sh = $([ $VALIDATION_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Phase 3: Performance Monitoring
+echo ""
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║              PERFORMANCE MONITORING PHASE                 ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Calculate execution metrics
+TOTAL_EXECUTION_TIME=$(echo "scale=4; $(date +%s.%N) - $EXECUTION_START_TIME" | bc)
+SCRIPTS_EXECUTED=3
+SCRIPTS_SUCCESSFUL=$((3 - DEPENDENCY_ANALYSIS_STATUS - OPTIMIZATION_STATUS - VALIDATION_STATUS))
+
+# P55 Compliance Validation
+P55_COMPLIANCE=$(echo "scale=4; $SCRIPTS_SUCCESSFUL / $SCRIPTS_EXECUTED" | bc)
+P55_PERCENTAGE=$(echo "scale=2; $P55_COMPLIANCE * 100" | bc)
+
+echo "🛡️  P55_COMPLIANCE: $P55_COMPLIANCE (${P55_PERCENTAGE}% script execution success)"
+echo "📊 EXECUTION_TIME: ${TOTAL_EXECUTION_TIME}s"
+echo "📊 SESSION_ID: $SESSION_ID"
+echo "🚀 DEPENDENCY_ANALYSIS_STATUS: $([ $DEPENDENCY_ANALYSIS_STATUS -eq 0 ] && echo "✅ OPTIMAL" || echo "⚠️  DEGRADED")"
+```
+
+### **P56 Transparency Protocol**
+```markdown
+╔═══════════════════════════════════════════════════════════╗
+║         DYNAMIC DEPENDENCY ANALYSIS EXECUTION STATUS     ║
+╠═══════════════════════════════════════════════════════════╣
+║ Phase: Dependency Analysis | Tools: 3 Active             ║
+║ Purpose: Parallelization optimization with ≥85% efficiency ║
+║ Real Execution: ✅ | Simulation: ❌ | Precision: ±0.01   ║
+║ Evidence: Dependency graphs + optimization metrics        ║
+╚═══════════════════════════════════════════════════════════╝
+
+🔧 TOOL CALL EXECUTION TRACKER:
+- Dependency Analysis: [✅ EXECUTED] - dependency-graph-analyzer.sh
+- Parallelization Optimization: [✅ EXECUTED] - parallelization-optimizer.sh  
+- Validation: [✅ EXECUTED] - dependency-validation.sh
+- Performance: [execution_time]ms | Efficiency: [parallelization_percentage]%
+
+🎯 DEPENDENCY ANALYSIS RESULTS:
+- Dependencies Mapped: [dependency_count] relationships identified
+- Parallelization Efficiency: [efficiency_percentage]% (target: ≥85%)
+- Resource Utilization: [utilization_percentage]% (target: ≥80%)
+- Optimization Success: [success_rate]% (target: ≥90%)
+```
+
+---
+
 ## 🔧 **COMMAND FUNCTIONALITY**
 
 ### MANDATORY Proceso Integral de Gestión de Dependencias

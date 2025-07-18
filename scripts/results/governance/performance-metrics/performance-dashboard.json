@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-07-18T13:09:39.728640",
+  "current_profile": {
+    "timestamp": "2025-07-18 13:09:09.099430",
+    "cognitive_steps": 3.98,
+    "access_time": 0.0,
+    "memory_usage": 63.05,
+    "file_count": 4902,
+    "total_lines": 1167904,
+    "link_count": 66254,
+    "navigation_depth": 8,
+    "efficiency_score": 0.5792
+  },
+  "baseline_profile": {
+    "timestamp": "2025-07-18 13:09:07.673699",
+    "cognitive_steps": 3.98,
+    "access_time": 0.0,
+    "memory_usage": 35.61,
+    "file_count": 4902,
+    "total_lines": 1167904,
+    "link_count": 66254,
+    "navigation_depth": 8,
+    "efficiency_score": 0.5998
+  },
+  "optimization_stats": {
+    "total_optimizations": 0,
+    "successful_optimizations": 0,
+    "average_improvement": 0.0,
+    "total_time_saved": 0.0,
+    "efficiency_gains": 0.0
+  },
+  "recent_metrics": [
+    {
+      "timestamp": "2025-07-18 13:09:07.674693",
+      "metric_type": "cpu_usage",
+      "value": 20.7,
+      "unit": "percent",
+      "threshold": 80.0,
+      "status": "healthy",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:07.674693",
+      "metric_type": "memory_usage",
+      "value": 38.4,
+      "unit": "percent",
+      "threshold": 85.0,
+      "status": "healthy",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:07.674693",
+      "metric_type": "disk_usage",
+      "value": 42.049412712136814,
+      "unit": "percent",
+      "threshold": 90.0,
+      "status": "healthy",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:07.674693",
+      "metric_type": "cognitive_steps",
+      "value": 3.98,
+      "unit": "steps",
+      "threshold": 2.5,
+      "status": "warning",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:07.674693",
+      "metric_type": "efficiency_score",
+      "value": 0.5998,
+      "unit": "ratio",
+      "threshold": 0.8,
+      "status": "warning",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:38.697567",
+      "metric_type": "cpu_usage",
+      "value": 22.9,
+      "unit": "percent",
+      "threshold": 80.0,
+      "status": "healthy",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:38.697567",
+      "metric_type": "memory_usage",
+      "value": 38.7,
+      "unit": "percent",
+      "threshold": 85.0,
+      "status": "healthy",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:38.697567",
+      "metric_type": "disk_usage",
+      "value": 42.0494198867207,
+      "unit": "percent",
+      "threshold": 90.0,
+      "status": "healthy",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:38.697567",
+      "metric_type": "cognitive_steps",
+      "value": 3.98,
+      "unit": "steps",
+      "threshold": 2.5,
+      "status": "warning",
+      "context": null
+    },
+    {
+      "timestamp": "2025-07-18 13:09:38.697567",
+      "metric_type": "efficiency_score",
+      "value": 0.5792,
+      "unit": "ratio",
+      "threshold": 0.8,
+      "status": "warning",
+      "context": null
+    }
+  ],
+  "system_status": "baseline"
+}

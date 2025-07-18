@@ -630,28 +630,23 @@ When this command executes, the LLM **MUST** perform the following tool calls wi
 ### **🔧 ENHANCED EVIDENCE COLLECTION PROTOCOL**
 
 **MANDATORY Evidence Documentation Standards**:
-```yaml
-evidence_collection_requirements:
-  rule_compliance_evidence:
-    - "6/6 Rule modules validation with percentage compliance scores"
-    - "Command rule adherence verification with specific violation tracking"
-    - "Complete audit trail of rule integration throughout execution"
-    
-  content_analysis_evidence:
-    - "Duplicate content detection results with mathematical precision"
-    - "Context reduction measurements with before/after comparison"
-    - "Navigation efficiency improvements with cognitive step reduction"
-    
-  tool_execution_evidence:
-    - "Complete tool call log with timing and success validation"
-    - "Real vs simulation verification with 100% real execution proof"
-    - "Agent coordination results with communication flow documentation"
-    
-  mathematical_validation_evidence:
-    - "4-decimal precision calculations for all measurements"
-    - "Statistical analysis of modularization effectiveness"
-    - "Quantifiable results for all optimization metrics"
-```
+**Evidence Collection Requirements**:
+  **Rule Compliance Evidence**:
+  - 6/6 Rule modules validation with percentage compliance scores
+  - Command rule adherence verification with specific violation tracking
+  - Complete audit trail of rule integration throughout execution
+  **Content Analysis Evidence**:
+  - Duplicate content detection results with mathematical precision
+  - Context reduction measurements with before/after comparison
+  - Navigation efficiency improvements with cognitive step reduction
+  **Tool Execution Evidence**:
+  - Complete tool call log with timing and success validation
+  - Real vs simulation verification with 100% real execution proof
+  - Agent coordination results with communication flow documentation
+  **Mathematical Validation Evidence**:
+  - 4-decimal precision calculations for all measurements
+  - Statistical analysis of modularization effectiveness
+  - Quantifiable results for all optimization metrics
 
 **CRITICAL Performance Validation Requirements**:
 - **Context Reduction**: Must achieve ≥80% reduction with mathematical proof

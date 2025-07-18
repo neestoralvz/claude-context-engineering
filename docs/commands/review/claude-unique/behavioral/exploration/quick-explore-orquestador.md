@@ -35,37 +35,12 @@ Orquestrador optimizado para exploración rápida y eficiente sin el overhead de
 ## 🔗 **ORCHESTRATED COMMAND CHAIN**
 
 ### **Secuencia Optimizada (3 comandos core)**
-```yaml
-chain_execution:
-  primary_sequence:
-    1. knowledge-hierarchy: "Búsqueda jerárquica local → external"
-    2. explore: "Exploración obligatoria con patrones"  
-    3. patterns: "Reconocimiento y cristalización"
-  
-  parallel_opportunities:
-    - knowledge-hierarchy + explore (independientes)
-    - patterns (depende de resultados de ambos)
-  
-  execution_strategy:
-    if_parallel_benefit_≥_0.4: "Ejecutar 1+2 en paralelo, luego 3"
-    if_parallel_benefit_<_0.4: "Ejecución secuencial optimizada"
-```
+**Configuration Block 1**:
+
 
 ### **Context Distribution (Economy Active)**
-```yaml
-context_per_command:
-  knowledge-hierarchy: 
-    context: "objetivo + dominio_específico"
-    size: "~20% del contexto total"
-  explore:
-    context: "objetivo + hallazgos_knowledge"  
-    size: "~25% del contexto total"
-  patterns:
-    context: "objetivo + exploration_results"
-    size: "~30% del contexto total"
-    
-total_context_economy: "75% vs meta-comando completo"
-```
+**Configuration Block 2**:
+
 
 ---
 
@@ -98,21 +73,8 @@ function calculateQuickExploreEfficiency() {
 ## 🔍 **INTELLIGENT ROUTING CRITERIA**
 
 ### **Ideal Use Cases (Auto-detect)**
-```yaml
-perfect_fit:
-  - "entender este código/archivo/función"
-  - "investigar problema específico"
-  - "buscar patrones en codebase"
-  - "analizar estructura de proyecto"
-  - "explorar dependencias"
-  - "mapear flujo de datos"
+**Configuration Block 3**:
 
-avoid_for:
-  - objetivos_múltiples_complejos (usar /context-eng)
-  - implementación_code (usar /rapid-prototype)
-  - verificación_sistema (usar /system-health)
-  - planning_estratégico (usar /planning-workflow)
-```
 
 ### **Confidence-Based Routing**
 ```javascript
@@ -136,76 +98,28 @@ function shouldUseQuickExplore(objective, context) {
 ## ⚡ **EXECUTION WORKFLOW**
 
 ### **Phase 1: Parallel Knowledge Discovery (2-3 min)**
-```yaml
-parallel_execution:
-  agent_1_knowledge_hierarchy:
-    task: "Búsqueda sistemática local → external"
-    context: "objetivo + dominio"
-    output: "knowledge_map"
-    
-  agent_2_explore:  
-    task: "Exploración obligatoria con patrones"
-    context: "objetivo + exploration_strategy"
-    output: "exploration_findings"
-    
-coordination:
-  simultaneous_launch: true
-  progress_monitoring: true
-  early_termination: "si uno encuentra solución completa"
-```
+**Configuration Block 4**:
+
 
 ### **Phase 2: Pattern Synthesis (1-2 min)**
-```yaml
-pattern_synthesis:
-  input: "knowledge_map + exploration_findings"
-  process: "consolidar + identificar_patrones + cristalizar"
-  output: "structured_insights + reusable_patterns"
-  documentation: "auto-update living docs si patterns ≥ threshold"
-```
+**Configuration Block 5**:
+
 
 ### **Result Format**
-```yaml
-quick_explore_output:
-  executive_summary: "2-3 líneas clave"
-  knowledge_discovered: "mapa de conocimiento estructurado"
-  patterns_identified: "patrones reutilizables encontrados"
-  next_recommended_actions: "sugerencias específicas"
-  crystallization_opportunities: "si aplica"
-  execution_time: "tiempo real vs estimado"
-```
+**Configuration Block 6**:
+
 
 ---
 
 ## 🔀 **INTELLIGENT CHAINING**
 
 ### **Auto-Chain Opportunities**
-```yaml
-natural_follow_ups:
-  if_patterns_found: 
-    suggest: "/crystallize-patterns"
-    confidence: 0.85
-    
-  if_implementation_needed:
-    suggest: "/rapid-prototype"  
-    confidence: 0.9
-    
-  if_verification_required:
-    suggest: "/verify-flow"
-    confidence: 0.8
-    
-  if_more_depth_needed:
-    suggest: "/context-eng [specific_area]"
-    confidence: 0.7
-```
+**Configuration Block 7**:
+
 
 ### **Escalation Protocol**
-```yaml
-escalation_triggers:
-  if_complexity_exceeds_1.5: "auto-suggest /context-eng"
-  if_multiple_objectives_detected: "auto-suggest /smart-workflow"
-  if_implementation_scope_large: "auto-suggest /planning-workflow"
-  if_exploration_insufficient: "auto-trigger second round with /explore"
-```
+**Configuration Block 8**:
+
 
 ---
 
@@ -251,37 +165,16 @@ escalation_triggers:
 3. **Deep dive**: Activar `/exploration-first` para análisis más profundo
 
 ### **Quality Assurance**
-```yaml
-quality_checks:
-  minimum_insights: 3
-  pattern_discovery_rate: ≥60%  
-  actionable_next_steps: ≥2
-  execution_time_limit: 6_minutes_max
-  
-fallback_if_failed:
-  retry_with_enhanced_context: true
-  escalate_to_meta_command: "after 2 failed attempts"
-  document_failure_pattern: true
-```
+**Configuration Block 9**:
+
 
 ---
 
 ## 🎯 **INTEGRATION WITH DECISION ENGINE**
 
 ### **Decision Engine Bypass**
-```yaml
-bypass_protocol:
-  when: "clear_exploration_objective_detected"
-  conditions:
-    - objective_specificity ≥ 0.7
-    - exploration_keywords_present  
-    - complexity_estimate ≤ 1.5
-    - no_implementation_scope_detected
-  
-  direct_execution: true
-  skip_analysis_phases: ["complexity_analysis", "model_selection", "planning"]
-  maintain_monitoring: true
-```
+**Configuration Block 10**:
+
 
 ### **Smart Re-routing**
 ```javascript
@@ -307,29 +200,12 @@ function smartReroutingLogic(exploration_results) {
 ## 📊 **SUCCESS METRICS & LEARNING**
 
 ### **Performance Tracking**
-```yaml
-metrics_to_track:
-  execution_time: "target: 3-5 min"
-  context_efficiency: "target: 75% reduction"
-  parallel_benefit_achieved: "target: ≥40%"
-  exploration_quality: "target: ≥90% of meta-comando results"
-  user_satisfaction: "target: ≥85%"
-  escalation_rate: "target: ≤15%"
-```
+**Configuration Block 11**:
+
 
 ### **Learning Loop**
-```yaml
-continuous_improvement:
-  pattern_detection:
-    - successful_exploration_patterns → enhance_knowledge_hierarchy
-    - common_follow_up_chains → improve_auto_suggestions  
-    - escalation_triggers → refine_complexity_detection
-    
-  optimization_opportunities:
-    - reduce_execution_time_further
-    - improve_parallel_coordination
-    - enhance_pattern_synthesis_quality
-```
+**Configuration Block 12**:
+
 
 ---
 

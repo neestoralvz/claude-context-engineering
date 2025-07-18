@@ -122,96 +122,96 @@ Activate evolutionary intelligence methodology where AI learns and improves thro
 ```
 
 ### **Tool Selection Matrix for Evolution Intelligence**
-```yaml
-evolution_tool_execution:
-  read_tool:
-    usage: "Load objective context, existing approaches, success criteria"
-    announcement: "📖 Reading evolution context and requirements"
-    evidence: "Display loaded content and analysis results"
-    
-  edit_tool:
-    usage: "Document variations, update success criteria, record learnings"
-    announcement: "✏️ Documenting evolutionary variations and improvements"
-    evidence: "Show before/after content with evolution tracking"
-    
-  bash_tool:
-    usage: "Execute variation testing, mathematical validation, performance measurement"
-    announcement: "⚡ Testing evolutionary variations with real execution"
-    evidence: "Display actual test results and performance metrics"
-    
-  task_tool:
-    usage: "Complex multi-variation coordination, parallel testing, synthesis"
-    announcement: "🤖 Deploying Task agent for complex evolutionary coordination"
-    evidence: "Real-time agent progress and variation results"
-```
+**Evolution Tool Execution**:
+  **Read Tool**:
+    - **Usage**: Load objective context, existing approaches, success criteria
+    - **Announcement**: 📖 Reading evolution context and requirements
+    - **Evidence**: Display loaded content and analysis results
+  **Edit Tool**:
+    - **Usage**: Document variations, update success criteria, record learnings
+    - **Announcement**: ✏️ Documenting evolutionary variations and improvements
+    - **Evidence**: Show before/after content with evolution tracking
+  **Bash Tool**:
+    - **Usage**: Execute variation testing, mathematical validation, performance measurement
+    - **Announcement**: ⚡ Testing evolutionary variations with real execution
+    - **Evidence**: Display actual test results and performance metrics
+  **Task Tool**:
+    - **Usage**: Complex multi-variation coordination, parallel testing, synthesis
+    - **Announcement**: 🤖 Deploying Task agent for complex evolutionary coordination
+    - **Evidence**: Real-time agent progress and variation results
 
 ### **Evolution Execution Protocol**
-```yaml
-evolution_execution_flow:
-  phase_1_context_analysis:
-    tool_calls: ["Read objective requirements", "Read existing approaches", "Read success metrics"]
-    announcement: "🔍 CONTEXT ANALYSIS: Loading evolutionary requirements and constraints"
-    evidence: "Display parsed objective, variation parameters, success criteria"
-    
-  phase_2_variation_generation:
-    tool_calls: ["Edit variation documentation", "Bash validation scripts", "Mathematical calculations"]
-    announcement: "🧬 VARIATION GENERATION: Creating and validating evolutionary approaches"
-    evidence: "Show generated variations with validation results"
-    
-  phase_3_testing_cycles:
-    tool_calls: ["Bash test execution", "Edit result documentation", "Mathematical score calculation"]
-    announcement: "⚡ TESTING CYCLES: Executing real variation tests and measurements"
-    evidence: "Display actual test outputs, performance data, success scores"
-    
-  phase_4_selection_synthesis:
-    tool_calls: ["Mathematical selection analysis", "Edit best approach documentation", "Task coordination if complex"]
-    announcement: "🎯 SELECTION SYNTHESIS: Mathematically selecting and combining best approaches"
-    evidence: "Show selection mathematics, combined approach, improvement metrics"
-    
-  phase_5_evolution_iteration:
-    tool_calls: ["Edit evolved approach", "Bash verification", "Mathematical improvement calculation"]
-    announcement: "🔄 EVOLUTION ITERATION: Implementing and verifying evolved improvements"
-    evidence: "Display evolution progress, actual improvement percentages, final results"
-```
+**Evolution Execution Flow**:
+  **Phase 1 Context Analysis**:
+    **Tool Calls**:
+    - Read objective requirements
+    - Read existing approaches
+    - Read success metrics
+    - **Announcement**: 🔍 CONTEXT ANALYSIS: Loading evolutionary requirements and constraints
+    - **Evidence**: Display parsed objective, variation parameters, success criteria
+  **Phase 2 Variation Generation**:
+    **Tool Calls**:
+    - Edit variation documentation
+    - Bash validation scripts
+    - Mathematical calculations
+    - **Announcement**: 🧬 VARIATION GENERATION: Creating and validating evolutionary approaches
+    - **Evidence**: Show generated variations with validation results
+  **Phase 3 Testing Cycles**:
+    **Tool Calls**:
+    - Bash test execution
+    - Edit result documentation
+    - Mathematical score calculation
+    - **Announcement**: ⚡ TESTING CYCLES: Executing real variation tests and measurements
+    - **Evidence**: Display actual test outputs, performance data, success scores
+  **Phase 4 Selection Synthesis**:
+    **Tool Calls**:
+    - Mathematical selection analysis
+    - Edit best approach documentation
+    - Task coordination if complex
+    - **Announcement**: 🎯 SELECTION SYNTHESIS: Mathematically selecting and combining best approaches
+    - **Evidence**: Show selection mathematics, combined approach, improvement metrics
+  **Phase 5 Evolution Iteration**:
+    **Tool Calls**:
+    - Edit evolved approach
+    - Bash verification
+    - Mathematical improvement calculation
+    - **Announcement**: 🔄 EVOLUTION ITERATION: Implementing and verifying evolved improvements
+    - **Evidence**: Display evolution progress, actual improvement percentages, final results
 
 ### **Task Agent Communication Bridge**
-```yaml
-evolution_task_agent_protocol:
-  deployment_conditions:
-    - complex_multi_variation_coordination: "≥5 variations requiring parallel testing"
-    - sophisticated_synthesis: "Complex combination logic across multiple approaches"
-    - iterative_improvement: "Multiple evolution cycles with feedback loops"
-    
-  communication_flow:
-    initialization:
-      message: "INITIALIZATION: Evolution intelligence coordination for [objective]"
-      context: "Variations: [count], Criteria: [specifications], Complexity: [assessment]"
-      tools: ["Read", "Edit", "Bash", "Mathematical validation tools"]
-      
-    progress_updates:
-      variation_generation: "PROGRESS: Generated [X] variations, validated [Y], rejected [Z]"
-      testing_execution: "PROGRESS: Executed tests for [X] variations, results: [summary]"
-      selection_analysis: "PROGRESS: Mathematical selection complete, best approaches: [list]"
-      
-    completion_handoff:
-      message: "COMPLETION: Evolution intelligence coordination successful"
-      results: "Variations tested: [X], Best approaches: [Y], Evolution progress: [Z%]"
-      evidence: "Test results, selection mathematics, improvement documentation"
-```
+**Evolution Task Agent Protocol**:
+  **Deployment Conditions**:
+  - {'complex_multi_variation_coordination': '≥5 variations requiring parallel testing'}
+  - {'sophisticated_synthesis': 'Complex combination logic across multiple approaches'}
+  - {'iterative_improvement': 'Multiple evolution cycles with feedback loops'}
+  **Communication Flow**:
+    **Initialization**:
+      - **Message**: INITIALIZATION: Evolution intelligence coordination for [objective]
+      - **Context**: Variations: [count], Criteria: [specifications], Complexity: [assessment]
+      **Tools**:
+      - Read
+      - Edit
+      - Bash
+      - Mathematical validation tools
+    **Progress Updates**:
+      - **Variation Generation**: PROGRESS: Generated [X] variations, validated [Y], rejected [Z]
+      - **Testing Execution**: PROGRESS: Executed tests for [X] variations, results: [summary]
+      - **Selection Analysis**: PROGRESS: Mathematical selection complete, best approaches: [list]
+    **Completion Handoff**:
+      - **Message**: COMPLETION: Evolution intelligence coordination successful
+      - **Results**: Variations tested: [X], Best approaches: [Y], Evolution progress: [Z%]
+      - **Evidence**: Test results, selection mathematics, improvement documentation
 
 ### **Evidence and Transparency Requirements**
-```yaml
-p55_tool_execution_evidence:
-  real_execution_only: "NO SIMULATION - All variations must be actually tested"
-  complete_visibility: "Users see all test outputs, mathematical calculations, selection logic"
-  mathematical_precision: "Selection criteria calculated with 4 decimal precision"
-  
-p56_visual_transparency:
-  pre_execution_announcements: "Enhanced visual announcements before every tool call"
-  progress_tracking: "Real-time updates throughout evolution cycles"
-  completion_confirmation: "Detailed completion status with actual results and evidence"
-  error_transparency: "Immediate error visibility with recovery actions"
-```
+**P55 Tool Execution Evidence**:
+  - **Real Execution Only**: NO SIMULATION - All variations must be actually tested
+  - **Complete Visibility**: Users see all test outputs, mathematical calculations, selection logic
+  - **Mathematical Precision**: Selection criteria calculated with 4 decimal precision
+**P56 Visual Transparency**:
+  - **Pre Execution Announcements**: Enhanced visual announcements before every tool call
+  - **Progress Tracking**: Real-time updates throughout evolution cycles
+  - **Completion Confirmation**: Detailed completion status with actual results and evidence
+  - **Error Transparency**: Immediate error visibility with recovery actions
 
 ---
 
@@ -313,28 +313,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-evolution_intelligence_transparency:
-  variation_assessment:
-    announcement: "🔍 TRANSPARENCY: Variation count [X] assessed - [STANDARD/COMPLEX/MINIMUM_ENFORCEMENT] processing"
-    evidence: "Variation count validation with generation strategy"
-    
-  selection_criteria:
-    announcement: "📊 TRANSPARENCY: Selection criteria [DEFINED/REQUIRED] - [X] success metrics established"
-    evidence: "Selection criteria definition with measurement framework"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [evolution_operation]"
-    evidence: "Tool selection matrix with evolution-specific reasoning"
-    
-  evolution_cycles:
-    announcement: "🔄 TRANSPARENCY: Evolution cycles [X] - [SINGLE/MULTI/EXTENDED] evolution approach"
-    evidence: "Cycle count analysis with evolution strategy rationale"
-    
-  intelligence_growth:
-    announcement: "🧠 TRANSPARENCY: Intelligence evolution [X]% improvement - [patterns_discovered]"
-    evidence: "Quantified intelligence growth with pattern recognition metrics"
-```
+**Evolution Intelligence Transparency**:
+  **Variation Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Variation count [X] assessed - [STANDARD/COMPLEX/MINIMUM_ENFORCEMENT] processing
+    - **Evidence**: Variation count validation with generation strategy
+  **Selection Criteria**:
+    - **Announcement**: 📊 TRANSPARENCY: Selection criteria [DEFINED/REQUIRED] - [X] success metrics established
+    - **Evidence**: Selection criteria definition with measurement framework
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [evolution_operation]
+    - **Evidence**: Tool selection matrix with evolution-specific reasoning
+  **Evolution Cycles**:
+    - **Announcement**: 🔄 TRANSPARENCY: Evolution cycles [X] - [SINGLE/MULTI/EXTENDED] evolution approach
+    - **Evidence**: Cycle count analysis with evolution strategy rationale
+  **Intelligence Growth**:
+    - **Announcement**: 🧠 TRANSPARENCY: Intelligence evolution [X]% improvement - [patterns_discovered]
+    - **Evidence**: Quantified intelligence growth with pattern recognition metrics
 
 ---
 

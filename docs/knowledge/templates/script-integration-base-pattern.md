@@ -11,183 +11,148 @@
 ### **Phase 0: Script System Validation (MANDATORY - Mathematical Validation)**
 **Objective**: Validate script system availability achieving 99.9% success rate and mathematical foundation with <50ms response time
 
-```yaml
-script_system_validation:
-  visual_announcement:
-    display: "P56-compliant announcement before script validation"
-    format: "Enhanced script execution protocol notification"
-    
-  validation_sequence:
-    step_1_directory_validation:
-      command: "source ../../../../scripts/core/path-helper.sh && PROJECT_ROOT="$(get_project_root)" && ls -la "${PROJECT_ROOT}/scripts/formulas/""
-      purpose: "Validate formulas directory availability with 99.9% success rate"
-      evidence_required: "User sees actual directory listing with mathematical confirmation"
-      performance_target: "<25ms execution time with 100% path resolution accuracy"
-      
-    step_2_core_scripts_validation:
-      command: "ls -la /Users/nalve/claude-context-engineering/scripts/core/calculate-real-metrics.sh"
-      purpose: "Validate core calculation scripts availability"
-      evidence_required: "User sees script file existence"
-      
-    step_3_compliance_scripts_validation:
-      command: "ls -la /Users/nalve/claude-context-engineering/scripts/compliance/"
-      purpose: "Validate compliance validation scripts"
-      evidence_required: "User sees compliance script directory"
-      
-  error_handling:
-    script_unavailable: "Escalate to manual intervention with diagnostics"
-    permission_denied: "Display specific access resolution instructions"
-    directory_missing: "Provide specific repair commands"
-```
+**Script System Validation**:
+**Visual Announcement**:
+- **Display**: P56-compliant announcement before script validation
+- **Format**: Enhanced script execution protocol notification
+**Validation Sequence**:
+**Step 1 Directory Validation**:
+- **Command**: source ../../../../scripts/core/path-helper.sh && PROJECT_ROOT="$(get_project_root)" && ls -la "${PROJECT_ROOT}/scripts/formulas/
+- **Purpose**: Validate formulas directory availability with 99.9% success rate
+- **Evidence Required**: User sees actual directory listing with mathematical confirmation
+- **Performance Target**: <25ms execution time with 100% path resolution accuracy
+**Step 2 Core Scripts Validation**:
+- **Command**: ls -la /Users/nalve/claude-context-engineering/scripts/core/calculate-real-metrics.sh
+- **Purpose**: Validate core calculation scripts availability
+- **Evidence Required**: User sees script file existence
+**Step 3 Compliance Scripts Validation**:
+- **Command**: ls -la /Users/nalve/claude-context-engineering/scripts/compliance/
+- **Purpose**: Validate compliance validation scripts
+- **Evidence Required**: User sees compliance script directory
+**Error Handling**:
+- **Script Unavailable**: Escalate to manual intervention with diagnostics
+- **Permission Denied**: Display specific access resolution instructions
+- **Directory Missing**: Provide specific repair commands
 
 ### **Phase 1: Mathematical Formula Library Loading (MANDATORY - Precision Validation)**
 **Objective**: Load and validate mathematical calculation functions achieving 99.99% loading success and 4-decimal precision validation
 
-```yaml
-formula_library_integration:
-  visual_announcement:
-    display: "Mathematical formula library loading announcement"
-    format: "P56-compliant formula loading notification"
-    
-  loading_sequence:
-    step_1_formula_library_load:
-      command: "source ../../../../scripts/core/path-helper.sh && source_script "scripts/formulas/context_engineering_formulas.sh""
-      purpose: "Load mathematical formula library into execution context"
-      evidence_required: "User sees formula library loading confirmation"
-      
-    step_2_function_availability_check:
-      validation: "Verify calculate_confidence, calculate_complexity, and other core functions loaded"
-      evidence_required: "Display function availability status"
-      
-    step_3_mathematical_precision_setup:
-      requirement: "Establish 4 decimal place precision for all calculations"
-      validation: "Confirm bc calculator availability and precision settings"
-      
-  function_integration:
-    calculate_confidence: "Real calculation achieving ±0.0001 precision using domain_familiarity, requirement_clarity, resource_availability"
-    calculate_complexity: "Real calculation with 0.0-3.0 range validation using objective_count, dependency_factor, integration_complexity"
-    calculate_parallel_benefit: "Real calculation with ≥0.3 threshold validation using sequential_time, parallel_time, coordination_overhead"
-    calculate_threshold_compliance: "Real validation achieving 100% accuracy using current_score, required_threshold, tolerance"
-```
+**Formula Library Integration**:
+**Visual Announcement**:
+- **Display**: Mathematical formula library loading announcement
+- **Format**: P56-compliant formula loading notification
+**Loading Sequence**:
+**Step 1 Formula Library Load**:
+- **Command**: source ../../../../scripts/core/path-helper.sh && source_script "scripts/formulas/context_engineering_formulas.sh
+- **Purpose**: Load mathematical formula library into execution context
+- **Evidence Required**: User sees formula library loading confirmation
+**Step 2 Function Availability Check**:
+- **Validation**: Verify calculate_confidence, calculate_complexity, and other core functions loaded
+- **Evidence Required**: Display function availability status
+**Step 3 Mathematical Precision Setup**:
+- **Requirement**: Establish 4 decimal place precision for all calculations
+- **Validation**: Confirm bc calculator availability and precision settings
+**Function Integration**:
+- **Calculate Confidence**: Real calculation achieving ±0.0001 precision using domain_familiarity, requirement_clarity, resource_availability
+- **Calculate Complexity**: Real calculation with 0.0-3.0 range validation using objective_count, dependency_factor, integration_complexity
+- **Calculate Parallel Benefit**: Real calculation with ≥0.3 threshold validation using sequential_time, parallel_time, coordination_overhead
+- **Calculate Threshold Compliance**: Real validation achieving 100% accuracy using current_score, required_threshold, tolerance
 
 ### **Phase 2: Real-Time Metrics Calculation (MANDATORY - Performance Measurement)**
 **Objective**: Execute comprehensive metrics calculation achieving ≥99.5% accuracy via scripts with <100ms computation time
 
-```yaml
-metrics_calculation_execution:
-  visual_announcement:
-    display: "Comprehensive metrics calculation execution announcement"
-    format: "P56-compliant metrics execution notification"
-    
-  execution_sequence:
-    step_1_metrics_script_execution:
-      command: "source ../../../../scripts/core/path-helper.sh && execute_script "scripts/core/calculate-real-metrics.sh""
-      purpose: "Execute comprehensive system metrics calculation"
-      evidence_required: "User sees actual numerical results from script execution"
-      
-    step_2_registry_integration:
-      action: "Update command registry with real performance metrics"
-      evidence_required: "Display registry update confirmation"
-      
-    step_3_performance_baseline:
-      establishment: "Create mathematical baseline for command performance"
-      evidence_required: "Show performance baseline metrics"
-      
-  result_integration:
-    success_rates: "Real success rate calculations achieving ±1.2% accuracy from registry data"
-    execution_times: "Real timing metrics with <10ms precision from actual command execution"
-    usage_patterns: "Mathematical analysis achieving 94.3% pattern recognition of command utilization"
-    optimization_opportunities: "Data-driven optimization recommendations with 87% improvement potential identification"
-```
+**Metrics Calculation Execution**:
+**Visual Announcement**:
+- **Display**: Comprehensive metrics calculation execution announcement
+- **Format**: P56-compliant metrics execution notification
+**Execution Sequence**:
+**Step 1 Metrics Script Execution**:
+- **Command**: source ../../../../scripts/core/path-helper.sh && execute_script "scripts/core/calculate-real-metrics.sh
+- **Purpose**: Execute comprehensive system metrics calculation
+- **Evidence Required**: User sees actual numerical results from script execution
+**Step 2 Registry Integration**:
+- **Action**: Update command registry with real performance metrics
+- **Evidence Required**: Display registry update confirmation
+**Step 3 Performance Baseline**:
+- **Establishment**: Create mathematical baseline for command performance
+- **Evidence Required**: Show performance baseline metrics
+**Result Integration**:
+- **Success Rates**: Real success rate calculations achieving ±1.2% accuracy from registry data
+- **Execution Times**: Real timing metrics with <10ms precision from actual command execution
+- **Usage Patterns**: Mathematical analysis achieving 94.3% pattern recognition of command utilization
+- **Optimization Opportunities**: Data-driven optimization recommendations with 87% improvement potential identification
 
 ### **Phase 3: Mathematical Validation (MANDATORY - Statistical Validation)**
 **Objective**: Validate mathematical accuracy achieving ≥95% test passage and formula compliance with ±0.0001 precision tolerance
 
-```yaml
-mathematical_validation:
-  visual_announcement:
-    display: "Mathematical formula validation execution announcement"
-    format: "P56-compliant validation notification"
-    
-  validation_sequence:
-    step_1_formula_accuracy_validation:
-      command: "./scripts/compliance/verify-mathematical-formulas.sh"
-      purpose: "Execute 22+ mathematical tests for formula accuracy"
-      evidence_required: "User sees validation test results with pass/fail status"
-      
-    step_2_precision_compliance:
-      validation: "Verify 4 decimal place precision maintenance"
-      tolerance: "±0.0001 accuracy requirement"
-      evidence_required: "Display precision compliance status"
-      
-    step_3_threshold_validation:
-      verification: "Validate mathematical thresholds and trigger conditions"
-      evidence_required: "Show threshold compliance results"
-      
-  compliance_requirements:
-    accuracy_threshold: "≥95% mathematical test passage required (current: 96.8% ± 1.2%)"
-    precision_maintenance: "4 decimal places (±0.0001) for all calculations with 100% compliance verification"
-    formula_consistency: "Cross-validation achieving 99.7% agreement between different calculation methods"
-    p55_p56_compliance: "Tool call execution achieving 100% transparency with <100ms display latency"
-```
+**Mathematical Validation**:
+  **Visual Announcement**:
+    - **Display**: Mathematical formula validation execution announcement
+    - **Format**: P56-compliant validation notification
+  **Validation Sequence**:
+    **Step 1 Formula Accuracy Validation**:
+      - **Command**: ./scripts/compliance/verify-mathematical-formulas.sh
+      - **Purpose**: Execute 22+ mathematical tests for formula accuracy
+      - **Evidence Required**: User sees validation test results with pass/fail status
+    **Step 2 Precision Compliance**:
+      - **Validation**: Verify 4 decimal place precision maintenance
+      - **Tolerance**: ±0.0001 accuracy requirement
+      - **Evidence Required**: Display precision compliance status
+    **Step 3 Threshold Validation**:
+      - **Verification**: Validate mathematical thresholds and trigger conditions
+      - **Evidence Required**: Show threshold compliance results
+  **Compliance Requirements**:
+    - **Accuracy Threshold**: ≥95% mathematical test passage required (current: 96.8% ± 1.2%)
+    - **Precision Maintenance**: 4 decimal places (±0.0001) for all calculations with 100% compliance verification
+    - **Formula Consistency**: Cross-validation achieving 99.7% agreement between different calculation methods
+    - **P55 P56 Compliance**: Tool call execution achieving 100% transparency with <100ms display latency
 
 ### **Phase 4: Trigger System Validation (MANDATORY - Automated Validation)**
 **Objective**: Validate automatic trigger conditions achieving 100% trigger test success and routing logic with <25ms evaluation time
 
-```yaml
-trigger_system_validation:
-  visual_announcement:
-    display: "Trigger system validation execution announcement"
-    format: "P56-compliant trigger validation notification"
-    
-  validation_sequence:
-    step_1_trigger_test_execution:
-      command: "./scripts/core/test-trigger-system.sh"
-      purpose: "Execute comprehensive trigger system validation"
-      evidence_required: "User sees trigger test results with detailed status"
-      
-    step_2_routing_logic_validation:
-      verification: "Validate command routing logic based on mathematical thresholds"
-      evidence_required: "Display routing logic test results"
-      
-    step_3_auto_activation_testing:
-      validation: "Test automatic command activation conditions"
-      evidence_required: "Show auto-activation test results"
-      
-  trigger_categories:
-    confidence_triggers: "Test confidence-based command activation achieving 99.7% accuracy (0.5, 0.7 thresholds)"
-    complexity_triggers: "Test complexity-based routing with 100% threshold compliance (1.0, 2.0 thresholds)"
-    parallel_triggers: "Test parallelization benefit calculation achieving 98.9% accuracy (0.3 threshold)"
-    success_rate_triggers: "Test success rate monitoring with <50ms evaluation time (0.85 threshold)"
-    time_triggers: "Test conversation lifecycle triggers achieving 100% temporal accuracy (60 min threshold)"
-    adaptive_triggers: "Test context-aware threshold adaptation with 94.2% optimization success"
-```
+**Trigger System Validation**:
+  **Visual Announcement**:
+    - **Display**: Trigger system validation execution announcement
+    - **Format**: P56-compliant trigger validation notification
+  **Validation Sequence**:
+    **Step 1 Trigger Test Execution**:
+      - **Command**: ./scripts/core/test-trigger-system.sh
+      - **Purpose**: Execute comprehensive trigger system validation
+      - **Evidence Required**: User sees trigger test results with detailed status
+    **Step 2 Routing Logic Validation**:
+      - **Verification**: Validate command routing logic based on mathematical thresholds
+      - **Evidence Required**: Display routing logic test results
+    **Step 3 Auto Activation Testing**:
+      - **Validation**: Test automatic command activation conditions
+      - **Evidence Required**: Show auto-activation test results
+  **Trigger Categories**:
+    - **Confidence Triggers**: Test confidence-based command activation achieving 99.7% accuracy (0.5, 0.7 thresholds)
+    - **Complexity Triggers**: Test complexity-based routing with 100% threshold compliance (1.0, 2.0 thresholds)
+    - **Parallel Triggers**: Test parallelization benefit calculation achieving 98.9% accuracy (0.3 threshold)
+    - **Success Rate Triggers**: Test success rate monitoring with <50ms evaluation time (0.85 threshold)
+    - **Time Triggers**: Test conversation lifecycle triggers achieving 100% temporal accuracy (60 min threshold)
+    - **Adaptive Triggers**: Test context-aware threshold adaptation with 94.2% optimization success
 
 ### **Phase 5: Command-Specific Mathematical Integration (COMMAND-DEPENDENT)**
 **Objective**: Apply script-validated mathematical foundation to specific command functionality
 
-```yaml
-command_specific_integration:
-  mathematical_foundation_application:
-    confidence_application: "Use script-calculated confidence for command-specific routing"
-    complexity_application: "Use script-calculated complexity for execution strategy"
-    trigger_application: "Use script-validated triggers for command automation"
-    
-  command_context_mapping:
-    task_context_to_parameters: "Map command context to mathematical function parameters"
-    parameter_validation: "Validate parameter ranges and mathematical constraints"
-    result_interpretation: "Interpret mathematical results in command-specific context"
-    
-  execution_strategy_determination:
-    routing_decision: "Use mathematical analysis for optimal command selection"
-    execution_method: "Determine execution approach based on script metrics"
-    verification_requirements: "Set verification thresholds based on mathematical analysis"
-    
-  integration_verification:
-    mathematical_consistency: "Verify command execution aligns with mathematical foundation"
-    script_health_monitoring: "Continuous monitoring of script system integration"
-    performance_optimization: "Use script metrics for continuous command improvement"
-```
+**Command Specific Integration**:
+  **Mathematical Foundation Application**:
+    - **Confidence Application**: Use script-calculated confidence for command-specific routing
+    - **Complexity Application**: Use script-calculated complexity for execution strategy
+    - **Trigger Application**: Use script-validated triggers for command automation
+  **Command Context Mapping**:
+    - **Task Context To Parameters**: Map command context to mathematical function parameters
+    - **Parameter Validation**: Validate parameter ranges and mathematical constraints
+    - **Result Interpretation**: Interpret mathematical results in command-specific context
+  **Execution Strategy Determination**:
+    - **Routing Decision**: Use mathematical analysis for optimal command selection
+    - **Execution Method**: Determine execution approach based on script metrics
+    - **Verification Requirements**: Set verification thresholds based on mathematical analysis
+  **Integration Verification**:
+    - **Mathematical Consistency**: Verify command execution aligns with mathematical foundation
+    - **Script Health Monitoring**: Continuous monitoring of script system integration
+    - **Performance Optimization**: Use script metrics for continuous command improvement
 
 ---
 
@@ -322,28 +287,23 @@ cd /Users/nalve/claude-context-engineering/
 
 ### **Universal Error Handling Protocol**
 
-```yaml
-error_handling_protocol:
-  script_unavailable:
-    detection: "Script file not found or permission denied"
-    action: "Display specific error message with repair instructions"
-    escalation: "Provide manual intervention steps"
-    
-  mathematical_validation_failure:
-    detection: "Mathematical test failure below 95% threshold"
-    action: "Display specific failed tests with remediation steps"
-    escalation: "Escalate to manual mathematical review"
-    
-  formula_library_failure:
-    detection: "Formula loading failure or function unavailable"
-    action: "Display function availability status and repair steps"
-    escalation: "Provide alternative calculation methods"
-    
-  trigger_system_failure:
-    detection: "Trigger validation failure or test timeout"
-    action: "Display trigger test results with specific failures"
-    escalation: "Activate manual trigger override protocols"
-```
+**Error Handling Protocol**:
+  **Script Unavailable**:
+    - **Detection**: Script file not found or permission denied
+    - **Action**: Display specific error message with repair instructions
+    - **Escalation**: Provide manual intervention steps
+  **Mathematical Validation Failure**:
+    - **Detection**: Mathematical test failure below 95% threshold
+    - **Action**: Display specific failed tests with remediation steps
+    - **Escalation**: Escalate to manual mathematical review
+  **Formula Library Failure**:
+    - **Detection**: Formula loading failure or function unavailable
+    - **Action**: Display function availability status and repair steps
+    - **Escalation**: Provide alternative calculation methods
+  **Trigger System Failure**:
+    - **Detection**: Trigger validation failure or test timeout
+    - **Action**: Display trigger test results with specific failures
+    - **Escalation**: Activate manual trigger override protocols
 
 ---
 

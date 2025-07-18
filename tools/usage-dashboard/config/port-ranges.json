@@ -1,0 +1,171 @@
+{
+  "port_allocation_strategies": {
+    "development": {
+      "description": "Development environment with common dev ports",
+      "dashboard": {
+        "preferred_port": 8080,
+        "port_ranges": [[8080, 8090], [3000, 3010], [5000, 5010]],
+        "fallback_ports": [8080, 3000, 5001, 8081, 3001, 5002, 8000, 9000, 8888, 4000],
+        "avoid_ports": [5000]
+      },
+      "redis": {
+        "preferred_port": 6380,
+        "port_ranges": [[6380, 6390], [6340, 6350], [6320, 6330]],
+        "fallback_ports": [6380, 6381, 6382, 6383, 6384, 6385, 6386, 6387, 6388, 6389],
+        "avoid_ports": [6379]
+      }
+    },
+    
+    "enterprise": {
+      "description": "Enterprise environment with restricted port ranges",
+      "dashboard": {
+        "preferred_port": 8080,
+        "port_ranges": [[8080, 8099], [9080, 9099], [10080, 10099]],
+        "fallback_ports": [8080, 8081, 8082, 8083, 8084, 9080, 9081, 9082, 10080, 10081],
+        "avoid_ports": [8000, 8443, 8888]
+      },
+      "redis": {
+        "preferred_port": 6380,
+        "port_ranges": [[6380, 6399], [7380, 7399], [8380, 8399]],
+        "fallback_ports": [6380, 6381, 6382, 6383, 6384, 7380, 7381, 7382, 8380, 8381],
+        "avoid_ports": [6379, 6443]
+      }
+    },
+    
+    "testing": {
+      "description": "Testing environment with isolated port ranges",
+      "dashboard": {
+        "preferred_port": 18080,
+        "port_ranges": [[18080, 18099], [19000, 19020], [20000, 20020]],
+        "fallback_ports": [18080, 18081, 18082, 19000, 19001, 19002, 20000, 20001],
+        "avoid_ports": []
+      },
+      "redis": {
+        "preferred_port": 16380,
+        "port_ranges": [[16380, 16399], [17000, 17020], [18000, 18020]],
+        "fallback_ports": [16380, 16381, 16382, 17000, 17001, 17002, 18000, 18001],
+        "avoid_ports": []
+      }
+    },
+    
+    "production": {
+      "description": "Production environment with high port ranges",
+      "dashboard": {
+        "preferred_port": 28080,
+        "port_ranges": [[28080, 28099], [29000, 29020]],
+        "fallback_ports": [28080, 28081, 28082, 29000, 29001, 29002],
+        "avoid_ports": [28443, 28080]
+      },
+      "redis": {
+        "preferred_port": 26380,
+        "port_ranges": [[26380, 26399], [27000, 27020]],
+        "fallback_ports": [26380, 26381, 26382, 27000, 27001, 27002],
+        "avoid_ports": [26379]
+      }
+    },
+    
+    "docker": {
+      "description": "Docker-optimized port ranges avoiding common conflicts",
+      "dashboard": {
+        "preferred_port": 8080,
+        "port_ranges": [[8080, 8089], [8090, 8099], [3000, 3009]],
+        "fallback_ports": [8080, 8081, 8082, 8090, 8091, 3000, 3001, 3002],
+        "avoid_ports": [8443, 8000, 5000, 80, 443]
+      },
+      "redis": {
+        "preferred_port": 6380,
+        "port_ranges": [[6380, 6389], [6390, 6399], [6340, 6349]],
+        "fallback_ports": [6380, 6381, 6382, 6390, 6391, 6340, 6341, 6342],
+        "avoid_ports": [6379, 6443]
+      }
+    },
+    
+    "ci_cd": {
+      "description": "CI/CD environment with predictable port allocation",
+      "dashboard": {
+        "preferred_port": 38080,
+        "port_ranges": [[38080, 38099], [38100, 38120]],
+        "fallback_ports": [38080, 38081, 38082, 38100, 38101, 38102],
+        "avoid_ports": []
+      },
+      "redis": {
+        "preferred_port": 36380,
+        "port_ranges": [[36380, 36399], [36400, 36420]],
+        "fallback_ports": [36380, 36381, 36382, 36400, 36401, 36402],
+        "avoid_ports": []
+      }
+    }
+  },
+  
+  "environment_detection": {
+    "rules": [
+      {
+        "condition": "CI=true OR GITHUB_ACTIONS=true",
+        "strategy": "ci_cd",
+        "description": "Detected CI/CD environment"
+      },
+      {
+        "condition": "DOCKER_CONTAINER=true OR hostname contains 'docker'",
+        "strategy": "docker",
+        "description": "Detected Docker container environment"
+      },
+      {
+        "condition": "NODE_ENV=production OR FLASK_ENV=production",
+        "strategy": "production",
+        "description": "Detected production environment"
+      },
+      {
+        "condition": "NODE_ENV=test OR FLASK_ENV=testing",
+        "strategy": "testing",
+        "description": "Detected testing environment"
+      },
+      {
+        "condition": "CORPORATE_NETWORK=true OR ENTERPRISE=true",
+        "strategy": "enterprise",
+        "description": "Detected enterprise environment"
+      }
+    ],
+    "default_strategy": "development"
+  },
+  
+  "conflict_resolution": {
+    "max_attempts": 50,
+    "timeout_seconds": 5,
+    "retry_delay_ms": 100,
+    "emergency_ranges": {
+      "dashboard": [[48000, 48100], [49000, 49100]],
+      "redis": [[46000, 46100], [47000, 47100]]
+    }
+  },
+  
+  "known_conflicts": {
+    "common_services": {
+      "80": "HTTP Server",
+      "443": "HTTPS Server", 
+      "3000": "React/Node development server",
+      "3306": "MySQL",
+      "5000": "AirPlay Receiver (macOS) / Flask default",
+      "5432": "PostgreSQL",
+      "6379": "Redis default",
+      "8000": "Common development server",
+      "8080": "Common development server",
+      "8443": "HTTPS alternative",
+      "8888": "Jupyter Notebook",
+      "9000": "Various development tools"
+    },
+    "system_reserved": [22, 23, 25, 53, 80, 110, 143, 443, 993, 995],
+    "docker_internal": [2375, 2376, 2377, 7946, 4789],
+    "kubernetes": [6443, 2379, 2380, 10250, 10251, 10252, 10255]
+  },
+  
+  "monitoring": {
+    "track_allocations": true,
+    "log_conflicts": true,
+    "performance_metrics": true,
+    "export_metrics": {
+      "prometheus_format": false,
+      "json_logs": true,
+      "csv_export": false
+    }
+  }
+}

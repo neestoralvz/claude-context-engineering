@@ -83,11 +83,9 @@
 ### **Patrón 1: Configuración YAML → Framework Estructurado**
 ```markdown
 # ANTES (Violación P55/P6)
-```yaml
-enforcement_level: mandatory
-scope: all_operations
-compliance_rate: 100%
-```
+- **Enforcement Level**: mandatory
+- **Scope**: all_operations
+- **Compliance Rate**: 100%
 
 # DESPUÉS (Compliant P55/P6)
 **CRITICAL Enforcement Framework**:
@@ -99,12 +97,10 @@ compliance_rate: 100%
 ### **Patrón 2: Proceso YAML → Protocolo Numerado**
 ```markdown
 # ANTES (Violación P55/P6)
-```yaml
-validation_steps:
-  - input_verification
-  - processing_validation
-  - output_confirmation
-```
+**Validation Steps**:
+- input_verification
+- processing_validation
+- output_confirmation
 
 # DESPUÉS (Compliant P55/P6)
 **MANDATORY Validation Protocol**:
@@ -116,11 +112,9 @@ validation_steps:
 ### **Patrón 3: Fórmula YAML → Bloque Código Matemático**
 ```markdown
 # ANTES (Violación P55/P6)
-```yaml
-calculation: "efficiency = (output / input) * 100"
-precision: "±0.001"
-validation: "required"
-```
+- **Calculation**: efficiency = (output / input) * 100
+- **Precision**: ±0.001
+- **Validation**: required
 
 # DESPUÉS (Compliant P55/P6)
 **Mathematical Formula**:
@@ -134,12 +128,19 @@ Validation: REQUIRED with mathematical proof
 ### **Patrón 4: Workflow YAML → Lenguaje Natural**
 ```markdown
 # ANTES (Violación P55/P6)
-```yaml
-github_workflow:
-  name: "Claude Code Integration"
-  on:
-    issue_comment:
-      types: [created]
+```json
+{
+  "github_workflow": {
+    "name": "Claude Code Integration",
+    "true": {
+      "issue_comment": {
+        "types": [
+          "created"
+        ]
+      }
+    }
+  }
+}
 ```
 
 # DESPUÉS (Compliant P55/P6)

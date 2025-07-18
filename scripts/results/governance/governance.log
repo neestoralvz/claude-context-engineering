@@ -1,0 +1,55 @@
+2025-07-18 13:41:01,160 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 13:41:01,160 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 13:41:01,160 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 13:41:01,266 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 13:43:15,747 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 13:43:15,747 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 13:43:15,747 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 13:43:15,860 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 13:50:11,871 - __main__ - INFO - Duplication monitoring completed: 20375 violations found
+2025-07-18 13:50:12,852 - __main__ - INFO - Technical debt monitoring completed: 2841 total debt items, 1 violations
+2025-07-18 13:50:12,852 - __main__ - INFO - Performance monitoring completed: 3.325 cognitive steps, 1 violations
+2025-07-18 13:50:12,984 - __main__ - INFO - Compliance monitoring completed: 85.5% compliance rate, 1 violations
+2025-07-18 13:50:13,027 - __main__ - ERROR - Failed to generate alerts: Object of type datetime is not JSON serializable
+2025-07-18 13:50:13,030 - __main__ - INFO - Monitoring cycle completed in 417.28s: 20392 total violations
+2025-07-18 13:50:13,032 - __main__ - INFO - Governance report saved: /Users/nalve/claude-context-engineering/scripts/results/governance/metrics/governance_report_20250718_135013.json
+2025-07-18 16:13:30,136 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:30,136 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:30,136 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:30,136 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:30,136 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:30,136 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:30,271 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:13:30,271 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:31,193 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:31,193 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:31,193 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:31,326 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:13:31,326 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:13:31,326 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:13:31,326 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:13:41,216 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:41,216 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:13:41,216 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:41,216 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:13:41,216 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:41,216 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:13:41,358 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:13:41,361 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:14:42,303 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:14:42,303 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:14:42,303 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:14:42,310 - __main__ - INFO - Governance database initialized successfully
+2025-07-18 16:14:42,310 - __main__ - INFO - Governance configuration loaded successfully
+2025-07-18 16:14:42,310 - __main__ - INFO - Starting governance monitoring cycle
+2025-07-18 16:14:42,502 - __main__ - INFO - File size monitoring completed: 14 violations found
+2025-07-18 16:14:42,511 - __main__ - INFO - File size monitoring completed: 14 violations found

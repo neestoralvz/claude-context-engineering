@@ -13,12 +13,10 @@
 #### **Template Pattern** (Validated & Proven)
 ```markdown
 # ANTES (P55/P6 violation)
-```yaml
-enforcement_level: mandatory
-scope: all_operations
-compliance_rate: 100%
-verification: required
-```
+- **Enforcement Level**: mandatory
+- **Scope**: all_operations
+- **Compliance Rate**: 100%
+- **Verification**: required
 
 # DESPUÉS (P55/P6 compliant)
 **CRITICAL [Framework Name] Framework**:
@@ -40,13 +38,11 @@ verification: required
 #### **Template Pattern** (Validated & Proven)
 ```markdown
 # ANTES (P55/P6 violation)
-```yaml
-validation_steps:
-  - input_verification
-  - processing_validation
-  - output_confirmation
-  - quality_assessment
-```
+**Validation Steps**:
+- input_verification
+- processing_validation
+- output_confirmation
+- quality_assessment
 
 # DESPUÉS (P55/P6 compliant)
 **MANDATORY [Process Name] Protocol**:
@@ -68,12 +64,10 @@ validation_steps:
 #### **Template Pattern** (Validated & Proven)
 ```markdown
 # ANTES (P55/P6 violation)
-```yaml
-calculation: "efficiency = (output / input) * 100"
-precision: "±0.001"
-validation: "required"
-threshold: ">= 0.8000"
-```
+- **Calculation**: efficiency = (output / input) * 100
+- **Precision**: ±0.001
+- **Validation**: required
+- **Threshold**: >= 0.8000
 
 # DESPUÉS (P55/P6 compliant)
 **Mathematical Formula**:

@@ -27,8 +27,6 @@
 - **Mermaid Diagrams**: Use ```mermaid delimiter (REQUIRED for all visual representations)
 - **Bash Commands**: Use ```bash delimiter (MANDATORY for all shell commands)
 - **Markdown Examples**: Use ```markdown delimiter (REQUIRED for markup demonstrations)
-- **JSON/YAML**: Use ```json or ```yaml delimiter (CRITICAL for data structure examples)
-- **TypeScript**: Use ```typescript delimiter (REQUIRED for type-safe examples)
 - **Python**: Use ```python delimiter (MANDATORY for algorithm demonstrations)
 - **SQL**: Use ```sql delimiter (REQUIRED for database query examples)
 

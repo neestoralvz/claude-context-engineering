@@ -196,12 +196,10 @@ function integrateWithValidationFramework(command_validation_results) {
 ## 📊 **ALTERNATIVE REPORT FORMATS**
 
 ### **Compact Quality Summary**
-```yaml
-🎯 VALIDATION SUMMARY: [command_name]
-Overall Score: XX% | Status: ✅ APPROVED | Pattern: ✅ ENFORCED
-Quality: XX% | P55/P56: XX% | Nomenclature: XX% | Scripts: XX%
-Issues: X identified, X auto-remediated | Recommendations: X applied
-```
+- **🎯 Validation Summary**: [command_name]
+- **Overall Score**: XX% | Status: ✅ APPROVED | Pattern: ✅ ENFORCED
+- **Quality**: XX% | P55/P56: XX% | Nomenclature: XX% | Scripts: XX%
+- **Issues**: X identified, X auto-remediated | Recommendations: X applied
 
 ### **Technical Metrics Export**
 ```json
@@ -233,12 +231,10 @@ Issues: X identified, X auto-remediated | Recommendations: X applied
 ```
 
 ### **Progress Tracking Format**
-```yaml
-📈 QUALITY EVOLUTION TRACKING
-Command: [name] | Baseline: XX% | Current: XX% | Improvement: +XX%
-Key Improvements: [list] | Remaining Issues: [count] | Next Actions: [list]
-Pattern Compliance: Before XX% → After XX% | Auto-Remediation Rate: XX%
-```
+- 📈 QUALITY EVOLUTION TRACKING
+- **Command**: [name] | Baseline: XX% | Current: XX% | Improvement: +XX%
+- **Key Improvements**: [list] | Remaining Issues: [count] | Next Actions: [list]
+- **Pattern Compliance**: Before XX% → After XX% | Auto-Remediation Rate: XX%
 
 ---
 

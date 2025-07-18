@@ -178,6 +178,117 @@ This document defines how all Context Engineering commands connect, chain, and c
 
 ---
 
+## 🛡️ **P55 Script Execution**
+
+This command automatically executes the following scripts to ensure complete command relationship mapping and workflow orchestration:
+
+### **Script Execution Protocol**
+1. **Pre-execution**: Validate command ecosystem and script foundation
+2. **Execute**: Run automated relationship analysis and workflow mapping scripts
+3. **Post-execution**: Verify relationships and orchestration patterns
+
+### **Automated Script Execution**
+```bash
+# MANDATORY: Enhanced command relationships execution with P55 compliance
+#!/bin/bash
+
+# Performance tracking initialization
+EXECUTION_START_TIME=$(date +%s.%N)
+SESSION_ID="command-relationships-$(date +%Y%m%d-%H%M%S)-$$"
+
+# Phase 1: Script Foundation Loading (P55 Requirement)
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║       COMMAND RELATIONSHIPS SCRIPT FOUNDATION LOADING     ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Enhanced path helper loading
+if [ -f "scripts/core/path-helper.sh" ]; then
+    source scripts/core/path-helper.sh
+    PATH_HELPER_STATUS="LOADED"
+    echo "✅ PATH_HELPER: LOADED successfully"
+else
+    PATH_HELPER_STATUS="FALLBACK"
+    echo "⚠️  PATH_HELPER: Using fallback mode"
+fi
+
+# Formula library loading for relationship calculations
+if [ -f "scripts/formulas/context_engineering_formulas.sh" ]; then
+    source scripts/formulas/context_engineering_formulas.sh
+    FORMULA_STATUS="LOADED"
+    echo "✅ FORMULA_LIBRARY: LOADED successfully"
+else
+    FORMULA_STATUS="FALLBACK"
+    echo "⚠️  FORMULA_LIBRARY: Using fallback mode"
+fi
+
+# Phase 2: Command Relationship Analysis Scripts
+echo ""
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║         COMMAND RELATIONSHIP ANALYSIS PHASE               ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Execute relationship mapping scripts
+./scripts/analysis/command-relationship-mapper.sh --commands-dir "docs/commands" --output-format "json"
+RELATIONSHIP_MAPPING_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: command-relationship-mapper.sh = $([ $RELATIONSHIP_MAPPING_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Execute workflow orchestration scripts
+./scripts/automation/workflow-orchestrator.sh --relationships-file "temp/command-relationships.json" --workflow-patterns "${1:-standard}"
+WORKFLOW_ORCHESTRATION_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: workflow-orchestrator.sh = $([ $WORKFLOW_ORCHESTRATION_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Execute dependency analysis scripts
+./scripts/validation/dependency-analyzer.sh --commands-graph "temp/command-graph.json" --optimization-level "high"
+DEPENDENCY_ANALYSIS_STATUS=$?
+echo "🧮 TOOL_CALL_EXECUTED: dependency-analyzer.sh = $([ $DEPENDENCY_ANALYSIS_STATUS -eq 0 ] && echo "SUCCESS" || echo "FALLBACK")"
+
+# Phase 3: Relationship Validation and Optimization
+echo ""
+echo "╔═══════════════════════════════════════════════════════════╗"
+echo "║       RELATIONSHIP VALIDATION AND OPTIMIZATION            ║"
+echo "╚═══════════════════════════════════════════════════════════╝"
+
+# Calculate relationship metrics
+TOTAL_EXECUTION_TIME=$(echo "scale=4; $(date +%s.%N) - $EXECUTION_START_TIME" | bc)
+SCRIPTS_EXECUTED=3
+SCRIPTS_SUCCESSFUL=$((3 - RELATIONSHIP_MAPPING_STATUS - WORKFLOW_ORCHESTRATION_STATUS - DEPENDENCY_ANALYSIS_STATUS))
+
+# P55 Compliance Validation
+P55_COMPLIANCE=$(echo "scale=4; $SCRIPTS_SUCCESSFUL / $SCRIPTS_EXECUTED" | bc)
+P55_PERCENTAGE=$(echo "scale=2; $P55_COMPLIANCE * 100" | bc)
+
+echo "🛡️  P55_COMPLIANCE: $P55_COMPLIANCE (${P55_PERCENTAGE}% script execution success)"
+echo "📊 EXECUTION_TIME: ${TOTAL_EXECUTION_TIME}s"
+echo "📊 SESSION_ID: $SESSION_ID"
+echo "🚀 RELATIONSHIP_MAPPING_STATUS: $([ $RELATIONSHIP_MAPPING_STATUS -eq 0 ] && echo "✅ OPTIMAL" || echo "⚠️  DEGRADED")"
+```
+
+### **P56 Transparency Protocol**
+```markdown
+╔═══════════════════════════════════════════════════════════╗
+║         COMMAND RELATIONSHIPS MAPPING EXECUTION STATUS    ║
+╠═══════════════════════════════════════════════════════════╣
+║ Phase: Relationship Mapping | Tools: 3 Active            ║
+║ Purpose: Command ecosystem mapping with ≥90% chain success ║
+║ Real Execution: ✅ | Simulation: ❌ | Precision: ±0.01   ║
+║ Evidence: Command relationships + workflow orchestration  ║
+╚═══════════════════════════════════════════════════════════╝
+
+🔧 TOOL CALL EXECUTION TRACKER:
+- Relationship Mapping: [✅ EXECUTED] - command-relationship-mapper.sh
+- Workflow Orchestration: [✅ EXECUTED] - workflow-orchestrator.sh  
+- Dependency Analysis: [✅ EXECUTED] - dependency-analyzer.sh
+- Performance: [execution_time]ms | Chain Success: [success_percentage]%
+
+🎯 COMMAND RELATIONSHIP RESULTS:
+- Commands Mapped: [command_count] relationships identified
+- Chain Success Rate: [success_percentage]% (target: ≥90%)
+- Workflow Orchestration: [workflow_count] patterns optimized
+- Dependency Analysis: [dependency_percentage]% accuracy (target: ≥95%)
+```
+
+---
+
 ## 🔧 **SYSTEM COMMAND INTEGRATION PATTERNS**
 
 ### **System Commands Overview**

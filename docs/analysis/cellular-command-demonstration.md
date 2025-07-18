@@ -75,127 +75,124 @@ Automated project containerization with security hardening
 
 ## 🧠 Embedded Intelligence Core (SELF-CONTAINED)
 **Complete Knowledge Base**:
-```yaml
-# PROJECT DETECTION ALGORITHMS
-project_types:
-  nodejs:
-    indicators: ["package.json", "node_modules", "*.js"]
-    base_image: "node:18-alpine"
-    optimization: "multi-stage build, npm ci"
-  python:
-    indicators: ["requirements.txt", "setup.py", "*.py"]
-    base_image: "python:3.11-slim"
-    optimization: "virtual environment, pip cache"
-  java:
-    indicators: ["pom.xml", "build.gradle", "*.java"]
-    base_image: "openjdk:17-alpine"
-    optimization: "multi-stage build, layer caching"
-  go:
-    indicators: ["go.mod", "go.sum", "*.go"]
-    base_image: "golang:1.21-alpine"
-    optimization: "multi-stage build, static binary"
-  rust:
-    indicators: ["Cargo.toml", "Cargo.lock", "*.rs"]
-    base_image: "rust:1.70-alpine"
-    optimization: "multi-stage build, cargo cache"
-
-# SECURITY HARDENING PROTOCOLS
-security_hardening:
-  user_management:
-    - "Create non-root user"
-    - "Set proper user permissions"
-    - "Remove unnecessary packages"
-  file_permissions:
-    - "Restrict file access"
-    - "Set executable permissions"
-    - "Remove temporary files"
-  network_security:
-    - "Expose only necessary ports"
-    - "Use health checks"
-    - "Implement proper logging"
-  vulnerability_scanning:
-    - "Base image security validation"
-    - "Dependency vulnerability check"
-    - "Configuration security review"
-
-# PERFORMANCE OPTIMIZATION PATTERNS
-optimization_strategies:
-  build_optimization:
-    - "Multi-stage builds"
-    - "Layer caching"
-    - "Minimal base images"
-  runtime_optimization:
-    - "Resource limits"
-    - "Health checks"
-    - "Graceful shutdown"
-  size_optimization:
-    - "Alpine base images"
-    - "Dependency pruning"
-    - "Build cache optimization"
-```
+**Project Types**:
+  **Nodejs**:
+    **Indicators**:
+    - package.json
+    - node_modules
+    - *.js
+    - **Base Image**: node:18-alpine
+    - **Optimization**: multi-stage build, npm ci
+  **Python**:
+    **Indicators**:
+    - requirements.txt
+    - setup.py
+    - *.py
+    - **Base Image**: python:3.11-slim
+    - **Optimization**: virtual environment, pip cache
+  **Java**:
+    **Indicators**:
+    - pom.xml
+    - build.gradle
+    - *.java
+    - **Base Image**: openjdk:17-alpine
+    - **Optimization**: multi-stage build, layer caching
+  **Go**:
+    **Indicators**:
+    - go.mod
+    - go.sum
+    - *.go
+    - **Base Image**: golang:1.21-alpine
+    - **Optimization**: multi-stage build, static binary
+  **Rust**:
+    **Indicators**:
+    - Cargo.toml
+    - Cargo.lock
+    - *.rs
+    - **Base Image**: rust:1.70-alpine
+    - **Optimization**: multi-stage build, cargo cache
+**Security Hardening**:
+  **User Management**:
+  - Create non-root user
+  - Set proper user permissions
+  - Remove unnecessary packages
+  **File Permissions**:
+  - Restrict file access
+  - Set executable permissions
+  - Remove temporary files
+  **Network Security**:
+  - Expose only necessary ports
+  - Use health checks
+  - Implement proper logging
+  **Vulnerability Scanning**:
+  - Base image security validation
+  - Dependency vulnerability check
+  - Configuration security review
+**Optimization Strategies**:
+  **Build Optimization**:
+  - Multi-stage builds
+  - Layer caching
+  - Minimal base images
+  **Runtime Optimization**:
+  - Resource limits
+  - Health checks
+  - Graceful shutdown
+  **Size Optimization**:
+  - Alpine base images
+  - Dependency pruning
+  - Build cache optimization
 
 **Decision Matrix**:
-```yaml
-# CONTAINERIZATION DECISION LOGIC
-decision_flows:
-  project_analysis:
-    - "Detect project type with 95% accuracy"
-    - "Identify dependencies and requirements"
-    - "Assess containerization complexity"
-    - "Determine optimization strategies"
-  
-  security_assessment:
-    - "Evaluate security requirements"
-    - "Identify hardening opportunities"
-    - "Assess compliance needs"
-    - "Implement security protocols"
-  
-  performance_optimization:
-    - "Analyze resource requirements"
-    - "Optimize build processes"
-    - "Minimize container size"
-    - "Implement caching strategies"
-  
-  deployment_preparation:
-    - "Create deployment configurations"
-    - "Implement health checks"
-    - "Set up monitoring"
-    - "Prepare scaling configurations"
-```
+**Decision Flows**:
+  **Project Analysis**:
+  - Detect project type with 95% accuracy
+  - Identify dependencies and requirements
+  - Assess containerization complexity
+  - Determine optimization strategies
+  **Security Assessment**:
+  - Evaluate security requirements
+  - Identify hardening opportunities
+  - Assess compliance needs
+  - Implement security protocols
+  **Performance Optimization**:
+  - Analyze resource requirements
+  - Optimize build processes
+  - Minimize container size
+  - Implement caching strategies
+  **Deployment Preparation**:
+  - Create deployment configurations
+  - Implement health checks
+  - Set up monitoring
+  - Prepare scaling configurations
 
 **Best Practices Library**:
-```yaml
-# EMBEDDED EXPERTISE
-dockerfile_best_practices:
-  - "Use specific base image tags"
-  - "Minimize layer count"
-  - "Leverage build cache"
-  - "Use multi-stage builds"
-  - "Set explicit user"
-  - "Include health checks"
-  - "Use .dockerignore"
-  - "Optimize instruction order"
-
-compose_best_practices:
-  - "Use environment variables"
-  - "Implement service dependencies"
-  - "Configure logging"
-  - "Set resource limits"
-  - "Use named volumes"
-  - "Implement health checks"
-  - "Configure restart policies"
-  - "Use secrets management"
-
-security_best_practices:
-  - "Run as non-root user"
-  - "Scan for vulnerabilities"
-  - "Use minimal base images"
-  - "Remove unnecessary packages"
-  - "Set proper file permissions"
-  - "Use secure communication"
-  - "Implement proper logging"
-  - "Regular security updates"
-```
+**Dockerfile Best Practices**:
+- Use specific base image tags
+- Minimize layer count
+- Leverage build cache
+- Use multi-stage builds
+- Set explicit user
+- Include health checks
+- Use .dockerignore
+- Optimize instruction order
+**Compose Best Practices**:
+- Use environment variables
+- Implement service dependencies
+- Configure logging
+- Set resource limits
+- Use named volumes
+- Implement health checks
+- Configure restart policies
+- Use secrets management
+**Security Best Practices**:
+- Run as non-root user
+- Scan for vulnerabilities
+- Use minimal base images
+- Remove unnecessary packages
+- Set proper file permissions
+- Use secure communication
+- Implement proper logging
+- Regular security updates
 
 ## ⚡ Autonomous Execution Protocol (INDEPENDENT)
 **Complete Execution Steps**:
@@ -300,29 +297,23 @@ Read: security-hardening cellular organism
 
 ## 🎛️ Adaptive Intelligence (CONTINUOUS EVOLUTION)
 **Performance Monitoring**:
-```yaml
-# SELF-MONITORING METRICS
-performance_metrics:
-  execution_time:
-    target: "≤5 minutes for simple projects"
-    current: "3.2 minutes average"
-    trend: "improving"
-  
-  success_rate:
-    target: "≥95%"
-    current: "97.3%"
-    trend: "stable"
-  
-  security_score:
-    target: "≥90%"
-    current: "94.1%"
-    trend: "improving"
-  
-  container_size:
-    target: "≤200MB for typical projects"
-    current: "156MB average"
-    trend: "optimizing"
-```
+**Performance Metrics**:
+  **Execution Time**:
+    - **Target**: ≤5 minutes for simple projects
+    - **Current**: 3.2 minutes average
+    - **Trend**: improving
+  **Success Rate**:
+    - **Target**: ≥95%
+    - **Current**: 97.3%
+    - **Trend**: stable
+  **Security Score**:
+    - **Target**: ≥90%
+    - **Current**: 94.1%
+    - **Trend**: improving
+  **Container Size**:
+    - **Target**: ≤200MB for typical projects
+    - **Current**: 156MB average
+    - **Trend**: optimizing
 
 **Learning Patterns**:
 - **Project Type Recognition**: Continuously improve project detection accuracy

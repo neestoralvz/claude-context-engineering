@@ -110,46 +110,38 @@ breakthrough_threshold = decision_quality ≥ 0.88 AND routing_accuracy ≥ 0.89
 ## 🔄 **ADAPTIVE ROUTING SEQUENCE**
 
 ### **Phase 1: Confidence Assessment** (15-30 seconds)
-```yaml
-confidence_operations:
-  - confidence_calculation: "Mathematical confidence level assessment and validation"
-  - uncertainty_quantification: "Risk assessment and uncertainty measurement"
-  - readiness_evaluation: "Decision readiness and threshold validation"
-  - confidence_validation: "Confidence accuracy and reliability verification"
-```
+**Confidence Operations**:
+- {'confidence_calculation': 'Mathematical confidence level assessment and validation'}
+- {'uncertainty_quantification': 'Risk assessment and uncertainty measurement'}
+- {'readiness_evaluation': 'Decision readiness and threshold validation'}
+- {'confidence_validation': 'Confidence accuracy and reliability verification'}
 
 **Output**: Validated confidence levels with uncertainty quantification and readiness assessment
 
 ### **Phase 2: Complexity Analysis** (10-25 seconds)
-```yaml
-complexity_operations:
-  - task_scoring: "Comprehensive task complexity assessment and scoring"
-  - resource_evaluation: "Resource requirement analysis and planning"
-  - difficulty_prediction: "Execution difficulty forecasting and optimization"
-  - complexity_validation: "Complexity accuracy and assessment verification"
-```
+**Complexity Operations**:
+- {'task_scoring': 'Comprehensive task complexity assessment and scoring'}
+- {'resource_evaluation': 'Resource requirement analysis and planning'}
+- {'difficulty_prediction': 'Execution difficulty forecasting and optimization'}
+- {'complexity_validation': 'Complexity accuracy and assessment verification'}
 
 **Output**: Comprehensive complexity analysis with resource requirements and execution predictions
 
 ### **Phase 3: Routing Decision** (5-15 seconds)
-```yaml
-routing_operations:
-  - strategy_selection: "Optimal routing strategy identification and selection"
-  - pathway_optimization: "Execution pathway optimization and enhancement"
-  - trigger_activation: "Auto-trigger condition evaluation and activation"
-  - routing_validation: "Routing decision accuracy and effectiveness verification"
-```
+**Routing Operations**:
+- {'strategy_selection': 'Optimal routing strategy identification and selection'}
+- {'pathway_optimization': 'Execution pathway optimization and enhancement'}
+- {'trigger_activation': 'Auto-trigger condition evaluation and activation'}
+- {'routing_validation': 'Routing decision accuracy and effectiveness verification'}
 
 **Output**: Optimized routing strategy with validated decision pathways and trigger activation
 
 ### **Phase 4: Fallback Preparation** (10-20 seconds)
-```yaml
-fallback_operations:
-  - strategy_preparation: "Fallback strategy preparation and validation"
-  - recovery_optimization: "Recovery pathway optimization and enhancement"
-  - success_validation: "Fallback effectiveness measurement and verification"
-  - contingency_planning: "Alternative pathway preparation and contingency protocols"
-```
+**Fallback Operations**:
+- {'strategy_preparation': 'Fallback strategy preparation and validation'}
+- {'recovery_optimization': 'Recovery pathway optimization and enhancement'}
+- {'success_validation': 'Fallback effectiveness measurement and verification'}
+- {'contingency_planning': 'Alternative pathway preparation and contingency protocols'}
 
 **Output**: Comprehensive fallback strategies with validated recovery pathways and success metrics
 
@@ -267,40 +259,31 @@ def optimize_fallback_strategies(routing_decision, success_criteria):
 ## 🔄 **ROUTING DECISION MATRIX**
 
 ### **Confidence-Complexity Matrix**
-```yaml
-routing_matrix:
-  high_confidence_low_complexity:
-    strategy: "Direct execution with minimal monitoring"
-    fallback: "Standard recovery protocols"
-    
-  high_confidence_high_complexity:
-    strategy: "Orchestrated execution with progressive monitoring"
-    fallback: "Enhanced recovery with alternative pathways"
-    
-  low_confidence_low_complexity:
-    strategy: "Guided execution with validation checkpoints"
-    fallback: "Simplified recovery with step-by-step guidance"
-    
-  low_confidence_high_complexity:
-    strategy: "Progressive thinking with comprehensive orchestration"
-    fallback: "Multi-tier recovery with expert escalation"
-```
+**Routing Matrix**:
+  **High Confidence Low Complexity**:
+    - **Strategy**: Direct execution with minimal monitoring
+    - **Fallback**: Standard recovery protocols
+  **High Confidence High Complexity**:
+    - **Strategy**: Orchestrated execution with progressive monitoring
+    - **Fallback**: Enhanced recovery with alternative pathways
+  **Low Confidence Low Complexity**:
+    - **Strategy**: Guided execution with validation checkpoints
+    - **Fallback**: Simplified recovery with step-by-step guidance
+  **Low Confidence High Complexity**:
+    - **Strategy**: Progressive thinking with comprehensive orchestration
+    - **Fallback**: Multi-tier recovery with expert escalation
 
 ### **Auto-Trigger Conditions**
-```yaml
-trigger_conditions:
-  confidence_based:
-    - confidence_level < 0.7: "Progressive thinking activation"
-    - confidence_level < 0.5: "Expert consultation required"
-    
-  complexity_based:
-    - complexity_score > 0.8: "Orchestration activation"
-    - complexity_score > 0.9: "Parallel coordination required"
-    
-  combined_conditions:
-    - low_confidence_high_complexity: "Full ecosystem activation"
-    - high_uncertainty_critical_task: "Maximum fallback preparation"
-```
+**Trigger Conditions**:
+  **Confidence Based**:
+  - {'confidence_level < 0.7': 'Progressive thinking activation'}
+  - {'confidence_level < 0.5': 'Expert consultation required'}
+  **Complexity Based**:
+  - {'complexity_score > 0.8': 'Orchestration activation'}
+  - {'complexity_score > 0.9': 'Parallel coordination required'}
+  **Combined Conditions**:
+  - {'low_confidence_high_complexity': 'Full ecosystem activation'}
+  - {'high_uncertainty_critical_task': 'Maximum fallback preparation'}
 
 ---
 

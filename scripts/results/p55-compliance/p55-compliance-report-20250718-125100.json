@@ -1,0 +1,40 @@
+{
+  "p55_compliance_report": {
+    "timestamp": "2025-07-18T12:51:00",
+    "principle": "Tool Call Execution Bridging",
+    "validation_type": "STATISTICAL_ANALYSIS",
+    "data_collection": {
+      "bash_tool_calls":        5,
+      "read_tool_calls":       19,
+      "write_tool_calls":        2,
+      "edit_tool_calls":        2,
+      "total_tool_calls": 28,
+      "simulation_language_detected":        0,
+      "total_actions": 28,
+      "script_references": 10275,
+      "actual_script_executions": 7
+    },
+    "calculated_metrics": {
+      "tool_call_execution_ratio": 1.0000,
+      "simulation_ratio": 0,
+      "real_work_ratio": 1.0000,
+      "script_execution_ratio": .0006,
+      "tool_call_percentage": "100.0000%",
+      "real_work_percentage": "100.0000%",
+      "script_execution_percentage": ".0600%"
+    },
+    "compliance_thresholds": {
+      "tool_call_execution_minimum": "80%",
+      "real_work_minimum": "70%",
+      "script_execution_minimum": "95%"
+    },
+    "compliance_results": {
+      "tool_call_compliant": true,
+      "real_work_compliant": true,
+      "script_execution_compliant": false,
+      "overall_compliance": "FAILED"
+    },
+    "statistical_confidence": "95%",
+    "validation_method": "PATTERN_ANALYSIS_WITH_MATHEMATICAL_THRESHOLDS"
+  }
+}

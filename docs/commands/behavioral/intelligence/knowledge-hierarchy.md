@@ -138,28 +138,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-knowledge_hierarchy_transparency:
-  search_assessment:
-    announcement: "🔍 TRANSPARENCY: Knowledge search scope [COMPLETE/PARTIAL] - [X]% coverage expected"
-    evidence: "Search scope analysis with coverage prediction"
-    
-  internal_discovery:
-    announcement: "📚 TRANSPARENCY: Internal coverage [X]% - [EXCELLENT/GOOD/EXTERNAL_REQUIRED]"
-    evidence: "Systematic internal search results with coverage metrics"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [knowledge_operation]"
-    evidence: "Tool selection matrix with knowledge-specific reasoning"
-    
-  gap_analysis:
-    announcement: "📊 TRANSPARENCY: Knowledge gaps [X] identified - [CRITICAL/MANAGEABLE] priority"
-    evidence: "Gap analysis with prioritization and external research requirements"
-    
-  knowledge_integration:
-    announcement: "🔄 TRANSPARENCY: Knowledge integration [SUCCESS/PARTIAL] - [X] patterns added"
-    evidence: "Complete knowledge integration results with organizational learning"
-```
+**Knowledge Hierarchy Transparency**:
+  **Search Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Knowledge search scope [COMPLETE/PARTIAL] - [X]% coverage expected
+    - **Evidence**: Search scope analysis with coverage prediction
+  **Internal Discovery**:
+    - **Announcement**: 📚 TRANSPARENCY: Internal coverage [X]% - [EXCELLENT/GOOD/EXTERNAL_REQUIRED]
+    - **Evidence**: Systematic internal search results with coverage metrics
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [knowledge_operation]
+    - **Evidence**: Tool selection matrix with knowledge-specific reasoning
+  **Gap Analysis**:
+    - **Announcement**: 📊 TRANSPARENCY: Knowledge gaps [X] identified - [CRITICAL/MANAGEABLE] priority
+    - **Evidence**: Gap analysis with prioritization and external research requirements
+  **Knowledge Integration**:
+    - **Announcement**: 🔄 TRANSPARENCY: Knowledge integration [SUCCESS/PARTIAL] - [X] patterns added
+    - **Evidence**: Complete knowledge integration results with organizational learning
 
 ---
 
@@ -226,25 +220,21 @@ function analyzeKnowledgeGaps(internal_findings, search_objective) {
 ### **MANDATORY Tool Selection Matrix**
 
 **Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    file_count: "≤3 files for direct analysis"
-    complexity: "<0.7000 (straightforward operations)"
-    scope: "Well-defined, single-purpose operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    file_count: "≥4 files or unknown scope"
-    complexity: "≥0.7000 (complex operations)"
-    scope: "Multi-step, exploratory, or research operations"
-    time_constraint: ">300 seconds or open-ended analysis"
-    
-  other_tools:
-    GREP: "Pattern search across multiple files"
-    GLOB: "File pattern matching and discovery"
-    BASH: "System operations and automation"
-```
+**Tool Selection Criteria**:
+  **Read Tool Usage**:
+    - **File Count**: ≤3 files for direct analysis
+    - **Complexity**: <0.7000 (straightforward operations)
+    - **Scope**: Well-defined, single-purpose operations
+    - **Time Constraint**: ≤300 seconds execution window
+  **Task Tool Usage**:
+    - **File Count**: ≥4 files or unknown scope
+    - **Complexity**: ≥0.7000 (complex operations)
+    - **Scope**: Multi-step, exploratory, or research operations
+    - **Time Constraint**: >300 seconds or open-ended analysis
+  **Other Tools**:
+    - **Grep**: Pattern search across multiple files
+    - **Glob**: File pattern matching and discovery
+    - **Bash**: System operations and automation
 
 ### **CRITICAL Tool Selection Logic**
 

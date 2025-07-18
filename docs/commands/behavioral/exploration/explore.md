@@ -148,25 +148,21 @@ graph TD
 ### **🚨 BLOCKING Tool Selection Matrix**
 
 **🚨 MANDATORY Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    file_count: "≤3 files for direct analysis"
-    complexity: "<0.7000 (straightforward operations)"
-    scope: "Well-defined, single-purpose operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    file_count: "≥4 files or unknown scope"
-    complexity: "≥0.7000 (complex operations)"
-    scope: "Multi-step, exploratory, or research operations"
-    time_constraint: ">300 seconds or open-ended analysis"
-    
-  other_tools:
-    GREP: "Pattern search across multiple files"
-    GLOB: "File pattern matching and discovery"
-    BASH: "System operations and automation"
-```
+**Tool Selection Criteria**:
+  **Read Tool Usage**:
+    - **File Count**: ≤3 files for direct analysis
+    - **Complexity**: <0.7000 (straightforward operations)
+    - **Scope**: Well-defined, single-purpose operations
+    - **Time Constraint**: ≤300 seconds execution window
+  **Task Tool Usage**:
+    - **File Count**: ≥4 files or unknown scope
+    - **Complexity**: ≥0.7000 (complex operations)
+    - **Scope**: Multi-step, exploratory, or research operations
+    - **Time Constraint**: >300 seconds or open-ended analysis
+  **Other Tools**:
+    - **Grep**: Pattern search across multiple files
+    - **Glob**: File pattern matching and discovery
+    - **Bash**: System operations and automation
 
 ### **🚨 BLOCKING Tool Selection Logic**
 

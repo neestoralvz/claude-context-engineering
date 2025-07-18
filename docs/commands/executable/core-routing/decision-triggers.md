@@ -127,19 +127,18 @@ function triggerParallelAction(parallel_opportunities, task_context) {
 All orchestrators and meta-commands MUST invoke `/decision-engine` before proceeding:
 
 ### **Enforcement Protocol (Executable)**
-```yaml
-mandatory_validation:
-  orchestrator_commands: ["discovery-workflow", "planning-workflow", "execution-workflow", "verification-workflow", "documentation-workflow"]
-  meta_commands: ["context-engineering"]
-  system_commands: ["trigger-monitor"]
-  
-  validation_sequence:
-    1. AUTO-INVOKE /decision-engine when orchestrator called
-    2. EXECUTE routing analysis automatically
-    3. If routing_accuracy < 0.85 → AUTO-RESTART (max 3 iterations)
-    4. If routing_accuracy >= 0.85 → AUTO-PROCEED with recommended command
-    5. If 3 failed attempts → ESCALATE to manual intervention
-```
+**Mandatory Validation**:
+  **Orchestrator Commands**:
+  - discovery-workflow
+  - planning-workflow
+  - execution-workflow
+  - verification-workflow
+  - documentation-workflow
+  **Meta Commands**:
+  - context-engineering
+  **System Commands**:
+  - trigger-monitor
+  - **Validation Sequence**: 1. AUTO-INVOKE /decision-engine when orchestrator called 2. EXECUTE routing analysis automatically 3. If routing_accuracy < 0.85 → AUTO-RESTART (max 3 iterations) 4. If routing_accuracy >= 0.85 → AUTO-PROCEED with recommended command 5. If 3 failed attempts → ESCALATE to manual intervention
 
 ### **Execution Instructions (LLM Behavior)**
 ```javascript
@@ -186,24 +185,20 @@ function autoExecutionMechanism(task_context) {
 ```
 
 ### **Convergence Metrics**
-```yaml
-convergence_criteria:
-  max_iterations: 3
-  success_thresholds:
-    routing_accuracy: 0.95
-    confidence_improvement: 0.1
-    complexity_reduction: 0.2
-  
-  restart_conditions:
-    - routing_accuracy < 0.85
-    - confidence_score < adaptive_threshold
-    - complexity_score > 2.0
-    
-  escalation_triggers:
-    - 3 failed routing attempts
-    - persistent_uncertainty_detected
-    - conflicting_command_recommendations
-```
+**Convergence Criteria**:
+  - **Max Iterations**: 3
+  **Success Thresholds**:
+    - **Routing Accuracy**: 0.95
+    - **Confidence Improvement**: 0.1
+    - **Complexity Reduction**: 0.2
+  **Restart Conditions**:
+  - routing_accuracy < 0.85
+  - confidence_score < adaptive_threshold
+  - complexity_score > 2.0
+  **Escalation Triggers**:
+  - 3 failed routing attempts
+  - persistent_uncertainty_detected
+  - conflicting_command_recommendations
 
 ---
 

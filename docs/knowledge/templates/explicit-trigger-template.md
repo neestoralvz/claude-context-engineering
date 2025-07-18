@@ -118,15 +118,13 @@ Este comando se activa automáticamente cuando el sistema detecta las condicione
 - **Success Rate**: ≥90% resolución exitosa post-activación
 
 ### **Trigger Monitoring Dashboard**
-```yaml
-[COMMAND_NAME] Trigger Status:
+**[Command Name] Trigger Status**:
 - Primary Triggers: [ACTIVE/INACTIVE]
 - Secondary Triggers: [ACTIVE/INACTIVE]
 - Tertiary Triggers: [ACTIVE/INACTIVE]
 - Last Activation: [timestamp]
 - Success Rate: [percentage]
 - Average Response Time: [seconds]
-```
 
 ### **Trigger Debugging**
 - **Trigger Log**: Registro completo de activaciones
@@ -162,22 +160,22 @@ Este comando se activa automáticamente cuando el sistema detecta las condicione
 4. **Aprendizaje**: Ajustar umbrales basado en efectividad histórica
 
 ### **Ejemplo de Activación**:
-```yaml
-TRIGGER DETECTED: Complexity ≥ 1.0
-ACTIVATING: [COMMAND_NAME]
-CONTEXT: [contexto específico]
-EXPECTED OUTCOME: [resultado esperado]
-VERIFICATION: [criterio de éxito]
-```
+- **Trigger Detected**: Complexity ≥ 1.0
+**Activating**:
+- COMMAND_NAME
+**Context**:
+- contexto específico
+**Expected Outcome**:
+- resultado esperado
+**Verification**:
+- criterio de éxito
 
 ### **Ejemplo de Respuesta del Sistema**:
-```yaml
-TRIGGER ACKNOWLEDGED: [COMMAND_NAME] activado automáticamente
-REASON: [razón específica del trigger]
-ACTION TAKEN: [acción específica ejecutada]
-RESULT: [resultado obtenido]
-SUCCESS: [TRUE/FALSE]
-```
+- **Trigger Acknowledged**: [COMMAND_NAME] activado automáticamente
+- **Reason**: [razón específica del trigger]
+- **Action Taken**: [acción específica ejecutada]
+- **Result**: [resultado obtenido]
+- **Success**: [TRUE/FALSE]
 
 ---
 

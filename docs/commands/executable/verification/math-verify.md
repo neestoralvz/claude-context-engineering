@@ -111,21 +111,15 @@ The command's unique value is its mathematical guarantee of convergence with aut
 ## 📋 Usage Examples
 
 ### **Performance Optimization Loop**
-```yaml
-/verify-mathematics-loops "response_time:200ms,throughput:1000rps,memory:512MB" 95 50
-```
+**Value**: /verify-mathematics-loops "response_time:200ms,throughput:1000rps,memory:512MB" 95 50
 **Result**: Recursive optimization until performance targets achieved with 95% confidence
 
 ### **Quality Assurance Loop**
-```yaml
-/verify-mathematics-loops "test_coverage:95%,error_rate:0.1%,security_score:100%" 98 30
-```
+**Value**: /verify-mathematics-loops "test_coverage:95%,error_rate:0.1%,security_score:100%" 98 30
 **Result**: Quality verification loop with enhanced confidence requirements
 
 ### **Feature Development Loop**
-```yaml
-/verify-mathematics-loops "features:100%,requirements:100%,acceptance:100%" 95 75
-```
+**Value**: /verify-mathematics-loops "features:100%,requirements:100%,acceptance:100%" 95 75
 **Result**: Development verification ensuring complete feature delivery
 
 ## 🔗 **Natural Connections**

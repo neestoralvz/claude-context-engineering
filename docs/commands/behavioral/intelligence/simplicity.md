@@ -158,28 +158,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-mathematical_simplicity_transparency:
-  complexity_calculation:
-    announcement: "🔍 TRANSPARENCY: Complexity calculated C = [X] using formula (S × F × D × R) / (A × P)"
-    evidence: "Complete mathematical calculation with factor breakdown"
-    
-  threshold_assessment:
-    announcement: "📊 TRANSPARENCY: Threshold [X] applied for [ATOMIC/ORCHESTRATOR/META/SYSTEM] - [APPROVED/BLOCKED]"
-    evidence: "Threshold determination with compliance validation"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [simplicity_operation]"
-    evidence: "Tool selection matrix with simplicity-specific reasoning"
-    
-  optimization_generation:
-    announcement: "💡 TRANSPARENCY: Optimization [X] recommendations generated - [SIZE/FEATURE/DEPENDENCY/RESPONSIBILITY]"
-    evidence: "Detailed optimization plan with implementation steps"
-    
-  simplicity_validation:
-    announcement: "✅ TRANSPARENCY: Simplicity validation [SUCCESS/FAILURE] - [X]% improvement achieved"
-    evidence: "Mathematical validation with improvement metrics"
-```
+**Mathematical Simplicity Transparency**:
+  **Complexity Calculation**:
+    - **Announcement**: 🔍 TRANSPARENCY: Complexity calculated C = [X] using formula (S × F × D × R) / (A × P)
+    - **Evidence**: Complete mathematical calculation with factor breakdown
+  **Threshold Assessment**:
+    - **Announcement**: 📊 TRANSPARENCY: Threshold [X] applied for [ATOMIC/ORCHESTRATOR/META/SYSTEM] - [APPROVED/BLOCKED]
+    - **Evidence**: Threshold determination with compliance validation
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [simplicity_operation]
+    - **Evidence**: Tool selection matrix with simplicity-specific reasoning
+  **Optimization Generation**:
+    - **Announcement**: 💡 TRANSPARENCY: Optimization [X] recommendations generated - [SIZE/FEATURE/DEPENDENCY/RESPONSIBILITY]
+    - **Evidence**: Detailed optimization plan with implementation steps
+  **Simplicity Validation**:
+    - **Announcement**: ✅ TRANSPARENCY: Simplicity validation [SUCCESS/FAILURE] - [X]% improvement achieved
+    - **Evidence**: Mathematical validation with improvement metrics
 
 ---
 

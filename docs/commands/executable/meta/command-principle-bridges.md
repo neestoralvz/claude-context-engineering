@@ -18,34 +18,29 @@
 
 ### **🚨 AUTOMATIC Command-Principle Integration Protocol**
 
-```yaml
-command_principle_bridges:
-  integration_architecture:
-    pre_execution_phase:
-      principle_activation: "Automatic activation of command-associated principles"
-      compliance_validation: "Pre-execution principle compliance checking"
-      context_analysis: "Command context analysis for additional principle triggers"
-      blocking_verification: "Verify no blocking violations before execution"
-      
-    during_execution_phase:
-      real_time_monitoring: "Continuous principle compliance during execution"
-      dynamic_activation: "Activate additional principles based on execution context"
-      violation_detection: "Real-time detection of principle violations"
-      automatic_correction: "Apply corrections during execution when possible"
-      
-    post_execution_phase:
-      compliance_verification: "Validate principle compliance after execution"
-      effectiveness_measurement: "Measure principle enforcement effectiveness"
-      learning_integration: "Learn from execution for future optimization"
-      performance_analysis: "Analyze performance impact of principle enforcement"
-      
-  bridge_scope:
-    behavioral_commands: "38 behavioral commands with principle enforcement"
-    executable_commands: "30 executable commands with principle validation"
-    core_commands: "6 core commands with foundational principle activation"
-    shared_commands: "2 shared commands with universal principle compliance"
-    total_coverage: "76 commands with comprehensive principle integration"
-```
+**Command Principle Bridges**:
+  **Integration Architecture**:
+    **Pre Execution Phase**:
+      - **Principle Activation**: Automatic activation of command-associated principles
+      - **Compliance Validation**: Pre-execution principle compliance checking
+      - **Context Analysis**: Command context analysis for additional principle triggers
+      - **Blocking Verification**: Verify no blocking violations before execution
+    **During Execution Phase**:
+      - **Real Time Monitoring**: Continuous principle compliance during execution
+      - **Dynamic Activation**: Activate additional principles based on execution context
+      - **Violation Detection**: Real-time detection of principle violations
+      - **Automatic Correction**: Apply corrections during execution when possible
+    **Post Execution Phase**:
+      - **Compliance Verification**: Validate principle compliance after execution
+      - **Effectiveness Measurement**: Measure principle enforcement effectiveness
+      - **Learning Integration**: Learn from execution for future optimization
+      - **Performance Analysis**: Analyze performance impact of principle enforcement
+  **Bridge Scope**:
+    - **Behavioral Commands**: 38 behavioral commands with principle enforcement
+    - **Executable Commands**: 30 executable commands with principle validation
+    - **Core Commands**: 6 core commands with foundational principle activation
+    - **Shared Commands**: 2 shared commands with universal principle compliance
+    - **Total Coverage**: 76 commands with comprehensive principle integration
 
 ### **🚨 MANDATORY Command-Specific Bridge Implementation**
 
@@ -344,46 +339,38 @@ class SpecificCommandBridges:
 
 ### **Bridge Performance Analytics**
 
-```yaml
-bridge_analytics:
-  effectiveness_metrics:
-    principle_activation_rate:
-      target: "≥95% automatic activation of relevant principles"
-      measurement: "Percentage of commands with complete principle activation"
-      optimization: "Continuous improvement of activation detection"
-      
-    compliance_enforcement_rate:
-      target: "≥90% compliance achievement through bridge enforcement"
-      measurement: "Percentage of executions achieving full compliance"
-      optimization: "Enhancement of enforcement mechanisms"
-      
-    violation_prevention_rate:
-      target: "≥85% violation prevention vs detection"
-      measurement: "Prevention rate vs post-violation detection"
-      optimization: "Proactive prevention mechanism improvement"
-      
-  performance_impact:
-    execution_overhead:
-      target: "≤10% performance overhead from bridge integration"
-      measurement: "Performance impact of principle integration"
-      optimization: "Bridge efficiency optimization"
-      
-    user_experience_impact:
-      target: "≥95% transparent operation - minimal user friction"
-      measurement: "User experience impact assessment"
-      optimization: "Seamless integration enhancement"
-      
-  behavioral_transformation:
-    compliance_improvement:
-      target: "≥80% improvement in overall compliance"
-      measurement: "Before/after compliance rate comparison"
-      optimization: "Targeted compliance improvement strategies"
-      
-    quality_enhancement:
-      target: "≥70% improvement in output quality"
-      measurement: "Quality metrics before/after bridge implementation"
-      optimization: "Quality-focused bridge optimization"
-```
+**Bridge Analytics**:
+  **Effectiveness Metrics**:
+    **Principle Activation Rate**:
+      - **Target**: ≥95% automatic activation of relevant principles
+      - **Measurement**: Percentage of commands with complete principle activation
+      - **Optimization**: Continuous improvement of activation detection
+    **Compliance Enforcement Rate**:
+      - **Target**: ≥90% compliance achievement through bridge enforcement
+      - **Measurement**: Percentage of executions achieving full compliance
+      - **Optimization**: Enhancement of enforcement mechanisms
+    **Violation Prevention Rate**:
+      - **Target**: ≥85% violation prevention vs detection
+      - **Measurement**: Prevention rate vs post-violation detection
+      - **Optimization**: Proactive prevention mechanism improvement
+  **Performance Impact**:
+    **Execution Overhead**:
+      - **Target**: ≤10% performance overhead from bridge integration
+      - **Measurement**: Performance impact of principle integration
+      - **Optimization**: Bridge efficiency optimization
+    **User Experience Impact**:
+      - **Target**: ≥95% transparent operation - minimal user friction
+      - **Measurement**: User experience impact assessment
+      - **Optimization**: Seamless integration enhancement
+  **Behavioral Transformation**:
+    **Compliance Improvement**:
+      - **Target**: ≥80% improvement in overall compliance
+      - **Measurement**: Before/after compliance rate comparison
+      - **Optimization**: Targeted compliance improvement strategies
+    **Quality Enhancement**:
+      - **Target**: ≥70% improvement in output quality
+      - **Measurement**: Quality metrics before/after bridge implementation
+      - **Optimization**: Quality-focused bridge optimization
 
 ### **Adaptive Bridge Optimization**
 
@@ -439,30 +426,25 @@ class BridgeOptimizationSystem:
 
 ### **Real-Time Bridge Status**
 
-```yaml
-bridge_dashboard:
-  live_monitoring:
-    active_bridges:
-      currently_executing: "Commands currently executing with principle bridges"
-      principle_activation_status: "Real-time principle activation across all commands"
-      compliance_status: "Current compliance status for active bridges"
-      
-    performance_metrics:
-      execution_efficiency: "Performance impact of bridge integration"
-      compliance_rates: "Real-time compliance achievement rates"
-      violation_frequency: "Frequency of violations across all bridges"
-      
-  effectiveness_analytics:
-    bridge_performance:
-      most_effective_bridges: "Commands with highest compliance achievement"
-      improvement_opportunities: "Bridges with optimization potential"
-      success_patterns: "Patterns of successful bridge implementations"
-      
-    principle_utilization:
-      most_activated_principles: "Principles most frequently activated"
-      highest_impact_principles: "Principles with highest compliance impact"
-      underutilized_principles: "Principles with integration opportunities"
-```
+**Bridge Dashboard**:
+  **Live Monitoring**:
+    **Active Bridges**:
+      - **Currently Executing**: Commands currently executing with principle bridges
+      - **Principle Activation Status**: Real-time principle activation across all commands
+      - **Compliance Status**: Current compliance status for active bridges
+    **Performance Metrics**:
+      - **Execution Efficiency**: Performance impact of bridge integration
+      - **Compliance Rates**: Real-time compliance achievement rates
+      - **Violation Frequency**: Frequency of violations across all bridges
+  **Effectiveness Analytics**:
+    **Bridge Performance**:
+      - **Most Effective Bridges**: Commands with highest compliance achievement
+      - **Improvement Opportunities**: Bridges with optimization potential
+      - **Success Patterns**: Patterns of successful bridge implementations
+    **Principle Utilization**:
+      - **Most Activated Principles**: Principles most frequently activated
+      - **Highest Impact Principles**: Principles with highest compliance impact
+      - **Underutilized Principles**: Principles with integration opportunities
 
 ---
 

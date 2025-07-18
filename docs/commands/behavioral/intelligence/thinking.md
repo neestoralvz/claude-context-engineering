@@ -8,6 +8,8 @@
 
 **P55/P56 Compliance**: MANDATORY tool execution evidence with observable progressive thinking outcomes and quantifiable strategic intelligence metrics
 
+**🚨 MANDATORY Compact Communication**: Auto-enforcement of Principle #82 with format `⟳ /comando → resultado 🎯 [tiempo]` and immediate blocking of verbose patterns.
+
 **Behavioral Reinforcement**: PERMANENT neural pathway establishment for automatic progressive thinking with ≥95% behavioral control effectiveness
 
 **Mathematical Precision**: ≥90% progressive depth requirement with evidence-based strategic intelligence validation
@@ -79,32 +81,27 @@
 ## 📊 **PROGRESSIVE THINKING ENGINE**
 
 ### **4-Stage Thinking Architecture**
-```yaml
-progressive_thinking_framework:
-  stage_1_contextual_think:
-    focus: "Strategic understanding enriched by comprehensive context"
-    process: "Synthesize available context with initial analysis for deep comprehension"
-    input: "Provided context + Available intelligence"
-    output: "Context-enriched strategic understanding and approach options"
-    
-  stage_2_analytical_think:
-    focus: "Strategic implications leveraging full intelligence gathering" 
-    process: "Analyze strategic trade-offs, dependencies, and optimization opportunities"
-    input: "Contextual understanding + Intelligence insights + Pattern recognition"
-    output: "Strategic analysis with optimized approach recommendations"
-    
-  stage_3_strategic_think:
-    focus: "Strategic execution planning with practical implementation details"
-    process: "Design concrete strategic implementation with specific coordination"
-    input: "Strategic analysis + Available tools/commands + Context constraints"
-    output: "Executable strategic implementation plan with coordination strategy"
-    
-  stage_4_breakthrough_think:
-    focus: "Revolutionary insights and comprehensive verification strategy"
-    process: "Generate breakthrough insights and define verification approach"
-    input: "Implementation plan + Strategic objectives + Innovation requirements"
-    output: "Breakthrough insights + Comprehensive verification framework"
-```
+**Progressive Thinking Framework**:
+  **Stage 1 Contextual Think**:
+    - **Focus**: Strategic understanding enriched by comprehensive context
+    - **Process**: Synthesize available context with initial analysis for deep comprehension
+    - **Input**: Provided context + Available intelligence
+    - **Output**: Context-enriched strategic understanding and approach options
+  **Stage 2 Analytical Think**:
+    - **Focus**: Strategic implications leveraging full intelligence gathering
+    - **Process**: Analyze strategic trade-offs, dependencies, and optimization opportunities
+    - **Input**: Contextual understanding + Intelligence insights + Pattern recognition
+    - **Output**: Strategic analysis with optimized approach recommendations
+  **Stage 3 Strategic Think**:
+    - **Focus**: Strategic execution planning with practical implementation details
+    - **Process**: Design concrete strategic implementation with specific coordination
+    - **Input**: Strategic analysis + Available tools/commands + Context constraints
+    - **Output**: Executable strategic implementation plan with coordination strategy
+  **Stage 4 Breakthrough Think**:
+    - **Focus**: Revolutionary insights and comprehensive verification strategy
+    - **Process**: Generate breakthrough insights and define verification approach
+    - **Input**: Implementation plan + Strategic objectives + Innovation requirements
+    - **Output**: Breakthrough insights + Comprehensive verification framework
 
 ## 🧠 **PROGRESSIVE THINKING DECISION TREE**
 
@@ -274,28 +271,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-progressive_thinking_transparency:
-  stage_progression:
-    announcement: "🔍 TRANSPARENCY: Stage [X] [CONTEXTUAL/ANALYTICAL/STRATEGIC/BREAKTHROUGH] - [X]% depth achieved"
-    evidence: "Complete stage progression with depth metrics"
-    
-  context_integration:
-    announcement: "📊 TRANSPARENCY: Context integration [X]% - [STANDARD/ENHANCED] approach required"
-    evidence: "Context integration assessment with enhancement requirements"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [thinking_operation]"
-    evidence: "Tool selection matrix with progressive thinking reasoning"
-    
-  depth_assessment:
-    announcement: "📈 TRANSPARENCY: Thinking depth [X]% - [SUFFICIENT/ENHANCEMENT] required"
-    evidence: "Depth assessment with progression requirements"
-    
-  synthesis_integration:
-    announcement: "✅ TRANSPARENCY: Synthesis [SUCCESS/ENHANCEMENT] - [X]% strategic intelligence achieved"
-    evidence: "Complete synthesis with strategic intelligence metrics"
-```
+**Progressive Thinking Transparency**:
+  **Stage Progression**:
+    - **Announcement**: 🔍 TRANSPARENCY: Stage [X] [CONTEXTUAL/ANALYTICAL/STRATEGIC/BREAKTHROUGH] - [X]% depth achieved
+    - **Evidence**: Complete stage progression with depth metrics
+  **Context Integration**:
+    - **Announcement**: 📊 TRANSPARENCY: Context integration [X]% - [STANDARD/ENHANCED] approach required
+    - **Evidence**: Context integration assessment with enhancement requirements
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [thinking_operation]
+    - **Evidence**: Tool selection matrix with progressive thinking reasoning
+  **Depth Assessment**:
+    - **Announcement**: 📈 TRANSPARENCY: Thinking depth [X]% - [SUFFICIENT/ENHANCEMENT] required
+    - **Evidence**: Depth assessment with progression requirements
+  **Synthesis Integration**:
+    - **Announcement**: ✅ TRANSPARENCY: Synthesis [SUCCESS/ENHANCEMENT] - [X]% strategic intelligence achieved
+    - **Evidence**: Complete synthesis with strategic intelligence metrics
 
 ---
 

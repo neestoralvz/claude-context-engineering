@@ -32,86 +32,70 @@
 ### **Stage 1: Discovery Phase**
 
 **MANDATORY Requirements**:
-```yaml
-discovery_phase:
-  systematic_analysis:
-    pattern_recognition: "/explore [target-system] with comprehensive scanning"
-    opportunity_identification: "/patterns [identify-improvement-opportunities]"
-    evidence_requirement: "Real analysis results with quantifiable baselines"
-  
-  key_activities:
-    content_quality_analysis: "Script-enhanced validation of current state"
-    redundancy_detection: "Mathematical measurement of information density"
-    compliance_assessment: "Tool call execution validation with P55/P56 standards"
-  
-  success_criteria:
-    analysis_completeness: "≥95% system coverage with documented baselines"
-    opportunity_identification: "≥3 improvement candidates with quantified impact"
-    validation_accuracy: "≥90% assessment precision with measurable metrics"
-```
+**Discovery Phase**:
+  **Systematic Analysis**:
+    - **Pattern Recognition**: /explore [target-system] with comprehensive scanning
+    - **Opportunity Identification**: /patterns [identify-improvement-opportunities]
+    - **Evidence Requirement**: Real analysis results with quantifiable baselines
+  **Key Activities**:
+    - **Content Quality Analysis**: Script-enhanced validation of current state
+    - **Redundancy Detection**: Mathematical measurement of information density
+    - **Compliance Assessment**: Tool call execution validation with P55/P56 standards
+  **Success Criteria**:
+    - **Analysis Completeness**: ≥95% system coverage with documented baselines
+    - **Opportunity Identification**: ≥3 improvement candidates with quantified impact
+    - **Validation Accuracy**: ≥90% assessment precision with measurable metrics
 
 ### **Stage 2: Planning Phase**
 
 **Implementation Standards**:
-```yaml
-planning_phase:
-  strategic_planning:
-    improvement_prioritization: "Impact-effort matrix with quantified ROI"
-    resource_allocation: "Tool and script requirement analysis"
-    success_metrics_definition: "Quantifiable targets with measurement protocols"
-  
-  planning_activities:
-    workflow_design: "Step-by-step improvement execution plan"
-    risk_assessment: "Potential failure points with mitigation strategies"
-    validation_protocol: "Success measurement and verification framework"
-  
-  deliverables:
-    execution_blueprint: "Detailed implementation plan with timeline"
-    success_metrics: "Quantifiable targets with ≥95% precision"
-    validation_framework: "Measurement and verification protocols"
-```
+**Planning Phase**:
+  **Strategic Planning**:
+    - **Improvement Prioritization**: Impact-effort matrix with quantified ROI
+    - **Resource Allocation**: Tool and script requirement analysis
+    - **Success Metrics Definition**: Quantifiable targets with measurement protocols
+  **Planning Activities**:
+    - **Workflow Design**: Step-by-step improvement execution plan
+    - **Risk Assessment**: Potential failure points with mitigation strategies
+    - **Validation Protocol**: Success measurement and verification framework
+  **Deliverables**:
+    - **Execution Blueprint**: Detailed implementation plan with timeline
+    - **Success Metrics**: Quantifiable targets with ≥95% precision
+    - **Validation Framework**: Measurement and verification protocols
 
 ### **Stage 3: Execution Phase**
 
 **CRITICAL Implementation**:
-```yaml
-execution_phase:
-  systematic_implementation:
-    workflow_execution: "Step-by-step implementation with progress tracking"
-    real_time_monitoring: "Continuous progress measurement with ≤30s updates"
-    adaptive_optimization: "Dynamic adjustment based on real-time results"
-  
-  execution_standards:
-    tool_call_compliance: "100% P55/P56 transparency with visual announcements"
-    evidence_generation: "Real results display with quantifiable outcomes"
-    progress_reporting: "≤30 second interval updates with status confirmation"
-  
-  quality_gates:
-    implementation_accuracy: "≥95% execution precision with documented results"
-    tool_execution_success: "≥98% tool call success rate with evidence"
-    progress_transparency: "100% user visibility with real-time updates"
-```
+**Execution Phase**:
+  **Systematic Implementation**:
+    - **Workflow Execution**: Step-by-step implementation with progress tracking
+    - **Real Time Monitoring**: Continuous progress measurement with ≤30s updates
+    - **Adaptive Optimization**: Dynamic adjustment based on real-time results
+  **Execution Standards**:
+    - **Tool Call Compliance**: 100% P55/P56 transparency with visual announcements
+    - **Evidence Generation**: Real results display with quantifiable outcomes
+    - **Progress Reporting**: ≤30 second interval updates with status confirmation
+  **Quality Gates**:
+    - **Implementation Accuracy**: ≥95% execution precision with documented results
+    - **Tool Execution Success**: ≥98% tool call success rate with evidence
+    - **Progress Transparency**: 100% user visibility with real-time updates
 
 ### **Stage 4: Verification Phase**
 
 **MANDATORY Validation**:
-```yaml
-verification_phase:
-  comprehensive_validation:
-    outcome_measurement: "Quantifiable results comparison with baseline"
-    success_rate_calculation: "Mathematical validation of improvement metrics"
-    quality_assessment: "Comprehensive effectiveness evaluation"
-  
-  validation_activities:
-    metric_verification: "≥95% improvement target achievement confirmation"
-    compliance_validation: "100% P55/P56 protocol adherence verification"
-    sustainability_assessment: "Long-term improvement retention evaluation"
-  
-  success_confirmation:
-    improvement_validation: "≥90% target achievement with documented evidence"
-    process_crystallization: "Reusable pattern documentation with success metrics"
-    knowledge_transfer: "Pattern documentation for systematic reuse"
-```
+**Verification Phase**:
+  **Comprehensive Validation**:
+    - **Outcome Measurement**: Quantifiable results comparison with baseline
+    - **Success Rate Calculation**: Mathematical validation of improvement metrics
+    - **Quality Assessment**: Comprehensive effectiveness evaluation
+  **Validation Activities**:
+    - **Metric Verification**: ≥95% improvement target achievement confirmation
+    - **Compliance Validation**: 100% P55/P56 protocol adherence verification
+    - **Sustainability Assessment**: Long-term improvement retention evaluation
+  **Success Confirmation**:
+    - **Improvement Validation**: ≥90% target achievement with documented evidence
+    - **Process Crystallization**: Reusable pattern documentation with success metrics
+    - **Knowledge Transfer**: Pattern documentation for systematic reuse
 
 ---
 
@@ -132,44 +116,36 @@ verification_phase:
 ### **Information Density Optimization**
 
 **MANDATORY Implementation**:
-```yaml
-density_optimization:
-  content_concentration:
-    density_formula: "(relevant_information / total_information) * 100 ≥ 95%"
-    measurement_protocol: "Real-time density calculation during content creation"
-    application_standard: "Every sentence evaluated for information contribution"
-  
-  key_activities:
-    relevance_assessment: "Each content element evaluated for objective contribution"
-    redundancy_elimination: "Systematic removal of duplicated information"
-    value_maximization: "Optimize information value per token with precision"
-  
-  quality_metrics:
-    density_target: "≥95% relevant information concentration (CRITICAL)"
-    efficiency_measurement: "Information value per word optimization"
-    content_precision: "Zero redundancy with maximum clarity preservation"
-```
+**Density Optimization**:
+  **Content Concentration**:
+    - **Density Formula**: (relevant_information / total_information) * 100 ≥ 95%
+    - **Measurement Protocol**: Real-time density calculation during content creation
+    - **Application Standard**: Every sentence evaluated for information contribution
+  **Key Activities**:
+    - **Relevance Assessment**: Each content element evaluated for objective contribution
+    - **Redundancy Elimination**: Systematic removal of duplicated information
+    - **Value Maximization**: Optimize information value per token with precision
+  **Quality Metrics**:
+    - **Density Target**: ≥95% relevant information concentration (CRITICAL)
+    - **Efficiency Measurement**: Information value per word optimization
+    - **Content Precision**: Zero redundancy with maximum clarity preservation
 
 ### **Concision Standards Enforcement**
 
 **Implementation Requirements**:
-```yaml
-concision_enforcement:
-  clarity_preservation:
-    concision_formula: "(core_message_words / total_words) * 100 ≥ 85%"
-    clarity_measurement: "Message clarity preservation during reduction"
-    application_protocol: "Systematic wordiness elimination with precision"
-  
-  enforcement_activities:
-    wordiness_elimination: "Remove unnecessary qualifiers and filler words"
-    message_concentration: "Preserve core meaning while reducing word count"
-    clarity_optimization: "Maintain comprehension while achieving concision"
-  
-  success_criteria:
-    concision_achievement: "≥85% clarity preservation with word count reduction"
-    message_integrity: "100% core meaning preservation during optimization"
-    readability_maintenance: "Cognitive load optimization with clarity retention"
-```
+**Concision Enforcement**:
+  **Clarity Preservation**:
+    - **Concision Formula**: (core_message_words / total_words) * 100 ≥ 85%
+    - **Clarity Measurement**: Message clarity preservation during reduction
+    - **Application Protocol**: Systematic wordiness elimination with precision
+  **Enforcement Activities**:
+    - **Wordiness Elimination**: Remove unnecessary qualifiers and filler words
+    - **Message Concentration**: Preserve core meaning while reducing word count
+    - **Clarity Optimization**: Maintain comprehension while achieving concision
+  **Success Criteria**:
+    - **Concision Achievement**: ≥85% clarity preservation with word count reduction
+    - **Message Integrity**: 100% core meaning preservation during optimization
+    - **Readability Maintenance**: Cognitive load optimization with clarity retention
 
 ---
 
@@ -190,45 +166,37 @@ concision_enforcement:
 ### **Meta-Command Crystallization Process**
 
 **MANDATORY Requirements**:
-```yaml
-crystallization_process:
-  pattern_identification:
-    success_validation: "≥95% effectiveness with documented success metrics"
-    reusability_assessment: "≥90% replication success rate across contexts"
-    value_quantification: "Measurable improvement impact with ROI analysis"
-  
-  documentation_standards:
-    pattern_overview: "Complete workflow description with success metrics"
-    implementation_steps: "Step-by-step execution protocol with tool integration"
-    validation_framework: "Success measurement and replication guidelines"
-  
-  crystallization_activities:
-    workflow_documentation: "Systematic documentation of proven methodologies"
-    success_metric_capture: "Quantifiable results and performance indicators"
-    replication_protocol: "Guidelines for systematic pattern reuse"
-```
+**Crystallization Process**:
+  **Pattern Identification**:
+    - **Success Validation**: ≥95% effectiveness with documented success metrics
+    - **Reusability Assessment**: ≥90% replication success rate across contexts
+    - **Value Quantification**: Measurable improvement impact with ROI analysis
+  **Documentation Standards**:
+    - **Pattern Overview**: Complete workflow description with success metrics
+    - **Implementation Steps**: Step-by-step execution protocol with tool integration
+    - **Validation Framework**: Success measurement and replication guidelines
+  **Crystallization Activities**:
+    - **Workflow Documentation**: Systematic documentation of proven methodologies
+    - **Success Metric Capture**: Quantifiable results and performance indicators
+    - **Replication Protocol**: Guidelines for systematic pattern reuse
 
 ### **Pattern Documentation Framework**
 
 **Implementation Standards**:
-```yaml
-documentation_framework:
-  pattern_structure:
-    pattern_id: "Unique identifier with source reference and date"
-    overview_section: "Complete pattern description with success metrics"
-    implementation_guide: "Step-by-step execution with tool requirements"
-    validation_protocol: "Success measurement and verification framework"
-  
-  documentation_requirements:
-    success_metrics: "Quantifiable results with ≥95% precision"
-    replication_guidelines: "Clear instructions for systematic reuse"
-    validation_framework: "Effectiveness measurement and verification"
-  
-  quality_standards:
-    completeness_requirement: "100% pattern documentation with evidence"
-    accuracy_validation: "≥95% implementation precision with verification"
-    reusability_confirmation: "≥90% successful replication rate across contexts"
-```
+**Documentation Framework**:
+  **Pattern Structure**:
+    - **Pattern Id**: Unique identifier with source reference and date
+    - **Overview Section**: Complete pattern description with success metrics
+    - **Implementation Guide**: Step-by-step execution with tool requirements
+    - **Validation Protocol**: Success measurement and verification framework
+  **Documentation Requirements**:
+    - **Success Metrics**: Quantifiable results with ≥95% precision
+    - **Replication Guidelines**: Clear instructions for systematic reuse
+    - **Validation Framework**: Effectiveness measurement and verification
+  **Quality Standards**:
+    - **Completeness Requirement**: 100% pattern documentation with evidence
+    - **Accuracy Validation**: ≥95% implementation precision with verification
+    - **Reusability Confirmation**: ≥90% successful replication rate across contexts
 
 ---
 
@@ -237,28 +205,23 @@ documentation_framework:
 ### **Universal Quality Application Protocol**
 
 **CRITICAL Implementation**:
-```yaml
-universal_quality_protocol:
-  discovery_integration:
-    improvement_methodology: "Four-stage systematic approach with validation"
-    quality_optimization: "Density and concision standards application"
-    pattern_crystallization: "Successful workflow documentation and reuse"
-  
-  planning_coordination:
-    methodology_selection: "Systematic approach based on improvement type"
-    quality_targets: "≥95% density, ≥85% concision, ≥94% overall improvement"
-    crystallization_criteria: "≥95% effectiveness for pattern documentation"
-  
-  execution_excellence:
-    real_time_monitoring: "Continuous quality measurement with ≤30s updates"
-    adaptive_optimization: "Dynamic quality adjustment based on results"
-    evidence_generation: "Quantifiable results with user-visible evidence"
-  
-  verification_completeness:
-    outcome_validation: "Comprehensive effectiveness measurement and confirmation"
-    pattern_documentation: "Successful workflow crystallization for reuse"
-    knowledge_transfer: "Systematic pattern sharing and application"
-```
+**Universal Quality Protocol**:
+  **Discovery Integration**:
+    - **Improvement Methodology**: Four-stage systematic approach with validation
+    - **Quality Optimization**: Density and concision standards application
+    - **Pattern Crystallization**: Successful workflow documentation and reuse
+  **Planning Coordination**:
+    - **Methodology Selection**: Systematic approach based on improvement type
+    - **Quality Targets**: ≥95% density, ≥85% concision, ≥94% overall improvement
+    - **Crystallization Criteria**: ≥95% effectiveness for pattern documentation
+  **Execution Excellence**:
+    - **Real Time Monitoring**: Continuous quality measurement with ≤30s updates
+    - **Adaptive Optimization**: Dynamic quality adjustment based on results
+    - **Evidence Generation**: Quantifiable results with user-visible evidence
+  **Verification Completeness**:
+    - **Outcome Validation**: Comprehensive effectiveness measurement and confirmation
+    - **Pattern Documentation**: Successful workflow crystallization for reuse
+    - **Knowledge Transfer**: Systematic pattern sharing and application
 
 ### **Cross-Pattern Integration Standards**
 

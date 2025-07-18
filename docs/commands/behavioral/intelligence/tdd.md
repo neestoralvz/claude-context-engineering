@@ -242,28 +242,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-tdd_transparency:
-  criteria_definition:
-    announcement: "🔍 TRANSPARENCY: Success criteria [X]% complete - [STANDARD/ENHANCED] TDD approach"
-    evidence: "Complete criteria definition with verification requirements"
-    
-  test_creation:
-    announcement: "🧪 TRANSPARENCY: Test coverage [X]% - [UNIT/INTEGRATION/PERFORMANCE] tests created"
-    evidence: "Test suite creation with coverage metrics"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [tdd_operation]"
-    evidence: "Tool selection matrix with TDD-specific reasoning"
-    
-  implementation_validation:
-    announcement: "⚙️ TRANSPARENCY: Implementation [SUCCESS/FAILURE] - [X]% tests passing"
-    evidence: "Implementation validation with test results"
-    
-  verification_accuracy:
-    announcement: "✅ TRANSPARENCY: Verification accuracy [X]% - [CORRELATION/ENHANCEMENT] required"
-    evidence: "Verification accuracy assessment with correlation analysis"
-```
+**Tdd Transparency**:
+  **Criteria Definition**:
+    - **Announcement**: 🔍 TRANSPARENCY: Success criteria [X]% complete - [STANDARD/ENHANCED] TDD approach
+    - **Evidence**: Complete criteria definition with verification requirements
+  **Test Creation**:
+    - **Announcement**: 🧪 TRANSPARENCY: Test coverage [X]% - [UNIT/INTEGRATION/PERFORMANCE] tests created
+    - **Evidence**: Test suite creation with coverage metrics
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [tdd_operation]
+    - **Evidence**: Tool selection matrix with TDD-specific reasoning
+  **Implementation Validation**:
+    - **Announcement**: ⚙️ TRANSPARENCY: Implementation [SUCCESS/FAILURE] - [X]% tests passing
+    - **Evidence**: Implementation validation with test results
+  **Verification Accuracy**:
+    - **Announcement**: ✅ TRANSPARENCY: Verification accuracy [X]% - [CORRELATION/ENHANCEMENT] required
+    - **Evidence**: Verification accuracy assessment with correlation analysis
 
 ---
 

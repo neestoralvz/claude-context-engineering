@@ -18,79 +18,66 @@
 
 ### **🚨 AUTOMATIC Principle Detection Protocol**
 
-```yaml
-principle_activation_engine:
-  real_time_scanning:
-    trigger_patterns:
-      complexity_threshold: "≥0.9 → Activate mathematical rigor principles"
-      confidence_threshold: "<0.7 → Activate progressive thinking principles" 
-      multi_command_context: "≥3 commands → Activate orchestration principles"
-      time_threshold: "≥2 minutes → Activate systematic approach principles"
-      
-    contextual_detection:
-      objective_type: "research|implementation|optimization|validation"
-      command_ecosystem: "behavioral|executable|verification|documentation"
-      user_intent: "exploratory|directive|collaborative|corrective"
-      
-    automatic_triggers:
-      mathematical_activation: "Auto-trigger when mathematical validation needed"
-      behavioral_enforcement: "Auto-trigger when behavioral control required"
-      compliance_validation: "Auto-trigger when P55/P56 protocols applicable"
-      quality_assurance: "Auto-trigger when TDD/documentation standards required"
-```
+**Principle Activation Engine**:
+  **Real Time Scanning**:
+    **Trigger Patterns**:
+      - **Complexity Threshold**: ≥0.9 → Activate mathematical rigor principles
+      - **Confidence Threshold**: <0.7 → Activate progressive thinking principles
+      - **Multi Command Context**: ≥3 commands → Activate orchestration principles
+      - **Time Threshold**: ≥2 minutes → Activate systematic approach principles
+    **Contextual Detection**:
+      - **Objective Type**: research|implementation|optimization|validation
+      - **Command Ecosystem**: behavioral|executable|verification|documentation
+      - **User Intent**: exploratory|directive|collaborative|corrective
+    **Automatic Triggers**:
+      - **Mathematical Activation**: Auto-trigger when mathematical validation needed
+      - **Behavioral Enforcement**: Auto-trigger when behavioral control required
+      - **Compliance Validation**: Auto-trigger when P55/P56 protocols applicable
+      - **Quality Assurance**: Auto-trigger when TDD/documentation standards required
 
 ### **🚨 MANDATORY Principle Activation Matrix**
 
-```yaml
-activation_matrix:
-  tier_1_principles: # ABSOLUTE Priority - Always Active
-    - principle_1: "Meta-Principle - Enable intelligence"
-    - principle_3: "Context > Commands > Prompts"
-    - principle_81: "Zero-Root File Policy" 
-    - principle_82: "Maximum Density Optimization"
-    - principle_84: "Mandatory Commit Operations"
-    - principle_89: "Zero Tolerance Para Errores"
-    
-  tier_2_principles: # STRONG Priority - Context Triggered
-    - complexity_triggers: [5, 28, 29, 30, 38, 39, 40]  # Mathematical rigor
-    - exploration_triggers: [7, 8, 54, 79, 80]          # Discovery methodology
-    - quality_triggers: [9, 11, 85, 86, 87, 88]        # TDD/Documentation
-    - orchestration_triggers: [17, 18, 23, 47, 66]     # Command coordination
-    
-  tier_3_principles: # ADVISORY Priority - Situation Specific
-    - optimization_triggers: [20, 24, 42, 43, 83]      # Performance optimization
-    - architecture_triggers: [25, 35, 36, 58]          # System architecture
-    - intelligence_triggers: [22, 51, 52, 71]          # Progressive intelligence
-```
+**Activation Matrix**:
+  **Tier 1 Principles**:
+  - {'principle_1': 'Meta-Principle - Enable intelligence'}
+  - {'principle_3': 'Context > Commands > Prompts'}
+  - {'principle_81': 'Zero-Root File Policy'}
+  - {'principle_82': 'Maximum Density Optimization'}
+  - {'principle_84': 'Mandatory Commit Operations'}
+  - {'principle_89': 'Zero Tolerance Para Errores'}
+  **Tier 2 Principles**:
+  - {'complexity_triggers': [5, 28, 29, 30, 38, 39, 40]}
+  - {'exploration_triggers': [7, 8, 54, 79, 80]}
+  - {'quality_triggers': [9, 11, 85, 86, 87, 88]}
+  - {'orchestration_triggers': [17, 18, 23, 47, 66]}
+  **Tier 3 Principles**:
+  - {'optimization_triggers': [20, 24, 42, 43, 83]}
+  - {'architecture_triggers': [25, 35, 36, 58]}
+  - {'intelligence_triggers': [22, 51, 52, 71]}
 
 ### **🚨 CRITICAL Enforcement Mechanisms**
 
-```yaml
-enforcement_protocols:
-  blocking_mechanisms:
-    principle_violation_detection:
-      real_time_monitoring: "Continuous scanning of Claude operations"
-      violation_alerts: "Immediate notification when principles violated"
-      automatic_correction: "Auto-correction when possible"
-      execution_blocking: "Hard stop when MANDATORY principles violated"
-      
-    threshold_enforcement:
-      complexity_blocking: "Block simple responses when complexity ≥0.9"
-      confidence_requirement: "Require progressive thinking when confidence <0.7"
-      command_utilization: "Block single-command when multi-command required"
-      density_validation: "Block verbose outputs when density <75%"
-      
-  compliance_validation:
-    p55_p56_integration:
-      tool_execution_validation: "Verify P55/P56 compliance before tool execution"
-      transparency_requirements: "Ensure P56 transparency in all operations"
-      security_validation: "P55 security protocols active continuously"
-      
-    behavioral_control:
-      automatic_activation: "Sistema WILL execute → Verify automatic execution"
-      mandatory_enforcement: "MANDATORY statements → Validate actual enforcement"
-      blocking_verification: "BLOCKING claims → Confirm actual blocking capability"
-```
+**Enforcement Protocols**:
+  **Blocking Mechanisms**:
+    **Principle Violation Detection**:
+      - **Real Time Monitoring**: Continuous scanning of Claude operations
+      - **Violation Alerts**: Immediate notification when principles violated
+      - **Automatic Correction**: Auto-correction when possible
+      - **Execution Blocking**: Hard stop when MANDATORY principles violated
+    **Threshold Enforcement**:
+      - **Complexity Blocking**: Block simple responses when complexity ≥0.9
+      - **Confidence Requirement**: Require progressive thinking when confidence <0.7
+      - **Command Utilization**: Block single-command when multi-command required
+      - **Density Validation**: Block verbose outputs when density <75%
+  **Compliance Validation**:
+    **P55 P56 Integration**:
+      - **Tool Execution Validation**: Verify P55/P56 compliance before tool execution
+      - **Transparency Requirements**: Ensure P56 transparency in all operations
+      - **Security Validation**: P55 security protocols active continuously
+    **Behavioral Control**:
+      - **Automatic Activation**: Sistema WILL execute → Verify automatic execution
+      - **Mandatory Enforcement**: MANDATORY statements → Validate actual enforcement
+      - **Blocking Verification**: BLOCKING claims → Confirm actual blocking capability
 
 ---
 
@@ -253,50 +240,40 @@ class PrincipleBlockingSystem:
 
 ### **Activation Analytics**
 
-```yaml
-principle_metrics:
-  activation_rate:
-    target: "≥90% automatic activation for applicable principles"
-    current_measurement: "Real-time tracking via engine telemetry"
-    
-  compliance_rate:
-    target: "≥95% compliance with activated principles"
-    violation_tracking: "Continuous monitoring with immediate alerts"
-    
-  enforcement_effectiveness:
-    blocking_success: "100% blocking for Tier 1 violations"
-    correction_success: "≥85% automatic correction for Tier 2/3 violations"
-    
-  error_protocol_metrics:
-    protocol_activation_rate: "100% for HIGH/CRITICAL errors"
-    protocol_completion_rate: "≥95% systematic resolution"
-    error_recurrence_prevention: "≥90% prevention of documented errors"
-    
-  behavioral_transformation:
-    manual_to_automatic: "Measure reduction in manual principle application"
-    quality_improvement: "Track improvement in systematic behavior"
-    efficiency_gains: "Monitor performance improvements from principle enforcement"
-```
+**Principle Metrics**:
+  **Activation Rate**:
+    - **Target**: ≥90% automatic activation for applicable principles
+    - **Current Measurement**: Real-time tracking via engine telemetry
+  **Compliance Rate**:
+    - **Target**: ≥95% compliance with activated principles
+    - **Violation Tracking**: Continuous monitoring with immediate alerts
+  **Enforcement Effectiveness**:
+    - **Blocking Success**: 100% blocking for Tier 1 violations
+    - **Correction Success**: ≥85% automatic correction for Tier 2/3 violations
+  **Error Protocol Metrics**:
+    - **Protocol Activation Rate**: 100% for HIGH/CRITICAL errors
+    - **Protocol Completion Rate**: ≥95% systematic resolution
+    - **Error Recurrence Prevention**: ≥90% prevention of documented errors
+  **Behavioral Transformation**:
+    - **Manual To Automatic**: Measure reduction in manual principle application
+    - **Quality Improvement**: Track improvement in systematic behavior
+    - **Efficiency Gains**: Monitor performance improvements from principle enforcement
 
 ### **Real-Time Dashboard Integration**
 
-```yaml
-monitoring_dashboard:
-  live_principle_status:
-    currently_active: "Display active principles in real-time"
-    activation_history: "Recent activation patterns and triggers"
-    compliance_status: "Current compliance rate and violations"
-    
-  violation_alerts:
-    immediate_notifications: "Real-time alerts for principle violations"
-    correction_tracking: "Status of automatic corrections"
-    blocking_events: "Log of execution blocks and resolutions"
-    
-  performance_analytics:
-    activation_trends: "Historical activation patterns"
-    compliance_improvement: "Trend analysis of compliance rates"
-    effectiveness_metrics: "Measure impact on overall system behavior"
-```
+**Monitoring Dashboard**:
+  **Live Principle Status**:
+    - **Currently Active**: Display active principles in real-time
+    - **Activation History**: Recent activation patterns and triggers
+    - **Compliance Status**: Current compliance rate and violations
+  **Violation Alerts**:
+    - **Immediate Notifications**: Real-time alerts for principle violations
+    - **Correction Tracking**: Status of automatic corrections
+    - **Blocking Events**: Log of execution blocks and resolutions
+  **Performance Analytics**:
+    - **Activation Trends**: Historical activation patterns
+    - **Compliance Improvement**: Trend analysis of compliance rates
+    - **Effectiveness Metrics**: Measure impact on overall system behavior
 
 ---
 
@@ -304,23 +281,19 @@ monitoring_dashboard:
 
 ### **Command-Principle Bridge Protocol**
 
-```yaml
-command_integration:
-  automatic_activation:
-    command_execution_trigger: "Auto-activate principles when commands execute"
-    pre_execution_validation: "Validate principle compliance before command execution"
-    post_execution_verification: "Confirm principle adherence after command completion"
-    
-  behavioral_modification:
-    execution_control: "Modify command execution based on active principles"
-    parameter_adjustment: "Auto-adjust command parameters for principle compliance"
-    orchestration_enhancement: "Enhance command orchestration through principle guidance"
-    
-  compliance_enforcement:
-    p55_p56_integration: "Integrate principle enforcement with P55/P56 protocols"
-    transparency_requirements: "Ensure principle activation transparency"
-    security_validation: "Maintain security while enforcing principles"
-```
+**Command Integration**:
+  **Automatic Activation**:
+    - **Command Execution Trigger**: Auto-activate principles when commands execute
+    - **Pre Execution Validation**: Validate principle compliance before command execution
+    - **Post Execution Verification**: Confirm principle adherence after command completion
+  **Behavioral Modification**:
+    - **Execution Control**: Modify command execution based on active principles
+    - **Parameter Adjustment**: Auto-adjust command parameters for principle compliance
+    - **Orchestration Enhancement**: Enhance command orchestration through principle guidance
+  **Compliance Enforcement**:
+    - **P55 P56 Integration**: Integrate principle enforcement with P55/P56 protocols
+    - **Transparency Requirements**: Ensure principle activation transparency
+    - **Security Validation**: Maintain security while enforcing principles
 
 ---
 

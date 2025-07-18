@@ -182,28 +182,22 @@ graph TD
 
 ### **MANDATORY P56 Transparency Announcements**
 
-```yaml
-decomposition_decision_transparency:
-  complexity_assessment:
-    announcement: "🔍 TRANSPARENCY: Objective complexity assessed at [X]/1.0 - [STANDARD/ADVANCED] decomposition required"
-    evidence: "Mathematical complexity analysis with decomposition requirements"
-    
-  decomposition_strategy:
-    announcement: "📊 TRANSPARENCY: Decomposition strategy - [FUNCTIONAL/ANALYTICAL] with [X] levels depth"
-    evidence: "Strategy selection logic with depth justification"
-    
-  tool_selection:
-    announcement: "🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [decomposition_operation]"
-    evidence: "Tool selection matrix with decomposition-specific reasoning"
-    
-  parallelization_assessment:
-    announcement: "⚡ TRANSPARENCY: Parallelization potential [X]/1.0 - [PARALLEL/SEQUENTIAL] execution recommended"
-    evidence: "Dependency analysis with parallelization calculation"
-    
-  verification_framework:
-    announcement: "✅ TRANSPARENCY: Verification criteria defined - [X] success metrics established"
-    evidence: "Complete verification framework with measurable criteria"
-```
+**Decomposition Decision Transparency**:
+  **Complexity Assessment**:
+    - **Announcement**: 🔍 TRANSPARENCY: Objective complexity assessed at [X]/1.0 - [STANDARD/ADVANCED] decomposition required
+    - **Evidence**: Mathematical complexity analysis with decomposition requirements
+  **Decomposition Strategy**:
+    - **Announcement**: 📊 TRANSPARENCY: Decomposition strategy - [FUNCTIONAL/ANALYTICAL] with [X] levels depth
+    - **Evidence**: Strategy selection logic with depth justification
+  **Tool Selection**:
+    - **Announcement**: 🛠️ TRANSPARENCY: Tool selection - [READ/EDIT/BASH/TASK] for [decomposition_operation]
+    - **Evidence**: Tool selection matrix with decomposition-specific reasoning
+  **Parallelization Assessment**:
+    - **Announcement**: ⚡ TRANSPARENCY: Parallelization potential [X]/1.0 - [PARALLEL/SEQUENTIAL] execution recommended
+    - **Evidence**: Dependency analysis with parallelization calculation
+  **Verification Framework**:
+    - **Announcement**: ✅ TRANSPARENCY: Verification criteria defined - [X] success metrics established
+    - **Evidence**: Complete verification framework with measurable criteria
 
 ---
 
@@ -212,25 +206,21 @@ decomposition_decision_transparency:
 ### **MANDATORY Tool Selection Matrix**
 
 **Quantifiable Decision Framework:**
-```yaml
-tool_selection_criteria:
-  READ_tool_usage:
-    file_count: "≤3 files for direct analysis"
-    complexity: "<0.7000 (straightforward operations)"
-    scope: "Well-defined, single-purpose operations"
-    time_constraint: "≤300 seconds execution window"
-    
-  TASK_tool_usage:
-    file_count: "≥4 files or unknown scope"
-    complexity: "≥0.7000 (complex operations)"
-    scope: "Multi-step, exploratory, or research operations"
-    time_constraint: ">300 seconds or open-ended analysis"
-    
-  other_tools:
-    GREP: "Pattern search across multiple files"
-    GLOB: "File pattern matching and discovery"
-    BASH: "System operations and automation"
-```
+**Tool Selection Criteria**:
+  **Read Tool Usage**:
+    - **File Count**: ≤3 files for direct analysis
+    - **Complexity**: <0.7000 (straightforward operations)
+    - **Scope**: Well-defined, single-purpose operations
+    - **Time Constraint**: ≤300 seconds execution window
+  **Task Tool Usage**:
+    - **File Count**: ≥4 files or unknown scope
+    - **Complexity**: ≥0.7000 (complex operations)
+    - **Scope**: Multi-step, exploratory, or research operations
+    - **Time Constraint**: >300 seconds or open-ended analysis
+  **Other Tools**:
+    - **Grep**: Pattern search across multiple files
+    - **Glob**: File pattern matching and discovery
+    - **Bash**: System operations and automation
 
 ### **CRITICAL Tool Selection Logic**
 

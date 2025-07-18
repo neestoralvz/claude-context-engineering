@@ -16,134 +16,109 @@
 
 The context-eng meta-command now features intelligent command discovery that dynamically analyzes the current registry state and auto-detects the total ecosystem size to optimally select from ALL available commands:
 
-```yaml
-dynamic_ecosystem_detection:
-  auto_discovery:
-    registry_scan: "Real-time scan of command-registry.json to detect total available commands"
-    command_counting: "SELECT COUNT(*) FROM all_command_categories for dynamic ecosystem sizing"
-    adaptive_scaling: "Automatically adjust all thresholds and selections based on detected ecosystem size"
-    
-  ecosystem_categories:
-    atomic_commands: "SELECT COUNT(*) FROM atomic_commands"
-    orchestrator_commands: "SELECT COUNT(*) FROM orchestrator_commands"
-    meta_commands: "SELECT COUNT(*) FROM meta_commands"
-    system_commands: "SELECT COUNT(*) FROM system_commands"
-    total_ecosystem_size: "SUM(all_categories) = DYNAMIC_TOTAL"
-    
-  adaptive_thresholds:
-    discovery_command_threshold: "MIN(5, 10% of total_ecosystem_size)"
-    parallel_benefit_threshold: "0.3 * scaling_factor based on ecosystem_size"
-    complexity_escalation_trigger: "AUTO-ADJUST based on available command diversity"
-    comprehensive_utilization: "UP TO 100% of available commands for ultra-complex tasks"
-```
+**Dynamic Ecosystem Detection**:
+  **Auto Discovery**:
+    - **Registry Scan**: Real-time scan of command-registry.json to detect total available commands
+    - **Command Counting**: SELECT COUNT(*) FROM all_command_categories for dynamic ecosystem sizing
+    - **Adaptive Scaling**: Automatically adjust all thresholds and selections based on detected ecosystem size
+  **Ecosystem Categories**:
+    - **Atomic Commands**: SELECT COUNT(*) FROM atomic_commands
+    - **Orchestrator Commands**: SELECT COUNT(*) FROM orchestrator_commands
+    - **Meta Commands**: SELECT COUNT(*) FROM meta_commands
+    - **System Commands**: SELECT COUNT(*) FROM system_commands
+    - **Total Ecosystem Size**: SUM(all_categories) = DYNAMIC_TOTAL
+  **Adaptive Thresholds**:
+    - **Discovery Command Threshold**: MIN(5, 10% of total_ecosystem_size)
+    - **Parallel Benefit Threshold**: 0.3 * scaling_factor based on ecosystem_size
+    - **Complexity Escalation Trigger**: AUTO-ADJUST based on available command diversity
+    - **Comprehensive Utilization**: UP TO 100% of available commands for ultra-complex tasks
 
-```yaml
-dynamic_command_registry_integration:
-  real_time_discovery:
-    registry_analysis: "Live analysis of command-registry.json for optimal command selection"
-    performance_metrics: "Real-time success rates, usage patterns, and execution times"
-    adaptive_selection: "Dynamic command selection based on task requirements and registry state"
-    
-  command_categories_integration:
-    atomic_commands: "DYNAMIC_COUNT = COUNT(registry.atomic)"
-    orchestrator_commands: "DYNAMIC_COUNT = COUNT(registry.orchestrators)"
-    meta_commands: "DYNAMIC_COUNT = COUNT(registry.meta)"
-    system_commands: "DYNAMIC_COUNT = COUNT(registry.system)"
-    total_available: "DYNAMIC_TOTAL = AUTO_DETECTED_FROM_REGISTRY"
-    future_commands: "AUTOMATICALLY_INCLUDED = ANY_NEW_COMMANDS_ADDED"
-    
-  intelligent_selection_algorithms:
-    discovery_phase:
-      algorithm: "SELECT commands FROM registry WHERE category IN ('discovery-exploration', 'core-intelligence') ORDER BY successRate DESC, usageCount DESC"
-      dynamic_selection: "AUTO-SCALE selection size based on total ecosystem: MIN(total_available * 0.3, optimal_for_task)"
-      fallback_strategy: "If confidence < 0.7, include ALL available discovery commands for comprehensive analysis"
-      future_adaptability: "Automatically include any new discovery commands added to registry"
-      
-    planning_phase:
-      algorithm: "SELECT commands FROM registry WHERE category='development-methodology' OR name LIKE '%planning%' ORDER BY complexity ASC, successRate DESC"
-      orchestrator_preference: "Prefer orchestrator commands for complex tasks (complexity > 1.0)"
-      
-    execution_phase:
-      algorithm: "SELECT commands FROM registry WHERE category IN ('orchestration-flow', 'automation-tools') AND successRate >= registry_average ORDER BY parallelizationEfficiency DESC"
-      dynamic_optimization: "Real-time re-analysis every 5 minutes during execution"
-      ecosystem_scaling: "Automatically utilize up to 50% of total available commands for complex execution"
-      adaptive_expansion: "Auto-include any new execution commands added to ecosystem"
-      
-    verification_phase:
-      algorithm: "SELECT commands FROM registry WHERE category='mathematical-verification' ORDER BY confidenceScore DESC"
-      comprehensive_verification: "Use ALL verification commands for critical tasks"
-      
-    documentation_phase:
-      algorithm: "SELECT commands FROM registry WHERE category='system-architecture' OR name LIKE '%doc%' ORDER BY evolutionRate DESC"
-      pattern_crystallization: "Auto-detect patterns ready for crystallization from registry usage data"
-      
-  adaptive_optimization_features:
-    command_performance_tracking:
-      success_rate_monitoring: "Continuous tracking of command execution success rates"
-      execution_time_optimization: "Dynamic command selection based on performance metrics"
-      user_preference_learning: "Adapt command selection based on user workflow patterns"
-      
-    registry_state_integration:
-      live_metrics_integration: "Real-time integration with registry metrics for optimal selection"
-      crystallization_candidate_detection: "Auto-detect commands ready for pattern crystallization"
-      usage_pattern_analysis: "Analyze command usage patterns for workflow optimization"
-      
-    intelligent_fallback_system:
-      performance_based_fallback: "Automatically fallback to higher-performing commands if primary selection fails"
-      comprehensive_coverage: "Ensure all task aspects covered by expanding command selection when needed"
-      quality_maintenance: "Maintain quality standards through intelligent command redundancy"
-```
+**Dynamic Command Registry Integration**:
+  **Real Time Discovery**:
+    - **Registry Analysis**: Live analysis of command-registry.json for optimal command selection
+    - **Performance Metrics**: Real-time success rates, usage patterns, and execution times
+    - **Adaptive Selection**: Dynamic command selection based on task requirements and registry state
+  **Command Categories Integration**:
+    - **Atomic Commands**: DYNAMIC_COUNT = COUNT(registry.atomic)
+    - **Orchestrator Commands**: DYNAMIC_COUNT = COUNT(registry.orchestrators)
+    - **Meta Commands**: DYNAMIC_COUNT = COUNT(registry.meta)
+    - **System Commands**: DYNAMIC_COUNT = COUNT(registry.system)
+    - **Total Available**: DYNAMIC_TOTAL = AUTO_DETECTED_FROM_REGISTRY
+    - **Future Commands**: AUTOMATICALLY_INCLUDED = ANY_NEW_COMMANDS_ADDED
+  **Intelligent Selection Algorithms**:
+    **Discovery Phase**:
+      - **Algorithm**: SELECT commands FROM registry WHERE category IN ('discovery-exploration', 'core-intelligence') ORDER BY successRate DESC, usageCount DESC
+      - **Dynamic Selection**: AUTO-SCALE selection size based on total ecosystem: MIN(total_available * 0.3, optimal_for_task)
+      - **Fallback Strategy**: If confidence < 0.7, include ALL available discovery commands for comprehensive analysis
+      - **Future Adaptability**: Automatically include any new discovery commands added to registry
+    **Planning Phase**:
+      - **Algorithm**: SELECT commands FROM registry WHERE category='development-methodology' OR name LIKE '%planning%' ORDER BY complexity ASC, successRate DESC
+      - **Orchestrator Preference**: Prefer orchestrator commands for complex tasks (complexity > 1.0)
+    **Execution Phase**:
+      - **Algorithm**: SELECT commands FROM registry WHERE category IN ('orchestration-flow', 'automation-tools') AND successRate >= registry_average ORDER BY parallelizationEfficiency DESC
+      - **Dynamic Optimization**: Real-time re-analysis every 5 minutes during execution
+      - **Ecosystem Scaling**: Automatically utilize up to 50% of total available commands for complex execution
+      - **Adaptive Expansion**: Auto-include any new execution commands added to ecosystem
+    **Verification Phase**:
+      - **Algorithm**: SELECT commands FROM registry WHERE category='mathematical-verification' ORDER BY confidenceScore DESC
+      - **Comprehensive Verification**: Use ALL verification commands for critical tasks
+    **Documentation Phase**:
+      - **Algorithm**: SELECT commands FROM registry WHERE category='system-architecture' OR name LIKE '%doc%' ORDER BY evolutionRate DESC
+      - **Pattern Crystallization**: Auto-detect patterns ready for crystallization from registry usage data
+  **Adaptive Optimization Features**:
+    **Command Performance Tracking**:
+      - **Success Rate Monitoring**: Continuous tracking of command execution success rates
+      - **Execution Time Optimization**: Dynamic command selection based on performance metrics
+      - **User Preference Learning**: Adapt command selection based on user workflow patterns
+    **Registry State Integration**:
+      - **Live Metrics Integration**: Real-time integration with registry metrics for optimal selection
+      - **Crystallization Candidate Detection**: Auto-detect commands ready for pattern crystallization
+      - **Usage Pattern Analysis**: Analyze command usage patterns for workflow optimization
+    **Intelligent Fallback System**:
+      - **Performance Based Fallback**: Automatically fallback to higher-performing commands if primary selection fails
+      - **Comprehensive Coverage**: Ensure all task aspects covered by expanding command selection when needed
+      - **Quality Maintenance**: Maintain quality standards through intelligent command redundancy
 
 ### **Registry-Based Adaptive Workflows**
 
-```yaml
-adaptive_workflow_generation:
-  real_time_workflow_creation:
-    discovery_workflows:
-      high_confidence: "Auto-generate parallel discovery workflows from top-performing discovery commands"
-      medium_confidence: "Create coordinated discovery sequences based on command compatibility analysis"
-      low_confidence: "Deploy comprehensive discovery arsenal with maximum registry utilization"
-      
-    planning_workflows:
-      simple_planning: "Atomic command sequences for straightforward planning tasks"
-      complex_planning: "Orchestrator-based workflows for multi-dimensional planning"
-      ultra_complex_planning: "Meta-command coordination with lifecycle management"
-      
-    execution_workflows:
-      parallel_execution: "Registry-optimized parallel command deployment"
-      sequential_execution: "Performance-optimized sequential command chains"
-      hybrid_execution: "Intelligent parallel/sequential mixing based on dependency analysis"
-      
-  command_chain_optimization:
-    dependency_analysis: "Real-time analysis of command dependencies for optimal chaining"
-    performance_optimization: "Chain commands based on execution time and success rate metrics"
-    parallel_opportunity_detection: "IDENTIFY commands that MUST be executed in parallel"
-    
-  dynamic_workflow_adaptation:
-    mid_execution_optimization: "Re-analyze and optimize command selection during execution"
-    failure_recovery: "Intelligent command substitution when primary commands fail"
-    quality_escalation: "Automatically escalate to higher-quality command combinations when needed"
-```
+**Adaptive Workflow Generation**:
+  **Real Time Workflow Creation**:
+    **Discovery Workflows**:
+      - **High Confidence**: Auto-generate parallel discovery workflows from top-performing discovery commands
+      - **Medium Confidence**: Create coordinated discovery sequences based on command compatibility analysis
+      - **Low Confidence**: Deploy comprehensive discovery arsenal with maximum registry utilization
+    **Planning Workflows**:
+      - **Simple Planning**: Atomic command sequences for straightforward planning tasks
+      - **Complex Planning**: Orchestrator-based workflows for multi-dimensional planning
+      - **Ultra Complex Planning**: Meta-command coordination with lifecycle management
+    **Execution Workflows**:
+      - **Parallel Execution**: Registry-optimized parallel command deployment
+      - **Sequential Execution**: Performance-optimized sequential command chains
+      - **Hybrid Execution**: Intelligent parallel/sequential mixing based on dependency analysis
+  **Command Chain Optimization**:
+    - **Dependency Analysis**: Real-time analysis of command dependencies for optimal chaining
+    - **Performance Optimization**: Chain commands based on execution time and success rate metrics
+    - **Parallel Opportunity Detection**: IDENTIFY commands that MUST be executed in parallel
+  **Dynamic Workflow Adaptation**:
+    - **Mid Execution Optimization**: Re-analyze and optimize command selection during execution
+    - **Failure Recovery**: Intelligent command substitution when primary commands fail
+    - **Quality Escalation**: Automatically escalate to higher-quality command combinations when needed
 
 ### **Enhanced Performance Metrics with Registry Integration**
 
-```yaml
-registry_integrated_metrics:
-  command_utilization:
-    coverage_percentage: "Percentage of available commands utilized for each task type"
-    optimization_efficiency: "Measure of how well command selection matches task requirements"
-    registry_advantage: "Performance improvement gained through dynamic registry integration"
-    
-  adaptive_performance:
-    selection_accuracy: "Accuracy of automated command selection vs manual selection"
-    execution_optimization: "Performance improvement through registry-based optimization"
-    workflow_efficiency: "Overall workflow efficiency improvement through dynamic adaptation"
-    
-  real_time_optimization:
-    command_performance_correlation: "Correlation between registry metrics and actual performance"
-    adaptive_learning_rate: "Rate of improvement in command selection over time"
-    registry_synchronization: "Accuracy of registry state reflection in command selection"
-```
+**Registry Integrated Metrics**:
+  **Command Utilization**:
+    - **Coverage Percentage**: Percentage of available commands utilized for each task type
+    - **Optimization Efficiency**: Measure of how well command selection matches task requirements
+    - **Registry Advantage**: Performance improvement gained through dynamic registry integration
+  **Adaptive Performance**:
+    - **Selection Accuracy**: Accuracy of automated command selection vs manual selection
+    - **Execution Optimization**: Performance improvement through registry-based optimization
+    - **Workflow Efficiency**: Overall workflow efficiency improvement through dynamic adaptation
+  **Real Time Optimization**:
+    - **Command Performance Correlation**: Correlation between registry metrics and actual performance
+    - **Adaptive Learning Rate**: Rate of improvement in command selection over time
+    - **Registry Synchronization**: Accuracy of registry state reflection in command selection
 
 ---
 
@@ -186,30 +161,25 @@ registry_integrated_metrics:
 
 ### **Registry Integration Impact Metrics**
 
-```yaml
-registry_integration_improvements:
-  performance_gains:
-    execution_speed: "15-35% faster through optimal command selection"
-    workflow_efficiency: "25-50% improvement in workflow optimization"
-    command_utilization: "DYNAMIC increase in command coverage (from subset to 100% of available ecosystem)"
-    ecosystem_scaling: "Automatically scales with ecosystem growth - no manual updates required"
-    future_commands: "Auto-integration of any new commands added to the registry"
-    
-  quality_improvements:
-    success_rate_optimization: "Dynamic selection based on 87.69% overall registry success rate"
-    adaptive_quality_scaling: "Automatic quality escalation for critical tasks"
-    comprehensive_coverage: "100% task aspect coverage through registry analysis"
-    
-  user_experience_enhancements:
-    reduced_cognitive_load: "Automatic optimal command selection eliminates manual workflow design"
-    improved_outcomes: "Registry-based optimization ensures best-performing command combinations"
-    adaptive_learning: "System improves over time based on user patterns and registry evolution"
-    
-  system_benefits:
-    registry_synchronization: "Real-time integration with command performance metrics"
-    pattern_crystallization: "Automatic detection of successful patterns for future optimization"
-    continuous_improvement: "Registry state evolution drives system-wide performance improvements"
-```
+**Registry Integration Improvements**:
+  **Performance Gains**:
+    - **Execution Speed**: 15-35% faster through optimal command selection
+    - **Workflow Efficiency**: 25-50% improvement in workflow optimization
+    - **Command Utilization**: DYNAMIC increase in command coverage (from subset to 100% of available ecosystem)
+    - **Ecosystem Scaling**: Automatically scales with ecosystem growth - no manual updates required
+    - **Future Commands**: Auto-integration of any new commands added to the registry
+  **Quality Improvements**:
+    - **Success Rate Optimization**: Dynamic selection based on 87.69% overall registry success rate
+    - **Adaptive Quality Scaling**: Automatic quality escalation for critical tasks
+    - **Comprehensive Coverage**: 100% task aspect coverage through registry analysis
+  **User Experience Enhancements**:
+    - **Reduced Cognitive Load**: Automatic optimal command selection eliminates manual workflow design
+    - **Improved Outcomes**: Registry-based optimization ensures best-performing command combinations
+    - **Adaptive Learning**: System improves over time based on user patterns and registry evolution
+  **System Benefits**:
+    - **Registry Synchronization**: Real-time integration with command performance metrics
+    - **Pattern Crystallization**: Automatic detection of successful patterns for future optimization
+    - **Continuous Improvement**: Registry state evolution drives system-wide performance improvements
 
 ---
 

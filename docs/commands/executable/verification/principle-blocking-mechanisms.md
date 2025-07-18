@@ -18,38 +18,32 @@
 
 ### **🚨 AUTOMATIC Blocking Protocol Architecture**
 
-```yaml
-blocking_mechanisms:
-  blocking_tiers:
-    tier_1_critical: # HARD BLOCKING - Immediate halt
-      trigger_condition: "MANDATORY principle violations"
-      response_time: "Immediate (≤50ms)"
-      resolution_requirement: "100% compliance before continuation"
-      escalation: "Progressive enforcement until resolved"
-      
-    tier_2_corrective: # SOFT BLOCKING - Automatic correction attempt
-      trigger_condition: "Correctable principle violations"  
-      response_time: "≤200ms correction attempt"
-      resolution_requirement: "≥90% compliance or manual override"
-      fallback: "Escalate to hard blocking if correction fails"
-      
-    tier_3_advisory: # WARNING BLOCKING - Informed consent required
-      trigger_condition: "Optimization opportunity violations"
-      response_time: "≤500ms advisory display"
-      resolution_requirement: "Acknowledgment of suboptimal approach"
-      continuation: "Allowed with explicit user consent"
-      
-  blocking_scope:
-    operation_blocking:
-      file_operations: "Block file creation/modification violating principles"
-      command_execution: "Block command execution violating principles"
-      tool_usage: "Block tool usage violating compliance requirements"
-      
-    behavioral_blocking:
-      response_generation: "Block response generation violating communication principles"
-      decision_making: "Block decisions violating decision-making principles"
-      workflow_execution: "Block workflow execution violating orchestration principles"
-```
+**Blocking Mechanisms**:
+  **Blocking Tiers**:
+    **Tier 1 Critical**:
+      - **Trigger Condition**: MANDATORY principle violations
+      - **Response Time**: Immediate (≤50ms)
+      - **Resolution Requirement**: 100% compliance before continuation
+      - **Escalation**: Progressive enforcement until resolved
+    **Tier 2 Corrective**:
+      - **Trigger Condition**: Correctable principle violations
+      - **Response Time**: ≤200ms correction attempt
+      - **Resolution Requirement**: ≥90% compliance or manual override
+      - **Fallback**: Escalate to hard blocking if correction fails
+    **Tier 3 Advisory**:
+      - **Trigger Condition**: Optimization opportunity violations
+      - **Response Time**: ≤500ms advisory display
+      - **Resolution Requirement**: Acknowledgment of suboptimal approach
+      - **Continuation**: Allowed with explicit user consent
+  **Blocking Scope**:
+    **Operation Blocking**:
+      - **File Operations**: Block file creation/modification violating principles
+      - **Command Execution**: Block command execution violating principles
+      - **Tool Usage**: Block tool usage violating compliance requirements
+    **Behavioral Blocking**:
+      - **Response Generation**: Block response generation violating communication principles
+      - **Decision Making**: Block decisions violating decision-making principles
+      - **Workflow Execution**: Block workflow execution violating orchestration principles
 
 ### **🚨 MANDATORY Blocking Implementation**
 
@@ -431,27 +425,23 @@ class ResolutionValidationSystem:
 
 ### **Recovery and Continuation Protocols**
 
-```yaml
-recovery_protocols:
-  blocking_resolution_flow:
-    step_1_detection: "Automatic detection of resolution attempts"
-    step_2_validation: "Systematic validation of resolution completeness"
-    step_3_verification: "Mathematical verification of compliance achievement"
-    step_4_clearance: "Automatic blocking clearance upon successful resolution"
-    step_5_continuation: "Seamless operation continuation with monitoring"
-    
-  fallback_mechanisms:
-    resolution_assistance: "Automatic assistance when resolution attempts fail"
-    progressive_guidance: "Increasingly specific guidance for complex resolutions"
-    expert_escalation: "Escalation to advanced resolution protocols when needed"
-    manual_override: "Controlled manual override for exceptional circumstances"
-    
-  learning_integration:
-    pattern_recognition: "Learn from blocking patterns to prevent future violations"
-    resolution_optimization: "Optimize resolution protocols based on success patterns"
-    prevention_enhancement: "Enhance prevention based on frequent blocking causes"
-    system_improvement: "Continuous improvement of blocking and resolution systems"
-```
+**Recovery Protocols**:
+  **Blocking Resolution Flow**:
+    - **Step 1 Detection**: Automatic detection of resolution attempts
+    - **Step 2 Validation**: Systematic validation of resolution completeness
+    - **Step 3 Verification**: Mathematical verification of compliance achievement
+    - **Step 4 Clearance**: Automatic blocking clearance upon successful resolution
+    - **Step 5 Continuation**: Seamless operation continuation with monitoring
+  **Fallback Mechanisms**:
+    - **Resolution Assistance**: Automatic assistance when resolution attempts fail
+    - **Progressive Guidance**: Increasingly specific guidance for complex resolutions
+    - **Expert Escalation**: Escalation to advanced resolution protocols when needed
+    - **Manual Override**: Controlled manual override for exceptional circumstances
+  **Learning Integration**:
+    - **Pattern Recognition**: Learn from blocking patterns to prevent future violations
+    - **Resolution Optimization**: Optimize resolution protocols based on success patterns
+    - **Prevention Enhancement**: Enhance prevention based on frequent blocking causes
+    - **System Improvement**: Continuous improvement of blocking and resolution systems
 
 ---
 
@@ -459,46 +449,38 @@ recovery_protocols:
 
 ### **Performance Metrics**
 
-```yaml
-blocking_metrics:
-  effectiveness_measures:
-    blocking_accuracy: "Percentage of legitimate violations correctly blocked"
-    false_positive_rate: "Percentage of incorrect blocks (target: <2%)"
-    resolution_success_rate: "Percentage of blocks successfully resolved"
-    average_resolution_time: "Average time from block to resolution"
-    
-  system_impact:
-    performance_overhead: "Performance impact of blocking system (target: <5%)"
-    user_experience_impact: "User experience impact assessment"
-    productivity_improvement: "Overall productivity improvement through compliance"
-    quality_enhancement: "Quality improvement through violation prevention"
-    
-  behavioral_transformation:
-    violation_frequency_reduction: "Reduction in violation frequency over time"
-    compliance_improvement: "Improvement in overall compliance rates"
-    prevention_effectiveness: "Effectiveness of prevention vs correction"
-    learning_acceleration: "Acceleration of compliance learning"
-```
+**Blocking Metrics**:
+  **Effectiveness Measures**:
+    - **Blocking Accuracy**: Percentage of legitimate violations correctly blocked
+    - **False Positive Rate**: Percentage of incorrect blocks (target: <2%)
+    - **Resolution Success Rate**: Percentage of blocks successfully resolved
+    - **Average Resolution Time**: Average time from block to resolution
+  **System Impact**:
+    - **Performance Overhead**: Performance impact of blocking system (target: <5%)
+    - **User Experience Impact**: User experience impact assessment
+    - **Productivity Improvement**: Overall productivity improvement through compliance
+    - **Quality Enhancement**: Quality improvement through violation prevention
+  **Behavioral Transformation**:
+    - **Violation Frequency Reduction**: Reduction in violation frequency over time
+    - **Compliance Improvement**: Improvement in overall compliance rates
+    - **Prevention Effectiveness**: Effectiveness of prevention vs correction
+    - **Learning Acceleration**: Acceleration of compliance learning
 
 ### **Continuous Optimization**
 
-```yaml
-optimization_framework:
-  threshold_optimization:
-    dynamic_threshold_adjustment: "Adjust blocking thresholds based on effectiveness"
-    context_sensitive_thresholds: "Adapt thresholds based on operation context"
-    performance_balanced_thresholds: "Balance enforcement with performance impact"
-    
-  resolution_optimization:
-    resolution_protocol_refinement: "Continuously refine resolution protocols"
-    automatic_assistance_improvement: "Improve automatic resolution assistance"
-    guidance_personalization: "Personalize guidance based on user patterns"
-    
-  prevention_enhancement:
-    proactive_violation_prevention: "Enhance proactive prevention capabilities"
-    predictive_blocking: "Implement predictive blocking based on patterns"
-    educational_integration: "Integrate educational components for prevention"
-```
+**Optimization Framework**:
+  **Threshold Optimization**:
+    - **Dynamic Threshold Adjustment**: Adjust blocking thresholds based on effectiveness
+    - **Context Sensitive Thresholds**: Adapt thresholds based on operation context
+    - **Performance Balanced Thresholds**: Balance enforcement with performance impact
+  **Resolution Optimization**:
+    - **Resolution Protocol Refinement**: Continuously refine resolution protocols
+    - **Automatic Assistance Improvement**: Improve automatic resolution assistance
+    - **Guidance Personalization**: Personalize guidance based on user patterns
+  **Prevention Enhancement**:
+    - **Proactive Violation Prevention**: Enhance proactive prevention capabilities
+    - **Predictive Blocking**: Implement predictive blocking based on patterns
+    - **Educational Integration**: Integrate educational components for prevention
 
 ---
 

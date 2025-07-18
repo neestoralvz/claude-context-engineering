@@ -1,0 +1,10 @@
+2025-07-18 13:09:05,286 - __main__ - INFO - Remediation database initialized successfully
+2025-07-18 13:09:05,286 - __main__ - INFO - Default remediation configuration created
+2025-07-18 13:09:05,287 - __main__ - INFO - Analyzing 1 violations for remediation plan plan_1752865745287
+2025-07-18 13:09:05,287 - __main__ - ERROR - Failed to store remediation plan: asdict() should be called on dataclass instances
+2025-07-18 13:09:05,287 - __main__ - INFO - Remediation plan plan_1752865745287 created: 1 actions, 83.33% confidence, 180.0s estimated
+2025-07-18 13:09:05,287 - __main__ - INFO - Executing remediation plan plan_1752865745287 with 1 actions
+2025-07-18 13:09:05,287 - __main__ - INFO - Backup created for action action_1752865745287_5059: /Users/nalve/claude-context-engineering/scripts/results/governance/remediation-backups/backup_action_1752865745287_5059_20250718_130905
+2025-07-18 13:09:05,287 - __main__ - INFO - Executing action action_1752865745287_5059: modularization for file_size
+2025-07-18 13:09:05,288 - __main__ - ERROR - Action action_1752865745287_5059 failed: Source file not found
+2025-07-18 13:09:05,288 - __main__ - INFO - Remediation plan plan_1752865745287 completed: failed (0.0% success rate in 0.0s)

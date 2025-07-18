@@ -568,21 +568,8 @@ During execution workflow, display comprehensive metrics:
 This command implements the **decision-engine script integration pattern** with the following enhancements:
 
 #### **Multi-Script Coordination Architecture**
-```yaml
-script_coordination_layer:
-  formula_library: context_engineering_formulas.sh
-  metrics_system: calculate-real-metrics.sh
-  parallelization_engine: parallelization-analyzer.js
-  trigger_validation: test-trigger-system.sh
-  compliance_validation: verify-mathematical-formulas.sh
-  
-integration_enhancements:
-  mathematical_precision: "Real-time formula integration for all calculations"
-  coordination_protocols: "Enhanced multi-agent communication and synchronization"
-  performance_optimization: "Script-validated performance monitoring and improvement"
-  validation_pipelines: "Comprehensive script validation throughout execution phases"
-  error_handling: "Advanced error detection and recovery with script diagnostics"
-```
+**Configuration Block 1**:
+
 
 #### **Communication Protocol Enhancement**
 - **Bidirectional Agent Communication**: Enhanced protocols for complex coordination

@@ -473,3 +473,7 @@ fi
 # Run validation
 check_dependencies
 main
+# Auto-update handoffs summary
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "${PROJECT_ROOT}/../../" && pwd)"
+"${PROJECT_ROOT}/scripts/automation/auto-update-handoffs-summary.sh" hook

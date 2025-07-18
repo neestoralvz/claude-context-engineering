@@ -6,7 +6,7 @@
 
 **Purpose**: CRITICAL intelligent meta-orchestrator that MANDATORY discovers and utilizes ALL available Context Engineering commands for ≥100x developer productivity. REQUIRED automatic detection of command ecosystem size, MANDATORY optimal command selection, and CRITICAL execution chaining based on task complexity, confidence levels, and real-time registry state with REQUIRED adaptive scaling that grows with the command ecosystem.
 
-**Compact Communication**: MANDATORY integration with [Compact Conversation Feedback](../../shared/communication/compact-conversation-feedback.md) for dense, high-value status updates using patterns: `⟳ /context-eng → Registry scan → ✓ 76cmd loaded [1.8s]`
+**🚨 MANDATORY Compact Communication**: Auto-enforcement of Principle #82 with format `⟳ /comando → resultado 🎯 [tiempo]` and immediate blocking of verbose patterns. MANDATORY integration with [Compact Conversation Feedback](../../shared/communication/compact-conversation-feedback.md) for dense, high-value status updates using patterns: `⟳ /context-eng → Registry scan → ✓ 76cmd loaded [1.8s]`
 
 **Enhanced Capabilities**: MANDATORY intelligent routing engine with REQUIRED adaptive learning, CRITICAL performance-based optimization, and REQUIRED bidirectional Task Agent Communication Protocol ensuring MANDATORY complete transparency and CRITICAL continuous improvement.
 
@@ -87,6 +87,13 @@
 - **Protocol**: 🚨 ENFORCED: CRITICAL, OBLIGATORY, IMPERATIVE validation at EACH execution step - TodoWrite updates, code writing, error handling, completion
 - **Verification**: 🚨 REQUIRED: 100% step-by-step command utilization validation, automatic blocking of non-compliant actions, continuous compliance monitoring
 
+**🚨 CONTINUOUS LEARNING TRIGGER** (NEW - Real-Time Knowledge Capture):
+- **Condition**: 🚨 AUTOMATIC: Pattern discovery ≥3 repetitions OR innovation effectiveness ≥85% OR significant insights during execution
+- **Threshold**: 🚨 CONTINUOUS: Real-time monitoring of patterns, discoveries, and knowledge opportunities during ALL operations
+- **Action**: 🚨 MANDATORY: Auto-activate continuous learning protocols with pattern crystallization and knowledge base integration
+- **Protocol**: 🚨 ENFORCED: [Continuous Learning Patterns](../../../knowledge/patterns/continuous-learning-patterns.md) integration with automatic knowledge capture
+- **Verification**: 🚨 REQUIRED: Pattern validation, knowledge integration confirmation, and cross-reference network updates
+
 ## ⚡ **Adaptive Intelligent Activation Protocol** (MANDATORY)
 
 **🚨 BLOCKING REQUIREMENT**: MANDATORY intelligent activation scaling with ≥92% trigger accuracy based on complexity measurement. Sistema WILL enforce activation protocols with AUTOMATIC blocking for manual override attempts and MANDATORY verification of ecosystem utilization thresholds.
@@ -163,6 +170,7 @@
 - **Multi-Agent Orchestration**: CRITICAL up to 10 specialist Task agents with REQUIRED bidirectional communication
 - **P55/P56 Compliance**: MANDATORY 100% Tool Call Execution Bridging and REQUIRED Command Execution Transparency
 - **Learning Enhancement**: REQUIRED pattern recognition and workflow optimization based on usage patterns
+- **Continuous Learning Integration**: CRITICAL real-time knowledge capture, pattern discovery, and automatic knowledge base updates during execution
 
 ### **🚨 MANDATORY COMPLIANCE ENFORCEMENT** (BLOCKING Implementation)
 - **Command Autocontención Validation**: AUTOMATIC enforcement of Principle #102 - complete command independence verification
