@@ -134,25 +134,16 @@ Value: [Your Anthropic API key from console.anthropic.com]
 
 **Step 3: Add GitHub Actions Workflow**
 Create `.github/workflows/claude.yml`:
-```yaml
-name: Claude Code Integration
-on:
-  issue_comment:
-    types: [created]
-  pull_request_review_comment:
-    types: [created]
 
-jobs:
-  claude-response:
-    if: contains(github.event.comment.body, '@claude')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: anthropics/claude-code-action@v1
-        with:
-          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-          trigger-phrase: '@claude'
-```
+**MANDATORY GitHub Actions Configuration**:
+
+**CRITICAL Workflow Requirements**:
+- **Trigger Events**: Issue comments and PR review comments with @claude mentions
+- **Authentication**: ANTHROPIC_API_KEY secret configuration required
+- **Action Version**: anthropics/claude-code-action@v1 (latest stable)
+- **Runtime Environment**: ubuntu-latest with checkout@v4
+
+**Essential Configuration Example**: The Claude Code Integration workflow is triggered by comment events on both issue comments and pull request review comments when they are created. The workflow includes a claude-response job that runs on ubuntu-latest and is conditionally executed when the comment contains '@claude'. The job uses actions/checkout@v4 for repository access and anthropics/claude-code-action@v1 with the Anthropic API key and '@claude' trigger phrase configuration.
 
 ### **Configuration Optimization**
 
@@ -190,22 +181,27 @@ Create `CLAUDE.md` in repository root for optimal AI behavior:
 ### **Advanced Workflow Configuration**
 
 **CRITICAL Custom Trigger Phrases Configuration**:
-```yaml
-# Customize trigger phrases for different behaviors
-with:
-  trigger-phrase: '@claude'
-  review-trigger: '@claude review'
-  implement-trigger: '@claude implement'
-  fix-trigger: '@claude fix'
-```
+
+**CRITICAL Trigger Phrase Customization**:
+
+**Behavior-Specific Triggers**:
+- **General Trigger**: @claude (default behavior)
+- **Review Trigger**: @claude review (code review focus)
+- **Implementation Trigger**: @claude implement (feature development)
+- **Fix Trigger**: @claude fix (bug resolution)
+
+**Configuration Pattern**: The trigger configuration defines multiple specialized phrases including '@claude' for general interaction, '@claude review' for code reviews, '@claude implement' for feature implementation, and '@claude fix' for bug resolution. This multi-trigger approach enables contextual AI assistance based on the specific development need.
 
 **CRITICAL Conditional Response Configuration**:
-```yaml
-# Respond only to specific users or teams
-if: |
-  contains(github.event.comment.body, '@claude') && 
-  (github.actor == 'team-lead' || contains(github.event.comment.author_association, 'COLLABORATOR'))
-```
+
+**CRITICAL User/Team Access Control**:
+
+**Security Requirements**:
+- **User Authentication**: GitHub actor verification required
+- **Permission Levels**: COLLABORATOR or team-specific access
+- **Access Control Logic**: Combined @claude mention and permission validation
+
+**Implementation Pattern**: The conditional execution pattern checks if the comment contains '@claude' AND the actor is either 'team-lead' or has 'COLLABORATOR' association. This security pattern ensures only authorized team members can trigger Claude Code actions through GitHub integration.
 
 ---
 
@@ -327,17 +323,16 @@ Please create separate commits for each phase.
 
 ### **Continuous Integration Enhancement**
 
-****CI Failure Response****
+**CRITICAL CI Failure Response**
 Claude can automatically respond to CI/CD failures:
-```yaml
-# In workflow configuration
-- name: Claude CI Analysis
-  if: failure()
-  uses: anthropics/claude-code-action@v1
-  with:
-    anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-    auto-respond-ci-failure: true
-```
+
+**CRITICAL Automated CI Analysis Configuration**:
+
+**MANDATORY CI Failure Response Framework**:
+- **Trigger Condition**: Workflow failure detection (`failure()` condition)
+- **Action Integration**: anthropics/claude-code-action@v1 deployment
+- **Authentication**: ANTHROPIC_API_KEY secret configuration required
+- **Auto-Response**: Enabled for automatic CI failure analysis
 
 ### **Automated Testing Integration**
 ```markdown
@@ -354,89 +349,110 @@ Please fix the failing tests and ensure all existing functionality is preserved.
 ### **Enterprise Setup Considerations**
 
 ### **Security Configuration**
-```yaml
-# Enhanced security for enterprise environments
-name: Claude Code - Enterprise
-on:
-  issue_comment:
-    types: [created]
-jobs:
-  claude-response:
-    if: |
-      contains(github.event.comment.body, '@claude') &&
-      contains(fromJSON('["OWNER", "COLLABORATOR", "MEMBER"]'), github.event.comment.author_association)
-    runs-on: ubuntu-latest
-    environment: production
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: anthropics/claude-code-action@v1
-        with:
-          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-          max-file-changes: 10
-          require-approval: true
-```
 
-****Team-Based Access Control****
-```yaml
-# Role-based Claude access
-permissions:
-  contents: read
-  pull-requests: write
-  issues: write
-  
-env:
-  ALLOWED_TEAMS: '["engineering", "senior-devs"]'
-  CLAUDE_MODEL: 'claude-3-sonnet-20240229'
-```
+**MANDATORY Enterprise Security Settings**:
+
+**CRITICAL Enterprise Security Framework**:
+- **Access Control**: OWNER, COLLABORATOR, MEMBER permissions only
+- **Environment Protection**: Production environment with approval gates
+- **Change Limits**: Maximum 10 file changes per operation
+- **Approval Requirements**: Human approval required for all changes
+
+**CRITICAL Enterprise Configuration Protocol**:
+
+**MANDATORY Enterprise Workflow Structure**:
+- **Workflow Name**: Claude Code - Enterprise
+- **Trigger Events**: Issue comment creation events
+- **Conditional Execution**: @claude mention AND permission validation (OWNER, COLLABORATOR, MEMBER)
+- **Runtime Environment**: ubuntu-latest with production environment protection
+- **Repository Access**: actions/checkout@v4 with GITHUB_TOKEN authentication
+- **Claude Integration**: anthropics/claude-code-action@v1 with enterprise settings
+- **File Change Limits**: Maximum 10 file modifications per operation
+- **Approval Requirements**: Human approval required for all changes
+
+**CRITICAL Team-Based Access Control**:
+
+**CRITICAL Role-Based Access Configuration**:
+
+**Permission Framework**:
+- **Content Access**: Read permissions for repository content
+- **Pull Request Management**: Write access for PR creation and updates
+- **Issue Management**: Write access for issue interactions
+- **Team Restrictions**: Engineering and senior developer teams only
+- **Model Selection**: Claude-3-sonnet for optimal performance
+
+**MANDATORY Access Control Setup Protocol**:
+
+**CRITICAL Permission Configuration Framework**:
+- **Content Permissions**: Read access to repository contents
+- **Pull Request Permissions**: Write access for PR creation and modification
+- **Issue Permissions**: Write access for issue interactions
+- **Team Restrictions**: Engineering and senior-devs teams only (environment variable configuration)
+- **Model Selection**: claude-3-sonnet-20240229 for optimal performance (environment variable configuration)
 
 ### **Performance Optimization**
 
-****Resource Management****
-```yaml
-# Optimize for large repositories
-with:
-  anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-  max-context-files: 50
-  timeout-minutes: 15
-  cache-dependencies: true
-```
+**MANDATORY Resource Management**:
+
+**MANDATORY Large Repository Optimization**:
+
+**Performance Configuration**:
+- **Context Limitation**: Maximum 50 files for AI context
+- **Timeout Management**: 15-minute operation timeout
+- **Dependency Caching**: Enabled for faster execution
+- **Resource Efficiency**: Optimized for large codebase processing
+
+**CRITICAL Optimization Settings Configuration**:
+
+**MANDATORY Performance Enhancement Protocol**:
+- **API Authentication**: ANTHROPIC_API_KEY secret configuration required
+- **Context Limitation**: Maximum 50 files for AI context processing
+- **Timeout Management**: 15-minute operation timeout for reliability
+- **Dependency Caching**: Enabled for improved execution performance
 
 ### **Rate Limiting and Usage Control**
-```yaml
-# Control API usage and costs
-with:
-  max-requests-per-hour: 10
-  max-tokens-per-request: 100000
-  priority-users: '["team-lead", "senior-engineer"]'
-```
+
+**CRITICAL Usage Control Configuration**:
+
+**Resource Management Framework**:
+- **Rate Limiting**: Maximum 10 requests per hour
+- **Token Limits**: 100,000 tokens per request maximum
+- **Priority Access**: Team leads and senior engineers get precedence
+- **Cost Control**: Automated usage monitoring and limits
+
+**CRITICAL Usage Control Setup Framework**:
+
+**MANDATORY Rate Limiting Configuration Protocol**:
+- **Hourly Request Limits**: Maximum 10 requests per hour for resource control
+- **Token Request Limits**: Maximum 100,000 tokens per individual request
+- **Priority User Access**: team-lead and senior-engineer roles get precedence
+- **Resource Management**: Automated controls prevent usage overruns
 
 ### **Custom Workflow Templates**
 
 ### **Feature Development Template**
-```yaml
-name: Claude Feature Implementation
-on:
-  issues:
-    types: [labeled]
-    
-jobs:
-  feature-implementation:
-    if: contains(github.event.label.name, 'feature') && contains(github.event.issue.body, '@claude')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Create Feature Branch
-        run: |
-          git checkout -b feature/issue-${{ github.event.issue.number }}
-          git push -u origin feature/issue-${{ github.event.issue.number }}
-      - uses: anthropics/claude-code-action@v1
-        with:
-          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-          branch: feature/issue-${{ github.event.issue.number }}
-          auto-create-pr: true
-```
+
+**AUTOMATED Feature Implementation Workflow**:
+
+**CRITICAL Feature Development Pipeline**:
+- **Trigger Condition**: Issues labeled 'feature' with @claude mention
+- **Branch Management**: Automatic feature branch creation
+- **Implementation Process**: AI-powered feature development
+- **PR Automation**: Automatic pull request creation with implementation
+
+**CRITICAL Workflow Configuration Protocol**:
+
+**MANDATORY Feature Implementation Workflow Structure**:
+- **Workflow Name**: Claude Feature Implementation
+- **Trigger Events**: Issues with label assignment
+- **Conditional Execution**: 'feature' label AND @claude mention in issue body
+- **Runtime Environment**: ubuntu-latest
+- **Repository Checkout**: actions/checkout@v4 for code access
+- **Branch Creation**: Automatic feature branch creation with issue number
+- **Branch Naming**: feature/issue-{issue-number} pattern
+- **Remote Push**: Upstream branch creation with tracking
+- **Claude Integration**: anthropics/claude-code-action@v1 with branch targeting
+- **PR Automation**: Automatic pull request creation enabled
 
 ---
 
@@ -561,15 +577,23 @@ gh api repos/:owner/:repo/actions/runs \
   --jq '.workflow_runs[] | select(.name == "Claude Code Integration") | .conclusion'
 ```
 
-****Performance Optimization Strategies****
-```yaml
-# Optimize Claude responses for efficiency
-with:
-  anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-  model: 'claude-3-haiku-20240307'  # Faster model for simple tasks
-  max-tokens: 50000                  # Limit response size
-  temperature: 0.1                   # More deterministic responses
-```
+**MANDATORY Performance Optimization Strategies**:
+
+**MANDATORY Efficiency Configuration**:
+
+**Performance Optimization Framework**:
+- **Model Selection**: Claude-3-haiku for simple tasks (faster execution)
+- **Token Management**: 50,000 token limit for response size control
+- **Deterministic Output**: 0.1 temperature for consistent responses
+- **Resource Efficiency**: Optimized for speed and cost control
+
+**CRITICAL Efficiency Settings Configuration**:
+
+**MANDATORY Performance Enhancement Protocol**:
+- **API Authentication**: ANTHROPIC_API_KEY secret configuration required
+- **Model Selection**: claude-3-haiku-20240307 for optimal speed on simple tasks
+- **Token Limitation**: Maximum 50,000 tokens for response size control
+- **Temperature Setting**: 0.1 for deterministic and consistent responses
 
 ### **Cost Management**
 
@@ -579,14 +603,22 @@ with:
 - **Model Selection**: Use appropriate Claude model for task complexity
 - **Caching**: Implement response caching for similar requests
 
-****Budget Controls****
-```yaml
-# Implement usage limits
-env:
-  DAILY_REQUEST_LIMIT: 100
-  MONTHLY_TOKEN_LIMIT: 1000000
-  COST_ALERT_THRESHOLD: 50  # USD
-```
+**CRITICAL Budget Controls**:
+
+**CRITICAL Budget Control Configuration**:
+
+**Usage Monitoring Framework**:
+- **Daily Limits**: 100 requests per day maximum
+- **Monthly Limits**: 1,000,000 tokens per month maximum
+- **Cost Alerts**: $50 USD threshold for cost notifications
+- **Budget Management**: Automated limits prevent overspend
+
+**CRITICAL Limit Configuration Protocol**:
+
+**MANDATORY Budget Control Environment Variables**:
+- **Daily Request Limit**: 100 requests maximum per 24-hour period
+- **Monthly Token Limit**: 1,000,000 tokens maximum per calendar month
+- **Cost Alert Threshold**: $50 USD threshold for automated notifications
 
 ---
 
@@ -630,14 +662,22 @@ gh secret list --repo owner/repo
 4. Validate API key is correctly configured
 
 **Common Fixes**:
-```yaml
-# Debug workflow with enhanced logging
-- name: Debug Claude Response
-  run: |
-    echo "Comment body: ${{ github.event.comment.body }}"
-    echo "Author: ${{ github.event.comment.user.login }}"
-    echo "Association: ${{ github.event.comment.author_association }}"
-```
+
+**CRITICAL Debug Logging Configuration**:
+
+**Troubleshooting Framework**:
+- **Comment Analysis**: Full comment body logging for trigger verification
+- **User Identification**: Author login and association tracking
+- **Permission Validation**: Association level verification
+- **Debug Information**: Comprehensive logging for issue resolution
+
+**CRITICAL Debug Setup Configuration**:
+
+**MANDATORY Debug Logging Protocol**:
+- **Step Name**: Debug Claude Response for comprehensive analysis
+- **Comment Analysis**: Full comment body content logging
+- **User Identification**: Author login name extraction and logging
+- **Permission Verification**: Author association level validation and logging
 
 ****Incomplete or Poor Quality Responses****
 **Optimization Strategies**:
@@ -650,29 +690,42 @@ gh secret list --repo owner/repo
 
 ****Slow Response Times****
 **Optimization Techniques**:
-```yaml
-# Optimize for speed
-with:
-  model: 'claude-3-haiku-20240307'  # Faster model
-  max-context-files: 20             # Limit context size
-  parallel-processing: true         # Enable parallel execution
-```
+
+**MANDATORY Speed Optimization Configuration**:
+
+**Performance Enhancement Framework**:
+- **Model Selection**: Claude-3-haiku for maximum speed
+- **Context Management**: Limited to 20 files for faster processing
+- **Parallel Processing**: Enabled for concurrent operation handling
+- **Response Time**: Optimized for sub-minute response times
+
+**CRITICAL Speed Configuration Protocol**:
+
+**MANDATORY Speed Optimization Framework**:
+- **Model Selection**: claude-3-haiku-20240307 for maximum response speed
+- **Context File Limitation**: Maximum 20 files for faster processing
+- **Parallel Processing**: Enabled for concurrent operation handling
 
 ****Resource Consumption****
 **Monitoring and Limits**:
-```yaml
-# Resource management
-jobs:
-  claude-response:
-    timeout-minutes: 10
-    strategy:
-      max-parallel: 2
-    steps:
-      - uses: anthropics/claude-code-action@v1
-        with:
-          memory-limit: '2048Mi'
-          cpu-limit: '1000m'
-```
+
+**MANDATORY Resource Management Configuration**:
+
+**Resource Control Framework**:
+- **Timeout Management**: 10-minute maximum execution time
+- **Parallel Limits**: Maximum 2 concurrent operations
+- **Memory Allocation**: 2048Mi memory limit per operation
+- **CPU Allocation**: 1000m CPU limit for performance control
+
+**CRITICAL Resource Settings Configuration**:
+
+**MANDATORY Resource Management Protocol**:
+- **Job Configuration**: claude-response with timeout and strategy settings
+- **Timeout Management**: 10-minute maximum execution time
+- **Parallel Strategy**: Maximum 2 concurrent operations
+- **Action Integration**: anthropics/claude-code-action@v1 with resource limits
+- **Memory Allocation**: 2048Mi memory limit per operation
+- **CPU Allocation**: 1000m CPU limit for performance control
 
 ---
 
