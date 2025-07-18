@@ -42,3 +42,9 @@ next-env.d.ts
 
 # OS
 Thumbs.db
+
+# Context Engineering Projects Exclusion
+projects/
+
+# Git Operations
+.git-rewrite/
