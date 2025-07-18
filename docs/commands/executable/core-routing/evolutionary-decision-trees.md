@@ -16,145 +16,141 @@
 
 ### **MANDATORY Evolutionary Intelligence Protocol**
 
-```yaml
-evolutionary_decision_trees:
-  adaptive_intelligence:
-    pattern_recognition: "MANDATORY: Recognition of successful command orchestration patterns"
-    learning_integration: "Continuous learning from execution outcomes and user feedback"
-    threshold_adaptation: "Dynamic adaptation of decision thresholds based on success patterns"
-    predictive_routing: "Predictive command routing based on historical success probability"
-    complete_ecosystem_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 76 commands with MANDATORY comprehensive utilization verification"
-    principle_guided_intelligence: "🚨 CRITICAL: Sistema MUST integrate Context Engineering principles into all decision-making processes with AUTOMATIC principle compliance detection"
-    utilization_threshold_enforcement: "🚨 MANDATORY: Sistema WILL block execution if command utilization falls below 70% for complex objectives with AUTOMATIC detection and correction"
-    subutilization_prevention: "🚨 AUTOMATIC: Real-time subutilization detection with MANDATORY correction protocols and ecosystem activation"
-    
-  decision_evolution:
-    success_pattern_analysis: "Analysis of successful decision patterns across executions"
-    failure_pattern_identification: "Identification and avoidance of recurring failure patterns"
-    optimization_learning: "Learning optimal decision parameters from execution history"
-    contextual_adaptation: "Adaptation of decision logic based on contextual factors"
-    
-  intelligence_amplification:
-    cumulative_learning: "Cumulative learning across multiple command executions"
-    pattern_crystallization: "Crystallization of effective decision patterns into reusable templates"
-    wisdom_synthesis: "Synthesis of decision wisdom from large-scale execution data"
-    predictive_intelligence: "Development of predictive intelligence for command orchestration"
-    token_optimization_intelligence: "🚨 CRITICAL: MANDATORY integration of token learning patterns for maximum efficiency ([Token Optimization Intelligence](../../../knowledge/technical/token-optimization-intelligence.md#continuous-learning-system))"
-    
-  continuous_optimization:
-    performance_feedback: "Continuous feedback integration for decision optimization"
-    accuracy_improvement: "Continuous improvement of decision accuracy through learning"
-    efficiency_enhancement: "Enhancement of decision efficiency through pattern optimization"
-    user_satisfaction_optimization: "Optimization of decision outcomes for user satisfaction"
-    ecosystem_utilization_monitoring: "🚨 MANDATORY: Sistema WILL monitor and optimize utilization of all 76 commands with AUTOMATIC blocking for subutilization and real-time correction protocols"
-    token_efficiency_optimization: "🚨 CRITICAL: MANDATORY continuous learning and application of token optimization strategies based on success patterns with ≥40% reduction targets and ≥95% quality preservation"
-    
-  command_ecosystem_integration:
-    behavioral_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 38 behavioral commands with MANDATORY utilization verification"
-    executable_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 30 executable commands with MANDATORY utilization verification"
-    core_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 6 core commands with MANDATORY utilization verification"
-    shared_commands_awareness: "🚨 BLOCKING: Sistema WILL maintain awareness of all 2 shared commands with MANDATORY utilization verification"
-    situational_command_mapping: "🚨 AUTOMATIC: Sistema WILL map operational contexts to optimal command combinations with BLOCKING for single-command execution when orchestration is required"
-    
-  principle_evaluation_system:
-    real_time_principle_assessment: "MANDATORY: Evaluate applicable principles for every decision point"
-    principle_priority_integration: "CRITICAL: Integrate principle priority hierarchy into decision logic"
-    principle_compliance_validation: "REQUIRED: Validate all decisions against principle requirements"
-    principle_conflict_resolution: "AUTOMATIC: Resolve principle conflicts using intelligent algorithms"
-    principle_guided_optimization: "CONTINUOUS: Optimize decisions based on principle adherence"
-    
-  enforcement_validation_system:
-    utilization_threshold_monitoring: "🚨 REAL-TIME: Monitor command utilization with ≥70% threshold enforcement for complex objectives"
-    blocking_mechanism_activation: "🚨 AUTOMATIC: Activate blocking mechanisms when single-command execution detected for multi-command scenarios"
-    subutilization_detection_alerts: "🚨 IMMEDIATE: Generate immediate alerts when ecosystem subutilization patterns detected"
-    correction_protocol_execution: "🚨 MANDATORY: Execute automatic correction protocols to achieve required command utilization"
-    compliance_verification_loops: "🚨 CONTINUOUS: Verify ongoing compliance with all enforcement mechanisms until convergence achieved"
-```
+**Evolutionary Decision Trees Framework**
+
+### **Adaptive Intelligence**
+- **Pattern Recognition**: MANDATORY recognition of successful command orchestration patterns
+- **Learning Integration**: Continuous learning from execution outcomes and user feedback
+- **Threshold Adaptation**: Dynamic adaptation of decision thresholds based on success patterns
+- **Predictive Routing**: Predictive command routing based on historical success probability
+- **Complete Ecosystem Awareness**: 🚨 BLOCKING Sistema WILL maintain awareness of all 76 commands with MANDATORY comprehensive utilization verification
+- **Principle Guided Intelligence**: 🚨 CRITICAL Sistema MUST integrate Context Engineering principles into all decision-making processes with AUTOMATIC principle compliance detection
+- **Utilization Threshold Enforcement**: 🚨 MANDATORY Sistema WILL block execution if command utilization falls below 70% for complex objectives with AUTOMATIC detection and correction
+- **Subutilization Prevention**: 🚨 AUTOMATIC Real-time subutilization detection with MANDATORY correction protocols and ecosystem activation
+
+### **Decision Evolution**
+- **Success Pattern Analysis**: Analysis of successful decision patterns across executions
+- **Failure Pattern Identification**: Identification and avoidance of recurring failure patterns
+- **Optimization Learning**: Learning optimal decision parameters from execution history
+- **Contextual Adaptation**: Adaptation of decision logic based on contextual factors
+
+### **Intelligence Amplification**
+- **Cumulative Learning**: Cumulative learning across multiple command executions
+- **Pattern Crystallization**: Crystallization of effective decision patterns into reusable templates
+- **Wisdom Synthesis**: Synthesis of decision wisdom from large-scale execution data
+- **Predictive Intelligence**: Development of predictive intelligence for command orchestration
+- **Token Optimization Intelligence**: 🚨 CRITICAL MANDATORY integration of token learning patterns for maximum efficiency ([Token Optimization Intelligence](../../../knowledge/technical/token-optimization-intelligence.md#continuous-learning-system))
+
+### **Continuous Optimization**
+- **Performance Feedback**: Continuous feedback integration for decision optimization
+- **Accuracy Improvement**: Continuous improvement of decision accuracy through learning
+- **Efficiency Enhancement**: Enhancement of decision efficiency through pattern optimization
+- **User Satisfaction Optimization**: Optimization of decision outcomes for user satisfaction
+- **Ecosystem Utilization Monitoring**: 🚨 MANDATORY Sistema WILL monitor and optimize utilization of all 76 commands with AUTOMATIC blocking for subutilization and real-time correction protocols
+- **Token Efficiency Optimization**: 🚨 CRITICAL MANDATORY continuous learning and application of token optimization strategies based on success patterns with ≥40% reduction targets and ≥95% quality preservation
+
+### **Command Ecosystem Integration**
+- **Behavioral Commands Awareness**: 🚨 BLOCKING Sistema WILL maintain awareness of all 38 behavioral commands with MANDATORY utilization verification
+- **Executable Commands Awareness**: 🚨 BLOCKING Sistema WILL maintain awareness of all 30 executable commands with MANDATORY utilization verification
+- **Core Commands Awareness**: 🚨 BLOCKING Sistema WILL maintain awareness of all 6 core commands with MANDATORY utilization verification
+- **Shared Commands Awareness**: 🚨 BLOCKING Sistema WILL maintain awareness of all 2 shared commands with MANDATORY utilization verification
+- **Situational Command Mapping**: 🚨 AUTOMATIC Sistema WILL map operational contexts to optimal command combinations with BLOCKING for single-command execution when orchestration is required
+
+### **Principle Evaluation System**
+- **Real Time Principle Assessment**: MANDATORY Evaluate applicable principles for every decision point
+- **Principle Priority Integration**: CRITICAL Integrate principle priority hierarchy into decision logic
+- **Principle Compliance Validation**: REQUIRED Validate all decisions against principle requirements
+- **Principle Conflict Resolution**: AUTOMATIC Resolve principle conflicts using intelligent algorithms
+- **Principle Guided Optimization**: CONTINUOUS Optimize decisions based on principle adherence
+
+### **Enforcement Validation System**
+- **Utilization Threshold Monitoring**: 🚨 REAL-TIME Monitor command utilization with ≥70% threshold enforcement for complex objectives
+- **Blocking Mechanism Activation**: 🚨 AUTOMATIC Activate blocking mechanisms when single-command execution detected for multi-command scenarios
+- **Subutilization Detection Alerts**: 🚨 IMMEDIATE Generate immediate alerts when ecosystem subutilization patterns detected
+- **Correction Protocol Execution**: 🚨 MANDATORY Execute automatic correction protocols to achieve required command utilization
+- **Compliance Verification Loops**: 🚨 CONTINUOUS Verify ongoing compliance with all enforcement mechanisms until convergence achieved
 
 ### **Decision Evolution Components**
 
 #### **1. Pattern Recognition Engine**
-```yaml
-pattern_recognition:
-  success_pattern_identification:
-    command_sequence_patterns: "Identification of successful command sequence patterns"
-    timing_patterns: "Recognition of optimal timing patterns for command execution"
-    context_patterns: "Identification of contextual factors that influence success"
-    user_behavior_patterns: "Recognition of user behavior patterns and preferences"
-    token_optimization_patterns: "🚨 CRITICAL: Recognition of successful token optimization patterns for different contexts, objectives, and complexity levels"
-    compression_strategy_patterns: "Identification of effective context compression strategies based on success history"
-    budget_allocation_patterns: "Recognition of optimal token budget allocation patterns for different operation types"
-    learning_adaptation_patterns: "Detection of successful learning pattern adaptation across contexts"
-    
-  failure_pattern_detection:
-    common_failure_modes: "Detection of common failure modes in command orchestration"
-    anti_patterns: "Identification of anti-patterns that lead to poor outcomes"
-    bottleneck_patterns: "Recognition of patterns that create bottlenecks or inefficiencies"
-    deviation_patterns: "Detection of patterns that lead to objective deviation"
-    token_inefficiency_patterns: "🚨 CRITICAL: Detection of patterns that lead to token waste or poor compression ratios"
-    quality_degradation_patterns: "Identification of patterns that compromise information quality during optimization"
-    budget_overrun_patterns: "Recognition of patterns that lead to token budget violations"
-    learning_failure_patterns: "Detection of patterns where learning adaptation fails or regresses"
-    
-  pattern_categorization:
-    effectiveness_scoring: "Scoring of pattern effectiveness based on success metrics"
-    applicability_analysis: "Analysis of pattern applicability across different contexts"
-    reliability_assessment: "Assessment of pattern reliability and consistency"
-    generalizability_evaluation: "Evaluation of pattern generalizability across use cases"
-```
+**Pattern Recognition Engine**
+
+### **Success Pattern Identification**
+- **Command Sequence Patterns**: Identification of successful command sequence patterns
+- **Timing Patterns**: Recognition of optimal timing patterns for command execution
+- **Context Patterns**: Identification of contextual factors that influence success
+- **User Behavior Patterns**: Recognition of user behavior patterns and preferences
+- **Token Optimization Patterns**: 🚨 CRITICAL Recognition of successful token optimization patterns for different contexts, objectives, and complexity levels
+- **Compression Strategy Patterns**: Identification of effective context compression strategies based on success history
+- **Budget Allocation Patterns**: Recognition of optimal token budget allocation patterns for different operation types
+- **Learning Adaptation Patterns**: Detection of successful learning pattern adaptation across contexts
+
+### **Failure Pattern Detection**
+- **Common Failure Modes**: Detection of common failure modes in command orchestration
+- **Anti Patterns**: Identification of anti-patterns that lead to poor outcomes
+- **Bottleneck Patterns**: Recognition of patterns that create bottlenecks or inefficiencies
+- **Deviation Patterns**: Detection of patterns that lead to objective deviation
+- **Token Inefficiency Patterns**: 🚨 CRITICAL Detection of patterns that lead to token waste or poor compression ratios
+- **Quality Degradation Patterns**: Identification of patterns that compromise information quality during optimization
+- **Budget Overrun Patterns**: Recognition of patterns that lead to token budget violations
+- **Learning Failure Patterns**: Detection of patterns where learning adaptation fails or regresses
+
+### **Pattern Categorization**
+- **Effectiveness Scoring**: Scoring of pattern effectiveness based on success metrics
+- **Applicability Analysis**: Analysis of pattern applicability across different contexts
+- **Reliability Assessment**: Assessment of pattern reliability and consistency
+- **Generalizability Evaluation**: Evaluation of pattern generalizability across use cases
 
 #### **2. Principle-Guided Decision Engine**
-```yaml
-principle_guided_decisions:
-  principle_activation_system:
-    context_principle_mapping: "MANDATORY: Map operational context to relevant principles"
-    priority_based_activation: "Activate principles based on Tier 1 > Tier 2 > Tier 3 hierarchy"
-    real_time_principle_scoring: "Score principle relevance in real-time (0.0-1.0)"
-    dynamic_principle_weighting: "Weight principles based on contextual importance"
-    
-  decision_validation_framework:
-    tier_1_compliance_check: "CRITICAL: Ensure 100% compliance with Tier 1 principles"
-    tier_2_optimization: "REQUIRED: Optimize decisions for ≥95% Tier 2 compliance"
-    tier_3_enhancement: "RECOMMENDED: Enhance decisions with ≥85% Tier 3 alignment"
-    principle_conflict_detection: "Detect conflicts between applicable principles"
-    
-  intelligent_resolution_system:
-    automated_conflict_resolution: "Resolve principle conflicts using established algorithms"
-    synthesis_optimization: "Create synthesis solutions that honor multiple principles"
-    temporal_sequencing: "Sequence principle application to avoid conflicts"
-    context_adaptation: "Adapt principle application based on specific context"
-    
-  principle_learning_integration:
-    success_pattern_correlation: "Correlate decision success with principle adherence"
-    principle_effectiveness_tracking: "Track effectiveness of different principles in context"
-    adaptive_principle_weighting: "Adapt principle weights based on success outcomes"
-    continuous_principle_optimization: "Continuously optimize principle application patterns"
-```
+**Principle-Guided Decision Engine**
+
+### **Principle Activation System**
+- **Context Principle Mapping**: MANDATORY Map operational context to relevant principles
+- **Priority Based Activation**: Activate principles based on Tier 1 > Tier 2 > Tier 3 hierarchy
+- **Real Time Principle Scoring**: Score principle relevance in real-time (0.0-1.0)
+- **Dynamic Principle Weighting**: Weight principles based on contextual importance
+
+### **Decision Validation Framework**
+- **Tier 1 Compliance Check**: CRITICAL Ensure 100% compliance with Tier 1 principles
+- **Tier 2 Optimization**: REQUIRED Optimize decisions for ≥95% Tier 2 compliance
+- **Tier 3 Enhancement**: RECOMMENDED Enhance decisions with ≥85% Tier 3 alignment
+- **Principle Conflict Detection**: Detect conflicts between applicable principles
+
+### **Intelligent Resolution System**
+- **Automated Conflict Resolution**: Resolve principle conflicts using established algorithms
+- **Synthesis Optimization**: Create synthesis solutions that honor multiple principles
+- **Temporal Sequencing**: Sequence principle application to avoid conflicts
+- **Context Adaptation**: Adapt principle application based on specific context
+
+### **Principle Learning Integration**
+- **Success Pattern Correlation**: Correlate decision success with principle adherence
+- **Principle Effectiveness Tracking**: Track effectiveness of different principles in context
+- **Adaptive Principle Weighting**: Adapt principle weights based on success outcomes
+- **Continuous Principle Optimization**: Continuously optimize principle application patterns
 
 #### **3. Adaptive Threshold Management**
-```yaml
-adaptive_thresholds:
-  dynamic_threshold_adjustment:
-    context_sensitive_thresholds: "Adjustment of thresholds based on execution context"
-    performance_based_adaptation: "Adaptation based on recent performance metrics"
-    user_feedback_integration: "Integration of user feedback into threshold adjustment"
-    success_rate_optimization: "Optimization of thresholds for maximum success rate"
-    principle_informed_thresholds: "CRITICAL: Adjust thresholds based on principle requirements"
-    
-  threshold_learning:
-    historical_analysis: "Analysis of historical threshold performance"
-    optimal_threshold_discovery: "Discovery of optimal thresholds through experimentation"
-    threshold_sensitivity_analysis: "Analysis of threshold sensitivity to context changes"
-    convergence_optimization: "Optimization of thresholds for faster convergence"
-    principle_compliance_thresholds: "MANDATORY: Set thresholds that ensure principle compliance"
-    
-  threshold_validation:
-    effectiveness_validation: "Validation of threshold effectiveness through testing"
-    robustness_testing: "Testing of threshold robustness across various scenarios"
-    stability_analysis: "Analysis of threshold stability over time"
-    performance_impact_assessment: "Assessment of threshold impact on overall performance"
-    principle_adherence_validation: "CRITICAL: Validate that thresholds maintain principle adherence"
-```
+**Adaptive Threshold Management**
+
+### **Dynamic Threshold Adjustment**
+- **Context Sensitive Thresholds**: Adjustment of thresholds based on execution context
+- **Performance Based Adaptation**: Adaptation based on recent performance metrics
+- **User Feedback Integration**: Integration of user feedback into threshold adjustment
+- **Success Rate Optimization**: Optimization of thresholds for maximum success rate
+- **Principle Informed Thresholds**: CRITICAL Adjust thresholds based on principle requirements
+
+### **Threshold Learning**
+- **Historical Analysis**: Analysis of historical threshold performance
+- **Optimal Threshold Discovery**: Discovery of optimal thresholds through experimentation
+- **Threshold Sensitivity Analysis**: Analysis of threshold sensitivity to context changes
+- **Convergence Optimization**: Optimization of thresholds for faster convergence
+- **Principle Compliance Thresholds**: MANDATORY Set thresholds that ensure principle compliance
+
+### **Threshold Validation**
+- **Effectiveness Validation**: Validation of threshold effectiveness through testing
+- **Robustness Testing**: Testing of threshold robustness across various scenarios
+- **Stability Analysis**: Analysis of threshold stability over time
+- **Performance Impact Assessment**: Assessment of threshold impact on overall performance
+- **Principle Adherence Validation**: CRITICAL Validate that thresholds maintain principle adherence
 
 #### **3. Predictive Routing Intelligence**
 ```yaml

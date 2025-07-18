@@ -56,13 +56,11 @@ The modularized system maintains complete autonomous activation with enforcement
 - **Transparency**: MANDATORY P55/P56 compliance with visual announcements
 
 ### **Quick Access Routes**
-```yaml
-immediate_access_patterns:
-  high_complexity_task: "orchestrator → decision-logic-core → triggers"
-  script_integration: "orchestrator → integration-protocols → tool-calls"
-  mathematical_formulas: "orchestrator → routing-patterns → calculations"
-  compliance_requirements: "orchestrator → validation-framework → p55-p56"
-```
+**Immediate Access Patterns**:
+- **High Complexity Task**: orchestrator → decision-logic-core → triggers
+- **Script Integration**: orchestrator → integration-protocols → tool-calls
+- **Mathematical Formulas**: orchestrator → routing-patterns → calculations
+- **Compliance Requirements**: orchestrator → validation-framework → p55-p56
 
 ---
 

@@ -602,17 +602,17 @@ Handoff Generation → Next conversation ready
 ### **🔧 ENHANCED EVIDENCE COLLECTION PROTOCOL**
 
 **MANDATORY Evidence Documentation Standards**:
-```yaml
-evidence_collection_requirements:
-  relationship_analysis_evidence:
-    - "88 command relationships documented with dependency validation"
-    - "Workflow orchestration patterns with success rate documentation"
-    - "Complete audit trail of relationship discovery and validation"
-    
-  workflow_optimization_evidence:
-    - "6 workflow orchestrators mapped with chain success metrics"
-    - "Dependency analysis results with mathematical precision"
-    - "Workflow efficiency improvements with before/after comparison"
+**Evidence Collection Requirements**:
+
+**Relationship Analysis Evidence**:
+- 88 command relationships documented with dependency validation
+- Workflow orchestration patterns with success rate documentation
+- Complete audit trail of relationship discovery and validation
+
+**Workflow Optimization Evidence**:
+- 6 workflow orchestrators mapped with chain success metrics
+- Dependency analysis results with mathematical precision
+- Workflow efficiency improvements with before/after comparison
     
   tool_execution_evidence:
     - "Complete tool call log with timing and success validation"

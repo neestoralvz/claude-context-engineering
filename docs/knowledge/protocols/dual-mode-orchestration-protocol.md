@@ -167,9 +167,9 @@ Criteria:
   - Minimal coordination needed
 
 Example_Usage:
-  - Read /thinking for basic analysis
-  - Read /execute for simple implementation
-  - Read /validate for direct verification
+  - /thinking for strategic analysis personality adoption
+  - /execute for implementation-focused personality adoption  
+  - /validate for mathematical precision personality adoption
 ```
 
 #### **Complex Objectives (Complexity ≥0.9)**
@@ -197,7 +197,7 @@ Criteria:
   - Compound intelligence optimization
 
 Example_Usage:
-  - Read /orchestrate for coordination personality
+  - /orchestrate for coordination personality adoption
   - Task deployment of specialized implementation agents
   - Hybrid synthesis of results
 ```
