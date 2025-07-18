@@ -156,16 +156,23 @@ function [functionName]([parameters]) {
 ```markdown
 ## 🛡️ **P55/P56 COMPLIANCE FRAMEWORK**
 
-**Inherits from**: [Universal P55/P56 Compliance](../shared/compliance/p55-p56-universal-compliance.md)
+**Inherits from**: [Universal P55/P6 Compliance](../shared/compliance/p55-p56-universal-compliance.md)
 
 **Compliance Functions**:
 - Tool call execution bridging with zero simulation tolerance
 - Visual announcement system with progress tracking  
 - Evidence collection framework with complete audit trails
 - Universal error handling with transparency protocols
+- **🚨 8-step error resolution protocol integration** (Principle #89)
 
 **Command-Specific Implementation**:
 [Description of how this command implements P55/P56 requirements]
+
+**🚨 ERROR PROTOCOL INTEGRATION** (MANDATORY):
+- **Error Detection**: AUTOMATIC classification and severity assessment
+- **Protocol Activation**: MANDATORY for CRITICAL/HIGH severity errors
+- **Tool Integration**: Seamless integration with [Universal Tool Execution](../core/universal-tool-execution.md)
+- **Visual Feedback**: Clear error protocol status in announcements
 
 ### **Tool Call Execution Protocol**
 **MANDATORY**: When this command executes ANY Tool Call, the LLM MUST display the enhanced visual announcement:
@@ -178,6 +185,7 @@ function [functionName]([parameters]) {
 3. **CAPTURE** actual results from tool execution
 4. **PROVIDE** complete transparency of all operations
 5. **MAINTAIN** evidence trail for compliance verification
+6. **🚨 ACTIVATE** 8-step error resolution protocol for any error ≥ HIGH severity (Principle #89)
 
 ### **MANDATORY Post-Execution Documentation Review**
 **CRITICAL Integration**: [Systematic Post-Execution Review Protocol](../../knowledge/protocols/systematic-post-execution-review-protocol.md)

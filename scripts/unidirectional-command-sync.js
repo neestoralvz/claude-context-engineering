@@ -28,7 +28,7 @@ const CLAUDE_COMMANDS_DIR = path.join(BASE_DIR, '.claude', 'commands');
 const BACKUP_DIR = path.join(BASE_DIR, 'scripts', 'backups');
 const RESULTS_DIR = path.join(BASE_DIR, 'scripts', 'results');
 
-// Patterns to exclude from mirroring (analysis files, review directories)
+// Patterns to exclude from mirroring (analysis files, review directories, templates, hubs)
 const EXCLUDE_PATTERNS = [
     /README\.md$/,
     /command-structure-analysis-matrix\.md$/,
@@ -37,7 +37,20 @@ const EXCLUDE_PATTERNS = [
     /^review\//,
     /\/review\//,
     /\.backup$/,
-    /\.archive$/
+    /\.archive$/,
+    /-template\.md$/,
+    /template\.md$/,
+    /-hub\.md$/,
+    /hub\.md$/,
+    /-navigation\.md$/,
+    /navigation\.md$/,
+    /\/templates\//,
+    /enforcement-template\.md$/,
+    /p55-p56-enhancement-template\.md$/,
+    /zero-root-verification-integration\.md$/,
+    /p55-p56-compliance-template\.md$/,
+    /command-structure-template\.md$/,
+    /orchestration-hub\.md$/
 ];
 
 // Statistics tracking

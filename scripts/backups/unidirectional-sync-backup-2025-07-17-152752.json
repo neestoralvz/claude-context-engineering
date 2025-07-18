@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-07-17T21:27:52.010Z",
+  "sync_type": "unidirectional",
+  "source": "docs/commands",
+  "mirror": ".claude/commands",
+  "docs_files_count": 153,
+  "claude_files_count": 152
+}

@@ -19,7 +19,9 @@ class ParentProjectIntegration {
     this.dataSources = {
       commandRegistry: '.claude/config/command-registry.json',
       scriptsResults: 'scripts/results/',
-      outputs: 'outputs/',
+      outputs: 'docs/operations/outputs/',
+      handoffs: 'docs/operations/handoffs/',
+      reports: 'docs/operations/reports/',
       principles: 'docs/knowledge/principles/',
       commandDocs: 'docs/commands/',
       claudeConfig: '.claude/settings.local.json'
@@ -187,7 +189,7 @@ class ParentProjectIntegration {
           ignoreInitial: true,
           persistent: true,
           followSymlinks: false,
-          depth: key === 'scriptsResults' || key === 'outputs' ? 3 : 1
+          depth: key === 'scriptsResults' || key === 'outputs' || key === 'handoffs' || key === 'reports' ? 3 : 1
         });
 
         watcher
@@ -243,6 +245,14 @@ class ParentProjectIntegration {
     return this.cache.get('outputs') || [];
   }
 
+  getHandoffs() {
+    return this.cache.get('handoffs') || [];
+  }
+
+  getReports() {
+    return this.cache.get('reports') || [];
+  }
+
   getPrinciples() {
     return this.cache.get('principles') || [];
   }
@@ -261,6 +271,8 @@ class ParentProjectIntegration {
     const commandRegistry = this.getCommandRegistry();
     const scriptsResults = this.getScriptsResults();
     const principles = this.getPrinciples();
+    const handoffs = this.getHandoffs();
+    const reports = this.getReports();
     
     return {
       commands: {
@@ -275,6 +287,18 @@ class ParentProjectIntegration {
       principles: {
         total: principles.length,
         categories: this.analyzePrincipleCategories(principles)
+      },
+      operations: {
+        handoffs: {
+          total: handoffs.length,
+          active: handoffs.filter(h => h.relativePath.includes('/active/')).length,
+          recent: handoffs.filter(h => this.isRecentFile(h.modified)).length
+        },
+        reports: {
+          total: reports.length,
+          active: reports.filter(r => r.relativePath.includes('/active/')).length,
+          recent: reports.filter(r => this.isRecentFile(r.modified)).length
+        }
       },
       lastSync: Math.max(...Array.from(this.lastUpdate.values()))
     };

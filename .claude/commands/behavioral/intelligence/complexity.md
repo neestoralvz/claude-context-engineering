@@ -16,6 +16,41 @@ Execute mathematical complexity measurement and automatic enforcement protocol t
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes complexity measurement and validation scripts:
+
+```bash
+# Core complexity calculation
+./scripts/core/calculate-complexity.sh --mathematical-analysis
+./scripts/core/calculate-real-metrics.sh --complexity-focus
+
+# Complexity threshold validation
+./scripts/validation/validate-adaptive-thresholds.sh --complexity-enforcement
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate complexity measurement prerequisites and target analysis
+2. **Complexity Calculation**: Run comprehensive complexity scoring with mathematical precision
+3. **Threshold Validation**: Verify complexity levels against adaptive thresholds and enforcement rules
+4. **Enforcement Action**: Apply complexity limits and generate simplification recommendations
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute mathematical complexity measurement using advanced calculation algorithms
+2. Validate complexity thresholds and apply enforcement rules with real-time analysis
+3. Generate complexity reports with quantitative metrics and simplification guidance
+4. Provide blocking mechanisms for overly complex implementations
+
+**Status Updates**:
+- 🔄 **Starting**: Complexity enforcement initiated (3 specialized analysis scripts)
+- 📊 **Progress**: Running mathematical complexity calculation and threshold validation
+- ✅ **Complete**: Complexity analysis completed with enforcement recommendations
+- 📈 **Metrics**: Complexity scores calculated and threshold compliance validated
+
+---
+
 ## ⚡ Auto-Activation Triggers
 
 ### **MANDATORY Activation Conditions**

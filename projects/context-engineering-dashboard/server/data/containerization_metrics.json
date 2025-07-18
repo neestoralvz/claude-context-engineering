@@ -1,0 +1,166 @@
+{
+  "timestamp": "2025-07-17T21:30:00Z",
+  "containerization_metrics": {
+    "overall_compliance": {
+      "score": 87.5,
+      "threshold": 90,
+      "compliant": false,
+      "timestamp": "2025-07-17T21:30:00Z"
+    },
+    "principle_compliance": {
+      "principle_101_container_first": {
+        "compliant": true,
+        "score": 95,
+        "checks_passed": ["dockerfile_present", "multi_stage_build", "docker_compose"],
+        "checks_failed": [],
+        "message": "✅ Container-First Development: All requirements satisfied"
+      },
+      "principle_102_multi_arch": {
+        "compliant": true,
+        "score": 85,
+        "checks_passed": ["platform_aware_builds", "ci_cd_integration"],
+        "checks_failed": [],
+        "message": "✅ Multi-Architecture Support: ARM64/AMD64 compatibility configured"
+      },
+      "principle_103_security": {
+        "compliant": false,
+        "score": 75,
+        "checks_passed": ["minimal_base_images", "no_secrets_embedded"],
+        "checks_failed": ["root_user_detected", "security_scanning_missing"],
+        "violations": [
+          {
+            "type": "root_user",
+            "severity": "CRITICAL",
+            "message": "🚨 CRITICAL: Container running as root - Security violation",
+            "remediation": "Add non-root user: RUN groupadd -r app && useradd -r -g app app; USER app",
+            "blocking": true
+          },
+          {
+            "type": "missing_security_scanning",
+            "severity": "HIGH",
+            "message": "⚠️ No automated security scanning in CI/CD",
+            "remediation": "Add Docker Scout or Trivy scanning to GitHub Actions workflow",
+            "blocking": false
+          }
+        ]
+      },
+      "principle_104_performance": {
+        "compliant": true,
+        "score": 95,
+        "checks_passed": ["image_size_optimized", "health_checks", "resource_limits"],
+        "checks_failed": [],
+        "performance_metrics": {
+          "build_time_avg": 4.2,
+          "image_size_avg": 95,
+          "startup_time_avg": 25,
+          "cache_hit_rate": 78
+        },
+        "message": "✅ Container Performance Optimization: All requirements satisfied"
+      }
+    },
+    "deployment_readiness": {
+      "overall_score": 92,
+      "threshold": 85,
+      "ready": true,
+      "components": {
+        "containerization_complete": {
+          "status": true,
+          "score": 95,
+          "details": "Dockerfile and docker-compose.yml configured"
+        },
+        "security_hardened": {
+          "status": false,
+          "score": 75,
+          "details": "Root user execution detected - requires remediation"
+        },
+        "multi_arch_support": {
+          "status": true,
+          "score": 85,
+          "details": "ARM64 + AMD64 builds configured"
+        },
+        "performance_optimized": {
+          "status": true,
+          "score": 95,
+          "details": "Image size and build time within targets"
+        }
+      }
+    },
+    "command_integration": {
+      "commands_available": [
+        {
+          "name": "containerize",
+          "description": "Automated project containerization",
+          "compliance_score": 100,
+          "last_used": "2025-07-17T21:25:00Z"
+        },
+        {
+          "name": "docker-deploy",
+          "description": "Environment-specific deployment orchestration",
+          "compliance_score": 92,
+          "last_used": "2025-07-17T21:20:00Z"
+        },
+        {
+          "name": "k8s-assess",
+          "description": "Kubernetes readiness assessment",
+          "compliance_score": 89,
+          "last_used": "2025-07-17T21:15:00Z"
+        },
+        {
+          "name": "port-scan",
+          "description": "Port conflict detection and resolution",
+          "compliance_score": 97,
+          "last_used": "2025-07-17T21:28:00Z"
+        }
+      ],
+      "integration_score": 94.5
+    },
+    "alerts": {
+      "critical": [
+        {
+          "id": "security_001",
+          "type": "security_violation",
+          "principle": "103",
+          "message": "Container running as root user detected",
+          "severity": "CRITICAL",
+          "timestamp": "2025-07-17T21:30:00Z",
+          "remediation": "Add USER directive in Dockerfile after package installation",
+          "blocking": true
+        }
+      ],
+      "high": [
+        {
+          "id": "compliance_001",
+          "type": "compliance_threshold",
+          "principle": "101-104",
+          "message": "Containerization compliance at 87.5% (target: 90%)",
+          "severity": "HIGH",
+          "timestamp": "2025-07-17T21:30:00Z",
+          "remediation": "Resolve security violations to achieve compliance threshold",
+          "blocking": false
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "trends": {
+      "compliance_history": [
+        {"timestamp": "2025-07-17T20:00:00Z", "score": 85.0},
+        {"timestamp": "2025-07-17T20:30:00Z", "score": 86.5},
+        {"timestamp": "2025-07-17T21:00:00Z", "score": 87.0},
+        {"timestamp": "2025-07-17T21:30:00Z", "score": 87.5}
+      ],
+      "performance_history": [
+        {"timestamp": "2025-07-17T20:00:00Z", "build_time": 5.1, "image_size": 112},
+        {"timestamp": "2025-07-17T20:30:00Z", "build_time": 4.8, "image_size": 105},
+        {"timestamp": "2025-07-17T21:00:00Z", "build_time": 4.5, "image_size": 98},
+        {"timestamp": "2025-07-17T21:30:00Z", "build_time": 4.2, "image_size": 95}
+      ]
+    }
+  },
+  "monitoring": {
+    "status": "active",
+    "interval_seconds": 300,
+    "last_enforcement_run": "2025-07-17T21:30:00Z",
+    "next_scheduled_run": "2025-07-17T21:35:00Z"
+  }
+}

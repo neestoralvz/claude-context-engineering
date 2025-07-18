@@ -1,0 +1,9 @@
+2025-07-17 18:21:36,684 - __main__ - INFO - Loading command inventory...
+2025-07-17 18:21:36,801 - __main__ - INFO - Loaded 324 commands across 9 categories
+2025-07-17 18:21:49,368 - __main__ - INFO - Loading command inventory...
+2025-07-17 18:21:49,484 - __main__ - INFO - Loaded 324 commands across 9 categories
+2025-07-17 18:22:42,058 - __main__ - INFO - Loading command inventory...
+2025-07-17 18:22:42,175 - __main__ - INFO - Loaded 324 commands across 9 categories
+2025-07-17 18:22:42,177 - __main__ - WARNING - Orchestration violation detected: COMMAND_UNDERUTILIZATION
+2025-07-17 18:22:42,177 - __main__ - WARNING - Utilization: 0.74% (required: 70.00%)
+2025-07-17 18:22:42,177 - __main__ - WARNING - Commands used: 1, Relevant: 135

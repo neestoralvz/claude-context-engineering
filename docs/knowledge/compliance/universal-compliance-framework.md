@@ -64,6 +64,7 @@ p55_transparency_standards:
   evidence_generation: "Quantifiable results with mathematical validation"
   user_visibility: "Complete transparency in execution process"
   validation_framework: "Success criteria with measurable thresholds"
+  error_protocol_integration: "Automatic 8-step protocol activation (Principle #89)"
 ```
 
 #### **P56 Visual Announcements Protocol**
@@ -72,6 +73,17 @@ p55_transparency_standards:
 ⚡ **Progress**: ████████░░ X% - [Details]
 📊 **Status**: [Current Operation] [Time elapsed]
 ✅ **Milestone**: [Achievement notification]
+🚨 **ERROR DETECTED**: 8-step resolution protocol activated
+```
+
+#### **🚨 ERROR PROTOCOL COMPLIANCE INTEGRATION** (NEW - Principle #89)
+```yaml
+error_protocol_compliance:
+  detection_standards: "AUTOMATIC error classification with severity assessment"
+  activation_triggers: "MANDATORY protocol for CRITICAL/HIGH severity errors"
+  visual_announcements: "🚨 ERROR DETECTED notifications with protocol status"
+  compliance_monitoring: "Real-time protocol completion tracking"
+  integration_points: "Universal Tool Execution module + /context-eng meta-command"
 ```
 
 ### **Dimension 3: Zero-Root File Policy** (95% Current → 100% Target)

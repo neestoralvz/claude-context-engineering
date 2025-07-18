@@ -20,6 +20,15 @@ TIMESTAMP=$(date '+%Y%m%d-%H%M%S')
 OUTPUT_FILE="$RESULTS_DIR/cross-reference-analysis-$TIMESTAMP.json"
 REPORT_FILE="$RESULTS_DIR/cross-reference-report-$TIMESTAMP.md"
 
+# Ripgrep path detection
+if command -v rg &> /dev/null; then
+    RG_CMD="rg"
+elif [ -f "/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg" ]; then
+    RG_CMD="/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg"
+else
+    RG_CMD="grep" # fallback
+fi
+
 # Ensure results directory exists
 mkdir -p "$RESULTS_DIR"
 
@@ -80,7 +89,7 @@ analyze_principle_references() {
             echo "        \"content\": \"$content\"" >> "$temp_file"
             echo "      }" >> "$temp_file"
             
-        done < <(rg -n "$pattern" "$PROJECT_ROOT" \
+        done < <($RG_CMD -n "$pattern" "$PROJECT_ROOT" \
                     --type md --type json --type js --type ts --type sh \
                     2>/dev/null || true)
         
@@ -114,9 +123,9 @@ analyze_file_dependencies() {
         echo "    \"$relative_path\": {"
         
         # Count different types of references
-        local md_links=$(rg -c '\]\([^)]*\.md[^)]*\)' "$file" 2>/dev/null || echo 0)
-        local principle_refs=$(rg -c '#[0-9]+' "$file" 2>/dev/null || echo 0)
-        local see_also_refs=$(rg -c '\*\*See Also\*\*' "$file" 2>/dev/null || echo 0)
+        local md_links=$($RG_CMD -c '\]\([^)]*\.md[^)]*\)' "$file" 2>/dev/null || echo 0)
+        local principle_refs=$($RG_CMD -c '#[0-9]+' "$file" 2>/dev/null || echo 0)
+        local see_also_refs=$($RG_CMD -c '\*\*See Also\*\*' "$file" 2>/dev/null || echo 0)
         
         echo "      \"markdown_links\": $md_links,"
         echo "      \"principle_references\": $principle_refs,"
@@ -125,7 +134,7 @@ analyze_file_dependencies() {
         # Extract linked files
         echo "      \"linked_files\": ["
         local first_link=true
-        rg -o '\]\(([^)]*\.md[^)]*)\)' "$file" 2>/dev/null | sed 's/](\([^)]*\))/\1/' | while read -r link; do
+        $RG_CMD -o '\]\(([^)]*\.md[^)]*)\)' "$file" 2>/dev/null | sed 's/](\([^)]*\))/\1/' | while read -r link; do
             if [ "$first_link" = false ]; then
                 echo ","
             fi
@@ -150,7 +159,7 @@ analyze_critical_paths() {
     # Find files with most references
     local first_critical=true
     find "$PROJECT_ROOT" -name "*.md" -type f | while read -r file; do
-        local ref_count=$(rg -c '#[0-9]+' "$file" 2>/dev/null || echo 0)
+        local ref_count=$($RG_CMD -c '#[0-9]+' "$file" 2>/dev/null || echo 0)
         if [ "$ref_count" -gt 10 ]; then
             if [ "$first_critical" = false ]; then
                 echo ","
@@ -209,8 +218,8 @@ detect_reference_patterns() {
     echo "    ],"
     
     # Count total patterns
-    local total_principle_refs=$(rg -c '#[0-9]+' "$PROJECT_ROOT" --type md 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
-    local total_md_links=$(rg -c '\]\([^)]*\.md[^)]*\)' "$PROJECT_ROOT" --type md 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
+    local total_principle_refs=$($RG_CMD -c '#[0-9]+' "$PROJECT_ROOT" --type md 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
+    local total_md_links=$($RG_CMD -c '\]\([^)]*\.md[^)]*\)' "$PROJECT_ROOT" --type md 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
     
     echo "    \"statistics\": {"
     echo "      \"total_principle_references\": $total_principle_refs,"
@@ -311,7 +320,7 @@ EOF
 check_dependencies() {
     local missing_deps=()
     
-    if ! command -v rg &> /dev/null; then
+    if ! $RG_CMD --version &> /dev/null; then
         missing_deps+=("ripgrep (rg)")
     fi
     

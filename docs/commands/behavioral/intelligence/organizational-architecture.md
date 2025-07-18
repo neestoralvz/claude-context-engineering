@@ -238,7 +238,7 @@ function assessGrowthSustainability(structure, growth_projection) {
 7. **Evolution Planning**: Plan for future growth and adaptation
 
 ### **Standard Structure Components**
-- **Categorical Hierarchy**: `/docs/operations/outputs/[category]/[timestamp]-[topic].md`
+- **Categorical Hierarchy**: `docs/operations/outputs/[category]/[timestamp]-[topic].md`
 - **Purpose-Based Organization**: Grouping by function and intent
 - **Timestamp Integration**: Chronological organization within categories
 - **Naming Conventions**: Clear, consistent naming patterns

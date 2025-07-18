@@ -58,6 +58,24 @@
 - **🚨 CRITICAL [Step]**: [Description] with immediate [validation]
 ```
 
+### **🚨 ERROR PROTOCOL ENFORCEMENT** (NEW - Principle #89 Integration)
+```markdown
+**🚨 ZERO TOLERANCE Error Enforcement**:
+- **🚨 CRITICAL Error Detection**: IMMEDIATE activation of 8-step resolution protocol
+- **🚨 BLOCKING Continuation**: NO execution continues without protocol completion
+- **🚨 MANDATORY Protocol Steps**: Steps 1-4 AUTOMATIC, Steps 5-8 MANUAL with verification
+- **🚨 AUTOMATIC Meta-Command**: /context-eng auto-activation for system-wide error analysis
+```
+
+### **Error Protocol Activation Template**
+```markdown
+**🚨 ERROR PROTOCOL INTEGRATION**:
+- **Error Detection**: AUTOMATIC activation when [error type] severity ≥ HIGH
+- **Protocol Trigger**: [Universal Tool Execution](../core/universal-tool-execution.md) integration
+- **Enforcement**: ZERO tolerance for error bypass - execution BLOCKED until resolution
+- **Verification**: Protocol completion status documented with evidence
+```
+
 ---
 
 ## 🎯 ENFORCEMENT CATEGORIES
@@ -113,6 +131,14 @@
 - [ ] Ecosystem utilization enforcement (≥70% threshold)
 - [ ] P55/P56 compliance enforcement integrated
 - [ ] Principle-guided enforcement protocols included
+
+### **🚨 ERROR PROTOCOL ENFORCEMENT** ✅ (NEW - Principle #89 Integration)
+- [ ] 8-step error resolution protocol activation triggers specified
+- [ ] MANDATORY protocol activation for CRITICAL/HIGH severity errors
+- [ ] ERROR-BASED auto-activation integration with /context-eng meta-command
+- [ ] ZERO TOLERANCE enforcement for error continuation without protocol
+- [ ] Protocol completion verification requirements included
+- [ ] Automatic integration with [Universal Tool Execution](../core/universal-tool-execution.md) error handling
 
 ---
 

@@ -15,14 +15,14 @@ import logging
 import smtplib
 import subprocess
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Tuple
 from dataclasses import dataclass, asdict
 from email.mime.text import MIMEText as MimeText
 from email.mime.multipart import MIMEMultipart as MimeMultipart
 from pathlib import Path
 import requests
-import websocket
-import schedule
+# import websocket  # Optional dependency
+# import schedule  # Optional dependency
 
 # Configuration
 PROJECT_ROOT = Path(__file__).parent.parent.parent
@@ -356,15 +356,17 @@ class NotificationManager:
         with open(alerts_file, 'w') as f:
             json.dump(alerts_data, f, indent=2)
         
-        # Try to send via WebSocket if dashboard is running
+        # Try to send via WebSocket if dashboard is running (optional)
         try:
-            ws = websocket.WebSocket()
-            ws.connect(DASHBOARD_URL)
-            ws.send(json.dumps({
-                'type': 'compliance_alert',
-                'data': alert.to_dict()
-            }))
-            ws.close()
+            # import websocket
+            # ws = websocket.WebSocket()
+            # ws.connect(DASHBOARD_URL)
+            # ws.send(json.dumps({
+            #     'type': 'compliance_alert',
+            #     'data': alert.to_dict()
+            # }))
+            # ws.close()
+            pass  # WebSocket dependency not available
         except:
             pass  # Dashboard might not be running
     
@@ -618,7 +620,7 @@ class ViolationDetector:
         return violations
 
 class ComplianceAlertingSystem:
-    """Main compliance alerting system"""
+    """Main compliance alerting system with blocking capabilities"""
     
     def __init__(self):
         self.db_path = PROJECT_ROOT / 'scripts/results/compliance/metrics/compliance_monitoring.db'
@@ -630,6 +632,7 @@ class ComplianceAlertingSystem:
         
         self.running = False
         self.monitoring_thread = None
+        self.blocking_enabled = True  # NEW: Enable actual blocking
         
         # Alert configuration
         self.alert_config = {
@@ -637,6 +640,14 @@ class ComplianceAlertingSystem:
             'HIGH': ['system', 'slack', 'dashboard'],
             'MEDIUM': ['dashboard'],
             'LOW': ['dashboard']
+        }
+        
+        # NEW: Blocking configuration
+        self.blocking_config = {
+            'CRITICAL': True,   # Always block critical violations
+            'HIGH': True,       # Block high severity violations
+            'MEDIUM': False,    # Warning only for medium
+            'LOW': False        # Warning only for low
         }
     
     def start(self):
@@ -648,9 +659,9 @@ class ComplianceAlertingSystem:
         self.monitoring_thread.daemon = True
         self.monitoring_thread.start()
         
-        # Schedule periodic reports
-        schedule.every(1).hours.do(self._generate_hourly_report)
-        schedule.every(1).days.do(self._generate_daily_report)
+        # Schedule periodic reports (optional)
+        # schedule.every(1).hours.do(self._generate_hourly_report)
+        # schedule.every(1).days.do(self._generate_daily_report)
         
         logger.info("Compliance Alerting System started successfully")
     
@@ -676,14 +687,21 @@ class ComplianceAlertingSystem:
                     # Store in database
                     alert_id = self.db.insert_alert(alert)
                     
+                    # NEW: Check if violation should block operations
+                    should_block = self.blocking_enabled and self.blocking_config.get(alert.severity, False)
+                    
+                    if should_block:
+                        # Block operation and log critical blocking action
+                        self._execute_blocking_action(alert)
+                    
                     # Send notifications based on severity
                     channels = self.alert_config.get(alert.severity, ['dashboard'])
                     self.notification_manager.send_alert(alert, channels)
                     
-                    logger.info(f"Processed {alert.severity} alert: {alert.violation_type}")
+                    logger.info(f"Processed {alert.severity} alert: {alert.violation_type} (Blocked: {should_block})")
                 
-                # Run scheduled tasks
-                schedule.run_pending()
+                # Run scheduled tasks (optional)
+                # schedule.run_pending()
                 
                 # Sleep until next check
                 time.sleep(MONITORING_INTERVAL)
@@ -809,6 +827,104 @@ class ComplianceAlertingSystem:
             'trend_direction': self._calculate_trend_direction(list(hourly_rates.values()))
         }
     
+    def _execute_blocking_action(self, alert: ComplianceAlert):
+        """Execute blocking action for critical violations"""
+        blocking_message = f"""
+🚨 COMPLIANCE VIOLATION BLOCKED 🚨
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Violation: {alert.violation_type}
+Severity: {alert.severity}
+Message: {alert.message}
+Timestamp: {alert.timestamp}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPERATION BLOCKED - Compliance enforcement active.
+Review violation details and address before proceeding.
+
+Enforcement System: Context Engineering
+Response Time: {alert.response_time_ms}ms
+"""
+        
+        # Log blocking action
+        logger.critical(blocking_message)
+        
+        # Create blocking file for external detection
+        blocking_file = PROJECT_ROOT / 'scripts/results/compliance/BLOCKING_ACTIVE.flag'
+        with open(blocking_file, 'w') as f:
+            f.write(f"{alert.timestamp.isoformat()}\n{alert.violation_type}\n{alert.severity}\n{alert.message}")
+        
+        # Record blocking action in database
+        self.db.log_alert_notification('blocking', alert.violation_type, 'BLOCKED', alert.response_time_ms)
+        
+        # Send immediate system notification
+        if sys.platform == 'darwin':
+            subprocess.run([
+                'osascript', '-e',
+                f'display dialog "🚨 COMPLIANCE VIOLATION BLOCKED\\n\\n{alert.violation_type}\\n{alert.message}" with title "Context Engineering Enforcement" buttons {{"OK"}} default button "OK"'
+            ])
+    
+    def check_operation_allowed(self, operation_type: str, context: str = "") -> Tuple[bool, List[str]]:
+        """Check if operation is allowed or should be blocked"""
+        # Check for active blocking flag
+        blocking_file = PROJECT_ROOT / 'scripts/results/compliance/BLOCKING_ACTIVE.flag'
+        
+        if blocking_file.exists():
+            try:
+                with open(blocking_file, 'r') as f:
+                    lines = f.readlines()
+                    if len(lines) >= 4:
+                        timestamp_str = lines[0].strip()
+                        violation_type = lines[1].strip()
+                        severity = lines[2].strip()
+                        message = lines[3].strip()
+                        
+                        # Check if blocking is still valid (within 1 hour)
+                        try:
+                            block_time = datetime.fromisoformat(timestamp_str)
+                            if datetime.now() - block_time < timedelta(hours=1):
+                                return False, [f"Operation blocked due to: {violation_type} ({severity})"]
+                        except:
+                            pass
+            except:
+                pass
+        
+        # Run real-time violation detection for this specific operation
+        violations = []
+        
+        # Quick violation checks based on operation type
+        if operation_type == 'file_creation' and 'root' in context.lower():
+            violations.append("Zero-root file policy violation")
+        
+        if operation_type == 'command_execution' and 'single' in context.lower():
+            violations.append("Command orchestration violation - insufficient utilization")
+        
+        if operation_type == 'error_continuation' and 'error' in context.lower():
+            violations.append("Zero tolerance error policy violation")
+        
+        return len(violations) == 0, violations
+    
+    def enable_blocking(self):
+        """Enable enforcement blocking"""
+        self.blocking_enabled = True
+        logger.info("Enforcement blocking ENABLED")
+    
+    def disable_blocking(self):
+        """Disable enforcement blocking (emergency override)"""
+        self.blocking_enabled = False
+        logger.warning("Enforcement blocking DISABLED - Emergency override active")
+        
+        # Remove blocking flag
+        blocking_file = PROJECT_ROOT / 'scripts/results/compliance/BLOCKING_ACTIVE.flag'
+        if blocking_file.exists():
+            blocking_file.unlink()
+    
+    def clear_blocking_flag(self):
+        """Clear blocking flag (violation resolved)"""
+        blocking_file = PROJECT_ROOT / 'scripts/results/compliance/BLOCKING_ACTIVE.flag'
+        if blocking_file.exists():
+            blocking_file.unlink()
+            logger.info("Blocking flag cleared - operations resumed")
+    
     def _calculate_trend_direction(self, values: List[float]) -> str:
         """Calculate trend direction from values"""
         if len(values) < 2:
@@ -830,8 +946,8 @@ class ComplianceAlertingSystem:
 
 def main():
     """Main function"""
-    if len(sys.argv) != 2:
-        print("Usage: python compliance-alerting-system.py {start|stop|status}")
+    if len(sys.argv) < 2:
+        print("Usage: python compliance-alerting-system.py {start|stop|status|check|enable-blocking|disable-blocking|clear-blocking}")
         sys.exit(1)
     
     command = sys.argv[1]
@@ -861,8 +977,42 @@ def main():
         else:
             logger.info("Compliance Alerting System is not running")
     
+    elif command == 'check':
+        if len(sys.argv) < 4:
+            print("Usage: python compliance-alerting-system.py check <operation_type> <context>")
+            sys.exit(1)
+        
+        operation_type = sys.argv[2]
+        context = sys.argv[3] if len(sys.argv) > 3 else ""
+        
+        system = ComplianceAlertingSystem()
+        allowed, violations = system.check_operation_allowed(operation_type, context)
+        
+        print(f"Operation Check: {operation_type}")
+        print(f"Context: {context}")
+        print(f"Allowed: {allowed}")
+        if violations:
+            print("Violations:")
+            for violation in violations:
+                print(f"  - {violation}")
+    
+    elif command == 'enable-blocking':
+        system = ComplianceAlertingSystem()
+        system.enable_blocking()
+        logger.info("Enforcement blocking enabled")
+    
+    elif command == 'disable-blocking':
+        system = ComplianceAlertingSystem()
+        system.disable_blocking()
+        logger.info("Enforcement blocking disabled (emergency override)")
+    
+    elif command == 'clear-blocking':
+        system = ComplianceAlertingSystem()
+        system.clear_blocking_flag()
+        logger.info("Blocking flag cleared")
+    
     else:
-        print("Invalid command. Use start, stop, or status.")
+        print("Invalid command. Use: start, stop, status, check, enable-blocking, disable-blocking, clear-blocking")
         sys.exit(1)
 
 if __name__ == "__main__":

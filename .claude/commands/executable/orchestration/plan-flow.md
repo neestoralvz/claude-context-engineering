@@ -53,19 +53,27 @@ IMPLEMENT strategic planning workflow achieving ≥95% planning completeness to 
 ```
 
 ### **Auto-Activation Triggers**
-This command EXECUTES automatically when complex objectives require strategic planning with ≥1.4 complexity and multiple execution phases.
+This command EXECUTES automatically when complex objectives require strategic planning with ≥1.4 complexity and multiple execution phases. **MANDATORY INTEGRATION**: Auto-deploys ≥3 parallel Task tools per [Mandatory Parallel Task Planning Protocol](../../../knowledge/protocols/mandatory-parallel-task-planning.md).
 
 **Verification Protocol**:
-- **Complexity Assessment**: ≥1.4 complexity threshold validation
+- **Complexity Assessment**: ≥1.4 complexity threshold validation (≥0.7 triggers parallel tasks)
 - **Planning Scope**: Multi-phase execution requirement verification
 - **Resource Analysis**: Strategic planning resource availability check
+- **Parallel Task Deployment**: AUTOMATIC ≥3 Task tools for planning complexity ≥0.7
 
 ### **Primary Triggers**
 **STRATEGIC_PLANNING**: Complex objective strategic planning
 - **Condition**: Objective complexity ≥1.4 with multiple execution phases
 - **Threshold**: ≥1.4 complexity + multi-phase requirements
-- **Action**: AUTO-EXECUTE strategic planning with TDD integration
+- **Action**: AUTO-EXECUTE strategic planning with TDD integration + MANDATORY parallel Task tools
 - **Verification**: Planning completeness with ≥95% coverage validation
+- **Parallel Enforcement**: ZERO tolerance for sequential planning when parallel execution possible
+
+**MANDATORY_PARALLEL_PLANNING**: Automatic parallel task deployment
+- **Condition**: Planning complexity ≥0.7 OR objective spans >1 domain
+- **Threshold**: Auto-detection via [Principle #90](../../../knowledge/principles/operational-excellence.md#90-planning-phase-parallel-task-tool-priority)
+- **Action**: IMMEDIATE halt and parallel Task tool deployment (≥3 specialists)
+- **Verification**: 100% parallel task deployment compliance with specialized domain analysis
 
 ---
 
@@ -140,7 +148,7 @@ Optimize planning outcomes for maximum parallelization efficiency with ≥75% pa
 - Universal error handling with transparency protocols
 
 **Command-Specific Implementation**:
-Strategic planning workflow with MANDATORY Task tool deployment for complex planning operations, real decomposition execution, and quantifiable planning optimization outcomes.
+Strategic planning workflow with MANDATORY Task tool deployment for complex planning operations, real decomposition execution, and quantifiable planning optimization outcomes. **PARALLEL TASK INTEGRATION**: Automatic deployment of ≥3 specialized Task agents per [Mandatory Parallel Task Planning Protocol](../../../knowledge/protocols/mandatory-parallel-task-planning.md) with ZERO tolerance for sequential planning execution.
 
 ### **Tool Call Execution Protocol**
 **MANDATORY**: When this command executes ANY Tool Call, the LLM MUST display the enhanced visual announcement:
@@ -176,14 +184,18 @@ Strategic planning workflow with MANDATORY Task tool deployment for complex plan
 
 ## 🔄 **5-PHASE EXECUTION FLOW**
 
-### **Phase 1: Strategic Decomposition (`/objective-decomposition`)**
-**Objective**: Break main objective into parallel-executable components
-- Analyze main objective for natural decomposition points
-- Create hierarchical breakdown with clear boundaries
-- Map dependencies and execution order requirements
-- Optimize for maximum parallelization potential (≥70%)
+### **Phase 1: Strategic Decomposition (`/objective-decomposition`)** + **MANDATORY Parallel Task Deployment**
+**Objective**: Break main objective into parallel-executable components via specialized Task agents
+- **AUTOMATIC BLOCKING**: System halts for parallel Task deployment when complexity ≥0.7
+- **MANDATORY Deployment**: ≥3 Task tools for strategic analysis, technical analysis, resource analysis
+- Analyze main objective for natural decomposition points via parallel domain specialists
+- Create hierarchical breakdown with clear boundaries through coordinated Task analysis
+- Map dependencies and execution order requirements with specialized dependency analysis
+- Optimize for maximum parallelization potential (≥70%) using parallel optimization specialists
 
-**Verification**: ≥95% objective coverage, ≥90% independent sub-objectives
+**CRITICAL Enforcement**: ZERO tolerance for sequential decomposition when parallel execution possible per [Principle #90](../../../knowledge/principles/operational-excellence.md#90-planning-phase-parallel-task-tool-priority)
+
+**Verification**: ≥95% objective coverage, ≥90% independent sub-objectives, 100% parallel Task deployment compliance
 
 ### **Phase 2: Verification Design (`/tdd`)**
 **Objective**: Define comprehensive verification criteria for all components

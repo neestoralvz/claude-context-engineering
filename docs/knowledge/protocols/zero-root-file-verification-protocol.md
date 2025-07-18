@@ -165,7 +165,7 @@ auto_reorganization:
 
 ### **Analysis Commands**  
 - **`/verify-flow`**: Output validation reports to `/docs/operations/reports/`
-- **`/mathematical-verification`**: Results to `/outputs/` or `/docs/operations/reports/`
+- **`/mathematical-verification`**: Results to `/docs/operations/outputs/` or `/docs/operations/reports/`
 - **`/validate-system`**: Compliance reports to `/docs/operations/reports/`
 
 ### **Orchestration Commands**
@@ -210,8 +210,8 @@ auto_reorganization:
 1. **Create test file in root** → Should be auto-detected and relocated
 2. **Execute documentation command** → Should verify Zero-Root compliance
 3. **Complete TodoWrite task** → Should trigger automatic verification
-4. **Generate handoff document** → Should auto-route to `/handoffs/`
-5. **Run analysis command** → Should output to `/docs/operations/reports/` or `/outputs/`
+4. **Generate handoff document** → Should auto-route to `/docs/operations/handoffs/`
+5. **Run analysis command** → Should output to `/docs/operations/reports/` or `/docs/operations/outputs/`
 
 ---
 

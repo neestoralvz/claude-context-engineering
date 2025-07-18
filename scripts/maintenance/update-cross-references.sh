@@ -21,6 +21,15 @@ TIMESTAMP=$(date '+%Y%m%d-%H%M%S')
 UPDATE_LOG="$RESULTS_DIR/update-log-$TIMESTAMP.json"
 BACKUP_MANIFEST="$BACKUP_DIR/backup-manifest-$TIMESTAMP.json"
 
+# Ripgrep path detection
+if command -v rg &> /dev/null; then
+    RG_CMD="rg"
+elif [ -f "/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg" ]; then
+    RG_CMD="/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg"
+else
+    RG_CMD="grep" # fallback
+fi
+
 # Global variables
 OLD_REF=""
 NEW_REF=""
@@ -69,7 +78,7 @@ create_backup() {
     
     # Find all files that would be affected
     local affected_files=$(mktemp)
-    rg -l "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null > "$affected_files" || true
+    $RG_CMD -l "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null > "$affected_files" || true
     
     local backed_up_count=0
     local backup_manifest=()
@@ -181,7 +190,7 @@ update_references() {
     local total_files=0
     
     # Find all files containing the old reference
-    rg -l "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null > "$temp_file" || true
+    $RG_CMD -l "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null > "$temp_file" || true
     
     while read -r file; do
         if [ -f "$file" ]; then
@@ -208,19 +217,19 @@ validate_after_update() {
     log "Running post-update validation..."
     
     # Check for any remaining old references
-    local remaining_refs=$(rg -c "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
+    local remaining_refs=$($RG_CMD -c "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
     
     if [ "$remaining_refs" -gt 0 ]; then
         log_warning "$remaining_refs old references still remain"
         echo ""
         echo "Remaining references:"
-        rg -n "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null | head -10
+        $RG_CMD -n "$OLD_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null | head -10
     else
         log_success "All old references successfully updated"
     fi
     
     # Verify new references exist
-    local new_ref_count=$(rg -c "$NEW_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
+    local new_ref_count=$($RG_CMD -c "$NEW_REF" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
     
     if [ "$new_ref_count" -gt 0 ]; then
         log_success "New references detected: $new_ref_count instances"
@@ -361,7 +370,7 @@ OPTIONS:
 EXAMPLES:
     $0 --dry-run "#94" "#100"           # Preview changes
     $0 "#94" "#100"                     # Apply changes
-    $0 "94 principios" "100 principios" # Update count references
+    $0 "94 principios" "103 principios" # Update count references
 
 DESCRIPTION:
     Systematically updates cross-references throughout the project with:
@@ -467,7 +476,7 @@ main() {
 check_dependencies() {
     local missing_deps=()
     
-    if ! command -v rg &> /dev/null; then
+    if ! $RG_CMD --version &> /dev/null; then
         missing_deps+=("ripgrep (rg)")
     fi
     

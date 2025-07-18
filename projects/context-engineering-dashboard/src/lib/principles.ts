@@ -641,7 +641,7 @@ export const PRINCIPLES_DATA: DetailedPrinciple[] = [
     slug: 'organizational-architecture',
     categorySlug: 'technical-standards',
     components: [
-      '/docs/outputs/[category]/[timestamp]-[topic].md',
+      '/docs/operations/outputs/[category]/[timestamp]-[topic].md',
       'Hierarchical organization by purpose',
       'No arbitrary file creation',
       'Clear naming conventions',

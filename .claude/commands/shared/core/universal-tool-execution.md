@@ -261,40 +261,78 @@ graph TD
 
 **Tool Execution Errors**:
 - **Severity**: CRITICAL priority requiring immediate attention
+- **🚨 PROTOCOL ACTIVATION**: MANDATORY 8-step error resolution protocol activation (Principle #89)
 - **Recovery**: Execute retry with alternative tool or manual intervention within 30 seconds
 - **Escalation**: Immediate notification of tool failure with automated recovery initiation
 
 **Communication Errors**:
-- **Severity**: MEDIUM priority requiring attention
+- **Severity**: MEDIUM priority requiring attention  
+- **🚨 PROTOCOL ACTIVATION**: CONDITIONAL 8-step protocol for recurring communication failures
 - **Recovery**: Re-establish communication channel or continue manually
 - **Escalation**: User notification of communication issues
 
 **Validation Errors**:
 - **Severity**: HIGH priority requiring prompt resolution
+- **🚨 PROTOCOL ACTIVATION**: MANDATORY 8-step error resolution protocol activation (Principle #89)
 - **Recovery**: Re-validate or adjust validation criteria
 - **Escalation**: Manual review of validation failure
 
 **Compliance Errors**:
 - **Severity**: CRITICAL priority requiring immediate action
+- **🚨 PROTOCOL ACTIVATION**: MANDATORY 8-step error resolution protocol activation (Principle #89)
 - **Recovery**: STOP execution until compliance restored
 - **Escalation**: Immediate escalation to system administrator
 
-### **Recovery Protocols** (AUTOMATED Recovery Standards)
-**Recovery Protocols**:
+### **🚨 AUTOMATIC 8-Step Protocol Integration** (ZERO TOLERANCE Enforcement)
+**CRITICAL Error Protocol Activation**:
 
-**Automatic Retry**:
+**MANDATORY 8-Step Protocol Triggers**:
+- **CRITICAL Errors**: Tool execution errors, compliance errors, validation errors → AUTOMATIC activation
+- **HIGH Severity**: Recurring communication errors (≥3 consecutive failures) → AUTOMATIC activation
+- **System Failures**: Any error that blocks command execution → IMMEDIATE activation
+- **Zero Exceptions**: NO error bypasses systematic resolution when severity ≥ HIGH
+
+**Automatic Protocol Execution Framework**:
+```markdown
+🚨 ERROR DETECTED - ACTIVATING 8-STEP RESOLUTION PROTOCOL
+
+**Step 1 Documentation**: [AUTO] Error details, context, evidence collection
+**Step 2 Deep Diagnostic**: [AUTO] System analysis, file examination, foundation review  
+**Step 3 Codebase Research**: [AUTO] Pattern search, related issue identification
+**Step 4 Online Research**: [AUTO] Best practices, official documentation research
+**Step 5 Root Cause Analysis**: [MANUAL] Systematic investigation for prevention
+**Step 6 Solution Planning**: [MANUAL] Step-by-step resolution with validation criteria
+**Step 7 Verification Testing**: [MANUAL] Complete verification and testing of solution
+**Step 8 Solution Documentation**: [MANUAL] Documentation for future prevention
+
+🚨 ENFORCEMENT: Execution BLOCKED until protocol completion verified
+```
+
+**Protocol Integration Points**:
+- **Error Detection**: IMMEDIATE protocol activation upon error classification
+- **Evidence Collection**: AUTOMATIC integration with existing audit framework
+- **Recovery Blocking**: NO recovery attempts until protocol steps 1-4 completed
+- **Documentation**: MANDATORY integration with compliance logging system
+
+### **Recovery Protocols** (AUTOMATED Recovery Standards)
+**Recovery Protocols** (Enhanced with Protocol Integration):
+
+**Automatic Retry** (Post-Protocol Only):
+- **Prerequisite**: Steps 1-4 of 8-step protocol MUST be completed
 - **Conditions**: Tool timeout or temporary communication failure with measurable criteria
 - **Maximum Attempts**: Allow up to 3 retry attempts
 - **Backoff**: Execute exponential backoff with jitter using mathematical progression validation
 - **Success Rate Requirement**: Maintain at least 80% recovery success rate
 
-**Alternative Tool Selection**:
+**Alternative Tool Selection** (Post-Protocol Only):
+- **Prerequisite**: Steps 1-5 of 8-step protocol MUST be completed
 - **Conditions**: Primary tool failure or tool unavailability
 - **Selection**: Use tool selection matrix for alternative tool identification
 - **Validation**: Verify alternative tool provides equivalent functionality
 
-**Manual Intervention**:
+**Manual Intervention** (Enhanced Documentation):
 - **Conditions**: Critical errors, compliance failures, or repeated failures
+- **Protocol Status**: Document current 8-step protocol completion status
 - **Notification**: Provide clear description of issue and required manual action
 - **Context**: Maintain complete context preservation for manual resolution
 

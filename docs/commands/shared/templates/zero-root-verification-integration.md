@@ -48,23 +48,23 @@ zero-root-verify --post-action --command="[COMMAND_NAME]" --transparency --auto-
 - **Documentation Files**: All generated docs must be in `/docs/` hierarchy
 - **Living Documentation**: Updated docs maintain proper `/docs/` structure
 - **Temporary Files**: Any temp files must be cleaned from root directory
-- **Report Generation**: Any reports must be placed in `/docs/operations/reports/` directory
+- **Report Generation**: Any reports must be placed in docs/operations/reports/ directory
 ```
 
 ### **Analysis Commands**
 ```markdown
 **Verification Requirements**:
-- **Analysis Results**: All results must be in `/docs/operations/outputs/` directory
-- **Validation Reports**: All reports must be placed in `/docs/operations/reports/` directory
+- **Analysis Results**: All results must be in docs/operations/outputs/ directory
+- **Validation Reports**: All reports must be placed in docs/operations/reports/ directory
 - **Temporary Processing**: Any temp files must be cleaned from root directory
-- **Data Files**: Processed data must be in appropriate `/docs/operations/outputs/` subdirectories
+- **Data Files**: Processed data must be in appropriate docs/operations/outputs/ subdirectories
 ```
 
 ### **Orchestration Commands**
 ```markdown
 **Verification Requirements**:
 - **Generated Scripts**: Any scripts must be in `/scripts/` hierarchy
-- **Orchestration Outputs**: Results must be in `/docs/operations/outputs/orchestration/`
+- **Orchestration Outputs**: Results must be in docs/operations/outputs/orchestration/
 - **Workflow Files**: Configuration files in appropriate subdirectories
 - **Temporary Files**: Any temp files must be cleaned from root directory
 ```
@@ -72,9 +72,9 @@ zero-root-verify --post-action --command="[COMMAND_NAME]" --transparency --auto-
 ### **File Generation Commands**
 ```markdown
 **Verification Requirements**:
-- **HANDOFF Files**: All HANDOFF_*.md files must be in `/docs/operations/handoffs/` directory
-- **Report Files**: All *_REPORT.md files must be in `/docs/operations/reports/` directory
-- **Output Files**: Generated content must be in `/docs/operations/outputs/` hierarchy
+- **HANDOFF Files**: All HANDOFF_*.md files must be in docs/operations/handoffs/ directory
+- **Report Files**: All *_REPORT.md files must be in docs/operations/reports/ directory
+- **Output Files**: Generated content must be in docs/operations/outputs/ hierarchy
 - **Documentation**: Any docs must be in appropriate `/docs/` subdirectories
 ```
 
@@ -161,13 +161,13 @@ zero-root-verify --post-action --command="verify-flow" --transparency --auto-res
 
 # Verification announcements
 # ✅ COMPLIANCE VERIFIED: Zero-Root File Policy maintained
-# 📁 ALL FILES ORGANIZED: Verification reports properly placed in /docs/operations/reports/
+# 📁 ALL FILES ORGANIZED: Verification reports properly placed in docs/operations/reports/
 # 🛡️ VERIFY-FLOW COMPLETE: Zero-Root Policy compliance confirmed
 ```
 
 **Verification Requirements**:
-- **Verification Reports**: All reports must be placed in `/docs/operations/reports/` directory
-- **Analysis Results**: Results must be in `/docs/operations/outputs/verification/` directory
+- **Verification Reports**: All reports must be placed in docs/operations/reports/ directory
+- **Analysis Results**: Results must be in docs/operations/outputs/verification/ directory
 - **Temporary Files**: Any temp files must be cleaned from root directory
 - **Compliance Confirmation**: 100% Zero-Root Policy adherence before command completion
 ```

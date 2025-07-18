@@ -1,6 +1,6 @@
 {
   "trigger_system_validation": {
-    "timestamp": "2025-07-17T15:24:07-06:00",
+    "timestamp": "2025-07-17T15:28:19-06:00",
     "total_tests": 22,
     "passed_tests": 22,
     "failed_tests": 0,
@@ -41,7 +41,7 @@
   },
   "trigger_system_coverage": {
     "commands_with_triggers": 136,
-    "total_command_files": 152,
-    "coverage_percentage": 89.47
+    "total_command_files": 153,
+    "coverage_percentage": 88.88
   }
 }

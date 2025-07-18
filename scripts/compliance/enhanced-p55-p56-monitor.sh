@@ -55,16 +55,16 @@ echo "========================================"
 
 # Enhanced tool call analysis
 echo "  📊 Analyzing tool call execution patterns..."
-BASH_CALLS=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Bash\|bash tool\|executing.*script\|tool call.*bash" 2>/dev/null | wc -l)
-READ_CALLS=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Read\|reading file\|file content\|read tool" 2>/dev/null | wc -l)
-WRITE_CALLS=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Write\|writing to\|file created\|write tool" 2>/dev/null | wc -l)
-EDIT_CALLS=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Edit\|editing\|file updated\|edit tool" 2>/dev/null | wc -l)
+BASH_CALLS=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Bash\|bash tool\|executing.*script\|tool call.*bash" 2>/dev/null | wc -l)
+READ_CALLS=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Read\|reading file\|file content\|read tool" 2>/dev/null | wc -l)
+WRITE_CALLS=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Write\|writing to\|file created\|write tool" 2>/dev/null | wc -l)
+EDIT_CALLS=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -l "Edit\|editing\|file updated\|edit tool" 2>/dev/null | wc -l)
 
 # Enhanced script execution analysis
 echo "  🚀 Analyzing script execution compliance..."
 DOCUMENTED_SCRIPT_REFS=$(find docs/commands -name "*.md" | xargs grep -c "\.sh\|script.*execution\|BASH TOOL EXECUTION" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
 COMMAND_SCRIPT_REQUIREMENTS=$(find docs/commands -name "*.md" | xargs grep -c "MANDATORY.*script\|REQUIRED.*script\|CRITICAL.*script" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
-ACTUAL_SCRIPT_EXECUTIONS=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "executed.*\.sh\|script.*completed\|bash.*output" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
+ACTUAL_SCRIPT_EXECUTIONS=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "executed.*\.sh\|script.*completed\|bash.*output" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
 
 # Command-script integration analysis
 echo "  🔧 Analyzing command-script integration..."
@@ -74,11 +74,11 @@ MISSING_SCRIPT_REFS=$(find docs/commands -name "*.md" | xargs grep -o "scripts/[
 
 # P56 transparency analysis
 echo "  📢 Analyzing P56 transparency compliance..."
-VISUAL_ANNOUNCEMENTS=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "║\|╔\|╚\|EXECUTING\|ACTIVE TOOL CALL" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
-COMMAND_TRANSPARENCY=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "Command:.*executed\|/.*command.*activated" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
+VISUAL_ANNOUNCEMENTS=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "║\|╔\|╚\|EXECUTING\|ACTIVE TOOL CALL" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
+COMMAND_TRANSPARENCY=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "Command:.*executed\|/.*command.*activated" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
 
 # Simulation detection
-SIMULATION_PATTERNS=$(find scripts/results outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "would execute\|recommend running\|you should.*run\|could run\|might want to.*script" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
+SIMULATION_PATTERNS=$(find scripts/results docs/operations/outputs -name "*.md" -o -name "*.json" -o -name "*.log" | xargs grep -c "would execute\|recommend running\|you should.*run\|could run\|might want to.*script" 2>/dev/null | awk -F: '{sum += $2} END {print sum}')
 
 echo "  ✅ Basic tool calls detected: $((BASH_CALLS + READ_CALLS + WRITE_CALLS + EDIT_CALLS))"
 echo "  ✅ Script references documented: $DOCUMENTED_SCRIPT_REFS"

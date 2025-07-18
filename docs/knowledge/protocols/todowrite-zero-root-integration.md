@@ -1,6 +1,6 @@
 # 📋 TodoWrite Integration Protocol
 
-**CRITICAL INTEGRATION**: Automated Zero-Root File Policy verification AND Maximum Density Optimization validation integrated with TodoWrite operations to ensure **Principle #81** and **Principle #82** compliance on every task completion and todo list modification.
+**CRITICAL INTEGRATION**: Automated Zero-Root File Policy verification AND Maximum Density Optimization validation AND **MANDATORY Parallel Task Planning** integrated with TodoWrite operations to ensure **Principle #81**, **Principle #82**, **Principle #90**, and **Principle #96** compliance on every task completion and todo list modification.
 
 ---
 
@@ -14,11 +14,12 @@
 
 ## 🎯 Integration Purpose
 
-**AUTOMATIC VERIFICATION**: Every TodoWrite operation triggers DUAL verification:
+**AUTOMATIC VERIFICATION**: Every TodoWrite operation triggers TRIPLE verification:
 1. **Zero-Root File Policy** - No unauthorized files in project root 
 2. **🚨 MAXIMUM Density Optimization** - All communication achieves ≥75% character reduction with ≤0.8s comprehension
+3. **🚨 MANDATORY Parallel Task Planning** - Complex todo elaboration (≥2 tasks, complexity ≥0.6) triggers automatic parallel Task tool deployment per [Principle #96](../principles/operational-excellence.md#96-todowrite-parallel-task-integration)
 
-**SEAMLESS OPERATION**: Integration operates transparently without disrupting user workflow while maintaining 100% compliance with Principles #81 and #82.
+**SEAMLESS OPERATION**: Integration operates transparently without disrupting user workflow while maintaining 100% compliance with Principles #81, #82, #90, and #96.
 
 ---
 
@@ -31,14 +32,16 @@ todowrite_integration:
     trigger: "Any todo marked as 'completed'"
     zero_root_verification: "Execute immediate zero-root file scan"
     density_verification: "🚨 MAXIMUM: Validate communication density ≥75% reduction + ≤0.8s comprehension"
+    parallel_task_compliance: "Verify parallel Task deployment compliance for complex todos"
     automatic_correction: "IMMEDIATE blocking and correction of density violations"
-    announcement: "📋 TASK COMPLETION VERIFIED: Zero-Root Policy maintained"
+    announcement: "📋 TASK COMPLETION VERIFIED: Zero-Root Policy + Parallel Task Compliance maintained"
     timing: "immediate_post_completion"
     
   todo_list_update:
     trigger: "Any TodoWrite operation (add, modify, complete)"
     scan: "Check for files created during task execution"
     validate: "Ensure all new files follow Zero-Root Policy"
+    parallel_detection: "Detect complexity thresholds requiring parallel task deployment"
     timing: "after_todowrite_execution"
     
   file_generation_tasks:
@@ -46,32 +49,45 @@ todowrite_integration:
     pre_validation: "Verify target paths before file creation"
     post_validation: "Confirm proper file placement after completion"
     priority: "maximum"
+
+  🚨_parallel_task_planning_triggers:
+    complex_todo_elaboration:
+      trigger: "TodoWrite operations with ≥2 complex tasks (complexity ≥0.6)"
+      action: "MANDATORY parallel Task tool deployment (≥3 specialists)"
+      blocking: "IMMEDIATE halt if sequential elaboration attempted"
+      protocol: "Mandatory Parallel Task Planning Protocol activation"
+      verification: "100% parallel Task deployment compliance"
+      
+    multi_domain_todos:
+      trigger: "Todo tasks spanning >1 technical domain"
+      action: "AUTOMATIC parallel domain specialist deployment"
+      domains: "strategic, technical, resource, risk, integration analysis"
+      enforcement: "ZERO tolerance for sequential multi-domain planning"
+      
+    planning_complexity_threshold:
+      trigger: "Planning keywords detected in TodoWrite (plan, strategy, design, architecture)"
+      threshold: "Complexity ≥0.7 OR objective spans >1 domain"
+      action: "IMMEDIATE parallel Task deployment with specialized analysis"
+      compliance: "Principle #90 and #96 enforcement"
 ```
 
 ### **Automatic Verification Logic**
-```javascript
-// TodoWrite Integration Pseudocode
-function onTodoWriteOperation(todoOperation) {
-    // Pre-execution validation for file-generating tasks
-    if (todoOperation.involvesFileGeneration) {
-        validateTargetPaths(todoOperation.filePaths);
-    }
-    
-    // Execute TodoWrite operation
-    executeTodoOperation(todoOperation);
-    
-    // MANDATORY Post-execution verification
-    if (todoOperation.completed || todoOperation.modified) {
-        executeZeroRootVerification({
-            trigger: "todowrite_completion",
-            command: "TodoWrite",
-            transparency: true,
-            autoResolve: true,
-            announcement: "📋 TASK COMPLETION VERIFIED: Zero-Root Policy maintained"
-        });
-    }
-}
-```
+**NATURAL LANGUAGE WORKFLOW** (P56 Compliance - Code Syntax Eliminated):
+
+**TodoWrite Operation Protocol**:
+1. **Pre-Execution Analysis**: Examine todo operation for file generation requirements and complexity assessment
+2. **Parallel Task Detection**: MANDATORY analysis for complexity thresholds requiring parallel Task deployment
+3. **BLOCKING Enforcement**: IMMEDIATE halt if complexity ≥0.6 with ≥2 tasks OR multi-domain span without parallel Tools
+4. **TodoWrite Execution**: Execute todo operation with real-time parallel Task compliance monitoring
+5. **Triple Verification**: Post-execution verification of Zero-Root Policy, Density Optimization, and Parallel Task Compliance
+6. **Transparency Announcement**: Comprehensive verification status with all compliance metrics validated
+
+**CRITICAL Enforcement Points**:
+- **Planning Complexity ≥0.7**: AUTOMATIC parallel Task tool deployment (≥3 specialists)
+- **Multi-Domain Todos**: MANDATORY specialized domain analysis via parallel Task tools
+- **Sequential Planning Detection**: IMMEDIATE blocking with redirection to parallel Task execution
+- **TodoWrite Elaboration**: Complex todo updates require parallel analysis before execution
+- **Compliance Verification**: 100% validation of Principles #81, #82, #90, and #96 requirements
 
 ---
 
@@ -141,6 +157,37 @@ automation_tasks:
     compliance_announcement: "📋 AUTOMATION TASK VERIFIED: Scripts properly organized in /scripts/ hierarchy"
 ```
 
+### **🚨 Parallel Task Planning Tasks** (NEW - Principle #96 Integration)
+```yaml
+parallel_planning_tasks:
+  trigger_patterns:
+    - "Plan [complex_objective]"
+    - "Design [architecture/system]"
+    - "Strategy for [multi_domain_objective]"
+    - "Create [comprehensive] plan"
+    - "Elaborate todo list with [multiple] tasks"
+    - "Update todos for [complex] project"
+    
+  🚨_mandatory_requirements:
+    parallel_task_deployment: "≥3 Task tools MANDATORY for complexity ≥0.6"
+    domain_specialization: "Strategic, Technical, Resource, Risk, Integration analysis"
+    blocking_mechanism: "IMMEDIATE halt for sequential planning attempts"
+    compliance_verification: "100% parallel Task deployment validation"
+    
+  verification_requirements:
+    planning_complexity_check: "Auto-detect complexity ≥0.7 thresholds"
+    multi_domain_analysis: "Identify tasks spanning >1 technical domain"
+    parallel_deployment_validation: "Confirm ≥3 specialized Task tools active"
+    sequential_blocking: "ZERO tolerance enforcement for non-parallel planning"
+    compliance_announcement: "📋 PARALLEL PLANNING VERIFIED: ≥3 Task specialists deployed - Principle #90/#96 compliance maintained"
+    
+  🚨_enforcement_protocol:
+    pre_execution_blocking: "Halt TodoWrite if parallel requirements not met"
+    automatic_task_deployment: "Deploy specialized Task tools immediately"
+    real_time_monitoring: "Monitor parallel Task compliance during execution"
+    post_execution_validation: "Verify all parallel Task requirements satisfied"
+```
+
 ---
 
 ## 📊 P56 Transparency Integration
@@ -167,6 +214,21 @@ todowrite_transparency:
     message: "🚨 VIOLATION PREVENTED: Task files auto-relocated to appropriate directories"
     details: "Show relocated files and destinations"
     timing: "immediate_after_relocation"
+    
+  🚨_parallel_task_deployment:
+    message: "🚨 PARALLEL TASK DEPLOYMENT: Complex TodoWrite detected - Activating ≥3 specialist Task tools"
+    details: "Show Task tool specializations and deployment reason"
+    timing: "immediate_before_parallel_deployment"
+    
+  parallel_compliance_verified:
+    message: "✅ PARALLEL TASK COMPLIANCE: Principle #90/#96 requirements satisfied"
+    details: "Show number of Task tools deployed and specialization areas"
+    timing: "after_parallel_task_completion"
+    
+  sequential_planning_blocked:
+    message: "🚨 SEQUENTIAL PLANNING BLOCKED: Redirecting to mandatory parallel Task deployment"
+    details: "Show complexity analysis and required parallel approach"
+    timing: "immediate_blocking_action"
 ```
 
 ### **Task-Context Announcements**
@@ -183,6 +245,15 @@ context_specific_announcements:
     
   automation_context:
     template: "📋 AUTOMATION VERIFIED: [task_description] - Scripts in /scripts/"
+    
+  🚨_parallel_planning_context:
+    template: "📋 PARALLEL PLANNING VERIFIED: [task_description] - ≥3 Task specialists deployed (Strategic, Technical, Resource analysis) - Principle #90/#96 compliance maintained"
+    
+  complex_todo_context:
+    template: "📋 COMPLEX TODO VERIFIED: [task_description] - Parallel Task deployment completed - Sequential planning blocked"
+    
+  multi_domain_context:
+    template: "📋 MULTI-DOMAIN VERIFIED: [task_description] - Specialized domain analysis completed via parallel Task tools"
 ```
 
 ---
@@ -294,6 +365,7 @@ background_operations:
 ### **Connected Protocols**
 - **[Zero-Root Verification Protocol](./zero-root-file-verification-protocol.md)**: Core verification framework
 - **[P55/P56 Compliance](../../commands/shared/compliance/p55-p56-universal-compliance.md)**: Transparency and execution standards
+- **[Mandatory Parallel Task Planning Protocol](./mandatory-parallel-task-planning.md)**: CRITICAL parallel Task deployment framework
 - **[Command Templates](../../commands/shared/templates/)**: Standardized integration patterns
 
 ### **Command System Integration**
@@ -306,4 +378,4 @@ background_operations:
 
 **Quick Navigation**: [Principle #81](../principles/technical-standards.md#81-zero-root-file-policy) | [Zero-Root Protocol](./zero-root-file-verification-protocol.md) | [TodoWrite Integration](../../commands/shared/templates/zero-root-verification-integration.md)
 
-*This integration ensures that every TodoWrite operation maintains perfect compliance with Principle #81: Zero-Root File Policy through automatic verification, prevention, and transparent organization of all task-generated content.*
+*This integration ensures that every TodoWrite operation maintains perfect compliance with Principle #81 (Zero-Root File Policy), Principle #82 (Maximum Density Optimization), Principle #90 (Planning-Phase Parallel Task Priority), and Principle #96 (TodoWrite Parallel Task Integration) through automatic verification, prevention, parallel Task deployment enforcement, and transparent organization of all task-generated content.*

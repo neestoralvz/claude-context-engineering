@@ -1,0 +1,28 @@
+{
+  "update_metadata": {
+    "timestamp": "2025-07-17T21:47:08Z",
+    "old_reference": "#test1",
+    "new_reference": "#test2",
+    "dry_run": true,
+    "force_update": false,
+    "backup_created": false,
+    "backup_manifest": "null"
+  },
+  "update_results": {
+    "updated_files_count": 6,
+    "failed_files_count": 0,
+    "total_replacements": 12
+  },
+  "updated_files": [
+    "scripts/test/test-cross-reference-system.sh:2"    "scripts/results/validation/reference-validation-report-20250717-154623.md:2"    "scripts/results/validation/reference-validation-report-20250717-154406.md:2"    "scripts/results/validation/reference-validation-report-20250717-154306.md:2"    "scripts/results/validation/reference-validation-report-20250717-154539.md:2"    "docs/operations/handoffs/HANDOFF_07_CROSS_REFERENCE_AUTOMATION_SYSTEM.md:2"
+  ],
+  "failed_files": [
+
+  ],
+  "next_steps": [
+    "Review updated files for correctness",
+    "Test critical functionality",
+    "Commit changes with descriptive message",
+    "Monitor for any broken references"
+  ]
+}

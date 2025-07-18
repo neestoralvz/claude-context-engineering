@@ -91,13 +91,15 @@
 
 ```yaml
 restart_conditions:
-  trigger: confidence_score < adaptive_threshold OR strategic_execution_effectiveness < 70% OR strategic_verification_failed
+  trigger: confidence_score < adaptive_threshold OR strategic_execution_effectiveness < 70% OR strategic_verification_failed OR error_detected
   max_iterations: 3
+  error_protocol_integration: true  # Principle #89 Zero Tolerance Error enforcement
   convergence_criteria: 
     - Strategic request properly analyzed and classified
     - Appropriate strategic exploration completed for request type
     - Strategic execution strategy successful or clear strategic recommendations provided
     - Strategic verification criteria met or manual intervention clearly specified
+    - All errors resolved through 8-step systematic protocol (Principle #89)
     - Strategic knowledge captured for ecosystem improvement
   escalation: Human intervention with specific strategic recommendations after 3 failed strategic execution attempts
 ```

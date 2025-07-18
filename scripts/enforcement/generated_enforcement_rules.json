@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-07-17T18:21:36.593181",
+  "total_rules": 5,
+  "rules": [
+    {
+      "rule_id": "RULE_001_COMPLIANCE",
+      "source_statement_id": "STMT_001_REQUIRED",
+      "rule_description": "Enforcement rule for: compliance language",
+      "enforcement_type": "REQUIRED",
+      "trigger_pattern": "compliance_condition_met",
+      "action_pattern": "LOG_VIOLATION",
+      "severity": "MEDIUM",
+      "auto_activate": false,
+      "python_code": "def enforce_stmt_001_required(context, operation):\n    \"\"\"\n    Enforcement rule for: compliance language\n    Source: compliance language...\n    \"\"\"\n    violations = []\n    \n    # Check trigger conditions\n    \n    # Check for compliance_detected\n    if \"compliance detected\" in operation.lower():\n        violations.append(\"compliance_detected detected\")\n    \n    # Apply blocking actions if violations found\n    if violations:\n        \n        logger.info(f\"ENFORCEMENT VIOLATION: {violations}\")\n        # Log violation for review\n    \n    return len(violations) == 0, violations",
+      "validation_logic": "\nValidation for STMT_001_REQUIRED:\n- Trigger: ['compliance_detected']\n- Action: ['log_violation']\n- Level: MEDIUM\n- Auto-remediation: False\n"
+    },
+    {
+      "rule_id": "RULE_002_COMPLIANCE",
+      "source_statement_id": "STMT_002_REQUIRED",
+      "rule_description": "Enforcement rule for: compliance language",
+      "enforcement_type": "REQUIRED",
+      "trigger_pattern": "compliance_condition_met",
+      "action_pattern": "LOG_VIOLATION",
+      "severity": "MEDIUM",
+      "auto_activate": false,
+      "python_code": "def enforce_stmt_002_required(context, operation):\n    \"\"\"\n    Enforcement rule for: compliance language\n    Source: compliance language...\n    \"\"\"\n    violations = []\n    \n    # Check trigger conditions\n    \n    # Check for compliance_detected\n    if \"compliance detected\" in operation.lower():\n        violations.append(\"compliance_detected detected\")\n    \n    # Apply blocking actions if violations found\n    if violations:\n        \n        logger.info(f\"ENFORCEMENT VIOLATION: {violations}\")\n        # Log violation for review\n    \n    return len(violations) == 0, violations",
+      "validation_logic": "\nValidation for STMT_002_REQUIRED:\n- Trigger: ['compliance_detected']\n- Action: ['log_violation']\n- Level: MEDIUM\n- Auto-remediation: False\n"
+    },
+    {
+      "rule_id": "RULE_003_ERROR_HANDLING",
+      "source_statement_id": "STMT_003_REQUIRED",
+      "rule_description": "Enforcement rule for: P55/P56 compliance + [Modularization Protocol](.",
+      "enforcement_type": "REQUIRED",
+      "trigger_pattern": "error_detected and not protocol_activated",
+      "action_pattern": "LOG_VIOLATION",
+      "severity": "MEDIUM",
+      "auto_activate": false,
+      "python_code": "def enforce_stmt_003_required(context, operation):\n    \"\"\"\n    Enforcement rule for: P55/P56 compliance + [Modularization Protocol](.\n    Source: P55/P56 compliance + [Modularization Protocol](....\n    \"\"\"\n    violations = []\n    \n    # Check trigger conditions\n    \n    # Check for error_handling_detected\n    if \"error handling detected\" in operation.lower():\n        violations.append(\"error_handling_detected detected\")\n\n    # Check for compliance_detected\n    if \"compliance detected\" in operation.lower():\n        violations.append(\"compliance_detected detected\")\n    \n    # Apply blocking actions if violations found\n    if violations:\n        \n        logger.info(f\"ENFORCEMENT VIOLATION: {violations}\")\n        # Log violation for review\n    \n    return len(violations) == 0, violations",
+      "validation_logic": "\nValidation for STMT_003_REQUIRED:\n- Trigger: ['error_handling_detected', 'compliance_detected']\n- Action: ['log_violation']\n- Level: MEDIUM\n- Auto-remediation: False\n"
+    },
+    {
+      "rule_id": "RULE_004_GENERAL",
+      "source_statement_id": "STMT_004_REQUIRED",
+      "rule_description": "Enforcement rule for: [Recursive discovery](.",
+      "enforcement_type": "REQUIRED",
+      "trigger_pattern": "general_condition_met",
+      "action_pattern": "LOG_VIOLATION",
+      "severity": "MEDIUM",
+      "auto_activate": false,
+      "python_code": "def enforce_stmt_004_required(context, operation):\n    \"\"\"\n    Enforcement rule for: [Recursive discovery](.\n    Source: [Recursive discovery](....\n    \"\"\"\n    violations = []\n    \n    # Check trigger conditions\n    \n    # Check for generic_trigger\n    if \"generic trigger\" in operation.lower():\n        violations.append(\"generic_trigger detected\")\n    \n    # Apply blocking actions if violations found\n    if violations:\n        \n        logger.info(f\"ENFORCEMENT VIOLATION: {violations}\")\n        # Log violation for review\n    \n    return len(violations) == 0, violations",
+      "validation_logic": "\nValidation for STMT_004_REQUIRED:\n- Trigger: ['generic_trigger']\n- Action: ['log_violation']\n- Level: MEDIUM\n- Auto-remediation: False\n"
+    },
+    {
+      "rule_id": "RULE_005_GENERAL",
+      "source_statement_id": "STMT_005_ENFORCEMENT",
+      "rule_description": "Enforcement rule for: + systematic archive management)",
+      "enforcement_type": "ENFORCEMENT",
+      "trigger_pattern": "general_condition_met",
+      "action_pattern": "LOG_VIOLATION",
+      "severity": "LOW",
+      "auto_activate": false,
+      "python_code": "def enforce_stmt_005_enforcement(context, operation):\n    \"\"\"\n    Enforcement rule for: + systematic archive management)\n    Source: + systematic archive management)...\n    \"\"\"\n    violations = []\n    \n    # Check trigger conditions\n    \n    # Check for generic_trigger\n    if \"generic trigger\" in operation.lower():\n        violations.append(\"generic_trigger detected\")\n    \n    # Apply blocking actions if violations found\n    if violations:\n        \n        logger.info(f\"ENFORCEMENT VIOLATION: {violations}\")\n        # Log violation for review\n    \n    return len(violations) == 0, violations",
+      "validation_logic": "\nValidation for STMT_005_ENFORCEMENT:\n- Trigger: ['generic_trigger']\n- Action: ['log_violation']\n- Level: LOW\n- Auto-remediation: False\n"
+    }
+  ]
+}

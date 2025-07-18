@@ -72,7 +72,7 @@ zero-root-verify --post-action --command="[COMMAND_NAME]" --transparency --auto-
 ### **File Generation Commands**
 ```markdown
 **Verification Requirements**:
-- **HANDOFF Files**: All HANDOFF_*.md files must be in `/handoffs/` directory
+- **HANDOFF Files**: All HANDOFF_*.md files must be in `/docs/operations/handoffs/` directory
 - **Report Files**: All *_REPORT.md files must be in `/reports/` directory
 - **Output Files**: Generated content must be in `/outputs/` hierarchy
 - **Documentation**: Any docs must be in appropriate `/docs/` subdirectories

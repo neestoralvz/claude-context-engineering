@@ -22,6 +22,38 @@ Enable parallel deployment of multiple specialized agents to tackle different as
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes parallel multi-agent coordination and dependency management scripts:
+
+```bash
+# Real-time dependency management and adaptation
+./scripts/automation/real-time-dependency-adapter.js --multi-agent-coordination
+./scripts/automation/todo-workflow-optimizer.js --parallel-agent-optimization
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate multi-agent deployment prerequisites and coordination requirements
+2. **Dependency Management**: Execute real-time dependency adaptation for parallel agent coordination
+3. **Workflow Optimization**: Run todo workflow optimization with parallel agent efficiency tracking
+4. **Coordination Enhancement**: Apply multi-agent coordination protocols with performance validation
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute multi-agent parallel coordination using real-time dependency management
+2. Optimize parallel agent workflows with dependency adaptation and efficiency tracking
+3. Generate multi-agent coordination reports with performance metrics and optimization results
+4. Apply parallel coordination protocols for maximum multi-agent deployment efficiency
+
+**Status Updates**:
+- 🔄 **Starting**: Parallel multi-agent deployment initiated (2 specialized automation scripts)
+- 📊 **Progress**: Running dependency management and workflow optimization for agent coordination
+- ✅ **Complete**: Multi-agent parallel deployment completed with coordination validation
+- 📈 **Metrics**: Agent coordination efficiency measured and dependency management optimized
+
+---
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**

@@ -23,8 +23,16 @@
 - **[Technical Documentation](./technical/TECHNICAL_DOCS.md)** - Complete system architecture and implementation guides
 - **[Script Ecosystem](./technical/script-ecosystem.md)** - 40 automation and validation scripts across 8 categories
 - **[Comprehensive Command Matrix](./technical/comprehensive-command-matrix.md)** - Complete command system analysis and relationships
+- **[Docker Containerization Authority](./technical/docker-containerization-authority.md)** - Production-ready containerization with security hardening
 - **[Protocols Hub](./protocols/)** - Universal protocols for validation, modularization, and P56 transparency
+- **[Workflows](./workflows/)** - Mandatory operational workflows including git worktree enforcement
 - **[Strategies](./strategies/)** - Performance optimization and validation methodologies
+
+### **📋 Operations Management**
+- **[Operations Hub](../operations/)** - Complete operational documentation lifecycle management
+- **[Handoffs System](../operations/handoffs/)** - Active handoffs, analysis, and completion tracking
+- **[Output Management](../operations/outputs/)** - Systematic output organization with archive automation
+- **[Reports System](../operations/reports/)** - Operational reporting with zero-root compliance
 
 ### **📋 Reference & Configuration**
 - **[Claude Code Permissions System](./reference/claude-code-permissions-system.md)** - `/permissions` command + tool pre-approval/denial protocols
@@ -71,7 +79,7 @@
 **Pattern**: [Slash Commands](./reference/claude-md-imports.md#custom-slash-commands-system) → [Memory Management](./reference/claude-code-memory-management.md) → [Workflow Automation](./reference/claude-md-imports.md#automated-workflow-support)
 
 ### **Parallel Development & Git Workflows**
-**Pattern**: [Git Worktrees Guide](./reference/git-worktrees-claude-code.md) → [Session Management](./reference/git-worktrees-claude-code.md#claude-session-management) → [Automation Scripts](../../scripts/git-workflow/)
+**Pattern**: [Git Worktrees Guide](./reference/git-worktrees-claude-code.md) → [Mandatory Enforcement](./workflows/mandatory-worktree-workflow.md) → [Session Management](./reference/git-worktrees-claude-code.md#claude-session-management) → [Automation Scripts](../../scripts/git-workflow/)
 
 ### **Optimization & Performance**
 **Pattern**: [Performance Strategy](./strategies/PERFORMANCE_OPTIMIZATION.md) → [Context Optimization](./patterns/universal-patterns-quick-deployment.md) → [Metrics & Validation](./technical/system-performance-metrics.md)
@@ -101,6 +109,7 @@
 **Location**: `./protocols/` (Universal standards)
 - **[Modularization Protocol](./protocols/modularization-protocol.md)** - Content organization standards
 - **[Universal Mathematical Validation Framework](./protocols/universal-mathematical-validation-framework.md)** - Comprehensive mathematical + documentation validation
+- **[Mandatory Git Worktree Enforcement](./protocols/mandatory-git-worktree-enforcement.md)** - 100% conflict prevention system
 - **[Cross-Reference Intelligence Hub](./cross-reference-intelligence-hub.md)** - Complete cross-reference intelligence ecosystem
 
 ### **🎨 Patterns & Methodologies** (Application Layer)
@@ -126,6 +135,7 @@
 - **[Claude Code `/help` & `/status`](./reference/claude-code-help-status-reference.md)** - Essential command discovery and system verification
 - **[GitHub Integration Setup](./reference/claude-github-integration.md#quick-start-guide)** - @claude tagging immediate setup
 - **[Mathematical Validation](./protocols/universal-mathematical-validation-framework.md)** - Precision requirements authority
+- **[Git Worktree Enforcement](./protocols/mandatory-git-worktree-enforcement.md)** - Immediate conflict resolution
 - **[Cross-Reference Intelligence](./cross-reference-intelligence-hub.md)** - Complete intelligence ecosystem
 - **[Navigation Issues](./README.md#quick-access-shortcuts)** - This navigation hub
 - **[System Status](./technical/system-performance-metrics.md)** - Real-time system health

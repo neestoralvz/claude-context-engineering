@@ -70,9 +70,9 @@ verification_algorithm:
     hidden_files: "include_in_scan"
     
   violation_classification:
-    handoff_files: "HANDOFF_*.md → relocate to /docs/operations/handoffs/"
-    report_files: "*_REPORT.md, *_ANALYSIS.md → relocate to /docs/operations/reports/"
-    output_files: "temporary results → relocate to /docs/operations/outputs/"
+    handoff_files: "HANDOFF_*.md → relocate to docs/operations/handoffs/"
+    report_files: "*_REPORT.md, *_ANALYSIS.md → relocate to docs/operations/reports/"
+    output_files: "temporary results → relocate to docs/operations/outputs/"
     script_files: "*.py, *.sh, *.js → relocate to /scripts/"
     documentation: "*.md docs → relocate to appropriate /docs/ subfolder"
     
@@ -112,12 +112,12 @@ critical_integration:
   documentation_commands:
     - "/sync-docs": "Verify no temp files in root after documentation sync"
     - "/update-living-docs": "Ensure living docs properly placed in /docs/"
-    - "/handoff": "Force HANDOFF_*.md to /docs/operations/handoffs/ directory"
+    - "/handoff": "Force HANDOFF_*.md to docs/operations/handoffs/ directory"
     
   analysis_commands:
-    - "/verify-flow": "Output validation reports to /docs/operations/reports/"
-    - "/mathematical-verification": "Results to /docs/operations/outputs/ or /docs/operations/reports/"
-    - "/validate-system": "Compliance reports to /docs/operations/reports/"
+    - "/verify-flow": "Output validation reports to docs/operations/reports/"
+    - "/mathematical-verification": "Results to docs/operations/outputs/ or docs/operations/reports/"
+    - "/validate-system": "Compliance reports to docs/operations/reports/"
     - "/orchestrate": "Verify all generated orchestration files"
     
   file_generation:
@@ -224,9 +224,9 @@ validation_checklist:
     
   compliance_validation:
     - [ ] Zero unauthorized files in project root
-    - [ ] All handoffs properly routed to /handoffs/
-    - [ ] All reports properly placed in /docs/operations/reports/
-    - [ ] All outputs organized in /docs/operations/outputs/
+    - [ ] All handoffs properly routed to docs/operations/handoffs/
+    - [ ] All reports properly placed in docs/operations/reports/
+    - [ ] All outputs organized in docs/operations/outputs/
     - [ ] Documentation maintained in /docs/ hierarchy
 ```
 

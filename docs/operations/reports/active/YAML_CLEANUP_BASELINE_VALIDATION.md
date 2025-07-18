@@ -68,7 +68,7 @@ Based on YAML content analysis, the following files require continuous monitorin
 - `docs/knowledge/command-rules/` - Rule configuration blocks
 
 **Special Attention Files**:
-- `docs/handoffs/critical/HANDOFF_YAML_ELIMINATION_PHASE_2.md` (6 YAML blocks)
+- `docs/operations/handoffs/critical/HANDOFF_YAML_ELIMINATION_PHASE_2.md` (6 YAML blocks)
 - `docs/commands/executable/core-routing/evolutionary-decision-trees.md` (11 YAML blocks)
 - `docs/commands/shared/routing/decision-engine-integration.md` (12 YAML blocks)
 

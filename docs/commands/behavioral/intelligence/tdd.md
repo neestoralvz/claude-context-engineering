@@ -16,6 +16,41 @@ Implement comprehensive test-driven development methodology where verification c
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes test-driven development protocol and validation scripts:
+
+```bash
+# Quality gate testing and TDD validation
+./scripts/tdd/test-quality-gates.sh --comprehensive-verification
+./scripts/tdd/test-universal-activation-integration.sh --tdd-protocol
+
+# Verification loop testing and validation
+./scripts/tdd/test-verification-loops.sh --test-driven-validation
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate TDD prerequisites and test framework requirements
+2. **Quality Gate Testing**: Execute comprehensive quality gate verification for TDD methodology
+3. **Integration Testing**: Run universal activation integration with TDD protocol validation
+4. **Verification Loop Testing**: Apply verification loop testing for test-driven validation
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute comprehensive TDD protocol with quality gate testing and validation
+2. Validate test-driven development methodology using universal activation integration
+3. Generate TDD reports with verification loop testing and quality metrics
+4. Apply test-driven validation protocols for comprehensive development verification
+
+**Status Updates**:
+- 🔄 **Starting**: Test-driven development initiated (3 specialized TDD validation scripts)
+- 📊 **Progress**: Running quality gate testing and verification loop validation
+- ✅ **Complete**: TDD protocol completed with comprehensive verification validation
+- 📈 **Metrics**: Test-driven development validated and quality gates verified
+
+---
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**

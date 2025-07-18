@@ -316,7 +316,7 @@
 
 **Documentation Integration**:
 - **Living Context Sync**: SYNCHRONIZES with Documentation as Living Context (#83) automatically
-- **Analysis Persistence**: STORES analysis results in outputs/ with systematic organization
+- **Analysis Persistence**: STORES analysis results in docs/operations/outputs/ with systematic organization
 - **Git Integration**: INTEGRATES with Strategic Git Versioning (#16) 5-phase protocol seamlessly
 - **Context Threading**: MAINTAINS contextual thread across multiple handoff sessions with continuity
 - **Progress Tracking**: DOCUMENTS progress delta and decision rationale with transparency

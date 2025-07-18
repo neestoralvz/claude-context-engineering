@@ -60,6 +60,7 @@ graph TD
 - 🚨 MANDATORY: Pattern recognition <90% → Sistema WILL enforce context optimization
 - 🚨 CRITICAL: Autonomous capability <85% → BLOCKING of prompt-only approaches
 - 🚨 REQUIRED: Context utilization <80% → IMMEDIATE intervention with real-time correction
+- 🚨 ERROR PROTOCOL: Any error detected → MANDATORY 8-step resolution protocol (Principle #89)
 
 **P56 Transparency Announcements** (REQUIRED):
 - Context completeness percentage achieved

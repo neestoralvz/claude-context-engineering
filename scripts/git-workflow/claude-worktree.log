@@ -1,0 +1,38 @@
+[2025-07-17 15:41:02] INFO: Creating worktree: feature-work
+[2025-07-17 15:41:05] INFO: Setting up environment for: feature-work
+[2025-07-17 15:41:05] SUCCESS: Environment setup complete for: feature-work
+[2025-07-17 15:41:05] INFO: Launching Claude Code session for: feature-work
+[2025-07-17 15:41:05] SUCCESS: Claude session launched (PID: 40532) for: feature-work
+[2025-07-17 15:41:05] INFO: Session log: /Users/nalve/worktrees/feature-work/.claude-session.log
+[2025-07-17 15:41:05] SUCCESS: Worktree created: ../worktrees/feature-work
+[2025-07-17 15:41:05] INFO: To enter worktree: cd ../worktrees/feature-work
+[2025-07-17 15:41:05] INFO: To launch Claude: cd ../worktrees/feature-work && claude
+[2025-07-17 15:41:05] INFO: Creating worktree: maintenance
+[2025-07-17 15:41:08] INFO: Setting up environment for: maintenance
+[2025-07-17 15:41:08] SUCCESS: Environment setup complete for: maintenance
+[2025-07-17 15:41:08] INFO: Launching Claude Code session for: maintenance
+[2025-07-17 15:41:08] SUCCESS: Claude session launched (PID: 41086) for: maintenance
+[2025-07-17 15:41:08] INFO: Session log: /Users/nalve/worktrees/maintenance/.claude-session.log
+[2025-07-17 15:41:08] SUCCESS: Worktree created: ../worktrees/maintenance
+[2025-07-17 15:41:08] INFO: To enter worktree: cd ../worktrees/maintenance
+[2025-07-17 15:41:08] INFO: To launch Claude: cd ../worktrees/maintenance && claude
+[2025-07-17 15:41:08] INFO: Creating worktree: documentation
+[2025-07-17 15:41:12] INFO: Setting up environment for: documentation
+[2025-07-17 15:41:12] SUCCESS: Environment setup complete for: documentation
+[2025-07-17 15:41:12] INFO: Launching Claude Code session for: documentation
+[2025-07-17 15:41:12] SUCCESS: Claude session launched (PID: 41625) for: documentation
+[2025-07-17 15:41:12] INFO: Session log: /Users/nalve/worktrees/documentation/.claude-session.log
+[2025-07-17 15:41:12] SUCCESS: Worktree created: ../worktrees/documentation
+[2025-07-17 15:41:12] INFO: To enter worktree: cd ../worktrees/documentation
+[2025-07-17 15:41:12] INFO: To launch Claude: cd ../worktrees/documentation && claude
+[2025-07-17 15:41:12] INFO: Creating worktree: analysis
+[2025-07-17 15:41:15] INFO: Setting up environment for: analysis
+[2025-07-17 15:41:15] SUCCESS: Environment setup complete for: analysis
+[2025-07-17 15:41:15] INFO: Launching Claude Code session for: analysis
+[2025-07-17 15:41:15] SUCCESS: Claude session launched (PID: 42162) for: analysis
+[2025-07-17 15:41:15] INFO: Session log: /Users/nalve/worktrees/analysis/.claude-session.log
+[2025-07-17 15:41:15] SUCCESS: Worktree created: ../worktrees/analysis
+[2025-07-17 15:41:15] INFO: To enter worktree: cd ../worktrees/analysis
+[2025-07-17 15:41:15] INFO: To launch Claude: cd ../worktrees/analysis && claude
+[2025-07-17 15:41:28] INFO: Active Claude Code Worktrees:
+[2025-07-17 15:41:29] SUCCESS: Found 4 active worktrees

@@ -38,6 +38,41 @@
 - **Low Priority**: 7.5 threshold for development use
 - **Default**: 8.0 threshold for balanced approach
 
+---
+
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes confidence calculation and threshold validation scripts:
+
+```bash
+# Core confidence calculation
+./scripts/core/calculate-confidence.sh --multi-dimensional-scoring
+./scripts/core/calculate-real-metrics.sh --confidence-focus
+
+# Confidence threshold validation
+./scripts/validation/validate-execution-thresholds.sh --confidence-validation
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate confidence measurement prerequisites and context analysis
+2. **Confidence Calculation**: Run multi-dimensional confidence scoring with dynamic weights
+3. **Threshold Validation**: Verify confidence levels against adaptive thresholds and priority requirements
+4. **Quality Assurance**: Apply confidence-based quality gates and validation protocols
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute multi-dimensional confidence scoring using dynamic weight algorithms
+2. Validate confidence thresholds against context-specific priority requirements
+3. Generate confidence reports with dimensional breakdowns and quality metrics
+4. Apply confidence-based quality gates for execution validation
+
+**Status Updates**:
+- 🔄 **Starting**: Confidence scoring initiated (3 specialized calculation scripts)
+- 📊 **Progress**: Running multi-dimensional confidence calculation and threshold validation
+- ✅ **Complete**: Confidence analysis completed with dimensional quality assessment
+- 📈 **Metrics**: Confidence scores calculated and threshold compliance validated
+
 **Auto-Restart Protocol**:
 - **Maximum Iterations**: 3 attempts to prevent infinite loops
 - **Convergence Criteria**: Confidence must meet or exceed threshold

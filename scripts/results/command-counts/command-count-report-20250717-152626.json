@@ -1,0 +1,59 @@
+{
+  "command_count_report": {
+    "timestamp": "2025-07-17T15:26:26-06:00",
+    "report_date": "20250717-152626",
+    "methodology": {
+      "description": "Automated command counting with validation",
+      "criteria": [
+        "Must be .md file",
+        "Must not be README.md",
+        "Must not be in backup/archived directories",
+        "Must not be in examples directory",
+        "Must contain command structure or triggers"
+      ],
+      "directories_analyzed": [
+        "docs/commands/",
+        ".claude/commands/"
+      ]
+    },
+    "counts": {
+      "docs_commands": {
+        "total": 146,
+        "behavioral": 42,
+        "executable": 78,
+        "cores": 8,
+        "shared": 18,
+        "other": 0
+      },
+      "claude_commands": {
+        "total": 146,
+        "behavioral": 42,
+        "executable": 78,
+        "cores": 8,
+        "shared": 18,
+        "other": 0
+      }
+    },
+    "discrepancies": {
+      "total_found": 1,
+      "details": {"registry_total":"registry:155 vs counted:146 (diff:9)"}
+    },
+    "registry_validation": {"registry_total":155,"counted_total":146,"matches":false},
+    "summary": {
+      "total_unique_commands": 146,
+      "synchronization_status": "DISCREPANCIES_DETECTED",
+      "validation_status": "FAILED",
+      "recommendations": [
+        "Resolve 1 discrepancies for full synchronization",
+        "Regular automated counting maintains accuracy",
+        "Integration with CI/CD ensures continuous validation",
+        "Registry synchronization maintains system coherence"
+      ]
+    },
+    "ci_cd_integration": {
+      "exit_code": 1,
+      "suitable_for_automation": true,
+      "monitoring_ready": true
+    }
+  }
+}

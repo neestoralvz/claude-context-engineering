@@ -44,6 +44,20 @@
 - **Action**: 🚨 MANDATORY: Auto-activate /context-eng with maximum ecosystem utilization and BLOCKING for insufficient activation
 - **Verification**: 🚨 REQUIRED: Complete registry integration, performance optimization protocols, and ≥70% utilization threshold enforcement
 
+**🚨 PLANNING-PHASE TRIGGER** (NEW - Principle #90 Integration):
+- **Condition**: 🚨 BLOCKING: Planning complexity ≥0.7 OR objective spans >1 domain OR TodoWrite elaboration with ≥2 complex tasks
+- **Threshold**: 🚨 AUTOMATIC: Keywords: 'plan', 'strategy', 'design', 'architecture' OR multi-domain analysis OR complex todo creation
+- **Action**: 🚨 MANDATORY: Auto-activate /context-eng with IMMEDIATE parallel Task deployment (≥3 specialists) and ZERO tolerance for sequential planning
+- **Protocol**: 🚨 ENFORCED: [Mandatory Parallel Task Planning Protocol](../../../knowledge/protocols/mandatory-parallel-task-planning.md) integration with automatic blocking mechanisms
+- **Verification**: 🚨 REQUIRED: 100% parallel Task deployment compliance, specialized domain analysis, and planning quality validation ≥85%
+
+**🚨 ERROR-BASED TRIGGER** (NEW - Protocol #89 Integration):
+- **Condition**: 🚨 BLOCKING: ANY error with severity ≥ HIGH detected in system operations
+- **Threshold**: 🚨 AUTOMATIC: Error classification → CRITICAL/HIGH severity OR recurring errors ≥3 consecutive
+- **Action**: 🚨 MANDATORY: Auto-activate /context-eng with 8-step error resolution protocol integration + full system analysis
+- **Protocol**: 🚨 ENFORCED: Automatic activation of [Universal Tool Execution](../../shared/core/universal-tool-execution.md#-automatic-8-step-protocol-integration) error handling
+- **Verification**: 🚨 REQUIRED: Protocol completion status, system integrity validation, and comprehensive error resolution documentation
+
 ## ⚡ **Adaptive Intelligent Activation Protocol** (MANDATORY)
 
 **🚨 BLOCKING REQUIREMENT**: MANDATORY intelligent activation scaling with ≥92% trigger accuracy based on complexity measurement. Sistema WILL enforce activation protocols with AUTOMATIC blocking for manual override attempts and MANDATORY verification of ecosystem utilization thresholds.
@@ -58,18 +72,20 @@
 - **Time Savings**: 70% reduction through overhead elimination
 
 **Moderate Tasks**:
-- **Complexity Threshold**: 1.0-1.5
+- **Complexity Threshold**: 1.0-1.5 (≥0.7 triggers MANDATORY parallel Task tools)
 - **Confidence Threshold**: 0.6-0.8
-- **Activation Level**: 3-phase execution: Routing → Strategic Planning → Coordinated Implementation
-- **Monitoring**: Enhanced progress tracking with specialist coordination
-- **Optimization**: 50% time reduction with strategic planning integration
+- **Activation Level**: 3-phase execution: Routing → Strategic Planning (MANDATORY ≥3 parallel Task tools) → Coordinated Implementation
+- **Monitoring**: Enhanced progress tracking with specialist coordination + parallel task compliance verification
+- **Optimization**: 50% time reduction with strategic planning integration + mandatory parallel task deployment
+- **Parallel Enforcement**: [Mandatory Parallel Task Planning Protocol](../../../knowledge/protocols/mandatory-parallel-task-planning.md) auto-activation
 
 **Complex Tasks**:
-- **Complexity Threshold**: ≥ 1.5
+- **Complexity Threshold**: ≥ 1.5 (AUTOMATIC parallel Task deployment)
 - **Confidence Threshold**: < 0.6
-- **Activation Level**: 5-phase orchestration: Full discovery, planning, execution, verification, documentation
-- **Monitoring**: Comprehensive tracking with up to 10 specialist Task agents and bidirectional communication
-- **Optimization**: Maximum quality through complete orchestration protocols with MANDATORY ≥70% ecosystem utilization
+- **Activation Level**: 5-phase orchestration: Full discovery, planning (MANDATORY ≥3 parallel specialists), execution, verification, documentation
+- **Monitoring**: Comprehensive tracking with up to 10 specialist Task agents and bidirectional communication + parallel task compliance
+- **Optimization**: Maximum quality through complete orchestration protocols with MANDATORY ≥70% ecosystem utilization + ≥3 parallel Task tools
+- **CRITICAL Integration**: [Principle #90](../../../knowledge/principles/operational-excellence.md#90-planning-phase-parallel-task-tool-priority) enforcement with ZERO tolerance for sequential planning
 
 **Enforcement Validation**:
 - **Utilization Monitoring**: 🚨 REAL-TIME: Monitor command ecosystem utilization during all activation phases

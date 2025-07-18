@@ -94,14 +94,14 @@ validate_principle_sequence() {
         if [ -f "$file" ] && git diff --cached --quiet "$file" 2>/dev/null; then
             # File is staged, check staged content
             git show ":$file" 2>/dev/null | while IFS= read -r line; do
-                if [[ "$line" =~ ###[[:space:]]*([0-9]+)\. ]]; then
+                if [[ "$line" =~ ^###[[:space:]]*([0-9]+)\.[[:space:]] ]]; then
                     principle_numbers+=("${BASH_REMATCH[1]}")
                 fi
             done
         elif [ -f "$file" ]; then
             # File not staged, check current content
             while IFS= read -r line; do
-                if [[ "$line" =~ ###[[:space:]]*([0-9]+)\. ]]; then
+                if [[ "$line" =~ ^###[[:space:]]*([0-9]+)\.[[:space:]] ]]; then
                     principle_numbers+=("${BASH_REMATCH[1]}")
                 fi
             done < "$file"
@@ -182,6 +182,58 @@ validate_principle_counts() {
     fi
 }
 
+# Validate zero-root file policy (Principle #81)
+validate_zero_root_policy() {
+    log "Validating zero-root file policy (Principle #81)..."
+    
+    local staged_files=$(git diff --cached --name-only)
+    local errors=0
+    
+    # Check for unauthorized files in root directory
+    for file in $staged_files; do
+        # Check if file is in root directory (no subdirectory)
+        if [[ "$file" != *"/"* ]]; then
+            # Allow specific files
+            case "$file" in
+                "CLAUDE.md"|"README.md"|".gitignore"|".gitattributes")
+                    # These files are allowed in root
+                    ;;
+                *.md|*.txt|*.json|*.yml|*.yaml|*.sh|*.js|*.py|*.ts|*.jsx|*.tsx)
+                    log_error "ZERO-ROOT VIOLATION: Unauthorized file in root directory: $file"
+                    log_error "  Principle #81 requires all files (except CLAUDE.md, README.md) in subdirectories"
+                    log_error "  Suggested location: docs/$file or scripts/$file"
+                    ((errors++))
+                    ;;
+                *)
+                    # Non-code files might be acceptable, but warn
+                    log_warning "Potential zero-root violation: $file"
+                    log_warning "  Consider moving to appropriate subdirectory"
+                    ;;
+            esac
+        fi
+    done
+    
+    if [ "$errors" -eq 0 ]; then
+        log_success "Zero-root file policy validation passed"
+        return 0
+    else
+        log_error "Zero-root file policy violations detected"
+        log_error ""
+        log_error "To fix zero-root violations:"
+        log_error "  1. Move files to appropriate subdirectories:"
+        log_error "     - Documentation: docs/"
+        log_error "     - Scripts: scripts/"
+        log_error "     - Configuration: config/"
+        log_error "     - Projects: projects/"
+        log_error "  2. Update any references to moved files"
+        log_error "  3. Re-stage and commit"
+        log_error ""
+        log_error "Emergency override (not recommended):"
+        log_error "  git commit --no-verify"
+        return 1
+    fi
+}
+
 # Check for broken cross-references in staged changes
 validate_staged_cross_references() {
     log "Validating cross-references in staged changes..."
@@ -242,6 +294,10 @@ main() {
         ((validation_errors++))
     fi
     
+    if ! validate_zero_root_policy; then
+        ((validation_errors++))
+    fi
+    
     if ! validate_staged_cross_references; then
         ((validation_errors++))
     fi
@@ -295,6 +351,7 @@ DESCRIPTION:
 VALIDATIONS:
     - Principle sequence integrity (no duplicates)
     - Principle count consistency across files
+    - Zero-root file policy (Principle #81)
     - Cross-reference validity in staged changes
     
 USAGE:

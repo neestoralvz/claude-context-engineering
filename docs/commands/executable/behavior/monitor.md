@@ -18,6 +18,44 @@
 - **P56 Announcement**: Visual confirmation of auto-activation with monitoring status indicators
 - **Evidence Collection**: Measurable trigger condition documentation with system health metrics
 
+---
+
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes real-time monitoring and compliance validation scripts:
+
+```bash
+# Real-time monitoring and compliance systems
+./scripts/monitoring/real-time-compliance-monitor.sh --continuous-monitoring
+./scripts/monitoring/compliance-alerting-system.py --automated-alerting
+
+# Automated remediation and predictive analytics
+./scripts/monitoring/automated-remediation.py --system-health-optimization
+./scripts/monitoring/predictive-analytics.py --performance-prediction
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate monitoring prerequisites and system health analysis requirements
+2. **Real-time Monitoring**: Execute continuous compliance monitoring with automated alerting
+3. **Automated Remediation**: Run system health optimization with predictive analytics
+4. **Performance Prediction**: Apply predictive analytics for system performance optimization
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute continuous real-time monitoring with compliance validation and automated alerting
+2. Validate system health using automated remediation and predictive performance analytics
+3. Generate monitoring reports with compliance metrics and system health optimization
+4. Apply predictive analytics for proactive system performance and health management
+
+**Status Updates**:
+- 🔄 **Starting**: System monitoring initiated (4 specialized monitoring and analytics scripts)
+- 📊 **Progress**: Running real-time compliance monitoring and automated remediation
+- ✅ **Complete**: System monitoring completed with predictive analytics validation
+- 📈 **Metrics**: System health optimized and compliance monitoring validated
+
+---
+
 ### **Propósito de Triggers**
 Este comando se activa automáticamente cuando el sistema detecta la necesidad de monitorear y activar triggers de otros comandos. Está diseñado para sistemas agentic LLM que requieren activación autónoma sin intervención manual.
 

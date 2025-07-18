@@ -18,6 +18,15 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 RESULTS_DIR="$PROJECT_ROOT/scripts/results/validation"
 TIMESTAMP=$(date '+%Y%m%d-%H%M%S')
 VALIDATION_FILE="$RESULTS_DIR/reference-validation-$TIMESTAMP.json"
+
+# Ripgrep path detection
+if command -v rg &> /dev/null; then
+    RG_CMD="rg"
+elif [ -f "/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg" ]; then
+    RG_CMD="/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg"
+else
+    RG_CMD="grep" # fallback
+fi
 REPORT_FILE="$RESULTS_DIR/reference-validation-report-$TIMESTAMP.md"
 
 # Global variables
@@ -90,7 +99,7 @@ find_affected_files() {
     local file_types=("md" "json" "js" "ts" "sh" "txt")
     
     for file_type in "${file_types[@]}"; do
-        rg -l "$pattern" "$PROJECT_ROOT" --type "$file_type" 2>/dev/null >> "$temp_file" || true
+        $RG_CMD -l "$pattern" "$PROJECT_ROOT" --type "$file_type" 2>/dev/null >> "$temp_file" || true
     done
     
     # Remove duplicates and sort
@@ -129,7 +138,7 @@ validate_principle_references() {
     for file in "${principle_files[@]}"; do
         if [ -f "$file" ]; then
             while IFS= read -r line; do
-                if [[ "$line" =~ ###[[:space:]]*([0-9]+)\. ]]; then
+                if [[ "$line" =~ ^###[[:space:]]*([0-9]+)\.[[:space:]] ]]; then
                     local num="${BASH_REMATCH[1]}"
                     principle_numbers+=("$num")
                     ((total_principles++))
@@ -169,7 +178,7 @@ validate_cross_references() {
         local relative_path="${file#$PROJECT_ROOT/}"
         
         # Extract markdown links
-        rg -o '\]\(([^)]*\.md[^)]*)\)' "$file" 2>/dev/null | sed 's/](\([^)]*\))/\1/' | while read -r link; do
+        $RG_CMD -o '\]\(([^)]*\.md[^)]*)\)' "$file" 2>/dev/null | sed 's/](\([^)]*\))/\1/' | while read -r link; do
             # Convert relative link to absolute path
             local target_file
             if [[ "$link" =~ ^\./ ]]; then
@@ -208,12 +217,12 @@ simulate_change_impact() {
     local affected_count=0
     
     # Find all files with the old pattern
-    rg -l "$old_pattern" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null > "$temp_file" || true
+    $RG_CMD -l "$old_pattern" "$PROJECT_ROOT" --type md --type json --type js --type ts --type sh 2>/dev/null > "$temp_file" || true
     
     while read -r file; do
         if [ -f "$file" ]; then
             local relative_path="${file#$PROJECT_ROOT/}"
-            local match_count=$(rg -c "$old_pattern" "$file" 2>/dev/null || echo 0)
+            local match_count=$($RG_CMD -c "$old_pattern" "$file" 2>/dev/null || echo 0)
             
             if [ "$match_count" -gt 0 ]; then
                 AFFECTED_FILES+=("$relative_path:$match_count")
@@ -239,7 +248,7 @@ validate_change_consistency() {
     log "Validating change consistency..."
     
     # Check if the new reference already exists elsewhere
-    local existing_count=$(rg -c "$new_ref" "$PROJECT_ROOT" --type md 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
+    local existing_count=$($RG_CMD -c "$new_ref" "$PROJECT_ROOT" --type md 2>/dev/null | awk -F: '{sum+=$2} END {print sum+0}')
     
     if [ "$existing_count" -gt 0 ]; then
         add_warning "New reference '$new_ref' already exists in $existing_count locations"
@@ -256,7 +265,7 @@ validate_change_consistency() {
         
         # Check if new number is already in use
         local new_ref_pattern="### $new_num\."
-        local existing_principle=$(rg -l "$new_ref_pattern" "$PROJECT_ROOT/docs/knowledge/principles/" --type md 2>/dev/null || true)
+        local existing_principle=$($RG_CMD -l "$new_ref_pattern" "$PROJECT_ROOT/docs/knowledge/principles/" --type md 2>/dev/null || true)
         
         if [ -n "$existing_principle" ]; then
             add_error "Principle #$new_num already exists in: $existing_principle"
@@ -390,7 +399,7 @@ OPTIONS:
 
 EXAMPLES:
     $0 "#94" "#100"                    # Validate principle renumbering
-    $0 "94 principios" "100 principios" # Validate count update
+    $0 "94 principios" "103 principios" # Validate count update
     $0 --no-simulate "#94" "#100"      # Real validation mode
 
 DESCRIPTION:
@@ -453,7 +462,7 @@ main() {
 check_dependencies() {
     local missing_deps=()
     
-    if ! command -v rg &> /dev/null; then
+    if ! $RG_CMD --version &> /dev/null; then
         missing_deps+=("ripgrep (rg)")
     fi
     

@@ -16,6 +16,41 @@ Enable REQUIRED parallel exploration of multiple solution approaches using Git w
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes git worktree management and parallel development scripts:
+
+```bash
+# Git worktree automation and management
+./scripts/git-workflow/claude-worktree-manager.sh --parallel-development
+./scripts/git-workflow/worktree-session-monitor.py --multi-approach-tracking
+
+# Git workflow automation and coordination
+./scripts/automation/automated-git-workflows.sh --parallel-exploration
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate git repository status and worktree creation prerequisites
+2. **Worktree Management**: Execute enterprise-grade worktree automation with session management
+3. **Parallel Coordination**: Run multi-approach tracking with performance validation
+4. **Workflow Automation**: Apply comprehensive git automation for parallel exploration
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute git worktree creation and management for parallel development approaches
+2. Validate parallel development benefits using mathematical benefit analysis
+3. Generate worktree session reports with performance optimization metrics
+4. Apply automated git workflows for seamless parallel exploration coordination
+
+**Status Updates**:
+- 🔄 **Starting**: Git worktrees parallel development initiated (3 specialized git workflow scripts)
+- 📊 **Progress**: Running worktree automation and parallel development coordination
+- ✅ **Complete**: Parallel worktree setup completed with session monitoring active
+- 📈 **Metrics**: Parallel development benefits validated and worktree performance optimized
+
+---
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Auto-Activation Triggers**

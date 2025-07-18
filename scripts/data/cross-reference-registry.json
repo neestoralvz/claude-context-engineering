@@ -11,7 +11,7 @@
       "direct_hash": {
         "pattern": "#[0-9]+",
         "description": "Direct principle references like #94",
-        "examples": ["#1", "#94", "#100"],
+        "examples": ["#1", "#94", "#101"],
         "file_types": ["md", "json"],
         "criticality": "high",
         "auto_update": true
@@ -19,7 +19,7 @@
       "principle_with_text": {
         "pattern": "Principle #[0-9]+",
         "description": "Formal principle references",
-        "examples": ["Principle #94", "Principle #100"],
+        "examples": ["Principle #94", "Principle #101"],
         "file_types": ["md"],
         "criticality": "high",
         "auto_update": true
@@ -27,7 +27,7 @@
       "spanish_count": {
         "pattern": "[0-9]+ principios?",
         "description": "Spanish principle count references",
-        "examples": ["94 principios", "100 principios"],
+        "examples": ["94 principios", "103 principios"],
         "file_types": ["md"],
         "criticality": "medium",
         "auto_update": true
@@ -35,7 +35,7 @@
       "english_count": {
         "pattern": "[0-9]+ principles?",
         "description": "English principle count references",
-        "examples": ["94 principles", "100 principles"],
+        "examples": ["94 principles", "103 principles"],
         "file_types": ["md", "json"],
         "criticality": "medium",
         "auto_update": true
@@ -81,6 +81,14 @@
         "pattern": "Operational Documentation Lifecycle",
         "description": "Named reference to principle content",
         "current_principle": "#94",
+        "file_types": ["md"],
+        "criticality": "medium",
+        "auto_update": true
+      },
+      "comprehensive_handoff_completion": {
+        "pattern": "Comprehensive Handoff Completion Assessment",
+        "description": "Named reference to principle content",
+        "current_principle": "#101",
         "file_types": ["md"],
         "criticality": "medium",
         "auto_update": true
@@ -132,7 +140,7 @@
         "path": "docs/knowledge/principles/operational-excellence.md",
         "role": "Operational principles",
         "criticality": "high",
-        "principle_count": 19,
+        "principle_count": 23,
         "update_priority": 2
       },
       {
@@ -230,7 +238,7 @@
       {
         "issue": "Category count accuracy",
         "description": "Monitor that category counts in navigation.md sum to total",
-        "expected_sum": 100,
+        "expected_sum": 103,
         "monitoring_script": "scripts/validation/validate-reference-integrity.sh"
       }
     ]
@@ -257,8 +265,8 @@
     }
   },
   "statistics": {
-    "total_principles": 100,
-    "principle_range": "1-100",
+    "total_principles": 103,
+    "principle_range": "1-103",
     "last_validation": "2025-07-17T15:14:45-06:00",
     "reference_integrity": "verified",
     "cross_reference_density": 0.847,
