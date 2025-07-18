@@ -145,7 +145,7 @@ graph TD
 
 ## MANDATORY Activation Protocol
 
-```bash
+```markdown
 # EXECUTE complete system nomenclature standardization
 /technical-nomenclature
 

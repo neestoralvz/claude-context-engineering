@@ -9,11 +9,30 @@
 **CONSISTENCIA**: Patrones uniformes que reduce carga cognitiva  
 **VELOCIDAD**: Escaneo visual ultra-rápido para información crítica
 
+## 🔴 CRÍTICO: Comunicación Directa Claude Code → Usuario
+
+**NUEVA ESPECIFICACIÓN**: La comunicación debe ser directa de Claude Code al usuario, eliminando bash como canal de comunicación.
+
+**❌ ELIMINADO**: Referencias a bash notifications, echo/printf como canales de comunicación
+**✅ REQUERIDO**: Formato compacto directo `⟳ /comando → resultado 🎯 [tiempo]`
+
 ## ⚡ Biblioteca Compacta
 
 ```bash
 # Cargar sistema de notificaciones compactas
 source "$BASE_DIR/scripts/core/compact-notifications.sh"
+```
+
+## 🔄 Formato Compacto Directo (Claude Code → Usuario)
+
+**MANDATORY**: La comunicación debe ser directa de Claude Code al usuario.
+
+```markdown
+# Formato estándar: ⟳ /comando → resultado 🎯 [tiempo]
+⟳ /discover → 3 Task agents deployed 🎯 [0.8s]
+✓ /validate → All tests passed 🎯 [3.2s]
+✗ /execute → Task failed: missing dependency 🎯 [1.1s]
+⚠ /sync-docs → 2 files need manual review 🎯 [2.7s]
 ```
 
 ## 🔧 Funciones Principales
@@ -75,6 +94,21 @@ cn_validation "P55/P56=ok" "Math=ok" "Links=warn" "time=2.1s"
 # ⟳ /context-eng → ✓ 76cmd loaded [1.8s]
 cn_command "/context-eng" "76cmd loaded" "1.8s"
 # Output: ⟳ /context-eng → ✓ 76cmd loaded [1.8s]
+```
+
+### Comunicación Directa Claude Code → Usuario
+```markdown
+# Formato estándar para comunicación directa
+⟳ /comando → resultado 🎯 [tiempo]
+✓ /comando → éxito 🎯 [tiempo]
+✗ /comando → error details 🎯 [tiempo]
+⚠ /comando → warning details 🎯 [tiempo]
+
+# Ejemplos prácticos
+⟳ /discover → 3 Task agents deployed 🎯 [0.8s]
+✓ /validate → All tests passed 🎯 [3.2s]
+✗ /execute → Task failed: missing dependency 🎯 [1.1s]
+⚠ /sync-docs → 2 files need manual review 🎯 [2.7s]
 ```
 
 ### Health del Sistema

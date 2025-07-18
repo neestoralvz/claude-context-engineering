@@ -6,19 +6,12 @@
 
 set -e
 
-echo "🚨 Emergency Link Repair System"
+echo "⟳ /emergency-link-repair → Emergency Link Repair System 🎯"
 echo "==============================="
 echo ""
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-BOLD='\033[1m'
-NC='\033[0m' # No Color
+# Timing for reports
+START_TIME=$(date +%s)
 
 # System paths
 BASE_DIR="/Users/nalve/claude-context-engineering"
@@ -36,10 +29,10 @@ successful_repairs=0
 failed_repairs=0
 
 show_emergency_header() {
-    echo -e "${BOLD}${RED}🚨 EMERGENCY LINK REPAIR PROTOCOL ACTIVATED 🚨${NC}"
-    echo -e "${BOLD}${RED}=============================================${NC}"
-    echo -e "Session ID: ${CYAN}$repair_session_id${NC}"
-    echo -e "Started: ${CYAN}$(date)${NC}"
+    echo "⟳ /emergency-link-repair → 🚨 EMERGENCY LINK REPAIR PROTOCOL ACTIVATED 🚨 🎯"
+    echo "============================================="
+    echo "⟳ /emergency-link-repair → Session ID: $repair_session_id 🎯"
+    echo "⟳ /emergency-link-repair → Started: $(date) 🎯"
     echo ""
 }
 
@@ -54,22 +47,22 @@ log_repair_event() {
     
     case $severity in
         "CRITICAL")
-            echo -e "${RED}💀 CRITICAL:${NC} $message"
+            echo "⟳ /emergency-link-repair → 💀 CRITICAL: $message 🎯"
             ;;
         "ERROR")
-            echo -e "${RED}❌ ERROR:${NC} $message"
+            echo "⟳ /emergency-link-repair → ❌ ERROR: $message 🎯"
             ;;
         "WARNING")
-            echo -e "${YELLOW}⚠️ WARNING:${NC} $message"
+            echo "⟳ /emergency-link-repair → ⚠️ WARNING: $message 🎯"
             ;;
         "SUCCESS")
-            echo -e "${GREEN}✅ SUCCESS:${NC} $message"
+            echo "⟳ /emergency-link-repair → ✅ SUCCESS: $message 🎯"
             ;;
         "REPAIR")
-            echo -e "${PURPLE}🔧 REPAIR:${NC} $message"
+            echo "⟳ /emergency-link-repair → 🔧 REPAIR: $message 🎯"
             ;;
         *)
-            echo -e "${BLUE}ℹ️ INFO:${NC} $message"
+            echo "⟳ /emergency-link-repair → ℹ️ INFO: $message 🎯"
             ;;
     esac
 }
@@ -80,8 +73,8 @@ diagnose_link_failure() {
     
     log_repair_event "DIAGNOSIS_START" "Analyzing validation failure from: $validation_log" "INFO"
     
-    echo -e "${CYAN}🔍 DIAGNOSTIC PHASE${NC}"
-    echo -e "==================="
+    echo "⟳ /emergency-link-repair → 🔍 DIAGNOSTIC PHASE 🎯"
+    echo "==================="
     
     # Check if validation log exists
     if [ ! -f "$validation_log" ]; then
@@ -94,13 +87,13 @@ diagnose_link_failure() {
     
     if [ "$failed_checks" -eq 0 ]; then
         log_repair_event "DIAGNOSIS_RESULT" "No failed checks found in validation log" "WARNING"
-        echo -e "${YELLOW}⚠️ No explicit failures found in validation log${NC}"
+        echo "⟳ /emergency-link-repair → ⚠️ No explicit failures found in validation log 🎯"
         return 0
     fi
     
-    echo -e "${RED}Found $failed_checks failed checks:${NC}"
+    echo "⟳ /emergency-link-repair → Found $failed_checks failed checks 🎯"
     grep "❌ FAIL" "$validation_log" 2>/dev/null | while read -r failure; do
-        echo -e "  ${RED}• $failure${NC}"
+        echo "⟳ /emergency-link-repair → • $failure 🎯"
         log_repair_event "FAILURE_DETECTED" "$failure" "ERROR"
     done
     
@@ -114,8 +107,8 @@ identify_broken_links() {
     
     log_repair_event "LINK_SCAN_START" "Scanning for broken links in: $scan_directory" "INFO"
     
-    echo -e "${CYAN}🔗 LINK ANALYSIS PHASE${NC}"
-    echo -e "======================"
+    echo "⟳ /emergency-link-repair → 🔗 LINK ANALYSIS PHASE 🎯"
+    echo "======================"
     
     local broken_links_file="$REPAIR_DIR/broken-links-$repair_session_id.txt"
     local link_count=0
@@ -137,7 +130,7 @@ identify_broken_links() {
                     broken_count=$((broken_count + 1))
                     echo "BROKEN: $file:$line_num -> $link_path" >> "$broken_links_file"
                     log_repair_event "BROKEN_LINK" "$file:$line_num -> $link_path" "ERROR"
-                    echo -e "${RED}❌ $file:$line_num -> $link_path${NC}"
+                    echo "⟳ /emergency-link-repair → ❌ $file:$line_num -> $link_path 🎯"
                 fi
             fi
         done
@@ -146,11 +139,11 @@ identify_broken_links() {
     if [ -f "$broken_links_file" ]; then
         local total_broken=$(wc -l < "$broken_links_file")
         log_repair_event "LINK_SCAN_RESULT" "Found $total_broken broken links" "WARNING"
-        echo -e "${RED}Found $total_broken broken links${NC}"
+        echo "⟳ /emergency-link-repair → Found $total_broken broken links 🎯"
         return $total_broken
     else
         log_repair_event "LINK_SCAN_RESULT" "No broken links found" "SUCCESS"
-        echo -e "${GREEN}✅ No broken links found${NC}"
+        echo "⟳ /emergency-link-repair → ✅ No broken links found 🎯"
         return 0
     fi
 }
@@ -191,7 +184,7 @@ repair_broken_link() {
             rm "$source_file.tmp"
             log_repair_event "REPAIR_SUCCESS" "Repaired: $broken_link -> $relative_path" "SUCCESS"
             successful_repairs=$((successful_repairs + 1))
-            echo -e "${GREEN}✅ Repaired: $broken_link -> $relative_path${NC}"
+            echo "⟳ /emergency-link-repair → ✅ Repaired: $broken_link -> $relative_path 🎯"
             return 0
         else
             # Restore backup on failure
@@ -203,9 +196,9 @@ repair_broken_link() {
     else
         # Multiple matches - require manual intervention
         log_repair_event "REPAIR_MANUAL" "Multiple targets found for $broken_link - manual intervention required" "WARNING"
-        echo -e "${YELLOW}⚠️ Multiple potential targets for $broken_link:${NC}"
+        echo "⟳ /emergency-link-repair → ⚠️ Multiple potential targets for $broken_link 🎯"
         for target in "${potential_targets[@]}"; do
-            echo -e "  ${CYAN}• $target${NC}"
+            echo "⟳ /emergency-link-repair → • $target 🎯"
         done
         failed_repairs=$((failed_repairs + 1))
         return 2
@@ -221,8 +214,8 @@ repair_all_broken_links() {
         return 1
     fi
     
-    echo -e "${CYAN}🔧 REPAIR PHASE${NC}"
-    echo -e "==============="
+    echo "⟳ /emergency-link-repair → 🔧 REPAIR PHASE 🎯"
+    echo "==============="
     
     local repair_count=0
     while IFS=: read -r source_file line_number broken_link; do
@@ -242,19 +235,19 @@ repair_all_broken_links() {
 
 # Post-repair validation
 validate_repairs() {
-    echo -e "${CYAN}🔍 POST-REPAIR VALIDATION${NC}"
-    echo -e "========================="
+    echo "⟳ /emergency-link-repair → 🔍 POST-REPAIR VALIDATION 🎯"
+    echo "========================="
     
     log_repair_event "POST_REPAIR_VALIDATION" "Running validation after repairs" "INFO"
     
     # Run navigation validation
     if "$SCRIPTS_DIR/validation/validate-navigation.sh" > "$REPAIR_DIR/post-repair-validation-$repair_session_id.log" 2>&1; then
         log_repair_event "POST_REPAIR_SUCCESS" "Post-repair validation passed" "SUCCESS"
-        echo -e "${GREEN}✅ Post-repair validation passed${NC}"
+        echo "⟳ /emergency-link-repair → ✅ Post-repair validation passed 🎯"
         return 0
     else
         log_repair_event "POST_REPAIR_FAILED" "Post-repair validation failed" "ERROR"
-        echo -e "${RED}❌ Post-repair validation failed${NC}"
+        echo "⟳ /emergency-link-repair → ❌ Post-repair validation failed 🎯"
         return 1
     fi
 }
@@ -289,7 +282,7 @@ generate_repair_report() {
 EOF
     
     log_repair_event "REPORT_GENERATED" "Emergency repair report generated: $report_file" "INFO"
-    echo -e "${BLUE}📊 Repair report: $report_file${NC}"
+    echo "⟳ /emergency-link-repair → 📊 Repair report: $report_file 🎯"
 }
 
 # Show usage
@@ -315,14 +308,14 @@ full_repair_cycle() {
     
     show_emergency_header
     
-    echo -e "${BOLD}${PURPLE}🚨 FULL EMERGENCY REPAIR CYCLE${NC}"
-    echo -e "${BOLD}${PURPLE}==============================${NC}"
+    echo "⟳ /emergency-link-repair → 🚨 FULL EMERGENCY REPAIR CYCLE 🎯"
+    echo "=============================="
     echo ""
     
     # Step 1: Identify broken links
     if ! identify_broken_links "$scan_dir"; then
         log_repair_event "FULL_REPAIR_SUCCESS" "No broken links found - no repairs needed" "SUCCESS"
-        echo -e "${GREEN}✅ No repairs needed - system is healthy${NC}"
+        echo "⟳ /emergency-link-repair → ✅ No repairs needed - system is healthy 🎯"
         return 0
     fi
     
@@ -337,22 +330,23 @@ full_repair_cycle() {
     generate_repair_report
     
     # Summary
+    ELAPSED_TIME=$(($(date +%s) - START_TIME))
     echo ""
-    echo -e "${BOLD}${PURPLE}📊 EMERGENCY REPAIR SUMMARY${NC}"
-    echo -e "${BOLD}${PURPLE}===========================${NC}"
-    echo -e "Total Repairs Attempted: ${CYAN}$total_repairs${NC}"
-    echo -e "Successful Repairs: ${GREEN}$successful_repairs${NC}"
-    echo -e "Failed Repairs: ${RED}$failed_repairs${NC}"
-    echo -e "Success Rate: ${CYAN}$(echo "scale=2; $successful_repairs / $total_repairs * 100" | bc -l 2>/dev/null || echo "0")%${NC}"
-    echo -e "Post-Repair Validation: $([ $validation_result -eq 0 ] && echo -e "${GREEN}PASSED${NC}" || echo -e "${RED}FAILED${NC}")"
+    echo "⟳ /emergency-link-repair → 📊 EMERGENCY REPAIR SUMMARY 🎯 [${ELAPSED_TIME}s]"
+    echo "==========================="
+    echo "⟳ /emergency-link-repair → Total Repairs Attempted: $total_repairs 🎯"
+    echo "⟳ /emergency-link-repair → Successful Repairs: $successful_repairs 🎯"
+    echo "⟳ /emergency-link-repair → Failed Repairs: $failed_repairs 🎯"
+    echo "⟳ /emergency-link-repair → Success Rate: $(echo "scale=2; $successful_repairs / $total_repairs * 100" | bc -l 2>/dev/null || echo "0")% 🎯"
+    echo "⟳ /emergency-link-repair → Post-Repair Validation: $([ $validation_result -eq 0 ] && echo "PASSED" || echo "FAILED") 🎯"
     echo ""
     
     if [ $failed_repairs -eq 0 ] && [ $validation_result -eq 0 ]; then
-        echo -e "${GREEN}🎉 EMERGENCY REPAIR SUCCESSFUL - SYSTEM RESTORED${NC}"
+        echo "⟳ /emergency-link-repair → 🎉 EMERGENCY REPAIR SUCCESSFUL - SYSTEM RESTORED 🎯 [${ELAPSED_TIME}s]"
         log_repair_event "EMERGENCY_RESOLVED" "All repairs successful and validation passed" "SUCCESS"
         return 0
     else
-        echo -e "${RED}⚠️ MANUAL INTERVENTION REQUIRED${NC}"
+        echo "⟳ /emergency-link-repair → ⚠️ MANUAL INTERVENTION REQUIRED 🎯 [${ELAPSED_TIME}s]"
         log_repair_event "MANUAL_REQUIRED" "Some repairs failed or validation did not pass" "WARNING"
         return 1
     fi

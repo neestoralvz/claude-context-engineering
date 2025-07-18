@@ -1,0 +1,35 @@
+2025-07-17 22:42:44 [INFO] [0;34m🚀 Iniciando validación de autocontención de comandos[0m
+2025-07-17 22:42:44 [INFO] [0;34m📋 Principio #102: Command Autocontención Architecture[0m
+2025-07-17 22:42:44 [INFO] [0;34m🔍 Verificando prerrequisitos...[0m
+2025-07-17 22:42:44 [INFO] [0;34m📊 Total de comandos a validar:      172[0m
+2025-07-17 22:42:44 [SUCCESS] [0;32m✅ Prerrequisitos verificados[0m
+2025-07-17 22:42:44 [INFO] [0;34m🔍 Procesando comandos...[0m
+2025-07-17 22:42:44 [INFO] [0;34m🔍 Validando: executable/behavior/dynamic-dependency-analysis.md[0m
+2025-07-17 22:42:44 [SUCCESS] [0;32m✅ executable/behavior/dynamic-dependency-analysis.md: Autocontenido correctamente[0m
+2025-07-17 22:42:44 [INFO] [0;34m🔍 Validando: executable/behavior/behavioral-control-layer.md[0m
+2025-07-17 22:42:44 [SUCCESS] [0;32m✅ executable/behavior/behavioral-control-layer.md: Autocontenido correctamente[0m
+2025-07-17 22:42:44 [INFO] [0;34m🔍 Validando: executable/behavior/monitor.md[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:168[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - **test-trigger-system.sh**: Display HEALTHY/FAILED status with test count results (target: count/22 PASSED)[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:169[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - **execute-commands.sh**: Show HEALTHY/FAILED status with successful execution count[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:266[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - Validar que script system (test-trigger-system.sh, execute-commands.sh, progressive-thinking.md) esté healthy[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:287[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - **Re-validation**: Display re-validating test-trigger-system.sh (22 tests) progress[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:288[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - **Reinitialization**: Show reinitializing execute-commands.sh integration status[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:317[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - **test-trigger-system.sh**: Show HEALTHY/FAILED status with trigger test results (XX/22 PASSED)[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:318[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - **execute-commands.sh**: Display HEALTHY/FAILED status with successful command execution count[0m
+2025-07-17 22:42:44 [ERROR] [0;31m🚫 Dependencia de script en executable/behavior/monitor.md:320[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   Patrón: \.sh[0m
+2025-07-17 22:42:44 [ERROR] [0;31m   - **context_engineering_formulas.sh**: Display LOADED/FAILED status with formula validation status[0m

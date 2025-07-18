@@ -48,15 +48,13 @@ Git worktrees ENABLE running **multiple Claude Code sessions simultaneously** on
 Single Branch → Single Claude Session → Sequential Development → MANDATORY Context Loss
 ```
 
-### **Git Worktrees Solution**
-```yaml
-Main Repository
-├── worktrees/
-│   ├── feature-auth/     # Claude Session 1: Authentication system
-│   ├── feature-ui/       # Claude Session 2: UI components  
-│   ├── bugfix-perf/      # Claude Session 3: Performance optimization
-│   └── refactor-db/      # Claude Session 4: Database refactoring
-```
+### **CRITICAL Git Worktrees Architecture**
+**Main Repository Structure**:
+- **worktrees/** (Central coordination directory)
+  - **feature-auth/** (Claude Session 1: Authentication system development)
+  - **feature-ui/** (Claude Session 2: UI components implementation)
+  - **bugfix-perf/** (Claude Session 3: Performance optimization focused)
+  - **refactor-db/** (Claude Session 4: Database refactoring specialized)
 
 **RESULT**: **4 parallel AI conversations** each with SPECIALIZED focus and GUARANTEED preserved context.
 
@@ -633,6 +631,6 @@ claude
 
 ---
 
-**Quick Navigation**: [CLAUDE.md](../CLAUDE.md) | **Commands**: [Git Workflow Commands](../.claude/commands/executable/git-workflow/) | **Scripts**: [Git Automation](../scripts/git-workflow/)
+**Quick Navigation**: [CLAUDE.md](../CLAUDE.md) | **Commands**: [Git Workflow Commands](~/.claude/commands/executable/git-workflow/) | **Scripts**: [Git Automation](../scripts/git-workflow/)
 
 **Integration Points**: [Strategic Git Operations](../commands/executable/execution/strategic-git.md) | [Parallel Execution Framework](../commands/executable/execution/parallel-tool-execution.md) | [Context Engineering Hub](../README.md)

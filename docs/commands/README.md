@@ -1,5 +1,28 @@
 # Context Engineering Commands
 
+## 🔴 CRITICAL: Claude Code Slash Commands Specification
+
+**⚠️ MANDATORY**: ALL Context Engineering commands are **Claude Code slash commands** (`/command`) and must **NEVER** be executed as bash commands.
+
+### **✅ CORRECT Usage**
+```markdown
+/ce [objective]              # ✅ Claude Code slash command
+/thinking                    # ✅ Claude Code slash command
+/execute                     # ✅ Claude Code slash command
+/containerize my-project     # ✅ Claude Code slash command
+```
+
+### **❌ INCORRECT Usage**
+```bash
+./ce [objective]             # ❌ WRONG: Not a bash script
+bash /thinking               # ❌ WRONG: Not a bash script
+chmod +x /execute            # ❌ WRONG: Not a bash script
+```
+
+**📋 Complete specification**: [CLAUDE.md#critical-claude-code-slash-commands-vs-bash-commands](../CLAUDE.md#-critical-claude-code-slash-commands-vs-bash-commands)
+
+---
+
 ## Command Synchronization Status ✅
 
 **Current Status**: **SYNCHRONIZED** 
@@ -19,7 +42,7 @@ The command synchronization system now includes:
 ### **Automated Counter**
 - **Location**: `scripts/validation/automated-command-counter-v2.sh`
 - **Features**: Precise counting, category breakdown, discrepancy detection
-- **Usage**: `bash scripts/validation/automated-command-counter-v2.sh`
+- **Usage**: `find docs/commands -name '*.md' | wc -l | awk '{print "Docs:", $1}' && find ~/.claude/commands -name '*.md' 2>/dev/null | wc -l | awk '{print "Claude:", $1}'`
 
 ## 📁 Directory Structure
 
@@ -77,7 +100,7 @@ bash scripts/maintenance/command-maintenance-workflow.sh monitor
 node scripts/enhanced-command-sync.js
 
 # Direct validation
-bash scripts/validation/automated-command-counter-v2.sh
+find docs/commands -name '*.md' | wc -l | awk '{print "Docs:", $1}' && find ~/.claude/commands -name '*.md' 2>/dev/null | wc -l | awk '{print "Claude:", $1}'
 ```
 
 ### **Conflict Resolution**

@@ -115,7 +115,7 @@
 ****Phase 1: Discovery - Exact Commands to Execute****
 
 **Step 1: Decision Analysis**
-```bash
+```markdown
 # LLM MUST execute this exact command:
 /decision-engine
 
@@ -126,7 +126,7 @@
 **Step 2: Confidence-Based Command Routing**
 
 **High Confidence (≥90%)**:
-```bash
+```markdown
 # LLM MUST execute these commands in parallel:
 /knowledge-hierarchy
 /recognize-patterns  

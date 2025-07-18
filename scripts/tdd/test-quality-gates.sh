@@ -6,18 +6,12 @@
 
 set -e
 
-echo "🚪 TDD Quality Gates - Universal Activation System"
+echo "⟳ /test-quality-gates → TDD Quality Gates - Universal Activation System 🎯"
 echo "================================================="
 echo ""
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m' # No Color
+# Timing for reports
+START_TIME=$(date +%s)
 
 # System paths
 BASE_DIR="/Users/nalve/claude-context-engineering"
@@ -33,7 +27,7 @@ mkdir -p "$TDD_RESULTS_DIR/quality-gates"
 if [ -f "$FORMULAS_DIR/context_engineering_formulas.sh" ]; then
     source "$FORMULAS_DIR/context_engineering_formulas.sh"
 else
-    echo -e "${RED}❌ Formula library not found. Run verify-mathematical-formulas.sh first.${NC}"
+    echo "⟳ /test-quality-gates → ❌ Formula library not found. Run verify-mathematical-formulas.sh first 🎯"
     exit 1
 fi
 
@@ -48,11 +42,11 @@ gates_failed=0
 remediation_attempts=0
 remediation_successes=0
 
-echo -e "${PURPLE}🎯 QUALITY GATES INITIALIZATION${NC}"
+echo "⟳ /test-quality-gates → 🎯 QUALITY GATES INITIALIZATION 🎯"
 echo "==============================="
-echo -e "Session ID: ${CYAN}$quality_gate_session_id${NC}"
-echo -e "Maximum Remediation Attempts: ${BLUE}$max_remediation_attempts${NC}"
-echo -e "Universal Activation Phases: ${BLUE}5${NC}"
+echo "⟳ /test-quality-gates → Session ID: $quality_gate_session_id 🎯"
+echo "⟳ /test-quality-gates → Maximum Remediation Attempts: $max_remediation_attempts 🎯"
+echo "⟳ /test-quality-gates → Universal Activation Phases: 5 🎯"
 echo ""
 
 # Quality gate result tracker
@@ -65,11 +59,11 @@ track_gate_result() {
     total_gates_tested=$((total_gates_tested + 1))
     
     if [ "$gate_status" = "PASSED" ]; then
-        echo -e "${GREEN}✅ $gate_name: PASSED${NC} (Score: $quality_score, Threshold: ≥$threshold)"
+        echo "⟳ /test-quality-gates → ✅ $gate_name: PASSED (Score: $quality_score, Threshold: ≥$threshold) 🎯"
         gates_passed=$((gates_passed + 1))
         return 0
     else
-        echo -e "${RED}❌ $gate_name: FAILED${NC} (Score: $quality_score, Threshold: ≥$threshold)"
+        echo "⟳ /test-quality-gates → ❌ $gate_name: FAILED (Score: $quality_score, Threshold: ≥$threshold) 🎯"
         gates_failed=$((gates_failed + 1))
         return 1
     fi
@@ -78,7 +72,7 @@ track_gate_result() {
 # Gate 1: Analysis Quality
 gate_1_analysis_quality() {
     local attempt="$1"
-    echo -e "${CYAN}🔍 Gate 1: Analysis Quality Verification${NC}"
+    echo "⟳ /test-quality-gates → 🔍 Gate 1: Analysis Quality Verification 🎯"
     echo "======================================="
     
     # Simulate analysis quality metrics (integrate with real system)
@@ -86,9 +80,9 @@ gate_1_analysis_quality() {
     local complexity_score=$(echo "scale=1; $(shuf -i 8-15 -n 1) / 10" | bc)
     local analysis_completeness=$(echo "scale=4; $(shuf -i 9200-9800 -n 1) / 10000" | bc)
     
-    echo -e "  Confidence Score: ${BLUE}$confidence_score${NC} (Threshold: ≥0.85)"
-    echo -e "  Complexity Assessment: ${BLUE}$complexity_score${NC} (Threshold: ≤1.5)"
-    echo -e "  Analysis Completeness: ${BLUE}$analysis_completeness${NC} (Threshold: ≥0.95)"
+    echo "⟳ /test-quality-gates → Confidence Score: $confidence_score (Threshold: ≥0.85) 🎯"
+    echo "⟳ /test-quality-gates → Complexity Assessment: $complexity_score (Threshold: ≤1.5) 🎯"
+    echo "⟳ /test-quality-gates → Analysis Completeness: $analysis_completeness (Threshold: ≥0.95) 🎯"
     echo ""
     
     # Verify thresholds
@@ -97,24 +91,24 @@ gate_1_analysis_quality() {
     local completeness_pass=false
     
     if (( $(echo "$confidence_score >= 0.85" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Confidence Score threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Confidence Score threshold met 🎯"
         confidence_pass=true
     else
-        echo -e "  ${RED}❌ Confidence Score below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Confidence Score below threshold 🎯"
     fi
     
     if (( $(echo "$complexity_score <= 1.5" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Complexity Assessment threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Complexity Assessment threshold met 🎯"
         complexity_pass=true
     else
-        echo -e "  ${RED}❌ Complexity Assessment above threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Complexity Assessment above threshold 🎯"
     fi
     
     if (( $(echo "$analysis_completeness >= 0.95" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Analysis Completeness threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Analysis Completeness threshold met 🎯"
         completeness_pass=true
     else
-        echo -e "  ${RED}❌ Analysis Completeness below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Analysis Completeness below threshold 🎯"
     fi
     
     # Gate decision
@@ -132,7 +126,7 @@ gate_1_analysis_quality() {
 # Gate 2: Routing Accuracy
 gate_2_routing_accuracy() {
     local attempt="$1"
-    echo -e "${CYAN}🎯 Gate 2: Routing Accuracy Verification${NC}"
+    echo "⟳ /test-quality-gates → 🎯 Gate 2: Routing Accuracy Verification 🎯"
     echo "======================================"
     
     # Get routing accuracy from decision engine (current: 84.28%)
@@ -140,9 +134,9 @@ gate_2_routing_accuracy() {
     local mathematical_triggers=1.0  # 100% (22/22 tests passed)
     local command_selection_precision=$(echo "scale=4; $(shuf -i 8800-9200 -n 1) / 10000" | bc)
     
-    echo -e "  Routing Accuracy: ${BLUE}$routing_accuracy${NC} (Threshold: ≥0.90)"
-    echo -e "  Mathematical Triggers: ${BLUE}$mathematical_triggers${NC} (Threshold: ≥0.98)"
-    echo -e "  Command Selection: ${BLUE}$command_selection_precision${NC} (Threshold: ≥0.88)"
+    echo "⟳ /test-quality-gates → Routing Accuracy: $routing_accuracy (Threshold: ≥0.90) 🎯"
+    echo "⟳ /test-quality-gates → Mathematical Triggers: $mathematical_triggers (Threshold: ≥0.98) 🎯"
+    echo "⟳ /test-quality-gates → Command Selection: $command_selection_precision (Threshold: ≥0.88) 🎯"
     echo ""
     
     # Verify thresholds
@@ -151,24 +145,24 @@ gate_2_routing_accuracy() {
     local selection_pass=false
     
     if (( $(echo "$routing_accuracy >= 0.90" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Routing Accuracy threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Routing Accuracy threshold met 🎯"
         routing_pass=true
     else
-        echo -e "  ${RED}❌ Routing Accuracy below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Routing Accuracy below threshold 🎯"
     fi
     
     if (( $(echo "$mathematical_triggers >= 0.98" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Mathematical Triggers threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Mathematical Triggers threshold met 🎯"
         triggers_pass=true
     else
-        echo -e "  ${RED}❌ Mathematical Triggers below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Mathematical Triggers below threshold 🎯"
     fi
     
     if (( $(echo "$command_selection_precision >= 0.88" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Command Selection threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Command Selection threshold met 🎯"
         selection_pass=true
     else
-        echo -e "  ${RED}❌ Command Selection below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Command Selection below threshold 🎯"
     fi
     
     # Gate decision
@@ -186,7 +180,7 @@ gate_2_routing_accuracy() {
 # Gate 3: Execution Success
 gate_3_execution_success() {
     local attempt="$1"
-    echo -e "${CYAN}⚙️ Gate 3: Execution Success Verification${NC}"
+    echo "⟳ /test-quality-gates → ⚙️ Gate 3: Execution Success Verification 🎯"
     echo "======================================="
     
     # Get execution metrics from system (current: 87.69% success rate)
@@ -194,9 +188,9 @@ gate_3_execution_success() {
     local tool_call_compliance=$(echo "scale=4; $(shuf -i 9700-9900 -n 1) / 10000" | bc)
     local error_handling_effectiveness=$(echo "scale=4; $(shuf -i 9000-9500 -n 1) / 10000" | bc)
     
-    echo -e "  Execution Success Rate: ${BLUE}$execution_success_rate${NC} (Threshold: ≥0.87)"
-    echo -e "  Tool Call Compliance: ${BLUE}$tool_call_compliance${NC} (Threshold: ≥0.98)"
-    echo -e "  Error Handling: ${BLUE}$error_handling_effectiveness${NC} (Threshold: ≥0.90)"
+    echo "⟳ /test-quality-gates → Execution Success Rate: $execution_success_rate (Threshold: ≥0.87) 🎯"
+    echo "⟳ /test-quality-gates → Tool Call Compliance: $tool_call_compliance (Threshold: ≥0.98) 🎯"
+    echo "⟳ /test-quality-gates → Error Handling: $error_handling_effectiveness (Threshold: ≥0.90) 🎯"
     echo ""
     
     # Verify thresholds
@@ -205,24 +199,24 @@ gate_3_execution_success() {
     local error_pass=false
     
     if (( $(echo "$execution_success_rate >= 0.87" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Execution Success Rate threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Execution Success Rate threshold met 🎯"
         execution_pass=true
     else
-        echo -e "  ${RED}❌ Execution Success Rate below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Execution Success Rate below threshold 🎯"
     fi
     
     if (( $(echo "$tool_call_compliance >= 0.98" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Tool Call Compliance threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Tool Call Compliance threshold met 🎯"
         compliance_pass=true
     else
-        echo -e "  ${RED}❌ Tool Call Compliance below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Tool Call Compliance below threshold 🎯"
     fi
     
     if (( $(echo "$error_handling_effectiveness >= 0.90" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Error Handling threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Error Handling threshold met 🎯"
         error_pass=true
     else
-        echo -e "  ${RED}❌ Error Handling below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Error Handling below threshold 🎯"
     fi
     
     # Gate decision
@@ -240,17 +234,17 @@ gate_3_execution_success() {
 # Gate 4: Validation Completeness
 gate_4_validation_completeness() {
     local attempt="$1"
-    echo -e "${CYAN}✅ Gate 4: Validation Completeness Verification${NC}"
-    echo "=============================================="
+    echo "⟳ /test-quality-gates → ✅ Gate 4: Validation Completeness Verification 🎯"
+    echo "============================================="
     
     # Get validation metrics
     local verification_loops_success=$(echo "scale=4; $(shuf -i 8500-9500 -n 1) / 10000" | bc)
     local mathematical_precision=1.0  # 100% (22/22 tests passed)
     local quality_measurement_accuracy=$(echo "scale=4; $(shuf -i 9200-9800 -n 1) / 10000" | bc)
     
-    echo -e "  Verification Loops: ${BLUE}$verification_loops_success${NC} (Threshold: ≥0.85)"
-    echo -e "  Mathematical Precision: ${BLUE}$mathematical_precision${NC} (Threshold: ≥1.0)"
-    echo -e "  Quality Measurement: ${BLUE}$quality_measurement_accuracy${NC} (Threshold: ≥0.95)"
+    echo "⟳ /test-quality-gates → Verification Loops: $verification_loops_success (Threshold: ≥0.85) 🎯"
+    echo "⟳ /test-quality-gates → Mathematical Precision: $mathematical_precision (Threshold: ≥1.0) 🎯"
+    echo "⟳ /test-quality-gates → Quality Measurement: $quality_measurement_accuracy (Threshold: ≥0.95) 🎯"
     echo ""
     
     # Verify thresholds
@@ -259,24 +253,24 @@ gate_4_validation_completeness() {
     local quality_pass=false
     
     if (( $(echo "$verification_loops_success >= 0.85" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Verification Loops threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Verification Loops threshold met 🎯"
         loops_pass=true
     else
-        echo -e "  ${RED}❌ Verification Loops below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Verification Loops below threshold 🎯"
     fi
     
     if (( $(echo "$mathematical_precision >= 1.0" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Mathematical Precision threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Mathematical Precision threshold met 🎯"
         precision_pass=true
     else
-        echo -e "  ${RED}❌ Mathematical Precision below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Mathematical Precision below threshold 🎯"
     fi
     
     if (( $(echo "$quality_measurement_accuracy >= 0.95" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Quality Measurement threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Quality Measurement threshold met 🎯"
         quality_pass=true
     else
-        echo -e "  ${RED}❌ Quality Measurement below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Quality Measurement below threshold 🎯"
     fi
     
     # Gate decision
@@ -294,7 +288,7 @@ gate_4_validation_completeness() {
 # Gate 5: Completion Verification
 gate_5_completion_verification() {
     local attempt="$1"
-    echo -e "${CYAN}🎯 Gate 5: Completion Verification${NC}"
+    echo "⟳ /test-quality-gates → 🎯 Gate 5: Completion Verification 🎯"
     echo "================================="
     
     # Get completion metrics
@@ -302,9 +296,9 @@ gate_5_completion_verification() {
     local documentation_currency=$(echo "scale=4; $(shuf -i 9000-9500 -n 1) / 10000" | bc)
     local pattern_crystallization=$(echo "scale=4; $(shuf -i 8500-9200 -n 1) / 10000" | bc)
     
-    echo -e "  System Integration: ${BLUE}$system_integration_health${NC} (Threshold: ≥0.98)"
-    echo -e "  Documentation Currency: ${BLUE}$documentation_currency${NC} (Threshold: ≥0.90)"
-    echo -e "  Pattern Crystallization: ${BLUE}$pattern_crystallization${NC} (Threshold: ≥0.85)"
+    echo "⟳ /test-quality-gates → System Integration: $system_integration_health (Threshold: ≥0.98) 🎯"
+    echo "⟳ /test-quality-gates → Documentation Currency: $documentation_currency (Threshold: ≥0.90) 🎯"
+    echo "⟳ /test-quality-gates → Pattern Crystallization: $pattern_crystallization (Threshold: ≥0.85) 🎯"
     echo ""
     
     # Verify thresholds
@@ -313,24 +307,24 @@ gate_5_completion_verification() {
     local pattern_pass=false
     
     if (( $(echo "$system_integration_health >= 0.98" | bc -l) )); then
-        echo -e "  ${GREEN}✅ System Integration threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ System Integration threshold met 🎯"
         integration_pass=true
     else
-        echo -e "  ${RED}❌ System Integration below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ System Integration below threshold 🎯"
     fi
     
     if (( $(echo "$documentation_currency >= 0.90" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Documentation Currency threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Documentation Currency threshold met 🎯"
         documentation_pass=true
     else
-        echo -e "  ${RED}❌ Documentation Currency below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Documentation Currency below threshold 🎯"
     fi
     
     if (( $(echo "$pattern_crystallization >= 0.85" | bc -l) )); then
-        echo -e "  ${GREEN}✅ Pattern Crystallization threshold met${NC}"
+        echo "⟳ /test-quality-gates → ✅ Pattern Crystallization threshold met 🎯"
         pattern_pass=true
     else
-        echo -e "  ${RED}❌ Pattern Crystallization below threshold${NC}"
+        echo "⟳ /test-quality-gates → ❌ Pattern Crystallization below threshold 🎯"
     fi
     
     # Gate decision
@@ -349,19 +343,19 @@ gate_5_completion_verification() {
 remediate_analysis_quality() {
     local failure_reason="$1"
     local attempt="$2"
-    echo -e "${YELLOW}🔧 Remediating Analysis Quality Issues${NC}"
+    echo "⟳ /test-quality-gates → 🔧 Remediating Analysis Quality Issues 🎯"
     echo "======================================"
-    echo -e "Failure Reason: ${RED}$failure_reason${NC}"
-    echo -e "Attempt: ${BLUE}$attempt${NC}/$max_remediation_attempts"
+    echo "⟳ /test-quality-gates → Failure Reason: $failure_reason 🎯"
+    echo "⟳ /test-quality-gates → Attempt: $attempt/$max_remediation_attempts 🎯"
     echo ""
     
     # Simulate remediation (in real system, would trigger actual fixes)
-    echo -e "  ${CYAN}→ Recalibrating confidence scoring algorithms${NC}"
-    echo -e "  ${CYAN}→ Adjusting complexity assessment parameters${NC}"
-    echo -e "  ${CYAN}→ Enhancing analysis completeness verification${NC}"
+    echo "⟳ /test-quality-gates → → Recalibrating confidence scoring algorithms 🎯"
+    echo "⟳ /test-quality-gates → → Adjusting complexity assessment parameters 🎯"
+    echo "⟳ /test-quality-gates → → Enhancing analysis completeness verification 🎯"
     
     remediation_attempts=$((remediation_attempts + 1))
-    echo -e "  ${GREEN}✅ Analysis quality remediation completed${NC}"
+    echo "⟳ /test-quality-gates → ✅ Analysis quality remediation completed 🎯"
     return 0
 }
 
@@ -488,7 +482,7 @@ execute_quality_gate_with_remediation() {
 }
 
 # Main quality gates execution
-echo -e "${PURPLE}🚀 EXECUTING QUALITY GATES SYSTEM${NC}"
+echo "⟳ /test-quality-gates → 🚀 EXECUTING QUALITY GATES SYSTEM 🎯"
 echo "================================="
 echo ""
 
@@ -505,7 +499,8 @@ execute_quality_gate_with_remediation "gate_5_completion_verification" "GATE_5_C
 echo ""
 
 # Final quality gates report
-echo -e "${PURPLE}📊 QUALITY GATES COMPLETION REPORT${NC}"
+ELAPSED_TIME=$(($(date +%s) - START_TIME))
+echo "⟳ /test-quality-gates → 📊 QUALITY GATES COMPLETION REPORT 🎯 [${ELAPSED_TIME}s]"
 echo "=================================="
 
 # Calculate final metrics
@@ -583,25 +578,25 @@ cat > "$quality_gates_report" << EOF
 }
 EOF
 
-echo -e "Total Gates Tested: ${BLUE}$total_gates_tested${NC}"
-echo -e "Gates Passed: ${GREEN}$gates_passed${NC}"
-echo -e "Gates Failed: ${RED}$gates_failed${NC}"
-echo -e "Success Rate: ${BLUE}$final_gates_success_rate${NC} ($(echo "$final_gates_success_rate * 100" | bc | cut -d. -f1)%)"
-echo -e "Remediation Attempts: ${YELLOW}$remediation_attempts${NC}"
-echo -e "Remediation Successes: ${GREEN}$remediation_successes${NC}"
-echo -e "Remediation Success Rate: ${BLUE}$remediation_success_rate${NC} ($(echo "$remediation_success_rate * 100" | bc | cut -d. -f1)%)"
+echo "⟳ /test-quality-gates → Total Gates Tested: $total_gates_tested 🎯"
+echo "⟳ /test-quality-gates → Gates Passed: $gates_passed 🎯"
+echo "⟳ /test-quality-gates → Gates Failed: $gates_failed 🎯"
+echo "⟳ /test-quality-gates → Success Rate: $final_gates_success_rate ($(echo "$final_gates_success_rate * 100" | bc | cut -d. -f1)%) 🎯"
+echo "⟳ /test-quality-gates → Remediation Attempts: $remediation_attempts 🎯"
+echo "⟳ /test-quality-gates → Remediation Successes: $remediation_successes 🎯"
+echo "⟳ /test-quality-gates → Remediation Success Rate: $remediation_success_rate ($(echo "$remediation_success_rate * 100" | bc | cut -d. -f1)%) 🎯"
 echo ""
-echo -e "📁 Quality gates report: ${CYAN}$quality_gates_report${NC}"
+echo "⟳ /test-quality-gates → 📁 Quality gates report: $quality_gates_report 🎯"
 
 if [ "$gates_failed" -eq 0 ]; then
     echo ""
-    echo -e "${GREEN}🎉 ALL QUALITY GATES PASSED!${NC}"
-    echo -e "${GREEN}TDD quality gates system validated and operational.${NC}"
-    echo -e "${GREEN}Automated remediation protocols tested and functional.${NC}"
+    echo "⟳ /test-quality-gates → 🎉 ALL QUALITY GATES PASSED! 🎯 [${ELAPSED_TIME}s]"
+    echo "⟳ /test-quality-gates → TDD quality gates system validated and operational 🎯"
+    echo "⟳ /test-quality-gates → Automated remediation protocols tested and functional 🎯"
     exit 0
 else
     echo ""
-    echo -e "${RED}❌ SOME QUALITY GATES FAILED${NC}"
-    echo -e "${YELLOW}Review failed gates and remediation effectiveness.${NC}"
+    echo "⟳ /test-quality-gates → ❌ SOME QUALITY GATES FAILED 🎯 [${ELAPSED_TIME}s]"
+    echo "⟳ /test-quality-gates → Review failed gates and remediation effectiveness 🎯"
     exit 1
 fi

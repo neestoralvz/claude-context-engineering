@@ -29,6 +29,42 @@ IMPLEMENT strategic planning workflow achieving ≥95% planning completeness to 
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes strategic planning and workflow orchestration scripts:
+
+```bash
+# Core planning and workflow orchestration
+git status && find docs -name "*.md" | grep -E "(plan|workflow)" | head -10
+echo "Planning workflow initiated: $(date)" && git log --oneline -5
+
+# TDD and quality validation  
+grep -r "test.*criteria" docs/commands | wc -l
+find . -name "*.md" -exec grep -l "threshold.*planning" {} \; | wc -l
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate planning prerequisites and workflow orchestration parameters
+2. **Strategic Planning**: Execute comprehensive lifecycle progress tracking for planning workflow
+3. **Quality Validation**: Run TDD quality gates testing with planning validation focus
+4. **Threshold Validation**: Apply adaptive thresholds validation for planning optimization
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute strategic planning workflow using comprehensive lifecycle orchestration
+2. Validate planning quality and TDD protocols with threshold optimization
+3. Generate planning reports with workflow metrics and quality gate validation
+4. Apply adaptive threshold protocols for comprehensive planning verification
+
+**Status Updates**:
+- 🔄 **Starting**: Strategic planning workflow initiated (4 specialized planning scripts)
+- 📊 **Progress**: Running lifecycle orchestration and TDD quality validation
+- ✅ **Complete**: Planning workflow completed with quality gate validation
+- 📈 **Metrics**: Planning completeness measured and workflow efficiency verified
+
+---
+
 ## 🏗️ **MODULE INHERITANCE**
 
 **Inherits from**: [Orchestration Patterns](../../shared/orchestration/orchestration-patterns.md)
@@ -175,7 +211,7 @@ Strategic planning workflow with MANDATORY Task tool deployment for complex plan
 ---
 
 **Module Dependencies**: [Orchestration Patterns](../../shared/orchestration/orchestration-patterns.md), [TDD Frameworks](../verification/tdd.md)
-**Used By**: [Context Engineering Meta-Command](../meta/context-eng.md), [Execution Workflows](../execution/)
+**Used By**: [Context Engineering Meta-Command](../meta/ce.md), [Execution Workflows](../execution/)
 **Integration**: [Discovery Workflows](../discovery/), [Verification Systems](../verification/)
 **Compliance Authority**: [Principle #7](../../../knowledge/principles/development-patterns.md#7-test-driven-development-tdd)
 

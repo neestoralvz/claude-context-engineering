@@ -1,0 +1,2484 @@
+import { 
+  Reactor, 
+  ProductionStation, 
+  Product, 
+  Batch, 
+  Recipe, 
+  Alert, 
+  ProductionMetrics, 
+  TrendData,
+  AdvancedRawMaterial,
+  AdvancedInventoryItem,
+  SmartInventoryAlert,
+  SupplierData,
+  InventoryMovement,
+  InventoryPrediction
+} from '../types'
+
+// Categorías oficiales de Ninu.mx
+export const ninuCategories = [
+  { id: 'desinfeccion', name: 'Desinfección', icon: '🦠' },
+  { id: 'limpieza', name: 'Limpieza', icon: '🧽' },
+  { id: 'salud-bienestar', name: 'Salud y Bienestar', icon: '💊' },
+  { id: 'autos', name: 'Autos', icon: '🚗' },
+  { id: 'albercas', name: 'Albercas', icon: '🏊' },
+  { id: 'alimentos', name: 'Alimentos', icon: '🍽️' },
+  { id: 'quimicos', name: 'Químicos', icon: '⚗️' },
+  { id: 'mascotas', name: 'Mascotas', icon: '🐕' }
+] as const
+
+// Información de contacto oficial de Ninu.mx
+export const ninuContactInfo = {
+  company: 'Negocio de Innovación Utópica, S. de R.L. de C.V.',
+  brand: 'Ninu.mx',
+  slogan: 'Tu aliado esencial',
+  location: 'Xalapa-Enríquez, Veracruz, México',
+  email: 'hola@ninu.mx',
+  phone: '+52-229-229-9399',
+  whatsapp: '5222999399',
+  website: 'https://ninu.mx',
+  social: {
+    facebook: 'NINU.mx',
+    twitter: '@ninumx',
+    youtube: '@ninumx'
+  }
+} as const
+
+export const mockProducts: Product[] = [
+  // LIMPIEZA CATEGORY
+  {
+    id: 'prod-001',
+    name: 'Jabón Líquido Para Trastes Ninu',
+    category: 'limpieza',
+    description: 'Jabón líquido concentrado para trastes con poder desengrasante superior',
+    size: 4,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Tensioactivos biodegradables', 'Agentes desengrasantes', 'Fragrancia cítrica', 'Agua purificada'],
+    useCase: ['Cocina', 'Trastes', 'Utensilios', 'Cristalería'],
+    shelfLife: 24,
+    currentStock: 250,
+    minStock: 80,
+    productionCost: 45.00,
+    salePrice: 152.00,
+    urgencyIndicators: {
+      bestSeller: true,
+      dailyPurchases: 23,
+      showPopularityBadge: true,
+      demandLevel: 'high'
+    }
+  },
+  {
+    id: 'prod-002',
+    name: 'Jabón Líquido Hipoalergénico Para Ropa Ninu',
+    category: 'limpieza',
+    description: 'Jabón líquido hipoalergénico especial para ropa delicada y piel sensible',
+    size: 5,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Tensioactivos suaves', 'Enzimas naturales', 'Acondicionadores de tela', 'Sin colorantes'],
+    useCase: ['Ropa delicada', 'Bebés', 'Piel sensible', 'Lavandería'],
+    shelfLife: 36,
+    currentStock: 180,
+    minStock: 60,
+    productionCost: 85.00,
+    salePrice: 164.50,
+    urgencyIndicators: {
+      isNewProduct: true,
+      showNewBadge: true,
+      launchDate: '2024-11-01',
+      recommendedProduct: true,
+      demandLevel: 'medium'
+    }
+  },
+  {
+    id: 'prod-003',
+    name: 'Jabón Líquido Para Ropa Blanca Ninu',
+    category: 'limpieza',
+    description: 'Jabón líquido especializado para mantener el blanco brillante en prendas blancas',
+    size: 5,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Tensioactivos blanqueadores', 'Enzimas proteolíticas', 'Agentes blanqueadores ópticos', 'Fragrancia fresca'],
+    useCase: ['Ropa blanca', 'Uniformes', 'Sábanas', 'Textiles blancos'],
+    shelfLife: 36,
+    currentStock: 130,
+    minStock: 45,
+    productionCost: 82.00,
+    salePrice: 164.50
+  },
+  {
+    id: 'prod-004',
+    name: 'Jabón Líquido Para Ropa Oscura Ninu',
+    category: 'limpieza',
+    description: 'Jabón líquido especializado para preservar colores oscuros y evitar decoloración',
+    size: 5,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Tensioactivos protectores de color', 'Enzimas suaves', 'Agentes fijadores', 'Sin blanqueadores'],
+    useCase: ['Ropa oscura', 'Jeans', 'Uniformes oscuros', 'Textiles de color'],
+    shelfLife: 36,
+    currentStock: 110,
+    minStock: 40,
+    productionCost: 83.00,
+    salePrice: 164.50
+  },
+  {
+    id: 'prod-005',
+    name: 'Jabón Antibacterial Para Manos Ninu',
+    category: 'limpieza',
+    description: 'Jabón líquido antibacterial para higiene de manos con protección completa',
+    size: 5,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Tensioactivos suaves', 'Agentes antibacteriales', 'Glicerina hidratante', 'Vitamina E'],
+    useCase: ['Higiene personal', 'Hospitales', 'Oficinas', 'Restaurantes'],
+    shelfLife: 24,
+    currentStock: 200,
+    minStock: 70,
+    productionCost: 48.00,
+    salePrice: 95.00,
+    urgencyIndicators: {
+      trendingProduct: true,
+      dailyPurchases: 45,
+      weeklyPurchases: 280,
+      showPopularityBadge: true,
+      demandLevel: 'very_high',
+      exclusiveOffer: true
+    }
+  },
+  {
+    id: 'prod-006',
+    name: 'Jabón Antibacterial Para Manos Ninu 500ml',
+    category: 'limpieza',
+    description: 'Presentación personal de jabón antibacterial para manos',
+    size: 500,
+    unit: 'ml',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Tensioactivos suaves', 'Agentes antibacteriales', 'Glicerina', 'Aloe vera'],
+    useCase: ['Uso personal', 'Hogar', 'Oficina', 'Viajes'],
+    shelfLife: 24,
+    currentStock: 350,
+    minStock: 100,
+    productionCost: 15.00,
+    salePrice: 60.21
+  },
+  {
+    id: 'prod-007',
+    name: 'Suavizante De Telas Ropa Blanca Ninu',
+    category: 'limpieza',
+    description: 'Suavizante especializado para ropa blanca con fragancia duradera',
+    size: 5,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Compuestos suavizantes', 'Fragrancia floral', 'Agentes antiestaticos', 'Agua purificada'],
+    useCase: ['Ropa blanca', 'Toallas', 'Sábanas', 'Textiles delicados'],
+    shelfLife: 36,
+    currentStock: 160,
+    minStock: 55,
+    productionCost: 65.00,
+    salePrice: 139.19
+  },
+  {
+    id: 'prod-008',
+    name: 'Blanqueador Cloro En Gel Ninu 4L',
+    category: 'limpieza',
+    description: 'Blanqueador en gel con alta concentración de hipoclorito de sodio',
+    size: 4,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Hipoclorito de sodio', 'Estabilizantes', 'Espesantes', 'Agua purificada'],
+    useCase: ['Blanqueado', 'Desinfección', 'Manchas difíciles', 'Limpieza profunda'],
+    shelfLife: 12,
+    currentStock: 8,
+    minStock: 40,
+    productionCost: 58.00,
+    salePrice: 119.90,
+    urgencyIndicators: {
+      lowStockThreshold: 10,
+      showLowStockWarning: true,
+      isOnSale: true,
+      salePercentage: 25,
+      saleEndDate: '2024-12-31',
+      limitedTimeOffer: true,
+      offerEndDate: '2024-12-31',
+      demandLevel: 'high'
+    }
+  },
+  {
+    id: 'prod-009',
+    name: 'Blanqueador Cloro En Gel Ninu 10L',
+    category: 'limpieza',
+    description: 'Blanqueador en gel presentación industrial con 99% efectividad',
+    size: 10,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    ingredients: ['Hipoclorito de sodio alta concentración', 'Estabilizantes', 'Espesantes industriales'],
+    useCase: ['Uso industrial', 'Lavanderías', 'Hospitales', 'Hoteles'],
+    shelfLife: 12,
+    currentStock: 75,
+    minStock: 25,
+    productionCost: 115.00,
+    salePrice: 236.90
+  },
+  {
+    id: 'prod-010',
+    name: 'Limpiador Multiusos Antibacterial Ninu',
+    category: 'limpieza',
+    description: 'Limpiador multiusos con acción antibacterial para todo tipo de superficies',
+    size: 1,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Tensioactivos no iónicos', 'Agentes antibacteriales', 'Fragrancia lavanda', 'Agua tratada'],
+    useCase: ['Cocina', 'Baño', 'Pisos', 'Muebles', 'Ventanas'],
+    shelfLife: 24,
+    currentStock: 280,
+    minStock: 90,
+    productionCost: 28.00,
+    salePrice: 59.90,
+    urgencyIndicators: {
+      bestSeller: true,
+      dailyPurchases: 67,
+      weeklyPurchases: 420,
+      showPopularityBadge: true,
+      recommendedProduct: true,
+      demandLevel: 'very_high'
+    }
+  },
+
+  // DESINFECCIÓN CATEGORY
+  {
+    id: 'prod-011',
+    name: 'Gel Antibacterial 1L con Dosificador Ninu',
+    category: 'desinfeccion',
+    description: 'Gel antibacterial 70% alcohol con dosificador, elimina 99.99% virus, bacterias y gérmenes',
+    size: 1,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    cofepisRegistration: '0419C2020 SSA',
+    ingredients: ['Alcohol etílico 70%', 'Glicerina', 'Carbómero', 'Agua purificada', 'Sin parabenos'],
+    useCase: ['Higiene personal', 'Oficinas', 'Comercios', 'Transporte'],
+    shelfLife: 24,
+    currentStock: 400,
+    minStock: 120,
+    productionCost: 32.00,
+    salePrice: 63.99,
+    alcoholContent: 70,
+    urgencyIndicators: {
+      trendingProduct: true,
+      dailyPurchases: 89,
+      weeklyPurchases: 620,
+      showPopularityBadge: true,
+      isOnSale: true,
+      salePercentage: 15,
+      saleEndDate: '2024-12-25',
+      demandLevel: 'very_high'
+    }
+  },
+  {
+    id: 'prod-012',
+    name: 'Gel Antibacterial 5L Garrafa Premium Ninu',
+    category: 'desinfeccion',
+    description: 'Gel antibacterial calidad premium en presentación garrafa de 5 litros',
+    size: 5,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    cofepisRegistration: '0419C2020 SSA',
+    ingredients: ['Alcohol etílico 70%', 'Glicerina', 'Carbómero', 'Aloe vera', 'Vitamina E'],
+    useCase: ['Uso institucional', 'Escuelas', 'Hospitales', 'Oficinas'],
+    shelfLife: 24,
+    currentStock: 180,
+    minStock: 60,
+    productionCost: 135.00,
+    salePrice: 275.00,
+    alcoholContent: 70
+  },
+  {
+    id: 'prod-013',
+    name: 'Gel Antibacterial 20L Garrafa Industrial Ninu',
+    category: 'desinfeccion',
+    description: 'Gel antibacterial presentación industrial para mayoristas y distribuidores',
+    size: 20,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    cofepisRegistration: '0419C2020 SSA',
+    ingredients: ['Alcohol etílico 70%', 'Glicerina', 'Carbómero', 'Conservadores naturales'],
+    useCase: ['Mayoreo', 'Distribución', 'Industria', 'Instituciones grandes'],
+    shelfLife: 24,
+    currentStock: 85,
+    minStock: 30,
+    productionCost: 420.00,
+    salePrice: 850.00,
+    alcoholContent: 70
+  },
+  {
+    id: 'prod-014',
+    name: 'Gel Antibacterial Triple Desinfectante Ninu',
+    category: 'desinfeccion',
+    description: 'Gel antibacterial con fórmula triple desinfectante potenciada',
+    size: 1,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    cofepisRegistration: '0419C2020 SSA',
+    ingredients: ['Alcohol etílico 70%', 'Compuestos cuaternarios', 'Glicerina', 'Aloe vera natural'],
+    useCase: ['Áreas médicas', 'Laboratorios', 'Clínicas', 'Uso especializado'],
+    shelfLife: 24,
+    currentStock: 150,
+    minStock: 50,
+    productionCost: 38.00,
+    salePrice: 68.99,
+    alcoholContent: 70
+  },
+  {
+    id: 'prod-015',
+    name: 'Sanitizante Líquido Multiusos Sales Cuaternarias Ninu',
+    category: 'desinfeccion',
+    description: 'Sanitizante líquido multiusos con sales cuaternarias 5ta generación, libre de alcohol',
+    size: 1,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    cofepisRegistration: '2667C2018SSA',
+    ingredients: ['Sales cuaternarias 0.18%', 'Agua purificada', 'Estabilizantes', 'Sin alcohol'],
+    useCase: ['Superficies', 'Ambientes', 'Mascotas', 'Áreas sensibles'],
+    shelfLife: 24,
+    currentStock: 320,
+    minStock: 100,
+    productionCost: 18.00,
+    salePrice: 24.00,
+    quaternaryAmmoniumContent: 0.18
+  },
+  {
+    id: 'prod-016',
+    name: 'Sanitizante Líquido Sales Cuaternarias 5L Ninu',
+    category: 'desinfeccion',
+    description: 'Sanitizante líquido profesional con sales cuaternarias presentación 5L',
+    size: 5,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    cofepisRegistration: '2667C2018SSA',
+    ingredients: ['Sales cuaternarias 0.18%', 'Agua purificada', 'Biodegradable', 'Pet-safe'],
+    useCase: ['Uso profesional', 'Veterinarias', 'Guarderías', 'Espacios cerrados'],
+    shelfLife: 24,
+    currentStock: 140,
+    minStock: 45,
+    productionCost: 82.00,
+    salePrice: 165.00,
+    quaternaryAmmoniumContent: 0.18
+  },
+  {
+    id: 'prod-017',
+    name: 'Sanitizante Líquido Sales Cuaternarias 20L Ninu',
+    category: 'desinfeccion',
+    description: 'Sanitizante líquido industrial con sales cuaternarias para distribución',
+    size: 20,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    cofepisRegistration: '2667C2018SSA',
+    ingredients: ['Sales cuaternarias 0.18%', 'Agua desionizada', 'Estabilizantes industriales'],
+    useCase: ['Distribución', 'Industria alimentaria', 'Hospitales', 'Mayoreo'],
+    shelfLife: 24,
+    currentStock: 60,
+    minStock: 20,
+    productionCost: 245.00,
+    salePrice: 298.99,
+    quaternaryAmmoniumContent: 0.18
+  },
+  {
+    id: 'prod-018',
+    name: 'Kit Sanitizante Personal Escolar 60ml Ninu',
+    category: 'desinfeccion',
+    description: 'Kit sanitizante personal para estudiantes con fragancias variadas',
+    size: 60,
+    unit: 'ml',
+    packaging: 'kit',
+    cofepisApproval: true,
+    cofepisRegistration: '0419C2020 SSA',
+    ingredients: ['Alcohol etílico 70%', 'Glicerina', 'Fragancias naturales', 'Vitamina E'],
+    useCase: ['Estudiantes', 'Escuelas', 'Uso personal', 'Niños'],
+    shelfLife: 24,
+    currentStock: 500,
+    minStock: 150,
+    productionCost: 8.00,
+    salePrice: 25.00,
+    alcoholContent: 70
+  },
+
+  // SALUD-BIENESTAR CATEGORY
+  {
+    id: 'prod-019',
+    name: 'Gel Conductor Ultrasonido Electroestimulador Ninu',
+    category: 'salud-bienestar',
+    description: 'Gel conductor profesional para equipos de ultrasonido y electroestimulación',
+    size: 1,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Glicerina', 'Carboximetilcelulosa', 'Agua desionizada', 'Conservadores'],
+    useCase: ['Ultrasonido', 'Electroestimulación', 'Fisioterapia', 'Uso médico'],
+    shelfLife: 24,
+    currentStock: 120,
+    minStock: 40,
+    productionCost: 95.00,
+    salePrice: 169.90
+  },
+  {
+    id: 'prod-020',
+    name: 'Piedra Alumbre Desodorante Líquido Natural Ninu',
+    category: 'salud-bienestar',
+    description: 'Desodorante líquido natural a base de piedra alumbre, sin alcohol ni parabenos',
+    size: 125,
+    unit: 'ml',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Sulfato de aluminio y potasio', 'Agua purificada', 'Glicerina vegetal', 'Extractos naturales'],
+    useCase: ['Higiene personal', 'Desodorante natural', 'Piel sensible', 'Uso diario'],
+    shelfLife: 36,
+    currentStock: 400,
+    minStock: 120,
+    productionCost: 25.00,
+    salePrice: 49.90
+  },
+  {
+    id: 'prod-021',
+    name: 'Aceite Para Masaje Relajante Ninu',
+    category: 'salud-bienestar',
+    description: 'Aceite de masaje relajante para alivio del dolor muscular y relajación',
+    size: 250,
+    unit: 'ml',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Aceites esenciales', 'Aceite de almendras', 'Vitamina E', 'Extractos relajantes'],
+    useCase: ['Masaje relajante', 'Dolor muscular', 'Hidratación', 'Bienestar'],
+    shelfLife: 36,
+    currentStock: 180,
+    minStock: 60,
+    productionCost: 45.00,
+    salePrice: 89.90
+  },
+
+  // ALBERCAS CATEGORY
+  {
+    id: 'prod-022',
+    name: 'Kit Mantenimiento Alberca Completo Ninu',
+    category: 'albercas',
+    description: 'Kit completo para mantenimiento profesional de albercas y piscinas',
+    size: 3,
+    unit: 'pzas',
+    packaging: 'kit',
+    cofepisApproval: true,
+    ingredients: ['Cloro en polvo 1kg', 'Alguicida concentrado 1L', 'Clarificador líquido 1L'],
+    useCase: ['Albercas', 'Piscinas', 'Jacuzzis', 'Mantenimiento preventivo'],
+    shelfLife: 36,
+    currentStock: 85,
+    minStock: 25,
+    productionCost: 120.00,
+    salePrice: 298.90
+  },
+  {
+    id: 'prod-023',
+    name: 'Cloro En Polvo Ninu 1kg',
+    category: 'albercas',
+    description: 'Tricloro en polvo para desinfección efectiva de albercas',
+    size: 1,
+    unit: 'kg',
+    packaging: 'bag',
+    cofepisApproval: true,
+    ingredients: ['Tricloro', 'Estabilizantes', 'Agentes dispersantes'],
+    useCase: ['Desinfección albercas', 'Eliminación bacterias', 'Tratamiento agua'],
+    shelfLife: 60,
+    currentStock: 200,
+    minStock: 70,
+    productionCost: 45.00,
+    salePrice: 95.00
+  },
+  {
+    id: 'prod-024',
+    name: 'Alguicida Concentrado Para Albercas 10L Ninu',
+    category: 'albercas',
+    description: 'Alguicida concentrado para eliminación de algas verdes, amarillas y negras',
+    size: 10,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    ingredients: ['Compuestos de cobre', 'Alguicidas cuaternarios', 'Estabilizantes'],
+    useCase: ['Eliminación algas', 'Prevención algas', 'Mantenimiento preventivo'],
+    shelfLife: 48,
+    currentStock: 90,
+    minStock: 30,
+    productionCost: 180.00,
+    salePrice: 360.00
+  },
+  {
+    id: 'prod-025',
+    name: 'Clarificador Líquido Para Alberca 4L Ninu',
+    category: 'albercas',
+    description: 'Clarificador líquido para mejorar transparencia del agua de albercas',
+    size: 4,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Polímeros clarificantes', 'Floculantes', 'Estabilizantes'],
+    useCase: ['Clarificación agua', 'Transparencia', 'Filtración mejorada'],
+    shelfLife: 36,
+    currentStock: 110,
+    minStock: 35,
+    productionCost: 85.00,
+    salePrice: 170.00
+  },
+  {
+    id: 'prod-026',
+    name: 'Clarificador Líquido Para Alberca 10L Ninu',
+    category: 'albercas',
+    description: 'Clarificador líquido presentación industrial para albercas grandes',
+    size: 10,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    ingredients: ['Polímeros clarificantes concentrados', 'Floculantes industriales', 'Estabilizantes'],
+    useCase: ['Albercas grandes', 'Uso profesional', 'Mantenimiento industrial'],
+    shelfLife: 36,
+    currentStock: 65,
+    minStock: 20,
+    productionCost: 195.00,
+    salePrice: 390.00
+  },
+
+  // QUÍMICOS CATEGORY
+  {
+    id: 'prod-027',
+    name: 'Agua Destilada Desmineralizada 5L Ninu',
+    category: 'quimicos',
+    description: 'Agua destilada desmineralizada de alta pureza para uso laboratorio y cosmético',
+    size: 5,
+    unit: 'l',
+    packaging: 'bottle',
+    cofepisApproval: true,
+    ingredients: ['Agua 100% destilada', 'Desmineralizada', 'Libre de impurezas'],
+    useCase: ['Laboratorio', 'Cosmética', 'Limpieza equipos', 'Uso técnico'],
+    shelfLife: 60,
+    currentStock: 150,
+    minStock: 50,
+    productionCost: 68.00,
+    salePrice: 135.00
+  },
+  {
+    id: 'prod-028',
+    name: 'Agua Destilada Desmineralizada 20L Ninu',
+    category: 'quimicos',
+    description: 'Agua destilada desmineralizada grado industrial/profesional',
+    size: 20,
+    unit: 'l',
+    packaging: 'container',
+    cofepisApproval: true,
+    ingredients: ['Agua 100% destilada', 'Desmineralizada', 'Grado industrial'],
+    useCase: ['Industria', 'Laboratorios', 'Equipos médicos', 'Procesos industriales'],
+    shelfLife: 60,
+    currentStock: 80,
+    minStock: 25,
+    productionCost: 142.00,
+    salePrice: 284.90
+  }
+]
+
+export const mockReactors: Reactor[] = [
+  {
+    id: 'reactor-001',
+    name: 'Reactor A - Líquidos',
+    status: 'mixing',
+    capacity: 5000,
+    currentBatch: {
+      id: 'batch-001',
+      productId: 'prod-001',
+      quantity: 4500,
+      status: 'in_progress',
+      startTime: new Date(Date.now() - 3600000),
+      estimatedCompletion: new Date(Date.now() + 1800000),
+      recipe: {} as Recipe,
+      qualityMetrics: []
+    },
+    temperature: 35,
+    pressure: 1.2,
+    mixingSpeed: 150,
+    lastMaintenance: new Date(Date.now() - 7 * 24 * 3600000),
+    nextMaintenance: new Date(Date.now() + 21 * 24 * 3600000)
+  },
+  {
+    id: 'reactor-002',
+    name: 'Reactor B - Desinfectantes',
+    status: 'idle',
+    capacity: 3000,
+    temperature: 22,
+    pressure: 1.0,
+    mixingSpeed: 0,
+    lastMaintenance: new Date(Date.now() - 5 * 24 * 3600000),
+    nextMaintenance: new Date(Date.now() + 23 * 24 * 3600000)
+  },
+  {
+    id: 'reactor-003',
+    name: 'Reactor C - Especialidades',
+    status: 'cooling',
+    capacity: 2000,
+    currentBatch: {
+      id: 'batch-002',
+      productId: 'prod-002',
+      quantity: 1800,
+      status: 'in_progress',
+      startTime: new Date(Date.now() - 7200000),
+      estimatedCompletion: new Date(Date.now() + 900000),
+      recipe: {} as Recipe,
+      qualityMetrics: []
+    },
+    temperature: 28,
+    pressure: 1.1,
+    mixingSpeed: 75,
+    lastMaintenance: new Date(Date.now() - 10 * 24 * 3600000),
+    nextMaintenance: new Date(Date.now() + 18 * 24 * 3600000)
+  }
+]
+
+export const mockStations: ProductionStation[] = [
+  {
+    id: 'station-001',
+    name: 'Estación Etiquetado Principal',
+    type: 'labeling',
+    status: 'running',
+    currentProduct: mockProducts[0],
+    efficiency: 92,
+    unitsPerHour: 450,
+    lastActivity: new Date(Date.now() - 300000),
+    queue: []
+  },
+  {
+    id: 'station-002',
+    name: 'Estación Llenado',
+    type: 'filling',
+    status: 'running',
+    currentProduct: mockProducts[2],
+    efficiency: 88,
+    unitsPerHour: 380,
+    lastActivity: new Date(Date.now() - 180000),
+    queue: []
+  },
+  {
+    id: 'station-003',
+    name: 'Estación Etiquetado Secundario',
+    type: 'labeling',
+    status: 'idle',
+    efficiency: 0,
+    unitsPerHour: 0,
+    lastActivity: new Date(Date.now() - 1800000),
+    queue: []
+  },
+  {
+    id: 'station-004',
+    name: 'Estación Polvos',
+    type: 'powder',
+    status: 'maintenance',
+    currentProduct: mockProducts[3],
+    efficiency: 0,
+    unitsPerHour: 0,
+    lastActivity: new Date(Date.now() - 3600000),
+    queue: []
+  },
+  {
+    id: 'station-005',
+    name: 'Estación Jabones y Productos Pequeños',
+    type: 'soap',
+    status: 'running',
+    currentProduct: mockProducts[4],
+    efficiency: 95,
+    unitsPerHour: 520,
+    lastActivity: new Date(Date.now() - 120000),
+    queue: []
+  }
+]
+
+export const mockAlerts: Alert[] = [
+  {
+    id: 'alert-001',
+    type: 'warning',
+    title: 'Mantenimiento Programado',
+    message: 'Estación de Polvos requiere mantenimiento preventivo',
+    source: 'station-004',
+    timestamp: new Date(Date.now() - 1800000),
+    acknowledged: false,
+    severity: 'medium'
+  },
+  {
+    id: 'alert-002',
+    type: 'info',
+    title: 'Batch Completado',
+    message: 'Lote de Limpiador Multiusos completado exitosamente',
+    source: 'reactor-001',
+    timestamp: new Date(Date.now() - 900000),
+    acknowledged: true,
+    resolvedAt: new Date(Date.now() - 600000),
+    severity: 'low'
+  },
+  {
+    id: 'alert-003',
+    type: 'warning',
+    title: 'Inventario Bajo',
+    message: 'Stock mínimo alcanzado para Kit Mantenimiento Alberca',
+    source: 'inventory',
+    timestamp: new Date(Date.now() - 600000),
+    acknowledged: false,
+    severity: 'medium'
+  }
+]
+
+// Generate trend data for the last 24 hours
+const generateTrendData = (baseValue: number, variance: number, points: number = 24): TrendData[] => {
+  const data: TrendData[] = []
+  const now = new Date()
+  
+  for (let i = points - 1; i >= 0; i--) {
+    const timestamp = new Date(now.getTime() - (i * 60 * 60 * 1000)) // hourly data
+    const randomVariance = (Math.random() - 0.5) * variance
+    const value = Math.max(0, baseValue + randomVariance)
+    data.push({ timestamp, value })
+  }
+  
+  return data
+}
+
+// Generate resource utilization from current reactor and station data
+export const generateResourceUtilization = (reactors: Reactor[], stations: ProductionStation[]) => {
+  const reactorUtilization: any = {}
+  const stationUtilization: any = {}
+  
+  reactors.forEach(reactor => {
+    const baseUtilization = reactor.status === 'idle' ? 0 : 
+                           reactor.status === 'mixing' ? 80 + Math.random() * 15 :
+                           reactor.status === 'cooling' ? 60 + Math.random() * 20 :
+                           reactor.status === 'heating' ? 85 + Math.random() * 10 : 50
+    
+    reactorUtilization[reactor.id] = {
+      utilization: Math.round(baseUtilization),
+      status: reactor.status,
+      efficiency: reactor.status === 'idle' ? 0 : 85 + Math.random() * 15
+    }
+  })
+  
+  stations.forEach(station => {
+    const baseUtilization = station.status === 'idle' ? 0 :
+                           station.status === 'running' ? 85 + Math.random() * 15 :
+                           station.status === 'maintenance' ? 0 : 50
+    
+    stationUtilization[station.id] = {
+      utilization: Math.round(baseUtilization),
+      status: station.status,
+      efficiency: station.status === 'idle' || station.status === 'maintenance' ? 0 : 80 + Math.random() * 15
+    }
+  })
+  
+  // Calculate overall utilization
+  const allUtilizations = [...Object.values(reactorUtilization), ...Object.values(stationUtilization)]
+  const averageUtilization = allUtilizations.reduce((sum: number, item: any) => sum + item.utilization, 0) / allUtilizations.length
+  const averageEfficiency = allUtilizations.filter((item: any) => item.efficiency > 0).reduce((sum: number, item: any) => sum + item.efficiency, 0) / 
+                            allUtilizations.filter((item: any) => item.efficiency > 0).length
+  
+  return {
+    reactors: reactorUtilization,
+    stations: stationUtilization,
+    overall: {
+      capacity: 100,
+      utilization: Math.round(averageUtilization),
+      efficiency: Math.round(averageEfficiency || 0)
+    }
+  }
+}
+
+// Export the function for generating trends
+export { generateTrendData }
+
+export const mockProductionMetrics: ProductionMetrics = {
+  totalProduction: 12450,
+  efficiency: 89.5,
+  qualityRate: 98.2,
+  downtime: 2.3,
+  activeOrders: 8,
+  completedOrders: 23,
+  alertsCount: 3,
+  timestamp: new Date(),
+  trends: {
+    efficiency: generateTrendData(89.5, 10),
+    production: generateTrendData(520, 100),
+    quality: generateTrendData(98.2, 3),
+    downtime: generateTrendData(2.3, 2)
+  },
+  resourceUtilization: {
+    reactors: {
+      'reactor-001': { utilization: 85, status: 'mixing', efficiency: 92 },
+      'reactor-002': { utilization: 0, status: 'idle', efficiency: 0 },
+      'reactor-003': { utilization: 75, status: 'cooling', efficiency: 88 }
+    },
+    stations: {
+      'station-001': { utilization: 90, status: 'running', efficiency: 92 },
+      'station-002': { utilization: 85, status: 'running', efficiency: 88 },
+      'station-003': { utilization: 0, status: 'idle', efficiency: 0 },
+      'station-004': { utilization: 0, status: 'maintenance', efficiency: 0 },
+      'station-005': { utilization: 95, status: 'running', efficiency: 95 }
+    },
+    overall: {
+      capacity: 100,
+      utilization: 67,
+      efficiency: 89.5
+    }
+  }
+}
+
+// Legacy export for compatibility
+export const mockMetrics = mockProductionMetrics
+
+// ===== ADVANCED INVENTORY MANAGEMENT MOCK DATA =====
+// Complete mock data for the advanced inventory system
+
+// Mexican Chemical Suppliers - Real companies for realistic data
+export const mockSuppliers: SupplierData[] = [
+  {
+    id: 'supplier-001',
+    name: 'Química Industrial del Golfo S.A. de C.V.',
+    contactInfo: {
+      primaryContact: 'Ing. María Elena Vázquez',
+      phone: '+52-229-934-5600',
+      email: 'ventas@quimigolfo.com.mx',
+      emergencyContact: 'Jorge Hernández',
+      emergencyPhone: '+52-229-934-5601',
+      address: {
+        street: 'Av. Lázaro Cárdenas 2850',
+        city: 'Veracruz',
+        state: 'Veracruz',
+        postalCode: '91700',
+        country: 'México'
+      }
+    },
+    qualityMetrics: {
+      defectRate: 0.5,
+      onTimeDelivery: 95.8,
+      qualityScore: 94,
+      certificationCompliance: 98.5,
+      correctiveActions: 2,
+      qualityTrend: 'improving'
+    },
+    deliveryMetrics: {
+      averageLeadTime: 5,
+      onTimeDeliveryRate: 95.8,
+      earlyDeliveryRate: 15.2,
+      lateDeliveryRate: 4.2,
+      deliveryAccuracy: 98.1,
+      transportationCost: 2.50
+    },
+    certifications: [
+      {
+        type: 'ISO 9001:2015',
+        issuingBody: 'SGS México',
+        certificationNumber: 'MX-ISO9001-2024-0152',
+        issueDate: new Date('2024-03-15'),
+        expirationDate: new Date('2027-03-14'),
+        status: 'valid',
+        scope: 'Manufactura de químicos industriales'
+      },
+      {
+        type: 'COFEPRIS',
+        issuingBody: 'COFEPRIS',
+        certificationNumber: 'COFEPRIS-IND-2024-0891',
+        issueDate: new Date('2024-01-10'),
+        expirationDate: new Date('2025-01-09'),
+        status: 'valid',
+        scope: 'Distribución de químicos para uso cosmético'
+      }
+    ],
+    riskScore: 15, // Low risk (0-100 scale)
+    financialRating: 'A',
+    preferredSupplier: true,
+    backupSuppliers: ['supplier-002', 'supplier-004']
+  },
+  {
+    id: 'supplier-002',
+    name: 'Productos Químicos Especializados de México S.A.',
+    contactInfo: {
+      primaryContact: 'Lic. Carlos Eduardo Ramírez',
+      phone: '+52-55-5234-7890',
+      email: 'contacto@pqem.com.mx',
+      address: {
+        street: 'Blvd. Manuel Ávila Camacho 1847',
+        city: 'Ciudad de México',
+        state: 'CDMX',
+        postalCode: '11000',
+        country: 'México'
+      }
+    },
+    qualityMetrics: {
+      defectRate: 1.2,
+      onTimeDelivery: 89.5,
+      qualityScore: 91,
+      certificationCompliance: 95.0,
+      correctiveActions: 4,
+      qualityTrend: 'stable'
+    },
+    deliveryMetrics: {
+      averageLeadTime: 7,
+      onTimeDeliveryRate: 89.5,
+      earlyDeliveryRate: 8.3,
+      lateDeliveryRate: 10.5,
+      deliveryAccuracy: 94.2,
+      transportationCost: 3.20
+    },
+    certifications: [
+      {
+        type: 'ISO 14001:2015',
+        issuingBody: 'Bureau Veritas México',
+        certificationNumber: 'MX-ISO14001-2023-0891',
+        issueDate: new Date('2023-08-20'),
+        expirationDate: new Date('2026-08-19'),
+        status: 'valid',
+        scope: 'Gestión ambiental en manufactura química'
+      }
+    ],
+    riskScore: 25, // Medium-low risk
+    financialRating: 'B',
+    preferredSupplier: false,
+    backupSuppliers: ['supplier-001', 'supplier-003']
+  },
+  {
+    id: 'supplier-003',
+    name: 'Innovación Química del Bajío S. de R.L. de C.V.',
+    contactInfo: {
+      primaryContact: 'Ing. Química Ana Patricia González',
+      phone: '+52-442-245-6789',
+      email: 'ventas@iqbajio.mx',
+      address: {
+        street: 'Parque Industrial Querétaro, Lote 45',
+        city: 'El Marqués',
+        state: 'Querétaro',
+        postalCode: '76246',
+        country: 'México'
+      }
+    },
+    qualityMetrics: {
+      defectRate: 0.8,
+      onTimeDelivery: 92.3,
+      qualityScore: 93,
+      certificationCompliance: 97.1,
+      correctiveActions: 1,
+      qualityTrend: 'improving'
+    },
+    deliveryMetrics: {
+      averageLeadTime: 4,
+      onTimeDeliveryRate: 92.3,
+      earlyDeliveryRate: 12.1,
+      lateDeliveryRate: 7.7,
+      deliveryAccuracy: 96.8,
+      transportationCost: 2.80
+    },
+    certifications: [
+      {
+        type: 'OHSAS 18001',
+        issuingBody: 'TÜV Rheinland México',
+        certificationNumber: 'MX-OHSAS-2024-0334',
+        issueDate: new Date('2024-05-12'),
+        expirationDate: new Date('2027-05-11'),
+        status: 'valid',
+        scope: 'Seguridad y salud ocupacional'
+      }
+    ],
+    riskScore: 18,
+    financialRating: 'A',
+    preferredSupplier: true
+  }
+]
+
+// Advanced Raw Materials for Ninu.mx formulations
+export const mockAdvancedRawMaterials: AdvancedRawMaterial[] = [
+  {
+    id: 'raw-001',
+    code: 'TENS-001',
+    name: 'Tensioactivo Aniónico Linear',
+    description: 'Tensioactivo biodegradable de alta performance para formulaciones de limpieza',
+    category: 'Tensioactivos',
+    supplier: 'supplier-001',
+    supplier_id: 'supplier-001',
+    supplier_name: 'Química Industrial del Golfo S.A. de C.V.',
+    unit_of_measure: 'kg',
+    unit_cost: 45.50,
+    current_stock: 2850,
+    minimum_stock: 500,
+    maximum_stock: 5000,
+    quality_grade: 'Premium A',
+    expiration_tracking: true,
+    last_purchase_date: '2024-07-10',
+    status: 'active',
+    created_at: '2024-01-15T00:00:00Z',
+    updated_at: '2024-07-10T00:00:00Z',
+    traceability: {
+      batchId: 'TENS-001-240710-001',
+      lotNumber: 'QIG-24070810-TENS',
+      manufacturingDate: new Date('2024-07-08'),
+      receiptDate: new Date('2024-07-10'),
+      supplier: mockSuppliers[0],
+      certificateOfAnalysis: {
+        certificateNumber: 'COA-TENS-001-240710',
+        issueDate: new Date('2024-07-08'),
+        validUntil: new Date('2025-07-08'),
+        testingLaboratory: 'Laboratorio Químico del Golfo',
+        testResults: [
+          {
+            parameter: 'Contenido activo',
+            measuredValue: 28.5,
+            unit: '%',
+            specification: { min: 28.0, max: 30.0, target: 29.0 },
+            status: 'pass',
+            method: 'ASTM D1681',
+            instrument: 'Titulador automático T-950'
+          },
+          {
+            parameter: 'pH (solución 10%)',
+            measuredValue: 7.2,
+            unit: 'pH',
+            specification: { min: 6.5, max: 8.0, target: 7.0 },
+            status: 'pass',
+            method: 'ASTM D1293',
+            instrument: 'pHmetro Hanna HI-2020'
+          }
+        ],
+        specifications: [
+          {
+            parameter: 'Contenido activo',
+            minValue: 28.0,
+            maxValue: 30.0,
+            unit: '%',
+            critical: true
+          }
+        ],
+        conclusion: 'approved'
+      },
+      chainOfCustody: [
+        {
+          timestamp: new Date('2024-07-08T10:00:00Z'),
+          fromCustodian: 'Producción QIG',
+          toCustodian: 'Almacén QIG',
+          location: 'Planta Veracruz',
+          purpose: 'Producción completada',
+          conditions: ['Temperatura controlada 20-25°C'],
+          signature: 'J.Martinez'
+        },
+        {
+          timestamp: new Date('2024-07-10T14:30:00Z'),
+          fromCustodian: 'Transporte QIG',
+          toCustodian: 'Ninu Factory Control',
+          location: 'Xalapa, Veracruz',
+          purpose: 'Entrega programada',
+          conditions: ['Transporte refrigerado', 'Documentación completa'],
+          signature: 'R.Gomez'
+        }
+      ],
+      qualityTestResults: [
+        {
+          parameter: 'Pureza',
+          measuredValue: 99.2,
+          unit: '%',
+          specification: { min: 98.0 },
+          status: 'pass',
+          method: 'HPLC-MS',
+          instrument: 'Agilent 1260'
+        }
+      ],
+      usageHistory: [
+        {
+          usageDate: new Date('2024-07-12'),
+          batchId: 'batch-001',
+          quantityUsed: 450,
+          purpose: 'Producción Jabón Líquido Trastes',
+          operatorId: 'OP-001',
+          qualityCheckRequired: true,
+          qualityStatus: 'pass'
+        }
+      ],
+      currentLocation: {
+        zone: 'A',
+        aisle: '02',
+        shelf: '3B',
+        position: '12',
+        lastMoved: new Date('2024-07-10'),
+        movedBy: 'OP-002',
+        environmentalConditions: {
+          temperature: 22.5,
+          humidity: 45.2,
+          lastChecked: new Date('2024-07-15T08:00:00Z')
+        }
+      }
+    },
+    chemicalProperties: {
+      composition: [
+        {
+          component: 'Lauril sulfato de sodio',
+          casNumber: '151-21-3',
+          percentage: 28.5,
+          role: 'active',
+          hazardous: false
+        },
+        {
+          component: 'Agua destilada',
+          percentage: 70.0,
+          role: 'carrier',
+          hazardous: false
+        },
+        {
+          component: 'Estabilizantes',
+          percentage: 1.5,
+          role: 'stabilizer',
+          hazardous: false
+        }
+      ],
+      physicalProperties: {
+        appearance: 'Líquido transparente amarillo claro',
+        odor: 'Característico suave',
+        pH: 7.2,
+        density: 1.025,
+        viscosity: 15.8,
+        solubility: 'Completamente soluble en agua',
+        flashPoint: 95
+      },
+      stability: {
+        thermalStability: 'Estable hasta 80°C',
+        lightStability: 'Sensible a UV',
+        airStability: 'Estable en aire',
+        incompatibilities: ['Ácidos fuertes', 'Oxidantes'],
+        degradationProducts: ['No conocidos bajo condiciones normales'],
+        shelfLife: 24
+      },
+      reactivity: {
+        reactivityLevel: 'low',
+        incompatibleMaterials: ['Ácidos minerales concentrados'],
+        hazardousReactions: ['Ninguna conocida'],
+        polymerization: false,
+        oxidizingAgent: false,
+        reducingAgent: false
+      },
+      hazardClassification: {
+        ghsCategory: ['No clasificado como peligroso'],
+        hazardStatements: [],
+        precautionaryStatements: ['P102: Mantener fuera del alcance de los niños'],
+        signalWord: 'none',
+        pictograms: []
+      },
+      safetyDataSheet: {
+        sdsNumber: 'SDS-TENS-001-MX',
+        version: '3.1',
+        issueDate: new Date('2024-01-15'),
+        language: 'Español (México)',
+        supplier: 'Química Industrial del Golfo',
+        emergencyPhone: '+52-229-934-5601',
+        documentUrl: '/sds/TENS-001-v3.1.pdf',
+        lastReview: new Date('2024-01-15'),
+        nextReview: new Date('2025-01-15')
+      },
+      environmentalProperties: {
+        biodegradability: 'readily',
+        bioaccumulation: false,
+        aquaticToxicity: 'low',
+        soilImpact: 'none',
+        airEmissions: false,
+        wasteClassification: 'No peligroso'
+      }
+    },
+    storageRequirements: {
+      temperature: {
+        min: 15,
+        max: 30,
+        unit: 'celsius',
+        critical: false
+      },
+      humidity: {
+        min: 30,
+        max: 70,
+        unit: 'percentage',
+        critical: false
+      },
+      lightExposure: 'protected',
+      ventilation: 'standard',
+      containerRequirements: [
+        {
+          materialType: 'HDPE',
+          sealType: 'Rosca hermética',
+          venting: false,
+          labelingRequirements: ['Etiqueta GHS', 'Lote y fecha', 'Instrucciones manejo']
+        }
+      ],
+      segregationRequirements: [
+        {
+          segregateFrom: ['Ácidos', 'Bases fuertes'],
+          minimumDistance: 3,
+          barrierRequired: false,
+          reason: 'Prevenir reacciones no deseadas'
+        }
+      ],
+      securityLevel: 'standard'
+    },
+    safetyClassification: {
+      ghsClassification: {
+        physicalHazards: [],
+        healthHazards: [],
+        environmentalHazards: [],
+        category: 'No clasificado',
+        signalWord: 'warning'
+      },
+      nfpaRating: {
+        health: 1,
+        flammability: 1,
+        instability: 0,
+        specificHazards: []
+      },
+      nomClassification: {
+        nomNumber: 'NOM-005-STPS-1998',
+        classification: 'Baja peligrosidad',
+        requirements: ['Manejo con EPP básico'],
+        applicableProducts: ['Tensioactivos de limpieza']
+      },
+      ppeRequired: [
+        {
+          equipment: 'Guantes de nitrilo',
+          specification: 'EN 374-1',
+          required: true
+        },
+        {
+          equipment: 'Gafas de seguridad',
+          specification: 'EN 166',
+          required: true,
+          alternatives: ['Careta completa']
+        }
+      ],
+      emergencyProcedures: [
+        {
+          emergencyType: 'Derrame',
+          immediateActions: [
+            'Contener el derrame',
+            'Absorber con material inerte',
+            'Ventilar el área'
+          ],
+          notifications: ['Supervisor de turno'],
+          equipment: ['Absorbente', 'EPP'],
+          expertise: ['Personal capacitado']
+        }
+      ],
+      firstAidMeasures: [
+        {
+          exposureRoute: 'skin',
+          immediateActions: [
+            'Lavar con abundante agua',
+            'Retirar ropa contaminada'
+          ],
+          medicalAttention: false,
+          contraindications: ['No aplicar productos oleosos']
+        }
+      ],
+      disposalRequirements: {
+        method: 'Tratamiento físico-químico',
+        approvedFacilities: ['RIMSA Veracruz'],
+        pretreatment: ['Neutralización si es necesario'],
+        regulations: ['NOM-052-SEMARNAT-2005'],
+        cost: 15.50
+      }
+    },
+    qualityCertificates: [
+      {
+        certificateId: 'CERT-TENS-001-2024',
+        type: 'CoA',
+        issuingAuthority: 'Laboratorio Químico del Golfo',
+        issueDate: new Date('2024-07-08'),
+        scope: 'Análisis químico completo',
+        status: 'valid',
+        documentUrl: '/certificates/TENS-001-CoA-2024.pdf'
+      }
+    ],
+    environmentalImpact: {
+      carbonFootprint: 2.8,
+      waterUsage: 15.2,
+      energyConsumption: 3.1,
+      wasteGeneration: 0.5,
+      recyclability: 'recyclable',
+      sustainabilityScore: 85
+    },
+    compatibilityMatrix: [
+      {
+        materialId: 'raw-002',
+        compatibilityLevel: 'compatible',
+        notes: 'Sinergia positiva en formulaciones'
+      },
+      {
+        materialId: 'raw-005',
+        compatibilityLevel: 'conditional',
+        conditions: ['pH controlado', 'Orden de adición específico'],
+        notes: 'Requiere cuidado en formulación'
+      }
+    ]
+  },
+  {
+    id: 'raw-002',
+    code: 'GLYC-001',
+    name: 'Glicerina USP Grado Cosmético',
+    description: 'Glicerina de alta pureza para formulaciones cosméticas y de cuidado personal',
+    category: 'Humectantes',
+    supplier: 'supplier-002',
+    supplier_id: 'supplier-002',
+    supplier_name: 'Productos Químicos Especializados de México S.A.',
+    unit_of_measure: 'kg',
+    unit_cost: 28.75,
+    current_stock: 1850,
+    minimum_stock: 300,
+    maximum_stock: 3000,
+    quality_grade: 'USP/Cosmético',
+    expiration_tracking: true,
+    status: 'active',
+    created_at: '2024-02-01T00:00:00Z',
+    updated_at: '2024-07-08T00:00:00Z',
+    traceability: {
+      batchId: 'GLYC-001-240708-001',
+      lotNumber: 'PQEM-24070615-GLYC',
+      manufacturingDate: new Date('2024-07-06'),
+      receiptDate: new Date('2024-07-08'),
+      supplier: mockSuppliers[1],
+      currentLocation: {
+        zone: 'B',
+        aisle: '01',
+        shelf: '2A',
+        position: '08',
+        lastMoved: new Date('2024-07-08'),
+        movedBy: 'OP-001',
+        environmentalConditions: {
+          temperature: 21.8,
+          humidity: 42.1,
+          lastChecked: new Date('2024-07-15T08:00:00Z')
+        }
+      },
+      chainOfCustody: [],
+      qualityTestResults: [],
+      usageHistory: []
+    },
+    chemicalProperties: {
+      composition: [
+        {
+          component: 'Glicerol',
+          casNumber: '56-81-5',
+          percentage: 99.5,
+          role: 'active',
+          hazardous: false
+        },
+        {
+          component: 'Agua',
+          percentage: 0.5,
+          role: 'carrier',
+          hazardous: false
+        }
+      ],
+      physicalProperties: {
+        appearance: 'Líquido viscoso incoloro',
+        odor: 'Inodoro o ligero olor característico',
+        pH: 7.0,
+        density: 1.261,
+        viscosity: 1412,
+        solubility: 'Miscible con agua y alcohol',
+        meltingPoint: 18.2,
+        boilingPoint: 290
+      },
+      stability: {
+        thermalStability: 'Estable hasta 150°C',
+        lightStability: 'Estable a luz normal',
+        airStability: 'Higroscópico',
+        incompatibilities: ['Agentes oxidantes fuertes'],
+        degradationProducts: ['Acroleína a altas temperaturas'],
+        shelfLife: 36
+      },
+      reactivity: {
+        reactivityLevel: 'none',
+        incompatibleMaterials: ['Permanganato de potasio'],
+        hazardousReactions: ['Formación de acroleína por calentamiento excesivo'],
+        polymerization: false,
+        oxidizingAgent: false,
+        reducingAgent: false
+      },
+      hazardClassification: {
+        ghsCategory: ['No clasificado como peligroso'],
+        hazardStatements: [],
+        precautionaryStatements: ['P102: Mantener fuera del alcance de los niños'],
+        signalWord: 'none',
+        pictograms: []
+      },
+      safetyDataSheet: {
+        sdsNumber: 'SDS-GLYC-001-MX',
+        version: '2.3',
+        issueDate: new Date('2024-02-01'),
+        language: 'Español (México)',
+        supplier: 'Productos Químicos Especializados de México',
+        emergencyPhone: '+52-55-5234-7899',
+        documentUrl: '/sds/GLYC-001-v2.3.pdf',
+        lastReview: new Date('2024-02-01'),
+        nextReview: new Date('2025-02-01')
+      },
+      environmentalProperties: {
+        biodegradability: 'readily',
+        bioaccumulation: false,
+        aquaticToxicity: 'none',
+        soilImpact: 'none',
+        airEmissions: false,
+        wasteClassification: 'No peligroso'
+      }
+    },
+    storageRequirements: {
+      temperature: {
+        min: 10,
+        max: 40,
+        unit: 'celsius',
+        critical: false
+      },
+      humidity: {
+        min: 20,
+        max: 80,
+        unit: 'percentage',
+        critical: false
+      },
+      lightExposure: 'ambient',
+      ventilation: 'standard',
+      containerRequirements: [
+        {
+          materialType: 'Acero inoxidable o HDPE',
+          sealType: 'Hermético',
+          venting: false,
+          labelingRequirements: ['Grado USP', 'Lote y fecha']
+        }
+      ],
+      segregationRequirements: [
+        {
+          segregateFrom: ['Oxidantes fuertes'],
+          minimumDistance: 2,
+          barrierRequired: false,
+          reason: 'Prevenir contaminación'
+        }
+      ],
+      securityLevel: 'standard'
+    },
+    safetyClassification: {
+      ghsClassification: {
+        physicalHazards: [],
+        healthHazards: [],
+        environmentalHazards: [],
+        category: 'No clasificado',
+        signalWord: 'warning'
+      },
+      nfpaRating: {
+        health: 0,
+        flammability: 1,
+        instability: 0,
+        specificHazards: []
+      },
+      ppeRequired: [
+        {
+          equipment: 'Guantes de nitrilo',
+          specification: 'EN 374-1',
+          required: false
+        }
+      ],
+      emergencyProcedures: [
+        {
+          emergencyType: 'Derrame',
+          immediateActions: [
+            'Absorber con material inerte',
+            'Evitar contaminación de drenajes'
+          ],
+          notifications: [],
+          equipment: ['Absorbente'],
+          expertise: ['Personal general']
+        }
+      ],
+      firstAidMeasures: [
+        {
+          exposureRoute: 'eye',
+          immediateActions: [
+            'Lavar con abundante agua por 15 minutos'
+          ],
+          medicalAttention: false,
+          contraindications: []
+        }
+      ],
+      disposalRequirements: {
+        method: 'Biodegradación',
+        approvedFacilities: ['Planta de tratamiento municipal'],
+        regulations: ['NOM-001-SEMARNAT-1996'],
+        cost: 2.50
+      }
+    },
+    qualityCertificates: [
+      {
+        certificateId: 'CERT-GLYC-001-USP-2024',
+        type: 'custom',
+        issuingAuthority: 'United States Pharmacopeia',
+        issueDate: new Date('2024-01-15'),
+        expirationDate: new Date('2025-01-15'),
+        scope: 'Calidad farmacéutica USP',
+        status: 'valid'
+      }
+    ],
+    environmentalImpact: {
+      carbonFootprint: 1.8,
+      waterUsage: 8.5,
+      energyConsumption: 2.1,
+      wasteGeneration: 0.2,
+      recyclability: 'recyclable',
+      sustainabilityScore: 92
+    },
+    compatibilityMatrix: [
+      {
+        materialId: 'raw-001',
+        compatibilityLevel: 'compatible',
+        notes: 'Excelente combinación para productos de limpieza'
+      }
+    ]
+  },
+  {
+    id: 'raw-003',
+    code: 'ALCO-001',
+    name: 'Alcohol Etílico Desnaturalizado 96°',
+    description: 'Alcohol etílico desnaturalizado para uso industrial y sanitizante',
+    category: 'Solventes',
+    supplier: 'supplier-001',
+    supplier_id: 'supplier-001',
+    supplier_name: 'Química Industrial del Golfo S.A. de C.V.',
+    unit_of_measure: 'l',
+    unit_cost: 18.50,
+    current_stock: 4250,
+    minimum_stock: 800,
+    maximum_stock: 6000,
+    quality_grade: 'Industrial',
+    expiration_tracking: false,
+    status: 'active',
+    created_at: '2024-01-10T00:00:00Z',
+    updated_at: '2024-07-14T00:00:00Z',
+    traceability: {
+      batchId: 'ALCO-001-240714-002',
+      lotNumber: 'QIG-24071214-ALCO',
+      manufacturingDate: new Date('2024-07-12'),
+      receiptDate: new Date('2024-07-14'),
+      supplier: mockSuppliers[0],
+      currentLocation: {
+        zone: 'C',
+        aisle: '03',
+        shelf: '1A',
+        position: '01',
+        lastMoved: new Date('2024-07-14'),
+        movedBy: 'OP-003',
+        environmentalConditions: {
+          temperature: 20.2,
+          humidity: 38.5,
+          lastChecked: new Date('2024-07-15T08:00:00Z')
+        }
+      },
+      chainOfCustody: [],
+      qualityTestResults: [],
+      usageHistory: []
+    },
+    chemicalProperties: {
+      composition: [
+        {
+          component: 'Etanol',
+          casNumber: '64-17-5',
+          percentage: 96.0,
+          role: 'active',
+          hazardous: true
+        },
+        {
+          component: 'Agua',
+          percentage: 3.5,
+          role: 'carrier',
+          hazardous: false
+        },
+        {
+          component: 'Desnaturalizante',
+          percentage: 0.5,
+          role: 'inactive',
+          hazardous: false
+        }
+      ],
+      physicalProperties: {
+        appearance: 'Líquido incoloro transparente',
+        odor: 'Característico alcohólico',
+        pH: 7.0,
+        density: 0.810,
+        viscosity: 1.2,
+        solubility: 'Miscible con agua',
+        meltingPoint: -114.1,
+        boilingPoint: 78.4,
+        flashPoint: 17
+      },
+      stability: {
+        thermalStability: 'Estable bajo condiciones normales',
+        lightStability: 'Estable',
+        airStability: 'Estable pero inflamable',
+        incompatibilities: ['Oxidantes fuertes', 'Ácidos', 'Metales alcalinos'],
+        degradationProducts: ['Acetaldehído', 'Ácido acético'],
+        shelfLife: 60
+      },
+      reactivity: {
+        reactivityLevel: 'moderate',
+        incompatibleMaterials: ['Peróxidos', 'Permanganatos', 'Cromatos'],
+        hazardousReactions: ['Reacción violenta con oxidantes'],
+        polymerization: false,
+        oxidizingAgent: false,
+        reducingAgent: true
+      },
+      hazardClassification: {
+        ghsCategory: ['Líquido inflamable categoría 2'],
+        hazardStatements: ['H225: Líquido y vapores muy inflamables'],
+        precautionaryStatements: ['P210: Mantener alejado del calor/chispas/llama abierta/superficies calientes'],
+        signalWord: 'danger',
+        pictograms: ['GHS02']
+      },
+      safetyDataSheet: {
+        sdsNumber: 'SDS-ALCO-001-MX',
+        version: '4.2',
+        issueDate: new Date('2024-03-10'),
+        language: 'Español (México)',
+        supplier: 'Química Industrial del Golfo',
+        emergencyPhone: '+52-229-934-5601',
+        documentUrl: '/sds/ALCO-001-v4.2.pdf',
+        lastReview: new Date('2024-03-10'),
+        nextReview: new Date('2025-03-10')
+      },
+      environmentalProperties: {
+        biodegradability: 'readily',
+        bioaccumulation: false,
+        aquaticToxicity: 'moderate',
+        soilImpact: 'low',
+        airEmissions: true,
+        wasteClassification: 'Peligroso por inflamabilidad'
+      }
+    },
+    storageRequirements: {
+      temperature: {
+        min: 5,
+        max: 25,
+        unit: 'celsius',
+        critical: true
+      },
+      humidity: {
+        min: 30,
+        max: 70,
+        unit: 'percentage',
+        critical: false
+      },
+      lightExposure: 'protected',
+      ventilation: 'enhanced',
+      containerRequirements: [
+        {
+          materialType: 'Acero al carbón con recubrimiento o HDPE',
+          sealType: 'Hermético a prueba de vapores',
+          venting: true,
+          labelingRequirements: ['Etiqueta GHS inflamable', 'Número ONU 1170']
+        }
+      ],
+      segregationRequirements: [
+        {
+          segregateFrom: ['Oxidantes', 'Fuentes de ignición', 'Materiales reactivos'],
+          minimumDistance: 10,
+          barrierRequired: true,
+          reason: 'Prevenir incendios y explosiones',
+          regulatoryBasis: 'NOM-005-STPS-1998'
+        }
+      ],
+      securityLevel: 'controlled',
+      specialHandling: [
+        'Almacenamiento en área ventilada',
+        'Conexión a tierra de equipos',
+        'Sistema contra incendios especializado',
+        'Acceso restringido'
+      ]
+    },
+    safetyClassification: {
+      ghsClassification: {
+        physicalHazards: ['Líquido inflamable categoría 2'],
+        healthHazards: ['Irritación ocular categoría 2'],
+        environmentalHazards: [],
+        category: 'Peligroso',
+        signalWord: 'danger'
+      },
+      nfpaRating: {
+        health: 0,
+        flammability: 3,
+        instability: 0,
+        specificHazards: []
+      },
+      nomClassification: {
+        nomNumber: 'NOM-018-STPS-2000',
+        classification: 'Sustancia inflamable',
+        requirements: [
+          'Almacenamiento en área controlada',
+          'EPP obligatorio',
+          'Sistemas de emergencia'
+        ],
+        applicableProducts: ['Líquidos inflamables']
+      },
+      ppeRequired: [
+        {
+          equipment: 'Guantes de nitrilo resistentes a solventes',
+          specification: 'EN 374-3',
+          required: true
+        },
+        {
+          equipment: 'Gafas de seguridad químicas',
+          specification: 'EN 166',
+          required: true
+        },
+        {
+          equipment: 'Respirador para vapores orgánicos',
+          specification: 'NIOSH A',
+          required: true
+        }
+      ],
+      emergencyProcedures: [
+        {
+          emergencyType: 'Incendio',
+          immediateActions: [
+            'Evacuar área',
+            'Usar espuma o CO2 para extinguir',
+            'Enfriar contenedores con agua'
+          ],
+          notifications: ['Bomberos', 'Protección Civil'],
+          equipment: ['Extintores clase B', 'Espuma AFFF'],
+          expertise: ['Brigada contra incendios']
+        },
+        {
+          emergencyType: 'Derrame',
+          immediateActions: [
+            'Eliminar fuentes de ignición',
+            'Ventilar área',
+            'Absorber con material inerte'
+          ],
+          notifications: ['Supervisor HSE'],
+          equipment: ['Absorbente inerte', 'Equipos antiestáticos'],
+          expertise: ['Personal capacitado en materiales peligrosos']
+        }
+      ],
+      firstAidMeasures: [
+        {
+          exposureRoute: 'inhalation',
+          immediateActions: [
+            'Trasladar a aire fresco',
+            'Mantener en reposo'
+          ],
+          medicalAttention: true,
+          contraindications: ['No inducir vómito']
+        },
+        {
+          exposureRoute: 'skin',
+          immediateActions: [
+            'Lavar con abundante agua',
+            'Retirar ropa contaminada'
+          ],
+          medicalAttention: false,
+          contraindications: []
+        }
+      ],
+      disposalRequirements: {
+        method: 'Incineración controlada',
+        approvedFacilities: ['RIMSA Veracruz', 'Ecointegral'],
+        pretreatment: ['Separación de agua'],
+        regulations: ['NOM-052-SEMARNAT-2005', 'NOM-087-SEMARNAT-SSA1-2002'],
+        cost: 25.80
+      }
+    },
+    qualityCertificates: [
+      {
+        certificateId: 'CERT-ALCO-001-IND-2024',
+        type: 'custom',
+        issuingAuthority: 'Laboratorio Químico del Golfo',
+        issueDate: new Date('2024-07-12'),
+        scope: 'Análisis de pureza alcohol industrial',
+        status: 'valid'
+      }
+    ],
+    environmentalImpact: {
+      carbonFootprint: 1.2,
+      waterUsage: 3.5,
+      energyConsumption: 4.8,
+      wasteGeneration: 0.8,
+      recyclability: 'partially_recyclable',
+      sustainabilityScore: 65
+    },
+    compatibilityMatrix: [
+      {
+        materialId: 'raw-002',
+        compatibilityLevel: 'compatible',
+        notes: 'Buena mezcla para formulaciones sanitizantes'
+      },
+      {
+        materialId: 'raw-004',
+        compatibilityLevel: 'incompatible',
+        interactions: ['Posible precipitación'],
+        notes: 'No mezclar directamente'
+      }
+    ],
+    transportationRequirements: {
+      transportClass: 'UN 1170',
+      packingGroup: 'II',
+      hazmatRequired: true,
+      specialEquipment: ['Vehículos con conexión a tierra', 'Extintor clase B'],
+      routeRestrictions: ['Evitar centros urbanos', 'Rutas autorizadas únicamente'],
+      quantityLimitations: {
+        maxQuantity: 1000,
+        unit: 'l'
+      }
+    }
+  }
+]
+
+// Advanced Inventory Items (Finished Products with Extended Properties)
+export const mockAdvancedInventoryItems: AdvancedInventoryItem[] = mockProducts.slice(0, 10).map((product, index) => ({
+  // Base properties from existing InventoryItem
+  id: product.id,
+  name: product.name,
+  type: 'finished_product' as const,
+  currentStock: product.currentStock,
+  minStock: product.minStock,
+  maxStock: product.currentStock * 2,
+  unit: product.unit,
+  cost: product.productionCost,
+  supplier: 'Ninu Factory Control',
+  lastRestocked: new Date(Date.now() - Math.random() * 30 * 24 * 3600000),
+  expirationDate: product.shelfLife ? new Date(Date.now() + product.shelfLife * 30 * 24 * 3600000) : undefined,
+  
+  // Advanced properties
+  barcode: `7501${String(index + 1).padStart(8, '0')}`,
+  sku: `NINU-${product.id.toUpperCase()}`,
+  storageLocation: `Zone-${String.fromCharCode(65 + Math.floor(index / 3))}-${String(index % 3 + 1).padStart(2, '0')}`,
+  
+  storageRequirements: {
+    temperature: {
+      min: 15,
+      max: 30,
+      unit: 'celsius' as const,
+      critical: false
+    },
+    humidity: {
+      min: 30,
+      max: 70,
+      unit: 'percentage' as const,
+      critical: false
+    },
+    lightExposure: 'protected' as const,
+    ventilation: 'standard' as const,
+    containerRequirements: [
+      {
+        materialType: product.packaging === 'bottle' ? 'HDPE' : 'Polipropileno',
+        sealType: 'Rosca hermética',
+        venting: false,
+        labelingRequirements: ['Etiqueta comercial', 'Fecha de caducidad', 'Lote de producción']
+      }
+    ],
+    segregationRequirements: [],
+    securityLevel: 'standard' as const
+  },
+  
+  traceability: {
+    batchId: `PROD-${product.id}-${new Date().getFullYear()}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`,
+    lotNumber: `NINU-${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(Math.floor(Math.random() * 99)).padStart(2, '0')}`,
+    manufacturingDate: new Date(Date.now() - Math.random() * 15 * 24 * 3600000),
+    receiptDate: new Date(Date.now() - Math.random() * 10 * 24 * 3600000),
+    supplier: {
+      id: 'ninu-factory',
+      name: 'Ninu Factory Control',
+      contactInfo: ninuContactInfo as any,
+      qualityMetrics: {
+        defectRate: 0.2,
+        onTimeDelivery: 99.5,
+        qualityScore: 98,
+        certificationCompliance: 100,
+        correctiveActions: 0,
+        qualityTrend: 'stable' as const
+      },
+      deliveryMetrics: {
+        averageLeadTime: 1,
+        onTimeDeliveryRate: 99.5,
+        earlyDeliveryRate: 80.0,
+        lateDeliveryRate: 0.5,
+        deliveryAccuracy: 99.8,
+        transportationCost: 0
+      },
+      certifications: [
+        {
+          type: 'COFEPRIS',
+          issuingBody: 'COFEPRIS',
+          certificationNumber: product.cofepisRegistration || 'COFEPRIS-NINU-2024',
+          issueDate: new Date('2024-01-01'),
+          expirationDate: new Date('2025-12-31'),
+          status: 'valid' as const,
+          scope: 'Productos de limpieza y desinfección'
+        }
+      ],
+      riskScore: 5,
+      financialRating: 'A' as const,
+      preferredSupplier: true
+    },
+    currentLocation: {
+      zone: `Zone-${String.fromCharCode(65 + Math.floor(index / 3))}`,
+      aisle: String(Math.floor(index / 2) + 1).padStart(2, '0'),
+      shelf: `${Math.floor(index % 4) + 1}${String.fromCharCode(65 + index % 3)}`,
+      position: String(index % 10 + 1).padStart(2, '0'),
+      lastMoved: new Date(Date.now() - Math.random() * 7 * 24 * 3600000),
+      movedBy: `OP-${String(Math.floor(Math.random() * 5) + 1).padStart(3, '0')}`,
+      environmentalConditions: {
+        temperature: 20 + Math.random() * 8,
+        humidity: 40 + Math.random() * 20,
+        lastChecked: new Date(Date.now() - Math.random() * 24 * 3600000)
+      }
+    },
+    chainOfCustody: [],
+    qualityTestResults: [],
+    usageHistory: []
+  },
+  
+  qualityHistory: [
+    {
+      id: `QC-${product.id}-001`,
+      testDate: new Date(Date.now() - Math.random() * 7 * 24 * 3600000),
+      testType: 'Control de calidad final',
+      testResults: [
+        {
+          parameter: 'Apariencia',
+          measuredValue: 100,
+          unit: '% conforme',
+          specification: { min: 95 },
+          status: 'pass' as const,
+          method: 'Inspección visual',
+          instrument: 'Visual'
+        },
+        {
+          parameter: 'pH',
+          measuredValue: 7.0 + (Math.random() - 0.5) * 1.0,
+          unit: 'pH',
+          specification: { min: 6.5, max: 8.0 },
+          status: 'pass' as const,
+          method: 'Potenciometría',
+          instrument: 'pHmetro Hanna'
+        }
+      ],
+      inspector: `Inspector-${Math.floor(Math.random() * 3) + 1}`,
+      status: 'pass' as const,
+      notes: 'Producto conforme a especificaciones'
+    }
+  ],
+  
+  businessImpact: {
+    productionImpact: {
+      affectedProductLines: [product.category],
+      estimatedDowntime: 0,
+      alternativeOptions: [],
+      priorityLevel: product.urgencyIndicators?.demandLevel === 'very_high' ? 'critical' : 
+                     product.urgencyIndicators?.demandLevel === 'high' ? 'high' : 'medium',
+      mitigationPossible: true
+    },
+    financialImpact: {
+      directCost: product.productionCost * product.currentStock,
+      opportunityCost: (product.salePrice - product.productionCost) * Math.max(0, product.minStock - product.currentStock),
+      totalImpact: product.productionCost * product.currentStock,
+      impactCategory: product.currentStock < product.minStock ? 'significant' : 'minimal'
+    },
+    customerImpact: {
+      affectedOrders: product.urgencyIndicators?.dailyPurchases || 5,
+      affectedCustomers: Math.floor((product.urgencyIndicators?.dailyPurchases || 5) * 0.8),
+      reputationRisk: product.urgencyIndicators?.demandLevel === 'very_high' ? 'high' : 'medium',
+      customerNotificationRequired: product.currentStock < product.minStock,
+      alternativeProducts: mockProducts.filter(p => p.category === product.category && p.id !== product.id).map(p => p.id).slice(0, 3)
+    },
+    qualityImpact: {
+      productQualityRisk: 'none' as const,
+      batchReleaseDelay: 0,
+      additionalTestingRequired: false,
+      qualityCompromise: false,
+      regulatoryImplications: false
+    },
+    complianceImpact: {
+      regulatoryBodies: product.cofepisApproval ? ['COFEPRIS'] : [],
+      complianceRisk: 'low' as const,
+      reportingRequired: false,
+      auditImplications: false,
+      penaltyRisk: 0
+    },
+    overallRiskScore: product.currentStock < product.minStock ? 75 : 25,
+    mitigationStrategies: [
+      {
+        strategy: 'Producción urgente',
+        estimatedCost: product.productionCost * (product.minStock - product.currentStock),
+        timeToImplement: 24,
+        effectiveness: 0.95,
+        riskReduction: 80,
+        feasibility: 'high' as const
+      }
+    ],
+    recoveryTimeObjective: 24
+  },
+  
+  smartAlerts: product.currentStock < product.minStock ? [{
+    id: `alert-${product.id}-stock`,
+    item_type: 'finished_product' as const,
+    item_id: product.id,
+    alert_type: 'low_stock' as const,
+    severity: 'medium' as const,
+    current_value: product.currentStock,
+    threshold_value: product.minStock,
+    message: `Stock bajo para ${product.name}: ${product.currentStock} ${product.unit} (mínimo: ${product.minStock})`,
+    acknowledged: false,
+    created_at: new Date().toISOString(),
+    predictions: {
+      timeToStockOut: Math.max(1, Math.floor(product.currentStock / (product.urgencyIndicators?.dailyPurchases || 1)) * 24),
+      probabilityOfStockOut: product.currentStock < product.minStock ? 0.8 : 0.2,
+      demandSpike: product.urgencyIndicators?.demandLevel === 'very_high',
+      seasonalFactor: 1.0,
+      trendDirection: 'decreasing' as const
+    },
+    recommendedActions: [
+      {
+        id: `action-${product.id}-reorder`,
+        type: 'reorder' as const,
+        priority: 'high' as const,
+        description: `Producir lote urgente de ${product.name}`,
+        estimatedCost: product.productionCost * (product.minStock * 2),
+        estimatedTimeHours: 24,
+        requiredApprovals: ['Supervisor de Producción'],
+        canAutoExecute: false,
+        expectedOutcome: `Restaurar stock a ${product.minStock * 2} unidades`,
+        riskIfNotTaken: 'high' as const
+      }
+    ],
+    businessImpact: {
+      productionImpact: {
+        affectedProductLines: [product.category],
+        estimatedDowntime: 0,
+        alternativeOptions: [],
+        priorityLevel: 'high' as const,
+        mitigationPossible: true
+      },
+      financialImpact: {
+        directCost: 0,
+        opportunityCost: (product.salePrice - product.productionCost) * (product.urgencyIndicators?.dailyPurchases || 1) * 3,
+        totalImpact: (product.salePrice - product.productionCost) * (product.urgencyIndicators?.dailyPurchases || 1) * 3,
+        impactCategory: 'moderate' as const
+      },
+      customerImpact: {
+        affectedOrders: product.urgencyIndicators?.dailyPurchases || 1,
+        affectedCustomers: Math.floor((product.urgencyIndicators?.dailyPurchases || 1) * 0.8),
+        reputationRisk: 'medium' as const,
+        customerNotificationRequired: true,
+        alternativeProducts: mockProducts.filter(p => p.category === product.category && p.id !== product.id).map(p => p.id).slice(0, 2)
+      },
+      qualityImpact: {
+        productQualityRisk: 'none' as const,
+        batchReleaseDelay: 0,
+        additionalTestingRequired: false,
+        qualityCompromise: false,
+        regulatoryImplications: false
+      },
+      complianceImpact: {
+        regulatoryBodies: [],
+        complianceRisk: 'low' as const,
+        reportingRequired: false,
+        auditImplications: false,
+        penaltyRisk: 0
+      },
+      overallRiskScore: 65,
+      mitigationStrategies: [],
+      recoveryTimeObjective: 24
+    },
+    autoResolutionAvailable: false,
+    patternAnalysis: {
+      patternType: 'recurring' as const,
+      frequency: 1,
+      lastOccurrence: new Date(Date.now() - 30 * 24 * 3600000),
+      nextPredictedOccurrence: new Date(Date.now() + 15 * 24 * 3600000),
+      reliability: 0.8
+    },
+    escalationRules: [
+      {
+        level: 1,
+        timeThreshold: 60,
+        notificationMethod: 'email' as const,
+        recipients: ['supervisor@ninu.mx'],
+        conditions: ['Stock crítico']
+      }
+    ]
+  }] : [],
+  
+  leadTimeDays: Math.floor(Math.random() * 3) + 1,
+  criticalityLevel: product.urgencyIndicators?.demandLevel === 'very_high' ? 'critical' :
+                    product.urgencyIndicators?.demandLevel === 'high' ? 'high' : 'medium',
+  
+  alternatives: mockProducts.filter(p => p.category === product.category && p.id !== product.id).map(p => p.id).slice(0, 2),
+  
+  lastAudit: {
+    auditId: `AUDIT-${product.id}-2024-001`,
+    auditDate: new Date(Date.now() - Math.random() * 60 * 24 * 3600000),
+    auditor: 'Auditor Interno Ninu',
+    auditType: 'routine' as const,
+    findings: [],
+    recommendations: ['Mantener niveles de stock óptimos'],
+    status: 'closed' as const
+  },
+  
+  certifications: product.cofepisApproval ? [product.cofepisRegistration || 'COFEPRIS-NINU-2024'] : []
+}))
+
+// Mock Inventory Movements
+export const mockInventoryMovements: InventoryMovement[] = [
+  {
+    id: 'mov-001',
+    item_type: 'raw_material',
+    item_id: 'raw-001',
+    batch_id: 'TENS-001-240710-001',
+    movement_type: 'receipt',
+    quantity: 1000,
+    unit_cost: 45.50,
+    reason: 'Recepción programada de proveedor',
+    reference_document: 'PO-2024-0152',
+    to_location: 'Zone-A-02-3B-12',
+    created_by: 'OP-002',
+    created_at: '2024-07-10T14:30:00Z'
+  },
+  {
+    id: 'mov-002',
+    item_type: 'raw_material',
+    item_id: 'raw-001',
+    batch_id: 'TENS-001-240710-001',
+    movement_type: 'consumption',
+    quantity: -450,
+    reason: 'Producción Jabón Líquido Trastes lote PROD-001-2024085',
+    reference_document: 'BATCH-001',
+    from_location: 'Zone-A-02-3B-12',
+    to_location: 'Reactor-A',
+    created_by: 'OP-001',
+    created_at: '2024-07-12T08:15:00Z'
+  },
+  {
+    id: 'mov-003',
+    item_type: 'finished_product',
+    item_id: 'prod-001',
+    movement_type: 'production',
+    quantity: 500,
+    unit_cost: 45.00,
+    reason: 'Completado lote PROD-001-2024085',
+    reference_document: 'BATCH-001',
+    to_location: 'Zone-F-01',
+    created_by: 'OP-001',
+    created_at: '2024-07-12T16:45:00Z'
+  },
+  {
+    id: 'mov-004',
+    item_type: 'finished_product',
+    item_id: 'prod-001',
+    movement_type: 'transfer',
+    quantity: -150,
+    reason: 'Transferencia a almacén de distribución',
+    reference_document: 'SHIP-2024-0089',
+    from_location: 'Zone-F-01',
+    to_location: 'Almacén-Distribución',
+    created_by: 'OP-004',
+    created_at: '2024-07-13T10:20:00Z'
+  },
+  {
+    id: 'mov-005',
+    item_type: 'raw_material',
+    item_id: 'raw-002',
+    movement_type: 'receipt',
+    quantity: 800,
+    unit_cost: 28.75,
+    reason: 'Recepción programada glicerina',
+    reference_document: 'PO-2024-0148',
+    to_location: 'Zone-B-01-2A-08',
+    created_by: 'OP-003',
+    created_at: '2024-07-08T11:15:00Z'
+  }
+]
+
+// Smart Inventory Alerts
+export const mockSmartInventoryAlerts: SmartInventoryAlert[] = [
+  {
+    id: 'alert-smart-001',
+    item_type: 'finished_product',
+    item_id: 'prod-008', // Blanqueador Cloro En Gel que tiene stock muy bajo
+    alert_type: 'low_stock',
+    severity: 'critical',
+    current_value: 8,
+    threshold_value: 40,
+    message: 'CRÍTICO: Stock extremadamente bajo de Blanqueador Cloro En Gel 4L - Solo 8 unidades restantes',
+    acknowledged: false,
+    created_at: '2024-07-15T09:30:00Z',
+    predictions: {
+      timeToStockOut: 18, // horas
+      probabilityOfStockOut: 0.95,
+      demandSpike: false,
+      seasonalFactor: 1.2, // Temporada alta de limpieza
+      trendDirection: 'decreasing'
+    },
+    recommendedActions: [
+      {
+        id: 'action-008-emergency',
+        type: 'reorder',
+        priority: 'urgent',
+        description: 'PRODUCCIÓN URGENTE: Lote de emergencia Blanqueador Cloro En Gel 4L',
+        estimatedCost: 58.00 * 200, // Lote mínimo viable
+        estimatedTimeHours: 12,
+        requiredApprovals: ['Gerente de Producción', 'Control de Calidad'],
+        canAutoExecute: false,
+        dependencies: ['Verificar stock hipoclorito de sodio'],
+        expectedOutcome: 'Restaurar stock a 200 unidades en 12 horas',
+        riskIfNotTaken: 'critical'
+      },
+      {
+        id: 'action-008-substitute',
+        type: 'substitute',
+        priority: 'high',
+        description: 'Ofrecer Blanqueador 10L como alternativa temporal',
+        estimatedCost: 0,
+        estimatedTimeHours: 1,
+        requiredApprovals: ['Ventas'],
+        canAutoExecute: true,
+        expectedOutcome: 'Mantener satisfacción del cliente',
+        riskIfNotTaken: 'medium'
+      },
+      {
+        id: 'action-008-expedite',
+        type: 'expedite',
+        priority: 'high',
+        description: 'Acelerar procesamiento del lote actual',
+        estimatedCost: 2000, // Costo de horas extra
+        estimatedTimeHours: 8,
+        requiredApprovals: ['Supervisor de Turno'],
+        canAutoExecute: false,
+        expectedOutcome: 'Reducir tiempo de producción en 4 horas',
+        riskIfNotTaken: 'high'
+      }
+    ],
+    businessImpact: {
+      productionImpact: {
+        affectedProductLines: ['limpieza'],
+        estimatedDowntime: 0,
+        alternativeOptions: ['prod-009'], // Blanqueador 10L
+        priorityLevel: 'critical',
+        mitigationPossible: true
+      },
+      financialImpact: {
+        directCost: 0,
+        opportunityCost: 15000, // Ventas perdidas estimadas
+        expeditingCost: 2000,
+        totalImpact: 17000,
+        impactCategory: 'significant'
+      },
+      customerImpact: {
+        affectedOrders: 25,
+        affectedCustomers: 20,
+        reputationRisk: 'high',
+        customerNotificationRequired: true,
+        alternativeProducts: ['prod-009']
+      },
+      qualityImpact: {
+        productQualityRisk: 'none',
+        batchReleaseDelay: 0,
+        additionalTestingRequired: false,
+        qualityCompromise: false,
+        regulatoryImplications: false
+      },
+      complianceImpact: {
+        regulatoryBodies: ['COFEPRIS'],
+        complianceRisk: 'low',
+        reportingRequired: false,
+        auditImplications: false,
+        penaltyRisk: 0
+      },
+      overallRiskScore: 85,
+      mitigationStrategies: [
+        {
+          strategy: 'Producción de emergencia con lote reducido',
+          estimatedCost: 11600,
+          timeToImplement: 12,
+          effectiveness: 0.95,
+          riskReduction: 80,
+          feasibility: 'high'
+        },
+        {
+          strategy: 'Sustitución temporal con producto similar',
+          estimatedCost: 500,
+          timeToImplement: 1,
+          effectiveness: 0.70,
+          riskReduction: 40,
+          feasibility: 'high'
+        }
+      ],
+      recoveryTimeObjective: 12
+    },
+    autoResolutionAvailable: false,
+    patternAnalysis: {
+      patternType: 'recurring',
+      frequency: 3, // Cada 3 meses aproximadamente
+      lastOccurrence: new Date('2024-04-15'),
+      nextPredictedOccurrence: new Date('2024-10-15'),
+      reliability: 0.85
+    },
+    escalationRules: [
+      {
+        level: 1,
+        timeThreshold: 30, // 30 minutos
+        notificationMethod: 'sms',
+        recipients: ['supervisor.produccion@ninu.mx', '+52-229-999-0001'],
+        conditions: ['Stock crítico no reconocido']
+      },
+      {
+        level: 2,
+        timeThreshold: 60, // 1 hora
+        notificationMethod: 'phone',
+        recipients: ['gerente.produccion@ninu.mx', '+52-229-999-0002'],
+        conditions: ['Sin acción tomada nivel 1']
+      },
+      {
+        level: 3,
+        timeThreshold: 120, // 2 horas
+        notificationMethod: 'app',
+        recipients: ['director.operaciones@ninu.mx'],
+        conditions: ['Escalación máxima requerida']
+      }
+    ],
+    procurementIntegration: {
+      vendorId: 'ninu-factory',
+      preferredQuantity: 200,
+      estimatedCost: 11600,
+      leadTime: 12,
+      autoOrderThreshold: 15,
+      requiredApprovals: ['Gerente de Producción']
+    },
+    relatedAlerts: ['alert-raw-003'] // Posible escasez de hipoclorito
+  },
+  {
+    id: 'alert-smart-002',
+    item_type: 'raw_material',
+    item_id: 'raw-003',
+    alert_type: 'expiring',
+    severity: 'medium',
+    current_value: 30, // días restantes
+    threshold_value: 60,
+    message: 'Material próximo a vencer: Alcohol Etílico 96° vence en 30 días',
+    acknowledged: false,
+    created_at: '2024-07-15T06:00:00Z',
+    predictions: {
+      timeToStockOut: 720, // 30 días en horas
+      probabilityOfStockOut: 0.15,
+      demandSpike: false,
+      seasonalFactor: 1.0,
+      trendDirection: 'stable'
+    },
+    recommendedActions: [
+      {
+        id: 'action-003-fifo',
+        type: 'adjust_forecast',
+        priority: 'medium',
+        description: 'Priorizar uso de lote próximo a vencer - Política FIFO',
+        estimatedCost: 0,
+        estimatedTimeHours: 2,
+        requiredApprovals: ['Supervisor de Producción'],
+        canAutoExecute: true,
+        expectedOutcome: 'Uso completo del lote antes de vencimiento',
+        riskIfNotTaken: 'medium'
+      },
+      {
+        id: 'action-003-discount',
+        type: 'transfer',
+        priority: 'low',
+        description: 'Transferir a productos con menor vida útil requerida',
+        estimatedCost: 0,
+        estimatedTimeHours: 4,
+        requiredApprovals: ['Control de Calidad'],
+        canAutoExecute: false,
+        expectedOutcome: 'Optimizar uso de material',
+        riskIfNotTaken: 'low'
+      }
+    ],
+    businessImpact: {
+      productionImpact: {
+        affectedProductLines: ['desinfeccion'],
+        estimatedDowntime: 0,
+        alternativeOptions: ['Lote más reciente disponible'],
+        priorityLevel: 'medium',
+        mitigationPossible: true
+      },
+      financialImpact: {
+        directCost: 18.50 * 800, // Costo del lote completo
+        opportunityCost: 0,
+        totalImpact: 14800,
+        impactCategory: 'moderate'
+      },
+      customerImpact: {
+        affectedOrders: 0,
+        affectedCustomers: 0,
+        reputationRisk: 'low',
+        customerNotificationRequired: false,
+        alternativeProducts: []
+      },
+      qualityImpact: {
+        productQualityRisk: 'low',
+        batchReleaseDelay: 0,
+        additionalTestingRequired: true,
+        qualityCompromise: false,
+        regulatoryImplications: false
+      },
+      complianceImpact: {
+        regulatoryBodies: ['COFEPRIS'],
+        complianceRisk: 'medium',
+        reportingRequired: true,
+        auditImplications: true,
+        penaltyRisk: 5000
+      },
+      overallRiskScore: 45,
+      mitigationStrategies: [
+        {
+          strategy: 'Acelerar producción de productos con alcohol',
+          estimatedCost: 1000,
+          timeToImplement: 48,
+          effectiveness: 0.90,
+          riskReduction: 70,
+          feasibility: 'high'
+        }
+      ],
+      recoveryTimeObjective: 48
+    },
+    autoResolutionAvailable: true,
+    patternAnalysis: {
+      patternType: 'seasonal',
+      frequency: 2, // Cada 6 meses
+      lastOccurrence: new Date('2024-01-15'),
+      nextPredictedOccurrence: new Date('2025-01-15'),
+      reliability: 0.75
+    },
+    escalationRules: [
+      {
+        level: 1,
+        timeThreshold: 240, // 4 horas
+        notificationMethod: 'email',
+        recipients: ['control.calidad@ninu.mx'],
+        conditions: ['Material próximo a vencer sin planificación']
+      }
+    ]
+  }
+]

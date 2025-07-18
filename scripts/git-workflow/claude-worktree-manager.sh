@@ -10,12 +10,8 @@ USER_PREFIX=$(whoami)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_FILE="${SCRIPT_DIR}/claude-worktree.log"
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+# Timing for reports
+START_TIME=$(date +%s)
 
 # Logging function
 log() {
@@ -24,26 +20,26 @@ log() {
 
 # Error handling
 error_exit() {
-    echo -e "${RED}ERROR: $1${NC}" >&2
+    echo "⟳ /claude-worktree-manager → ERROR: $1 🎯" >&2
     log "ERROR: $1"
     exit 1
 }
 
 # Success message
 success() {
-    echo -e "${GREEN}✅ $1${NC}"
+    echo "⟳ /claude-worktree-manager → ✅ $1 🎯"
     log "SUCCESS: $1"
 }
 
 # Warning message
 warning() {
-    echo -e "${YELLOW}⚠️  $1${NC}"
+    echo "⟳ /claude-worktree-manager → ⚠️ $1 🎯"
     log "WARNING: $1"
 }
 
 # Info message
 info() {
-    echo -e "${BLUE}ℹ️  $1${NC}"
+    echo "⟳ /claude-worktree-manager → ℹ️ $1 🎯"
     log "INFO: $1"
 }
 
@@ -278,11 +274,11 @@ list_sessions() {
                 fi
             fi
             
-            echo "  📁 $name"
-            echo "     Branch: $branch"
-            echo "     Changes: $changes files modified"
-            echo "     Claude: $claude_status"
-            echo "     Path: $worktree"
+            echo "⟳ /claude-worktree-manager → 📁 $name 🎯"
+            echo "⟳ /claude-worktree-manager → Branch: $branch 🎯"
+            echo "⟳ /claude-worktree-manager → Changes: $changes files modified 🎯"
+            echo "⟳ /claude-worktree-manager → Claude: $claude_status 🎯"
+            echo "⟳ /claude-worktree-manager → Path: $worktree 🎯"
             echo
             ((count++))
         fi
@@ -298,29 +294,29 @@ list_sessions() {
 # Check status of all sessions
 status_check() {
     info "Claude Code Worktree Status Report"
-    echo "Generated: $(date '+%Y-%m-%d %H:%M:%S')"
+    echo "⟳ /claude-worktree-manager → Generated: $(date '+%Y-%m-%d %H:%M:%S') 🎯"
     echo
     
     # System resource overview
-    echo "=== System Resources ==="
-    echo "Memory Usage: $(free -h | awk '/^Mem:/ {print $3 "/" $2}')"
-    echo "CPU Load: $(uptime | awk -F'load average:' '{print $2}')"
-    echo "Disk Usage: $(df -h . | awk 'NR==2 {print $3 "/" $2 " (" $5 " used)"}')"
+    echo "⟳ /claude-worktree-manager → === System Resources === 🎯"
+    echo "⟳ /claude-worktree-manager → Memory Usage: $(free -h | awk '/^Mem:/ {print $3 "/" $2}') 🎯"
+    echo "⟳ /claude-worktree-manager → CPU Load: $(uptime | awk -F'load average:' '{print $2}') 🎯"
+    echo "⟳ /claude-worktree-manager → Disk Usage: $(df -h . | awk 'NR==2 {print $3 "/" $2 " (" $5 " used)"}') 🎯"
     echo
     
     # Git repository status
-    echo "=== Git Repository Status ==="
-    echo "Main Branch: $(git branch --show-current)"
-    echo "Total Worktrees: $(git worktree list | wc -l)"
-    echo "Uncommitted Changes: $(git status --porcelain | wc -l) files"
+    echo "⟳ /claude-worktree-manager → === Git Repository Status === 🎯"
+    echo "⟳ /claude-worktree-manager → Main Branch: $(git branch --show-current) 🎯"
+    echo "⟳ /claude-worktree-manager → Total Worktrees: $(git worktree list | wc -l) 🎯"
+    echo "⟳ /claude-worktree-manager → Uncommitted Changes: $(git status --porcelain | wc -l) files 🎯"
     echo
     
     # Individual worktree status
-    echo "=== Worktree Details ==="
+    echo "⟳ /claude-worktree-manager → === Worktree Details === 🎯"
     list_sessions
     
     # Performance recommendations
-    echo "=== Recommendations ==="
+    echo "⟳ /claude-worktree-manager → === Recommendations === 🎯"
     local active_sessions
     active_sessions=$(pgrep -c claude || echo "0")
     
@@ -386,8 +382,9 @@ sync_all() {
         fi
     done
     
+    ELAPSED_TIME=$(($(date +%s) - START_TIME))
     echo
-    success "Sync complete - Success: $success_count, Conflicts: $conflict_count"
+    success "Sync complete - Success: $success_count, Conflicts: $conflict_count [${ELAPSED_TIME}s]"
     
     if [[ $conflict_count -gt 0 ]]; then
         warning "Manual conflict resolution required for $conflict_count worktrees"
@@ -455,7 +452,8 @@ cleanup() {
         fi
     done
     
-    success "Cleanup complete - Removed $cleanup_count worktrees"
+    ELAPSED_TIME=$(($(date +%s) - START_TIME))
+    success "Cleanup complete - Removed $cleanup_count worktrees [${ELAPSED_TIME}s]"
 }
 
 # Show usage information

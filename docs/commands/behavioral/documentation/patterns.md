@@ -32,7 +32,7 @@
 ## MANDATORY Activation Protocol
 
 **Input Format**:
-```bash
+```markdown
 /recognize-patterns [domain] [pattern_scope] [crystallization_threshold]
 ```
 
@@ -198,7 +198,7 @@ pattern_recognition_score = (
 ## Implementation Examples (Observable Outcomes)
 
 ### Code Pattern Recognition Execution
-```bash
+```markdown
 /recognize-patterns "frontend" "component_patterns" 0.85
 ```
 **Observable Result**: IDENTIFY reusable component patterns with ≥85% success rate, DOCUMENT best practices with 100% completeness, FLAG crystallization candidates with mathematical scoring

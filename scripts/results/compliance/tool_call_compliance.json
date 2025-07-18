@@ -1,18 +1,19 @@
 {
   "tool_call_compliance": {
-    "timestamp": "2025-07-15T19:28:56-06:00",
-    "file_analyzed": "/tmp/test_command.md",
+    "timestamp": "2025-07-18T10:18:02-06:00",
+    "file_analyzed": "/Users/nalve/claude-context-engineering/docs/commands/executable/verification/validate-tool-call-execution.md",
     "compliance_metrics": {
-      "p55_compliance": .6666,
+      "p55_compliance": ,
       "p56_compliance": ,
       "overall_compliance": ,
-      "tool_call_mentions": 1,
-      "execution_requirements": 2,
-      "simulation_prevention": 1,
+      "tool_call_mentions": 0
+0,
+      "execution_requirements": 4,
+      "simulation_prevention": 0
+0,
       "visual_announcements": 0
 0,
-      "transparency_elements": 0
-0
+      "transparency_elements": 2
     },
     "compliance_status": {
       "p55_status": "NON_COMPLIANT",

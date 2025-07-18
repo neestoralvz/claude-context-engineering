@@ -159,15 +159,11 @@
 ### **Argument-Hint Frontmatter** (NEW)
 **Feature**: Enhanced frontmatter support for custom slash commands with argument hints.
 
-**Frontmatter Syntax**:
-```yaml
----
-description: "Brief command description"
-allowed-tools: "Tool1, Tool2"
-argument-hint: "Expected argument format or description"
-examples: ["example usage 1", "example usage 2"]
----
-```
+**MANDATORY Frontmatter Syntax Requirements**:
+- **Description**: Brief command description with functional clarity
+- **Allowed Tools**: Tool1, Tool2 (specific tool permissions and restrictions)
+- **Argument Hint**: Expected argument format or description for user guidance
+- **Examples**: ["example usage 1", "example usage 2"] with practical implementation patterns
 
 **Implementation Example**:
 ```markdown

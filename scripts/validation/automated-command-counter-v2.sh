@@ -7,19 +7,12 @@
 
 set -e
 
-echo "🔢 Context Engineering - Automated Command Counter v2"
+echo "⟳ /automated-command-counter-v2 → Context Engineering - Automated Command Counter v2 🎯"
 echo "===================================================="
 echo ""
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-BOLD='\033[1m'
-NC='\033[0m' # No Color
+# Timing for reports
+START_TIME=$(date +%s)
 
 # System paths
 BASE_DIR="/Users/nalve/claude-context-engineering"
@@ -64,7 +57,7 @@ DISCREPANCIES_FILE="$TEMP_DIR/discrepancies.txt"
 show_section_header() {
     local section_name="$1"
     echo ""
-    echo -e "${BOLD}${PURPLE}━━━ $section_name ━━━${NC}"
+    echo "⟳ /automated-command-counter-v2 → $section_name 🎯"
     echo ""
 }
 
@@ -119,10 +112,10 @@ count_commands_in_directory() {
     local shared_count=0
     local other_count=0
     
-    echo -e "${CYAN}📁 Analyzing directory: $directory${NC}"
+    echo "⟳ /automated-command-counter-v2 → 📁 Analyzing directory: $directory 🎯"
     
     if [ ! -d "$directory" ]; then
-        echo -e "${RED}❌ Directory not found: $directory${NC}"
+        echo "⟳ /automated-command-counter-v2 → ❌ Directory not found: $directory 🎯"
         return 1
     fi
     
@@ -157,7 +150,7 @@ count_commands_in_directory() {
             local relative_path="${file#$BASE_DIR/}"
             echo "$relative_path" >> "$files_list"
             
-            echo -e "  ${GREEN}✓${NC} $relative_path [$category]"
+            echo "⟳ /automated-command-counter-v2 → ✓ $relative_path [$category] 🎯"
         fi
     done < <(find "$directory" -name "*.md" -type f)
     
@@ -178,12 +171,12 @@ count_commands_in_directory() {
         claude_other=$other_count
     fi
     
-    echo -e "${BOLD}📊 $location Total: ${GREEN}$count${NC} commands${NC}"
-    echo -e "   • Behavioral: $behavioral_count"
-    echo -e "   • Executable: $executable_count"
-    echo -e "   • Cores: $cores_count"
-    echo -e "   • Shared: $shared_count"
-    echo -e "   • Other: $other_count"
+    echo "⟳ /automated-command-counter-v2 → 📊 $location Total: $count commands 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Behavioral: $behavioral_count 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Executable: $executable_count 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Cores: $cores_count 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Shared: $shared_count 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Other: $other_count 🎯"
     
     return 0
 }
@@ -200,9 +193,9 @@ detect_discrepancies() {
         local diff=$((docs_total - claude_total))
         echo "total_count:docs:$docs_total vs claude:$claude_total (diff:$diff)" >> "$DISCREPANCIES_FILE"
         discrepancy_count=$((discrepancy_count + 1))
-        echo -e "${YELLOW}⚠️ Total count discrepancy: docs($docs_total) vs claude($claude_total)${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Total count discrepancy: docs($docs_total) vs claude($claude_total) 🎯"
     else
-        echo -e "${GREEN}✅ Total counts match: $docs_total commands in both locations${NC}"
+        echo "⟳ /automated-command-counter-v2 → ✅ Total counts match: $docs_total commands in both locations 🎯"
     fi
     
     # Category-wise discrepancies
@@ -210,45 +203,45 @@ detect_discrepancies() {
         local diff=$((docs_behavioral - claude_behavioral))
         echo "behavioral_count:docs:$docs_behavioral vs claude:$claude_behavioral (diff:$diff)" >> "$DISCREPANCIES_FILE"
         discrepancy_count=$((discrepancy_count + 1))
-        echo -e "${YELLOW}⚠️ Behavioral discrepancy: docs($docs_behavioral) vs claude($claude_behavioral)${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Behavioral discrepancy: docs($docs_behavioral) vs claude($claude_behavioral) 🎯"
     else
-        echo -e "${GREEN}✅ Behavioral counts match: $docs_behavioral commands${NC}"
+        echo "⟳ /automated-command-counter-v2 → ✅ Behavioral counts match: $docs_behavioral commands 🎯"
     fi
     
     if [ "$docs_executable" -ne "$claude_executable" ]; then
         local diff=$((docs_executable - claude_executable))
         echo "executable_count:docs:$docs_executable vs claude:$claude_executable (diff:$diff)" >> "$DISCREPANCIES_FILE"
         discrepancy_count=$((discrepancy_count + 1))
-        echo -e "${YELLOW}⚠️ Executable discrepancy: docs($docs_executable) vs claude($claude_executable)${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Executable discrepancy: docs($docs_executable) vs claude($claude_executable) 🎯"
     else
-        echo -e "${GREEN}✅ Executable counts match: $docs_executable commands${NC}"
+        echo "⟳ /automated-command-counter-v2 → ✅ Executable counts match: $docs_executable commands 🎯"
     fi
     
     if [ "$docs_cores" -ne "$claude_cores" ]; then
         local diff=$((docs_cores - claude_cores))
         echo "cores_count:docs:$docs_cores vs claude:$claude_cores (diff:$diff)" >> "$DISCREPANCIES_FILE"
         discrepancy_count=$((discrepancy_count + 1))
-        echo -e "${YELLOW}⚠️ Cores discrepancy: docs($docs_cores) vs claude($claude_cores)${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Cores discrepancy: docs($docs_cores) vs claude($claude_cores) 🎯"
     else
-        echo -e "${GREEN}✅ Cores counts match: $docs_cores commands${NC}"
+        echo "⟳ /automated-command-counter-v2 → ✅ Cores counts match: $docs_cores commands 🎯"
     fi
     
     if [ "$docs_shared" -ne "$claude_shared" ]; then
         local diff=$((docs_shared - claude_shared))
         echo "shared_count:docs:$docs_shared vs claude:$claude_shared (diff:$diff)" >> "$DISCREPANCIES_FILE"
         discrepancy_count=$((discrepancy_count + 1))
-        echo -e "${YELLOW}⚠️ Shared discrepancy: docs($docs_shared) vs claude($claude_shared)${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Shared discrepancy: docs($docs_shared) vs claude($claude_shared) 🎯"
     else
-        echo -e "${GREEN}✅ Shared counts match: $docs_shared commands${NC}"
+        echo "⟳ /automated-command-counter-v2 → ✅ Shared counts match: $docs_shared commands 🎯"
     fi
     
     if [ "$docs_other" -ne "$claude_other" ]; then
         local diff=$((docs_other - claude_other))
         echo "other_count:docs:$docs_other vs claude:$claude_other (diff:$diff)" >> "$DISCREPANCIES_FILE"
         discrepancy_count=$((discrepancy_count + 1))
-        echo -e "${YELLOW}⚠️ Other discrepancy: docs($docs_other) vs claude($claude_other)${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Other discrepancy: docs($docs_other) vs claude($claude_other) 🎯"
     else
-        echo -e "${GREEN}✅ Other counts match: $docs_other commands${NC}"
+        echo "⟳ /automated-command-counter-v2 → ✅ Other counts match: $docs_other commands 🎯"
     fi
     
     # File-level comparison
@@ -281,17 +274,17 @@ detect_discrepancies() {
         if [ $missing_in_claude -gt 0 ]; then
             echo "missing_in_claude:$missing_in_claude files" >> "$DISCREPANCIES_FILE"
             discrepancy_count=$((discrepancy_count + 1))
-            echo -e "${YELLOW}📂 $missing_in_claude files in docs/commands but missing in .claude/commands${NC}"
+            echo "⟳ /automated-command-counter-v2 → 📂 $missing_in_claude files in docs/commands but missing in .claude/commands 🎯"
         fi
         
         if [ $missing_in_docs -gt 0 ]; then
             echo "missing_in_docs:$missing_in_docs files" >> "$DISCREPANCIES_FILE"
             discrepancy_count=$((discrepancy_count + 1))
-            echo -e "${YELLOW}📂 $missing_in_docs files in .claude/commands but missing in docs/commands${NC}"
+            echo "⟳ /automated-command-counter-v2 → 📂 $missing_in_docs files in .claude/commands but missing in docs/commands 🎯"
         fi
         
         if [ $missing_in_claude -eq 0 ] && [ $missing_in_docs -eq 0 ]; then
-            echo -e "${GREEN}✅ All files present in both locations${NC}"
+            echo "⟳ /automated-command-counter-v2 → ✅ All files present in both locations 🎯"
         fi
     fi
     
@@ -303,7 +296,7 @@ validate_against_registry() {
     show_section_header "REGISTRY VALIDATION"
     
     if [ ! -f "$REGISTRY_FILE" ]; then
-        echo -e "${YELLOW}⚠️ Registry file not found: $REGISTRY_FILE${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Registry file not found: $REGISTRY_FILE 🎯"
         return 1
     fi
     
@@ -314,21 +307,21 @@ validate_against_registry() {
     local registry_system=$(jq -r '.commands.system | length' "$REGISTRY_FILE" 2>/dev/null || echo "0")
     local registry_total=$(jq -r '.statistics.totalCommands' "$REGISTRY_FILE" 2>/dev/null || echo "0")
     
-    echo -e "${CYAN}📋 Registry counts:${NC}"
-    echo -e "   • Atomic: $registry_atomic"
-    echo -e "   • Orchestrators: $registry_orchestrators"
-    echo -e "   • Meta: $registry_meta"
-    echo -e "   • System: $registry_system"
-    echo -e "   • Total: $registry_total"
+    echo "⟳ /automated-command-counter-v2 → 📋 Registry counts 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Atomic: $registry_atomic 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Orchestrators: $registry_orchestrators 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Meta: $registry_meta 🎯"
+    echo "⟳ /automated-command-counter-v2 → • System: $registry_system 🎯"
+    echo "⟳ /automated-command-counter-v2 → • Total: $registry_total 🎯"
     
     # Compare with our counts
     if [ "$registry_total" -ne "$claude_total" ]; then
         local diff=$((registry_total - claude_total))
         echo "registry_total:registry:$registry_total vs counted:$claude_total (diff:$diff)" >> "$DISCREPANCIES_FILE"
         total_discrepancies=$((total_discrepancies + 1))
-        echo -e "${YELLOW}⚠️ Registry total ($registry_total) doesn't match counted total ($claude_total)${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ Registry total ($registry_total) doesn't match counted total ($claude_total) 🎯"
     else
-        echo -e "${GREEN}✅ Registry total matches counted total: $registry_total${NC}"
+        echo "⟳ /automated-command-counter-v2 → ✅ Registry total matches counted total: $registry_total 🎯"
     fi
 }
 
@@ -425,7 +418,7 @@ generate_json_report() {
 }
 EOF
 
-    echo -e "📁 JSON report generated: ${CYAN}$report_file${NC}"
+    echo "⟳ /automated-command-counter-v2 → 📁 JSON report generated: $report_file 🎯"
     return 0
 }
 
@@ -489,18 +482,18 @@ $([ $total_discrepancies -gt 0 ] && echo "1. Resolve $total_discrepancies discre
 Generated by: Automated Command Counter v2.0
 EOF
 
-    echo -e "📁 Summary report generated: ${CYAN}$summary_file${NC}"
+    echo "⟳ /automated-command-counter-v2 → 📁 Summary report generated: $summary_file 🎯"
     return 0
 }
 
 # Main execution
 main() {
-    echo -e "${BOLD}🔍 AUTOMATED COMMAND COUNTING ANALYSIS${NC}"
-    echo -e "${BOLD}=====================================${NC}"
+    echo "⟳ /automated-command-counter-v2 → 🔍 AUTOMATED COMMAND COUNTING ANALYSIS 🎯"
+    echo "====================================="
     echo ""
-    echo -e "🕐 Started at: ${CYAN}$(date)${NC}"
-    echo -e "📂 Base directory: ${CYAN}$BASE_DIR${NC}"
-    echo -e "📊 Results directory: ${CYAN}$RESULTS_DIR/command-counts${NC}"
+    echo "⟳ /automated-command-counter-v2 → 🕐 Started at: $(date) 🎯"
+    echo "⟳ /automated-command-counter-v2 → 📂 Base directory: $BASE_DIR 🎯"
+    echo "⟳ /automated-command-counter-v2 → 📊 Results directory: $RESULTS_DIR/command-counts 🎯"
     
     # Count commands in docs/commands
     show_section_header "DOCS/COMMANDS ANALYSIS"
@@ -522,22 +515,23 @@ main() {
     generate_summary_report
     
     # Final summary
+    ELAPSED_TIME=$(($(date +%s) - START_TIME))
     echo ""
-    echo -e "${BOLD}${PURPLE}🏁 COMMAND COUNTING COMPLETE${NC}"
-    echo -e "${BOLD}==============================${NC}"
-    echo -e "Total Commands (docs): ${GREEN}$docs_total${NC}"
-    echo -e "Total Commands (claude): ${GREEN}$claude_total${NC}"
-    echo -e "Discrepancies Found: ${YELLOW}$total_discrepancies${NC}"
-    echo -e "Validation Status: $([ $total_discrepancies -eq 0 ] && echo -e "${GREEN}✅ PASSED${NC}" || echo -e "${RED}❌ FAILED${NC}")"
+    echo "⟳ /automated-command-counter-v2 → 🏁 COMMAND COUNTING COMPLETE 🎯 [${ELAPSED_TIME}s]"
+    echo "=============================="
+    echo "⟳ /automated-command-counter-v2 → Total Commands (docs): $docs_total 🎯"
+    echo "⟳ /automated-command-counter-v2 → Total Commands (claude): $claude_total 🎯"
+    echo "⟳ /automated-command-counter-v2 → Discrepancies Found: $total_discrepancies 🎯"
+    echo "⟳ /automated-command-counter-v2 → Validation Status: $([ $total_discrepancies -eq 0 ] && echo "✅ PASSED" || echo "❌ FAILED") 🎯"
     echo ""
     
     # Exit with appropriate code for CI/CD integration
     if [ $total_discrepancies -gt 0 ]; then
-        echo -e "${YELLOW}⚠️ DISCREPANCIES DETECTED - REVIEW REQUIRED${NC}"
+        echo "⟳ /automated-command-counter-v2 → ⚠️ DISCREPANCIES DETECTED - REVIEW REQUIRED 🎯 [${ELAPSED_TIME}s]"
         exit 1
     else
-        echo -e "${GREEN}🎉 COMMAND COUNTING SUCCESSFUL${NC}"
-        echo -e "${GREEN}✅ All directories synchronized and validated!${NC}"
+        echo "⟳ /automated-command-counter-v2 → 🎉 COMMAND COUNTING SUCCESSFUL 🎯 [${ELAPSED_TIME}s]"
+        echo "⟳ /automated-command-counter-v2 → ✅ All directories synchronized and validated! 🎯"
         exit 0
     fi
 }
@@ -587,11 +581,11 @@ case "${1:-}" in
         validate_against_registry > /dev/null 2>&1
         generate_json_report > /dev/null 2>&1
         generate_summary_report > /dev/null 2>&1
-        echo "Command counting complete. Check results directory for reports."
-        echo "Total Commands (docs): $docs_total"
-        echo "Total Commands (claude): $claude_total"  
-        echo "Discrepancies: $total_discrepancies"
-        echo "Status: $([ $total_discrepancies -eq 0 ] && echo "✅ PASSED" || echo "❌ FAILED")"
+        echo "⟳ /automated-command-counter-v2 → Command counting complete. Check results directory for reports 🎯"
+        echo "⟳ /automated-command-counter-v2 → Total Commands (docs): $docs_total 🎯"
+        echo "⟳ /automated-command-counter-v2 → Total Commands (claude): $claude_total 🎯"
+        echo "⟳ /automated-command-counter-v2 → Discrepancies: $total_discrepancies 🎯"
+        echo "⟳ /automated-command-counter-v2 → Status: $([ $total_discrepancies -eq 0 ] && echo "✅ PASSED" || echo "❌ FAILED") 🎯"
         exit $([ $total_discrepancies -eq 0 ] && echo "0" || echo "1")
         ;;
     "")

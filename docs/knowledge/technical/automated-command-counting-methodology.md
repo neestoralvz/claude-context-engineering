@@ -8,7 +8,7 @@
 
 ## 🎯 Overview
 
-The Automated Command Counting system provides precise, validated counts of commands in both `docs/commands/` and `.claude/commands/` directories, with comprehensive discrepancy detection and reporting capabilities.
+The Automated Command Counting system provides precise, validated counts of commands in both `docs/commands/` and `~/.claude/commands/` directories, with comprehensive discrepancy detection and reporting capabilities.
 
 ### **Key Features**
 - **Automated Counting**: Precise command identification using defined criteria
@@ -80,7 +80,7 @@ function is_valid_command(file_path) {
 
 ### **1. Directory Analysis**
 
-For each directory (`docs/commands/` and `.claude/commands/`):
+For each directory (`docs/commands/` and `~/.claude/commands/`):
 
 - **File Discovery**: Recursive search for all `.md` files
 - **Validation**: Apply command identification criteria
@@ -197,7 +197,7 @@ For each directory (`docs/commands/` and `.claude/commands/`):
 - Shared: 10
 - Other: 1
 
-### .claude/commands/
+### ~/.claude/commands/
 - Behavioral: 37
 - Executable: 38
 - Cores: 5

@@ -1,0 +1,218 @@
+name: Command Synchronization Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'docs/commands/**'
+      - '.claude/commands/**'
+      - '.claude/config/command-registry.json'
+      - 'CLAUDE.md'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'docs/commands/**'
+      - '.claude/commands/**'
+      - '.claude/config/command-registry.json'
+      - 'CLAUDE.md'
+  schedule:
+    # Run daily at 2 AM UTC for continuous monitoring
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+
+jobs:
+  validate-command-synchronization:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y jq curl
+        
+    - name: Make validation scripts executable
+      run: |
+        chmod +x scripts/validation/automated-command-counter-v2.sh
+        chmod +x scripts/validation/validate-system-integrity.sh
+        
+    - name: Run command synchronization validation
+      id: validation
+      run: |
+        echo "::group::Command Count Validation"
+        
+        # Run the automated command counter
+        if ./scripts/validation/automated-command-counter-v2.sh --quiet; then
+          echo "validation_status=success" >> $GITHUB_OUTPUT
+          echo "✅ Command synchronization validation PASSED"
+        else
+          echo "validation_status=failed" >> $GITHUB_OUTPUT
+          echo "❌ Command synchronization validation FAILED"
+          
+          # Get the latest report for details
+          LATEST_REPORT=$(find scripts/results/command-counts -name "command-count-report-*.json" -type f | sort -r | head -1)
+          if [ -f "$LATEST_REPORT" ]; then
+            echo "Latest report: $LATEST_REPORT"
+            jq -r '.command_count_report.summary' "$LATEST_REPORT"
+          fi
+          exit 1
+        fi
+        
+        echo "::endgroup::"
+        
+    - name: Upload command count reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: command-count-reports-${{ github.sha }}
+        path: scripts/results/command-counts/
+        retention-days: 30
+        
+    - name: Upload system integrity logs
+      uses: actions/upload-artifact@v4
+      if: failure()
+      with:
+        name: system-integrity-logs-${{ github.sha }}
+        path: scripts/results/system-integrity/
+        retention-days: 30
+        
+    - name: Comment PR with validation results
+      uses: actions/github-script@v7
+      if: github.event_name == 'pull_request'
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+          
+          // Find the latest command count report
+          const resultsDir = 'scripts/results/command-counts';
+          let reportContent = '';
+          
+          try {
+            const files = fs.readdirSync(resultsDir);
+            const jsonFiles = files.filter(f => f.startsWith('command-count-report-') && f.endsWith('.json'));
+            
+            if (jsonFiles.length > 0) {
+              const latestFile = jsonFiles.sort().reverse()[0];
+              const reportPath = path.join(resultsDir, latestFile);
+              const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+              
+              const status = '${{ steps.validation.outputs.validation_status }}';
+              const statusIcon = status === 'success' ? '✅' : '❌';
+              const statusText = status === 'success' ? 'PASSED' : 'FAILED';
+              
+              reportContent = `## ${statusIcon} Command Synchronization Validation ${statusText}
+              
+**Validation Results:**
+- **docs/commands**: ${report.command_count_report.counts.docs_commands.total} commands
+- **claude/commands**: ${report.command_count_report.counts.claude_commands.total} commands
+- **Registry Total**: ${report.command_count_report.registry_validation.registry_total} commands
+- **Discrepancies**: ${report.command_count_report.discrepancies.total_found || 0}
+
+**Command Breakdown:**
+- Behavioral: ${report.command_count_report.counts.docs_commands.behavioral}
+- Executable: ${report.command_count_report.counts.docs_commands.executable}
+- Cores: ${report.command_count_report.counts.docs_commands.cores}
+- Shared: ${report.command_count_report.counts.docs_commands.shared}
+
+**Timestamp**: ${report.command_count_report.timestamp}
+
+${status === 'failed' ? '⚠️ **Action Required**: Please review and resolve command synchronization discrepancies before merging.' : '🎉 **All Clear**: Command directories are perfectly synchronized!'}`;
+            }
+          } catch (error) {
+            reportContent = `## ❌ Command Validation Error
+            
+Unable to generate validation report. Please check the workflow logs for details.
+
+**Error**: ${error.message}`;
+          }
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: reportContent
+          });
+          
+    - name: Create issue on validation failure
+      uses: actions/github-script@v7
+      if: failure() && github.event_name == 'schedule'
+      with:
+        script: |
+          const title = `🚨 Automated Command Synchronization Validation Failed - ${new Date().toISOString().split('T')[0]}`;
+          const body = `## Automated Validation Failure Alert
+          
+**Trigger**: Scheduled validation run
+**Date**: ${new Date().toISOString()}
+**Workflow Run**: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+### Issue Details
+The automated command synchronization validation has detected discrepancies that require immediate attention.
+
+### Action Required
+1. Review the workflow logs and artifacts
+2. Run local validation: \`./scripts/validation/automated-command-counter-v2.sh\`
+3. Resolve any synchronization issues
+4. Update command registry if needed
+
+### Artifacts
+- Command count reports are available in the workflow artifacts
+- System integrity logs (if applicable) are also attached
+
+**Priority**: High - System integrity validation failure
+
+---
+*This issue was created automatically by the Command Synchronization Validation workflow.*`;
+
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: title,
+            body: body,
+            labels: ['automation', 'validation-failure', 'high-priority']
+          });
+
+  validate-system-integrity:
+    runs-on: ubuntu-latest
+    needs: validate-command-synchronization
+    if: success()
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y jq curl
+        
+    - name: Make validation scripts executable
+      run: |
+        chmod +x scripts/validation/validate-system-integrity.sh
+        find scripts/ -name "*.sh" -exec chmod +x {} \;
+        
+    - name: Run full system integrity validation
+      run: |
+        echo "::group::System Integrity Validation"
+        
+        # Run the complete system integrity validation
+        if ./scripts/validation/validate-system-integrity.sh; then
+          echo "✅ System integrity validation PASSED"
+        else
+          echo "❌ System integrity validation FAILED"
+          echo "Please review the validation logs for details"
+          exit 1
+        fi
+        
+        echo "::endgroup::"
+        
+    - name: Upload system integrity reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: system-integrity-reports-${{ github.sha }}
+        path: scripts/results/system-integrity/
+        retention-days: 30

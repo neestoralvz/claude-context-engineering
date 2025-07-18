@@ -47,7 +47,7 @@
 - **File Changes**: >2 files modified during operation
 - **Duration Threshold**: >30 minutes of sustained operation
 - **System Impact**: Changes to principles, commands, or core architecture
-- **Meta Command Activation**: Any /context-eng, /orchestrate, or meta-command execution
+- **Meta Command Activation**: Any /ce, /orchestrate, or meta-command execution
 
 **Mandatory Commit Sequence**:
 
@@ -195,78 +195,63 @@
 ### **Mandatory Script Execution Requirements**
 
 **CRITICAL Compliance Standards**:
-```yaml
-mandatory_execution:
-  no_simulation_allowed: "NEVER simulate script execution - ALWAYS use Bash tool"
-  visual_announcements: "P56-compliant announcements for ALL script executions"
-  evidence_display: "Users MUST see actual script outputs and results"
-  mathematical_precision: "ALL calculations must show 4-decimal precision"
-  
-  tool_call_protocol:
-    - "Display P56 announcement before script execution"
-    - "Execute Bash tool with real script parameters"
-    - "Display actual script outputs and results"
-    - "Show completion status with evidence"
-```
+
+**MANDATORY Script Execution Protocol**:
+- **No Simulation Allowed**: NEVER simulate script execution - ALWAYS use Bash tool
+- **Visual Announcements**: P56-compliant announcements for ALL script executions  
+- **Evidence Display**: Users MUST see actual script outputs and results
+- **Mathematical Precision**: ALL calculations must show 4-decimal precision
+
+**Tool Call Protocol Requirements**:
+1. Display P56 announcement before script execution
+2. Execute Bash tool with real script parameters
+3. Display actual script outputs and results
+4. Show completion status with evidence
 
 ---
 
 ## 🎨 **Visual Announcement Framework**
 
-### **P56 Compliance Visual Standards**
+### **P56 Compliance Notification Standards**
 
-**MANDATORY Requirements**: ALL tool executions MUST have visual announcements achieving 100% P56 compliance and complete user visibility.
+**MANDATORY Requirements**: ALL tool executions use compact notification format achieving 100% P56 compliance.
 
-**EVIDENCE REQUIRED**: Users MUST observe visual announcements before, during, and after all tool executions with documented transparency effectiveness.
+**EVIDENCE REQUIRED**: Users observe compact notifications for all tool executions with immediate comprehension.
 
-**Core Visual Principles**:
-- **mandatory_display**: "ALL tool executions MUST have visual announcements"
-- **p56_compliance**: "100% compliance with Command Execution Transparency"
-- **user_visibility**: "Complete user visibility into all system operations"
-- **real_time_updates**: "Live progress reporting and status updates"
+**Core Notification Principles**:
+- **mandatory_format**: "ALL tool executions use ⟳ /comando → resultado 🎯 [tiempo] format"
+- **p56_compliance**: "100% compliance with compact notification transparency"
+- **user_visibility**: "Direct Claude Code → Usuario communication only"
+- **real_time_updates**: "Essential progress notifications only"
 
-### **Standard Visual Announcement Format**
+### **Compact Notification Format**
 
-**CRITICAL Implementation**:
-```yaml
-standard_announcement_format:
-  pre_execution:
-    template: |
-      ╔═══════════════════════════════════════════════════════════╗
-      ║               🎯 [TOOL_TYPE] EXECUTION                    ║
-      ╠═══════════════════════════════════════════════════════════╣
-      ║ Command: [command_name] | Purpose: [execution_purpose]   ║
-      ║ Tool: [tool_name] | Duration: [time_estimate]            ║
-      ║ Type: [DIRECT/TASK_AGENT] | Real Actions: ✅             ║
-      ║ Simulation: ❌ | Evidence: Required                      ║
-      ╚═══════════════════════════════════════════════════════════╝
-  
-  post_execution:
-    template: |
-      ╔═══════════════════════════════════════════════════════════╗
-      ║              ✅ EXECUTION COMPLETED                       ║
-      ╠═══════════════════════════════════════════════════════════╣
-      ║ Status: [SUCCESS/FAILED/WARNING] | Duration: [actual_time] ║
-      ║ Results: [actual_outputs] | Evidence: [evidence_type]    ║
-      ║ Quality: [quality_metrics] | Compliance: [compliance_status] ║
-      ╚═══════════════════════════════════════════════════════════╝
-```
+**MANDATORY Notification Standard**: `⟳ /comando → resultado 🎯 [tiempo]`
 
-### **Mathematical Script Visual Announcements**
+**Pre-Execution Notification**:
+- **Format**: `⟳ /comando → iniciando ejecución 🎯 [tiempo_estimado]`
+- **Example**: `⟳ /validate → validando sistema 🎯 2.5s`
 
-**REQUIRED Template**:
-```yaml
-mathematical_execution:
-  template: |
-    ╔═══════════════════════════════════════════════════════════╗
-    ║        🧮 MATHEMATICAL SCRIPT EXECUTION                   ║
-    ╠═══════════════════════════════════════════════════════════╣
-    ║ Script: [script_name] | Formula: [formula_type]          ║
-    ║ Purpose: [calculation_purpose] | Precision: 4 decimals   ║
-    ║ Tool: Bash | Real Execution: ✅ | Simulation: ❌          ║
-    ║ Evidence: Numerical results | Mathematical: ✅            ║
-    ╚═══════════════════════════════════════════════════════════╝
-```
+**Post-Execution Notification**:
+- **Format**: `⟳ /comando → [resultado] 🎯 [tiempo_real]`
+- **Example**: `⟳ /validate → validación completa 100% 🎯 1.8s`
+
+**Error Notification**:
+- **Format**: `⟳ /comando → error: [descripción] 🎯 [tiempo]`
+- **Example**: `⟳ /validate → error: dependency missing 🎯 0.5s`
+
+### **Mathematical Script Notifications**
+
+**REQUIRED Mathematical Script Format**: `⟳ script-name → resultado_matemático 🎯 [tiempo]`
+
+**Calculation Notifications**:
+- **Format**: `⟳ calculate-metrics → precisión 4-decimal 🎯 [tiempo]`
+- **Format**: `⟳ formula-verify → compliance 95.2% 🎯 [tiempo]`
+- **Format**: `⟳ test-trigger → 22/22 tests passed 🎯 [tiempo]`
+
+**Mathematical Evidence Format**:
+- **Format**: `⟳ math-validate → [resultado_numérico] validated 🎯 [tiempo]`
+- **Example**: `⟳ precision-test → 0.9847 ±0.0001 tolerance 🎯 1.2s`
 
 ---
 
@@ -274,43 +259,40 @@ mathematical_execution:
 
 ### **Phase-Based Execution Protocol**
 
-**MANDATORY Requirements**:
-```yaml
-phase_execution_rules:
-  phase_initialization:
-    - "Announce phase activation with P56 compliance"
-    - "Load required commands via Read tool"
-    - "Execute commands directly with real results"
-    - "Report phase completion with evidence"
-  
-  command_coordination:
-    - "Coordinate multiple commands with real execution"
-    - "Show progress from all active commands"
-    - "Aggregate real results from command execution"
-    - "Handle errors with transparent recovery"
-  
-  completion_protocols:
-    - "Verify all commands executed successfully"
-    - "Display comprehensive results with evidence"
-    - "Report execution metrics and performance"
-    - "Hand off to next phase with real data"
-```
+**MANDATORY Phase Execution Requirements**:
+
+**Phase Initialization Protocol**:
+- Announce phase activation with P56 compliance
+- Load required commands via Read tool
+- Execute commands directly with real results
+- Report phase completion with evidence
+
+**Command Coordination Protocol**:
+- Coordinate multiple commands with real execution
+- Show progress from all active commands
+- Aggregate real results from command execution
+- Handle errors with transparent recovery
+
+**Completion Protocol Requirements**:
+- Verify all commands executed successfully
+- Display comprehensive results with evidence
+- Report execution metrics and performance
+- Hand off to next phase with real data
 
 ### **Parallel Execution Standards**
 
-**Implementation Requirements**:
-```yaml
-parallel_execution:
-  requirement: "Execute multiple commands simultaneously when beneficial"
-  coordination: "Real-time progress aggregation from all commands"
-  evidence: "Show actual parallel execution results"
-  
-  implementation:
-    - "Deploy multiple tool calls in parallel"
-    - "Monitor real progress from all executions"
-    - "Aggregate actual results from parallel streams"
-    - "Show completion evidence from all parallel tasks"
-```
+**CRITICAL Parallel Execution Requirements**:
+
+**Core Requirements**:
+- **Execution**: Execute multiple commands simultaneously when beneficial
+- **Coordination**: Real-time progress aggregation from all commands
+- **Evidence**: Show actual parallel execution results
+
+**Implementation Protocol**:
+1. Deploy multiple tool calls in parallel
+2. Monitor real progress from all executions
+3. Aggregate actual results from parallel streams
+4. Show completion evidence from all parallel tasks
 
 ---
 
@@ -318,49 +300,48 @@ parallel_execution:
 
 ### **Execution Verification Protocol**
 
-**CRITICAL Requirements**:
-```yaml
-verification_requirements:
-  pre_execution:
-    - "Validate command availability and parameters"
-    - "Ensure tool call requirements are met"
-    - "Check execution prerequisites"
-  
-  during_execution:
-    - "Monitor actual execution progress"
-    - "Verify real tool call execution"
-    - "Track evidence generation"
-  
-  post_execution:
-    - "Validate execution results and evidence"
-    - "Confirm user visibility of actual outputs"
-    - "Document execution metrics and outcomes"
-```
+**CRITICAL Execution Verification Requirements**:
+
+**Pre-Execution Validation**:
+- Validate command availability and parameters
+- Ensure tool call requirements are met
+- Check execution prerequisites
+
+**During-Execution Monitoring**:
+- Monitor actual execution progress
+- Verify real tool call execution
+- Track evidence generation
+
+**Post-Execution Verification**:
+- Validate execution results and evidence
+- Confirm user visibility of actual outputs
+- Document execution metrics and outcomes
 
 ### **Quality Gates & Performance Metrics**
 
-**MANDATORY Standards**:
-```yaml
-quality_requirements:
-  execution_quality: "≥95% success rate for critical commands"
-  evidence_quality: "100% real evidence generation"
-  tool_call_quality: "100% actual tool call execution"
-  user_visibility: "100% transparency in execution results"
-  
-  enforcement: "Block execution if quality gates not met"
-  validation: "Continuous monitoring of execution quality"
-  improvement: "Use real metrics for quality enhancement"
+**MANDATORY Quality Standards**:
 
-required_metrics:
-  execution_time: "Real duration of command execution"
-  success_rate: "Actual success percentage from real execution"
-  tool_call_count: "Number of actual tool calls executed"
-  evidence_generation: "Amount of real evidence produced"
-  
-  reporting_requirement: "Display real metrics to users"
-  validation_requirement: "Use actual performance data"
-  optimization_requirement: "Base improvements on real execution data"
-```
+**Quality Requirements**:
+- **Execution Quality**: ≥95% success rate for critical commands
+- **Evidence Quality**: 100% real evidence generation
+- **Tool Call Quality**: 100% actual tool call execution
+- **User Visibility**: 100% transparency in execution results
+
+**Enforcement Protocol**:
+- Block execution if quality gates not met
+- Continuous monitoring of execution quality
+- Use real metrics for quality enhancement
+
+**Required Performance Metrics**:
+- **Execution Time**: Real duration of command execution
+- **Success Rate**: Actual success percentage from real execution
+- **Tool Call Count**: Number of actual tool calls executed
+- **Evidence Generation**: Amount of real evidence produced
+
+**Metric Requirements**:
+- Display real metrics to users
+- Use actual performance data
+- Base improvements on real execution data
 
 ---
 
@@ -368,91 +349,76 @@ required_metrics:
 
 ### **Progress Update Standards**
 
-**MANDATORY Requirements**:
-```yaml
-progress_reporting:
-  frequency_requirements:
-    standard_updates: "Every ≤30 seconds during active execution"
-    critical_operations: "Every ≤15 seconds for critical processes"
-    multi_agent_coordination: "Every ≤20 seconds for agent coordination"
-    error_states: "Immediate reporting for errors and failures"
-  
-  content_requirements:
-    current_status: "Clear description of current activity"
-    completion_percentage: "Numerical progress indicator when available"
-    time_estimates: "Realistic ETA for completion"
-    evidence_generation: "Progress on evidence production"
-    quality_metrics: "Real-time quality indicators"
-```
+**MANDATORY Progress Reporting Requirements**:
 
-### **Communication Flow Visualization**
+**Frequency Requirements**:
+- **Standard Updates**: Every ≤30 seconds during active execution
+- **Critical Operations**: Every ≤15 seconds for critical processes
+- **Multi-Agent Coordination**: Every ≤20 seconds for agent coordination
+- **Error States**: Immediate reporting for errors and failures
 
-**Implementation Standards**:
-```yaml
-communication_flow:
-  message_tracking:
-    template: |
-      🔄 COMMUNICATION FLOW:
-      [timestamp] [sender] → [receiver]: [message_type]
-      ├── Content: [message_summary]
-      ├── Status: [delivery_status]
-      └── Response: [response_summary]
-  
-  coordination_updates:
-    template: |
-      🤝 COORDINATION UPDATE:
-      ├── Agents Active: [active_count]/[total_count]
-      ├── Communication Health: [health_status]
-      ├── Message Queue: [queue_length] messages
-      └── Coordination Latency: [latency]ms average
-```
+**Content Requirements**:
+- **Current Status**: Clear description of current activity
+- **Completion Percentage**: Numerical progress indicator when available
+- **Time Estimates**: Realistic ETA for completion
+- **Evidence Generation**: Progress on evidence production
+- **Quality Metrics**: Real-time quality indicators
+
+### **Communication Flow Notifications**
+
+**CRITICAL Communication Flow Standards**:
+
+**Message Tracking Format**: `⟳ /message → [sender]→[receiver] delivered 🎯 [tiempo]`
+
+**Coordination Updates Format**: `⟳ /coordinate → [agents] active, [status] 🎯 [tiempo]`
+
+**Examples**:
+- `⟳ /message → claude→usuario confirmed 🎯 0.1s`
+- `⟳ /coordinate → 3 agents active, healthy 🎯 0.3s`
+- `⟳ /sync → queue processed, latency 15ms 🎯 0.2s`
 
 ---
 
 ## 🎯 **P55/P56 Compliance Integration**
 
-### **Compliance Monitoring Dashboard**
+### **Compliance Monitoring Notifications**
 
-**REQUIRED Implementation**:
-```yaml
-compliance_dashboard:
-  real_time_monitoring:
-    template: |
-      🛡️ P55/P56 COMPLIANCE MONITORING
-      ╔═══════════════════════════════════════════════════════════╗
-      ║ P55 Tool Execution: [p55_percentage]% compliance          ║
-      ║ P56 Transparency: [p56_percentage]% compliance            ║
-      ║ Real Evidence: [evidence_percentage]% generation          ║
-      ║ Quality Score: [quality_score]/10 overall rating         ║
-      ╚═══════════════════════════════════════════════════════════╝
+**CRITICAL Compliance Monitoring Implementation**:
 
-compliance_integration:
-  p55_requirements:
-    - "Mandatory tool call execution for all operations"
-    - "Real execution evidence for all functionality"
-    - "Actual tool call bridging for complex workflows"
-  
-  p56_requirements:
-    - "Visual announcements for all executions"
-    - "Real-time progress reporting"
-    - "Transparent execution results"
-    - "Complete user visibility into operations"
-```
+**Real-Time Compliance Notifications**:
+- **Format**: `⟳ /compliance → P55: [%], P56: [%] 🎯 [tiempo]`
+- **Format**: `⟳ /monitor → evidence [%], quality [score]/10 🎯 [tiempo]`
+
+**Examples**:
+- `⟳ /compliance → P55: 95.2%, P56: 100% 🎯 0.5s`
+- `⟳ /monitor → evidence 100%, quality 9.2/10 🎯 0.3s`
+- `⟳ /validate → tool execution 100% compliant 🎯 0.4s`
+
+**P55 Compliance Requirements**:
+- Mandatory tool call execution for all operations
+- Real execution evidence for all functionality
+- Actual tool call bridging for complex workflows
+
+**P56 Compliance Requirements**:
+- Visual announcements for all executions
+- Real-time progress reporting
+- Transparent execution results
+- Complete user visibility into operations
 
 ### **Error Handling & Recovery**
 
-**CRITICAL Protocols**:
-```yaml
-error_handling:
-  detection: "Immediate identification of execution failures"
-  response: "Transparent error reporting with recovery actions"
-  recovery: "Actual retry mechanisms with real tool calls"
-  reporting: "User visibility into error states and resolution"
-  
-  no_masking: "Never hide execution errors from users"
-  real_recovery: "Use actual tool calls for error recovery"
-  evidence_based: "Show real recovery actions and results"
-```
+**CRITICAL Error Handling Protocols**:
+
+**Error Management Requirements**:
+- **Detection**: Immediate identification of execution failures
+- **Response**: Transparent error reporting with recovery actions
+- **Recovery**: Actual retry mechanisms with real tool calls
+- **Reporting**: User visibility into error states and resolution
+
+**Transparency Requirements**:
+- Never hide execution errors from users
+- Use actual tool calls for error recovery
+- Show real recovery actions and results
 
 ---
 

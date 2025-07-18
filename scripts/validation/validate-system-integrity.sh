@@ -6,19 +6,12 @@
 
 set -e
 
-echo "🛡️ Context Engineering - System Integrity Validation Engine"
+echo "⟳ /validate-system-integrity → System Integrity Validation Engine 🎯"
 echo "============================================================"
 echo ""
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-BOLD='\033[1m'
-NC='\033[0m' # No Color
+# Timing for reports
+START_TIME=$(date +%s)
 
 # System paths
 BASE_DIR="/Users/nalve/claude-context-engineering"
@@ -45,7 +38,7 @@ show_phase_header() {
     local phase_name="$1"
     current_phase=$((current_phase + 1))
     echo ""
-    echo -e "${BOLD}${PURPLE}━━━ PHASE $current_phase/$PHASE_COUNT: $phase_name ━━━${NC}"
+    echo "⟳ /validate-system-integrity → Phase $current_phase/$PHASE_COUNT: $phase_name 🎯"
     echo ""
 }
 
@@ -62,21 +55,21 @@ add_validation_result() {
         "CRITICAL")
             critical_issues=$((critical_issues + 1))
             total_issues=$((total_issues + 1))
-            echo -e "${RED}💀 CRITICAL:${NC} $message"
+            echo "⟳ /validate-system-integrity → 💀 CRITICAL: $message 🎯"
             ;;
         "ERROR")
             total_issues=$((total_issues + 1))
-            echo -e "${RED}❌ ERROR:${NC} $message"
+            echo "⟳ /validate-system-integrity → ❌ ERROR: $message 🎯"
             ;;
         "WARNING")
             warnings=$((warnings + 1))
-            echo -e "${YELLOW}⚠️ WARNING:${NC} $message"
+            echo "⟳ /validate-system-integrity → ⚠️ WARNING: $message 🎯"
             ;;
         "SUCCESS")
-            echo -e "${GREEN}✅ SUCCESS:${NC} $message"
+            echo "⟳ /validate-system-integrity → ✅ SUCCESS: $message 🎯"
             ;;
         *)
-            echo -e "${BLUE}ℹ️ INFO:${NC} $message"
+            echo "⟳ /validate-system-integrity → ℹ️ INFO: $message 🎯"
             ;;
     esac
 }
@@ -129,7 +122,7 @@ check_dependencies() {
 
 # Validate mathematical formulas
 validate_mathematical_formulas() {
-    echo -e "${CYAN}🧮 Running mathematical formula verification...${NC}"
+    echo "⟳ /validate-system-integrity → Running mathematical formula verification 🎯"
     
     if [ ! -x "$SCRIPTS_DIR/compliance/verify-mathematical-formulas.sh" ]; then
         add_validation_result "MATH_FORMULAS" "FAILED" "Mathematical verification script not executable" "CRITICAL"
@@ -163,7 +156,7 @@ validate_mathematical_formulas() {
 
 # Validate trigger system
 validate_trigger_system() {
-    echo -e "${CYAN}🎯 Running trigger system verification...${NC}"
+    echo "⟳ /validate-system-integrity → Running trigger system verification 🎯"
     
     if [ ! -x "$SCRIPTS_DIR/core/test-trigger-system.sh" ]; then
         add_validation_result "TRIGGER_SYSTEM" "FAILED" "Trigger system test script not executable" "CRITICAL"
@@ -197,7 +190,7 @@ validate_trigger_system() {
 
 # Validate navigation system
 validate_navigation_system() {
-    echo -e "${CYAN}🧭 Running navigation system verification...${NC}"
+    echo "⟳ /validate-system-integrity → Running navigation system verification 🎯"
     
     if [ ! -x "$SCRIPTS_DIR/validation/validate-navigation.sh" ]; then
         add_validation_result "NAVIGATION" "FAILED" "Navigation validation script not executable" "CRITICAL"
@@ -216,7 +209,7 @@ validate_navigation_system() {
 
 # Validate registry metrics
 validate_registry_metrics() {
-    echo -e "${CYAN}📊 Analyzing registry metrics...${NC}"
+    echo "⟳ /validate-system-integrity → Analyzing registry metrics 🎯"
     
     if [ ! -f "$REGISTRY_FILE" ]; then
         add_validation_result "REGISTRY_METRICS" "FAILED" "Registry file not found" "CRITICAL"
@@ -253,7 +246,7 @@ validate_registry_metrics() {
 
 # Validate command execution
 validate_command_execution() {
-    echo -e "${CYAN}🚀 Testing command execution capability...${NC}"
+    echo "⟳ /validate-system-integrity → Testing command execution capability 🎯"
     
     if [ ! -x "$SCRIPTS_DIR/core/execute-commands.sh" ]; then
         add_validation_result "COMMAND_EXECUTION" "FAILED" "Command execution script not executable" "CRITICAL"
@@ -282,7 +275,7 @@ validate_command_execution() {
 
 # Validate enforcement mechanisms
 validate_enforcement_mechanisms() {
-    echo -e "${CYAN}🚨 Validating enforcement mechanisms...${NC}"
+    echo "⟳ /validate-system-integrity → Validating enforcement mechanisms 🎯"
     
     # Check for 🚨 BLOCKING enforcement language in key files
     local enforcement_files=(
@@ -339,7 +332,7 @@ validate_enforcement_mechanisms() {
 
 # Validate command synchronization
 validate_command_synchronization() {
-    echo -e "${CYAN}🔄 Running command synchronization validation...${NC}"
+    echo "⟳ /validate-system-integrity → Running command synchronization validation 🎯"
     
     if [ ! -x "$SCRIPTS_DIR/validation/automated-command-counter-v2.sh" ]; then
         add_validation_result "COMMAND_SYNC" "FAILED" "Automated command counter not executable" "CRITICAL"
@@ -368,7 +361,7 @@ validate_command_synchronization() {
 
 # Validate system coherence
 validate_system_coherence() {
-    echo -e "${CYAN}🔗 Analyzing system coherence...${NC}"
+    echo "⟳ /validate-system-integrity → Analyzing system coherence 🎯"
     
     local coherence_issues=0
     
@@ -502,17 +495,17 @@ generate_system_report() {
 }
 EOF
 
-    echo -e "📁 Comprehensive report saved: ${CYAN}$report_file${NC}"
+    echo "⟳ /validate-system-integrity → Comprehensive report saved: $report_file 🎯"
 }
 
 # Main validation execution
 main() {
-    echo -e "${BOLD}🔍 CONTEXT ENGINEERING SYSTEM INTEGRITY VALIDATION${NC}"
-    echo -e "${BOLD}==================================================${NC}"
+    echo "⟳ /validate-system-integrity → CONTEXT ENGINEERING SYSTEM INTEGRITY VALIDATION 🎯"
+    echo "=================================================="
     echo ""
-    echo -e "🕐 Started at: ${CYAN}$(date)${NC}"
-    echo -e "📂 Base directory: ${CYAN}$BASE_DIR${NC}"
-    echo -e "📊 Results directory: ${CYAN}$RESULTS_DIR/system-integrity${NC}"
+    echo "⟳ /validate-system-integrity → Started at: $(date) 🎯"
+    echo "⟳ /validate-system-integrity → Base directory: $BASE_DIR 🎯"
+    echo "⟳ /validate-system-integrity → Results directory: $RESULTS_DIR/system-integrity 🎯"
     
     # Phase 1: Dependencies
     show_phase_header "DEPENDENCY VALIDATION"
@@ -549,29 +542,30 @@ main() {
     
     # Generate final report
     echo ""
-    echo -e "${BOLD}${PURPLE}━━━ GENERATING COMPREHENSIVE REPORT ━━━${NC}"
+    echo "⟳ /validate-system-integrity → GENERATING COMPREHENSIVE REPORT 🎯"
     generate_system_report
     
     # Final summary
+    ELAPSED_TIME=$(($(date +%s) - START_TIME))
     echo ""
-    echo -e "${BOLD}${PURPLE}🏁 VALIDATION COMPLETE${NC}"
-    echo -e "${BOLD}=====================${NC}"
-    echo -e "Overall Status: ${BOLD}$overall_status${NC}"
-    echo -e "Critical Issues: ${RED}$critical_issues${NC}"
-    echo -e "Total Issues: ${YELLOW}$total_issues${NC}"
-    echo -e "Warnings: ${YELLOW}$warnings${NC}"
+    echo "⟳ /validate-system-integrity → VALIDATION COMPLETE 🎯 [${ELAPSED_TIME}s]"
+    echo "====================="
+    echo "⟳ /validate-system-integrity → Overall Status: $overall_status 🎯"
+    echo "⟳ /validate-system-integrity → Critical Issues: $critical_issues 🎯"
+    echo "⟳ /validate-system-integrity → Total Issues: $total_issues 🎯"
+    echo "⟳ /validate-system-integrity → Warnings: $warnings 🎯"
     echo ""
     
     # Exit with appropriate code
     if [ $critical_issues -gt 0 ]; then
-        echo -e "${RED}💀 CRITICAL ISSUES DETECTED - SYSTEM NOT READY${NC}"
+        echo "⟳ /validate-system-integrity → 💀 CRITICAL ISSUES DETECTED - SYSTEM NOT READY 🎯 [${ELAPSED_TIME}s]"
         exit 2
     elif [ $total_issues -gt 0 ]; then
-        echo -e "${YELLOW}⚠️ ISSUES DETECTED - REVIEW REQUIRED${NC}"
+        echo "⟳ /validate-system-integrity → ⚠️ ISSUES DETECTED - REVIEW REQUIRED 🎯 [${ELAPSED_TIME}s]"
         exit 1
     else
-        echo -e "${GREEN}🎉 SYSTEM VALIDATION SUCCESSFUL${NC}"
-        echo -e "${GREEN}✅ Context Engineering system is mathematically validated and ready for use!${NC}"
+        echo "⟳ /validate-system-integrity → 🎉 SYSTEM VALIDATION SUCCESSFUL 🎯 [${ELAPSED_TIME}s]"
+        echo "⟳ /validate-system-integrity → ✅ Context Engineering system is mathematically validated and ready for use! 🎯"
         exit 0
     fi
 }

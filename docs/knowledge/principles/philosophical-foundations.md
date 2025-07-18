@@ -134,26 +134,39 @@ LLMs deben ejecutar acciones concretas usando tool calls en lugar de simular, de
 - **#1 Meta-Principio** habilita **[#7 Knowledge Discovery](./operational-excellence.md#7-knowledge-discovery-hierarchy)** y **[#8 Exploration-First](./operational-excellence.md#8-exploration-first-methodology)**
 - **#2 Intelligence as Natural** alimenta **[#14 Pattern Recognition](./operational-excellence.md#14-recognize-patterns)** y **[#15 Pattern Crystallization](./operational-excellence.md#15-crystallize-patterns)**
 - **#3 Context > Commands** impulsa **[#13 Living Documentation](./operational-excellence.md#13-living-documentation)**
+- **#4 Enable, Don't Control** se refuerza con **[#101 Comprehensive Handoff Completion Assessment](./operational-excellence.md#101-comprehensive-handoff-completion-assessment)**
+- **#6 Natural Language** se estructura con **[#96 TodoWrite Parallel Task Integration](./operational-excellence.md#96-todowrite-parallel-task-integration)**
 
 ### → Principios Técnicos
 - **#4 Enable, Don't Control** se ejecuta a través de **[#17 Parallel > Sequential](./technical-standards.md#17-parallel--sequential)** y **[#18 Multi-Agent](./technical-standards.md#18-multi-agent-orchestration)**
 - **#3 Context > Commands** se optimiza con **[#20 Context Economy](./technical-standards.md#20-context-economy)** y **[#24 Context Optimization](./technical-standards.md#24-optimize-context)**
+- **#1 Meta-Principio** se protege con **[#105 Análisis Crítico Preventivo](./technical-standards.md#105-análisis-crítico-preventivo)** antes de cambios arquitectónicos
+- **#55 Tool Call Execution Bridging** se valida con **[#106 Preservación de Especificidad](./technical-standards.md#106-preservación-de-especificidad)**
+- **#4 Enable, Don't Control** se consolida con **[#107 Consolidación Inteligente](./technical-standards.md#107-consolidación-inteligente)**
 
 ### → Principios Matemáticos
 - **#1 Meta-Principio** se cuantifica con **[#5 Mathematical Auto-Activation](./mathematical-rigor.md#5-mathematical-auto-activation)**
 - **#6 Natural Language** se mide con **[#41 Mathematical Simplicity](./mathematical-rigor.md#41-mathematical-simplicity)**
+- **#2 Intelligence as Natural** se formaliza con **[#29 Confidence-Based Routing](./mathematical-rigor.md#29-confidence-based-routing)**
+- **#3 Context > Commands** se valida con **[#30 Complexity Thresholds](./mathematical-rigor.md#30-complexity-thresholds)**
 
 ### → Principios de Validación
 - **#4 Enable, Don't Control** requiere **[#11 Verification as Liberation](./validation-protocols.md#11-verification-as-liberation)**
 - **#1 Meta-Principio** se asegura con **[#37 System Integrity](./validation-protocols.md#37-system-integrity-assurance)**
+- **#3 Context > Commands** se valida con **[#98 Autonomous Validation](./validation-protocols.md#98-autonomous-validation-principle)**
+- **#55 Tool Call Execution Bridging** se verifica con **[#99 Automatic Validation](./validation-protocols.md#99-automatic-validation-and-quality-assurance)**
 
 ### → Principios Cognitivos
 - **#6 Natural Language** se optimiza con **[#43 Organización Cognitiva](./cognitive-optimization.md#43-organización-cognitiva-óptima)**
 - **#1 Meta-Principio** se presenta con **[#42 Invisible Excellence](./cognitive-optimization.md#42-invisible-excellence)**
+- **#3 Context > Commands** se estructura con **[#97 CLAUDE.md Optimization Protocol](./cognitive-optimization.md#97-claude-md-optimization-protocol)**
+- **#6 Natural Language** se perfecciona con **[#68 User Experience-Driven Design](./cognitive-optimization.md#68-user-experience-driven-design)**
 
 ### → Adaptación Inteligente
 - **#2 Intelligence as Natural** evoluciona hacia **[#52 Self-Improving Intelligence](./intelligent-adaptation.md#52-self-improving-intelligence--learning)**
 - **#4 Enable, Don't Control** se escala con **[#47 Universal Strategic Orchestration](./intelligent-adaptation.md#47-universal-strategic-orchestration)**
+- **#55 Tool Call Execution Bridging** se adapta con **[#100 Strategic Online Research](./intelligent-adaptation.md#100-strategic-online-research)**
+- **#1 Meta-Principio** se perfecciona con **[#54 Automated Exploration Orchestration](./intelligent-adaptation.md#54-automated-exploration-orchestration)**
 
 ### → Seguridad y Privacidad
 - **#1 Meta-Principio** requiere **[#71 Security by Design](./security-privacy.md#71-security-by-design)** para protección automática

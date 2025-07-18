@@ -6,10 +6,10 @@ This document defines the standard pattern for Context Engineering commands to r
 
 ## Problem Solved
 
-Commands in `.claude/commands/` are located at 4 levels deep from the project root:
+Commands in `~/.claude/commands/` are located in the global user directory:
 ```markdown
 /Users/nalve/claude-context-engineering/
-└── .claude/commands/               # Level 1
+└── ~/.claude/commands/               # Global directory
     ├── behavioral/                 # Level 2  
     │   ├── intelligence/           # Level 3
     │   │   └── *.md               # Level 4 ← Commands here
@@ -34,7 +34,7 @@ All commands now use the path helper system located at `scripts/core/path-helper
 # Function to get the project root directory
 get_project_root() {
     local current_dir="$(cd "$(dirname "${BASH_SOURCE[1]}")" && pwd)"
-    echo "${current_dir}" | sed 's|/.claude/commands.*||'
+    echo "${current_dir}" | sed 's|/.claude/commands.*|~/.claude/commands|'
 }
 
 # Function to source scripts from project root
@@ -169,17 +169,17 @@ The pattern has been verified across all command hierarchy levels:
 
 ```bash
 # Test from executable/meta level
-cd .claude/commands/executable/meta
+cd ~/.claude/commands/executable/meta
 source ../../../../scripts/core/path-helper.sh && validate_project_root
 # ✅ Success: All directories found
 
 # Test from behavioral/intelligence level  
-cd .claude/commands/behavioral/intelligence
+cd ~/.claude/commands/behavioral/intelligence
 source ../../../../scripts/core/path-helper.sh && validate_project_root
 # ✅ Success: All directories found
 
 # Test from executable/verification level
-cd .claude/commands/executable/verification
+cd ~/.claude/commands/executable/verification
 source ../../../../scripts/core/path-helper.sh && validate_project_root
 # ✅ Success: All directories found
 ```
@@ -212,7 +212,7 @@ All command templates now include the standard path resolution pattern for consi
 
 1. **"Script not found" errors**: Verify path helper is sourced correctly
 2. **Permission denied**: Ensure scripts have execute permissions (`chmod +x`)
-3. **Wrong project root**: Check that command is within `.claude/commands/` hierarchy
+3. **Wrong global path**: Check that command is within `~/.claude/commands/` hierarchy
 
 ### Debug Commands
 

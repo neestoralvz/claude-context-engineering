@@ -41,8 +41,8 @@ log_warning() {
     echo -e "${YELLOW}⚠️  $1${NC}"
 }
 
-# Check if this is a reference-related commit
-is_reference_commit() {
+# Check if this is a reference-related or command-related commit
+is_validation_required_commit() {
     local changed_files=$(git diff --cached --name-only)
     
     # Check if any principle files are modified
@@ -52,6 +52,16 @@ is_reference_commit() {
     
     # Check if CLAUDE.md is modified
     if echo "$changed_files" | grep -q "CLAUDE.md"; then
+        return 0
+    fi
+    
+    # Check if command directories are modified
+    if echo "$changed_files" | grep -q "docs/commands/\|\.claude/commands/"; then
+        return 0
+    fi
+    
+    # Check if command registry is modified
+    if echo "$changed_files" | grep -q "\.claude/config/command-registry.json"; then
         return 0
     fi
     
@@ -273,15 +283,91 @@ validate_staged_cross_references() {
     return 0
 }
 
+# Validate command synchronization
+validate_command_synchronization() {
+    log "Validating command synchronization..."
+    
+    local changed_files=$(git diff --cached --name-only)
+    local needs_command_validation=false
+    
+    # Check if command-related files are changed
+    if echo "$changed_files" | grep -q "docs/commands/\|\.claude/commands/\|\.claude/config/command-registry.json"; then
+        needs_command_validation=true
+    fi
+    
+    if [ "$needs_command_validation" = false ]; then
+        log "No command-related changes detected, skipping command synchronization validation"
+        return 0
+    fi
+    
+    # Check if command counter script exists and is executable
+    local command_counter_script="$PROJECT_ROOT/scripts/validation/automated-command-counter-v2.sh"
+    
+    if [ ! -f "$command_counter_script" ]; then
+        log_warning "Command counter script not found at $command_counter_script"
+        log_warning "Skipping command synchronization validation"
+        return 0
+    fi
+    
+    if [ ! -x "$command_counter_script" ]; then
+        log_warning "Command counter script not executable, attempting to make executable"
+        chmod +x "$command_counter_script" 2>/dev/null || {
+            log_warning "Could not make command counter script executable"
+            log_warning "Skipping command synchronization validation"
+            return 0
+        }
+    fi
+    
+    # Run command synchronization validation
+    log "Running automated command counter validation..."
+    
+    local temp_output=$(mktemp)
+    if "$command_counter_script" --quiet > "$temp_output" 2>&1; then
+        log_success "Command synchronization validation passed"
+        rm -f "$temp_output"
+        return 0
+    else
+        local exit_code=$?
+        log_error "Command synchronization validation failed (exit code: $exit_code)"
+        
+        # Try to parse the latest report for details
+        local latest_report=$(find "$PROJECT_ROOT/scripts/results/command-counts" -name "command-count-report-*.json" -type f 2>/dev/null | sort -r | head -1)
+        
+        if [ -f "$latest_report" ] && command -v jq &> /dev/null; then
+            local total_discrepancies=$(jq -r '.command_count_report.discrepancies.total_found // "unknown"' "$latest_report" 2>/dev/null)
+            local docs_total=$(jq -r '.command_count_report.counts.docs_commands.total // "unknown"' "$latest_report" 2>/dev/null)
+            local claude_total=$(jq -r '.command_count_report.counts.claude_commands.total // "unknown"' "$latest_report" 2>/dev/null)
+            
+            log_error "Command count details:"
+            log_error "  docs/commands: $docs_total commands"
+            log_error "  .claude/commands: $claude_total commands"
+            log_error "  Total discrepancies: $total_discrepancies"
+        fi
+        
+        log_error ""
+        log_error "Command synchronization must be resolved before committing:"
+        log_error "  1. Run: ./scripts/validation/automated-command-counter-v2.sh"
+        log_error "  2. Review discrepancies and sync directories if needed"
+        log_error "  3. Update .claude/config/command-registry.json if necessary"
+        log_error "  4. Re-stage changes and commit again"
+        log_error ""
+        log_error "Script output:"
+        cat "$temp_output" | head -20
+        
+        rm -f "$temp_output"
+        return 1
+    fi
+}
+
 # Main validation function
 main() {
-    # Skip validation if not a reference-related commit
-    if ! is_reference_commit; then
-        log "No reference-related changes detected, skipping validation"
+    # Skip validation if not a validation-required commit
+    if ! is_validation_required_commit; then
+        log "No validation-required changes detected, skipping validation"
         exit 0
     fi
     
-    log "Reference-related changes detected, running validation..."
+    log "Validation-required changes detected, running validation..."
     
     local validation_errors=0
     
@@ -299,6 +385,11 @@ main() {
     fi
     
     if ! validate_staged_cross_references; then
+        ((validation_errors++))
+    fi
+    
+    # Run command synchronization validation
+    if ! validate_command_synchronization; then
         ((validation_errors++))
     fi
     
@@ -353,6 +444,7 @@ VALIDATIONS:
     - Principle count consistency across files
     - Zero-root file policy (Principle #81)
     - Cross-reference validity in staged changes
+    - Command synchronization between docs/ and .claude/ directories
     
 USAGE:
     This script runs automatically as a git pre-commit hook.

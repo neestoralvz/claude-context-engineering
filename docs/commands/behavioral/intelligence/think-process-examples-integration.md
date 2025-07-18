@@ -335,7 +335,7 @@ docs/operations/outputs/orchestrators/think-master/
 ### Comprehensive File Management with Single Source of Truth
 
 **Advanced $ARGUMENTS Integration**:
-```bash
+```markdown
 /think-master "analyze real-time collaboration architecture"      # Focus: Universal strategic orchestration with strategic feature development emphasis
 /think-master "strategic performance bottleneck optimization"     # Focus: Universal strategic orchestration with strategic performance optimization emphasis
 /think-master "strategic migration to microservices"             # Focus: Universal strategic orchestration with strategic architecture transformation emphasis

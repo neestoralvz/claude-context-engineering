@@ -209,11 +209,18 @@ class SistemaWillParser:
             'MUST': r'Sistema MUST\s+([^.]+)',
             'DEBE': r'Sistema DEBE\s+([^.]+)',
             'BLOCKING': r'🚨\s*BLOCKING[:\s]+([^.]+)',
-            'CRITICAL': r'🚨\s*CRITICAL[:\s]+([^.]+)',
-            'MAXIMUM': r'🚨\s*MAXIMUM[:\s]+([^.]+)',
-            'MANDATORY': r'🚨\s*MANDATORY[:\s]+([^.]+)',
+            'CRITICAL': r'\*\*CRITICAL[:\s]+([^*]+)\*\*',
+            'REQUIRED': r'\*\*REQUIRED[:\s]+([^*]+)\*\*',
+            'MANDATORY': r'\*\*MANDATORY[:\s]+([^*]+)\*\*',
             'AUTOMATIC': r'🚨\s*AUTOMATIC[:\s]+([^.]+)',
-            'ZERO_TOLERANCE': r'ZERO\s+tolerance\s+([^.]+)'
+            'ZERO_TOLERANCE': r'ZERO\s+tolerance\s+([^.]+)',
+            'CORE_INTEGRATIONS': r'🔄\s*CORE INTEGRATIONS\*\*:\s*([^+]+)',
+            'AUTOMATION_CRITICAL': r'🔍\s*AUTOMATION\*\*:\s*CRITICAL\s+([^+]+)',
+            'MEMORY_REQUIRED': r'📋\s*MEMORY\*\*:\s*REQUIRED\s+([^+]+)',
+            'PRINCIPLE_ENFORCEMENT': r'Principle #(\d+)[^:]*:\s*([^.]+)',
+            'UNDERSTANDING_CRITICAL': r'\*\*CRITICAL UNDERSTANDING\*\*:\s*([^.]+)',
+            'SUCCESS_METRICS_CRITICAL': r'\*\*CRITICAL SUCCESS METRICS\*\*[^:]*:\s*([^-]+)',
+            'BOUNDARY_MANDATORY': r'MANDATORY\s+boundary\s+([^.]+)'
         }
     
     def parse_enforcement_rules(self) -> List[EnforcementRule]:

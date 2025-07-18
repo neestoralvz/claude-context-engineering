@@ -1,0 +1,41 @@
+2025-07-17 23:09:08 [INFO] [0;34m🚀 Iniciando validación de autocontención de comandos[0m
+2025-07-17 23:09:08 [INFO] [0;34m📋 Principio #102: Command Autocontención Architecture[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Verificando prerrequisitos...[0m
+2025-07-17 23:09:08 [INFO] [0;34m📊 Total de comandos a validar:      172[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ Prerrequisitos verificados[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Procesando comandos...[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/behavior/dynamic-dependency-analysis.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/behavior/dynamic-dependency-analysis.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/behavior/behavioral-control-layer.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/behavior/behavioral-control-layer.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/behavior/monitor.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/behavior/monitor.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/mapping/command-relationships.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/mapping/command-relationships.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/documentation/living-documentation.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/documentation/living-documentation.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/documentation/documentation-orchestrator.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/documentation/documentation-orchestrator.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/documentation/sync-docs.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/documentation/sync-docs.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/documentation/unified-pattern-management.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/documentation/unified-pattern-management.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/documentation/update-living-docs.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/documentation/update-living-docs.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/documentation/modularization-protocol.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/documentation/modularization-protocol.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/optimization/adaptive-learning-system.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/optimization/adaptive-learning-system.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/git-workflow/claude-session-worktrees.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/git-workflow/claude-session-worktrees.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/meta/dynamic-registry-integration.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/meta/dynamic-registry-integration.md: Autocontenido correctamente[0m
+2025-07-17 23:09:08 [INFO] [0;34m🔍 Validando: executable/meta/usage-patterns-examples.md[0m
+2025-07-17 23:09:08 [SUCCESS] [0;32m✅ executable/meta/usage-patterns-examples.md: Autocontenido correctamente[0m
+2025-07-17 23:09:09 [INFO] [0;34m🔍 Validando: executable/meta/enhanced-phase-protocols.md[0m
+2025-07-17 23:09:09 [WARN] [1;33m📥 Import detectado en executable/meta/enhanced-phase-protocols.md:170[0m
+2025-07-17 23:09:09 [WARN] [1;33m   Patrón: require.*from[0m
+2025-07-17 23:09:09 [WARN] [1;33m   - **Evidence Required**: User sees actual discovery results from direct command execution[0m
+2025-07-17 23:09:09 [WARN] [1;33m📥 Import detectado en executable/meta/enhanced-phase-protocols.md:269[0m
+2025-07-17 23:09:09 [WARN] [1;33m   Patrón: require.*from[0m
+2025-07-17 23:09:09 [WARN] [1;33m   - **Evidence Required**: User sees actual planning results from Task agent execution[0m

@@ -30,6 +30,42 @@ EXECUTE and maintain documentation that automatically evolves through usage achi
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes living documentation and knowledge consolidation scripts:
+
+```bash
+# Core documentation lifecycle and evolution
+./scripts/maintenance/update-cross-references.sh --living-documentation
+./scripts/validation/analyze-content-quality.sh --documentation-evolution
+
+# Knowledge consolidation and validation
+./scripts/validation/validate-reference-integrity.sh --living-validation
+./scripts/validation/validate-navigation.sh --documentation-authority
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate living documentation prerequisites and evolution parameters
+2. **Documentation Evolution**: Execute cross-reference updates with living documentation focus
+3. **Content Analysis**: Run content quality analysis for documentation evolution validation
+4. **Authority Validation**: Apply reference integrity and navigation validation for documentation authority
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute living documentation evolution using comprehensive cross-reference and content analysis
+2. Validate documentation authority and knowledge consolidation with integrity validation
+3. Generate documentation reports with evolution metrics and authority validation
+4. Apply navigation protocols for comprehensive living documentation verification
+
+**Status Updates**:
+- 🔄 **Starting**: Living documentation initiated (4 specialized documentation and validation scripts)
+- 📊 **Progress**: Running cross-reference evolution and content quality analysis
+- ✅ **Complete**: Living documentation completed with authority validation
+- 📈 **Metrics**: Documentation evolution measured and authority integrity validated
+
+---
+
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Auto-Activation Triggers**
@@ -239,7 +275,7 @@ EXECUTE and maintain documentation that automatically evolves through usage achi
 **Result**: Evolve system documentation based on usage patterns and consolidate all knowledge
 
 ### **Command Documentation Evolution**
-```bash
+```markdown
 /living-documentation "command-registry" evolution_trigger=new_commands consolidation_scope=atomic_commands
 ```
 **Result**: Update command documentation when new commands are added

@@ -1,0 +1,48 @@
+# Dockerfile.dev para desarrollo del Sistema Ninu.mx
+# Optimizado para desarrollo con hot reload
+
+FROM node:18-alpine
+
+# Install dependencies for development
+RUN apk add --no-cache \
+    git \
+    curl \
+    bash
+
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm ci
+
+# Copy source code
+COPY . .
+
+# Create non-root user for development
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+# Set ownership after copying source code
+RUN chown -R nextjs:nodejs /app
+
+# Create .next directory with proper permissions
+RUN mkdir -p /app/.next && chown -R nextjs:nodejs /app/.next
+
+USER nextjs
+
+# Expose port for development
+EXPOSE 3000
+
+# Environment variables for development
+ENV NODE_ENV=development
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
+
+# Health check for development
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+  CMD curl -f http://localhost:3000/ || exit 1
+
+# Start development server with hot reload
+CMD ["npm", "run", "dev"]

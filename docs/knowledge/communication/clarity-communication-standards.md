@@ -9,6 +9,20 @@
 **CONTEXTUAL PRECISION**: Información exacta en el contexto adecuado  
 **ACTION-ORIENTED**: Enfoque en acciones y resultados, no en procesos
 
+## 🔴 CRÍTICO: Comunicación Directa Claude Code → Usuario
+
+**NUEVA ESPECIFICACIÓN**: La comunicación debe ser directa de Claude Code al usuario, eliminando bash como canal de comunicación.
+
+**❌ ELIMINADO**: Referencias a bash notifications, echo/printf como canales de comunicación
+**✅ REQUERIDO**: Formato compacto directo `⟳ /comando → resultado 🎯 [tiempo]`
+
+**Ejemplos del nuevo formato**:
+```
+⟳ /sync-docs → 15 files updated 🎯 [2.1s]
+⟳ /validate → ✓12 ⚠3 ✗1 🎯 [4.2s] → Fix required
+⟳ /containerize → Docker setup complete 🎯 [8.7s]
+```
+
 ## ⚡ Estándares de Claridad
 
 ### **Estructura de Respuesta Clara**
@@ -16,12 +30,24 @@
 #### **Patrón Obligatorio: Acción → Resultado → Contexto**
 ```markdown
 ✅ CORRECTO:
-⟳ Codebase analysis → 72 scripts found → Optimization opportunities identified
+⟳ /discover → 72 scripts found → Optimization opportunities identified 🎯 [2.8s]
 
 ❌ INCORRECTO:
 "I'm going to analyze your codebase now. This will involve scanning through 
 the directories to understand the current structure and identify areas where 
 we can make improvements..."
+```
+
+#### **Comunicación Directa Claude Code → Usuario**
+```markdown
+✅ FORMATO CORRECTO:
+⟳ /comando → resultado 🎯 [tiempo]
+✓ /comando → éxito 🎯 [tiempo]
+✗ /comando → error details 🎯 [tiempo]
+⚠ /comando → warning details 🎯 [tiempo]
+
+❌ FORMATO INCORRECTO:
+Usar bash/echo/printf como canal de comunicación
 ```
 
 #### **Eliminación de Ambigüedad**

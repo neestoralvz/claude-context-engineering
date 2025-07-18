@@ -6,6 +6,11 @@
 
 🔧 **Technical Navigation Hub** - Optimized cross-reference network for technical documentation covering architecture, implementation details, and advanced development features.
 
+## 🔴 CRITICAL SPECIFICATIONS
+
+### **⚠️ MANDATORY Reading**
+- **[Claude Code Slash Commands Specification](./claude-code-slash-commands-specification.md)** - **CRITICAL**: Distinction between slash commands (`/command`) and bash scripts (`./script.sh`)
+
 ---
 
 ## 🔗 **Strategic Technical Navigation**

@@ -116,6 +116,7 @@
 - **Behavioral Control Effectiveness**: ≥95% neural pathway reinforcement with permanent cognitive modification
 - **Implementation Success Rate**: ≥98% successful execution with real-time performance tracking
 - **Communication Clarity**: ≤1 second comprehension time with compact patterns ([Compact Communication](../principles/technical-standards.md#82-compact-communication-standards))
+- **Direct Communication**: Claude Code → User direct communication using compact format `⟳ /comando → resultado 🎯 [tiempo]`
 - **Response Density**: ≥70% character reduction from verbose patterns while preserving 100% essential information
 
 ### **Professional Standards** (Compliance Requirements)
@@ -132,6 +133,12 @@
 - **Visual Progress**: Progress bars ████████░░ and percentages for multi-phase operations
 - **Agent Coordination**: ◉ N agents → Component1 + Component2 [status] for Task tool deployment
 - **Validation Format**: ✓pass ⚠warn ✗fail [time] efficiency% → action_required
+
+### **CRÍTICO: Comunicación Directa Claude Code → Usuario**
+- **Formato Compacto Directo**: `⟳ /comando → resultado 🎯 [tiempo]`
+- **Eliminación de Bash**: No usar bash como canal de comunicación
+- **Comunicación Directa**: Todo feedback debe ir directamente al usuario
+- **Ejemplos**: `⟳ /validate → ✓12 ⚠3 ✗1 🎯 [4.2s] → Fix required`
 
 ---
 

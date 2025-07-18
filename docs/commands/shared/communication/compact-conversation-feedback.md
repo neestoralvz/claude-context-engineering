@@ -73,7 +73,7 @@ cn_claude_agents 3 "Research + Analysis + Validation" "active"
 ```
 
 ### **cn_claude_workflow()** - Command Chaining
-```bash
+```markdown
 cn_claude_workflow "/discover → /analyze → /execute" "ready"
 # Output: ⟳ Chain: /discover → /analyze → /execute → Ready for execution
 ```

@@ -12,6 +12,42 @@
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes intelligent orchestration and command coordination scripts:
+
+```bash
+# Core orchestration and command coordination
+./scripts/core/execute-commands.sh --intelligent-orchestration
+./scripts/core/lifecycle-progress-tracker.sh --orchestration-workflow
+
+# Automation and workflow optimization
+./scripts/automation/automated-git-workflows.sh --orchestration-coordination
+./scripts/automation/todo-workflow-optimizer.js --command-orchestration
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate orchestration prerequisites and command ecosystem analysis
+2. **Intelligent Orchestration**: Execute comprehensive command orchestration with ecosystem utilization
+3. **Workflow Optimization**: Run automated workflows with orchestration coordination
+4. **Performance Tracking**: Apply lifecycle progress tracking with orchestration metrics
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute intelligent command orchestration using ecosystem-wide coordination strategies
+2. Validate command relationships and orchestration effectiveness with real-time metrics
+3. Generate orchestration reports with ecosystem utilization and performance optimization
+4. Apply automated workflow optimization with command coordination protocols
+
+**Status Updates**:
+- 🔄 **Starting**: Intelligent orchestration initiated (4 specialized coordination scripts)
+- 📊 **Progress**: Running command ecosystem orchestration and workflow optimization
+- ✅ **Complete**: Orchestration workflow completed with ecosystem coordination validation
+- 📈 **Metrics**: Command utilization measured and orchestration effectiveness verified
+
+---
+
 ## 🎯 **ORCHESTRATOR DEFINITION**
 
 ### **Purpose**

@@ -1,194 +1,211 @@
 # Visual Announcement Rules - Context Engineering
 
-**Meta-Principle**: "Complete transparency through systematic visual communication"
+**Meta-Principle**: "Direct Claude Code → Usuario communication with maximum efficiency"
 
-**Authority Redirect**: Complete visual announcement rules, P56 compliance standards, and user interface transparency protocols are consolidated in [Execution & Integration Standards](./execution-integration-standards.md) for unified implementation across all Context Engineering commands.
+**Authority**: AUTHORITATIVE notification format standards for all Context Engineering commands with zero tolerance for complex visual announcements.
 
-**Purpose**: MANDATORY cross-reference hub for visual announcement rules, P56 transparency standards, and systematic communication protocols.
-
----
-
-## 🔗 **Unified Visual Announcement Standards**
-
-**Primary Authority**: [Execution & Integration Standards](./execution-integration-standards.md) - Complete visual announcement and transparency protocols
-
-**Key Visual Areas Available in Authority Source**:
-- **Visual Announcement Framework** - P56 compliance with mandatory display requirements
-- **Standard Visual Announcement Format** - Pre/post execution templates with evidence requirements
-- **Tool-Specific Visual Announcements** - Specialized templates for different tool types
-- **Real-Time Progress Reporting** - Communication flow and status update standards
+**Purpose**: MANDATORY compact notification format: `⟳ /comando → resultado 🎯 [tiempo]` replacing all obsolete bash notification systems.
 
 ---
 
-## 📋 **Quick Reference Navigation**
+## 🎯 **Compact Notification Format Standards**
 
-### **P56 Compliance Visual Standards**
-**Location**: [Execution & Integration Standards - Visual Announcement Framework](./execution-integration-standards.md#-visual-announcement-framework)
-- ALL tool executions MUST have visual announcements (100% compliance REQUIRED)
-- Complete user visibility into all system operations
-- Real-time progress reporting and status updates
-- Pre/during/post execution transparency requirements
+**MANDATORY Format**: `⟳ /comando → resultado 🎯 [tiempo]`
 
-### **Standard Visual Announcement Format**
-**Location**: [Execution & Integration Standards - Standard Format](./execution-integration-standards.md#standard-visual-announcement-format)
-- Pre-execution announcements with tool identification
-- Post-execution completion with results and evidence
-- Real-time progress updates during execution
-- Error state communication with recovery actions
+**Key Notification Components**:
+- **⟳ Symbol**: Indicates command execution initiation
+- **Command Reference**: `/comando` format for clarity
+- **Result Indicator**: `→ resultado` shows actual outcome
+- **Time Marker**: `🎯 [tiempo]` for execution tracking
+- **Direct Communication**: Claude Code → Usuario without intermediary systems
 
-### **Mathematical Script Visual Announcements**
-**Location**: [Execution & Integration Standards - Mathematical Announcements](./execution-integration-standards.md#mathematical-script-visual-announcements)
-- P56-compliant mathematical script execution templates
-- 4-decimal precision evidence display requirements
-- Real execution vs simulation indicators
-- Numerical results and validation status
+---
+
+## 📋 **Compact Notification Examples**
+
+### **Command Execution Notifications**
+**Format**: `⟳ /thinking → análisis estratégico completo 🎯 2.3s`
+**Format**: `⟳ /execute → operación exitosa 🎯 45s`
+**Format**: `⟳ /validate → verificación 100% 🎯 1.2s`
+
+### **Script Execution Notifications**
+**Format**: `⟳ script-validate → 22/22 tests passed 🎯 0.8s`
+**Format**: `⟳ calculate-metrics → precisión 4-decimal 🎯 1.5s`
+**Format**: `⟳ formula-verify → compliance 95.2% 🎯 0.6s`
+
+### **Error State Notifications**
+**Format**: `⟳ /comando → error: [descripción] 🎯 [tiempo]`
+**Format**: `⟳ /validate → warning: incomplete 🎯 2.1s`
+**Format**: `⟳ script-run → failed: dependency missing 🎯 0.4s`
 
 
 ---
 
 ## 🎯 **Implementation Guidelines**
 
-### **Visual Announcement Implementation**
-**Authority Reference**: [Execution & Integration Standards - Tool-Specific Announcements](./execution-integration-standards.md#tool-specific-visual-announcements)
-- Task tool visual announcements with agent deployment
-- Bash tool mathematical script execution templates
-- Read/Edit/Write tool content modification announcements
-- Meta-command orchestration visual frameworks
+### **Direct Communication Protocol**
+**CRITICAL**: Eliminate all complex visual announcement systems
+**MANDATORY**: Use compact format for all notifications
+**FORBIDDEN**: Bash notification scripts or external visual systems
+**REQUIRED**: Direct Claude Code → Usuario communication only
 
-### **Cross-Reference Integration**
-**Navigation Pattern**: [Knowledge Hub](../README.md) → [Command Rules](../README.md#standards--compliance) → [Execution & Integration Standards](./execution-integration-standards.md)
+### **Tool-Specific Format Application**
+- **Task Tools**: `⟳ /task-deploy → [agents] activated 🎯 [tiempo]`
+- **Bash Tools**: `⟳ script-name → [resultado] 🎯 [tiempo]`
+- **Read/Edit Tools**: `⟳ /edit → [archivos] modified 🎯 [tiempo]`
+- **Meta Commands**: `⟳ /ce → [fase] completed 🎯 [tiempo]`
 
-**Visual Announcement Efficiency**: ≤2 cognitive steps to complete visual announcement specifications from any Context Engineering command context.
+### **Notification Efficiency Standards**
+**Character Limit**: ≤80 characters per notification
+**Comprehension Time**: ≤0.5 seconds
+**Information Density**: Maximum value per character
+**Update Frequency**: Essential updates only
 
 ---
 
-## 🔧 **Related Visual Announcement Network**
+## 🔧 **Related Notification Network**
 
 ### **Bidirectional References**
-- **Authority Source**: [Execution & Integration Standards](./execution-integration-standards.md) - Complete implementation
-- **Script Integration**: [Script Integration Rules](./script-integration-rules.md) - Mathematical announcement cross-reference
+- **Authority Source**: [Execution & Integration Standards](./execution-integration-standards.md) - Compact format implementation
+- **Script Integration**: [Script Integration Rules](./script-integration-rules.md) - Mathematical notification cross-reference
 - **Command Rules Hub**: [Command Rules](./README.md) - Complete rules ecosystem
 
-### **Visual Announcement Network**
+### **Notification Network**
 - **Execution Rules**: [Execution Rules](./execution-rules.md) - Protocol transparency cross-reference
-- **Tool Call Standards**: [Tool Call Rules](./tool-call-rules.md) - Tool announcement integration
-- **Meta Command Rules**: [Meta Command Rules](./meta-command-rules.md) - System-level visual standards
+- **Tool Call Standards**: [Tool Call Rules](./tool-call-rules.md) - Tool notification integration
+- **Meta Command Rules**: [Meta Command Rules](./meta-command-rules.md) - System-level notification standards
 
 ---
 
-## 📊 **Expected Visual Announcement Results**
+## 📊 **Expected Notification Results**
 
-### **Visual Announcement Performance Outcomes**
+### **Notification Performance Outcomes**
 **Authority Reference**: [Execution & Integration Standards - Real-Time Progress Reporting](./execution-integration-standards.md#-real-time-progress-reporting)
-- **P56 Compliance**: 100% visual announcement compliance across all tool executions
-- **User Visibility**: Complete transparency with real-time progress updates
-- **Evidence Display**: 100% actual results and evidence generation
-- **Communication Quality**: Systematic visual communication with ≤30s update intervals
+- **P56 Compliance**: 100% compact notification compliance across all tool executions
+- **User Visibility**: Complete transparency with essential progress notifications
+- **Evidence Display**: 100% actual results in compact format
+- **Communication Quality**: Direct Claude Code → Usuario communication with ≤0.5s comprehension
 
 ### **Systematic Quality Improvements**
-- **Template Standardization**: Unified visual announcement formats across all tools
-- **Progress Reporting**: Enhanced real-time status updates with communication flow
-- **P55/P56 Integration**: Systematic compliance monitoring with visual dashboards
-- **User Experience**: Optimized clarity and accessibility for visual communication
+- **Format Standardization**: Unified `⟳ /comando → resultado 🎯 [tiempo]` across all tools
+- **Progress Reporting**: Essential status updates with compact communication flow
+- **P55/P56 Integration**: Systematic compliance monitoring with compact notifications
+- **User Experience**: Optimized clarity and immediate accessibility
 
 ---
 
-## 📊 **MONITORING & OBSERVABILITY PROTOCOLS (MANDATORY)**
+## 📊 **MONITORING NOTIFICATION PROTOCOLS**
 
-### **System Observability Visual Standards**
+### **Compact Monitoring Format**
 
-**CRITICAL REQUIREMENT**: All monitoring operations MUST include visual transparency for complete system observability.
+**MANDATORY**: Replace complex monitoring dashboards with compact notifications
 
-**Integration Reference**: [Transparent System Observability Principle](../principles/operational-excellence.md#63-transparent-system-observability)
+**System Health Notifications**:
+- **Format**: `⟳ /monitor → sistema 100% operacional 🎯 0.3s`
+- **Format**: `⟳ /health-check → métricas normales 🎯 0.8s`
+- **Format**: `⟳ /resource-scan → CPU 45%, RAM 60% 🎯 0.5s`
 
-**Observability Visual Framework**:
+**Performance Metrics Format**:
+- **Format**: `⟳ /metrics → response 0.2s, throughput 95% 🎯 0.4s`
+- **Format**: `⟳ /benchmark → precisión 4-decimal validated 🎯 1.2s`
+- **Format**: `⟳ /utilization → resources optimal 🎯 0.3s`
 
-**Real-Time Monitoring Announcements**:
-- **MANDATORY Requirement**: Visual announcements for all monitoring operations
-- **Monitoring Scope**: System health, performance metrics, resource utilization, error detection
-- **Display Format**: Real-time visual dashboards with comprehensive status indicators
-- **Update Frequency**: ≤30 second update intervals for critical monitoring
+**Alert Notification Format**:
+- **Critical**: `⟳ /alert → CRITICAL: [issue] 🎯 immediate`
+- **Warning**: `⟳ /alert → WARNING: [issue] 🎯 [tiempo]`
+- **Info**: `⟳ /alert → INFO: [status] 🎯 [tiempo]`
+- **Resolution**: `⟳ /resolve → [issue] fixed 🎯 [tiempo]`
 
-**Performance Metrics Display Standards**:
-- **Display Requirement**: Visual display of all performance metrics with transparency
-- **Metrics Coverage**: Response time, throughput, error rate, resource utilization
-- **Presentation Format**: Real-time charts, graphs, and numerical displays
-- **Accuracy Standard**: ≥95% metric accuracy with 4-decimal precision where applicable
+### **Resource Management Notifications**
 
-**Alert Visualization Framework**:
-- **Alert System**: Visual alert system with intelligent prioritization
-- **Severity Levels**: Critical, Warning, Info alerts with color-coded visual indicators
-- **Escalation Protocol**: Visual escalation paths with clear action requirements
-- **Resolution Confirmation**: Visual confirmation of alert resolution and system recovery
-
-### **Resource Management Visual Transparency**
-
-**MANDATORY IMPLEMENTATION**: Resource allocation and optimization MUST include complete visual transparency.
+**MANDATORY IMPLEMENTATION**: Resource allocation and optimization use compact notification format.
 
 **Integration Reference**: [Resource-Aware Orchestration Principle](../principles/technical-standards.md#62-resource-aware-orchestration)
 
-**Resource Management Visual Standards**:
+**Resource Management Notification Standards**:
 
-**Resource Allocation Display Framework**:
-- **Display Requirement**: Visual display of resource allocation across agents and operations
-- **Resource Scope**: CPU, memory, network, storage allocation and utilization
-- **Display Format**: Real-time resource utilization charts with allocation breakdown
-- **Alert System**: Visual alerts when resource thresholds approached or exceeded
+**Resource Allocation Notifications**:
+- **Format**: `⟳ /resource-allocate → [agents] assigned [resources] 🎯 [tiempo]`
+- **Format**: `⟳ /resource-monitor → CPU [%], RAM [%], storage [%] 🎯 [tiempo]`
+- **Format**: `⟳ /resource-alert → threshold exceeded: [resource] 🎯 [tiempo]`
 
-**Multi-Agent Coordination Visibility**:
-- **Transparency Requirement**: Complete visual transparency for multi-agent resource coordination
-- **Display Components**: Agent resource budgets, shared resource usage, conflict resolution
-- **Monitoring Protocol**: Real-time visual monitoring of agent performance and coordination
-- **Optimization Display**: Visual display of resource optimization recommendations
+**Multi-Agent Coordination Notifications**:
+- **Format**: `⟳ /coordinate → [agents] synchronized 🎯 [tiempo]`
+- **Format**: `⟳ /resource-share → [usage] shared, [conflicts] resolved 🎯 [tiempo]`
+- **Format**: `⟳ /agent-monitor → performance optimal 🎯 [tiempo]`
 
-**Performance Optimization Announcements**:
-- **Announcement Requirement**: Visual announcements for all performance optimization actions
-- **Optimization Scope**: Resource reallocation, scaling operations, optimization implementations
-- **Evidence Display**: Before/after performance metrics with improvement evidence
-- **Validation Protocol**: Visual validation of optimization effectiveness
+**Performance Optimization Notifications**:
+- **Format**: `⟳ /optimize → [action] implemented 🎯 [tiempo]`
+- **Format**: `⟳ /performance → improvement [%] validated 🎯 [tiempo]`
+- **Format**: `⟳ /scaling → [operation] completed 🎯 [tiempo]`
 
-### **Security & Privacy Monitoring Visual Protocols**
+### **Security & Privacy Monitoring Notifications**
 
-**CRITICAL REQUIREMENT**: Security and privacy operations MUST maintain visual transparency while protecting sensitive information.
+**CRITICAL REQUIREMENT**: Security and privacy operations use compact notifications while protecting sensitive information.
 
 **Integration Reference**: [Security by Design Principle](../principles/validation-protocols.md#59-security-by-design)
 
-**Security & Privacy Visual Framework**:
+**Security & Privacy Notification Framework**:
 
-**Security Monitoring Display Standards**:
-- **Monitoring Requirement**: Visual security monitoring with privacy-aware transparency
-- **Security Scope**: Security threats, access attempts, compliance status, audit events
-- **Information Protection**: Sensitive information masking while maintaining operational visibility
-- **Alert System**: Real-time visual security alerts with severity indicators
+**Security Monitoring Notifications**:
+- **Format**: `⟳ /security-monitor → [status] verified 🎯 [tiempo]`
+- **Format**: `⟳ /threat-scan → no threats detected 🎯 [tiempo]`
+- **Format**: `⟳ /access-control → [attempts] blocked 🎯 [tiempo]`
+- **Format**: `⟳ /security-alert → [severity]: [masked_info] 🎯 [tiempo]`
 
-**Compliance Status Visibility**:
-- **Visibility Requirement**: Visual compliance status monitoring and reporting
-- **Compliance Standards**: GDPR, CCPA, security compliance status with visual indicators
-- **Dashboard Reporting**: Real-time compliance dashboard with actionable insights
-- **Validation Protocol**: Visual validation of compliance requirement fulfillment
+**Compliance Status Notifications**:
+- **Format**: `⟳ /compliance → GDPR: [status], CCPA: [status] 🎯 [tiempo]`
+- **Format**: `⟳ /audit → [events] logged, compliant 🎯 [tiempo]`
+- **Format**: `⟳ /validate-compliance → requirements met 🎯 [tiempo]`
 
-**Privacy Protection Announcements**:
-- **Announcement Requirement**: Visual announcements for privacy protection actions
-- **Protection Scope**: Data anonymization, consent management, access control enforcement
-- **Privacy Transparency**: Privacy-preserving transparency showing protection actions taken
-- **Compliance Validation**: Visual confirmation of privacy requirement compliance
+**Privacy Protection Notifications**:
+- **Format**: `⟳ /privacy → data anonymized 🎯 [tiempo]`
+- **Format**: `⟳ /consent → [actions] managed 🎯 [tiempo]`
+- **Format**: `⟳ /access-enforce → controls active 🎯 [tiempo]`
+- **Format**: `⟳ /privacy-validate → compliance confirmed 🎯 [tiempo]`
 
 ---
 
-## 📈 **MONITORING VALIDATION METRICS**
+## 📈 **NOTIFICATION VALIDATION METRICS**
 
-### **Visual Transparency Effectiveness Metrics**
-- **Monitoring Coverage**: ≥98% - Percentage of operations with visual monitoring
-- **Update Frequency**: ≤30 seconds - Maximum update interval for critical visual displays
-- **Alert Accuracy**: ≥92% - Percentage of visual alerts accurately identifying issues
-- **User Visibility**: 100% - Complete transparency of monitoring operations
+### **Compact Notification Effectiveness**
+- **Character Efficiency**: ≤80 characters per notification
+- **Comprehension Speed**: ≤0.5 seconds understanding time
+- **Information Density**: Maximum value per character
+- **Update Relevance**: Essential updates only
 
-### **Observability Dashboard Metrics**
-- **Dashboard Responsiveness**: ≤10 seconds - Dashboard refresh and update time
-- **Data Accuracy**: ≥95% - Accuracy of displayed monitoring data
-- **Visual Clarity**: ≥90% - User understanding of visual monitoring displays
-- **Integration Completeness**: 100% - All monitoring systems integrated into visual dashboard
+### **Communication Quality Metrics**
+- **Notification Accuracy**: ≥95% - Accurate status representation
+- **Response Time**: ≤0.3 seconds - Notification delivery time
+- **User Comprehension**: ≥90% - Immediate understanding rate
+- **Format Compliance**: 100% - Adherence to compact format
+
+### **Obsolete System Elimination**
+- **Complex Dashboards**: 0% - All eliminated
+- **Bash Notifications**: 0% - All removed
+- **Visual Announcement Scripts**: 0% - All replaced
+- **Multi-line Templates**: 0% - All converted
+- **Compact Format Usage**: 100% - Complete compliance
+- **Direct Communication**: 100% - Claude Code → Usuario only
 
 ---
 
 **Consolidated Authority**: [Execution & Integration Standards](./execution-integration-standards.md) | **Navigation Hub**: [Knowledge Hub](../README.md) | **Command Rules**: [Rules Hub](./README.md)
+
+---
+
+## 🚀 **OBSOLETE SYSTEM ELIMINATION**
+
+### **Eliminated Systems**
+- **Complex Visual Announcements**: 100% removed
+- **Bash Notification Scripts**: 100% eliminated
+- **Multi-line Templates**: 100% replaced
+- **Visual Dashboards**: 100% converted to compact notifications
+
+### **Replaced With**
+- **Compact Format**: `⟳ /comando → resultado 🎯 [tiempo]`
+- **Direct Communication**: Claude Code → Usuario only
+- **Immediate Comprehension**: ≤0.5 seconds understanding
+- **Essential Information**: Maximum value per character
+
+**🎯 ENFORCEMENT**: All Context Engineering commands MUST use compact notification format with zero tolerance for obsolete bash notification systems.

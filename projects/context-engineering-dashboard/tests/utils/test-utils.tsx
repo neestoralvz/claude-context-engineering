@@ -213,27 +213,7 @@ export const mockData = {
 // Test utilities for async operations
 export const waitForAsyncOperations = () => new Promise(resolve => setTimeout(resolve, 0))
 
-// Mock canvas context for canvas-based components
-export const mockCanvasContext = {
-  fillStyle: '',
-  strokeStyle: '',
-  lineWidth: 1,
-  font: '',
-  textAlign: 'left' as CanvasTextAlign,
-  scale: jest.fn(),
-  fillRect: jest.fn(),
-  clearRect: jest.fn(),
-  beginPath: jest.fn(),
-  moveTo: jest.fn(),
-  lineTo: jest.fn(),
-  arc: jest.fn(),
-  stroke: jest.fn(),
-  fill: jest.fn(),
-  closePath: jest.fn(),
-  fillText: jest.fn(),
-  measureText: jest.fn(() => ({ width: 0 } as TextMetrics)),
-  setLineDash: jest.fn(),
-}
+// Canvas context is now provided globally via jest.setup.js
 
 // Custom render function with common providers
 const customRender = (
@@ -290,12 +270,12 @@ export const advanceTimersByTime = (ms: number) => {
 // Canvas testing utilities
 export const setupCanvasTest = () => {
   const mockCanvas = document.createElement('canvas')
-  mockCanvas.getContext = jest.fn(() => mockCanvasContext)
+  mockCanvas.getContext = jest.fn(() => global.mockCanvasContext)
   mockCanvas.toDataURL = jest.fn(() => 'data:image/png;base64,mock')
   
   return {
     mockCanvas,
-    mockContext: mockCanvasContext
+    mockContext: global.mockCanvasContext
   }
 }
 

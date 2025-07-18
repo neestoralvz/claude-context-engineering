@@ -1,0 +1,286 @@
+# Production Alert Rules for Ninu Factory Control System
+# Business-critical alerts for manufacturing operations
+
+groups:
+  # ================================
+  # Application Availability
+  # ================================
+  - name: application.availability
+    rules:
+      - alert: ApplicationDown
+        expr: up{job=~"ninu-frontend.*"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: application
+        annotations:
+          summary: "Ninu Factory application is down"
+          description: "Application {{ $labels.instance }} has been down for more than 1 minute"
+          runbook_url: "http://docs.ninu-factory.com/runbooks/application-down"
+
+      - alert: ApplicationHighLatency
+        expr: histogram_quantile(0.95, http_request_duration_seconds_bucket{job=~"ninu-frontend.*"}) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+          service: application
+        annotations:
+          summary: "High application latency detected"
+          description: "95th percentile latency is {{ $value }}s for {{ $labels.instance }}"
+
+      - alert: ApplicationErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: critical
+          service: application
+        annotations:
+          summary: "High application error rate"
+          description: "Error rate is {{ $value | humanizePercentage }} for {{ $labels.instance }}"
+
+  # ================================
+  # Database Health
+  # ================================
+  - name: database.health
+    rules:
+      - alert: PostgreSQLDown
+        expr: up{job="postgres"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: database
+        annotations:
+          summary: "PostgreSQL database is down"
+          description: "PostgreSQL database has been down for more than 1 minute"
+          runbook_url: "http://docs.ninu-factory.com/runbooks/postgresql-down"
+
+      - alert: PostgreSQLTooManyConnections
+        expr: pg_stat_database_numbackends / pg_settings_max_connections * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+          service: database
+        annotations:
+          summary: "PostgreSQL connection usage is high"
+          description: "PostgreSQL is using {{ $value }}% of available connections"
+
+      - alert: PostgreSQLSlowQueries
+        expr: rate(pg_stat_database_tup_returned[5m]) / rate(pg_stat_database_tup_fetched[5m]) < 0.1
+        for: 10m
+        labels:
+          severity: warning
+          service: database
+        annotations:
+          summary: "PostgreSQL has slow queries"
+          description: "PostgreSQL query efficiency is {{ $value | humanizePercentage }}"
+
+      - alert: PostgreSQLDiskUsage
+        expr: (pg_database_size_bytes / (pg_database_size_bytes + pg_tablespace_free_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          service: database
+        annotations:
+          summary: "PostgreSQL disk usage is high"
+          description: "PostgreSQL disk usage is {{ $value }}% on {{ $labels.instance }}"
+
+  # ================================
+  # Cache Health
+  # ================================
+  - name: cache.health
+    rules:
+      - alert: RedisDown
+        expr: up{job="redis"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: cache
+        annotations:
+          summary: "Redis cache is down"
+          description: "Redis has been down for more than 1 minute"
+
+      - alert: RedisMemoryUsage
+        expr: redis_memory_used_bytes / redis_memory_max_bytes * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+          service: cache
+        annotations:
+          summary: "Redis memory usage is high"
+          description: "Redis memory usage is {{ $value }}% on {{ $labels.instance }}"
+
+      - alert: RedisSlowQueries
+        expr: rate(redis_slowlog_length[5m]) > 10
+        for: 5m
+        labels:
+          severity: warning
+          service: cache
+        annotations:
+          summary: "Redis has many slow queries"
+          description: "Redis slow query rate is {{ $value }} per second"
+
+  # ================================
+  # Infrastructure Health
+  # ================================
+  - name: infrastructure.health
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+          service: infrastructure
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is {{ $value }}% on {{ $labels.instance }}"
+
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          service: infrastructure
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is {{ $value }}% on {{ $labels.instance }}"
+
+      - alert: DiskSpaceLow
+        expr: (node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 < 15
+        for: 5m
+        labels:
+          severity: critical
+          service: infrastructure
+        annotations:
+          summary: "Low disk space"
+          description: "Disk space is {{ $value }}% available on {{ $labels.instance }}"
+
+      - alert: LoadBalancerDown
+        expr: up{job="haproxy"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: infrastructure
+        annotations:
+          summary: "Load balancer is down"
+          description: "HAProxy load balancer is not responding"
+
+  # ================================
+  # Production Business Metrics
+  # ================================
+  - name: production.business
+    rules:
+      - alert: ProductionBatchFailed
+        expr: increase(production_batches_failed_total[5m]) > 0
+        for: 0s
+        labels:
+          severity: critical
+          service: production
+        annotations:
+          summary: "Production batch failed"
+          description: "{{ $value }} production batches have failed in the last 5 minutes"
+          runbook_url: "http://docs.ninu-factory.com/runbooks/batch-failure"
+
+      - alert: QualityControlFailure
+        expr: rate(quality_tests_failed_total[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: critical
+          service: quality
+        annotations:
+          summary: "High quality control failure rate"
+          description: "Quality control failure rate is {{ $value | humanizePercentage }}"
+
+      - alert: InventoryLowStock
+        expr: inventory_stock_level < inventory_minimum_stock
+        for: 5m
+        labels:
+          severity: warning
+          service: inventory
+        annotations:
+          summary: "Low inventory stock"
+          description: "{{ $labels.material }} stock is below minimum level: {{ $value }}"
+
+      - alert: InventoryCriticalStock
+        expr: inventory_stock_level < (inventory_minimum_stock * 0.5)
+        for: 1m
+        labels:
+          severity: critical
+          service: inventory
+        annotations:
+          summary: "Critical inventory stock level"
+          description: "{{ $labels.material }} stock is critically low: {{ $value }}"
+
+      - alert: ProductionStationDown
+        expr: production_station_operational == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: production
+        annotations:
+          summary: "Production station is down"
+          description: "Production station {{ $labels.station }} is not operational"
+
+      - alert: MaintenanceOverdue
+        expr: (time() - production_station_last_maintenance_timestamp) > (production_station_maintenance_interval * 1.2)
+        for: 5m
+        labels:
+          severity: warning
+          service: maintenance
+        annotations:
+          summary: "Maintenance overdue"
+          description: "Station {{ $labels.station }} maintenance is overdue by {{ $value | humanizeDuration }}"
+
+  # ================================
+  # Security & Compliance
+  # ================================
+  - name: security.compliance
+    rules:
+      - alert: SecurityScanFailed
+        expr: security_scan_status != 1
+        for: 1m
+        labels:
+          severity: critical
+          service: security
+        annotations:
+          summary: "Security scan failed"
+          description: "Security scan failed on {{ $labels.instance }}"
+
+      - alert: UnauthorizedAccess
+        expr: rate(security_events{type="unauthorized_access"}[5m]) > 0
+        for: 0s
+        labels:
+          severity: critical
+          service: security
+        annotations:
+          summary: "Unauthorized access detected"
+          description: "{{ $value }} unauthorized access attempts detected"
+
+      - alert: FailedLogins
+        expr: rate(authentication_failures_total[5m]) > 5
+        for: 2m
+        labels:
+          severity: warning
+          service: security
+        annotations:
+          summary: "High failed login rate"
+          description: "{{ $value }} failed login attempts per second"
+
+      - alert: SSLCertificateExpiry
+        expr: ssl_certificate_expiry_days < 30
+        for: 1m
+        labels:
+          severity: warning
+          service: security
+        annotations:
+          summary: "SSL certificate expiring soon"
+          description: "SSL certificate for {{ $labels.domain }} expires in {{ $value }} days"
+
+      - alert: ComplianceViolation
+        expr: cofepriss_compliance_score < 0.95
+        for: 5m
+        labels:
+          severity: critical
+          service: compliance
+        annotations:
+          summary: "COFEPRISS compliance violation"
+          description: "Compliance score is {{ $value }}, below required 95%"

@@ -33,32 +33,29 @@ Session Start → /status (verify setup) → /help (discover commands) → Workf
 
 **Command Discovery Features**:
 - **Built-in Commands**: Native Claude Code system commands
-- **Project Commands**: Commands from `.claude/commands/` directory
-- **User Commands**: Personal commands from `~/.claude/commands/`
+- **Global Commands**: Commands from `~/.claude/commands/` directory
 - **MCP Commands**: Dynamic commands added by MCP servers during session
 
 ### **Output Format and Interpretation**
 
 **Standard Output Structure**:
-```yaml
+```text
 Available commands:
 /command-name            Description of functionality
-/another-command (user)  User-defined command indicator
-/project-cmd (project)   Project-specific command indicator
+/another-command (user)  User-defined global command indicator
 /mcp-command (server)    MCP server-provided command indicator
 ```
 
 **Context Indicators**:
 - **No indicator**: Built-in Claude Code command
-- **(user)**: Personal command from `~/.claude/commands/`
-- **(project)**: Project-specific from `.claude/commands/`
+- **(user)**: Global command from `~/.claude/commands/`
 - **(server)**: MCP server-provided command
 
 ### **Performance Characteristics**
 
 **Response Metrics**:
 - **Standard Listing**: <50ms response time
-- **Command Count**: Varies by project (10-100+ commands typical)
+- **Command Count**: Varies by configuration (10-100+ commands typical)
 - **Memory Impact**: Minimal (commands loaded on-demand)
 
 ### **Integration with Context Engineering**
@@ -74,13 +71,13 @@ Available commands:
 **Command Ecosystem Verification**:
 - Use `/help` to verify Context Engineering command loading
 - Confirm availability of critical commands (`/context-eng`, `/decision`, `/thinking`)
-- Validate project-specific command integration
+- Validate global command integration
 
 ### **Advanced Usage Patterns**
 
 **Command Discovery Workflow**:
 1. **Initial Discovery**: `/help` to understand base capabilities
-2. **System Activation**: Load Context Engineering or project commands
+2. **System Activation**: Load Context Engineering or global commands
 3. **Extended Discovery**: `/help` again to see expanded ecosystem
 4. **Targeted Usage**: Execute specific commands based on objectives
 
@@ -188,7 +185,7 @@ claude "/status && /memory && /context-eng ready-check"
 ### **Common `/help` Issues**
 
 **Commands Not Listed**:
-- **Verification**: Check command file locations (`.claude/commands/`, `~/.claude/commands/`)
+- **Verification**: Check command file locations (`~/.claude/commands/`)
 - **Syntax**: Validate command file YAML frontmatter and structure
 - **Permissions**: Ensure file read permissions and accessibility
 - **MCP**: Verify MCP server connections if expecting server commands

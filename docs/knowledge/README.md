@@ -8,6 +8,11 @@
 
 **Mathematical Validation**: Navigation path efficiency = 1.47 ± 0.03 cognitive steps average (≤2.5 threshold compliance: 97.8%). Context reduction coefficient = 0.736 ± 0.012 (target ≥0.70: ACHIEVED).
 
+## 🔴 CRITICAL SPECIFICATIONS
+
+### **⚠️ MANDATORY Reading**
+- **[Claude Code Slash Commands Specification](./technical/claude-code-slash-commands-specification.md)** - **CRITICAL**: Distinction between slash commands (`/command`) and bash scripts (`./script.sh`)
+
 ---
 
 ## 🎯 Universal Navigation Patterns

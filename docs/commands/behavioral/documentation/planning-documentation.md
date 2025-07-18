@@ -32,7 +32,7 @@
 ## MANDATORY Activation Protocol
 
 **Input Format**:
-```bash
+```markdown
 /planning-documentation [action] [branch_name] [commit_message]
 ```
 

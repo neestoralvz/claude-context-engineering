@@ -18,6 +18,42 @@
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes progressive thinking and intelligence analysis scripts:
+
+```bash
+# Core intelligence and thinking analysis
+./scripts/validation/analyze-content-quality.sh --progressive-thinking
+./scripts/core/calculate-complexity.sh --intelligence-analysis
+
+# Threshold validation and cognitive processing
+./scripts/validation/validate-adaptive-thresholds.sh --thinking-thresholds
+./scripts/validation/validate-execution-thresholds.sh --progressive-intelligence
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate progressive thinking prerequisites and intelligence analysis parameters
+2. **Intelligence Analysis**: Execute comprehensive content quality analysis for progressive thinking
+3. **Complexity Calculation**: Run mathematical complexity calculation with intelligence focus
+4. **Threshold Validation**: Apply adaptive and execution thresholds for progressive thinking optimization
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute progressive thinking analysis using multi-stage intelligence validation
+2. Validate thinking complexity and quality thresholds with cognitive optimization
+3. Generate thinking reports with progressive intelligence metrics and breakthrough validation
+4. Apply threshold optimization protocols for comprehensive progressive thinking verification
+
+**Status Updates**:
+- 🔄 **Starting**: Progressive thinking initiated (4 specialized intelligence scripts)
+- 📊 **Progress**: Running content analysis and complexity calculation for thinking optimization
+- ✅ **Complete**: Progressive thinking completed with intelligence threshold validation
+- 📈 **Metrics**: Thinking depth measured and progressive intelligence quality verified
+
+---
+
 ## 🚨 BLOCKING Activation Protocol
 
 **🚨 MANDATORY Input Format**:

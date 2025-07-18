@@ -1,0 +1,42 @@
+2025-07-17 22:09:07 [INFO] [0;34m🚀 Iniciando migración de comandos Claude a ubicación global[0m
+2025-07-17 22:09:07 [INFO] [0;34m📁 Proyecto: /Users/nalve/claude-context-engineering[0m
+2025-07-17 22:09:07 [INFO] [0;34m📁 Fuente: /Users/nalve/claude-context-engineering/docs/commands[0m
+2025-07-17 22:09:07 [INFO] [0;34m📁 Destino: /Users/nalve/.claude/commands[0m
+2025-07-17 22:09:07 [INFO] [0;34m🔍 Verificando prerrequisitos...[0m
+2025-07-17 22:09:07 [INFO] [0;34m📊 Comandos encontrados en /Users/nalve/claude-context-engineering/docs/commands:      172[0m
+2025-07-17 22:09:08 [INFO] [0;34m📊 Comandos locales encontrados:      172[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Prerrequisitos verificados[0m
+2025-07-17 22:09:08 [INFO] [0;34m💾 Creando backup en /Users/nalve/.claude/backups/migration-20250717-220907...[0m
+2025-07-17 22:09:08 [INFO] [0;34m✅ Backup de comandos globales creado[0m
+2025-07-17 22:09:08 [INFO] [0;34m✅ Backup de comandos locales creado[0m
+2025-07-17 22:09:08 [INFO] [0;34m✅ Backup de configuración local creada[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Backup completo creado en: /Users/nalve/.claude/backups/migration-20250717-220907[0m
+2025-07-17 22:09:08 [INFO] [0;34m🚀 Iniciando migración de comandos...[0m
+2025-07-17 22:09:08 [INFO] [0;34m📂 Copiando comandos de /Users/nalve/claude-context-engineering/docs/commands a /Users/nalve/.claude/commands...[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Migración de comandos completada:      172 archivos copiados[0m
+2025-07-17 22:09:08 [INFO] [0;34m⚙️ Migrando configuración...[0m
+2025-07-17 22:09:08 [INFO] [0;34m📋 Migrando command-registry.json...[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Registry de comandos migrado[0m
+2025-07-17 22:09:08 [INFO] [0;34m📄 Migrando command-registry.json.backup...[0m
+2025-07-17 22:09:08 [INFO] [0;34m📄 Migrando consolidated-commands-registry.json...[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Configuración migrada[0m
+2025-07-17 22:09:08 [INFO] [0;34m🧹 Limpiando archivos locales...[0m
+2025-07-17 22:09:08 [INFO] [0;34m🗑️ Eliminando /Users/nalve/claude-context-engineering/.claude/commands...[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Comandos locales eliminados[0m
+2025-07-17 22:09:08 [INFO] [0;34m🗑️ Eliminando /Users/nalve/claude-context-engineering/.claude/config...[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Configuración local eliminada[0m
+2025-07-17 22:09:08 [INFO] [0;34m📁 Directorio .claude conservado (contiene otros archivos)[0m
+2025-07-17 22:09:08 [INFO] [0;34m🔍 Verificando migración...[0m
+2025-07-17 22:09:08 [INFO] [0;34m📊 Comandos globales después de migración:      172[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Comandos locales eliminados correctamente[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Registry de comandos disponible globalmente[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Comando de muestra encontrado: ce.md[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Comando de muestra encontrado: thinking.md[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Comando de muestra encontrado: decision.md[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m✅ Verificación completada[0m
+2025-07-17 22:09:08 [SUCCESS] [0;32m🎉 Migración completada exitosamente en 1s[0m
+2025-07-17 22:09:08 [INFO] [0;34m📄 Reporte generado: /Users/nalve/claude-context-engineering/scripts/results/migration/migration-report-20250717-220908.md[0m
+2025-07-17 22:09:08 [INFO] [0;34m📋 Próximos pasos:[0m
+2025-07-17 22:09:08 [INFO] [0;34m   1. Verifique que los comandos funcionan: /ce --help[0m
+2025-07-17 22:09:08 [INFO] [0;34m   2. Pruebe comandos desde cualquier proyecto[0m
+2025-07-17 22:09:08 [INFO] [0;34m   3. El backup está disponible en: /Users/nalve/.claude/backups/migration-20250717-220907[0m

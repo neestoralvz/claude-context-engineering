@@ -1,0 +1,461 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ninu.mx Official Colors */
+    --ninu-primary: 202 22% 30%; /* #324956 */
+    --ninu-secondary: 213 95% 66%; /* #5697fa */
+    --ninu-white: 0 0% 100%; /* #ffffff */
+    --ninu-black: 0 0% 0%; /* #000000 */
+    
+    /* System colors based on Ninu.mx palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 202 22% 30%; /* Ninu primary #324956 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 95% 66%; /* Ninu secondary #5697fa */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 213 95% 66%; /* Ninu secondary */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 202 22% 30%; /* Ninu primary for focus */
+
+    --radius: 0.375rem; /* 6px like ninu.mx */
+  }
+
+  .dark {
+    /* Ninu.mx dark theme colors optimized for accessibility */
+    --ninu-primary: 202 30% 85%; /* Lighter for dark mode contrast */
+    --ninu-secondary: 213 85% 75%; /* Adjusted for better visibility */
+    
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 202 30% 85%; /* Use Ninu primary for dark mode */
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 213 85% 75%; /* Use Ninu secondary for dark mode */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 213 85% 75%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 202 30% 85%; /* Ninu primary for focus in dark mode */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    font-display: swap;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  /* ======= VIEWPORT & RESPONSIVE UTILITIES ======= */
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-3 sm:px-4 lg:px-8;
+  }
+  .spacing-responsive {
+    @apply py-4 sm:py-6 lg:py-8;
+  }
+  .spacing-responsive-sm {
+    @apply py-2 sm:py-3 lg:py-4;
+  }
+  .spacing-responsive-lg {
+    @apply py-8 sm:py-10 lg:py-12;
+  }
+  .text-responsive {
+    @apply text-sm sm:text-base lg:text-lg;
+  }
+  .header-responsive {
+    @apply h-14 sm:h-16;
+  }
+
+  /* ======= NINU.MX BRAND UTILITIES ======= */
+  .btn-ninu-primary {
+    @apply bg-[hsl(var(--ninu-primary))] text-white hover:opacity-90 transition-opacity rounded-md px-4 py-2;
+  }
+  .btn-ninu-secondary {
+    @apply bg-[hsl(var(--ninu-secondary))] text-white hover:opacity-90 transition-opacity rounded-md px-4 py-2;
+  }
+  .gradient-ninu {
+    background: linear-gradient(135deg, hsl(var(--ninu-primary)), hsl(var(--ninu-secondary)));
+  }
+  .text-ninu-primary {
+    color: hsl(var(--ninu-primary));
+  }
+  .text-ninu-secondary {
+    color: hsl(var(--ninu-secondary));
+  }
+  .bg-ninu-primary {
+    background-color: hsl(var(--ninu-primary));
+  }
+  .bg-ninu-secondary {
+    background-color: hsl(var(--ninu-secondary));
+  }
+  
+  /* Landing page specific utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .mercado-libre-button {
+    @apply bg-yellow-400 text-black font-bold px-6 py-3 rounded-lg hover:bg-yellow-500 transition-all transform hover:scale-105;
+    box-shadow: 0 4px 15px rgba(252, 211, 77, 0.3);
+  }
+  
+  .product-card-hover {
+    @apply transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+  
+  .trust-indicator {
+    @apply bg-white/80 backdrop-blur-sm rounded-lg p-4 text-center shadow-sm;
+  }
+  
+  .category-icon-hover {
+    @apply transition-all duration-300 hover:scale-110 hover:bg-white/30;
+  }
+  
+  .floating-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .testimonial-card {
+    @apply bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow;
+  }
+  
+  .factory-hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/70;
+  }
+  
+  .reactor-card-enhanced {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300;
+  }
+  
+  .station-card-enhanced {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300;
+  }
+  
+  .production-glow {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+  }
+  
+  .error-glow {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+  }
+  
+  .warning-glow {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Factory Control Interactive Styles */
+  
+  /* Animated elements */
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s infinite;
+  }
+
+  @keyframes bounce-subtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.3s ease-out;
+  }
+
+  @keyframes scale-in {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.4s ease-out;
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* ======= CARD SYSTEM (CONSOLIDATED) ======= */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  .card-glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+  }
+  .card-active {
+    @apply ring-2 ring-blue-500 ring-opacity-50;
+  }
+  .testimonial-card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105;
+  }
+  .product-card-hover {
+    @apply transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+  .reactor-card-enhanced {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300;
+  }
+  .station-card-enhanced {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300;
+  }
+  .metric-card {
+    @apply bg-white rounded-lg p-4 shadow-sm border border-gray-200 transition-all duration-300;
+  }
+  .metric-card:hover {
+    @apply shadow-md -translate-y-0.5 border-blue-300;
+  }
+
+  /* Button animations */
+  .btn-pulse {
+    animation: btn-pulse 2s infinite;
+  }
+
+  @keyframes btn-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
+  }
+
+  /* ======= STATUS SYSTEM (CONSOLIDATED) ======= */
+  .status-online {
+    @apply w-3 h-3 bg-green-500 rounded-full animate-pulse;
+  }
+  .status-warning {
+    @apply w-3 h-3 bg-yellow-500 rounded-full animate-pulse-slow;
+  }
+  .status-error {
+    @apply w-3 h-3 bg-red-500 rounded-full animate-bounce-subtle;
+  }
+  .status-offline {
+    @apply w-3 h-3 bg-gray-400 rounded-full;
+  }
+  .realtime-indicator {
+    @apply inline-flex items-center px-2 py-1 rounded-full text-xs font-medium;
+  }
+  .realtime-active {
+    @apply bg-green-100 text-green-800;
+  }
+  .realtime-inactive {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  /* Progress bars with animations */
+  .progress-bar {
+    @apply w-full bg-gray-200 rounded-full h-2 overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full rounded-full transition-all duration-1000 ease-out;
+  }
+
+  /* ======= METRICS SYSTEM (CONSOLIDATED) ======= */
+  .metric-value {
+    @apply text-2xl font-bold transition-colors duration-300;
+  }
+  .metric-trend-up {
+    @apply text-green-600;
+  }
+  .metric-trend-down {
+    @apply text-red-600;
+  }
+  .metric-trend-stable {
+    @apply text-blue-600;
+  }
+
+  /* ======= PRODUCTION SYSTEM (CONSOLIDATED) ======= */
+  .reactor-status-mixing {
+    @apply bg-blue-100 text-blue-800 animate-pulse;
+  }
+
+  .reactor-status-heating {
+    @apply bg-orange-100 text-orange-800 animate-pulse-slow;
+  }
+
+  .reactor-status-cooling {
+    @apply bg-cyan-100 text-cyan-800;
+  }
+
+  .reactor-status-idle {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  .reactor-status-error {
+    @apply bg-red-100 text-red-800 animate-bounce-subtle;
+  }
+
+  .station-efficiency-excellent {
+    @apply text-green-600 font-semibold;
+  }
+
+  .station-efficiency-good {
+    @apply text-blue-600 font-semibold;
+  }
+
+  .station-efficiency-warning {
+    @apply text-yellow-600 font-semibold;
+  }
+
+  .station-efficiency-poor {
+    @apply text-red-600 font-semibold;
+  }
+
+  /* Priority indicators */
+  .priority-urgent {
+    @apply bg-red-100 text-red-800 animate-pulse;
+  }
+
+  .priority-high {
+    @apply bg-orange-100 text-orange-800;
+  }
+
+  .priority-medium {
+    @apply bg-blue-100 text-blue-800;
+  }
+
+  .priority-low {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  /* Interactive tabs */
+  .tab-button {
+    @apply flex items-center py-4 px-1 border-b-2 font-medium text-sm transition-all duration-200;
+  }
+
+  .tab-active {
+    @apply border-blue-500 text-blue-600;
+  }
+
+  .tab-inactive {
+    @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300;
+  }
+
+  /* Control buttons */
+  .control-button {
+    @apply inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 transform active:scale-95;
+  }
+
+  .control-start {
+    @apply bg-green-600 text-white hover:bg-green-700;
+  }
+
+  .control-stop {
+    @apply bg-red-600 text-white hover:bg-red-700;
+  }
+
+  .control-pause {
+    @apply bg-yellow-600 text-white hover:bg-yellow-700;
+  }
+
+  .control-emergency {
+    @apply bg-red-700 text-white hover:bg-red-800 btn-pulse;
+  }
+
+  /* Factory dashboard specific */
+  .factory-header {
+    @apply bg-white shadow-sm border-b sticky top-0 z-40;
+  }
+
+  .factory-content {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+  }
+
+  /* Responsive animations */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-pulse,
+    .animate-bounce-subtle,
+    .animate-scale-in,
+    .animate-slide-up,
+    .btn-pulse {
+      animation: none;
+    }
+  }
+}

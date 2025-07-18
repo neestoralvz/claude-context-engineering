@@ -8,3 +8,80 @@
 2025-07-17 18:22:20,944 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
 2025-07-17 18:22:20,945 - __main__ - INFO - Parsed 0 enforcement rules from CLAUDE.md
 2025-07-17 18:22:20,946 - __main__ - INFO - Loaded 0 active enforcement rules
+2025-07-17 20:16:40,568 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:16:40,569 - __main__ - INFO - Parsed 0 enforcement rules from CLAUDE.md
+2025-07-17 20:16:40,569 - __main__ - INFO - Loaded 0 active enforcement rules
+2025-07-17 20:16:40,569 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:16:40,570 - __main__ - INFO - Parsed 0 enforcement rules from CLAUDE.md
+2025-07-17 20:16:40,570 - __main__ - INFO - Loaded 0 active enforcement rules
+2025-07-17 20:16:40,570 - __main__ - INFO - Rules refreshed. 0 active rules loaded.
+2025-07-17 20:16:40,644 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:16:40,645 - __main__ - INFO - Parsed 0 enforcement rules from CLAUDE.md
+2025-07-17 20:16:40,645 - __main__ - INFO - Loaded 0 active enforcement rules
+2025-07-17 20:17:11,821 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:17:11,823 - __main__ - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-17 20:17:11,829 - __main__ - INFO - Loaded 15 active enforcement rules
+2025-07-17 20:17:11,829 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:17:11,830 - __main__ - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-17 20:17:11,836 - __main__ - INFO - Loaded 15 active enforcement rules
+2025-07-17 20:17:11,836 - __main__ - INFO - Rules refreshed. 15 active rules loaded.
+2025-07-17 20:17:19,125 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:17:19,127 - __main__ - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-17 20:17:19,133 - __main__ - INFO - Loaded 15 active enforcement rules
+2025-07-17 20:17:19,209 - __main__ - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:17:19,211 - __main__ - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-17 20:17:19,217 - __main__ - INFO - Loaded 15 active enforcement rules
+2025-07-17 20:19:23,354 - principle-blocking-engine - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-17 20:19:23,356 - principle-blocking-engine - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-17 20:19:23,362 - principle-blocking-engine - INFO - Loaded 15 active enforcement rules
+2025-07-17 20:19:23,363 - command-orchestration-enforcer - INFO - Loading command inventory...
+2025-07-17 20:19:23,486 - command-orchestration-enforcer - INFO - Loaded 344 commands across 9 categories
+2025-07-17 20:19:23,486 - __main__ - INFO - Unified Enforcement System initialized
+2025-07-17 20:19:23,486 - __main__ - INFO - Principle Engine: 15 active rules
+2025-07-17 20:19:23,486 - __main__ - INFO - Orchestration Enforcer: 344 commands
+2025-07-17 20:19:23,486 - __main__ - INFO - Starting comprehensive enforcement check: verify enforcement engines operational...
+2025-07-17 20:19:23,486 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_008_PRINCIPLE_ENFORCEMENT - 58
+2025-07-17 20:19:23,487 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_009_PRINCIPLE_ENFORCEMENT - 94
+2025-07-17 20:19:23,488 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_010_PRINCIPLE_ENFORCEMENT - 97
+2025-07-17 20:19:23,488 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_011_PRINCIPLE_ENFORCEMENT - 97
+2025-07-17 20:19:23,489 - __main__ - INFO - Principle Blocking: ALLOWED (4 violations)
+2025-07-17 20:19:23,490 - command-orchestration-enforcer - WARNING - Orchestration violation detected: COMMAND_UNDERUTILIZATION
+2025-07-17 20:19:23,490 - command-orchestration-enforcer - WARNING - Utilization: 11.11% (required: 70.00%)
+2025-07-17 20:19:23,490 - command-orchestration-enforcer - WARNING - Commands used: 1, Relevant: 9
+2025-07-17 20:19:23,490 - __main__ - INFO - Orchestration: VIOLATION
+2025-07-17 20:19:23,490 - __main__ - INFO - UNIFIED DECISION: BLOCK (confidence: 0.90)
+2025-07-18 10:30:50,472 - principle-blocking-engine - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-18 10:30:50,475 - principle-blocking-engine - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-18 10:30:50,481 - principle-blocking-engine - INFO - Loaded 15 active enforcement rules
+2025-07-18 10:30:50,482 - command-orchestration-enforcer - INFO - Loading command inventory...
+2025-07-18 10:30:50,600 - command-orchestration-enforcer - INFO - Loaded 329 commands across 9 categories
+2025-07-18 10:30:50,600 - __main__ - INFO - Unified Enforcement System initialized
+2025-07-18 10:30:50,600 - __main__ - INFO - Principle Engine: 15 active rules
+2025-07-18 10:30:50,600 - __main__ - INFO - Orchestration Enforcer: 329 commands
+2025-07-18 10:30:59,099 - principle-blocking-engine - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-18 10:30:59,101 - principle-blocking-engine - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-18 10:30:59,108 - principle-blocking-engine - INFO - Loaded 15 active enforcement rules
+2025-07-18 10:30:59,108 - command-orchestration-enforcer - INFO - Loading command inventory...
+2025-07-18 10:30:59,222 - command-orchestration-enforcer - INFO - Loaded 329 commands across 9 categories
+2025-07-18 10:30:59,222 - __main__ - INFO - Unified Enforcement System initialized
+2025-07-18 10:30:59,222 - __main__ - INFO - Principle Engine: 15 active rules
+2025-07-18 10:30:59,222 - __main__ - INFO - Orchestration Enforcer: 329 commands
+2025-07-18 10:31:02,052 - principle-blocking-engine - INFO - Refreshing enforcement rules from CLAUDE.md...
+2025-07-18 10:31:02,055 - principle-blocking-engine - INFO - Parsed 15 enforcement rules from CLAUDE.md
+2025-07-18 10:31:02,062 - principle-blocking-engine - INFO - Loaded 15 active enforcement rules
+2025-07-18 10:31:02,062 - command-orchestration-enforcer - INFO - Loading command inventory...
+2025-07-18 10:31:02,187 - command-orchestration-enforcer - INFO - Loaded 329 commands across 9 categories
+2025-07-18 10:31:02,187 - __main__ - INFO - Unified Enforcement System initialized
+2025-07-18 10:31:02,188 - __main__ - INFO - Principle Engine: 15 active rules
+2025-07-18 10:31:02,188 - __main__ - INFO - Orchestration Enforcer: 329 commands
+2025-07-18 10:31:02,188 - __main__ - INFO - Starting comprehensive enforcement check: verify enforcement engines operational...
+2025-07-18 10:31:02,188 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_008_PRINCIPLE_ENFORCEMENT - 58
+2025-07-18 10:31:02,188 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_009_PRINCIPLE_ENFORCEMENT - 94
+2025-07-18 10:31:02,189 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_010_PRINCIPLE_ENFORCEMENT - 97
+2025-07-18 10:31:02,189 - principle-blocking-engine - WARNING - Enforcement rule triggered: RULE_011_PRINCIPLE_ENFORCEMENT - 97
+2025-07-18 10:31:02,190 - __main__ - INFO - Principle Blocking: ALLOWED (4 violations)
+2025-07-18 10:31:02,191 - command-orchestration-enforcer - WARNING - Orchestration violation detected: COMMAND_UNDERUTILIZATION
+2025-07-18 10:31:02,191 - command-orchestration-enforcer - WARNING - Utilization: 11.11% (required: 70.00%)
+2025-07-18 10:31:02,191 - command-orchestration-enforcer - WARNING - Commands used: 1, Relevant: 9
+2025-07-18 10:31:02,191 - __main__ - INFO - Orchestration: VIOLATION
+2025-07-18 10:31:02,191 - __main__ - INFO - UNIFIED DECISION: BLOCK (confidence: 0.90)

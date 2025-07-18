@@ -189,14 +189,12 @@ Use `@` symbol to import additional files into CLAUDE.md:
 4. **Memory Activation**: ALL content becomes ACTIVE context
 5. **Verification**: `/memory` command CONFIRMS loading status
 
-### **Loading Hierarchy**
-```yaml
-Current Directory: ./project/feature/
-├── ./project/feature/CLAUDE.md        (Most specific)
-├── ./project/CLAUDE.md                (Project level)
-├── ./CLAUDE.md                        (Repository root)
-└── ~/.claude/CLAUDE.md                (User global)
-```
+### **MANDATORY Loading Hierarchy Protocol**
+**Current Directory**: ./project/feature/
+- **./project/feature/CLAUDE.md** (Most specific - HIGHEST priority)
+- **./project/CLAUDE.md** (Project level - MEDIUM priority)
+- **./CLAUDE.md** (Repository root - LOW priority)
+- **~/.claude/CLAUDE.md** (User global - FALLBACK priority)
 
 ### **Memory Priority**
 - **SPECIFIC locations** OVERRIDE general ones
@@ -274,7 +272,7 @@ cat ~/.claude/CLAUDE.md
 # CLAUDE.md Integration Example
 @./docs/knowledge/writing-standards.md
 @./docs/knowledge/core-principles.md
-@./.claude/commands/README.md
+@~/.claude/commands/README.md
 
 ## Context Engineering Activation
 - Use `/context-eng` for system-wide activation
@@ -290,7 +288,7 @@ cat ~/.claude/CLAUDE.md
 - Apply /verify-flow after major implementations
 - Execute /systematic-quality-improvement weekly
 
-## Project-Specific Commands
+## Global Commands
 - Use /tdd for all new features
 - Apply /optimize-context before major commits
 - Run /validate-sys monthly

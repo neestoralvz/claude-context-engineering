@@ -31,7 +31,7 @@
 
 ### **Example 1: Registry-Optimized Discovery Workflow**
 
-```bash
+```markdown
 /ce "Implement user authentication system with OAuth2 integration"
 
 # Dynamic Analysis Results:
@@ -60,7 +60,7 @@
 
 ### **Example 2: Adaptive Medium Complexity Workflow**
 
-```bash
+```markdown
 /ce "Optimize database queries in the user service" complexity=medium
 
 # Dynamic Analysis Results:

@@ -38,6 +38,42 @@
 
 **Zero Tolerance Enforcement**:
 - **Simulation Detection**: Immediate flagging of simulation language
+
+---
+
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes tool call validation and execution verification scripts:
+
+```bash
+# Core tool call validation and compliance
+./scripts/validation/validate-tool-call-compliance.sh --execution-validation
+./scripts/compliance/enhanced-p55-p56-monitor.sh --tool-call-monitoring
+
+# Execution analysis and simulation detection
+./scripts/validation/analyze-simulation-prevention.sh --simulation-detection
+./scripts/core/execute-commands.sh --tool-call-verification
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate tool call execution prerequisites and compliance parameters
+2. **Tool Call Validation**: Execute comprehensive tool call compliance validation with execution verification
+3. **P55 Monitoring**: Run enhanced P55/P56 monitoring with tool call focus
+4. **Simulation Prevention**: Apply simulation detection analysis and command execution verification
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute tool call validation using comprehensive execution verification and compliance monitoring
+2. Validate P55/P56 compliance and tool call authenticity with simulation prevention
+3. Generate tool call reports with execution metrics and compliance validation
+4. Apply execution verification protocols for comprehensive tool call validation
+
+**Status Updates**:
+- 🔄 **Starting**: Tool call validation initiated (4 specialized execution verification scripts)
+- 📊 **Progress**: Running tool call compliance and P55/P56 monitoring validation
+- ✅ **Complete**: Tool call validation completed with execution verification
+- 📈 **Metrics**: Tool call execution quality measured and compliance validated
 - **Compliance Remediation**: Automatic enforcement of compliance standards
 - **Statistical Analysis**: Real-time validation and monitoring
 - **Evidence Generation**: Complete execution traceability and documentation
@@ -120,7 +156,7 @@ Compliance Health: [HEALTHY/DEGRADED/CRITICAL]
 ### **Automatically Triggers**
 - `/confidence-scoring` - Validate confidence calculations with P55 compliance
 - `/system-integrity` - Core compliance component for system health
-- `/context-eng` - Auto-validation during orchestration
+- `/ce` - Auto-validation during orchestration
 
 ### **Compatible With**
 - `/verify-flow` - P55 compliance verification within verification workflows

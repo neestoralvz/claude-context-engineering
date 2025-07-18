@@ -7,8 +7,8 @@ global.ResizeObserver = jest.fn().mockImplementation(() => ({
   disconnect: jest.fn(),
 }))
 
-// Mock Canvas API for canvas-based components
-global.HTMLCanvasElement.prototype.getContext = jest.fn(() => ({
+// Create shared mock context instance for tests
+const mockCanvasContext = {
   fillStyle: '',
   strokeStyle: '',
   lineWidth: 1,
@@ -27,7 +27,13 @@ global.HTMLCanvasElement.prototype.getContext = jest.fn(() => ({
   fillText: jest.fn(),
   measureText: jest.fn(() => ({ width: 0 })),
   setLineDash: jest.fn(),
-}))
+}
+
+// Mock Canvas API for canvas-based components
+global.HTMLCanvasElement.prototype.getContext = jest.fn(() => mockCanvasContext)
+
+// Export the mock context for test access
+global.mockCanvasContext = mockCanvasContext
 
 // Mock canvas toDataURL
 global.HTMLCanvasElement.prototype.toDataURL = jest.fn(() => 'data:image/png;base64,mock')

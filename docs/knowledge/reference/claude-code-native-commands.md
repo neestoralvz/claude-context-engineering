@@ -72,7 +72,7 @@ claude --continue --verbose
 
 ### **Environment Integration**
 ```bash
-# Project-specific configuration
+# Global configuration
 cd /project && claude --add-dir .
 
 # Global configuration with model preference
@@ -93,8 +93,8 @@ claude -p "run tests" && claude -p "generate report"
 - **Usage**: `/help` or `/help [command]`
 - **Output**: Complete command reference with brief descriptions
 - **Features**:
-  - **Command Discovery**: Lists all built-in, project-specific, and user-defined commands
-  - **Contextual Markers**: Shows commands with context indicators like "(project)" or "(user)"
+  - **Command Discovery**: Lists all built-in and user-defined global commands
+  - **Contextual Markers**: Shows commands with context indicators like "(user)" or "(server)"
   - **Command Availability**: Real-time availability based on current session and environment
   - **Dynamic Updates**: Includes commands added by MCP servers during session
 - **Response Time**: <50ms for standard command listing
@@ -220,7 +220,7 @@ claude -p "run tests" && claude -p "generate report"
   - **CI/CD Integration**: Continuous integration with AI-powered workflows
 - **Setup Process**: Guides through GitHub app installation, repository permissions, API key configuration
 - **Requirements**: Repository admin permissions, Anthropic API key
-- **Integration**: Works with CLAUDE.md for project-specific AI behavior standards
+- **Integration**: Works with CLAUDE.md for global AI behavior standards
 
 **Related Documentation**: [Complete GitHub Integration Guide](./claude-github-integration.md) - Comprehensive setup, usage patterns, and workflow optimization
 
@@ -274,7 +274,6 @@ claude -p "run tests" && claude -p "generate report"
 
 **Directory Structure**:
 ```markdown
-.claude/commands/           # Project-specific commands
 ~/.claude/commands/         # Global user commands
 ```
 
@@ -295,12 +294,10 @@ Command content with $ARGUMENTS placeholder
 
 ### **Advanced Features**
 
-**Namespacing**:
-```yaml
-.claude/commands/dev/review.md    # /dev:review
-.claude/commands/test/unit.md     # /test:unit
-.claude/commands/deploy/prod.md   # /deploy:prod
-```
+**CRITICAL Namespacing Protocol**:
+- **~/.claude/commands/dev/review.md** → `/dev:review` (Development namespace)
+- **~/.claude/commands/test/unit.md** → `/test:unit` (Testing namespace)
+- **~/.claude/commands/deploy/prod.md** → `/deploy:prod` (Deployment namespace)
 
 **Dynamic Content**:
 - `$ARGUMENTS` - User-provided arguments
@@ -376,7 +373,7 @@ claude "/review --apply-writing-standards"
 **Command Selection Strategy**:
 1. **Native Commands**: System functions, session management, basic operations
 2. **Context Engineering Commands**: Complex workflows, quality assurance, documentation
-3. **Custom Commands**: Project-specific automation, team workflows
+3. **Custom Commands**: Global automation, personal workflows
 
 **Integration Patterns**:
 - Use native `/init` to create CLAUDE.md

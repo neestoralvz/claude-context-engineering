@@ -58,7 +58,7 @@ export function AgentCoordinationMatrix() {
   }, [timeRange, autoRefresh])
 
   useEffect(() => {
-    if (viewMode === 'network' && data.nodes.length > 0) {
+    if (viewMode === 'network' && !data.isLoading) {
       drawNetworkVisualization()
     }
   }, [data, viewMode, selectedNode])
@@ -141,12 +141,12 @@ export function AgentCoordinationMatrix() {
 
     // Set canvas size
     const rect = canvas.getBoundingClientRect()
-    canvas.width = rect.width * devicePixelRatio
-    canvas.height = rect.height * devicePixelRatio
+    // Use fallback dimensions for test environment or when rect is empty
+    const width = rect.width || 800
+    const height = rect.height || 400
+    canvas.width = width * devicePixelRatio
+    canvas.height = height * devicePixelRatio
     ctx.scale(devicePixelRatio, devicePixelRatio)
-
-    const width = rect.width
-    const height = rect.height
 
     // Clear canvas
     ctx.fillStyle = '#ffffff'

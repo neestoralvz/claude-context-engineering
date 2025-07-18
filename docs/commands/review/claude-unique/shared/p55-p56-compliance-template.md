@@ -46,13 +46,16 @@ tool_calls_executed=$(count_actual_tool_calls)
 required_tool_calls=$(count_required_tool_calls)
 p55_compliance=$(calculate_threshold_compliance $tool_calls_executed $required_tool_calls "eq")
 
-echo "P55_COMPLIANCE: $p55_compliance (100% tool call execution required)"
+# P55 Compliance direct to Claude Code user
+# Communication format: ⟳ /comando → resultado 🎯 [tiempo]
+
+# P55_COMPLIANCE: $p55_compliance (100% tool call execution required)
 
 # Validate no simulation occurred
 simulation_count=$(detect_simulation_operations)
 p55_simulation_check=$(calculate_threshold_compliance $simulation_count "0" "eq")
 
-echo "P55_NO_SIMULATION: $p55_simulation_check (0% simulation tolerance)"
+# P55_NO_SIMULATION: $p55_simulation_check (0% simulation tolerance)
 ```
 
 ---
@@ -125,47 +128,55 @@ echo "P55_NO_SIMULATION: $p55_simulation_check (0% simulation tolerance)"
 # Enhanced Command Execution with P55/P56 Compliance
 
 # Phase 1: Script Foundation Loading (P55 Requirement)
-echo "=== SCRIPT FOUNDATION LOADING ==="
+# === SCRIPT FOUNDATION LOADING ===
+# Communication directly to Claude Code user
+# Format: ⟳ /comando → resultado 🎯 [tiempo]
+
 source ../../../../scripts/core/path-helper.sh
 if source_script "scripts/formulas/context_engineering_formulas.sh"; then
-    echo "✅ FORMULA_LIBRARY: LOADED successfully"
+    # ✅ FORMULA_LIBRARY: LOADED successfully
     script_foundation_status="LOADED"
 else
-    echo "❌ FORMULA_LIBRARY: FAILED to load"
+    # ❌ FORMULA_LIBRARY: FAILED to load
     script_foundation_status="FAILED"
     exit 1
 fi
 
 # Phase 2: Command-Specific Mathematical Execution
-echo "=== MATHEMATICAL EXECUTION PHASE ==="
+# === MATHEMATICAL EXECUTION PHASE ===
+# Communication directly to Claude Code user
+# Format: ⟳ /comando → resultado 🎯 [tiempo]
 
 # Standard calculations (adapt for specific command needs)
 confidence_score=$(calculate_confidence $domain_familiarity $requirement_clarity $resource_availability)
-echo "TOOL_CALL_EXECUTED: calculate_confidence($domain_familiarity, $requirement_clarity, $resource_availability) = $confidence_score"
+# TOOL_CALL_EXECUTED: calculate_confidence($domain_familiarity, $requirement_clarity, $resource_availability) = $confidence_score
 
 threshold_compliance=$(calculate_threshold_compliance $confidence_score $adaptive_threshold "gte")
-echo "TOOL_CALL_EXECUTED: calculate_threshold_compliance($confidence_score, $adaptive_threshold, gte) = $threshold_compliance"
+# TOOL_CALL_EXECUTED: calculate_threshold_compliance($confidence_score, $adaptive_threshold, gte) = $threshold_compliance
 
 # Command-specific functions (customize per command)
 [command_specific_calculation]=$(calculate_[command_function] $param1 $param2 $param3)
-echo "TOOL_CALL_EXECUTED: calculate_[command_function]($param1, $param2, $param3) = $[command_specific_calculation]"
+# TOOL_CALL_EXECUTED: calculate_[command_function]($param1, $param2, $param3) = $[command_specific_calculation]
 
 # Phase 3: P55/P56 Compliance Validation
-echo "=== COMPLIANCE VALIDATION ==="
+# === COMPLIANCE VALIDATION ===
+# Communication directly to Claude Code user
+# Format: ⟳ /comando → resultado 🎯 [tiempo]
 
 # P55 Validation
 p55_compliance=$(calculate_threshold_compliance $tool_calls_executed $required_tool_calls "eq")
-echo "P55_COMPLIANCE: $p55_compliance (100% tool call execution)"
+# P55_COMPLIANCE: $p55_compliance (100% tool call execution)
 
 # P56 Transparency Validation
 p56_transparency=$(calculate_threshold_compliance $visible_executions $total_executions "eq")
-echo "P56_TRANSPARENCY: $p56_transparency (100% execution visibility)"
+# P56_TRANSPARENCY: $p56_transparency (100% execution visibility)
 
 # Phase 4: Result Integration and Evidence
-echo "=== EXECUTION RESULTS INTEGRATION ==="
-echo "MATHEMATICAL_PRECISION: ±0.01 maintained across all calculations"
-echo "EXECUTION_EVIDENCE: All tool calls executed successfully with verification"
-echo "COMPLIANCE_STATUS: P55=✅ P56=✅ | READY_FOR_NEXT_PHASE"
+# === EXECUTION RESULTS INTEGRATION ===
+# Communication directly to Claude Code user
+# MATHEMATICAL_PRECISION: ±0.01 maintained across all calculations
+# EXECUTION_EVIDENCE: All tool calls executed successfully with verification
+# COMPLIANCE_STATUS: P55=✅ P56=✅ | READY_FOR_NEXT_PHASE
 ```
 
 ### **Command-Specific Adaptation Guidelines**
@@ -213,7 +224,10 @@ echo "COMPLIANCE_STATUS: P55=✅ P56=✅ | READY_FOR_NEXT_PHASE"
 validate_command_compliance() {
     local command_name="$1"
     
-    echo "VALIDATING: $command_name P55/P56 compliance"
+    # Communication directly to Claude Code user
+    # Format: ⟳ /comando → resultado 🎯 [tiempo]
+    
+    # VALIDATING: $command_name P55/P56 compliance
     
     # Check P55 requirements
     p55_status=$(verify_tool_call_execution "$command_name")
@@ -223,10 +237,10 @@ validate_command_compliance() {
     
     # Overall compliance
     if [ "$p55_status" = "1" ] && [ "$p56_status" = "1" ]; then
-        echo "✅ COMPLIANCE_VALIDATED: $command_name meets P55/P56 standards"
+        # ✅ COMPLIANCE_VALIDATED: $command_name meets P55/P56 standards
         return 0
     else
-        echo "❌ COMPLIANCE_FAILED: $command_name requires compliance updates"
+        # ❌ COMPLIANCE_FAILED: $command_name requires compliance updates
         return 1
     fi
 }
@@ -241,3 +255,26 @@ validate_command_compliance() {
 **Validation**: Regular compliance audits required with ≥98% success rate maintenance across all integrated commands.
 
 **Foundation**: Extends [Enhanced Command Execution](../../../docs/knowledge/technical/enhanced-command-execution.md) with standardized implementation patterns for consolidated command ecosystem.
+
+---
+
+## 🔴 CRÍTICO: Comunicación Directa Claude Code → Usuario
+
+**NUEVA ESPECIFICACIÓN**: Todo feedback y comunicación debe ser directa de Claude Code al usuario, eliminando bash como canal intermedio.
+
+**ELIMINADO**: 
+- Referencias a bash notifications
+- Uso de echo/printf como canales de comunicación
+- Scripts que comunican via stdout al usuario
+
+**REQUERIDO**:
+- Formato compacto directo: `⟳ /comando → resultado 🎯 [tiempo]`
+- Comunicación directa Claude Code → Usuario
+- Uso del formato compacto en toda la documentación
+
+**Ejemplos**:
+```
+⟳ /validate → P55/P56 compliance verified 🎯 [2.1s]
+⟳ /math-verify → ✓ 22/22 tests passed 🎯 [1.8s]
+⟳ /sync-docs → 15 files updated 🎯 [3.2s]
+```

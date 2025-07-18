@@ -1,0 +1,33 @@
+{
+  "diagnosis": {
+    "timestamp": "2025-07-17T19:03:27-06:00",
+    "validation_exit_code": 0,
+    "issue_severity": "none",
+    "recovery_confidence": 1.0,
+    "recommended_strategy": "none",
+    "command_counts": {
+      "docs_reported": 152,
+      "claude_reported": 152,
+      "docs_actual":      154,
+      "claude_actual":      154,
+      "registry_total": 152,
+      "total_discrepancies": 0
+    },
+    "file_analysis": {
+      "docs_claude_diff": 0,
+      "reported_actual_docs_diff": -2,
+      "reported_actual_claude_diff": -2,
+      "registry_reality_diff": -2
+    },
+    "recovery_feasibility": {
+      "can_registry_update": true,
+      "can_directory_sync": true,
+      "requires_manual_intervention": false
+    },
+    "safety_checks": {
+      "backup_recommended": false,
+      "force_required": 0,
+      "multiple_attempts_safe": true
+    }
+  }
+}

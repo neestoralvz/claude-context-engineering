@@ -1,0 +1,164 @@
+{
+  "single_command_result": {
+    "metadata": {
+      "command_path": ".claude/commands/executable/verification/validate-command-independence.md",
+      "validation_timestamp": "2025-07-18T10:47:14.668165",
+      "validator_version": "1.0.0",
+      "principle_compliance": "Principle #102"
+    },
+    "independence_analysis": {
+      "overall_score": 72.0,
+      "autocontention_level": "FULL",
+      "compliance_status": "PARTIAL",
+      "external_dependencies": 8,
+      "communication_patterns": {
+        "slash_commands": 1,
+        "tool_calls": 53,
+        "direct_references": 8
+      }
+    },
+    "detailed_metrics": {
+      "overall_independence": 72.0,
+      "autocontention_score": {
+        "independence_score": 100.0,
+        "base_score": 100.0,
+        "slash_bonus": 0,
+        "tool_bonus": 0.0,
+        "violation_penalty": 0,
+        "external_dependencies": 0,
+        "compliance_status": "COMPLIANT",
+        "autocontention_level": "FULL"
+      },
+      "dependency_analysis": {
+        "command_path": ".claude/commands/executable/verification/validate-command-independence.md",
+        "external_dependencies": 8,
+        "dependency_patterns": [
+          "import.*from.*\\/",
+          "source.*\\/",
+          "include.*\\/",
+          "../",
+          "/]*\\.sh",
+          "/]*\\.py",
+          "require.*\\/",
+          "load.*\\/"
+        ],
+        "slash_commands": 1,
+        "tool_calls": 53,
+        "total_references": 10,
+        "allowed_tools_used": [
+          "LS",
+          "Write",
+          "bash",
+          "git",
+          "Bash",
+          "awk",
+          "node",
+          "jq",
+          "Read",
+          "docker",
+          "python",
+          "npm",
+          "Edit",
+          "wget",
+          "grep",
+          "Grep",
+          "sed",
+          "curl",
+          "kubectl",
+          "Task"
+        ],
+        "violation_details": [
+          {
+            "pattern": "import.*from.*/",
+            "matches": [
+              "import.*from.*\\/"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "pattern": "source.*/",
+            "matches": [
+              "source.*\\/"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "pattern": "include.*/",
+            "matches": [
+              "include.*\\/"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "pattern": "\\.\\./",
+            "matches": [
+              "../"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "pattern": "/[^/]*\\.sh",
+            "matches": [
+              "/]*\\.sh"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "pattern": "/[^/]*\\.py",
+            "matches": [
+              "/]*\\.py"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "pattern": "require.*/",
+            "matches": [
+              "require.*\\/"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "pattern": "load.*/",
+            "matches": [
+              "load.*\\/"
+            ],
+            "severity": "HIGH"
+          }
+        ]
+      },
+      "compliance_verification": {
+        "compliance_score": 80.0,
+        "individual_checks": {
+          "zero_external_deps": false,
+          "slash_invocation": true,
+          "tool_communication": true,
+          "no_direct_coupling": true,
+          "autonomous_operation": true
+        },
+        "autocontention_status": false,
+        "violations": [
+          "zero_external_deps"
+        ]
+      },
+      "compliance_status": "PARTIAL",
+      "recommendations": [
+        "❌ Remove external dependencies to achieve full autocontention",
+        "✅ Proper slash command usage detected",
+        "✅ Appropriate tool communication protocols",
+        "❌ Improve compliance with Principle #102 requirements"
+      ]
+    },
+    "recommendations": [
+      "❌ Remove external dependencies to achieve full autocontention",
+      "✅ Proper slash command usage detected",
+      "✅ Appropriate tool communication protocols",
+      "❌ Improve compliance with Principle #102 requirements"
+    ],
+    "quality_gates": {
+      "autocontention_compliance": "FAIL",
+      "independence_score": "FAIL",
+      "dependency_analysis": "FAIL",
+      "communication_patterns": "PASS"
+    }
+  }
+}

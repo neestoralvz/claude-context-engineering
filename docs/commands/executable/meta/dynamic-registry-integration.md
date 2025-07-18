@@ -217,7 +217,7 @@ registry_integration_improvements:
 
 ### **Dynamic Command Examples with Registry Integration**:
 
-```bash
+```markdown
 # Example 1: Registry-Optimized Discovery Workflow
 /ce "Implement user authentication system with OAuth2 integration"
 // Dynamic Analysis: Complexity=1.2, Confidence=0.8, Category=Implementation

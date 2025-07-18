@@ -395,13 +395,13 @@ Completion → /sync-docs (document) → /system-integrity (verify)
 ## 🎯 **USAGE TEMPLATES BY RELATIONSHIP PATTERN**
 
 ### **Simple Direct Execution**
-```bash
+```markdown
 # High confidence, simple objective
 /tdd "Add validation to user input form"
 ```
 
 ### **Workflow Orchestration**
-```bash
+```markdown
 # Medium confidence, moderate complexity
 /execution-workflow "Implement caching layer for API responses"
 ```

@@ -1,0 +1,483 @@
+# Production Docker Compose for Ninu Factory Control System
+# Enterprise-grade deployment with monitoring, logging, scaling, and security
+
+version: '3.8'
+
+services:
+  # ================================
+  # Load Balancer - HAProxy
+  # ================================
+  ninu-loadbalancer:
+    image: haproxy:2.8-alpine
+    container_name: ninu-loadbalancer
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8404:8404"  # HAProxy stats
+    volumes:
+      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+      - ./ssl:/etc/ssl/certs:ro
+      - haproxy-logs:/var/log/haproxy
+    depends_on:
+      - ninu-frontend-1
+      - ninu-frontend-2
+    networks:
+      - ninu-frontend-network
+      - ninu-monitoring-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "haproxy", "-c", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ================================
+  # Frontend - Next.js Applications (Load Balanced)
+  # ================================
+  ninu-frontend-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    container_name: ninu-frontend-1
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DATABASE_URL=postgresql://ninu_user:${POSTGRES_PASSWORD}@ninu-database:5432/ninu_factory
+      - REDIS_URL=redis://ninu-redis:6379
+      - JWT_SECRET=${JWT_SECRET}
+      - NEXT_PUBLIC_API_URL=https://api.ninu-factory.com
+      - NEXT_PUBLIC_WS_URL=wss://ws.ninu-factory.com
+      - PROMETHEUS_ENABLED=true
+      - LOG_LEVEL=info
+    depends_on:
+      - ninu-database
+      - ninu-redis
+    networks:
+      - ninu-frontend-network
+      - ninu-backend-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  ninu-frontend-2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    container_name: ninu-frontend-2
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DATABASE_URL=postgresql://ninu_user:${POSTGRES_PASSWORD}@ninu-database:5432/ninu_factory
+      - REDIS_URL=redis://ninu-redis:6379
+      - JWT_SECRET=${JWT_SECRET}
+      - NEXT_PUBLIC_API_URL=https://api.ninu-factory.com
+      - NEXT_PUBLIC_WS_URL=wss://ws.ninu-factory.com
+      - PROMETHEUS_ENABLED=true
+      - LOG_LEVEL=info
+    depends_on:
+      - ninu-database
+      - ninu-redis
+    networks:
+      - ninu-frontend-network
+      - ninu-backend-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ================================
+  # Database - PostgreSQL with Replication
+  # ================================
+  ninu-database:
+    image: postgres:15-alpine
+    container_name: ninu-database
+    environment:
+      - POSTGRES_DB=ninu_factory
+      - POSTGRES_USER=ninu_user
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - ninu-db-data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d:ro
+      - ./database/backups:/backups
+    networks:
+      - ninu-backend-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ninu_user -d ninu_factory"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  # ================================
+  # Cache - Redis with Persistence
+  # ================================
+  ninu-redis:
+    image: redis:7-alpine
+    container_name: ninu-redis
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ninu-redis-data:/data
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    networks:
+      - ninu-backend-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ================================
+  # Monitoring - Prometheus
+  # ================================
+  ninu-prometheus:
+    image: prom/prometheus:latest
+    container_name: ninu-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/alerts:/etc/prometheus/alerts:ro
+      - ninu-prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=30d'
+      - '--web.enable-lifecycle'
+      - '--web.enable-admin-api'
+      - '--alertmanager.url=http://ninu-alertmanager:9093'
+    networks:
+      - ninu-monitoring-network
+      - ninu-backend-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9090/-/healthy"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ================================
+  # Monitoring - Grafana
+  # ================================
+  ninu-grafana:
+    image: grafana/grafana:latest
+    container_name: ninu-grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - ninu-grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+      - GF_SECURITY_SECRET_KEY=${GRAFANA_SECRET_KEY}
+      - GF_DATABASE_TYPE=postgres
+      - GF_DATABASE_HOST=ninu-database:5432
+      - GF_DATABASE_NAME=grafana
+      - GF_DATABASE_USER=grafana_user
+      - GF_DATABASE_PASSWORD=${GRAFANA_DB_PASSWORD}
+    depends_on:
+      - ninu-prometheus
+      - ninu-database
+    networks:
+      - ninu-monitoring-network
+      - ninu-backend-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ================================
+  # Alerting - AlertManager
+  # ================================
+  ninu-alertmanager:
+    image: prom/alertmanager:latest
+    container_name: ninu-alertmanager
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./monitoring/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - ninu-alertmanager-data:/alertmanager
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
+      - '--storage.path=/alertmanager'
+      - '--web.external-url=http://localhost:9093'
+    networks:
+      - ninu-monitoring-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 128M
+        reservations:
+          cpus: '0.1'
+          memory: 64M
+
+  # ================================
+  # Logging - ELK Stack
+  # ================================
+  ninu-elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: ninu-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - xpack.security.enabled=false
+      - xpack.security.enrollment.enabled=false
+    volumes:
+      - ninu-elasticsearch-data:/usr/share/elasticsearch/data
+    networks:
+      - ninu-logging-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  ninu-kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    container_name: ninu-kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://ninu-elasticsearch:9200
+      - SERVER_NAME=kibana
+      - SERVER_HOST=0.0.0.0
+    depends_on:
+      - ninu-elasticsearch
+    networks:
+      - ninu-logging-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5601/api/status || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # ================================
+  # Backup Service
+  # ================================
+  ninu-backup:
+    image: postgres:15-alpine
+    container_name: ninu-backup
+    environment:
+      - PGPASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - ./scripts/backup:/scripts:ro
+      - ./database/backups:/backups
+    command: >
+      sh -c "
+        while true; do
+          echo 'Starting backup at $(date)'
+          pg_dump -h ninu-database -U ninu_user -d ninu_factory > /backups/backup_$(date +%Y%m%d_%H%M%S).sql
+          echo 'Backup completed at $(date)'
+          find /backups -name '*.sql' -mtime +7 -delete
+          sleep 86400
+        done
+      "
+    depends_on:
+      - ninu-database
+    networks:
+      - ninu-backend-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 128M
+
+  # ================================
+  # Security Scanner
+  # ================================
+  ninu-security-scanner:
+    image: aquasec/trivy:latest
+    container_name: ninu-security-scanner
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./security/reports:/reports
+    command: >
+      sh -c "
+        while true; do
+          echo 'Starting security scan at $(date)'
+          trivy image --format json --output /reports/scan_$(date +%Y%m%d_%H%M%S).json ninu-factory-control:latest
+          sleep 43200
+        done
+      "
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 256M
+
+# ================================
+# Networks
+# ================================
+networks:
+  ninu-frontend-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+  ninu-backend-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
+  ninu-monitoring-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.22.0.0/24
+  ninu-logging-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.23.0.0/24
+
+# ================================
+# Volumes
+# ================================
+volumes:
+  ninu-db-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/postgres
+  ninu-redis-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/redis
+  ninu-prometheus-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/prometheus
+  ninu-grafana-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/grafana
+  ninu-alertmanager-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/alertmanager
+  ninu-elasticsearch-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/elasticsearch
+  haproxy-logs:
+    driver: local

@@ -1,0 +1,59 @@
+{
+  "command_count_report": {
+    "timestamp": "2025-07-17T18:39:38-06:00",
+    "report_date": "20250717-183938",
+    "methodology": {
+      "description": "Automated command counting with validation",
+      "criteria": [
+        "Must be .md file",
+        "Must not be README.md",
+        "Must not be in backup/archived directories",
+        "Must not be in examples directory",
+        "Must contain command structure or triggers"
+      ],
+      "directories_analyzed": [
+        "docs/commands/",
+        ".claude/commands/"
+      ]
+    },
+    "counts": {
+      "docs_commands": {
+        "total": 152,
+        "behavioral": 42,
+        "executable": 83,
+        "cores": 8,
+        "shared": 19,
+        "other": 0
+      },
+      "claude_commands": {
+        "total": 146,
+        "behavioral": 42,
+        "executable": 83,
+        "cores": 7,
+        "shared": 14,
+        "other": 0
+      }
+    },
+    "discrepancies": {
+      "total_found": 5,
+      "details": {"total_count":"docs:152 vs claude:146 (diff:6)","cores_count":"docs:8 vs claude:7 (diff:1)","shared_count":"docs:19 vs claude:14 (diff:5)","missing_in_claude":"6 files","registry_total":"registry:155 vs counted:146 (diff:9)"}
+    },
+    "registry_validation": {"registry_total":155,"counted_total":146,"matches":false},
+    "summary": {
+      "total_unique_commands": 146,
+      "synchronization_status": "DISCREPANCIES_DETECTED",
+      "validation_status": "FAILED",
+      "recommendations": [
+        "Resolve 5 discrepancies for full synchronization",
+        "Regular automated counting maintains accuracy",
+        "Integration with CI/CD ensures continuous validation",
+        "Registry synchronization maintains system coherence"
+      ]
+    },
+    "ci_cd_integration": {
+      "exit_code": 1,
+      "suitable_for_automation": true,
+      "monitoring_ready": true
+    }
+  }
+}

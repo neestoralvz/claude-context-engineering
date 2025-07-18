@@ -36,7 +36,7 @@ See @README for project overview and @package.json for available npm commands fo
 ****Relative Paths** (Project-based)**
 ```markdown
 @docs/commands.md                    # Relative to current project
-@.claude/commands/behavioral/        # Command system integration
+@~/.claude/commands/behavioral/        # Command system integration
 @scripts/validation/                 # Script ecosystem access
 ```
 
@@ -164,9 +164,9 @@ This code span will NOT be imported: `@anthropic-ai/claude-code`
 ### **Command System Integration**
 ```markdown
 # Command Ecosystem
-@.claude/commands/README.md               # Command taxonomy
-@.claude/commands/behavioral/README.md    # Thought patterns
-@.claude/commands/executable/README.md    # Action systems
+@~/.claude/commands/README.md               # Command taxonomy
+@~/.claude/commands/behavioral/README.md    # Thought patterns
+@~/.claude/commands/executable/README.md    # Action systems
 ```
 
 ---
@@ -215,7 +215,7 @@ This code span will NOT be imported: `@anthropic-ai/claude-code`
 
 ### **Project Commands** (Team Shared)
 ```bash
-.claude/commands/                    # Project-specific commands
+~/.claude/commands/                  # Global commands
 ├── review.md                        # Custom review process
 ├── deploy.md                        # Deployment workflow
 └── namespace/
@@ -224,7 +224,7 @@ This code span will NOT be imported: `@anthropic-ai/claude-code`
 
 ### **Personal Commands** (Cross-Project)
 ```bash
-~/.claude/commands/                  # Personal commands
+# (Global commands are now in ~/.claude/commands/)
 ├── my-workflow.md                   # Personal development flow
 ├── shortcuts.md                     # Common shortcuts
 └── tools/
@@ -368,7 +368,7 @@ claude --debug            # Debug mode for import issues and memory loading
 @docs/knowledge/README.md                # Navigation hub
 @docs/knowledge/writing-standards.md     # Quality standards
 @docs/knowledge/core-principles.md       # Philosophical foundation
-@.claude/commands/README.md              # Command ecosystem
+@~/.claude/commands/README.md              # Command ecosystem
 ```
 
 ****Focused Development Context****
@@ -442,7 +442,7 @@ claude --debug            # Debug mode for import issues and memory loading
 @docs/knowledge/writing-standards.md
 
 # Command System
-@.claude/commands/README.md
+@~/.claude/commands/README.md
 
 # Personal Config
 @~/.claude/personal-config.md

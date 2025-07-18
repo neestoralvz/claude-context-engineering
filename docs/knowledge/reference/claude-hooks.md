@@ -633,7 +633,7 @@ To troubleshoot hooks:
 7. Use `claude --debug` to debug your hooks. The output of a successful hook
    appears like below.
 
-```yaml
+```text
 [DEBUG] Executing hooks for PostToolUse:Write
 [DEBUG] Getting matching hook commands for PostToolUse with query: Write
 [DEBUG] Found 1 hook matchers in settings

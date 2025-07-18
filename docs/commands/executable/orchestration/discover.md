@@ -5,6 +5,42 @@
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes discovery and knowledge exploration scripts:
+
+```bash
+# Core discovery and exploration analysis
+./scripts/validation/analyze-content-quality.sh --discovery-analysis
+./scripts/validation/analyze-domain-consistency.sh --knowledge-exploration
+
+# Navigation and system analysis
+./scripts/validation/validate-navigation.sh --discovery-validation
+./scripts/core/path-helper.sh --discovery-context
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate discovery prerequisites and exploration parameters
+2. **Content Analysis**: Execute comprehensive content quality analysis for discovery foundation
+3. **Domain Exploration**: Run domain consistency analysis with knowledge validation
+4. **Navigation Validation**: Apply navigation validation within discovery context
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute comprehensive knowledge discovery using systematic exploration analysis
+2. Validate domain consistency and content quality with discovery-focused validation
+3. Generate discovery reports with knowledge exploration metrics and pattern recognition
+4. Apply navigation validation protocols for comprehensive discovery verification
+
+**Status Updates**:
+- 🔄 **Starting**: Knowledge discovery workflow initiated (4 specialized exploration scripts)
+- 📊 **Progress**: Running content analysis and domain consistency exploration
+- ✅ **Complete**: Discovery workflow completed with knowledge validation
+- 📈 **Metrics**: Discovery completeness measured and exploration quality verified
+
+---
+
 ## 🎯 **ORCHESTRATOR DEFINITION**
 
 ### **🚨 BLOCKING Purpose**

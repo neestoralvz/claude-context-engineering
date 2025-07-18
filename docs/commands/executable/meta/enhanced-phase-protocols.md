@@ -50,7 +50,7 @@ Command invocation immediately activates intelligent command orchestration syste
 - **Purpose**: Load decision-engine command for direct execution with script integration
 - **Followed By**: DIRECT COMMAND EXECUTION: Execute /decision-engine with script-validated foundation
 - **Command Execution**: Decision-engine uses pre-executed script results for enhanced analysis
-- **Evidence Required**: User must see actual analysis results including complexity score, confidence level, routing strategy matrix, script execution evidence, and mathematical justification
+- **Evidence Protocol**: User observes actual analysis results including complexity score, confidence level, routing strategy matrix, execution evidence, and mathematical justification
 - **Communication**: Real-time decision analysis progress with script-validated foundation
 - **No Simulation**: NEVER simulate decision analysis - ALWAYS execute Read tool then /decision-engine command
 - **Performance Optimization**: Use script results from step 2 to enhance decision accuracy
@@ -64,7 +64,7 @@ Command invocation immediately activates intelligent command orchestration syste
 - **Purpose**: Load parallel-over-sequential command for comprehensive analysis with script foundation
 - **Followed By**: DIRECT COMMAND EXECUTION: Execute /parallel-over-sequential with script-validated metrics
 - **Command Execution**: Parallel-over-sequential uses script-based mathematical foundation for enhanced analysis
-- **Evidence Required**: User must see actual parallelization analysis including net parallel benefit calculation, dependency matrix analysis, execution time estimates, optimal parallel groupings, and mathematical validation results
+- **Evidence Protocol**: User observes actual parallelization analysis including net parallel benefit calculation, dependency matrix analysis, execution time estimates, optimal parallel groupings, and mathematical validation results
 - **Communication**: Real-time parallelization analysis with script-validated foundation
 - **No Simulation**: NEVER simulate parallelization analysis - ALWAYS execute Read tool then /parallel-over-sequential command
 - **Full Context**: Analysis includes script-validated mathematical foundation + complete command visibility
@@ -167,7 +167,7 @@ Command invocation immediately activates intelligent command orchestration syste
 - **Communication**: PROGRESS_UPDATE: Discovery execution in progress with direct command execution
 - **Monitoring**: Real-time progress from all executed discovery commands
 - **Coordination**: Principal agent orchestrates multiple command execution results
-- **Evidence Required**: User sees actual discovery results from direct command execution
+- **Evidence Protocol**: User observes actual discovery results through direct command execution
 
 **Step 4: Results Synthesis**
 - **Action**: Synthesize Results: Consolidate findings from all discovery commands
@@ -224,7 +224,7 @@ Command invocation immediately activates intelligent command orchestration syste
 - **Tool Call Requirement**: LLM MUST execute Task tool with these parameters:
   - **Description**: Model Selection Specialist
   - **Prompt**: Execute model selection analysis for [user objective] based on Phase 0 complexity analysis and Phase 1 discovery results. Analyze requirements for strategic thinking vs implementation efficiency. Provide model recommendation (Opus/Sonnet) with quantitative justification based on complexity score, discovery findings, and execution requirements.
-- **Evidence Required**: User must see actual model selection analysis including model recommendation, quantitative justification, complexity-based reasoning, and efficiency vs depth trade-off analysis
+- **Evidence Protocol**: User observes actual model selection analysis including model recommendation, quantitative justification, complexity-based reasoning, and efficiency vs depth trade-off analysis
 - **Communication**: TOOL CALL EXECUTION: Deploying model selection specialist via Task tool
 
 **Step 2.5: Planning Parallelization**
@@ -266,7 +266,7 @@ Command invocation immediately activates intelligent command orchestration syste
 - **Communication**: PROGRESS_UPDATE: Planning execution in progress with Task agents via REAL tool calls
 - **Monitoring**: Real-time progress from planning specialists
 - **Coordination**: Principal agent aggregates planning progress
-- **Evidence Required**: User sees actual planning results from Task agent execution
+- **Evidence Protocol**: User observes actual planning results through Task agent execution
 
 **Step 5: Quality Validation**
 - **Action**: Validate Planning Quality: Ensure objectives are measurable and achievable via /complexity-enforcement

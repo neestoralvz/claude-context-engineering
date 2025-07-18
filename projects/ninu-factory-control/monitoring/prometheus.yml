@@ -1,0 +1,127 @@
+# Prometheus Configuration for Ninu.mx Factory Control System
+# Monitoring and metrics collection for production environment
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'ninu-factory-monitor'
+    environment: 'production'
+
+rule_files:
+  - "alert_rules.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    metrics_path: /metrics
+    scrape_interval: 15s
+
+  # Node Exporter (System Metrics)
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['ninu-node-exporter:9100']
+    metrics_path: /metrics
+    scrape_interval: 15s
+
+  # PostgreSQL Exporter (Database Metrics)
+  - job_name: 'postgres-exporter'
+    static_configs:
+      - targets: ['ninu-postgres-exporter:9187']
+    metrics_path: /metrics
+    scrape_interval: 30s
+
+  # Redis Exporter (Cache Metrics)
+  - job_name: 'redis-exporter'
+    static_configs:
+      - targets: ['ninu-redis-exporter:9121']
+    metrics_path: /metrics
+    scrape_interval: 30s
+
+  # Frontend Application Metrics
+  - job_name: 'ninu-frontend'
+    static_configs:
+      - targets: ['ninu-frontend:3000']
+    metrics_path: /api/metrics
+    scrape_interval: 30s
+    scrape_timeout: 10s
+
+  # WebSocket Server Metrics
+  - job_name: 'ninu-websocket'
+    static_configs:
+      - targets: ['ninu-websocket:3001']
+    metrics_path: /metrics
+    scrape_interval: 30s
+    scrape_timeout: 10s
+
+  # HAProxy Load Balancer Metrics
+  - job_name: 'haproxy'
+    static_configs:
+      - targets: ['ninu-haproxy:8080']
+    metrics_path: /stats;csv
+    scrape_interval: 30s
+    params:
+      stats: [';csv']
+
+  # Custom Factory Metrics (if available)
+  - job_name: 'factory-metrics'
+    static_configs:
+      - targets: ['ninu-frontend:3000']
+    metrics_path: /api/factory/metrics
+    scrape_interval: 60s
+    scrape_timeout: 15s
+    params:
+      format: ['prometheus']
+
+  # Inventory Metrics
+  - job_name: 'inventory-metrics'
+    static_configs:
+      - targets: ['ninu-frontend:3000']
+    metrics_path: /api/inventory/metrics
+    scrape_interval: 60s
+    scrape_timeout: 15s
+
+  # Production Metrics
+  - job_name: 'production-metrics'
+    static_configs:
+      - targets: ['ninu-frontend:3000']
+    metrics_path: /api/production/metrics
+    scrape_interval: 60s
+    scrape_timeout: 15s
+
+  # Quality Control Metrics
+  - job_name: 'quality-metrics'
+    static_configs:
+      - targets: ['ninu-frontend:3000']
+    metrics_path: /api/quality/metrics
+    scrape_interval: 120s
+    scrape_timeout: 15s
+
+# Storage configuration
+storage:
+  tsdb:
+    path: /prometheus
+    retention.time: 15d
+    retention.size: 10GB
+    wal-compression: true
+
+# Remote write configuration (optional)
+# remote_write:
+#   - url: "https://your-remote-prometheus.com/api/v1/write"
+#     basic_auth:
+#       username: "your-username"
+#       password: "your-password"
+
+# Remote read configuration (optional)
+# remote_read:
+#   - url: "https://your-remote-prometheus.com/api/v1/read"
+#     basic_auth:
+#       username: "your-username"
+#       password: "your-password"

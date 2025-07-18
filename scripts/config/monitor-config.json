@@ -1,0 +1,12 @@
+{
+  "check_interval": 300,
+  "notification_cooldown": 3600,
+  "alert_threshold": 1,
+  "notifications_enabled": true,
+  "webhook_url": "",
+  "email_to": "",
+  "auto_recovery": true,
+  "log_level": "info",
+  "created": "2025-07-17T19:04:05-06:00",
+  "comment": "Command synchronization monitoring configuration"
+}

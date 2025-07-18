@@ -16,6 +16,42 @@ Systematically decompose complex objectives into smaller, independently verifiab
 
 ---
 
+## 🔧 P55 Script Execution Protocol
+
+**MANDATORY**: This command automatically executes objective decomposition and analysis scripts:
+
+```bash
+# Core complexity and decomposition analysis
+./scripts/core/calculate-complexity.sh --decomposition-analysis
+./scripts/validation/analyze-content-quality.sh --objective-breakdown
+
+# Parallelization and workflow optimization
+./scripts/automation/parallelization-analyzer.js --decomposition-parallelization
+./scripts/automation/todo-workflow-optimizer.js --objective-optimization
+```
+
+**Execution Protocol**:
+1. **Pre-execution**: Validate decomposition prerequisites and objective analysis parameters
+2. **Complexity Analysis**: Execute comprehensive complexity calculation for decomposition optimization
+3. **Content Breakdown**: Run content quality analysis with objective breakdown focus
+4. **Parallelization Optimization**: Apply parallelization analysis and workflow optimization for sub-objectives
+
+**P56 Execution Transparency**:
+
+**I'm going to**:
+1. Execute objective decomposition using comprehensive complexity and parallelization analysis
+2. Validate sub-objective quality and optimization potential with workflow enhancement
+3. Generate decomposition reports with parallelization metrics and objective breakdown validation
+4. Apply workflow optimization protocols for comprehensive objective decomposition
+
+**Status Updates**:
+- 🔄 **Starting**: Objective decomposition initiated (4 specialized analysis and optimization scripts)
+- 📊 **Progress**: Running complexity analysis and parallelization optimization for decomposition
+- ✅ **Complete**: Decomposition completed with workflow optimization and parallelization validation
+- 📈 **Metrics**: Objective breakdown validated and parallelization efficiency measured
+
+---
+
 ## ⚡ Auto-Activation Triggers
 
 ### **MANDATORY Activation Conditions**

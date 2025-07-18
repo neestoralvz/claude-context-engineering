@@ -48,7 +48,7 @@ EXECUTE dynamic dependency analysis achieving ≥85% parallelization efficiency 
 ## ⚡ **ACTIVATION PROTOCOL**
 
 ### **Input Format**
-```bash
+```markdown
 /dynamic-dependency-analysis [workflow_context] [parallelization_target?] [resource_constraints?]
 ```
 

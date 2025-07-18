@@ -1,0 +1,7 @@
+BROKEN: docs/knowledge/principles/philosophical-foundations.md:9 -> /intelligent-adaptation.md
+BROKEN: docs/knowledge/principles/philosophical-foundations.md:11 -> /_shared/workflow.md
+BROKEN: docs/knowledge/principles/philosophical-foundations.md:32 -> /operational-excellence.md#15-crystallize-patterns
+BROKEN: docs/knowledge/principles/philosophical-foundations.md:43 -> /technical-standards.md#24-optimize-context
+BROKEN: docs/knowledge/principles/philosophical-foundations.md:54 -> /validation-protocols.md#31-intelligent-fallback
+BROKEN: docs/knowledge/principles/philosophical-foundations.md:66 -> /cognitive-optimization.md#43-organización-cognitiva-óptima
+BROKEN: docs/knowledge/principles/philosophical-foundations.md:88 -> /validation-protocols.md#11-verification-as-liberation

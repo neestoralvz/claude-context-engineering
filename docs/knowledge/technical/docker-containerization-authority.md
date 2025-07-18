@@ -221,21 +221,7 @@ docker tag app:$(git rev-parse --short HEAD) registry.example.com/app:latest
 
 ### **CI/CD Integration**
 
-**GitHub Actions Example**:
-```yaml
-- name: Build and push Docker image
-  uses: docker/build-push-action@v4
-  with:
-    context: .
-    platforms: linux/amd64,linux/arm64
-    push: true
-    tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
-    cache-from: type=gha
-    cache-to: type=gha,mode=max
-    build-args: |
-      BUILD_DATE=${{ steps.date.outputs.date }}
-      VCS_REF=${{ github.sha }}
-```
+**GitHub Actions Example**: The Docker build and push action uses docker/build-push-action@v4 with multi-platform support for linux/amd64 and linux/arm64 architectures. The configuration includes context set to current directory, enables push to registry, sets tags using environment variables and git SHA, implements GitHub Actions cache optimization for faster builds, and includes build arguments for build date and VCS reference tracking.
 
 ## 📊 Performance Metrics & Monitoring
 
@@ -276,24 +262,7 @@ docker logs --tail=100 --follow container-name
 
 ### **With Docker Compose**
 
-```yaml
-version: '3.8'
-services:
-  app:
-    build:
-      context: .
-      target: runtime
-    environment:
-      - NODE_ENV=production
-    ports:
-      - "8080:8080"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    restart: unless-stopped
-```
+**Docker Compose Configuration**: Uses version 3.8 with a single app service that builds from current context targeting the runtime stage. The service configuration includes production environment settings, exposes port 8080, implements health checking with curl against the health endpoint every 30 seconds with 10-second timeout and 3 retries, and includes automatic restart policy unless manually stopped.
 
 ### **Kubernetes Compatibility**
 

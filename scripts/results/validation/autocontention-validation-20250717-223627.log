@@ -1,0 +1,13 @@
+2025-07-17 22:36:27 [INFO] [0;34m🚀 Iniciando validación de autocontención de comandos[0m
+2025-07-17 22:36:27 [INFO] [0;34m📋 Principio #102: Command Autocontención Architecture[0m
+2025-07-17 22:36:27 [INFO] [0;34m🔍 Verificando prerrequisitos...[0m
+2025-07-17 22:36:27 [INFO] [0;34m📊 Total de comandos a validar:      172[0m
+2025-07-17 22:36:27 [SUCCESS] [0;32m✅ Prerrequisitos verificados[0m
+2025-07-17 22:36:27 [INFO] [0;34m🔍 Procesando comandos...[0m
+2025-07-17 22:36:27 [INFO] [0;34m🔍 Validando: executable/behavior/dynamic-dependency-analysis.md[0m
+2025-07-17 22:36:27 [ERROR] [0;31m⚠️ Declaración de herencia en executable/behavior/dynamic-dependency-analysis.md:34[0m
+2025-07-17 22:36:27 [ERROR] [0;31m   Patrón: inherits.*from[0m
+2025-07-17 22:36:27 [ERROR] [0;31m   **Inherits from**: [Parallel Task Intelligence](../../../knowledge/protocols/parallel-task-intelligence-protocol.md)[0m
+2025-07-17 22:36:27 [ERROR] [0;31m⚠️ Declaración de herencia en executable/behavior/dynamic-dependency-analysis.md:243[0m
+2025-07-17 22:36:27 [ERROR] [0;31m   Patrón: inherits.*from[0m
+2025-07-17 22:36:27 [ERROR] [0;31m   **Inherits from**: [Universal P55/P56 Compliance](../../shared/compliance/p55-p56-universal-compliance.md)[0m

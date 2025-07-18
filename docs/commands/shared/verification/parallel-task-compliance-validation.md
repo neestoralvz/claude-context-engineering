@@ -30,7 +30,7 @@
 ## ⚡ **QUICK VALIDATION**
 
 ### **Usage**
-```bash
+```markdown
 /validate-parallel-task-compliance [operation_type] [complexity_score]
 ```
 

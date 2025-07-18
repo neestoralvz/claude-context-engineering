@@ -264,7 +264,7 @@
 - **Announcement Coverage**: Must achieve 100% announcement coverage for all operations
 - **Progress Tracking Quality**: Must maintain at least 95% progress tracking quality targeting 100%
 - **User Visibility Score**: Must achieve at least 95% user visibility score targeting 100%
-- **Completion Reporting**: Must achieve 100% completion reporting with no missing reports
+- **Completion Reporting**: Must achieve 100% completion reporting with no missing handoffs
 
 **Overall Compliance Standards**:
 - **Combined Score**: Must achieve at least 98% combined compliance score targeting 100%

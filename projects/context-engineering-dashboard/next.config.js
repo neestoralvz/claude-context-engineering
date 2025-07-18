@@ -24,11 +24,40 @@ const nextConfig = {
     reactRemoveProperties: process.env.NODE_ENV === 'production',
   },
   webpack: (config, { isServer }) => {
-    // Optimize for mathematical formula rendering
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      'katex/dist/katex.css': require.resolve('katex/dist/katex.css'),
-    };
+    // Add unique name to prevent conflicts with other Next.js projects
+    config.name = 'context-engineering-dashboard';
+    
+    // Configure unique webpack runtime for this project
+    if (!isServer) {
+      config.optimization = {
+        ...config.optimization,
+        runtimeChunk: {
+          name: 'ce-dashboard-runtime'
+        },
+        splitChunks: {
+          ...config.optimization.splitChunks,
+          cacheGroups: {
+            ...config.optimization.splitChunks.cacheGroups,
+            ceVendor: {
+              test: /[\\/]node_modules[\\/]/,
+              name: 'ce-vendors',
+              chunks: 'all',
+              priority: 10,
+            },
+          },
+        },
+      };
+    }
+    
+    // Optimize for mathematical formula rendering (conditional)
+    try {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'katex/dist/katex.css': require.resolve('katex/dist/katex.css'),
+      };
+    } catch (e) {
+      // KaTeX not installed, skip alias configuration
+    }
     
     // Support for markdown files
     config.module.rules.push({

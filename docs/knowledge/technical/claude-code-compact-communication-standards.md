@@ -47,6 +47,20 @@ System is now fully activated with all capabilities available.
 ⟳ /context-eng → Phase 1/5 ████████░░ 80% → ✓ 76cmd loaded [3.2s]
 ```
 
+### **CRÍTICO: Comunicación Directa Claude Code → Usuario**
+
+**NUEVA ESPECIFICACIÓN**: La comunicación debe ser directa de Claude Code al usuario, eliminando bash como canal de comunicación.
+
+**❌ ELIMINADO**: Referencias a bash notifications, echo/printf como canales de comunicación
+**✅ REQUERIDO**: Formato compacto directo `⟳ /comando → resultado 🎯 [tiempo]`
+
+**Ejemplos del nuevo formato**:
+```
+⟳ /sync-docs → 15 files updated 🎯 [2.1s]
+⟳ /validate → ✓12 ⚠3 ✗1 🎯 [4.2s] → Fix required
+⟳ /containerize → Docker setup complete 🎯 [8.7s]
+```
+
 ### **Coordinación Multi-Agent (Task Tools)**
 
 **❌ ANTES**:
@@ -98,6 +112,14 @@ The system is mostly compliant but requires attention in the following areas...
 **✅ DESPUÉS**:
 ```
 ✓12 ⚠3 ✗1 [4.2s] 85% → Attention required: error details below
+```
+
+### **Formato Compacto Directo (Claude Code → Usuario)**
+```markdown
+# Nuevo formato estándar: ⟳ /comando → resultado 🎯 [tiempo]
+⟳ /math-verify → ✓ 22/22 tests passed 🎯 [1.8s]
+⟳ /orchestrate → 5 commands sequenced 🎯 [2.3s]
+⟳ /containerize → Production ready 🎯 [12.4s]
 ```
 
 ## 🔧 Funciones de Comunicación Conversacional
