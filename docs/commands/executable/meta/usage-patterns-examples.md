@@ -1,5 +1,27 @@
 # Usage Patterns Examples - Context Engineering Meta-Command
 
+## 🔴 CRITICAL: Claude Code Slash Commands Only
+
+**⚠️ MANDATORY WARNING**: ALL commands shown in this document are **Claude Code slash commands** (`/command`) and must **NEVER** be executed as bash commands.
+
+### **✅ CORRECT Usage**
+```markdown
+/ce [objective]              # ✅ Claude Code interface only
+/context-engineering task    # ✅ Claude Code interface only  
+/sw learning-mode           # ✅ Claude Code interface only
+```
+
+### **❌ INCORRECT Usage**
+```bash
+./ce [objective]             # ❌ WRONG: Not a bash script
+bash /context-engineering    # ❌ WRONG: Not a bash script
+chmod +x /sw                 # ❌ WRONG: Not a file
+```
+
+**📋 Complete specification**: [Claude Code Slash Commands](../../../knowledge/technical/claude-code-slash-commands-specification.md)
+
+---
+
 **Meta-Principle**: "Enable models through structured context, not control."
 
 **Purpose**: CRITICAL comprehensive collection of usage patterns, command examples, learning mode demonstrations, and practical implementation guidance for the Context Engineering meta-command system with real-world scenarios and performance optimization examples.

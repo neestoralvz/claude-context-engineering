@@ -180,8 +180,11 @@ USER app
 ### **IMMEDIATE Continuation Opportunities** (High Priority)
 
 #### **1. Command System Integration** (`/commands/executable/deployment/`)
-```bash
-# Commands to implement:
+
+**⚠️ IMPORTANT**: The following are **Claude Code slash commands** (`/command`) - NOT bash commands. Use only in Claude Code interface.
+
+```markdown
+# Claude Code slash commands to implement:
 /containerize [project] → Automated project containerization using templates
 /docker-deploy [environment] → Deployment orchestration with validation
 /port-scan [range] → Intelligent port conflict detection and resolution

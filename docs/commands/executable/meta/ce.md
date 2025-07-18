@@ -80,6 +80,13 @@
 - **Protocol**: 🚨 ENFORCED: Automatic activation of [Universal Tool Execution](../../shared/core/universal-tool-execution.md#-automatic-8-step-protocol-integration) error handling
 - **Verification**: 🚨 REQUIRED: Protocol completion status, system integrity validation, and comprehensive error resolution documentation
 
+**🚨 STEP-BY-STEP VALIDATION TRIGGER** (NEW - Continuous Monitoring):
+- **Condition**: 🚨 BLOCKING: ANY action, progress update, TodoWrite modification, code writing, completion, or system advancement
+- **Threshold**: 🚨 AUTOMATIC: EVERY SINGLE STEP of execution triggers mandatory validation
+- **Action**: 🚨 MANDATORY: Auto-activate step-by-step command compliance verification with real-time monitoring
+- **Protocol**: 🚨 ENFORCED: CRITICAL, OBLIGATORY, IMPERATIVE validation at EACH execution step - TodoWrite updates, code writing, error handling, completion
+- **Verification**: 🚨 REQUIRED: 100% step-by-step command utilization validation, automatic blocking of non-compliant actions, continuous compliance monitoring
+
 ## ⚡ **Adaptive Intelligent Activation Protocol** (MANDATORY)
 
 **🚨 BLOCKING REQUIREMENT**: MANDATORY intelligent activation scaling with ≥92% trigger accuracy based on complexity measurement. Sistema WILL enforce activation protocols with AUTOMATIC blocking for manual override attempts and MANDATORY verification of ecosystem utilization thresholds.
@@ -123,6 +130,14 @@
 - **Real-Time Validation**: 🚨 CONTINUOUS: Monitor command usage adherence throughout entire execution lifecycle
 - **Correction Protocols**: 🚨 MANDATORY: Automatically correct non-compliant execution patterns with command-based alternatives
 
+**🚨 STEP-BY-STEP COMPLIANCE MONITORING** (BLOCKING Continuous Validation):
+- **TodoWrite Validation**: 🚨 AUTOMATIC: Every TodoWrite update triggers command compliance verification and utilization assessment
+- **Code Writing Enforcement**: 🚨 MANDATORY: All code writing activities must utilize appropriate Context Engineering commands before execution
+- **Progress Tracking**: 🚨 CONTINUOUS: Real-time monitoring of each advancement step with automatic command discovery integration
+- **Error Handling Validation**: 🚨 CRITICAL: Every error triggers mandatory command utilization verification and correction protocols
+- **Completion Verification**: 🚨 BLOCKING: Task completion requires 100% command compliance validation before marking as complete
+- **Action-by-Action Monitoring**: 🚨 MANDATORY: EVERY SINGLE ACTION triggers automatic command utilization assessment and enforcement
+
 **🚨 PRINCIPLE ENFORCEMENT PROTOCOLS** (BLOCKING Requirements):
 - **Autocontención Validation**: 🚨 AUTOMATIC: Scan ALL activated commands for Principle #102 compliance - zero external dependencies, complete independence
 - **Dual-Mode Verification**: 🚨 MANDATORY: Enforce Principle #103 - Task/Read tool coordination only, no direct command references
@@ -157,6 +172,14 @@
 - **P55/P56 Universal Application**: BLOCKING enforcement of Tool Call Execution Bridging and Command Execution Transparency
 - **Command Independence Scanner**: AUTOMATIC detection and blocking of commands with external dependencies or direct references
 - **Compliance Verification Engine**: CONTINUOUS monitoring and validation of command ecosystem adherence to mandatory standards
+
+### **🚨 STEP-BY-STEP VALIDATION PROTOCOLS** (BLOCKING Continuous Enforcement)
+- **Pre-Action Validation**: 🚨 MANDATORY: Before ANY action - TodoWrite update, code writing, file modification - validate command compliance
+- **Action-During Monitoring**: 🚨 CONTINUOUS: Real-time command utilization verification throughout execution of every single action
+- **Post-Action Verification**: 🚨 CRITICAL: After EVERY action completion - verify 100% command specification adherence
+- **Progress Checkpoint Validation**: 🚨 BLOCKING: Each advancement step requires mandatory command compliance verification before proceeding
+- **Error-Triggered Validation**: 🚨 AUTOMATIC: ANY error immediately triggers full command compliance scan and correction protocols
+- **Completion Gate Validation**: 🚨 MANDATORY: Task completion blocked until 100% command utilization validation achieved
 
 ---
 
@@ -223,6 +246,14 @@
 - **Tool Call Execution Standards**: 🚨 BLOCKING: Zero tolerance for simulation - real tool execution only
 - **Structural Conformance**: 🚨 AUTOMATIC: Validate header, trigger, execution, and integration sections
 - **Independence Verification**: 🚨 MANDATORY: Confirm zero external dependencies and complete autocontención
+
+**🚨 CODE WRITING VALIDATION PROTOCOLS** (BLOCKING Enforcement):
+- **Pre-Code Validation**: 🚨 MANDATORY: Before ANY code writing - validate appropriate Context Engineering commands are identified and utilized
+- **Code Writing Command Enforcement**: 🚨 CRITICAL: ALL code writing activities MUST utilize relevant commands like /thinking, /execute, /validate, /math-verify
+- **Code Quality Command Integration**: 🚨 BLOCKING: Code writing blocked until appropriate quality assurance commands are activated
+- **Post-Code Validation**: 🚨 AUTOMATIC: After code writing completion - verify command specification adherence and quality standards
+- **Code Review Command Utilization**: 🚨 MANDATORY: Code reviews MUST utilize /verify-loops, /validate-command-content, or equivalent commands
+- **Continuous Code Monitoring**: 🚨 CONTINUOUS: Real-time validation that code writing follows Context Engineering command protocols
 
 **Quick Access**: Tool execution examples, compliance protocols, behavioral instructions, structure validation templates
 
@@ -391,6 +422,14 @@
 - **CONTINUOUS MONITORING**: LLM MUST maintain ongoing compliance verification throughout command execution with automatic correction protocols
 - **PRINCIPLE ENFORCEMENT**: LLM MUST prioritize Principles #102, #103, and #104 as non-negotiable requirements for ALL command operations
 - **🚨 MANDATORY COMMAND UTILIZATION**: LLM MUST CRITICAL, OBLIGATORY, IMPERATIVE utilize ALL available Context Engineering commands and strictly follow their specifications during EVERY execution phase. Non-compliance with command usage requirements triggers automatic system correction protocols and enforcement mechanisms
+
+**🚨 STEP-BY-STEP BEHAVIORAL ENFORCEMENT** (BLOCKING Real-Time Requirements):
+- **EVERY ACTION VALIDATION**: LLM MUST validate command compliance BEFORE every single action: TodoWrite updates, file modifications, code writing, progress updates, completions, error handling
+- **REAL-TIME COMMAND DISCOVERY**: LLM MUST continuously scan and identify appropriate Context Engineering commands for EACH step of execution
+- **MANDATORY STEP-BY-STEP ADHERENCE**: LLM MUST have crystal clear command compliance awareness at EVERY advancement, EVERY progress update, EVERY error, EVERY completion, EVERY code writing activity
+- **BLOCKING NON-COMPLIANCE**: LLM MUST automatically block ANY action that bypasses appropriate command utilization
+- **CONTINUOUS SPECIFICATION ADHERENCE**: LLM MUST follow command specifications exactly at each step with zero tolerance for deviation
+- **AUTO-CORRECTION PROTOCOLS**: LLM MUST automatically correct execution patterns that violate step-by-step command compliance requirements
 
 ---
 

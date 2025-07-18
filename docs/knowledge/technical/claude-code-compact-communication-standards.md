@@ -1,5 +1,11 @@
 # Claude Code Compact Communication Standards
 
+## 🔴 CRÍTICO: Comandos Slash de Claude Code
+
+**⚠️ ADVERTENCIA OBLIGATORIA**: Este documento contiene **comandos slash de Claude Code** (`/comando`) que **NUNCA** deben ejecutarse como comandos bash. Usar solamente en la interfaz de Claude Code.
+
+---
+
 **Sistema de comunicación densa** para interacciones Claude-usuario con máxima eficiencia informativa.
 
 ## 🎯 Principios de Comunicación Compacta

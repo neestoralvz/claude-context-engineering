@@ -1,5 +1,25 @@
 # Context Engineering User Guide
 
+## 🔴 CRITICAL: Claude Code Slash Commands Only
+
+**⚠️ MANDATORY WARNING**: This guide contains **Claude Code slash commands** (`/command`) which must **NEVER** be executed as bash commands. Use only in Claude Code interface.
+
+### **✅ CORRECT Usage**
+```markdown
+/context-eng     # ✅ Claude Code interface only
+/decision        # ✅ Claude Code interface only
+/thinking        # ✅ Claude Code interface only
+```
+
+### **❌ INCORRECT Usage**
+```bash
+./context-eng    # ❌ WRONG: Not a bash script
+bash /decision   # ❌ WRONG: Not a bash script
+chmod +x /thinking # ❌ WRONG: Not a file
+```
+
+---
+
 🎯 **Complete User Manual** - Your comprehensive guide to navigating and utilizing the Context Engineering web application effectively.
 
 ## 📖 Table of Contents

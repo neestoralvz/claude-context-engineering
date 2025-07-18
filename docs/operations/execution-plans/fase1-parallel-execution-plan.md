@@ -1,5 +1,23 @@
 # 🚀 FASE 1: FUNDAMENTOS - Plan de Ejecución Paralela
 
+## 🔴 CRÍTICO: Comandos Slash de Claude Code
+
+**⚠️ ADVERTENCIA OBLIGATORIA**: TODOS los comandos mostrados en este documento son **comandos slash de Claude Code** (`/comando`) y **NUNCA** deben ejecutarse como comandos bash. Usar solamente en la interfaz de Claude Code.
+
+### **✅ USO CORRECTO**
+```markdown
+/validate-command-content      # ✅ Solo interfaz Claude Code
+/context-eng                   # ✅ Solo interfaz Claude Code
+```
+
+### **❌ USO INCORRECTO**
+```bash
+./validate-command-content     # ❌ INCORRECTO: No es un script bash
+bash /context-eng              # ❌ INCORRECTO: No es un script bash
+```
+
+---
+
 **OBJETIVO CRÍTICO**: Implementar Principios #1-20 mediante despliegue simultáneo de ≥3 Task tools especializadas con comandos slash específicos del ecosistema.
 
 **PERÍODO**: Semanas 1-2

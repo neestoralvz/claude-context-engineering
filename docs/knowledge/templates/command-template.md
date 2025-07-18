@@ -1,5 +1,9 @@
 # Context Engineering Universal Meta-Command (Modular Edition)
 
+## 🔴 CRITICAL: Claude Code Slash Command Template
+
+**⚠️ MANDATORY WARNING**: This template shows Claude Code slash commands (`/command`) which must **NEVER** be executed as bash commands. All commands in this template are for use within Claude Code interface only.
+
 ## Command: `/context-eng`
 
 **Meta-Principle**: "Enable models through MANDATORY structured context, not restrictive control"
